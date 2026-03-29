@@ -1,0 +1,67 @@
+{
+  "FOUND": {
+    "range": [1, 20],
+    "keywords": [],
+    "exclude": []
+  },
+  "ECOS": {
+    "range": [21, 45],
+    "keywords": ["biome", "reef", "ocean", "marine", "freshwater", "wetland", "estuar", "forest", "desert", "tundra", "grassland", "chaparral", "taiga"],
+    "exclude": []
+  },
+  "ENFL": {
+    "range": [46, 60],
+    "keywords": ["trophic efficiency", "energy pyramid", "biomass", "autotroph", "heterotroph", "chemosynthesis", "primary productivity", "gross primary", "net primary", "net ecosystem"],
+    "exclude": ["solar energy", "wind energy", "geothermal", "biomass energy", "energy conservation", "energy return", "energy efficiency", "energy consumption"]
+  },
+  "CYCL": {
+    "range": [61, 80],
+    "keywords": ["carbon cycle", "nitrogen cycle", "phosphorus cycle", "hydrologic", "fixation", "nitrification", "denitrification", "sequestration", "evaporation", "transpiration", "precipitation", "runoff", "groundwater", "aquifer", "nutrient cycling", "decomposition"],
+    "exclude": ["aquifer depletion"]
+  },
+  "INTR": {
+    "range": [81, 100],
+    "keywords": ["predation", "competition", "mutualism", "commensalism", "parasitism", "symbiosis", "herbivory", "keystone", "indicator species", "foundation species", "invasive species", "native species", "coevolution", "mimicry", "camouflage", "competitive exclusion", "resource partitioning", "predator-prey", "interspecific"],
+    "exclude": []
+  },
+  "BIOD": {
+    "range": [101, 120],
+    "keywords": ["genetic diversity", "species diversity", "ecosystem diversity", "ecosystem service", "provisioning", "regulating service", "cultural service", "supporting service", "island biogeography", "species-area", "ecological tolerance", "tolerance range", "adaptation", "natural selection", "natural disruption", "succession", "pioneer", "climax"],
+    "exclude": []
+  },
+  "POPU": {
+    "range": [121, 150],
+    "keywords": ["population", "generalist", "specialist", "survivorship", "carrying capacity", "exponential growth", "logistic growth", "overshoot", "population crash", "limiting factor", "density-dependent", "density-independent", "birth rate", "death rate", "immigration", "emigration", "age structure", "fertility rate", "rule of seventy", "demographic", "zero population"],
+    "exclude": ["human population growth"]
+  },
+  "ERTH": {
+    "range": [151, 175],
+    "keywords": ["plate tectonics", "convergent", "divergent", "transform bound", "soil", "atmosphere", "atmospheric", "troposphere", "stratosphere", "wind pattern", "coriolis", "convection cell", "watershed", "solar radiation", "season", "climate pattern", "rain shadow", "el nino", "la nina", "enso", "albedo"],
+    "exclude": ["climate change", "climate model", "climate denial"]
+  },
+  "LAND": {
+    "range": [176, 235],
+    "keywords": ["tragedy of the commons", "clearcutting", "deforestation", "green revolution", "agricultural", "monoculture", "polyculture", "salinization", "waterlogging", "aquifer depletion", "irrigation", "pest control", "pesticide", "biological pest", "integrated pest", "meat production", "cafo", "overfishing", "bycatch", "mining", "urbanization", "impervious", "urban heat", "ecological footprint", "sustainability", "sustainable", "crop rotation", "no-till", "aquaculture", "conservation", "preservation", "maximum sustainable", "renewable", "nonrenewable", "energy consumption", "fossil fuel", "coal", "oil", "natural gas", "nuclear", "fission", "fusion", "half-life", "nuclear waste", "biomass energy", "solar energy", "active solar", "passive solar", "photovoltaic", "hydroelectric", "geothermal", "hydrogen fuel", "wind energy", "energy conservation", "cogeneration", "energy return", "energy efficiency", "urban runoff"],
+    "exclude": ["solar radiation", "solar energy input"]
+  },
+  "POLL": {
+    "range": [236, 280],
+    "keywords": ["pollution", "pollutant", "criteria air", "carbon monoxide", "sulfur dioxide", "nitrogen oxide", "ozone", "particulate", "lead pollution", "volatile organic", "smog", "thermal inversion", "indoor air", "radon", "asbestos", "acid rain", "noise pollution", "clean air act", "catalytic converter", "point source", "nonpoint source", "endocrine", "wetland destruction", "eutrophication", "algal bloom", "dead zone", "dissolved oxygen", "biological oxygen", "thermal pollution", "persistent organic", "bioaccumulation", "biomagnification", "solid waste", "landfill", "incineration", "recycling", "waste reduction", "sewage", "ld50", "dose-response", "threshold effect", "pathogen", "clean water", "cercla", "superfund"],
+    "exclude": ["ground-level ozone"]
+  },
+  "GLOB": {
+    "range": [281, 310],
+    "keywords": ["ozone layer", "ozone depletion", "chlorofluorocarbon", "montreal protocol", "greenhouse", "climate change", "climate model", "ocean warming", "ocean acidification", "sea level", "coral bleaching", "ice-albedo", "permafrost", "tipping point", "endangered species", "habitat loss", "hippo", "overexploitation", "species act", "cites", "kyoto", "paris agreement", "carbon tax", "cap and trade", "biodiversity hotspot", "habitat fragmentation", "wildlife corridor", "species extinction"],
+    "exclude": ["tipping point dynamics"]
+  },
+  "SYST": {
+    "range": [311, 340],
+    "keywords": ["systems thinking", "system", "stocks and flows", "feedback loop", "reinforcing feedback", "balancing feedback", "causal loop", "stock and flow", "leverage point", "emergence", "resilience", "regime shift", "scale and hierarchy", "mental model", "unintended", "time delay", "nonlinear", "complex system", "dynamic equilibrium", "positive feedback", "negative feedback", "system boundar", "interconnected", "trade-off", "cascading", "adaptive management", "precautionary", "ecosystem resilience", "threshold", "tipping point dynamics"],
+    "exclude": []
+  },
+  "CRIT": {
+    "range": [341, 380],
+    "keywords": ["scientific method", "hypothesis", "theory", "scientific law", "peer review", "replication", "scientific consensus", "logical fallac", "false dichotomy", "appeal to nature", "cherry-picking", "anecdotal", "correlation vs", "source evaluation", "conflicts of interest", "primary research", "media coverage", "statistical literacy", "sample size", "confidence interval", "margin of error", "media literacy", "headline", "algorithm amplification", "constructive skepticism", "misinformation", "climate denial", "greenwashing", "fact-checking", "data visualization misuse", "pseudoscience", "conspiracy", "confirmation bias", "science communication", "evidence-based", "risk assessment", "cost-benefit", "environmental justice", "citizen science", "environmental ethics"],
+    "exclude": []
+  }
+}

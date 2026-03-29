@@ -1,0 +1,4451 @@
+{
+  "metadata": {
+    "title": "Ecology: Systems Thinking for a Changing Planet",
+    "description": "An interactive intelligent textbook covering ecosystems, biodiversity, populations, Earth systems, resource use, pollution, global change, systems thinking, and scientific literacy for high school students.",
+    "creator": "Dan McCreary",
+    "date": "2026-03-29",
+    "version": "1.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {
+    "FOUND": {
+      "classifierName": "Foundation Concepts",
+      "color": "LightCoral",
+      "font": {
+        "color": "white"
+      }
+    },
+    "ECOS": {
+      "classifierName": "Ecosystems and Biomes",
+      "color": "PaleGreen",
+      "font": {
+        "color": "black"
+      }
+    },
+    "ENFL": {
+      "classifierName": "Energy Flow",
+      "color": "LightYellow",
+      "font": {
+        "color": "black"
+      }
+    },
+    "CYCL": {
+      "classifierName": "Biogeochemical Cycles",
+      "color": "PowderBlue",
+      "font": {
+        "color": "black"
+      }
+    },
+    "INTR": {
+      "classifierName": "Species Interactions",
+      "color": "PeachPuff",
+      "font": {
+        "color": "black"
+      }
+    },
+    "BIOD": {
+      "classifierName": "Biodiversity and Services",
+      "color": "Plum",
+      "font": {
+        "color": "white"
+      }
+    },
+    "POPU": {
+      "classifierName": "Population Ecology",
+      "color": "LightPink",
+      "font": {
+        "color": "black"
+      }
+    },
+    "ERTH": {
+      "classifierName": "Earth Systems",
+      "color": "Thistle",
+      "font": {
+        "color": "black"
+      }
+    },
+    "LAND": {
+      "classifierName": "Land, Water, and Energy Use",
+      "color": "PaleTurquoise",
+      "font": {
+        "color": "black"
+      }
+    },
+    "POLL": {
+      "classifierName": "Pollution",
+      "color": "MistyRose",
+      "font": {
+        "color": "black"
+      }
+    },
+    "GLOB": {
+      "classifierName": "Global Change",
+      "color": "LightSteelBlue",
+      "font": {
+        "color": "black"
+      }
+    },
+    "SYST": {
+      "classifierName": "Systems Thinking",
+      "color": "Honeydew",
+      "font": {
+        "color": "black"
+      }
+    },
+    "CRIT": {
+      "classifierName": "Critical Thinking and Literacy",
+      "color": "Lavender",
+      "font": {
+        "color": "black"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Ecology",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 2,
+      "label": "Ecosystem",
+      "group": "FOUND"
+    },
+    {
+      "id": 3,
+      "label": "Biotic Factors",
+      "group": "FOUND"
+    },
+    {
+      "id": 4,
+      "label": "Abiotic Factors",
+      "group": "FOUND"
+    },
+    {
+      "id": 5,
+      "label": "Biodiversity",
+      "group": "FOUND"
+    },
+    {
+      "id": 6,
+      "label": "Species",
+      "group": "FOUND"
+    },
+    {
+      "id": 7,
+      "label": "Population",
+      "group": "FOUND"
+    },
+    {
+      "id": 8,
+      "label": "Community",
+      "group": "FOUND"
+    },
+    {
+      "id": 9,
+      "label": "Habitat",
+      "group": "FOUND"
+    },
+    {
+      "id": 10,
+      "label": "Niche",
+      "group": "FOUND"
+    },
+    {
+      "id": 11,
+      "label": "Biosphere",
+      "group": "FOUND"
+    },
+    {
+      "id": 12,
+      "label": "Biome",
+      "group": "FOUND"
+    },
+    {
+      "id": 13,
+      "label": "Energy",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 14,
+      "label": "Matter",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 15,
+      "label": "Nutrients",
+      "group": "FOUND"
+    },
+    {
+      "id": 16,
+      "label": "Photosynthesis",
+      "group": "FOUND"
+    },
+    {
+      "id": 17,
+      "label": "Cellular Respiration",
+      "group": "FOUND"
+    },
+    {
+      "id": 18,
+      "label": "Organic Molecules",
+      "group": "FOUND"
+    },
+    {
+      "id": 19,
+      "label": "Inorganic Molecules",
+      "group": "FOUND"
+    },
+    {
+      "id": 20,
+      "label": "Water Properties",
+      "group": "FOUND"
+    },
+    {
+      "id": 21,
+      "label": "Terrestrial Biomes",
+      "group": "ECOS"
+    },
+    {
+      "id": 22,
+      "label": "Tropical Rainforest",
+      "group": "ECOS"
+    },
+    {
+      "id": 23,
+      "label": "Temperate Forest",
+      "group": "ECOS"
+    },
+    {
+      "id": 24,
+      "label": "Desert Biome",
+      "group": "ECOS"
+    },
+    {
+      "id": 25,
+      "label": "Tundra Biome",
+      "group": "ECOS"
+    },
+    {
+      "id": 26,
+      "label": "Grassland Biome",
+      "group": "ECOS"
+    },
+    {
+      "id": 27,
+      "label": "Chaparral Biome",
+      "group": "ECOS"
+    },
+    {
+      "id": 28,
+      "label": "Taiga Biome",
+      "group": "ECOS"
+    },
+    {
+      "id": 29,
+      "label": "Aquatic Biomes",
+      "group": "ECOS"
+    },
+    {
+      "id": 30,
+      "label": "Freshwater Ecosystems",
+      "group": "ECOS"
+    },
+    {
+      "id": 31,
+      "label": "Rivers and Streams",
+      "group": "ECOS"
+    },
+    {
+      "id": 32,
+      "label": "Lakes and Ponds",
+      "group": "ECOS"
+    },
+    {
+      "id": 33,
+      "label": "Wetlands",
+      "group": "ECOS"
+    },
+    {
+      "id": 34,
+      "label": "Estuaries",
+      "group": "ECOS"
+    },
+    {
+      "id": 35,
+      "label": "Open Ocean",
+      "group": "ECOS"
+    },
+    {
+      "id": 36,
+      "label": "Coral Reefs",
+      "group": "ECOS"
+    },
+    {
+      "id": 37,
+      "label": "Deep Ocean",
+      "group": "ECOS"
+    },
+    {
+      "id": 38,
+      "label": "Marine Ecosystems",
+      "group": "ECOS"
+    },
+    {
+      "id": 39,
+      "label": "Producers",
+      "group": "ECOS"
+    },
+    {
+      "id": 40,
+      "label": "Consumers",
+      "group": "ECOS"
+    },
+    {
+      "id": 41,
+      "label": "Decomposers",
+      "group": "ECOS"
+    },
+    {
+      "id": 42,
+      "label": "Trophic Levels",
+      "group": "ECOS"
+    },
+    {
+      "id": 43,
+      "label": "Food Chains",
+      "group": "ECOS"
+    },
+    {
+      "id": 44,
+      "label": "Food Webs",
+      "group": "ECOS"
+    },
+    {
+      "id": 45,
+      "label": "Energy Pyramids",
+      "group": "ECOS"
+    },
+    {
+      "id": 46,
+      "label": "Primary Productivity",
+      "group": "ENFL"
+    },
+    {
+      "id": 47,
+      "label": "Gross Primary Productivity",
+      "group": "ENFL"
+    },
+    {
+      "id": 48,
+      "label": "Net Primary Productivity",
+      "group": "ENFL"
+    },
+    {
+      "id": 49,
+      "label": "Ten Percent Rule",
+      "group": "ENFL"
+    },
+    {
+      "id": 50,
+      "label": "Energy Transfer",
+      "group": "ENFL"
+    },
+    {
+      "id": 51,
+      "label": "Biomass",
+      "group": "ENFL"
+    },
+    {
+      "id": 52,
+      "label": "Autotrophs",
+      "group": "ENFL"
+    },
+    {
+      "id": 53,
+      "label": "Heterotrophs",
+      "group": "ENFL"
+    },
+    {
+      "id": 54,
+      "label": "Chemosynthesis",
+      "group": "ENFL"
+    },
+    {
+      "id": 55,
+      "label": "Thermodynamics in Ecology",
+      "group": "ENFL"
+    },
+    {
+      "id": 56,
+      "label": "Entropy in Ecosystems",
+      "group": "ENFL"
+    },
+    {
+      "id": 57,
+      "label": "Solar Energy Input",
+      "group": "ENFL"
+    },
+    {
+      "id": 58,
+      "label": "Energy Loss as Heat",
+      "group": "ENFL"
+    },
+    {
+      "id": 59,
+      "label": "Trophic Efficiency",
+      "group": "ENFL"
+    },
+    {
+      "id": 60,
+      "label": "Net Ecosystem Production",
+      "group": "ENFL"
+    },
+    {
+      "id": 61,
+      "label": "Biogeochemical Cycles",
+      "group": "CYCL"
+    },
+    {
+      "id": 62,
+      "label": "Carbon Cycle",
+      "group": "CYCL"
+    },
+    {
+      "id": 63,
+      "label": "Nitrogen Cycle",
+      "group": "CYCL"
+    },
+    {
+      "id": 64,
+      "label": "Phosphorus Cycle",
+      "group": "CYCL"
+    },
+    {
+      "id": 65,
+      "label": "Hydrologic Cycle",
+      "group": "CYCL"
+    },
+    {
+      "id": 66,
+      "label": "Nitrogen Fixation",
+      "group": "CYCL"
+    },
+    {
+      "id": 67,
+      "label": "Nitrification",
+      "group": "CYCL"
+    },
+    {
+      "id": 68,
+      "label": "Denitrification",
+      "group": "CYCL"
+    },
+    {
+      "id": 69,
+      "label": "Carbon Sequestration",
+      "group": "CYCL"
+    },
+    {
+      "id": 70,
+      "label": "Carbon Dioxide",
+      "group": "CYCL"
+    },
+    {
+      "id": 71,
+      "label": "Methane",
+      "group": "CYCL"
+    },
+    {
+      "id": 72,
+      "label": "Evaporation",
+      "group": "CYCL"
+    },
+    {
+      "id": 73,
+      "label": "Transpiration",
+      "group": "CYCL"
+    },
+    {
+      "id": 74,
+      "label": "Precipitation",
+      "group": "CYCL"
+    },
+    {
+      "id": 75,
+      "label": "Runoff",
+      "group": "CYCL"
+    },
+    {
+      "id": 76,
+      "label": "Groundwater",
+      "group": "CYCL"
+    },
+    {
+      "id": 77,
+      "label": "Aquifer",
+      "group": "CYCL"
+    },
+    {
+      "id": 78,
+      "label": "Nutrient Cycling",
+      "group": "CYCL"
+    },
+    {
+      "id": 79,
+      "label": "Decomposition",
+      "group": "CYCL"
+    },
+    {
+      "id": 80,
+      "label": "Phosphorus Runoff",
+      "group": "CYCL"
+    },
+    {
+      "id": 81,
+      "label": "Predation",
+      "group": "INTR"
+    },
+    {
+      "id": 82,
+      "label": "Competition",
+      "group": "INTR"
+    },
+    {
+      "id": 83,
+      "label": "Mutualism",
+      "group": "INTR"
+    },
+    {
+      "id": 84,
+      "label": "Commensalism",
+      "group": "INTR"
+    },
+    {
+      "id": 85,
+      "label": "Parasitism",
+      "group": "INTR"
+    },
+    {
+      "id": 86,
+      "label": "Symbiosis",
+      "group": "INTR"
+    },
+    {
+      "id": 87,
+      "label": "Herbivory",
+      "group": "INTR"
+    },
+    {
+      "id": 88,
+      "label": "Keystone Species",
+      "group": "INTR"
+    },
+    {
+      "id": 89,
+      "label": "Indicator Species",
+      "group": "INTR"
+    },
+    {
+      "id": 90,
+      "label": "Foundation Species",
+      "group": "INTR"
+    },
+    {
+      "id": 91,
+      "label": "Invasive Species",
+      "group": "INTR"
+    },
+    {
+      "id": 92,
+      "label": "Native Species",
+      "group": "INTR"
+    },
+    {
+      "id": 93,
+      "label": "Coevolution",
+      "group": "INTR"
+    },
+    {
+      "id": 94,
+      "label": "Mimicry",
+      "group": "INTR"
+    },
+    {
+      "id": 95,
+      "label": "Camouflage",
+      "group": "INTR"
+    },
+    {
+      "id": 96,
+      "label": "Competitive Exclusion",
+      "group": "INTR"
+    },
+    {
+      "id": 97,
+      "label": "Resource Partitioning",
+      "group": "INTR"
+    },
+    {
+      "id": 98,
+      "label": "Predator-Prey Dynamics",
+      "group": "INTR"
+    },
+    {
+      "id": 99,
+      "label": "Ecological Niche",
+      "group": "INTR"
+    },
+    {
+      "id": 100,
+      "label": "Interspecific Competition",
+      "group": "INTR"
+    },
+    {
+      "id": 101,
+      "label": "Genetic Diversity",
+      "group": "BIOD"
+    },
+    {
+      "id": 102,
+      "label": "Species Diversity",
+      "group": "BIOD"
+    },
+    {
+      "id": 103,
+      "label": "Ecosystem Diversity",
+      "group": "BIOD"
+    },
+    {
+      "id": 104,
+      "label": "Ecosystem Services",
+      "group": "BIOD"
+    },
+    {
+      "id": 105,
+      "label": "Provisioning Services",
+      "group": "BIOD"
+    },
+    {
+      "id": 106,
+      "label": "Regulating Services",
+      "group": "BIOD"
+    },
+    {
+      "id": 107,
+      "label": "Cultural Services",
+      "group": "BIOD"
+    },
+    {
+      "id": 108,
+      "label": "Supporting Services",
+      "group": "BIOD"
+    },
+    {
+      "id": 109,
+      "label": "Island Biogeography",
+      "group": "BIOD"
+    },
+    {
+      "id": 110,
+      "label": "Species-Area Relationship",
+      "group": "BIOD"
+    },
+    {
+      "id": 111,
+      "label": "Ecological Tolerance",
+      "group": "BIOD"
+    },
+    {
+      "id": 112,
+      "label": "Tolerance Range",
+      "group": "BIOD"
+    },
+    {
+      "id": 113,
+      "label": "Adaptations",
+      "group": "BIOD"
+    },
+    {
+      "id": 114,
+      "label": "Natural Selection",
+      "group": "BIOD"
+    },
+    {
+      "id": 115,
+      "label": "Natural Disruptions",
+      "group": "BIOD"
+    },
+    {
+      "id": 116,
+      "label": "Ecological Succession",
+      "group": "BIOD"
+    },
+    {
+      "id": 117,
+      "label": "Primary Succession",
+      "group": "BIOD"
+    },
+    {
+      "id": 118,
+      "label": "Secondary Succession",
+      "group": "BIOD"
+    },
+    {
+      "id": 119,
+      "label": "Pioneer Species",
+      "group": "BIOD"
+    },
+    {
+      "id": 120,
+      "label": "Climax Community",
+      "group": "BIOD"
+    },
+    {
+      "id": 121,
+      "label": "Population Size",
+      "group": "POPU"
+    },
+    {
+      "id": 122,
+      "label": "Population Density",
+      "group": "POPU"
+    },
+    {
+      "id": 123,
+      "label": "Population Distribution",
+      "group": "POPU"
+    },
+    {
+      "id": 124,
+      "label": "Generalist Species",
+      "group": "POPU"
+    },
+    {
+      "id": 125,
+      "label": "Specialist Species",
+      "group": "POPU"
+    },
+    {
+      "id": 126,
+      "label": "R-Selected Species",
+      "group": "POPU"
+    },
+    {
+      "id": 127,
+      "label": "K-Selected Species",
+      "group": "POPU"
+    },
+    {
+      "id": 128,
+      "label": "Survivorship Curves",
+      "group": "POPU"
+    },
+    {
+      "id": 129,
+      "label": "Type I Survivorship",
+      "group": "POPU"
+    },
+    {
+      "id": 130,
+      "label": "Type II Survivorship",
+      "group": "POPU"
+    },
+    {
+      "id": 131,
+      "label": "Type III Survivorship",
+      "group": "POPU"
+    },
+    {
+      "id": 132,
+      "label": "Carrying Capacity",
+      "group": "POPU"
+    },
+    {
+      "id": 133,
+      "label": "Exponential Growth",
+      "group": "POPU"
+    },
+    {
+      "id": 134,
+      "label": "Logistic Growth",
+      "group": "POPU"
+    },
+    {
+      "id": 135,
+      "label": "Overshoot",
+      "group": "POPU"
+    },
+    {
+      "id": 136,
+      "label": "Population Crash",
+      "group": "POPU"
+    },
+    {
+      "id": 137,
+      "label": "Limiting Factors",
+      "group": "POPU"
+    },
+    {
+      "id": 138,
+      "label": "Density-Dependent Factors",
+      "group": "POPU"
+    },
+    {
+      "id": 139,
+      "label": "Density-Independent Factors",
+      "group": "POPU"
+    },
+    {
+      "id": 140,
+      "label": "Birth Rate",
+      "group": "POPU"
+    },
+    {
+      "id": 141,
+      "label": "Death Rate",
+      "group": "POPU"
+    },
+    {
+      "id": 142,
+      "label": "Immigration",
+      "group": "POPU"
+    },
+    {
+      "id": 143,
+      "label": "Emigration",
+      "group": "POPU"
+    },
+    {
+      "id": 144,
+      "label": "Age Structure Diagrams",
+      "group": "POPU"
+    },
+    {
+      "id": 145,
+      "label": "Total Fertility Rate",
+      "group": "POPU"
+    },
+    {
+      "id": 146,
+      "label": "Rule of Seventy",
+      "group": "POPU"
+    },
+    {
+      "id": 147,
+      "label": "Demographic Transition",
+      "group": "POPU"
+    },
+    {
+      "id": 148,
+      "label": "Human Population Growth",
+      "group": "POPU"
+    },
+    {
+      "id": 149,
+      "label": "Population Momentum",
+      "group": "POPU"
+    },
+    {
+      "id": 150,
+      "label": "Zero Population Growth",
+      "group": "POPU"
+    },
+    {
+      "id": 151,
+      "label": "Plate Tectonics",
+      "group": "ERTH",
+      "shape": "box"
+    },
+    {
+      "id": 152,
+      "label": "Convergent Boundaries",
+      "group": "ERTH"
+    },
+    {
+      "id": 153,
+      "label": "Divergent Boundaries",
+      "group": "ERTH"
+    },
+    {
+      "id": 154,
+      "label": "Transform Boundaries",
+      "group": "ERTH"
+    },
+    {
+      "id": 155,
+      "label": "Soil Formation",
+      "group": "ERTH"
+    },
+    {
+      "id": 156,
+      "label": "Soil Erosion",
+      "group": "ERTH"
+    },
+    {
+      "id": 157,
+      "label": "Soil Horizons",
+      "group": "ERTH"
+    },
+    {
+      "id": 158,
+      "label": "Soil Texture Triangle",
+      "group": "ERTH"
+    },
+    {
+      "id": 159,
+      "label": "Soil Composition",
+      "group": "ERTH"
+    },
+    {
+      "id": 160,
+      "label": "Earth's Atmosphere",
+      "group": "ERTH"
+    },
+    {
+      "id": 161,
+      "label": "Atmospheric Layers",
+      "group": "ERTH"
+    },
+    {
+      "id": 162,
+      "label": "Troposphere",
+      "group": "ERTH"
+    },
+    {
+      "id": 163,
+      "label": "Stratosphere",
+      "group": "ERTH"
+    },
+    {
+      "id": 164,
+      "label": "Global Wind Patterns",
+      "group": "ERTH"
+    },
+    {
+      "id": 165,
+      "label": "Coriolis Effect",
+      "group": "ERTH"
+    },
+    {
+      "id": 166,
+      "label": "Convection Cells",
+      "group": "ERTH"
+    },
+    {
+      "id": 167,
+      "label": "Watersheds",
+      "group": "ERTH"
+    },
+    {
+      "id": 168,
+      "label": "Solar Radiation",
+      "group": "ERTH"
+    },
+    {
+      "id": 169,
+      "label": "Seasons",
+      "group": "ERTH"
+    },
+    {
+      "id": 170,
+      "label": "Climate Patterns",
+      "group": "ERTH"
+    },
+    {
+      "id": 171,
+      "label": "Rain Shadow Effect",
+      "group": "ERTH"
+    },
+    {
+      "id": 172,
+      "label": "El Nino",
+      "group": "ERTH"
+    },
+    {
+      "id": 173,
+      "label": "La Nina",
+      "group": "ERTH"
+    },
+    {
+      "id": 174,
+      "label": "ENSO Cycle",
+      "group": "ERTH"
+    },
+    {
+      "id": 175,
+      "label": "Albedo",
+      "group": "ERTH"
+    },
+    {
+      "id": 176,
+      "label": "Tragedy of the Commons",
+      "group": "LAND"
+    },
+    {
+      "id": 177,
+      "label": "Clearcutting",
+      "group": "LAND"
+    },
+    {
+      "id": 178,
+      "label": "Deforestation",
+      "group": "LAND"
+    },
+    {
+      "id": 179,
+      "label": "Green Revolution",
+      "group": "LAND"
+    },
+    {
+      "id": 180,
+      "label": "Agricultural Impacts",
+      "group": "LAND"
+    },
+    {
+      "id": 181,
+      "label": "Monoculture",
+      "group": "LAND"
+    },
+    {
+      "id": 182,
+      "label": "Polyculture",
+      "group": "LAND"
+    },
+    {
+      "id": 183,
+      "label": "Salinization",
+      "group": "LAND"
+    },
+    {
+      "id": 184,
+      "label": "Waterlogging",
+      "group": "LAND"
+    },
+    {
+      "id": 185,
+      "label": "Aquifer Depletion",
+      "group": "LAND"
+    },
+    {
+      "id": 186,
+      "label": "Irrigation Methods",
+      "group": "LAND"
+    },
+    {
+      "id": 187,
+      "label": "Pest Control Methods",
+      "group": "LAND"
+    },
+    {
+      "id": 188,
+      "label": "Pesticides",
+      "group": "LAND"
+    },
+    {
+      "id": 189,
+      "label": "Biological Pest Control",
+      "group": "LAND"
+    },
+    {
+      "id": 190,
+      "label": "Integrated Pest Management",
+      "group": "LAND"
+    },
+    {
+      "id": 191,
+      "label": "Meat Production",
+      "group": "LAND"
+    },
+    {
+      "id": 192,
+      "label": "CAFOs",
+      "group": "LAND"
+    },
+    {
+      "id": 193,
+      "label": "Overfishing",
+      "group": "LAND"
+    },
+    {
+      "id": 194,
+      "label": "Bycatch",
+      "group": "LAND"
+    },
+    {
+      "id": 195,
+      "label": "Surface Mining",
+      "group": "LAND"
+    },
+    {
+      "id": 196,
+      "label": "Subsurface Mining",
+      "group": "LAND"
+    },
+    {
+      "id": 197,
+      "label": "Urbanization",
+      "group": "LAND"
+    },
+    {
+      "id": 198,
+      "label": "Impervious Surfaces",
+      "group": "LAND"
+    },
+    {
+      "id": 199,
+      "label": "Urban Heat Island",
+      "group": "LAND"
+    },
+    {
+      "id": 200,
+      "label": "Ecological Footprint",
+      "group": "LAND"
+    },
+    {
+      "id": 201,
+      "label": "Sustainability",
+      "group": "LAND"
+    },
+    {
+      "id": 202,
+      "label": "Sustainable Agriculture",
+      "group": "LAND"
+    },
+    {
+      "id": 203,
+      "label": "Crop Rotation",
+      "group": "LAND"
+    },
+    {
+      "id": 204,
+      "label": "No-Till Farming",
+      "group": "LAND"
+    },
+    {
+      "id": 205,
+      "label": "Aquaculture",
+      "group": "LAND"
+    },
+    {
+      "id": 206,
+      "label": "Sustainable Forestry",
+      "group": "LAND"
+    },
+    {
+      "id": 207,
+      "label": "Urban Runoff Reduction",
+      "group": "LAND"
+    },
+    {
+      "id": 208,
+      "label": "Conservation",
+      "group": "LAND"
+    },
+    {
+      "id": 209,
+      "label": "Preservation",
+      "group": "LAND"
+    },
+    {
+      "id": 210,
+      "label": "Maximum Sustainable Yield",
+      "group": "LAND"
+    },
+    {
+      "id": 211,
+      "label": "Renewable Resources",
+      "group": "LAND"
+    },
+    {
+      "id": 212,
+      "label": "Nonrenewable Resources",
+      "group": "LAND"
+    },
+    {
+      "id": 213,
+      "label": "Global Energy Consumption",
+      "group": "LAND"
+    },
+    {
+      "id": 214,
+      "label": "Fossil Fuels",
+      "group": "LAND"
+    },
+    {
+      "id": 215,
+      "label": "Coal",
+      "group": "LAND"
+    },
+    {
+      "id": 216,
+      "label": "Oil",
+      "group": "LAND"
+    },
+    {
+      "id": 217,
+      "label": "Natural Gas",
+      "group": "LAND"
+    },
+    {
+      "id": 218,
+      "label": "Nuclear Power",
+      "group": "LAND"
+    },
+    {
+      "id": 219,
+      "label": "Nuclear Fission",
+      "group": "LAND"
+    },
+    {
+      "id": 220,
+      "label": "Nuclear Fusion",
+      "group": "LAND"
+    },
+    {
+      "id": 221,
+      "label": "Radioactive Half-Life",
+      "group": "LAND"
+    },
+    {
+      "id": 222,
+      "label": "Nuclear Waste",
+      "group": "LAND"
+    },
+    {
+      "id": 223,
+      "label": "Biomass Energy",
+      "group": "LAND"
+    },
+    {
+      "id": 224,
+      "label": "Solar Energy",
+      "group": "LAND"
+    },
+    {
+      "id": 225,
+      "label": "Active Solar Energy",
+      "group": "LAND"
+    },
+    {
+      "id": 226,
+      "label": "Passive Solar Energy",
+      "group": "LAND"
+    },
+    {
+      "id": 227,
+      "label": "Photovoltaic Cells",
+      "group": "LAND"
+    },
+    {
+      "id": 228,
+      "label": "Hydroelectric Power",
+      "group": "LAND"
+    },
+    {
+      "id": 229,
+      "label": "Geothermal Energy",
+      "group": "LAND"
+    },
+    {
+      "id": 230,
+      "label": "Hydrogen Fuel Cells",
+      "group": "LAND"
+    },
+    {
+      "id": 231,
+      "label": "Wind Energy",
+      "group": "LAND"
+    },
+    {
+      "id": 232,
+      "label": "Energy Conservation",
+      "group": "LAND"
+    },
+    {
+      "id": 233,
+      "label": "Cogeneration",
+      "group": "LAND"
+    },
+    {
+      "id": 234,
+      "label": "Energy Return on Investment",
+      "group": "LAND"
+    },
+    {
+      "id": 235,
+      "label": "Energy Efficiency",
+      "group": "LAND"
+    },
+    {
+      "id": 236,
+      "label": "Air Pollution",
+      "group": "POLL"
+    },
+    {
+      "id": 237,
+      "label": "Primary Pollutants",
+      "group": "POLL"
+    },
+    {
+      "id": 238,
+      "label": "Secondary Pollutants",
+      "group": "POLL"
+    },
+    {
+      "id": 239,
+      "label": "Criteria Air Pollutants",
+      "group": "POLL"
+    },
+    {
+      "id": 240,
+      "label": "Carbon Monoxide",
+      "group": "POLL"
+    },
+    {
+      "id": 241,
+      "label": "Sulfur Dioxide",
+      "group": "POLL"
+    },
+    {
+      "id": 242,
+      "label": "Nitrogen Oxides",
+      "group": "POLL"
+    },
+    {
+      "id": 243,
+      "label": "Ground-Level Ozone",
+      "group": "POLL"
+    },
+    {
+      "id": 244,
+      "label": "Particulate Matter",
+      "group": "POLL"
+    },
+    {
+      "id": 245,
+      "label": "Lead Pollution",
+      "group": "POLL"
+    },
+    {
+      "id": 246,
+      "label": "Volatile Organic Compounds",
+      "group": "POLL"
+    },
+    {
+      "id": 247,
+      "label": "Photochemical Smog",
+      "group": "POLL"
+    },
+    {
+      "id": 248,
+      "label": "Thermal Inversion",
+      "group": "POLL"
+    },
+    {
+      "id": 249,
+      "label": "Indoor Air Pollutants",
+      "group": "POLL"
+    },
+    {
+      "id": 250,
+      "label": "Radon",
+      "group": "POLL"
+    },
+    {
+      "id": 251,
+      "label": "Asbestos",
+      "group": "POLL"
+    },
+    {
+      "id": 252,
+      "label": "Acid Rain",
+      "group": "POLL"
+    },
+    {
+      "id": 253,
+      "label": "Noise Pollution",
+      "group": "POLL"
+    },
+    {
+      "id": 254,
+      "label": "Clean Air Act",
+      "group": "POLL"
+    },
+    {
+      "id": 255,
+      "label": "Catalytic Converters",
+      "group": "POLL"
+    },
+    {
+      "id": 256,
+      "label": "Point Source Pollution",
+      "group": "POLL"
+    },
+    {
+      "id": 257,
+      "label": "Nonpoint Source Pollution",
+      "group": "POLL"
+    },
+    {
+      "id": 258,
+      "label": "Endocrine Disruptors",
+      "group": "POLL"
+    },
+    {
+      "id": 259,
+      "label": "Wetland Destruction",
+      "group": "ECOS"
+    },
+    {
+      "id": 260,
+      "label": "Eutrophication",
+      "group": "POLL"
+    },
+    {
+      "id": 261,
+      "label": "Algal Blooms",
+      "group": "POLL"
+    },
+    {
+      "id": 262,
+      "label": "Dead Zones",
+      "group": "POLL"
+    },
+    {
+      "id": 263,
+      "label": "Dissolved Oxygen",
+      "group": "POLL"
+    },
+    {
+      "id": 264,
+      "label": "Biological Oxygen Demand",
+      "group": "POLL"
+    },
+    {
+      "id": 265,
+      "label": "Thermal Pollution",
+      "group": "POLL"
+    },
+    {
+      "id": 266,
+      "label": "Persistent Organic Pollutants",
+      "group": "POLL"
+    },
+    {
+      "id": 267,
+      "label": "Bioaccumulation",
+      "group": "POLL"
+    },
+    {
+      "id": 268,
+      "label": "Biomagnification",
+      "group": "POLL"
+    },
+    {
+      "id": 269,
+      "label": "Solid Waste Disposal",
+      "group": "POLL"
+    },
+    {
+      "id": 270,
+      "label": "Landfills",
+      "group": "POLL"
+    },
+    {
+      "id": 271,
+      "label": "Incineration",
+      "group": "POLL"
+    },
+    {
+      "id": 272,
+      "label": "Recycling",
+      "group": "POLL"
+    },
+    {
+      "id": 273,
+      "label": "Waste Reduction",
+      "group": "POLL"
+    },
+    {
+      "id": 274,
+      "label": "Sewage Treatment",
+      "group": "POLL"
+    },
+    {
+      "id": 275,
+      "label": "LD50",
+      "group": "POLL"
+    },
+    {
+      "id": 276,
+      "label": "Dose-Response Curves",
+      "group": "POLL"
+    },
+    {
+      "id": 277,
+      "label": "Threshold Effects",
+      "group": "POLL"
+    },
+    {
+      "id": 278,
+      "label": "Pathogens",
+      "group": "POLL"
+    },
+    {
+      "id": 279,
+      "label": "Clean Water Act",
+      "group": "POLL"
+    },
+    {
+      "id": 280,
+      "label": "CERCLA Superfund",
+      "group": "POLL"
+    },
+    {
+      "id": 281,
+      "label": "Ozone Layer",
+      "group": "POLL"
+    },
+    {
+      "id": 282,
+      "label": "Stratospheric Ozone Depletion",
+      "group": "POLL"
+    },
+    {
+      "id": 283,
+      "label": "Chlorofluorocarbons",
+      "group": "GLOB"
+    },
+    {
+      "id": 284,
+      "label": "Montreal Protocol",
+      "group": "GLOB"
+    },
+    {
+      "id": 285,
+      "label": "Greenhouse Effect",
+      "group": "GLOB"
+    },
+    {
+      "id": 286,
+      "label": "Greenhouse Gases",
+      "group": "GLOB"
+    },
+    {
+      "id": 287,
+      "label": "Global Climate Change",
+      "group": "GLOB"
+    },
+    {
+      "id": 288,
+      "label": "Climate Change Evidence",
+      "group": "GLOB"
+    },
+    {
+      "id": 289,
+      "label": "Climate Models",
+      "group": "GLOB"
+    },
+    {
+      "id": 290,
+      "label": "Ocean Warming",
+      "group": "ECOS"
+    },
+    {
+      "id": 291,
+      "label": "Ocean Acidification",
+      "group": "ECOS"
+    },
+    {
+      "id": 292,
+      "label": "Sea Level Rise",
+      "group": "GLOB"
+    },
+    {
+      "id": 293,
+      "label": "Coral Bleaching",
+      "group": "GLOB"
+    },
+    {
+      "id": 294,
+      "label": "Ice-Albedo Feedback",
+      "group": "ERTH"
+    },
+    {
+      "id": 295,
+      "label": "Permafrost Methane Release",
+      "group": "GLOB"
+    },
+    {
+      "id": 296,
+      "label": "Tipping Points",
+      "group": "GLOB"
+    },
+    {
+      "id": 297,
+      "label": "Endangered Species",
+      "group": "GLOB"
+    },
+    {
+      "id": 298,
+      "label": "Habitat Loss",
+      "group": "GLOB"
+    },
+    {
+      "id": 299,
+      "label": "HIPPO Framework",
+      "group": "GLOB"
+    },
+    {
+      "id": 300,
+      "label": "Overexploitation",
+      "group": "GLOB"
+    },
+    {
+      "id": 301,
+      "label": "Endangered Species Act",
+      "group": "GLOB"
+    },
+    {
+      "id": 302,
+      "label": "CITES",
+      "group": "GLOB"
+    },
+    {
+      "id": 303,
+      "label": "Kyoto Protocol",
+      "group": "GLOB"
+    },
+    {
+      "id": 304,
+      "label": "Paris Agreement",
+      "group": "GLOB"
+    },
+    {
+      "id": 305,
+      "label": "Carbon Tax",
+      "group": "GLOB"
+    },
+    {
+      "id": 306,
+      "label": "Cap and Trade",
+      "group": "GLOB"
+    },
+    {
+      "id": 307,
+      "label": "Biodiversity Hotspots",
+      "group": "GLOB"
+    },
+    {
+      "id": 308,
+      "label": "Habitat Fragmentation",
+      "group": "GLOB"
+    },
+    {
+      "id": 309,
+      "label": "Wildlife Corridors",
+      "group": "GLOB"
+    },
+    {
+      "id": 310,
+      "label": "Species Extinction",
+      "group": "GLOB"
+    },
+    {
+      "id": 311,
+      "label": "Systems Thinking",
+      "group": "SYST"
+    },
+    {
+      "id": 312,
+      "label": "System",
+      "group": "SYST",
+      "shape": "box"
+    },
+    {
+      "id": 313,
+      "label": "Stocks and Flows",
+      "group": "SYST"
+    },
+    {
+      "id": 314,
+      "label": "Feedback Loops",
+      "group": "SYST"
+    },
+    {
+      "id": 315,
+      "label": "Reinforcing Feedback",
+      "group": "SYST"
+    },
+    {
+      "id": 316,
+      "label": "Balancing Feedback",
+      "group": "SYST"
+    },
+    {
+      "id": 317,
+      "label": "Causal Loop Diagrams",
+      "group": "SYST"
+    },
+    {
+      "id": 318,
+      "label": "Stock and Flow Diagrams",
+      "group": "SYST"
+    },
+    {
+      "id": 319,
+      "label": "Leverage Points",
+      "group": "SYST"
+    },
+    {
+      "id": 320,
+      "label": "Emergence",
+      "group": "SYST"
+    },
+    {
+      "id": 321,
+      "label": "Resilience",
+      "group": "SYST"
+    },
+    {
+      "id": 322,
+      "label": "Regime Shifts",
+      "group": "SYST"
+    },
+    {
+      "id": 323,
+      "label": "Scale and Hierarchy",
+      "group": "SYST"
+    },
+    {
+      "id": 324,
+      "label": "Mental Models",
+      "group": "SYST"
+    },
+    {
+      "id": 325,
+      "label": "Unintended Consequences",
+      "group": "SYST"
+    },
+    {
+      "id": 326,
+      "label": "Time Delays",
+      "group": "SYST"
+    },
+    {
+      "id": 327,
+      "label": "Nonlinear Change",
+      "group": "SYST"
+    },
+    {
+      "id": 328,
+      "label": "Complex Systems",
+      "group": "SYST"
+    },
+    {
+      "id": 329,
+      "label": "Dynamic Equilibrium",
+      "group": "SYST"
+    },
+    {
+      "id": 330,
+      "label": "Positive Feedback",
+      "group": "SYST"
+    },
+    {
+      "id": 331,
+      "label": "Negative Feedback",
+      "group": "SYST"
+    },
+    {
+      "id": 332,
+      "label": "System Boundaries",
+      "group": "SYST"
+    },
+    {
+      "id": 333,
+      "label": "Interconnectedness",
+      "group": "SYST"
+    },
+    {
+      "id": 334,
+      "label": "Trade-Offs",
+      "group": "SYST"
+    },
+    {
+      "id": 335,
+      "label": "Cascading Effects",
+      "group": "SYST"
+    },
+    {
+      "id": 336,
+      "label": "Adaptive Management",
+      "group": "SYST"
+    },
+    {
+      "id": 337,
+      "label": "Precautionary Principle",
+      "group": "SYST"
+    },
+    {
+      "id": 338,
+      "label": "Ecosystem Resilience",
+      "group": "SYST"
+    },
+    {
+      "id": 339,
+      "label": "Threshold",
+      "group": "SYST"
+    },
+    {
+      "id": 340,
+      "label": "Tipping Point Dynamics",
+      "group": "SYST"
+    },
+    {
+      "id": 341,
+      "label": "Scientific Method",
+      "group": "CRIT"
+    },
+    {
+      "id": 342,
+      "label": "Hypothesis",
+      "group": "CRIT",
+      "shape": "box"
+    },
+    {
+      "id": 343,
+      "label": "Theory",
+      "group": "CRIT"
+    },
+    {
+      "id": 344,
+      "label": "Scientific Law",
+      "group": "CRIT"
+    },
+    {
+      "id": 345,
+      "label": "Peer Review",
+      "group": "CRIT"
+    },
+    {
+      "id": 346,
+      "label": "Replication",
+      "group": "CRIT"
+    },
+    {
+      "id": 347,
+      "label": "Scientific Consensus",
+      "group": "CRIT"
+    },
+    {
+      "id": 348,
+      "label": "Logical Fallacies",
+      "group": "CRIT"
+    },
+    {
+      "id": 349,
+      "label": "False Dichotomy",
+      "group": "CRIT"
+    },
+    {
+      "id": 350,
+      "label": "Appeal to Nature",
+      "group": "CRIT"
+    },
+    {
+      "id": 351,
+      "label": "Cherry-Picking Data",
+      "group": "CRIT"
+    },
+    {
+      "id": 352,
+      "label": "Anecdotal Evidence",
+      "group": "CRIT"
+    },
+    {
+      "id": 353,
+      "label": "Correlation vs Causation",
+      "group": "CRIT"
+    },
+    {
+      "id": 354,
+      "label": "Source Evaluation",
+      "group": "CRIT"
+    },
+    {
+      "id": 355,
+      "label": "Conflicts of Interest",
+      "group": "CRIT"
+    },
+    {
+      "id": 356,
+      "label": "Primary Research",
+      "group": "CRIT"
+    },
+    {
+      "id": 357,
+      "label": "Media Coverage of Science",
+      "group": "CRIT"
+    },
+    {
+      "id": 358,
+      "label": "Statistical Literacy",
+      "group": "CRIT"
+    },
+    {
+      "id": 359,
+      "label": "Sample Size",
+      "group": "CRIT"
+    },
+    {
+      "id": 360,
+      "label": "Confidence Intervals",
+      "group": "CRIT"
+    },
+    {
+      "id": 361,
+      "label": "Margin of Error",
+      "group": "CRIT"
+    },
+    {
+      "id": 362,
+      "label": "Media Literacy",
+      "group": "CRIT"
+    },
+    {
+      "id": 363,
+      "label": "Headline Distortion",
+      "group": "CRIT"
+    },
+    {
+      "id": 364,
+      "label": "Algorithm Amplification",
+      "group": "CRIT"
+    },
+    {
+      "id": 365,
+      "label": "Constructive Skepticism",
+      "group": "CRIT"
+    },
+    {
+      "id": 366,
+      "label": "Environmental Misinformation",
+      "group": "CRIT"
+    },
+    {
+      "id": 367,
+      "label": "Climate Change Denial",
+      "group": "GLOB"
+    },
+    {
+      "id": 368,
+      "label": "Greenwashing",
+      "group": "CRIT"
+    },
+    {
+      "id": 369,
+      "label": "Fact-Checking Methods",
+      "group": "CRIT"
+    },
+    {
+      "id": 370,
+      "label": "Data Visualization Misuse",
+      "group": "CRIT"
+    },
+    {
+      "id": 371,
+      "label": "Pseudoscience",
+      "group": "CRIT"
+    },
+    {
+      "id": 372,
+      "label": "Conspiracy Thinking",
+      "group": "CRIT"
+    },
+    {
+      "id": 373,
+      "label": "Confirmation Bias",
+      "group": "CRIT"
+    },
+    {
+      "id": 374,
+      "label": "Science Communication",
+      "group": "CRIT"
+    },
+    {
+      "id": 375,
+      "label": "Evidence-Based Arguments",
+      "group": "CRIT"
+    },
+    {
+      "id": 376,
+      "label": "Risk Assessment",
+      "group": "CRIT"
+    },
+    {
+      "id": 377,
+      "label": "Cost-Benefit Analysis",
+      "group": "CRIT"
+    },
+    {
+      "id": 378,
+      "label": "Environmental Justice",
+      "group": "CRIT"
+    },
+    {
+      "id": 379,
+      "label": "Citizen Science",
+      "group": "CRIT"
+    },
+    {
+      "id": 380,
+      "label": "Environmental Ethics",
+      "group": "CRIT"
+    }
+  ],
+  "edges": [
+    {
+      "from": 2,
+      "to": 1
+    },
+    {
+      "from": 3,
+      "to": 2
+    },
+    {
+      "from": 4,
+      "to": 2
+    },
+    {
+      "from": 5,
+      "to": 1
+    },
+    {
+      "from": 5,
+      "to": 6
+    },
+    {
+      "from": 6,
+      "to": 1
+    },
+    {
+      "from": 7,
+      "to": 6
+    },
+    {
+      "from": 8,
+      "to": 6
+    },
+    {
+      "from": 8,
+      "to": 7
+    },
+    {
+      "from": 9,
+      "to": 2
+    },
+    {
+      "from": 9,
+      "to": 4
+    },
+    {
+      "from": 10,
+      "to": 6
+    },
+    {
+      "from": 10,
+      "to": 9
+    },
+    {
+      "from": 11,
+      "to": 2
+    },
+    {
+      "from": 12,
+      "to": 2
+    },
+    {
+      "from": 12,
+      "to": 9
+    },
+    {
+      "from": 15,
+      "to": 14
+    },
+    {
+      "from": 16,
+      "to": 13
+    },
+    {
+      "from": 16,
+      "to": 14
+    },
+    {
+      "from": 17,
+      "to": 13
+    },
+    {
+      "from": 17,
+      "to": 16
+    },
+    {
+      "from": 18,
+      "to": 14
+    },
+    {
+      "from": 19,
+      "to": 14
+    },
+    {
+      "from": 20,
+      "to": 14
+    },
+    {
+      "from": 21,
+      "to": 12
+    },
+    {
+      "from": 22,
+      "to": 21
+    },
+    {
+      "from": 23,
+      "to": 21
+    },
+    {
+      "from": 24,
+      "to": 21
+    },
+    {
+      "from": 25,
+      "to": 21
+    },
+    {
+      "from": 26,
+      "to": 21
+    },
+    {
+      "from": 27,
+      "to": 21
+    },
+    {
+      "from": 28,
+      "to": 21
+    },
+    {
+      "from": 29,
+      "to": 12
+    },
+    {
+      "from": 29,
+      "to": 20
+    },
+    {
+      "from": 30,
+      "to": 29
+    },
+    {
+      "from": 31,
+      "to": 30
+    },
+    {
+      "from": 32,
+      "to": 30
+    },
+    {
+      "from": 33,
+      "to": 30
+    },
+    {
+      "from": 34,
+      "to": 30
+    },
+    {
+      "from": 34,
+      "to": 38
+    },
+    {
+      "from": 35,
+      "to": 38
+    },
+    {
+      "from": 36,
+      "to": 38
+    },
+    {
+      "from": 37,
+      "to": 38
+    },
+    {
+      "from": 38,
+      "to": 29
+    },
+    {
+      "from": 39,
+      "to": 16
+    },
+    {
+      "from": 39,
+      "to": 42
+    },
+    {
+      "from": 40,
+      "to": 17
+    },
+    {
+      "from": 40,
+      "to": 42
+    },
+    {
+      "from": 41,
+      "to": 17
+    },
+    {
+      "from": 41,
+      "to": 42
+    },
+    {
+      "from": 42,
+      "to": 13
+    },
+    {
+      "from": 42,
+      "to": 2
+    },
+    {
+      "from": 43,
+      "to": 39
+    },
+    {
+      "from": 43,
+      "to": 40
+    },
+    {
+      "from": 43,
+      "to": 41
+    },
+    {
+      "from": 44,
+      "to": 43
+    },
+    {
+      "from": 45,
+      "to": 42
+    },
+    {
+      "from": 45,
+      "to": 49
+    },
+    {
+      "from": 46,
+      "to": 16
+    },
+    {
+      "from": 46,
+      "to": 39
+    },
+    {
+      "from": 47,
+      "to": 46
+    },
+    {
+      "from": 48,
+      "to": 47
+    },
+    {
+      "from": 48,
+      "to": 17
+    },
+    {
+      "from": 49,
+      "to": 42
+    },
+    {
+      "from": 49,
+      "to": 50
+    },
+    {
+      "from": 50,
+      "to": 13
+    },
+    {
+      "from": 50,
+      "to": 42
+    },
+    {
+      "from": 51,
+      "to": 46
+    },
+    {
+      "from": 52,
+      "to": 16
+    },
+    {
+      "from": 53,
+      "to": 17
+    },
+    {
+      "from": 53,
+      "to": 40
+    },
+    {
+      "from": 54,
+      "to": 13
+    },
+    {
+      "from": 54,
+      "to": 37
+    },
+    {
+      "from": 55,
+      "to": 13
+    },
+    {
+      "from": 55,
+      "to": 50
+    },
+    {
+      "from": 56,
+      "to": 55
+    },
+    {
+      "from": 57,
+      "to": 13
+    },
+    {
+      "from": 58,
+      "to": 55
+    },
+    {
+      "from": 58,
+      "to": 17
+    },
+    {
+      "from": 59,
+      "to": 49
+    },
+    {
+      "from": 59,
+      "to": 50
+    },
+    {
+      "from": 60,
+      "to": 48
+    },
+    {
+      "from": 60,
+      "to": 17
+    },
+    {
+      "from": 61,
+      "to": 14
+    },
+    {
+      "from": 61,
+      "to": 15
+    },
+    {
+      "from": 61,
+      "to": 2
+    },
+    {
+      "from": 62,
+      "to": 61
+    },
+    {
+      "from": 63,
+      "to": 61
+    },
+    {
+      "from": 64,
+      "to": 61
+    },
+    {
+      "from": 65,
+      "to": 61
+    },
+    {
+      "from": 65,
+      "to": 20
+    },
+    {
+      "from": 66,
+      "to": 63
+    },
+    {
+      "from": 66,
+      "to": 15
+    },
+    {
+      "from": 67,
+      "to": 63
+    },
+    {
+      "from": 67,
+      "to": 66
+    },
+    {
+      "from": 68,
+      "to": 63
+    },
+    {
+      "from": 68,
+      "to": 67
+    },
+    {
+      "from": 69,
+      "to": 62
+    },
+    {
+      "from": 70,
+      "to": 14
+    },
+    {
+      "from": 70,
+      "to": 62
+    },
+    {
+      "from": 71,
+      "to": 14
+    },
+    {
+      "from": 71,
+      "to": 62
+    },
+    {
+      "from": 72,
+      "to": 65
+    },
+    {
+      "from": 72,
+      "to": 20
+    },
+    {
+      "from": 73,
+      "to": 65
+    },
+    {
+      "from": 73,
+      "to": 16
+    },
+    {
+      "from": 74,
+      "to": 65
+    },
+    {
+      "from": 74,
+      "to": 72
+    },
+    {
+      "from": 75,
+      "to": 65
+    },
+    {
+      "from": 75,
+      "to": 74
+    },
+    {
+      "from": 76,
+      "to": 65
+    },
+    {
+      "from": 76,
+      "to": 75
+    },
+    {
+      "from": 77,
+      "to": 76
+    },
+    {
+      "from": 78,
+      "to": 61
+    },
+    {
+      "from": 78,
+      "to": 41
+    },
+    {
+      "from": 79,
+      "to": 41
+    },
+    {
+      "from": 79,
+      "to": 78
+    },
+    {
+      "from": 80,
+      "to": 64
+    },
+    {
+      "from": 80,
+      "to": 75
+    },
+    {
+      "from": 81,
+      "to": 40
+    },
+    {
+      "from": 81,
+      "to": 82
+    },
+    {
+      "from": 82,
+      "to": 7
+    },
+    {
+      "from": 82,
+      "to": 10
+    },
+    {
+      "from": 83,
+      "to": 86
+    },
+    {
+      "from": 84,
+      "to": 86
+    },
+    {
+      "from": 85,
+      "to": 86
+    },
+    {
+      "from": 86,
+      "to": 3
+    },
+    {
+      "from": 86,
+      "to": 6
+    },
+    {
+      "from": 87,
+      "to": 40
+    },
+    {
+      "from": 87,
+      "to": 39
+    },
+    {
+      "from": 88,
+      "to": 6
+    },
+    {
+      "from": 88,
+      "to": 8
+    },
+    {
+      "from": 88,
+      "to": 44
+    },
+    {
+      "from": 89,
+      "to": 6
+    },
+    {
+      "from": 89,
+      "to": 5
+    },
+    {
+      "from": 90,
+      "to": 6
+    },
+    {
+      "from": 90,
+      "to": 8
+    },
+    {
+      "from": 91,
+      "to": 6
+    },
+    {
+      "from": 91,
+      "to": 92
+    },
+    {
+      "from": 92,
+      "to": 6
+    },
+    {
+      "from": 92,
+      "to": 9
+    },
+    {
+      "from": 93,
+      "to": 81
+    },
+    {
+      "from": 93,
+      "to": 86
+    },
+    {
+      "from": 94,
+      "to": 81
+    },
+    {
+      "from": 94,
+      "to": 113
+    },
+    {
+      "from": 95,
+      "to": 81
+    },
+    {
+      "from": 95,
+      "to": 113
+    },
+    {
+      "from": 96,
+      "to": 82
+    },
+    {
+      "from": 96,
+      "to": 10
+    },
+    {
+      "from": 97,
+      "to": 82
+    },
+    {
+      "from": 97,
+      "to": 96
+    },
+    {
+      "from": 98,
+      "to": 81
+    },
+    {
+      "from": 98,
+      "to": 7
+    },
+    {
+      "from": 99,
+      "to": 10
+    },
+    {
+      "from": 100,
+      "to": 82
+    },
+    {
+      "from": 100,
+      "to": 6
+    },
+    {
+      "from": 101,
+      "to": 5
+    },
+    {
+      "from": 102,
+      "to": 5
+    },
+    {
+      "from": 102,
+      "to": 6
+    },
+    {
+      "from": 103,
+      "to": 5
+    },
+    {
+      "from": 103,
+      "to": 2
+    },
+    {
+      "from": 104,
+      "to": 2
+    },
+    {
+      "from": 104,
+      "to": 5
+    },
+    {
+      "from": 105,
+      "to": 104
+    },
+    {
+      "from": 106,
+      "to": 104
+    },
+    {
+      "from": 107,
+      "to": 104
+    },
+    {
+      "from": 108,
+      "to": 104
+    },
+    {
+      "from": 109,
+      "to": 110
+    },
+    {
+      "from": 109,
+      "to": 5
+    },
+    {
+      "from": 110,
+      "to": 5
+    },
+    {
+      "from": 110,
+      "to": 9
+    },
+    {
+      "from": 111,
+      "to": 6
+    },
+    {
+      "from": 111,
+      "to": 4
+    },
+    {
+      "from": 112,
+      "to": 111
+    },
+    {
+      "from": 113,
+      "to": 6
+    },
+    {
+      "from": 113,
+      "to": 114
+    },
+    {
+      "from": 114,
+      "to": 6
+    },
+    {
+      "from": 114,
+      "to": 101
+    },
+    {
+      "from": 115,
+      "to": 2
+    },
+    {
+      "from": 115,
+      "to": 4
+    },
+    {
+      "from": 116,
+      "to": 115
+    },
+    {
+      "from": 116,
+      "to": 8
+    },
+    {
+      "from": 117,
+      "to": 116
+    },
+    {
+      "from": 118,
+      "to": 116
+    },
+    {
+      "from": 119,
+      "to": 117
+    },
+    {
+      "from": 120,
+      "to": 116
+    },
+    {
+      "from": 120,
+      "to": 118
+    },
+    {
+      "from": 121,
+      "to": 7
+    },
+    {
+      "from": 122,
+      "to": 121
+    },
+    {
+      "from": 122,
+      "to": 9
+    },
+    {
+      "from": 123,
+      "to": 121
+    },
+    {
+      "from": 123,
+      "to": 9
+    },
+    {
+      "from": 124,
+      "to": 10
+    },
+    {
+      "from": 124,
+      "to": 111
+    },
+    {
+      "from": 125,
+      "to": 10
+    },
+    {
+      "from": 125,
+      "to": 111
+    },
+    {
+      "from": 126,
+      "to": 127
+    },
+    {
+      "from": 126,
+      "to": 133
+    },
+    {
+      "from": 127,
+      "to": 132
+    },
+    {
+      "from": 128,
+      "to": 129
+    },
+    {
+      "from": 128,
+      "to": 130
+    },
+    {
+      "from": 128,
+      "to": 131
+    },
+    {
+      "from": 129,
+      "to": 7
+    },
+    {
+      "from": 129,
+      "to": 140
+    },
+    {
+      "from": 129,
+      "to": 141
+    },
+    {
+      "from": 130,
+      "to": 7
+    },
+    {
+      "from": 130,
+      "to": 140
+    },
+    {
+      "from": 130,
+      "to": 141
+    },
+    {
+      "from": 131,
+      "to": 7
+    },
+    {
+      "from": 131,
+      "to": 140
+    },
+    {
+      "from": 131,
+      "to": 141
+    },
+    {
+      "from": 132,
+      "to": 7
+    },
+    {
+      "from": 132,
+      "to": 137
+    },
+    {
+      "from": 133,
+      "to": 7
+    },
+    {
+      "from": 133,
+      "to": 140
+    },
+    {
+      "from": 134,
+      "to": 133
+    },
+    {
+      "from": 134,
+      "to": 132
+    },
+    {
+      "from": 135,
+      "to": 134
+    },
+    {
+      "from": 135,
+      "to": 132
+    },
+    {
+      "from": 136,
+      "to": 135
+    },
+    {
+      "from": 137,
+      "to": 7
+    },
+    {
+      "from": 137,
+      "to": 4
+    },
+    {
+      "from": 138,
+      "to": 137
+    },
+    {
+      "from": 138,
+      "to": 122
+    },
+    {
+      "from": 139,
+      "to": 137
+    },
+    {
+      "from": 140,
+      "to": 7
+    },
+    {
+      "from": 141,
+      "to": 7
+    },
+    {
+      "from": 142,
+      "to": 7
+    },
+    {
+      "from": 142,
+      "to": 123
+    },
+    {
+      "from": 143,
+      "to": 7
+    },
+    {
+      "from": 143,
+      "to": 123
+    },
+    {
+      "from": 144,
+      "to": 140
+    },
+    {
+      "from": 144,
+      "to": 141
+    },
+    {
+      "from": 144,
+      "to": 7
+    },
+    {
+      "from": 145,
+      "to": 140
+    },
+    {
+      "from": 145,
+      "to": 7
+    },
+    {
+      "from": 146,
+      "to": 133
+    },
+    {
+      "from": 147,
+      "to": 148
+    },
+    {
+      "from": 147,
+      "to": 145
+    },
+    {
+      "from": 148,
+      "to": 7
+    },
+    {
+      "from": 148,
+      "to": 133
+    },
+    {
+      "from": 149,
+      "to": 144
+    },
+    {
+      "from": 149,
+      "to": 147
+    },
+    {
+      "from": 150,
+      "to": 140
+    },
+    {
+      "from": 150,
+      "to": 141
+    },
+    {
+      "from": 150,
+      "to": 132
+    },
+    {
+      "from": 152,
+      "to": 151
+    },
+    {
+      "from": 153,
+      "to": 151
+    },
+    {
+      "from": 154,
+      "to": 151
+    },
+    {
+      "from": 155,
+      "to": 151
+    },
+    {
+      "from": 155,
+      "to": 4
+    },
+    {
+      "from": 156,
+      "to": 155
+    },
+    {
+      "from": 157,
+      "to": 155
+    },
+    {
+      "from": 158,
+      "to": 159
+    },
+    {
+      "from": 159,
+      "to": 155
+    },
+    {
+      "from": 160,
+      "to": 4
+    },
+    {
+      "from": 161,
+      "to": 160
+    },
+    {
+      "from": 162,
+      "to": 161
+    },
+    {
+      "from": 163,
+      "to": 161
+    },
+    {
+      "from": 164,
+      "to": 160
+    },
+    {
+      "from": 164,
+      "to": 165
+    },
+    {
+      "from": 165,
+      "to": 168
+    },
+    {
+      "from": 166,
+      "to": 160
+    },
+    {
+      "from": 166,
+      "to": 13
+    },
+    {
+      "from": 167,
+      "to": 75
+    },
+    {
+      "from": 167,
+      "to": 76
+    },
+    {
+      "from": 168,
+      "to": 13
+    },
+    {
+      "from": 168,
+      "to": 57
+    },
+    {
+      "from": 169,
+      "to": 168
+    },
+    {
+      "from": 170,
+      "to": 164
+    },
+    {
+      "from": 170,
+      "to": 168
+    },
+    {
+      "from": 170,
+      "to": 169
+    },
+    {
+      "from": 171,
+      "to": 164
+    },
+    {
+      "from": 171,
+      "to": 74
+    },
+    {
+      "from": 172,
+      "to": 174
+    },
+    {
+      "from": 173,
+      "to": 174
+    },
+    {
+      "from": 174,
+      "to": 170
+    },
+    {
+      "from": 174,
+      "to": 290
+    },
+    {
+      "from": 175,
+      "to": 168
+    },
+    {
+      "from": 176,
+      "to": 201
+    },
+    {
+      "from": 176,
+      "to": 7
+    },
+    {
+      "from": 177,
+      "to": 178
+    },
+    {
+      "from": 178,
+      "to": 208
+    },
+    {
+      "from": 178,
+      "to": 21
+    },
+    {
+      "from": 179,
+      "to": 180
+    },
+    {
+      "from": 180,
+      "to": 201
+    },
+    {
+      "from": 180,
+      "to": 155
+    },
+    {
+      "from": 181,
+      "to": 180
+    },
+    {
+      "from": 182,
+      "to": 202
+    },
+    {
+      "from": 183,
+      "to": 186
+    },
+    {
+      "from": 183,
+      "to": 159
+    },
+    {
+      "from": 184,
+      "to": 186
+    },
+    {
+      "from": 185,
+      "to": 77
+    },
+    {
+      "from": 185,
+      "to": 186
+    },
+    {
+      "from": 186,
+      "to": 180
+    },
+    {
+      "from": 186,
+      "to": 77
+    },
+    {
+      "from": 187,
+      "to": 188
+    },
+    {
+      "from": 188,
+      "to": 180
+    },
+    {
+      "from": 188,
+      "to": 87
+    },
+    {
+      "from": 189,
+      "to": 187
+    },
+    {
+      "from": 189,
+      "to": 81
+    },
+    {
+      "from": 190,
+      "to": 187
+    },
+    {
+      "from": 190,
+      "to": 189
+    },
+    {
+      "from": 190,
+      "to": 202
+    },
+    {
+      "from": 191,
+      "to": 40
+    },
+    {
+      "from": 191,
+      "to": 180
+    },
+    {
+      "from": 192,
+      "to": 191
+    },
+    {
+      "from": 193,
+      "to": 210
+    },
+    {
+      "from": 193,
+      "to": 35
+    },
+    {
+      "from": 194,
+      "to": 193
+    },
+    {
+      "from": 195,
+      "to": 212
+    },
+    {
+      "from": 196,
+      "to": 212
+    },
+    {
+      "from": 197,
+      "to": 7
+    },
+    {
+      "from": 197,
+      "to": 148
+    },
+    {
+      "from": 198,
+      "to": 197
+    },
+    {
+      "from": 198,
+      "to": 75
+    },
+    {
+      "from": 199,
+      "to": 197
+    },
+    {
+      "from": 199,
+      "to": 168
+    },
+    {
+      "from": 200,
+      "to": 201
+    },
+    {
+      "from": 200,
+      "to": 213
+    },
+    {
+      "from": 201,
+      "to": 1
+    },
+    {
+      "from": 201,
+      "to": 13
+    },
+    {
+      "from": 202,
+      "to": 201
+    },
+    {
+      "from": 202,
+      "to": 180
+    },
+    {
+      "from": 203,
+      "to": 202
+    },
+    {
+      "from": 204,
+      "to": 202
+    },
+    {
+      "from": 204,
+      "to": 156
+    },
+    {
+      "from": 205,
+      "to": 201
+    },
+    {
+      "from": 205,
+      "to": 193
+    },
+    {
+      "from": 206,
+      "to": 201
+    },
+    {
+      "from": 206,
+      "to": 177
+    },
+    {
+      "from": 207,
+      "to": 198
+    },
+    {
+      "from": 207,
+      "to": 75
+    },
+    {
+      "from": 208,
+      "to": 201
+    },
+    {
+      "from": 208,
+      "to": 5
+    },
+    {
+      "from": 209,
+      "to": 201
+    },
+    {
+      "from": 209,
+      "to": 5
+    },
+    {
+      "from": 210,
+      "to": 201
+    },
+    {
+      "from": 210,
+      "to": 7
+    },
+    {
+      "from": 211,
+      "to": 13
+    },
+    {
+      "from": 211,
+      "to": 201
+    },
+    {
+      "from": 212,
+      "to": 13
+    },
+    {
+      "from": 212,
+      "to": 201
+    },
+    {
+      "from": 213,
+      "to": 13
+    },
+    {
+      "from": 213,
+      "to": 211
+    },
+    {
+      "from": 213,
+      "to": 212
+    },
+    {
+      "from": 214,
+      "to": 212
+    },
+    {
+      "from": 215,
+      "to": 214
+    },
+    {
+      "from": 216,
+      "to": 214
+    },
+    {
+      "from": 217,
+      "to": 214
+    },
+    {
+      "from": 218,
+      "to": 13
+    },
+    {
+      "from": 218,
+      "to": 212
+    },
+    {
+      "from": 219,
+      "to": 218
+    },
+    {
+      "from": 220,
+      "to": 218
+    },
+    {
+      "from": 221,
+      "to": 218
+    },
+    {
+      "from": 222,
+      "to": 218
+    },
+    {
+      "from": 222,
+      "to": 221
+    },
+    {
+      "from": 223,
+      "to": 211
+    },
+    {
+      "from": 223,
+      "to": 51
+    },
+    {
+      "from": 224,
+      "to": 211
+    },
+    {
+      "from": 224,
+      "to": 168
+    },
+    {
+      "from": 225,
+      "to": 224
+    },
+    {
+      "from": 226,
+      "to": 224
+    },
+    {
+      "from": 227,
+      "to": 224
+    },
+    {
+      "from": 228,
+      "to": 211
+    },
+    {
+      "from": 228,
+      "to": 65
+    },
+    {
+      "from": 229,
+      "to": 211
+    },
+    {
+      "from": 230,
+      "to": 211
+    },
+    {
+      "from": 231,
+      "to": 211
+    },
+    {
+      "from": 231,
+      "to": 164
+    },
+    {
+      "from": 232,
+      "to": 235
+    },
+    {
+      "from": 233,
+      "to": 232
+    },
+    {
+      "from": 234,
+      "to": 213
+    },
+    {
+      "from": 234,
+      "to": 211
+    },
+    {
+      "from": 234,
+      "to": 212
+    },
+    {
+      "from": 235,
+      "to": 13
+    },
+    {
+      "from": 235,
+      "to": 201
+    },
+    {
+      "from": 236,
+      "to": 160
+    },
+    {
+      "from": 237,
+      "to": 236
+    },
+    {
+      "from": 238,
+      "to": 237
+    },
+    {
+      "from": 239,
+      "to": 236
+    },
+    {
+      "from": 239,
+      "to": 254
+    },
+    {
+      "from": 240,
+      "to": 239
+    },
+    {
+      "from": 241,
+      "to": 239
+    },
+    {
+      "from": 242,
+      "to": 239
+    },
+    {
+      "from": 243,
+      "to": 238
+    },
+    {
+      "from": 243,
+      "to": 242
+    },
+    {
+      "from": 243,
+      "to": 246
+    },
+    {
+      "from": 244,
+      "to": 239
+    },
+    {
+      "from": 245,
+      "to": 239
+    },
+    {
+      "from": 246,
+      "to": 237
+    },
+    {
+      "from": 247,
+      "to": 243
+    },
+    {
+      "from": 247,
+      "to": 246
+    },
+    {
+      "from": 248,
+      "to": 162
+    },
+    {
+      "from": 248,
+      "to": 236
+    },
+    {
+      "from": 249,
+      "to": 236
+    },
+    {
+      "from": 250,
+      "to": 249
+    },
+    {
+      "from": 251,
+      "to": 249
+    },
+    {
+      "from": 252,
+      "to": 241
+    },
+    {
+      "from": 252,
+      "to": 242
+    },
+    {
+      "from": 252,
+      "to": 74
+    },
+    {
+      "from": 253,
+      "to": 236
+    },
+    {
+      "from": 254,
+      "to": 236
+    },
+    {
+      "from": 255,
+      "to": 237
+    },
+    {
+      "from": 255,
+      "to": 254
+    },
+    {
+      "from": 256,
+      "to": 236
+    },
+    {
+      "from": 257,
+      "to": 236
+    },
+    {
+      "from": 257,
+      "to": 75
+    },
+    {
+      "from": 258,
+      "to": 266
+    },
+    {
+      "from": 259,
+      "to": 33
+    },
+    {
+      "from": 259,
+      "to": 197
+    },
+    {
+      "from": 260,
+      "to": 80
+    },
+    {
+      "from": 260,
+      "to": 15
+    },
+    {
+      "from": 261,
+      "to": 260
+    },
+    {
+      "from": 262,
+      "to": 261
+    },
+    {
+      "from": 262,
+      "to": 263
+    },
+    {
+      "from": 263,
+      "to": 20
+    },
+    {
+      "from": 263,
+      "to": 30
+    },
+    {
+      "from": 264,
+      "to": 263
+    },
+    {
+      "from": 264,
+      "to": 79
+    },
+    {
+      "from": 265,
+      "to": 20
+    },
+    {
+      "from": 265,
+      "to": 236
+    },
+    {
+      "from": 266,
+      "to": 188
+    },
+    {
+      "from": 266,
+      "to": 236
+    },
+    {
+      "from": 267,
+      "to": 42
+    },
+    {
+      "from": 267,
+      "to": 188
+    },
+    {
+      "from": 268,
+      "to": 267
+    },
+    {
+      "from": 269,
+      "to": 197
+    },
+    {
+      "from": 269,
+      "to": 201
+    },
+    {
+      "from": 270,
+      "to": 269
+    },
+    {
+      "from": 271,
+      "to": 269
+    },
+    {
+      "from": 272,
+      "to": 273
+    },
+    {
+      "from": 273,
+      "to": 201
+    },
+    {
+      "from": 274,
+      "to": 279
+    },
+    {
+      "from": 275,
+      "to": 276
+    },
+    {
+      "from": 276,
+      "to": 236
+    },
+    {
+      "from": 277,
+      "to": 276
+    },
+    {
+      "from": 278,
+      "to": 85
+    },
+    {
+      "from": 278,
+      "to": 141
+    },
+    {
+      "from": 279,
+      "to": 256
+    },
+    {
+      "from": 279,
+      "to": 257
+    },
+    {
+      "from": 280,
+      "to": 279
+    },
+    {
+      "from": 280,
+      "to": 266
+    },
+    {
+      "from": 281,
+      "to": 163
+    },
+    {
+      "from": 282,
+      "to": 281
+    },
+    {
+      "from": 282,
+      "to": 283
+    },
+    {
+      "from": 283,
+      "to": 236
+    },
+    {
+      "from": 284,
+      "to": 282
+    },
+    {
+      "from": 285,
+      "to": 70
+    },
+    {
+      "from": 285,
+      "to": 168
+    },
+    {
+      "from": 286,
+      "to": 285
+    },
+    {
+      "from": 286,
+      "to": 70
+    },
+    {
+      "from": 286,
+      "to": 71
+    },
+    {
+      "from": 287,
+      "to": 286
+    },
+    {
+      "from": 288,
+      "to": 287
+    },
+    {
+      "from": 288,
+      "to": 170
+    },
+    {
+      "from": 289,
+      "to": 287
+    },
+    {
+      "from": 289,
+      "to": 358
+    },
+    {
+      "from": 290,
+      "to": 287
+    },
+    {
+      "from": 290,
+      "to": 35
+    },
+    {
+      "from": 291,
+      "to": 70
+    },
+    {
+      "from": 291,
+      "to": 287
+    },
+    {
+      "from": 292,
+      "to": 290
+    },
+    {
+      "from": 292,
+      "to": 175
+    },
+    {
+      "from": 293,
+      "to": 290
+    },
+    {
+      "from": 293,
+      "to": 36
+    },
+    {
+      "from": 294,
+      "to": 175
+    },
+    {
+      "from": 294,
+      "to": 315
+    },
+    {
+      "from": 295,
+      "to": 71
+    },
+    {
+      "from": 295,
+      "to": 287
+    },
+    {
+      "from": 295,
+      "to": 315
+    },
+    {
+      "from": 296,
+      "to": 287
+    },
+    {
+      "from": 296,
+      "to": 339
+    },
+    {
+      "from": 297,
+      "to": 5
+    },
+    {
+      "from": 297,
+      "to": 298
+    },
+    {
+      "from": 298,
+      "to": 197
+    },
+    {
+      "from": 298,
+      "to": 178
+    },
+    {
+      "from": 299,
+      "to": 297
+    },
+    {
+      "from": 299,
+      "to": 91
+    },
+    {
+      "from": 299,
+      "to": 148
+    },
+    {
+      "from": 299,
+      "to": 300
+    },
+    {
+      "from": 300,
+      "to": 193
+    },
+    {
+      "from": 300,
+      "to": 210
+    },
+    {
+      "from": 301,
+      "to": 297
+    },
+    {
+      "from": 302,
+      "to": 297
+    },
+    {
+      "from": 302,
+      "to": 300
+    },
+    {
+      "from": 303,
+      "to": 287
+    },
+    {
+      "from": 304,
+      "to": 287
+    },
+    {
+      "from": 304,
+      "to": 303
+    },
+    {
+      "from": 305,
+      "to": 287
+    },
+    {
+      "from": 305,
+      "to": 306
+    },
+    {
+      "from": 306,
+      "to": 287
+    },
+    {
+      "from": 307,
+      "to": 5
+    },
+    {
+      "from": 307,
+      "to": 298
+    },
+    {
+      "from": 308,
+      "to": 298
+    },
+    {
+      "from": 308,
+      "to": 109
+    },
+    {
+      "from": 309,
+      "to": 308
+    },
+    {
+      "from": 310,
+      "to": 298
+    },
+    {
+      "from": 310,
+      "to": 300
+    },
+    {
+      "from": 311,
+      "to": 312
+    },
+    {
+      "from": 313,
+      "to": 312
+    },
+    {
+      "from": 314,
+      "to": 312
+    },
+    {
+      "from": 315,
+      "to": 314
+    },
+    {
+      "from": 316,
+      "to": 314
+    },
+    {
+      "from": 317,
+      "to": 314
+    },
+    {
+      "from": 317,
+      "to": 315
+    },
+    {
+      "from": 317,
+      "to": 316
+    },
+    {
+      "from": 318,
+      "to": 313
+    },
+    {
+      "from": 319,
+      "to": 314
+    },
+    {
+      "from": 319,
+      "to": 311
+    },
+    {
+      "from": 320,
+      "to": 328
+    },
+    {
+      "from": 321,
+      "to": 312
+    },
+    {
+      "from": 321,
+      "to": 316
+    },
+    {
+      "from": 322,
+      "to": 321
+    },
+    {
+      "from": 322,
+      "to": 339
+    },
+    {
+      "from": 323,
+      "to": 312
+    },
+    {
+      "from": 324,
+      "to": 311
+    },
+    {
+      "from": 325,
+      "to": 314
+    },
+    {
+      "from": 325,
+      "to": 335
+    },
+    {
+      "from": 326,
+      "to": 314
+    },
+    {
+      "from": 326,
+      "to": 313
+    },
+    {
+      "from": 327,
+      "to": 296
+    },
+    {
+      "from": 327,
+      "to": 328
+    },
+    {
+      "from": 328,
+      "to": 312
+    },
+    {
+      "from": 328,
+      "to": 314
+    },
+    {
+      "from": 329,
+      "to": 316
+    },
+    {
+      "from": 329,
+      "to": 313
+    },
+    {
+      "from": 330,
+      "to": 315
+    },
+    {
+      "from": 331,
+      "to": 316
+    },
+    {
+      "from": 332,
+      "to": 312
+    },
+    {
+      "from": 333,
+      "to": 312
+    },
+    {
+      "from": 333,
+      "to": 314
+    },
+    {
+      "from": 334,
+      "to": 311
+    },
+    {
+      "from": 335,
+      "to": 314
+    },
+    {
+      "from": 335,
+      "to": 44
+    },
+    {
+      "from": 336,
+      "to": 311
+    },
+    {
+      "from": 336,
+      "to": 321
+    },
+    {
+      "from": 337,
+      "to": 376
+    },
+    {
+      "from": 337,
+      "to": 311
+    },
+    {
+      "from": 338,
+      "to": 321
+    },
+    {
+      "from": 338,
+      "to": 2
+    },
+    {
+      "from": 339,
+      "to": 312
+    },
+    {
+      "from": 340,
+      "to": 296
+    },
+    {
+      "from": 340,
+      "to": 322
+    },
+    {
+      "from": 341,
+      "to": 342
+    },
+    {
+      "from": 343,
+      "to": 342
+    },
+    {
+      "from": 343,
+      "to": 346
+    },
+    {
+      "from": 344,
+      "to": 343
+    },
+    {
+      "from": 345,
+      "to": 341
+    },
+    {
+      "from": 346,
+      "to": 341
+    },
+    {
+      "from": 347,
+      "to": 345
+    },
+    {
+      "from": 347,
+      "to": 346
+    },
+    {
+      "from": 348,
+      "to": 341
+    },
+    {
+      "from": 349,
+      "to": 348
+    },
+    {
+      "from": 350,
+      "to": 348
+    },
+    {
+      "from": 351,
+      "to": 348
+    },
+    {
+      "from": 351,
+      "to": 358
+    },
+    {
+      "from": 352,
+      "to": 348
+    },
+    {
+      "from": 353,
+      "to": 348
+    },
+    {
+      "from": 353,
+      "to": 358
+    },
+    {
+      "from": 354,
+      "to": 341
+    },
+    {
+      "from": 354,
+      "to": 356
+    },
+    {
+      "from": 355,
+      "to": 354
+    },
+    {
+      "from": 356,
+      "to": 345
+    },
+    {
+      "from": 356,
+      "to": 341
+    },
+    {
+      "from": 357,
+      "to": 356
+    },
+    {
+      "from": 358,
+      "to": 341
+    },
+    {
+      "from": 359,
+      "to": 358
+    },
+    {
+      "from": 360,
+      "to": 358
+    },
+    {
+      "from": 361,
+      "to": 358
+    },
+    {
+      "from": 362,
+      "to": 357
+    },
+    {
+      "from": 362,
+      "to": 354
+    },
+    {
+      "from": 363,
+      "to": 362
+    },
+    {
+      "from": 364,
+      "to": 362
+    },
+    {
+      "from": 365,
+      "to": 347
+    },
+    {
+      "from": 365,
+      "to": 348
+    },
+    {
+      "from": 365,
+      "to": 354
+    },
+    {
+      "from": 366,
+      "to": 365
+    },
+    {
+      "from": 366,
+      "to": 362
+    },
+    {
+      "from": 366,
+      "to": 354
+    },
+    {
+      "from": 367,
+      "to": 366
+    },
+    {
+      "from": 367,
+      "to": 287
+    },
+    {
+      "from": 368,
+      "to": 366
+    },
+    {
+      "from": 368,
+      "to": 201
+    },
+    {
+      "from": 369,
+      "to": 354
+    },
+    {
+      "from": 369,
+      "to": 366
+    },
+    {
+      "from": 370,
+      "to": 351
+    },
+    {
+      "from": 370,
+      "to": 358
+    },
+    {
+      "from": 371,
+      "to": 341
+    },
+    {
+      "from": 371,
+      "to": 365
+    },
+    {
+      "from": 372,
+      "to": 365
+    },
+    {
+      "from": 372,
+      "to": 371
+    },
+    {
+      "from": 373,
+      "to": 324
+    },
+    {
+      "from": 373,
+      "to": 365
+    },
+    {
+      "from": 374,
+      "to": 347
+    },
+    {
+      "from": 374,
+      "to": 375
+    },
+    {
+      "from": 375,
+      "to": 341
+    },
+    {
+      "from": 375,
+      "to": 358
+    },
+    {
+      "from": 375,
+      "to": 354
+    },
+    {
+      "from": 376,
+      "to": 358
+    },
+    {
+      "from": 376,
+      "to": 275
+    },
+    {
+      "from": 377,
+      "to": 376
+    },
+    {
+      "from": 377,
+      "to": 334
+    },
+    {
+      "from": 378,
+      "to": 197
+    },
+    {
+      "from": 378,
+      "to": 366
+    },
+    {
+      "from": 379,
+      "to": 341
+    },
+    {
+      "from": 379,
+      "to": 7
+    },
+    {
+      "from": 380,
+      "to": 1
+    },
+    {
+      "from": 380,
+      "to": 201
+    }
+  ]
+}

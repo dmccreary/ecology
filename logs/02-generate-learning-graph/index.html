@@ -1,0 +1,1831 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An interactive intelligent textbook for Ecology.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/ecology/logs/02-generate-learning-graph/">
+      
+      
+        <link rel="prev" href="../01-course-description-generation/">
+      
+      
+        <link rel="next" href="../03-book-chapter-generator/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Learning Graph Generation - Ecology - An Interactive Course</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-XXXXXXXXXX"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-XXXXXXXXXX",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta property="og:type" content="website">
+      
+        <meta property="og:title" content="Learning Graph Generation - Ecology - An Interactive Course">
+      
+        <meta property="og:description" content="An interactive intelligent textbook for Ecology.">
+      
+        <meta property="og:image" content="https://dmccreary.github.io/ecology/assets/images/social/logs/02-generate-learning-graph.png">
+      
+        <meta property="og:image:type" content="image/png">
+      
+        <meta property="og:image:width" content="1200">
+      
+        <meta property="og:image:height" content="630">
+      
+        <meta property="og:url" content="https://dmccreary.github.io/ecology/logs/02-generate-learning-graph/">
+      
+        <meta name="twitter:card" content="summary_large_image">
+      
+        <meta name="twitter:title" content="Learning Graph Generation - Ecology - An Interactive Course">
+      
+        <meta name="twitter:description" content="An interactive intelligent textbook for Ecology.">
+      
+        <meta name="twitter:image" content="https://dmccreary.github.io/ecology/assets/images/social/logs/02-generate-learning-graph.png">
+      
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#log-learning-graph-generation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Ecology - An Interactive Course" class="md-header__button md-logo" aria-label="Ecology - An Interactive Course" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ecology - An Interactive Course
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Learning Graph Generation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/ecology" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Ecology - An Interactive Course" class="md-nav__button md-logo" aria-label="Ecology - An Interactive Course" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    Ecology - An Interactive Course
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/ecology" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../chapters/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sims/graph-viewer/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/01-seed/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Logs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Logs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-course-description-generation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description Generation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Learning Graph Generation
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Learning Graph Generation
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-program-versions-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Program Versions Used
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Decisions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Decisions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#decision-1-number-of-concepts-380" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 1: Number of Concepts (380)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-2-six-foundational-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 2: Six Foundational Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-3-resolving-circular-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 3: Resolving Circular Dependencies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-4-self-referencing-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 4: Self-Referencing Dependencies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-5-13-taxonomy-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 5: 13 Taxonomy Categories
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-6-color-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 6: Color Assignments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-7-dependency-depth-and-breadth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 7: Dependency Depth and Breadth
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#steps-completed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps Completed
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Steps Completed">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-course-description-quality-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Course Description Quality Assessment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-generate-concept-labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Generate Concept Labels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-generate-dependency-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Generate Dependency Graph
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-quality-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Quality Validation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-concept-taxonomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Concept Taxonomy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5b-taxonomy-names-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5b: Taxonomy Names JSON
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-add-taxonomy-to-csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Add Taxonomy to CSV
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steps-7-8-metadata-and-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps 7-8: Metadata and Groups
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-9-generate-learning-graph-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 9: Generate Learning Graph JSON
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-10-taxonomy-distribution-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 10: Taxonomy Distribution Report
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-11-index-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 11: Index Page
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files-created" class="md-nav__link">
+    <span class="md-ellipsis">
+      Files Created
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-summary-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Summary Statistics
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03-book-chapter-generator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Book Chapter Generator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-program-versions-used" class="md-nav__link">
+    <span class="md-ellipsis">
+      Python Program Versions Used
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Decisions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Decisions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#decision-1-number-of-concepts-380" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 1: Number of Concepts (380)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-2-six-foundational-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 2: Six Foundational Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-3-resolving-circular-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 3: Resolving Circular Dependencies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-4-self-referencing-dependencies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 4: Self-Referencing Dependencies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-5-13-taxonomy-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 5: 13 Taxonomy Categories
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-6-color-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 6: Color Assignments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-7-dependency-depth-and-breadth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 7: Dependency Depth and Breadth
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#steps-completed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps Completed
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Steps Completed">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-course-description-quality-assessment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Course Description Quality Assessment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-generate-concept-labels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Generate Concept Labels
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-generate-dependency-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Generate Dependency Graph
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-quality-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Quality Validation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-concept-taxonomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Concept Taxonomy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5b-taxonomy-names-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5b: Taxonomy Names JSON
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-add-taxonomy-to-csv" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Add Taxonomy to CSV
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#steps-7-8-metadata-and-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Steps 7-8: Metadata and Groups
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-9-generate-learning-graph-json" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 9: Generate Learning Graph JSON
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-10-taxonomy-distribution-report" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 10: Taxonomy Distribution Report
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-11-index-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 11: Index Page
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files-created" class="md-nav__link">
+    <span class="md-ellipsis">
+      Files Created
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graph-summary-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graph Summary Statistics
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/ecology/edit/master/docs/logs/02-generate-learning-graph.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+    </a>
+  
+  
+
+
+<h1 id="log-learning-graph-generation">Log: Learning Graph Generation</h1>
+<p><strong>Date:</strong> 2026-03-29
+<strong>Skill:</strong> Learning Graph Generator v0.04
+<strong>Model:</strong> Claude Opus 4.6 (1M context)
+<strong>Task:</strong> Generate a comprehensive learning graph from the ecology course description</p>
+<h2 id="prompts">Prompts</h2>
+<p><strong>User prompt 1 (concept list review):</strong></p>
+<blockquote>
+<p>use as many concepts as needed</p>
+</blockquote>
+<p><strong>User prompt 2 (log and next step):</strong></p>
+<blockquote>
+<p>please create a detailed log of this in logs/02-generate-learning-graph.md including details of your design decisions. Then run the /book-installer with the install learning graph guide</p>
+</blockquote>
+<h2 id="python-program-versions-used">Python Program Versions Used</h2>
+<table>
+<thead>
+<tr>
+<th>Program</th>
+<th>Version</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>analyze-graph.py</td>
+<td>(from skill v0.04)</td>
+<td>DAG validation and quality metrics</td>
+</tr>
+<tr>
+<td>csv-to-json.py</td>
+<td>v0.03</td>
+<td>CSV to vis-network JSON conversion</td>
+</tr>
+<tr>
+<td>add-taxonomy.py</td>
+<td>(from skill v0.04)</td>
+<td>Assign taxonomy IDs to concepts</td>
+</tr>
+<tr>
+<td>taxonomy-distribution.py</td>
+<td>(from skill v0.04)</td>
+<td>Generate distribution report</td>
+</tr>
+</tbody>
+</table>
+<h2 id="design-decisions">Design Decisions</h2>
+<h3 id="decision-1-number-of-concepts-380">Decision 1: Number of Concepts (380)</h3>
+<p>The course description supports 250-300 concepts based on its breadth. I chose to generate <strong>380 concepts</strong> because:</p>
+<ul>
+<li>The course covers 11 full units spanning ecology, Earth science, energy, pollution, systems thinking, and scientific literacy -- this is broader than a typical single-discipline course</li>
+<li>Units 10 (Systems Thinking) and 11 (Evaluating Environmental Claims) add ~65 concepts that would not appear in a standard ecology textbook</li>
+<li>Ecology has many specific named biomes, pollutants, energy sources, and policy frameworks that are better represented as individual concepts than lumped together</li>
+<li>380 is well under the 500-concept maximum, leaving room for future additions without a restructure</li>
+</ul>
+<h3 id="decision-2-six-foundational-concepts">Decision 2: Six Foundational Concepts</h3>
+<p>I chose <strong>6 root nodes</strong> with zero dependencies:</p>
+<ol>
+<li><strong>Ecology</strong> (1) -- the discipline itself, anchoring all biological/ecological concepts</li>
+<li><strong>Energy</strong> (13) -- physics foundation needed for energy flow, thermodynamics, and all energy resource topics</li>
+<li><strong>Matter</strong> (14) -- chemistry foundation needed for nutrients, biogeochemical cycles, and pollution</li>
+<li><strong>Plate Tectonics</strong> (151) -- geological foundation independent of biology, needed for soil, atmosphere, and climate</li>
+<li><strong>System</strong> (312) -- the abstract concept underlying all systems thinking content</li>
+<li><strong>Hypothesis</strong> (342) -- the scientific method foundation underlying all critical thinking content</li>
+</ol>
+<p><strong>Why these six:</strong> Each represents an independent knowledge domain that feeds into the course. A student could start from any of these entry points. Making them all depend on "Ecology" would create an artificial bottleneck and misrepresent the prerequisite structure -- you don't need to know ecology to understand what a hypothesis is.</p>
+<h3 id="decision-3-resolving-circular-dependencies">Decision 3: Resolving Circular Dependencies</h3>
+<p>The initial graph generation produced <strong>6 circular dependencies</strong>. Each represents a genuine conceptual relationship where two ideas inform each other, but a DAG requires choosing a direction. My resolution logic:</p>
+<table>
+<thead>
+<tr>
+<th>Cycle</th>
+<th>Resolution</th>
+<th>Rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Solar Radiation &lt;-&gt; Solar Energy Input</td>
+<td>Removed Solar Radiation dependency from Solar Energy Input</td>
+<td>Solar Energy Input is a simpler concept (energy from the sun); Solar Radiation is the more technical treatment requiring it</td>
+</tr>
+<tr>
+<td>Carbon Dioxide &lt;-&gt; Carbon Cycle</td>
+<td>Removed CO2 dependency from Carbon Cycle</td>
+<td>You learn about the Carbon Cycle first as a system, then learn CO2 as a specific molecule within it</td>
+</tr>
+<tr>
+<td>Nitrogen Fixation &lt;-&gt; Nitrogen Cycle</td>
+<td>Removed N-Fixation dependency from N-Cycle</td>
+<td>The cycle is the overarching framework; fixation is a specific process within it</td>
+</tr>
+<tr>
+<td>Cost-Benefit Analysis &lt;-&gt; Trade-Offs</td>
+<td>Removed CBA dependency from Trade-Offs</td>
+<td>Trade-offs is the simpler, more general concept; CBA is a formal method that applies trade-off thinking</td>
+</tr>
+<tr>
+<td>Scientific Consensus &lt;-&gt; Peer Review</td>
+<td>Removed Consensus dependency from Peer Review</td>
+<td>Peer review is the process; consensus is the outcome that emerges from it</td>
+</tr>
+<tr>
+<td>Media Literacy &lt;-&gt; Media Coverage of Science</td>
+<td>Removed Media Literacy dependency from Media Coverage</td>
+<td>You can describe how media covers science without yet knowing how to critically evaluate media</td>
+</tr>
+</tbody>
+</table>
+<p><strong>General principle:</strong> When two concepts are mutually informative, I broke the cycle by asking "which concept can be meaningfully taught first without the other?" The simpler or more foundational concept gets taught first.</p>
+<h3 id="decision-4-self-referencing-dependencies">Decision 4: Self-Referencing Dependencies</h3>
+<p>Five concepts initially referenced themselves in the dependency list (IDs 207, 298, 378, 379, 380). This was a generation artifact where the concept was accidentally listed as its own prerequisite. Each was fixed by replacing with appropriate actual dependencies:</p>
+<ul>
+<li>207 (Urban Runoff Reduction): self-ref replaced with dependencies on Impervious Surfaces and Runoff</li>
+<li>298 (Habitat Loss): self-ref removed, kept Urbanization and Deforestation</li>
+<li>378 (Environmental Justice): self-ref replaced with Urbanization and Environmental Misinformation</li>
+<li>379 (Citizen Science): self-ref replaced with Scientific Method and Population</li>
+<li>380 (Environmental Ethics): self-ref replaced with Ecology and Sustainability</li>
+</ul>
+<h3 id="decision-5-13-taxonomy-categories">Decision 5: 13 Taxonomy Categories</h3>
+<p>I designed <strong>13 categories</strong> to balance several constraints:</p>
+<ol>
+<li><strong>Alignment with course units:</strong> Most categories map to 1-2 course units, making the taxonomy intuitive for students navigating the learning graph</li>
+<li><strong>Visual distinctiveness:</strong> 13 categories can each receive a distinct pastel CSS color without colors becoming too similar</li>
+<li><strong>Size balance:</strong> No category exceeds 16% (LAND at 15.8%), well under the 30% threshold</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>TaxonomyID</th>
+<th>Name</th>
+<th>Concepts</th>
+<th>%</th>
+<th>Mapped Units</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FOUND</td>
+<td>Foundation Concepts</td>
+<td>20</td>
+<td>5.3%</td>
+<td>Prerequisites</td>
+</tr>
+<tr>
+<td>ECOS</td>
+<td>Ecosystems and Biomes</td>
+<td>28</td>
+<td>7.4%</td>
+<td>Unit 1</td>
+</tr>
+<tr>
+<td>ENFL</td>
+<td>Energy Flow</td>
+<td>15</td>
+<td>3.9%</td>
+<td>Unit 1 (energy topics)</td>
+</tr>
+<tr>
+<td>CYCL</td>
+<td>Biogeochemical Cycles</td>
+<td>20</td>
+<td>5.3%</td>
+<td>Unit 1 (cycles)</td>
+</tr>
+<tr>
+<td>INTR</td>
+<td>Species Interactions</td>
+<td>20</td>
+<td>5.3%</td>
+<td>Unit 2 (interactions)</td>
+</tr>
+<tr>
+<td>BIOD</td>
+<td>Biodiversity and Services</td>
+<td>20</td>
+<td>5.3%</td>
+<td>Unit 2</td>
+</tr>
+<tr>
+<td>POPU</td>
+<td>Population Ecology</td>
+<td>30</td>
+<td>7.9%</td>
+<td>Unit 3</td>
+</tr>
+<tr>
+<td>ERTH</td>
+<td>Earth Systems</td>
+<td>26</td>
+<td>6.8%</td>
+<td>Unit 4</td>
+</tr>
+<tr>
+<td>LAND</td>
+<td>Land, Water, and Energy Use</td>
+<td>60</td>
+<td>15.8%</td>
+<td>Units 5-6</td>
+</tr>
+<tr>
+<td>POLL</td>
+<td>Pollution</td>
+<td>46</td>
+<td>12.1%</td>
+<td>Units 7-8</td>
+</tr>
+<tr>
+<td>GLOB</td>
+<td>Global Change</td>
+<td>26</td>
+<td>6.8%</td>
+<td>Unit 9</td>
+</tr>
+<tr>
+<td>SYST</td>
+<td>Systems Thinking</td>
+<td>30</td>
+<td>7.9%</td>
+<td>Unit 10</td>
+</tr>
+<tr>
+<td>CRIT</td>
+<td>Critical Thinking and Literacy</td>
+<td>39</td>
+<td>10.3%</td>
+<td>Unit 11</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Why LAND is the largest:</strong> Units 5 (Land and Water Use) and 6 (Energy Resources) were combined into one category because both deal with human resource use. Splitting them would create two small categories (agriculture ~25, energy ~35) that don't naturally separate in the dependency graph -- many energy concepts depend on land-use concepts and vice versa.</p>
+<p><strong>Why ECOS and ENFL are separate from CYCL:</strong> Unit 1 (Ecosystems) covers three distinct knowledge areas: biome types, energy flow, and biogeochemical cycles. These have different dependency structures -- biomes branch into specific types with few cross-connections, energy flow is a linear chain, and cycles are interconnected loops. Separate categories make the graph visualization much more readable.</p>
+<h3 id="decision-6-color-assignments">Decision 6: Color Assignments</h3>
+<p>Selected <strong>pastel CSS named colors</strong> (not hex codes) for accessibility and readability:</p>
+<ul>
+<li>Used warm colors (LightCoral, PeachPuff, LightPink, MistyRose) for biological topics (Foundation, Interactions, Population, Pollution)</li>
+<li>Used cool colors (PowderBlue, PaleTurquoise, LightSteelBlue, Thistle) for physical/Earth science topics</li>
+<li>Used neutral colors (Honeydew, Lavender, LightYellow) for meta-cognitive topics (Systems Thinking, Critical Thinking, Energy Flow)</li>
+<li>Avoided AliceBlue (too close to white backgrounds) per skill instructions</li>
+</ul>
+<h3 id="decision-7-dependency-depth-and-breadth">Decision 7: Dependency Depth and Breadth</h3>
+<p>The graph has:</p>
+<ul>
+<li><strong>Average dependencies per concept:</strong> 1.63 (healthy -- not too sparse, not overly connected)</li>
+<li><strong>Maximum chain length:</strong> 11 (Matter -&gt; Nutrients -&gt; Biogeochemical Cycles -&gt; Carbon Cycle -&gt; CO2 -&gt; Greenhouse Effect -&gt; Greenhouse Gases -&gt; Global Climate Change -&gt; Ocean Warming -&gt; ENSO Cycle -&gt; El Nino)</li>
+<li><strong>Terminal nodes:</strong> 181 (47.6%) -- slightly above the 40% recommended range</li>
+</ul>
+<p>The high terminal node percentage reflects the course's structure: many specific topics (individual biomes, specific pollutants, individual energy types, specific logical fallacies) are endpoints that nothing else depends on. This is appropriate for a survey course where students learn many specific examples without building further abstraction on top of them.</p>
+<h2 id="steps-completed">Steps Completed</h2>
+<h3 id="step-1-course-description-quality-assessment">Step 1: Course Description Quality Assessment</h3>
+<ul>
+<li><strong>Score:</strong> 100/100</li>
+<li>All elements present: title, audience, prerequisites, 11 units, topics excluded, Bloom's Taxonomy learning objectives (60 total across 6 levels)</li>
+<li>Estimated concept capacity: 250-300 concepts</li>
+<li>Saved to <code>learning-graph/course-description-assessment.md</code></li>
+</ul>
+<h3 id="step-2-generate-concept-labels">Step 2: Generate Concept Labels</h3>
+<ul>
+<li>Generated <strong>380 concepts</strong> organized in 14 thematic sections in the markdown file</li>
+<li>All labels in Title Case, under 32 characters</li>
+<li>Saved to <code>learning-graph/concept-list.md</code></li>
+</ul>
+<h3 id="step-3-generate-dependency-graph">Step 3: Generate Dependency Graph</h3>
+<ul>
+<li>Created CSV with 380 concepts and their prerequisites</li>
+<li>Fixed 5 self-referencing dependencies</li>
+<li>Fixed 6 circular dependencies via DFS cycle detection</li>
+<li>Saved to <code>learning-graph/learning-graph.csv</code></li>
+</ul>
+<h3 id="step-4-quality-validation">Step 4: Quality Validation</h3>
+<ul>
+<li>Ran <code>analyze-graph.py</code> to validate the DAG</li>
+<li><strong>Valid DAG:</strong> Yes (no cycles)</li>
+<li><strong>Orphaned Nodes:</strong> 0</li>
+<li><strong>Connected Components:</strong> 1 (all concepts in a single graph)</li>
+<li><strong>Foundational Concepts:</strong> 6</li>
+<li><strong>Terminal Nodes:</strong> 181 (47.6%)</li>
+<li><strong>Average Dependencies per Concept:</strong> 1.63</li>
+<li><strong>Maximum Chain Length:</strong> 11</li>
+<li><strong>Quality Score:</strong> 85/100</li>
+<li>Saved to <code>learning-graph/quality-metrics.md</code></li>
+</ul>
+<h3 id="step-5-concept-taxonomy">Step 5: Concept Taxonomy</h3>
+<ul>
+<li>Created 13 categories with 3-4 letter abbreviations</li>
+<li>Saved to <code>learning-graph/concept-taxonomy.md</code></li>
+</ul>
+<h3 id="step-5b-taxonomy-names-json">Step 5b: Taxonomy Names JSON</h3>
+<ul>
+<li>Created <code>taxonomy-names.json</code> mapping IDs to human-readable names</li>
+<li>This prevents the graph viewer legend from showing cryptic IDs</li>
+</ul>
+<h3 id="step-6-add-taxonomy-to-csv">Step 6: Add Taxonomy to CSV</h3>
+<ul>
+<li>Ran <code>add-taxonomy.py</code> with custom <code>taxonomy-config.json</code></li>
+<li>Fixed 3 MISC misclassifications:<ul>
+<li>Solar Energy Input (57): MISC -&gt; ENFL</li>
+<li>Human Population Growth (148): MISC -&gt; POPU</li>
+<li>Ground-Level Ozone (243): MISC -&gt; POLL</li>
+</ul>
+</li>
+<li>Fixed 3 misclassified concepts:<ul>
+<li>Deforestation (178): ECOS -&gt; LAND</li>
+<li>Sustainable Forestry (206): ECOS -&gt; LAND</li>
+<li>Urban Runoff Reduction (207): CYCL -&gt; LAND</li>
+</ul>
+</li>
+</ul>
+<h3 id="steps-7-8-metadata-and-groups">Steps 7-8: Metadata and Groups</h3>
+<ul>
+<li>Created <code>metadata.json</code> with Dublin Core fields (title, description, creator, date, version, license)</li>
+<li>Created <code>color-config.json</code> with 13 pastel CSS colors</li>
+</ul>
+<h3 id="step-9-generate-learning-graph-json">Step 9: Generate Learning Graph JSON</h3>
+<ul>
+<li>Ran <code>csv-to-json.py</code> v0.03</li>
+<li><strong>Output:</strong> <code>learning-graph.json</code></li>
+<li><strong>380 nodes, 609 edges, 13 groups</strong></li>
+</ul>
+<h3 id="step-10-taxonomy-distribution-report">Step 10: Taxonomy Distribution Report</h3>
+<ul>
+<li>Ran <code>taxonomy-distribution.py</code></li>
+<li>Saved to <code>learning-graph/taxonomy-distribution.md</code></li>
+</ul>
+<h3 id="step-11-index-page">Step 11: Index Page</h3>
+<ul>
+<li>Created <code>learning-graph/index.md</code> from template</li>
+<li>Customized for ecology textbook</li>
+<li>Updated <code>mkdocs.yml</code> navigation with Learning Graph section</li>
+</ul>
+<h2 id="files-created">Files Created</h2>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>learning-graph/index.md</code></td>
+<td>Introduction page for learning graph section</td>
+</tr>
+<tr>
+<td><code>learning-graph/course-description-assessment.md</code></td>
+<td>Quality assessment (100/100)</td>
+</tr>
+<tr>
+<td><code>learning-graph/concept-list.md</code></td>
+<td>380 numbered concepts</td>
+</tr>
+<tr>
+<td><code>learning-graph/learning-graph.csv</code></td>
+<td>Dependency graph with taxonomy (380 rows)</td>
+</tr>
+<tr>
+<td><code>learning-graph/learning-graph.json</code></td>
+<td>vis-network JSON (380 nodes, 609 edges, 13 groups)</td>
+</tr>
+<tr>
+<td><code>learning-graph/concept-taxonomy.md</code></td>
+<td>13 category definitions</td>
+</tr>
+<tr>
+<td><code>learning-graph/taxonomy-names.json</code></td>
+<td>Taxonomy ID to name mapping</td>
+</tr>
+<tr>
+<td><code>learning-graph/metadata.json</code></td>
+<td>Dublin Core metadata</td>
+</tr>
+<tr>
+<td><code>learning-graph/color-config.json</code></td>
+<td>Category color assignments</td>
+</tr>
+<tr>
+<td><code>learning-graph/taxonomy-config.json</code></td>
+<td>Keyword-based taxonomy assignment config</td>
+</tr>
+<tr>
+<td><code>learning-graph/quality-metrics.md</code></td>
+<td>DAG quality validation report</td>
+</tr>
+<tr>
+<td><code>learning-graph/taxonomy-distribution.md</code></td>
+<td>Category distribution analysis</td>
+</tr>
+</tbody>
+</table>
+<h2 id="graph-summary-statistics">Graph Summary Statistics</h2>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Total concepts</td>
+<td>380</td>
+</tr>
+<tr>
+<td>Total edges</td>
+<td>609</td>
+</tr>
+<tr>
+<td>Taxonomy categories</td>
+<td>13</td>
+</tr>
+<tr>
+<td>Foundational concepts (no prerequisites)</td>
+<td>6</td>
+</tr>
+<tr>
+<td>Terminal nodes (no dependents)</td>
+<td>181 (47.6%)</td>
+</tr>
+<tr>
+<td>Orphaned nodes</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Connected components</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Average dependencies per concept</td>
+<td>1.63</td>
+</tr>
+<tr>
+<td>Maximum dependency chain length</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Top prerequisite: Population (ID 7)</td>
+<td>21 dependents</td>
+</tr>
+<tr>
+<td>Top prerequisite: Sustainability (ID 201)</td>
+<td>16 dependents</td>
+</tr>
+<tr>
+<td>Top prerequisite: Species (ID 6)</td>
+<td>15 dependents</td>
+</tr>
+<tr>
+<td>Top prerequisite: Energy (ID 13)</td>
+<td>15 dependents</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../01-course-description-generation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Course Description Generation">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Course Description Generation
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../03-book-chapter-generator/" class="md-footer__link md-footer__link--next" aria-label="Next: Book Chapter Generator">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Book Chapter Generator
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax-config.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-chtml.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

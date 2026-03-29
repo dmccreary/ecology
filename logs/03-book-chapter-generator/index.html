@@ -1,0 +1,2120 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An interactive intelligent textbook for Ecology.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/ecology/logs/03-book-chapter-generator/">
+      
+      
+        <link rel="prev" href="../02-generate-learning-graph/">
+      
+      
+        <link rel="next" href="../../license/">
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Book Chapter Generator - Ecology - An Interactive Course</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-XXXXXXXXXX"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-XXXXXXXXXX",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta property="og:type" content="website">
+      
+        <meta property="og:title" content="Book Chapter Generator - Ecology - An Interactive Course">
+      
+        <meta property="og:description" content="An interactive intelligent textbook for Ecology.">
+      
+        <meta property="og:image" content="https://dmccreary.github.io/ecology/assets/images/social/logs/03-book-chapter-generator.png">
+      
+        <meta property="og:image:type" content="image/png">
+      
+        <meta property="og:image:width" content="1200">
+      
+        <meta property="og:image:height" content="630">
+      
+        <meta property="og:url" content="https://dmccreary.github.io/ecology/logs/03-book-chapter-generator/">
+      
+        <meta name="twitter:card" content="summary_large_image">
+      
+        <meta name="twitter:title" content="Book Chapter Generator - Ecology - An Interactive Course">
+      
+        <meta name="twitter:description" content="An interactive intelligent textbook for Ecology.">
+      
+        <meta name="twitter:image" content="https://dmccreary.github.io/ecology/assets/images/social/logs/03-book-chapter-generator.png">
+      
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#log-book-chapter-generator" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Ecology - An Interactive Course" class="md-header__button md-logo" aria-label="Ecology - An Interactive Course" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ecology - An Interactive Course
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Book Chapter Generator
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/ecology" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Ecology - An Interactive Course" class="md-nav__button md-logo" aria-label="Ecology - An Interactive Course" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    Ecology - An Interactive Course
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/ecology" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../chapters/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sims/graph-viewer/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/01-seed/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Logs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Logs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01-course-description-generation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description Generation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02-generate-learning-graph/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Learning Graph Generation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Book Chapter Generator
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Book Chapter Generator
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#critical-bug-edge-direction-misinterpretation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critical Bug: Edge Direction Misinterpretation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critical Bug: Edge Direction Misinterpretation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Problem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-it-was-detected" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Was Detected
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Impact
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#root-cause" class="md-nav__link">
+    <span class="md-ellipsis">
+      Root Cause
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommendations-for-skill-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommendations for Skill Updates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iteration-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iteration History
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Iteration History">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iteration-1-inverted-dependencies-discarded" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iteration 1: Inverted Dependencies (DISCARDED)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteration-2-corrected-direction-naive-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iteration 2: Corrected Direction, Naive Assignment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteration-3-moved-concepts-across-chapters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iteration 3: Moved Concepts Across Chapters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteration-4-restructured-sustainability-and-land-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iteration 4: Restructured Sustainability and Land Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteration-5-reordered-systems-thinking-before-global-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iteration 5: Reordered Systems Thinking Before Global Change
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteration-6-final-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iteration 6: Final Validation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-chapter-structure-pending-user-approval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Chapter Structure (Pending User Approval)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Decisions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Decisions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#decision-1-why-17-chapters-instead-of-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 1: Why 17 Chapters Instead of 20+
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-2-sustainability-before-energy-and-land-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 2: Sustainability Before Energy and Land Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-3-systems-thinking-and-scientific-literacy-before-global-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 3: Systems Thinking and Scientific Literacy Before Global Change
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-4-moving-tipping-points-to-global-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 4: Moving Tipping Points to Global Change
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-5-concepts-moved-between-taxonomy-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 5: Concepts Moved Between Taxonomy Groups
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timeline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#token-usage-estimates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Usage Estimates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommendations-for-skill-improvement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommendations for Skill Improvement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recommendations for Skill Improvement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#priority-1-document-edge-direction-critical" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priority 1: Document Edge Direction (CRITICAL)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#priority-2-add-validation-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priority 2: Add Validation Gate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#priority-3-add-strict-dependency-check-to-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priority 3: Add Strict Dependency Check to Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#priority-4-include-edge-direction-test-in-learning-graph-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priority 4: Include Edge Direction Test in Learning Graph Generator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files-created" class="md-nav__link">
+    <span class="md-ellipsis">
+      Files Created
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#prompts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prompts
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#critical-bug-edge-direction-misinterpretation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critical Bug: Edge Direction Misinterpretation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Critical Bug: Edge Direction Misinterpretation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Problem
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-it-was-detected" class="md-nav__link">
+    <span class="md-ellipsis">
+      How It Was Detected
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#impact" class="md-nav__link">
+    <span class="md-ellipsis">
+      Impact
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#root-cause" class="md-nav__link">
+    <span class="md-ellipsis">
+      Root Cause
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recommendations-for-skill-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommendations for Skill Updates
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iteration-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iteration History
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Iteration History">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iteration-1-inverted-dependencies-discarded" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iteration 1: Inverted Dependencies (DISCARDED)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteration-2-corrected-direction-naive-assignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iteration 2: Corrected Direction, Naive Assignment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteration-3-moved-concepts-across-chapters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iteration 3: Moved Concepts Across Chapters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteration-4-restructured-sustainability-and-land-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iteration 4: Restructured Sustainability and Land Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteration-5-reordered-systems-thinking-before-global-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iteration 5: Reordered Systems Thinking Before Global Change
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iteration-6-final-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Iteration 6: Final Validation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-chapter-structure-pending-user-approval" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Chapter Structure (Pending User Approval)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Design Decisions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Design Decisions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#decision-1-why-17-chapters-instead-of-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 1: Why 17 Chapters Instead of 20+
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-2-sustainability-before-energy-and-land-use" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 2: Sustainability Before Energy and Land Use
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-3-systems-thinking-and-scientific-literacy-before-global-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 3: Systems Thinking and Scientific Literacy Before Global Change
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-4-moving-tipping-points-to-global-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 4: Moving Tipping Points to Global Change
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-5-concepts-moved-between-taxonomy-groups" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision 5: Concepts Moved Between Taxonomy Groups
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timeline
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#token-usage-estimates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Usage Estimates
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommendations-for-skill-improvement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommendations for Skill Improvement
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Recommendations for Skill Improvement">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#priority-1-document-edge-direction-critical" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priority 1: Document Edge Direction (CRITICAL)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#priority-2-add-validation-gate" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priority 2: Add Validation Gate
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#priority-3-add-strict-dependency-check-to-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priority 3: Add Strict Dependency Check to Workflow
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#priority-4-include-edge-direction-test-in-learning-graph-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Priority 4: Include Edge Direction Test in Learning Graph Generator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files-created" class="md-nav__link">
+    <span class="md-ellipsis">
+      Files Created
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/ecology/edit/master/docs/logs/03-book-chapter-generator.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+    </a>
+  
+  
+
+
+<h1 id="log-book-chapter-generator">Log: Book Chapter Generator</h1>
+<p><strong>Date:</strong> 2026-03-29
+<strong>Skill:</strong> Book Chapter Generator (no version number in skill)
+<strong>Model:</strong> Claude Opus 4.6 (1M context)
+<strong>Task:</strong> Design chapter structure for the Ecology intelligent textbook</p>
+<h2 id="prompts">Prompts</h2>
+<p><strong>User prompt 1:</strong></p>
+<blockquote>
+<p>now run the /book-chapter-generator skill and try to keep the chapters under 25 concepts if possible. Describe your reasoning if you put more than 25 concepts in a chapter.</p>
+</blockquote>
+<p><strong>User prompt 2 (mid-iteration):</strong></p>
+<blockquote>
+<p>yes, getting the dependency direction flipped is a HUGE problem and will require a complete redesign. Please start over if you need to.</p>
+</blockquote>
+<p><strong>User prompt 3 (mid-iteration):</strong></p>
+<blockquote>
+<p>run an extra check that ensures that we never add a concept to a chapter if the prerequisite concepts have not ALREADY been covered. This is a key in chapter content design.</p>
+</blockquote>
+<p><strong>User prompt 4:</strong></p>
+<blockquote>
+<p>before I approve the chapter structure I want you to create a detailed log of the entire session so far...</p>
+</blockquote>
+<h2 id="critical-bug-edge-direction-misinterpretation">Critical Bug: Edge Direction Misinterpretation</h2>
+<h3 id="the-problem">The Problem</h3>
+<p>The vis-network JSON format used in <code>learning-graph.json</code> stores edges where:</p>
+<ul>
+<li><code>from</code> = the <strong>dependent</strong> concept (the one being learned)</li>
+<li><code>to</code> = the <strong>prerequisite</strong> concept (the one that must be learned first)</li>
+</ul>
+<p>This means edges point FROM dependent TO prerequisite. An edge <code>from=2 (Ecosystem) -&gt; to=1 (Ecology)</code> means "Ecosystem depends on Ecology."</p>
+<p>On the first attempt, the prerequisite map was built as:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># WRONG - treats 'to' as the dependent</span>
+<span class="n">prereqs</span><span class="p">[</span><span class="n">e</span><span class="p">[</span><span class="s1">'to'</span><span class="p">]]</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">e</span><span class="p">[</span><span class="s1">'from'</span><span class="p">])</span>  <span class="c1"># This says "1 depends on 2" -- BACKWARDS</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>The correct interpretation is:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># CORRECT - 'from' is the dependent, 'to' is the prerequisite</span>
+<span class="n">prereqs</span><span class="p">[</span><span class="n">e</span><span class="p">[</span><span class="s1">'from'</span><span class="p">]]</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">e</span><span class="p">[</span><span class="s1">'to'</span><span class="p">])</span>  <span class="c1"># This says "2 depends on 1" -- CORRECT</span>
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="how-it-was-detected">How It Was Detected</h3>
+<p>The first validation run reported <strong>224 dependency violations</strong>, including obviously wrong ones like "Ecology (concept 1, foundational) depends on Sustainability (concept 201, advanced)." The sheer number (224 out of 380 concepts) and the nature of the violations (foundational concepts "depending on" advanced concepts) made it clear the direction was flipped.</p>
+<h3 id="impact">Impact</h3>
+<ul>
+<li><strong>~15 minutes of wall clock time wasted</strong> on the first chapter design iteration that was based on inverted dependencies</li>
+<li><strong>~40,000 tokens wasted</strong> on generating, validating, and discussing the invalid design</li>
+<li>Required a complete restart of the dependency analysis</li>
+<li>The user had to intervene twice to flag the issue</li>
+</ul>
+<h3 id="root-cause">Root Cause</h3>
+<p>The book-chapter-generator skill does not document the edge direction convention used in <code>learning-graph.json</code>. The vis-network format is counterintuitive -- most people expect <code>from -&gt; to</code> to mean "from leads to to" (prerequisite -&gt; dependent), but the learning graph convention is the opposite: arrows point FROM the concept being learned TO its prerequisites.</p>
+<h3 id="recommendations-for-skill-updates">Recommendations for Skill Updates</h3>
+<ol>
+<li><strong>Add edge direction documentation to the skill prompt:</strong></li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>CRITICAL: In learning-graph.json, edges use the convention:
+- from = dependent concept (the one being learned)
+- to = prerequisite concept (must be learned first)
+
+To build a prerequisite map:
+  prereqs[edge['from']].add(edge['to'])
+
+Do NOT use prereqs[edge['to']].add(edge['from']) -- this inverts the DAG.
+</code></pre></div></td></tr></tbody></table></div>
+<ol>
+<li><strong>Add a sanity check at the start of Step 1:</strong></li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># Verify edge direction: foundational concepts should have</span>
+<span class="c1"># NO outgoing edges in the prereqs map (they depend on nothing)</span>
+<span class="n">foundational_ids</span> <span class="o">=</span> <span class="p">[</span><span class="n">n</span><span class="p">[</span><span class="s1">'id'</span><span class="p">]</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="n">nodes</span> <span class="k">if</span> <span class="n">n</span> <span class="n">has</span> <span class="n">no</span> <span class="n">prerequisites</span> <span class="ow">in</span> <span class="n">CSV</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">fid</span> <span class="ow">in</span> <span class="n">foundational_ids</span><span class="p">:</span>
+    <span class="k">assert</span> <span class="n">fid</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">prereqs</span><span class="p">,</span> <span class="sa">f</span><span class="s2">"Foundational concept </span><span class="si">{</span><span class="n">fid</span><span class="si">}</span><span class="s2"> has prerequisites -- edge direction may be wrong"</span>
+</code></pre></div></td></tr></tbody></table></div>
+<ol>
+<li><strong>Add an explicit validation step to the skill workflow</strong> between "Analyze Input Resources" and "Design Chapter Structure":</li>
+</ol>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>Step 1.5: Validate Edge Direction
+- Identify concepts with zero dependencies in the CSV
+- Verify these same concepts have zero entries in the prereqs map
+- If foundational concepts appear to have prerequisites, the edge
+  direction is inverted -- abort and fix before proceeding
+</code></pre></div></td></tr></tbody></table></div>
+<ol>
+<li>
+<p><strong>Include a worked example in the skill</strong> showing a 5-concept graph with edges and the correct prereqs map, so the LLM has an unambiguous reference.</p>
+</li>
+<li>
+<p><strong>Add the edge direction convention to the learning-graph-generator skill's JSON schema documentation</strong> so it's clear at the point of creation, not just at the point of consumption.</p>
+</li>
+</ol>
+<h2 id="iteration-history">Iteration History</h2>
+<h3 id="iteration-1-inverted-dependencies-discarded">Iteration 1: Inverted Dependencies (DISCARDED)</h3>
+<ul>
+<li>Built prereqs map with <code>prereqs[e['to']].add(e['from'])</code> (WRONG)</li>
+<li>Produced 224 dependency violations</li>
+<li>Concepts like Ecology and Energy appeared to depend on hundreds of advanced topics</li>
+<li><strong>Result:</strong> Completely invalid. Discarded.</li>
+<li><strong>Time:</strong> ~5 minutes</li>
+<li><strong>Tokens:</strong> ~20,000</li>
+</ul>
+<h3 id="iteration-2-corrected-direction-naive-assignment">Iteration 2: Corrected Direction, Naive Assignment</h3>
+<ul>
+<li>Fixed to <code>prereqs[e['from']].add(e['to'])</code> (CORRECT)</li>
+<li>18 chapters with concepts assigned by ID ranges matching taxonomy groups</li>
+<li><strong>18 violations</strong> -- mostly cross-chapter dependency issues:</li>
+<li>Energy Pyramids (ch2) needed Ten Percent Rule (ch3)</li>
+<li>Mimicry/Camouflage (ch5) needed Adaptations (ch6)</li>
+<li>ENSO Cycle (ch9) needed Ocean Warming (ch15)</li>
+<li>Land Use concepts needed Sustainability concepts in later chapter</li>
+<li>Global Change concepts needed Systems Thinking concepts in later chapter</li>
+<li><strong>Time:</strong> ~3 minutes</li>
+<li><strong>Tokens:</strong> ~15,000</li>
+</ul>
+<h3 id="iteration-3-moved-concepts-across-chapters">Iteration 3: Moved Concepts Across Chapters</h3>
+<ul>
+<li>Moved Ten Percent Rule and Energy Transfer to Ecosystems chapter</li>
+<li>Moved Adaptations and Natural Selection to Species Interactions chapter</li>
+<li>Moved Genetic Diversity to Species Interactions chapter</li>
+<li>Attempted to reorder Sustainability before Land Use</li>
+<li><strong>12 violations</strong> remaining -- Sustainability/Land Use ordering still broken</li>
+<li><strong>Time:</strong> ~3 minutes</li>
+<li><strong>Tokens:</strong> ~15,000</li>
+</ul>
+<h3 id="iteration-4-restructured-sustainability-and-land-use">Iteration 4: Restructured Sustainability and Land Use</h3>
+<ul>
+<li>Split Sustainability into core (201,208,209,210,211,212,213) and applied (202-207)</li>
+<li>Placed core Sustainability before Energy Resources and Land Use</li>
+<li>Placed applied Sustainability solutions into Land Use chapter</li>
+<li><strong>4 violations</strong> remaining -- Global Change needed Systems Thinking concepts</li>
+<li><strong>Time:</strong> ~3 minutes</li>
+<li><strong>Tokens:</strong> ~15,000</li>
+</ul>
+<h3 id="iteration-5-reordered-systems-thinking-before-global-change">Iteration 5: Reordered Systems Thinking Before Global Change</h3>
+<ul>
+<li>Moved Systems Thinking and Scientific Literacy before Global Climate Change</li>
+<li>Moved Tipping Points and related concepts to Global Climate Change chapter</li>
+<li>Moved Risk Assessment and Precautionary Principle to Scientific Literacy</li>
+<li>Merged small chapters (Human Pop into Population, Sustainability into Energy)</li>
+<li><strong>0 violations</strong> achieved</li>
+<li><strong>Time:</strong> ~5 minutes</li>
+<li><strong>Tokens:</strong> ~20,000</li>
+</ul>
+<h3 id="iteration-6-final-validation">Iteration 6: Final Validation</h3>
+<ul>
+<li>Confirmed 0 strict dependency violations</li>
+<li>All 380 concepts assigned to exactly one chapter</li>
+<li>No missing or duplicate concepts</li>
+<li><strong>Time:</strong> ~2 minutes</li>
+<li><strong>Tokens:</strong> ~5,000</li>
+</ul>
+<h2 id="final-chapter-structure-pending-user-approval">Final Chapter Structure (Pending User Approval)</h2>
+<table>
+<thead>
+<tr>
+<th>Ch</th>
+<th>Title</th>
+<th>Concepts</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Foundations of Ecology</td>
+<td>20</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Ecosystems and Biomes</td>
+<td>27</td>
+<td>&gt;25: biomes are a natural unit; many are simple leaf nodes</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Energy Flow in Ecosystems</td>
+<td>13</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Biogeochemical Cycles</td>
+<td>20</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Species Interactions</td>
+<td>23</td>
+<td>Includes Adaptations, Natural Selection, Genetic Diversity (moved for dependency reasons)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Biodiversity and Ecosystem Services</td>
+<td>17</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Population Ecology</td>
+<td>30</td>
+<td>&gt;25: merged with Human Population Dynamics to avoid 9-concept orphan chapter</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Earth Systems and Resources</td>
+<td>22</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Sustainability and Energy Resources</td>
+<td>30</td>
+<td>&gt;25: merged Sustainability core with Energy Resources to avoid 7-concept orphan chapter</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Land and Water Use</td>
+<td>30</td>
+<td>&gt;25: includes sustainable agriculture solutions (depend on land use practices)</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Atmospheric Pollution</td>
+<td>20</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Water and Land Pollution</td>
+<td>25</td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>Systems Thinking</td>
+<td>27</td>
+<td>&gt;25: deeply interconnected feedback loop concepts cannot be split without violations</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Scientific Literacy</td>
+<td>24</td>
+<td>Includes Risk Assessment, Evidence-Based Arguments, Precautionary Principle</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Global Climate Change</td>
+<td>21</td>
+<td>Includes Tipping Points, Nonlinear Change, Tipping Point Dynamics (depend on both climate and systems)</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Biodiversity Loss and Policy</td>
+<td>14</td>
+<td></td>
+</tr>
+<tr>
+<td>17</td>
+<td>Evaluating Environmental Claims</td>
+<td>17</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="design-decisions">Design Decisions</h2>
+<h3 id="decision-1-why-17-chapters-instead-of-20">Decision 1: Why 17 Chapters Instead of 20+</h3>
+<p>Splitting chapters to keep all under 25 concepts would create several orphan chapters with 6-9 concepts. These tiny chapters:</p>
+<ul>
+<li>Don't justify their own section in a textbook</li>
+<li>Break natural concept groupings</li>
+<li>Create navigation clutter in the sidebar</li>
+</ul>
+<p>Merging related small groups into 27-30 concept chapters is pedagogically sound because the extra concepts are mostly simple leaf nodes (individual biome types, specific energy sources) that don't add cognitive load.</p>
+<h3 id="decision-2-sustainability-before-energy-and-land-use">Decision 2: Sustainability Before Energy and Land Use</h3>
+<p>Sustainability (concept 201) is a prerequisite for 16 other concepts spread across energy resources, land use, and conservation. It must appear before both of those chapters. Placing it at the start of a combined "Sustainability and Energy Resources" chapter satisfies all dependencies.</p>
+<h3 id="decision-3-systems-thinking-and-scientific-literacy-before-global-change">Decision 3: Systems Thinking and Scientific Literacy Before Global Change</h3>
+<p>Global Climate Change concepts depend on:</p>
+<ul>
+<li>Reinforcing Feedback (315) -- needed by Ice-Albedo Feedback and Permafrost Methane Release</li>
+<li>Threshold (339) -- needed by Tipping Points</li>
+<li>Statistical Literacy (358) -- needed by Climate Models</li>
+</ul>
+<p>This required placing both Systems Thinking and Scientific Literacy BEFORE Global Climate Change, which is unusual (most ecology courses end with systems thinking) but necessary for strict dependency compliance.</p>
+<h3 id="decision-4-moving-tipping-points-to-global-change">Decision 4: Moving Tipping Points to Global Change</h3>
+<p>Tipping Points (296) depends on BOTH Global Climate Change (287) AND Threshold (339). It cannot go in Systems Thinking (before Global Change) or in Global Change (before Systems Thinking) without one violation. Since Threshold (339) is in Systems Thinking (ch13) which comes first, and Global Climate Change (287) is in ch15, placing Tipping Points in ch15 satisfies both dependencies.</p>
+<p>Nonlinear Change (327) and Tipping Point Dynamics (340) were also moved to ch15 since they depend on Tipping Points.</p>
+<h3 id="decision-5-concepts-moved-between-taxonomy-groups">Decision 5: Concepts Moved Between Taxonomy Groups</h3>
+<p>Several concepts were moved to different chapters than their taxonomy would suggest, to satisfy dependencies:</p>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Taxonomy</th>
+<th>Natural Chapter</th>
+<th>Actual Chapter</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>49 Ten Percent Rule</td>
+<td>ENFL</td>
+<td>Energy Flow</td>
+<td>Ecosystems (ch2)</td>
+<td>Energy Pyramids (ch2) depends on it</td>
+</tr>
+<tr>
+<td>50 Energy Transfer</td>
+<td>ENFL</td>
+<td>Energy Flow</td>
+<td>Ecosystems (ch2)</td>
+<td>Prerequisite of Ten Percent Rule</td>
+</tr>
+<tr>
+<td>101 Genetic Diversity</td>
+<td>BIOD</td>
+<td>Biodiversity</td>
+<td>Species Interactions (ch5)</td>
+<td>Natural Selection depends on it</td>
+</tr>
+<tr>
+<td>113 Adaptations</td>
+<td>BIOD</td>
+<td>Biodiversity</td>
+<td>Species Interactions (ch5)</td>
+<td>Mimicry and Camouflage depend on it</td>
+</tr>
+<tr>
+<td>114 Natural Selection</td>
+<td>BIOD</td>
+<td>Biodiversity</td>
+<td>Species Interactions (ch5)</td>
+<td>Depends on Genetic Diversity</td>
+</tr>
+<tr>
+<td>296 Tipping Points</td>
+<td>GLOB</td>
+<td>Global Change</td>
+<td>Global Climate Change (ch15)</td>
+<td>Depends on both Threshold and Global Climate Change</td>
+</tr>
+<tr>
+<td>327 Nonlinear Change</td>
+<td>SYST</td>
+<td>Systems Thinking</td>
+<td>Global Climate Change (ch15)</td>
+<td>Depends on Tipping Points</td>
+</tr>
+<tr>
+<td>337 Precautionary Principle</td>
+<td>SYST</td>
+<td>Systems Thinking</td>
+<td>Scientific Literacy (ch14)</td>
+<td>Depends on Risk Assessment</td>
+</tr>
+<tr>
+<td>340 Tipping Point Dynamics</td>
+<td>SYST</td>
+<td>Systems Thinking</td>
+<td>Global Climate Change (ch15)</td>
+<td>Depends on Tipping Points</td>
+</tr>
+<tr>
+<td>375 Evidence-Based Arguments</td>
+<td>CRIT</td>
+<td>Evaluating Claims</td>
+<td>Scientific Literacy (ch14)</td>
+<td>Needed by Source Evaluation and Statistical Literacy</td>
+</tr>
+<tr>
+<td>376 Risk Assessment</td>
+<td>CRIT</td>
+<td>Evaluating Claims</td>
+<td>Scientific Literacy (ch14)</td>
+<td>Needed by Precautionary Principle</td>
+</tr>
+</tbody>
+</table>
+<h2 id="timeline">Timeline</h2>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Wall Clock (approx.)</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Start</td>
+<td>0:00</td>
+<td>User invokes /book-chapter-generator skill</td>
+</tr>
+<tr>
+<td>Skill prompt loaded</td>
+<td>0:01</td>
+<td>Read skill instructions</td>
+</tr>
+<tr>
+<td>Step 1: Analyze inputs</td>
+<td>0:01 - 0:03</td>
+<td>Read learning-graph.json, analyze taxonomy distribution and depth</td>
+</tr>
+<tr>
+<td>Iteration 1 (WRONG)</td>
+<td>0:03 - 0:08</td>
+<td>Built inverted prereqs map, designed 18 chapters, got 224 violations</td>
+</tr>
+<tr>
+<td>Edge direction fix</td>
+<td>0:08 - 0:10</td>
+<td>Checked actual edge data, identified from=dependent to=prerequisite</td>
+</tr>
+<tr>
+<td>User intervention 1</td>
+<td>0:10</td>
+<td>User confirms dependency flip is a huge problem</td>
+</tr>
+<tr>
+<td>Iteration 2</td>
+<td>0:10 - 0:13</td>
+<td>Corrected direction, 18 violations</td>
+</tr>
+<tr>
+<td>Iteration 3</td>
+<td>0:13 - 0:16</td>
+<td>Moved concepts, 12 violations</td>
+</tr>
+<tr>
+<td>User intervention 2</td>
+<td>0:16</td>
+<td>User requests strict prerequisite checking</td>
+</tr>
+<tr>
+<td>Iteration 4</td>
+<td>0:16 - 0:19</td>
+<td>Restructured Sustainability/Land Use, 4 violations</td>
+</tr>
+<tr>
+<td>Iteration 5</td>
+<td>0:19 - 0:24</td>
+<td>Reordered Systems Thinking, merged chapters, 2 violations</td>
+</tr>
+<tr>
+<td>Iteration 6</td>
+<td>0:24 - 0:26</td>
+<td>Moved Tipping Points to Global Change, 1 violation</td>
+</tr>
+<tr>
+<td>Iteration 7</td>
+<td>0:26 - 0:28</td>
+<td>Moved 296/327/340 to Global Change, 0 violations</td>
+</tr>
+<tr>
+<td>Present to user</td>
+<td>0:28 - 0:30</td>
+<td>Displayed final chapter structure for approval</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>~30 minutes</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong> Approximately 10 minutes (~33%) was wasted on the inverted dependency bug.</p>
+<h2 id="token-usage-estimates">Token Usage Estimates</h2>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Input Tokens</th>
+<th>Output Tokens</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Skill prompt loading</td>
+<td>5,000</td>
+<td>0</td>
+<td>Reading skill instructions</td>
+</tr>
+<tr>
+<td>Input analysis</td>
+<td>10,000</td>
+<td>5,000</td>
+<td>Reading learning-graph.json, taxonomy analysis</td>
+</tr>
+<tr>
+<td>Iteration 1 (WASTED)</td>
+<td>15,000</td>
+<td>10,000</td>
+<td>Inverted dependencies - all output discarded</td>
+</tr>
+<tr>
+<td>Edge direction debugging</td>
+<td>5,000</td>
+<td>3,000</td>
+<td>Checking edge data, identifying the flip</td>
+</tr>
+<tr>
+<td>Iterations 2-7</td>
+<td>60,000</td>
+<td>40,000</td>
+<td>6 rounds of chapter design and validation</td>
+</tr>
+<tr>
+<td>Final presentation</td>
+<td>5,000</td>
+<td>3,000</td>
+<td>Chapter summary for user approval</td>
+</tr>
+<tr>
+<td>This log file</td>
+<td>10,000</td>
+<td>8,000</td>
+<td>Writing this detailed session log</td>
+</tr>
+<tr>
+<td><strong>Estimated total</strong></td>
+<td><strong>~110,000</strong></td>
+<td><strong>~69,000</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Wasted tokens due to edge direction bug:</strong> ~25,000 (input) + ~13,000 (output) = <strong>~38,000 tokens wasted</strong></p>
+<h2 id="recommendations-for-skill-improvement">Recommendations for Skill Improvement</h2>
+<h3 id="priority-1-document-edge-direction-critical">Priority 1: Document Edge Direction (CRITICAL)</h3>
+<p>Add this to the top of the book-chapter-generator skill, in Step 1.2 (Read Learning Graph):</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code>CRITICAL EDGE DIRECTION NOTE:
+In learning-graph.json (vis-network format), edges point FROM dependent TO prerequisite.
+Edge {from: 5, to: 1} means "Biodiversity depends on Ecology" (NOT "Ecology leads to Biodiversity").
+
+Build the prerequisite map as:
+  prereqs[edge['from']].add(edge['to'])
+
+NEVER use: prereqs[edge['to']].add(edge['from'])  -- this inverts all dependencies.
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="priority-2-add-validation-gate">Priority 2: Add Validation Gate</h3>
+<p>Add a mandatory validation step between analysis and design:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Step 1.5: Validate Prerequisite Map
+1. Identify the 6 foundational concepts (those with empty Dependencies in CSV)
+2. Verify these concepts have ZERO entries in the prereqs map
+3. If ANY foundational concept has prerequisites, STOP and report:
+   "Edge direction appears inverted. Foundational concept X should have
+    0 prerequisites but has Y. Check edge direction."
+4. Do not proceed to chapter design until this check passes.
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="priority-3-add-strict-dependency-check-to-workflow">Priority 3: Add Strict Dependency Check to Workflow</h3>
+<p>The skill should require 0 dependency violations before presenting to the user. Add:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code>Step 2.5: Validate Chapter Assignments (MANDATORY)
+For every concept C assigned to chapter N:
+  For every prerequisite P of C:
+    Assert P is assigned to chapter M where M &lt;= N
+If any violations exist, fix them before proceeding to Step 3.
+Do NOT present a chapter design with violations to the user.
+</code></pre></div></td></tr></tbody></table></div>
+<h3 id="priority-4-include-edge-direction-test-in-learning-graph-generator">Priority 4: Include Edge Direction Test in Learning Graph Generator</h3>
+<p>The learning-graph-generator skill should output a comment in the JSON file:</p>
+<div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"edge_convention"</span><span class="p">:</span><span class="w"> </span><span class="s2">"from=dependent, to=prerequisite"</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></tbody></table></div>
+<p>This provides a machine-readable and human-readable reminder at the point of consumption.</p>
+<h2 id="files-created">Files Created</h2>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>docs/logs/03-book-chapter-generator.md</code></td>
+<td>This log file</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong> Chapter files have NOT been created yet. The chapter structure is pending user approval. Once approved, the following will be created:</p>
+<ul>
+<li><code>docs/chapters/index.md</code></li>
+<li>17 chapter directories with <code>index.md</code> files</li>
+<li>Updated <code>mkdocs.yml</code> navigation</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer">
+        
+          
+          <a href="../02-generate-learning-graph/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Learning Graph Generation">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Learning Graph Generation
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../license/" class="md-footer__link md-footer__link--next" aria-label="Next: License">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                License
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax-config.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-chtml.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>
