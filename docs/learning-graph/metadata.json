@@ -1,0 +1,10 @@
+{
+  "title": "Ecology: Systems Thinking for a Changing Planet",
+  "description": "An interactive intelligent textbook covering ecosystems, biodiversity, populations, Earth systems, resource use, pollution, global change, systems thinking, and scientific literacy for high school students.",
+  "creator": "Dan McCreary",
+  "date": "2026-03-29",
+  "version": "1.0",
+  "format": "Learning Graph JSON v1.0",
+  "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+  "license": "CC BY-NC-SA 4.0 DEED"
+}

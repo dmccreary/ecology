@@ -7,16 +7,46 @@ site_author: Dan McCreary
 nav:
   - Home: index.md
   - Course Description: course-description.md
+  - Chapters:
+    - Overview: chapters/index.md
+    - 1-Foundations of Ecology: chapters/01-foundations-of-ecology/index.md
+    - 2-Ecosystems and Biomes: chapters/02-ecosystems-and-biomes/index.md
+    - 3-Energy Flow: chapters/03-energy-flow/index.md
+    - 4-Biogeochemical Cycles: chapters/04-biogeochemical-cycles/index.md
+    - 5-Species Interactions: chapters/05-species-interactions/index.md
+    - 6-Biodiversity and Services: chapters/06-biodiversity-and-services/index.md
+    - 7-Population Ecology: chapters/07-population-ecology/index.md
+    - 8-Earth Systems: chapters/08-earth-systems/index.md
+    - 9-Sustainability and Energy: chapters/09-sustainability-and-energy/index.md
+    - 10-Land and Water Use: chapters/10-land-and-water-use/index.md
+    - 11-Atmospheric Pollution: chapters/11-atmospheric-pollution/index.md
+    - 12-Water and Land Pollution: chapters/12-water-and-land-pollution/index.md
+    - 13-Systems Thinking: chapters/13-systems-thinking/index.md
+    - 14-Scientific Literacy: chapters/14-scientific-literacy/index.md
+    - 15-Global Climate Change: chapters/15-global-climate-change/index.md
+    - 16-Biodiversity Loss and Policy: chapters/16-biodiversity-loss-and-policy/index.md
+    - 17-Evaluating Claims: chapters/17-evaluating-environmental-claims/index.md
+  - Learning Graph:
+    - Introduction: learning-graph/index.md
+    - Course Description Assessment: learning-graph/course-description-assessment.md
+    - Concept Enumeration: learning-graph/concept-list.md
+    - Concept Taxonomy: learning-graph/concept-taxonomy.md
+    - Graph Quality Analysis: learning-graph/quality-metrics.md
+    - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
+  - MicroSims:
+    - Graph Viewer: sims/graph-viewer/index.md
   - Prompts:
     - Seed Prompt: prompts/01-seed.md
   - Logs:
     - Course Description Generation: logs/01-course-description-generation.md
+    - Learning Graph Generation: logs/02-generate-learning-graph.md
+    - Book Chapter Generator: logs/03-book-chapter-generator.md
   - License: license.md
   - Contact: contact.md
 
 theme:
   name: material
-  logo: img/logo.png
+  # logo: img/logo.png
   favicon: img/favicon.ico
   palette:
     primary: 'green'

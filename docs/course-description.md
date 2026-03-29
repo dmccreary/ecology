@@ -293,3 +293,40 @@ Students will be able to:
 8. Formulate predictions about how an ecosystem will respond to a specified disturbance using systems thinking principles
 9. Develop a fact-checking workflow for evaluating environmental claims encountered in social media and news
 10. Synthesize data from multiple sources to construct an original argument about the sustainability of a specific human practice
+
+## Topics Not Covered
+
+This section defines the boundaries of the course to guide the learning graph and prevent concept drift into topics that require mathematical preparation beyond **Algebra 1**. Students in this course are assumed to be comfortable with variables, linear equations, ratios, percentages, and basic graph interpretation. They are **not** assumed to have completed Algebra 2, Pre-Calculus, Calculus, or college-level statistics.
+
+### Mathematical Boundaries
+
+The following topics are excluded because they require calculus, differential equations, or advanced statistics:
+
+- **Differential equation models of population dynamics** -- Lotka-Volterra predator-prey equations, continuous-time logistic growth (dN/dt = rN(1 - N/K)), and other ODE-based ecological models. Students will learn the conceptual behavior of these models (exponential vs. logistic curves, predator-prey oscillations) without the calculus formalism.
+- **Integral calculus applications** -- calculating area under curves for cumulative resource consumption, total pollution load over time, or net ecosystem exchange. Students will estimate these values from graphs using visual approximation rather than integration.
+- **Partial differential equations** -- reaction-diffusion models of species dispersal, spatial population dynamics, and heat/mass transfer in environmental systems.
+- **Matrix population models** -- Leslie matrices and eigenvalue analysis for structured population projections. Students will use age structure diagrams qualitatively instead.
+- **Advanced statistical methods** -- regression analysis, ANOVA, chi-square tests, multivariate analysis, principal component analysis, and hypothesis testing with p-values. Students will interpret pre-computed statistical results but will not perform these calculations.
+- **Information theory and entropy** -- Shannon diversity index derivation and information-theoretic model selection (AIC/BIC). Students will use simplified diversity measures (species richness, relative abundance) instead.
+- **Thermodynamic formalism** -- formal entropy calculations, Gibbs free energy in biogeochemical reactions, and energy balance equations using calculus. Students will understand energy flow conceptually using the 10% rule and energy pyramids.
+- **Optimization and game theory** -- optimal foraging theory with calculus-based optimization, evolutionary stable strategies with payoff matrices, and cost-benefit analysis using marginal rates.
+
+### Ecology Subdisciplines Beyond Scope
+
+The following specialized ecology topics are excluded because they are typically covered at the university level and require either advanced math or extensive prerequisite coursework:
+
+- **Molecular ecology and phylogenetics** -- DNA barcoding techniques, coalescent theory, molecular clock analysis, and computational phylogenetics. Basic genetics concepts (adaptation, natural selection, genetic diversity) are covered.
+- **Quantitative genetics in ecology** -- heritability calculations, selection gradients, quantitative trait loci, and the breeder's equation. Natural selection and adaptation are covered conceptually.
+- **Landscape ecology modeling** -- GIS-based spatial analysis, metapopulation models with extinction-colonization dynamics, percolation theory, and fractal geometry of habitat patches. Students will understand habitat fragmentation conceptually.
+- **Theoretical ecology** -- bifurcation analysis, chaos theory in ecological systems, stochastic population models, and analytical stability analysis of equilibria. Students will explore these dynamics through interactive simulations rather than formal mathematical analysis.
+- **Ecosystem modeling and simulation** -- computational fluid dynamics for ocean/atmosphere modeling, process-based biogeochemical models (e.g., CENTURY, BIOME-BGC), and general circulation models. Students will interpret model outputs and understand model assumptions without building these models.
+- **Environmental economics formalism** -- discounting future costs with net present value calculations, econometric modeling of environmental externalities, and Pigouvian tax optimization. Students will understand the concepts of externalities, commons, and trade-offs without the economic math.
+- **Ecotoxicology beyond LD50** -- pharmacokinetic modeling, compartment models for toxicant distribution, and probabilistic risk assessment. Students will interpret dose-response curves and understand bioaccumulation without the underlying pharmacological math.
+- **Paleoclimatology and isotope analysis** -- oxygen isotope ratio calculations, radiometric dating mathematics, and spectral analysis of climate proxy records. Students will learn about climate change evidence without the isotope chemistry.
+
+### Other Exclusions
+
+- **Laboratory techniques** -- this is a conceptual and simulation-based course, not a lab course. Wet lab protocols (water quality testing kits, soil sampling methodology, specimen collection and preservation) are described but not performed.
+- **Field research methodology** -- mark-recapture statistics (Lincoln-Petersen method calculations), quadrat sampling with statistical analysis, and transect survey design with power analysis. Students will understand these methods conceptually and interpret example data.
+- **Environmental law and policy details** -- detailed legal analysis of specific regulations, case law, and regulatory compliance procedures. Students will understand major legislation (Clean Air Act, Clean Water Act, ESA, CERCLA) at a conceptual level.
+- **Engineering solutions** -- detailed engineering design of water treatment plants, smokestack scrubber systems, solar panel circuitry, or nuclear reactor containment. Students will understand what these technologies do and their trade-offs without the engineering specifics.
