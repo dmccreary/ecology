@@ -1,0 +1,14 @@
+{
+  "sim_id": "demographic-transition",
+  "diagram_name": "Demographic Transition Model",
+  "chapter_number": 7,
+  "chapter_title": "\"Chapter 7: Population Ecology\"",
+  "chapter_dir": "07-population-ecology",
+  "library": "p5.js",
+  "bloom_level": "Understand",
+  "bloom_verb": "Explain",
+  "learning_objective": "Students will explain how birth rates, death rates, and total population change through the four stages of demographic transition.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** demographic-transition<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand\n**Bloom Verb:** Explain\n**Learning Objective:** Students will explain how birth rates, death rates, and total population change through the four stages of demographic transition.\n**Instructional Rationale:** An animated timeline with real country examples anchors the abstract model in concrete data, helping students see the demographic transition as a lived human experience rather than just a theoretical framework.\n\nVisual: Large graph with time/stage on x-axis (Stages 1-4 labeled) and rates on y-axis. Three lines: birth rate (red), death rate (blue), and total population (green, on secondary y-axis). As student drags a slider across the stages, the lines animate and a population pyramid thumbnail updates to show the corresponding age structure. Below the graph, a \"Country Tracker\" panel shows where 5-6 real countries currently sit on the model (placed as dots on the curve). Hovering over a country dot shows its current birth rate, death rate, and growth rate. Stage descriptions appear as labeled regions along the x-axis."
+}

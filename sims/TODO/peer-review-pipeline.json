@@ -1,0 +1,14 @@
+{
+  "sim_id": "peer-review-pipeline",
+  "diagram_name": "Science's Quality Control Pipeline",
+  "chapter_number": 14,
+  "chapter_title": "\"Chapter 14: Scientific Literacy\"",
+  "chapter_dir": "14-scientific-literacy",
+  "library": "vis-network",
+  "bloom_level": "Understand",
+  "bloom_verb": "Describe",
+  "learning_objective": "Describe the steps from initial research through peer review, publication, and replication to scientific consensus",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: diagram\n**sim-id:** peer-review-pipeline<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand\n**Bloom Verb:** Describe\n**Learning Objective:** Describe the steps from initial research through peer review, publication, and replication to scientific consensus\n**Instructional Rationale:** Flowchart visualization demystifies the often-invisible process of how scientific knowledge is validated\n\nA horizontal flowchart / pipeline diagram. Nodes represent stages: Research Question → Study Design → Data Collection → Analysis → Manuscript → Journal Submission → Peer Review (with branches: Accept, Revise & Resubmit, Reject) → Publication → Replication Attempts → Scientific Consensus (or Failed Replication → Reassessment). Each node is clickable and reveals a description panel explaining what happens at that stage, common pitfalls, and how long it typically takes. A \"claim tracker\" at the top shows how confidence level changes at each stage (low at hypothesis, medium at publication, high at successful replication, very high at consensus). Color scheme: early stages in light blue, peer review in yellow (caution), publication in green, failed paths in red. Animated particles flow through the pipeline showing the journey of a research finding."
+}

@@ -1,0 +1,1861 @@
+<!DOCTYPE html><html lang="en" class="no-js"><head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An interactive intelligent textbook for Ecology.">
+      
+      
+        <meta name="author" content="Dan McCreary">
+      
+      
+        <link rel="canonical" href="https://dmccreary.github.io/ecology/logs/05-microsim-generation/">
+      
+      
+      
+      
+      <link rel="icon" href="../../img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Log: MicroSim Batch Generation - Ecology - An Interactive Course</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-XXXXXXXXXX"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-XXXXXXXXXX",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+      
+        <meta property="og:type" content="website">
+      
+        <meta property="og:title" content="Log: MicroSim Batch Generation - Ecology - An Interactive Course">
+      
+        <meta property="og:description" content="An interactive intelligent textbook for Ecology.">
+      
+        <meta property="og:image" content="https://dmccreary.github.io/ecology/assets/images/social/logs/05-microsim-generation.png">
+      
+        <meta property="og:image:type" content="image/png">
+      
+        <meta property="og:image:width" content="1200">
+      
+        <meta property="og:image:height" content="630">
+      
+        <meta property="og:url" content="https://dmccreary.github.io/ecology/logs/05-microsim-generation/">
+      
+        <meta name="twitter:card" content="summary_large_image">
+      
+        <meta name="twitter:title" content="Log: MicroSim Batch Generation - Ecology - An Interactive Course">
+      
+        <meta name="twitter:description" content="An interactive intelligent textbook for Ecology.">
+      
+        <meta name="twitter:image" content="https://dmccreary.github.io/ecology/assets/images/social/logs/05-microsim-generation.png">
+      
+    
+    
+  <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"><script src="../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="white">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#log-microsim-batch-generation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Ecology - An Interactive Course" class="md-header__button md-logo" aria-label="Ecology - An Interactive Course" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Ecology - An Interactive Course
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Log: MicroSim Batch Generation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/dmccreary/ecology" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Ecology - An Interactive Course" class="md-nav__button md-logo" aria-label="Ecology - An Interactive Course" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+
+    </a>
+    Ecology - An Interactive Course
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/dmccreary/ecology" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../course-description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Course Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../chapters/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Chapters
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../learning-graph/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Learning Graph
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+        
+          
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../sims/index.md" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    MicroSims
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../prompts/01-seed/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Prompts
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../01-course-description-generation/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Logs
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pipeline-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pipeline Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pipeline Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#phase-1-specification-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 1: Specification Extraction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-2-scaffolding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 2: Scaffolding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phase-3-javascript-implementation-parallel-agents" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phase 3: JavaScript Implementation (Parallel Agents)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Timing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#token-usage-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Usage Analysis
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Token Usage Analysis">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actual-usage-parallel-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Actual Usage (Parallel Mode)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#estimated-usage-sequential-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Estimated Usage (Sequential Mode)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#efficiency-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      Efficiency Comparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parallel-mode-token-overhead-breakdown" class="md-nav__link">
+    <span class="md-ellipsis">
+      Parallel Mode Token Overhead Breakdown
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verdict" class="md-nav__link">
+    <span class="md-ellipsis">
+      Verdict
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#output-statistics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Output Statistics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Output Statistics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#javascript-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      JavaScript Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#by-library" class="md-nav__link">
+    <span class="md-ellipsis">
+      By Library
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supporting-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supporting Files
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#process-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Process Details
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Process Details">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#round-1-agent-assignments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Round 1 Agent Assignments
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#round-2-cleanup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Round 2 Cleanup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#post-processing-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Post-Processing Steps
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#files-created" class="md-nav__link">
+    <span class="md-ellipsis">
+      Files Created
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lessons-learned" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lessons Learned
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/dmccreary/ecology/edit/master/docs/logs/05-microsim-generation.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+    </a>
+  
+  
+
+
+<h1 id="log-microsim-batch-generation">Log: MicroSim Batch Generation</h1>
+<p><strong>Date:</strong> 2026-03-29
+<strong>Skill:</strong> MicroSim Generator (batch mode via chapter-content-generator specs)
+<strong>Model:</strong> Claude Opus 4.6 (1M context)
+<strong>Task:</strong> Generate all 80 MicroSim JavaScript implementations from chapter diagram specifications</p>
+<h2 id="summary">Summary</h2>
+<p>Generated 80 interactive educational MicroSims from the <code>#### Diagram:</code> specifications embedded in 17 chapters of the Ecology intelligent textbook. Each MicroSim was scaffolded using Python utilities, then implemented as a standalone .js file by parallel Claude agents.</p>
+<h2 id="pipeline-overview">Pipeline Overview</h2>
+<p>The MicroSim generation followed a 3-phase pipeline:</p>
+<h3 id="phase-1-specification-extraction">Phase 1: Specification Extraction</h3>
+<ul>
+<li>Ran <code>create-microsim-todo-json-files.py</code> to extract 80 diagram specs from chapters into <code>docs/sims/TODO/</code> as individual JSON files</li>
+<li>Ran <code>extract-sim-specs.py</code> per chapter (17 runs) to produce structured spec arrays for scaffolding</li>
+</ul>
+<h3 id="phase-2-scaffolding">Phase 2: Scaffolding</h3>
+<ul>
+<li>Ran <code>generate-sim-scaffold.py</code> per chapter (17 runs) to create <code>main.html</code>, <code>index.md</code>, and <code>metadata.json</code> for all 80 sims</li>
+<li>This automated step saved approximately 80 x ~50 lines = 4,000 lines of boilerplate per sim</li>
+</ul>
+<h3 id="phase-3-javascript-implementation-parallel-agents">Phase 3: JavaScript Implementation (Parallel Agents)</h3>
+<ul>
+<li><strong>Round 1:</strong> 8 parallel agents, each assigned 10 sims</li>
+<li><strong>Round 2:</strong> 2 parallel agents to complete 14 sims that were interrupted by rate limits in Round 1</li>
+</ul>
+<h2 id="timing">Timing</h2>
+<table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Start</th>
+<th>End</th>
+<th>Wall-Clock</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spec extraction + scaffolding</td>
+<td>11:01</td>
+<td>11:05</td>
+<td>~4 min</td>
+</tr>
+<tr>
+<td>Round 1: 8 agents (66 sims completed)</td>
+<td>11:06</td>
+<td>~11:14</td>
+<td>~8 min</td>
+</tr>
+<tr>
+<td>Rate limit wait</td>
+<td>11:14</td>
+<td>~15:30</td>
+<td>~4h 16m (idle)</td>
+</tr>
+<tr>
+<td>Round 2: 2 agents (14 remaining sims)</td>
+<td>~15:30</td>
+<td>~16:00</td>
+<td>~30 min</td>
+</tr>
+<tr>
+<td>Post-processing (iframes, nav)</td>
+<td>16:00</td>
+<td>16:04</td>
+<td>~4 min</td>
+</tr>
+<tr>
+<td><strong>Total active work time</strong></td>
+<td></td>
+<td></td>
+<td><strong>~46 min</strong></td>
+</tr>
+<tr>
+<td><strong>Total elapsed (including rate limit)</strong></td>
+<td></td>
+<td></td>
+<td><strong>~5 hours</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="token-usage-analysis">Token Usage Analysis</h2>
+<h3 id="actual-usage-parallel-mode">Actual Usage (Parallel Mode)</h3>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Tokens</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Round 1: 8 parallel agents</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Agent 1 (Batch 1: 10 sims)</td>
+<td>~22,000</td>
+<td>Hit rate limit after completing sims</td>
+</tr>
+<tr>
+<td>Agent 2 (Batch 2: 10 sims)</td>
+<td>~22,000</td>
+<td>Hit rate limit after completing sims</td>
+</tr>
+<tr>
+<td>Agent 3 (Batch 3: 10 sims)</td>
+<td>~22,000</td>
+<td>Hit rate limit after completing sims</td>
+</tr>
+<tr>
+<td>Agent 4 (Batch 4: 10 sims)</td>
+<td>~22,000</td>
+<td>Hit rate limit after completing sims</td>
+</tr>
+<tr>
+<td>Agent 5 (Batch 5: 10 sims)</td>
+<td>~22,000</td>
+<td>Hit rate limit, 6 sims completed</td>
+</tr>
+<tr>
+<td>Agent 6 (Batch 6: 10 sims)</td>
+<td>~22,000</td>
+<td>Hit rate limit after completing sims</td>
+</tr>
+<tr>
+<td>Agent 7 (Batch 7: 10 sims)</td>
+<td>~22,000</td>
+<td>Hit rate limit after completing sims</td>
+</tr>
+<tr>
+<td>Agent 8 (Batch 8: 10 sims)</td>
+<td>~22,000</td>
+<td>Hit rate limit, 4 sims completed</td>
+</tr>
+<tr>
+<td><strong>Round 1 subtotal</strong></td>
+<td><strong>~176,000</strong></td>
+<td><strong>66 sims completed</strong></td>
+</tr>
+<tr>
+<td><strong>Round 2: 2 parallel agents</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Agent 9 (10 p5.js sims)</td>
+<td>~58,750</td>
+<td>All 10 completed</td>
+</tr>
+<tr>
+<td>Agent 10 (4 vis-network sims)</td>
+<td>~88,779</td>
+<td>All 4 completed</td>
+</tr>
+<tr>
+<td><strong>Round 2 subtotal</strong></td>
+<td><strong>~147,529</strong></td>
+<td><strong>14 sims completed</strong></td>
+</tr>
+<tr>
+<td><strong>Orchestration (main context)</strong></td>
+<td><strong>~50,000</strong></td>
+<td>Spec extraction, scaffolding, routing</td>
+</tr>
+<tr>
+<td><strong>Grand total (parallel)</strong></td>
+<td><strong>~373,529</strong></td>
+<td><strong>80 sims in ~46 min active</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="estimated-usage-sequential-mode">Estimated Usage (Sequential Mode)</h3>
+<p>If all 80 sims had been generated sequentially by a single agent:</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Tokens</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shared context loaded once</td>
+<td>~20,000</td>
+<td>Guides, templates, specs</td>
+</tr>
+<tr>
+<td>Per-sim generation (80 x ~3,000)</td>
+<td>~240,000</td>
+<td>Each sim: read spec, write .js</td>
+</tr>
+<tr>
+<td>Orchestration overhead</td>
+<td>~10,000</td>
+<td>Minimal routing</td>
+</tr>
+<tr>
+<td><strong>Grand total (sequential)</strong></td>
+<td><strong>~270,000</strong></td>
+<td><strong>80 sims in ~2-3 hours active</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="efficiency-comparison">Efficiency Comparison</h3>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Parallel (Actual)</th>
+<th>Sequential (Estimated)</th>
+<th>Ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Total tokens</strong></td>
+<td>~373,529</td>
+<td>~270,000</td>
+<td>1.38x (38% overhead)</td>
+</tr>
+<tr>
+<td><strong>Active wall-clock time</strong></td>
+<td>~46 min</td>
+<td>~2.5 hours</td>
+<td>0.31x (3.3x faster)</td>
+</tr>
+<tr>
+<td><strong>Tokens per sim</strong></td>
+<td>~4,669</td>
+<td>~3,375</td>
+<td>1.38x</td>
+</tr>
+<tr>
+<td><strong>Time per sim</strong></td>
+<td>~0.6 min</td>
+<td>~1.9 min</td>
+<td>0.31x</td>
+</tr>
+</tbody>
+</table>
+<h3 id="parallel-mode-token-overhead-breakdown">Parallel Mode Token Overhead Breakdown</h3>
+<p>The 38% token overhead in parallel mode comes from:</p>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Extra Tokens</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Duplicated context (10 agents)</td>
+<td>~80,000</td>
+<td>Each agent loads guides, templates, and spec context independently</td>
+</tr>
+<tr>
+<td>Round 2 re-read overhead</td>
+<td>~15,000</td>
+<td>2 cleanup agents had to re-read specs already read in Round 1</td>
+</tr>
+<tr>
+<td>Rate limit wasted tokens</td>
+<td>~8,500</td>
+<td>Agents partially processed work before being interrupted</td>
+</tr>
+<tr>
+<td><strong>Total overhead</strong></td>
+<td><strong>~103,500</strong></td>
+<td><strong>38% of parallel total</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="verdict">Verdict</h3>
+<p>Parallel execution traded <strong>38% more tokens</strong> for <strong>3.3x faster wall-clock time</strong>. For a batch of 80 sims where the user is waiting, the parallelism is worth the token cost. For budget-constrained runs, sequential mode would save ~100K tokens at the cost of ~2 additional hours.</p>
+<p><strong>Note:</strong> The rate limit interruption in Round 1 added unnecessary overhead. If the rate limit had not been hit, Round 1 alone would have completed all 80 sims in ~8 minutes with ~176K tokens total, which would have been both faster AND more token-efficient than sequential mode.</p>
+<h2 id="output-statistics">Output Statistics</h2>
+<h3 id="javascript-files">JavaScript Files</h3>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Total .js files</td>
+<td>80</td>
+</tr>
+<tr>
+<td>Total lines of JavaScript</td>
+<td>22,591</td>
+</tr>
+<tr>
+<td>Minimum lines per sim</td>
+<td>107</td>
+</tr>
+<tr>
+<td>Maximum lines per sim</td>
+<td>467</td>
+</tr>
+<tr>
+<td>Average lines per sim</td>
+<td>282</td>
+</tr>
+<tr>
+<td>Median lines per sim</td>
+<td>290</td>
+</tr>
+</tbody>
+</table>
+<h3 id="by-library">By Library</h3>
+<table>
+<thead>
+<tr>
+<th>Library</th>
+<th>Sim Count</th>
+<th>Typical Lines</th>
+<th>Total Lines (est.)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>p5.js</td>
+<td>62</td>
+<td>250-400</td>
+<td>~18,000</td>
+</tr>
+<tr>
+<td>vis-network</td>
+<td>15</td>
+<td>200-310</td>
+<td>~3,800</td>
+</tr>
+<tr>
+<td>Chart.js</td>
+<td>3</td>
+<td>150-250</td>
+<td>~790</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>80</strong></td>
+<td></td>
+<td><strong>~22,591</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="supporting-files">Supporting Files</h3>
+<table>
+<thead>
+<tr>
+<th>File Type</th>
+<th>Count</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>main.html</td>
+<td>80</td>
+<td>Scaffolded by generate-sim-scaffold.py</td>
+</tr>
+<tr>
+<td>index.md</td>
+<td>80</td>
+<td>Scaffolded with frontmatter, iframe, fullscreen link</td>
+</tr>
+<tr>
+<td>metadata.json</td>
+<td>80</td>
+<td>Dublin Core metadata</td>
+</tr>
+<tr>
+<td>style.css</td>
+<td>8</td>
+<td>For vis-network sims with custom layouts</td>
+</tr>
+<tr>
+<td>TODO JSON specs</td>
+<td>80</td>
+<td>In docs/sims/TODO/ for tracking</td>
+</tr>
+</tbody>
+</table>
+<h2 id="process-details">Process Details</h2>
+<h3 id="round-1-agent-assignments">Round 1 Agent Assignments</h3>
+<table>
+<thead>
+<tr>
+<th>Agent</th>
+<th>Sims Assigned</th>
+<th>Sims Completed</th>
+<th>Topics</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>10</td>
+<td>10</td>
+<td>Ch 1-2: Ecosystem basics, biomes, food webs, concept map</td>
+</tr>
+<tr>
+<td>2</td>
+<td>10</td>
+<td>8</td>
+<td>Ch 3-4: Energy flow, biogeochemical cycles</td>
+</tr>
+<tr>
+<td>3</td>
+<td>10</td>
+<td>10</td>
+<td>Ch 5-6: Species interactions, biodiversity</td>
+</tr>
+<tr>
+<td>4</td>
+<td>10</td>
+<td>10</td>
+<td>Ch 7-8-9: Population, earth systems, energy</td>
+</tr>
+<tr>
+<td>5</td>
+<td>10</td>
+<td>6</td>
+<td>Ch 9-11: Sustainability, pollution</td>
+</tr>
+<tr>
+<td>6</td>
+<td>10</td>
+<td>10</td>
+<td>Ch 12-13: Water pollution, systems thinking</td>
+</tr>
+<tr>
+<td>7</td>
+<td>10</td>
+<td>10</td>
+<td>Ch 14-15: Scientific literacy, climate</td>
+</tr>
+<tr>
+<td>8</td>
+<td>10</td>
+<td>2</td>
+<td>Ch 16-17: Policy, media literacy</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>80</strong></td>
+<td><strong>66</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="round-2-cleanup">Round 2 Cleanup</h3>
+<table>
+<thead>
+<tr>
+<th>Agent</th>
+<th>Sims</th>
+<th>Library</th>
+<th>All Completed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>9</td>
+<td>10 (nitrogen-cycle, phosphorus-runoff, thermal-inversion, urban-heat-island, soil-health-comparison, bias-detective, citizen-science, ej-mapping, fact-check-workflow, air-quality-trends)</td>
+<td>p5.js + Chart.js</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>10</td>
+<td>4 (acid-rain-pathway, connected-cycles, criteria-pollutant-tracker, info-ecosystem)</td>
+<td>vis-network</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td><strong>14</strong></td>
+<td></td>
+<td><strong>Yes</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="post-processing-steps">Post-Processing Steps</h3>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Script</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fix chapter iframes</td>
+<td>add-iframes-to-chapter.py --all</td>
+<td>0 changes needed (already correct)</td>
+</tr>
+<tr>
+<td>Update navigation</td>
+<td>update-mkdocs-nav.py</td>
+<td>81 entries written to mkdocs.yml</td>
+</tr>
+</tbody>
+</table>
+<h2 id="files-created">Files Created</h2>
+<ul>
+<li>80 JavaScript files: <code>docs/sims/{sim-id}/{sim-id}.js</code></li>
+<li>80 HTML files: <code>docs/sims/{sim-id}/main.html</code> (scaffolded)</li>
+<li>80 index files: <code>docs/sims/{sim-id}/index.md</code> (scaffolded)</li>
+<li>80 metadata files: <code>docs/sims/{sim-id}/metadata.json</code> (scaffolded)</li>
+<li>8 CSS files: <code>docs/sims/{sim-id}/style.css</code> (vis-network sims)</li>
+<li>80 TODO specs: <code>docs/sims/TODO/{sim-id}.json</code></li>
+<li>Updated: <code>mkdocs.yml</code> (81 MicroSim nav entries)</li>
+</ul>
+<h2 id="lessons-learned">Lessons Learned</h2>
+<ol>
+<li>
+<p><strong>Rate limits are the bottleneck for parallel execution.</strong> With 8 agents running simultaneously, each generating ~250 lines of output, the combined token throughput exceeded the rate limit. Planning for 4-5 agents instead of 8 might have avoided the Round 2 cleanup entirely.</p>
+</li>
+<li>
+<p><strong>Scaffolding utilities save enormous token overhead.</strong> The Python scripts (<code>extract-sim-specs.py</code>, <code>generate-sim-scaffold.py</code>) eliminated the need for agents to create boilerplate files, focusing their entire token budget on creative JavaScript implementation.</p>
+</li>
+<li>
+<p><strong>Spec quality determines sim quality.</strong> The detailed <code>&lt;details&gt;</code> blocks in chapter content (with Bloom levels, learning objectives, visual elements, interaction patterns) gave agents enough context to generate meaningful implementations without back-and-forth clarification.</p>
+</li>
+<li>
+<p><strong>Vis-network sims need style.css files</strong> in addition to .js files. Future batches should account for this in scaffolding or explicitly include CSS generation in agent prompts.</p>
+</li>
+</ol>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.expand", "navigation.path", "navigation.prune", "navigation.indexes", "toc.follow", "navigation.top", "navigation.footer", "content.action.edit"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+        <script src="../../js/extra.js"></script>
+      
+        <script src="../../js/mathjax-config.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-chtml.js"></script>
+      
+    
+  
+<script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html>

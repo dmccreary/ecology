@@ -1,0 +1,14 @@
+{
+  "sim_id": "solar-energy-budget",
+  "diagram_name": "Solar Energy Budget",
+  "chapter_number": 3,
+  "chapter_title": "\"Energy Flow in Ecosystems\"",
+  "chapter_dir": "03-energy-flow",
+  "library": "p5.js",
+  "bloom_level": "Understand",
+  "bloom_verb": "Trace",
+  "learning_objective": "Students trace the path of solar energy from the sun to its capture by producers, accounting for losses at each step.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** solar-energy-budget<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand\n**Bloom Verb:** Trace\n**Learning Objective:** Students trace the path of solar energy from the sun to its capture by producers, accounting for losses at each step.\n**Instructional Rationale:** A Sankey-style flow diagram makes abstract energy quantities tangible and shows why such a small fraction of solar energy enters ecosystems.\n\nA Sankey diagram showing solar energy flowing from left to right. Starting value: 100 units of incoming solar radiation. Branches split at each loss point: reflected by atmosphere (6%), reflected by clouds (20%), absorbed by atmosphere (16%), reflected by surface (4%), absorbed by surface but not captured by plants (53%), captured by photosynthesis (~1%). Each branch is a colored flow ribbon with width proportional to energy amount. Hovering over any branch shows the exact percentage and a brief explanation. The photosynthesis ribbon leads to a \"Producers\" box that glows green. A slider lets users adjust cloud cover to see how it affects the energy reaching producers. Canvas 800×450. Responsive."
+}

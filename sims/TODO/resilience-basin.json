@@ -1,0 +1,14 @@
+{
+  "sim_id": "resilience-basin",
+  "diagram_name": "Resilience Ball-in-Basin Model",
+  "chapter_number": 13,
+  "chapter_title": "\"Chapter 13: Systems Thinking\"",
+  "chapter_dir": "13-systems-thinking",
+  "library": "p5.js",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Predict",
+  "learning_objective": "Predict when a system will undergo a regime shift based on disturbance magnitude and resilience",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** resilience-basin<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze\n**Bloom Verb:** Predict\n**Learning Objective:** Predict when a system will undergo a regime shift based on disturbance magnitude and resilience\n**Instructional Rationale:** The ball-in-basin metaphor makes the abstract concept of regime shifts physically intuitive\n\nA physics-based simulation showing a ball (representing ecosystem state) sitting in a landscape of basins (representing stable states). Two basins are shown: one labeled \"Healthy Forest\" and one labeled \"Degraded Grassland\" with a ridge between them (the threshold). Students apply disturbance by clicking and dragging the ball or using a \"disturbance\" slider. Small disturbances rock the ball but it returns to its basin. A large enough disturbance pushes it over the ridge into the other basin. A second slider controls \"resilience\" which changes the depth/width of the healthy basin -- deeper basin = more resilient. A \"slow degradation\" button gradually makes the healthy basin shallower (reducing resilience) until even a small disturbance causes a regime shift. Real-time labels show: current state, resilience level, distance to threshold. Colors: healthy basin in green, degraded basin in brown/orange, ball in blue, threshold ridge in red."
+}

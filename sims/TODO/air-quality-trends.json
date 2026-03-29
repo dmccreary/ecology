@@ -1,0 +1,14 @@
+{
+  "sim_id": "air-quality-trends",
+  "diagram_name": "U.S. Air Quality Trends Dashboard",
+  "chapter_number": 11,
+  "chapter_title": "\"Chapter 11: Atmospheric Pollution\"",
+  "chapter_dir": "11-atmospheric-pollution",
+  "library": "Chart.js",
+  "bloom_level": "Evaluate",
+  "bloom_verb": "Assess",
+  "learning_objective": "Students assess the effectiveness of the Clean Air Act by analyzing emission trends for all six criteria pollutants alongside economic indicators.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: chart\n**sim-id:** air-quality-trends<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Evaluate\n**Bloom Verb:** Assess\n**Learning Objective:** Students assess the effectiveness of the Clean Air Act by analyzing emission trends for all six criteria pollutants alongside economic indicators.\n**Instructional Rationale:** Dual-axis time series charts powerfully counter the misconception that environmental regulation harms the economy by showing simultaneous pollution decline and economic growth.\n\nMulti-line time series chart spanning 1970-2025. LEFT y-axis: pollutant emissions (indexed to 1970 = 100). Six colored lines for each criteria pollutant, all declining at different rates. RIGHT y-axis: GDP (indexed to 1970 = 100), rising steadily. X-axis: years with key policy milestones marked (1970 Clean Air Act, 1990 Amendments, 1996 leaded gas ban, etc.). Dropdown to toggle individual pollutant lines on/off. Hover shows exact values and year. Annotation callouts at key inflection points explaining what caused changes. GDP line in green, pollutant lines in warm colors (red, orange, amber). Gray shaded areas mark recession years for economic context."
+}

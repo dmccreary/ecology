@@ -1,0 +1,14 @@
+{
+  "sim_id": "climate-solutions",
+  "diagram_name": "Climate Solutions Pathway",
+  "chapter_number": 15,
+  "chapter_title": "\"Chapter 15: Global Climate Change\"",
+  "chapter_dir": "15-global-climate-change",
+  "library": "p5.js",
+  "bloom_level": "Evaluate",
+  "bloom_verb": "Assess",
+  "learning_objective": "Students assess the relative impact of different climate solutions and explain how mitigation and adaptation strategies work together.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: infographic\n**sim-id:** climate-solutions<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Evaluate\n**Bloom Verb:** Assess\n**Learning Objective:** Students assess the relative impact of different climate solutions and explain how mitigation and adaptation strategies work together.\n**Instructional Rationale:** Solutions-oriented framing prevents despair and empowers students to see their agency. Interactive comparison builds evaluation skills.\n\n**Visual Elements:**\n\n- Central temperature pathway showing projections under different scenarios\n- Branching solution categories: Energy, Transport, Land Use, Industry, Policy\n- Each solution shows estimated gigatons of CO2 reduced per year\n- Progress bars showing current adoption vs. potential\n- Icons for each solution type\n\n**Interactions:**\n\n- Click solutions to \"activate\" them and see temperature pathway shift downward\n- Stack multiple solutions to see combined effect\n- Toggle between mitigation and adaptation views\n- \"My Climate Plan\" mode: students select a portfolio of solutions and see projected outcome\n- Compare individual vs. systemic solutions\n\n**Colors:** Business-as-usual: red (#e63946), moderate action: orange (#f4a261), strong action: green (#2a9d8f), individual solutions: light blue (#a8dadc), systemic solutions: navy (#1d3557)"
+}

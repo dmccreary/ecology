@@ -1,0 +1,14 @@
+{
+  "sim_id": "source-credibility",
+  "diagram_name": "Source Credibility Evaluator",
+  "chapter_number": 14,
+  "chapter_title": "\"Chapter 14: Scientific Literacy\"",
+  "chapter_dir": "14-scientific-literacy",
+  "library": "p5.js",
+  "bloom_level": "Evaluate",
+  "bloom_verb": "Evaluate",
+  "learning_objective": "Evaluate the credibility of environmental science claims by assessing source quality, methodology, and potential bias",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** source-credibility<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Evaluate\n**Bloom Verb:** Evaluate\n**Learning Objective:** Evaluate the credibility of environmental science claims by assessing source quality, methodology, and potential bias\n**Instructional Rationale:** Gamified evaluation with scoring rubric teaches systematic source assessment habits\n\nAn interactive evaluation tool. Students are presented with a mock environmental claim (e.g., \"New superfood reverses climate change!\") paired with a source description (blog post, peer-reviewed journal, industry press release, government report, social media post). For each claim-source pair, students rate on four criteria using sliders (0-10): Expertise of source, Quality of evidence presented, Transparency of methods/funding, Consistency with broader literature. The tool calculates a \"credibility score\" and compares it to an expert rating. Feedback explains what the student got right and what they missed. A running scoreboard tracks performance across 8 scenarios spanning the credibility spectrum. Visual design: clean card-based layout, credibility meter (red-yellow-green), source type icons. Progress bar at top."
+}

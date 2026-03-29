@@ -1,0 +1,14 @@
+{
+  "sim_id": "energy-mix-explorer",
+  "diagram_name": "Global Energy Mix Scenario Explorer",
+  "chapter_number": 9,
+  "chapter_title": "\"Chapter 9: Sustainability and Energy Resources\"",
+  "chapter_dir": "09-sustainability-and-energy",
+  "library": "p5.js",
+  "bloom_level": "Create",
+  "bloom_verb": "Design",
+  "learning_objective": "Students design an energy portfolio that meets demand constraints while minimizing ecological footprint.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** energy-mix-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Create\n**Bloom Verb:** Design\n**Learning Objective:** Students design an energy portfolio that meets demand constraints while minimizing ecological footprint.\n**Instructional Rationale:** Giving students agency to manipulate energy mix variables and see real-time consequences builds both systems thinking and decision-making skills.\n\nInteractive simulation with sliders for 8 energy sources (coal, oil, natural gas, nuclear, solar, wind, hydro, biomass). Each slider goes from 0-100% of total energy supply. Constraint: sliders must sum to 100% (auto-normalize). Display panels show: total CO2 emissions, total land use, total water use, average EROI, estimated cost per kWh, and a \"sustainability score\" (0-100). Visual bar chart updates in real time. Preset buttons: \"Current Mix,\" \"All Fossil,\" \"All Renewable,\" \"Balanced.\" Challenge mode: \"Can you reach a sustainability score of 80+ while keeping cost under 12 cents/kWh?\""
+}

@@ -1,0 +1,14 @@
+{
+  "sim_id": "hydrologic-cycle",
+  "diagram_name": "The Hydrologic Cycle",
+  "chapter_number": 4,
+  "chapter_title": "\"Chapter 4: Biogeochemical Cycles\"",
+  "chapter_dir": "04-biogeochemical-cycles",
+  "library": "p5.js",
+  "bloom_level": "Understand",
+  "bloom_verb": "Explain",
+  "learning_objective": "Trace the movement of water through the hydrologic cycle and identify key processes.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** hydrologic-cycle<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand\n**Bloom Verb:** Explain\n**Learning Objective:** Trace the movement of water through the hydrologic cycle and identify key processes.\n**Instructional Rationale:** An animated cycle diagram lets students see simultaneous processes rather than a static snapshot.\n\nAnimated landscape showing ocean on the left, mountains in the center, and plains on the right. Blue water particles rise from the ocean (evaporation), drift right as clouds, fall as precipitation over mountains. Some particles flow as surface runoff into a river back to the ocean. Others sink underground into a groundwater layer. A forest section shows green transpiration arrows rising from trees. Slider controls: \"Solar Energy\" (adjusts evaporation rate), \"Vegetation Cover\" (adjusts transpiration vs. runoff ratio). Labels appear on hover for each process. Color scheme: blues for water, greens for vegetation, browns for soil, gray for rock layers."
+}

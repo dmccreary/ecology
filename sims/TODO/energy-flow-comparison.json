@@ -1,0 +1,14 @@
+{
+  "sim_id": "energy-flow-comparison",
+  "diagram_name": "Renewable vs. Nonrenewable Energy Flow",
+  "chapter_number": 9,
+  "chapter_title": "\"Chapter 9: Sustainability and Energy Resources\"",
+  "chapter_dir": "09-sustainability-and-energy",
+  "library": "vis-network",
+  "bloom_level": "Understand",
+  "bloom_verb": "Compare",
+  "learning_objective": "Students compare renewable and nonrenewable energy pathways from source to end use.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: diagram\n**sim-id:** energy-flow-comparison<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand\n**Bloom Verb:** Compare\n**Learning Objective:** Students compare renewable and nonrenewable energy pathways from source to end use.\n**Instructional Rationale:** Visual network diagrams help students see that all energy ultimately traces back to a few sources (sun, Earth's interior, nuclear reactions) and that \"renewable\" vs. \"nonrenewable\" describes the replenishment rate, not the source itself.\n\nNetwork diagram with two main clusters. LEFT cluster: Sun node at top connects to Solar, Wind, Hydroelectric, Biomass. Earth Interior node connects to Geothermal. All labeled \"Renewable -- replenished continuously.\" RIGHT cluster: Ancient Sun node connects to Fossil Fuels node, which branches to Coal, Oil, Natural Gas. Uranium Deposits node connects to Nuclear. All labeled \"Nonrenewable -- finite stocks.\" Both clusters connect to a central \"Human Energy Use\" node at bottom. Color scheme: green tones for renewable, amber/brown for nonrenewable. Edges labeled with energy transformation type."
+}

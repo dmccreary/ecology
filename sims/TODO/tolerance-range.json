@@ -1,0 +1,14 @@
+{
+  "sim_id": "tolerance-range",
+  "diagram_name": "Tolerance Range Explorer",
+  "chapter_number": 6,
+  "chapter_title": "\"Chapter 6: Biodiversity and Ecosystem Services\"",
+  "chapter_dir": "06-biodiversity-and-services",
+  "library": "p5.js",
+  "bloom_level": "Apply",
+  "bloom_verb": "Demonstrate",
+  "learning_objective": "Students will demonstrate how changes in environmental conditions affect organism survival by manipulating tolerance curves.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** tolerance-range<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Apply\n**Bloom Verb:** Demonstrate\n**Learning Objective:** Students will demonstrate how changes in environmental conditions affect organism survival by manipulating tolerance curves.\n**Instructional Rationale:** Draggable tolerance curves let students physically explore how specialists and generalists respond differently to environmental shifts, building intuition before formal analysis.\n\nVisual: X-axis shows an environmental gradient (temperature, 0-50°C). Y-axis shows population performance (growth rate). Display two overlapping bell curves: a narrow one (specialist species, e.g., brook trout) and a wide one (generalist species, e.g., largemouth bass). A draggable vertical line represents \"current environmental condition.\" As the student drags the line, both curves highlight whether each species is in its optimal zone, stress zone, or intolerance zone. Labels clearly mark each zone. A dropdown selector lets students switch the environmental variable (temperature, pH, salinity, dissolved oxygen). Color coding: green for optimal, yellow for stress, red for intolerance."
+}

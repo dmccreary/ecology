@@ -1,0 +1,14 @@
+{
+  "sim_id": "cogeneration-flow",
+  "diagram_name": "Cogeneration System Flow",
+  "chapter_number": 9,
+  "chapter_title": "\"Chapter 9: Sustainability and Energy Resources\"",
+  "chapter_dir": "09-sustainability-and-energy",
+  "library": "vis-network",
+  "bloom_level": "Understand",
+  "bloom_verb": "Explain",
+  "learning_objective": "Students trace energy flow through a cogeneration system and compare total efficiency to conventional separate generation.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: diagram\n**sim-id:** cogeneration-flow<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand\n**Bloom Verb:** Explain\n**Learning Objective:** Students trace energy flow through a cogeneration system and compare total efficiency to conventional separate generation.\n**Instructional Rationale:** Sankey-style flow diagrams make energy losses visible, reinforcing the concept that efficiency means capturing energy that would otherwise be wasted.\n\nFlow diagram comparing two systems side by side. LEFT: Conventional -- fuel input (100 units) splits to Power Plant (33 units electricity, 67 units waste heat) and Boiler (80 units useful heat, 20 units waste). Total useful: 113 units from 200 units fuel input (56% efficient). RIGHT: Cogeneration -- fuel input (100 units) goes to CHP system producing 35 units electricity AND 50 units useful heat. Total useful: 85 units from 100 units fuel input (85% efficient). Waste heat shown in red, useful energy in green, fuel input in amber. Animated flow particles show energy movement."
+}

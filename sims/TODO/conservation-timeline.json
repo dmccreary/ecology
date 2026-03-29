@@ -1,0 +1,14 @@
+{
+  "sim_id": "conservation-timeline",
+  "diagram_name": "Conservation Policy Timeline",
+  "chapter_number": 16,
+  "chapter_title": "\"Chapter 16: Biodiversity Loss and Policy\"",
+  "chapter_dir": "16-biodiversity-loss-and-policy",
+  "library": "p5.js",
+  "bloom_level": "Understand",
+  "bloom_verb": "Summarize",
+  "learning_objective": "Students summarize the evolution of conservation policy from national laws to international agreements and explain how each policy addresses specific threats.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: timeline\n**sim-id:** conservation-timeline<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand\n**Bloom Verb:** Summarize\n**Learning Objective:** Students summarize the evolution of conservation policy from national laws to international agreements and explain how each policy addresses specific threats.\n**Instructional Rationale:** A visual timeline helps students see how policies built upon each other over decades and connects legislation to the ecological problems that motivated them.\n\n**Visual Elements:**\n\n- Horizontal scrollable timeline from 1960 to 2030\n- Major policy milestones as labeled nodes along the line\n- Color-coded by type: U.S. law (blue), international treaty (green), economic mechanism (orange)\n- Each node expands on click to show: date, key provisions, species/threats addressed, effectiveness rating\n- Background track showing global species decline trend line\n- Connecting lines between related policies\n\n**Interactions:**\n\n- Scroll/drag to navigate timeline\n- Click nodes to expand details\n- Filter by policy type (domestic, international, economic)\n- \"Quiz mode\" toggle: nodes show only the date, students must identify the policy\n- Hover to see which HIPPO threats each policy addresses\n\n**Colors:** U.S. law: blue (#457b9d), international treaty: green (#2a9d8f), economic: orange (#f4a261), timeline track: dark gray (#264653), decline trend: red (#e63946)"
+}

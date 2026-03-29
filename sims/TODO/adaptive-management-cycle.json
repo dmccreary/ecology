@@ -1,0 +1,14 @@
+{
+  "sim_id": "adaptive-management-cycle",
+  "diagram_name": "Adaptive Management Cycle",
+  "chapter_number": 13,
+  "chapter_title": "\"Chapter 13: Systems Thinking\"",
+  "chapter_dir": "13-systems-thinking",
+  "library": "p5.js",
+  "bloom_level": "Apply",
+  "bloom_verb": "Implement",
+  "learning_objective": "Implement the adaptive management cycle for an ecological management scenario",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: diagram\n**sim-id:** adaptive-management-cycle<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Apply\n**Bloom Verb:** Implement\n**Learning Objective:** Implement the adaptive management cycle for an ecological management scenario\n**Instructional Rationale:** Interactive cycle with scenario branching shows how real-world uncertainty requires iterative learning\n\nA circular diagram showing the six steps of adaptive management as clickable nodes arranged in a circle. Connecting arrows show the cycle direction. When a student clicks a step, the center panel shows a scenario example (managing wolf reintroduction, controlling invasive species, or restoring a wetland -- selectable via dropdown). At each step, students make a choice from 2-3 options. Their choice affects outcomes in later steps, demonstrating how different decisions cascade through the management process. After completing one full cycle, students can see how their monitoring data informs adjustments in cycle 2. A running log shows decisions made and outcomes observed. Colors: each step is a different color in a warm-to-cool spectrum around the circle. Active step is highlighted and enlarged."
+}

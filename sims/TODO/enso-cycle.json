@@ -1,0 +1,14 @@
+{
+  "sim_id": "enso-cycle",
+  "diagram_name": "ENSO Cycle Interactive",
+  "chapter_number": 15,
+  "chapter_title": "\"Chapter 15: Global Climate Change\"",
+  "chapter_dir": "15-global-climate-change",
+  "library": "p5.js",
+  "bloom_level": "Understand",
+  "bloom_verb": "Explain",
+  "learning_objective": "Students explain how trade winds, ocean temperatures, and atmospheric circulation interact during El Niño and La Niña phases.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** enso-cycle<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand\n**Bloom Verb:** Explain\n**Learning Objective:** Students explain how trade winds, ocean temperatures, and atmospheric circulation interact during El Niño and La Niña phases.\n**Instructional Rationale:** Interactive visualization of a dynamic cycle helps students see the system as a whole rather than memorizing isolated facts.\n\n**Visual Elements:**\n\n- Cross-section view of the Pacific Ocean from South America (right) to Australia/Indonesia (left)\n- Animated trade wind arrows showing direction and strength\n- Color-coded ocean temperature gradient (blue = cool, red = warm)\n- Thermocline line showing depth of warm/cool boundary\n- Cloud and rain icons showing precipitation patterns\n- Upwelling arrows along South American coast\n\n**Interactions:**\n\n- Toggle button: Normal / El Niño / La Niña\n- Animated transitions between states showing wind reversal, warm water migration, and thermocline changes\n- Hover over regions to see local effects (drought, flooding, temperature changes)\n- Speed slider for animation rate\n\n**Colors:** Ocean blue (#1a73e8) to warm red (#e63946) gradient, atmosphere light blue (#87CEEB), land green/brown"
+}

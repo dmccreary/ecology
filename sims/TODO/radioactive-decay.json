@@ -1,0 +1,14 @@
+{
+  "sim_id": "radioactive-decay",
+  "diagram_name": "Radioactive Decay Simulator",
+  "chapter_number": 9,
+  "chapter_title": "\"Chapter 9: Sustainability and Energy Resources\"",
+  "chapter_dir": "09-sustainability-and-energy",
+  "library": "p5.js",
+  "bloom_level": "Apply",
+  "bloom_verb": "Calculate",
+  "learning_objective": "Students visualize exponential decay and predict remaining radioactivity after multiple half-lives.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** radioactive-decay<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Apply\n**Bloom Verb:** Calculate\n**Learning Objective:** Students visualize exponential decay and predict remaining radioactivity after multiple half-lives.\n**Instructional Rationale:** Abstract exponential decay becomes intuitive when students can manipulate half-life values and watch the curve change in real time.\n\nP5.js simulation showing a collection of 200 colored circles representing radioactive atoms. Each timestep, atoms have a probability of \"decaying\" (changing from bright green to gray). A slider controls the half-life (1-100 timesteps). A line graph on the right tracks the number of undecayed atoms over time, showing the characteristic exponential decay curve. Display the mathematical formula and current values. Play/pause button and reset button. Speed slider for animation rate."
+}

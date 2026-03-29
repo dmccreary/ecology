@@ -1,0 +1,14 @@
+{
+  "sim_id": "global-winds",
+  "diagram_name": "Global Wind and Convection Cell Model",
+  "chapter_number": 8,
+  "chapter_title": "\"Chapter 8: Earth Systems and Resources\"",
+  "chapter_dir": "08-earth-systems",
+  "library": "p5.js",
+  "bloom_level": "Understand",
+  "bloom_verb": "Describe",
+  "learning_objective": "Students will describe how convection cells, the Coriolis effect, and global wind patterns interact to create Earth's major climate zones.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** global-winds<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand\n**Bloom Verb:** Describe\n**Learning Objective:** Students will describe how convection cells, the Coriolis effect, and global wind patterns interact to create Earth's major climate zones.\n**Instructional Rationale:** A cross-section view of Earth's atmosphere with animated wind arrows and convection loops makes invisible atmospheric processes visible and shows students how physics creates the biome map.\n\nVisual: Cross-section of Earth from pole to pole (semicircle) with the atmosphere shown as concentric layers above. Three convection cells in each hemisphere shown as animated circulation loops with arrows. Surface wind directions shown with blue arrows labeled (Trade Winds, Westerlies, Polar Easterlies). Coriolis deflection shown with curved arrow overlays. At the surface, icons show resulting biomes: rainforest at equator, desert at 30°, temperate forest at 45°, tundra near poles. A toggle switches between \"No Rotation\" (straight winds) and \"With Rotation\" (Coriolis-deflected winds) to show the effect. Precipitation indicators (rain droplets) at rising air zones (equator, 60°) and dry indicators (sun icons) at sinking air zones (30°, 90°). Interactive: hover over any latitude band to see wind name, direction, typical weather, and associated biome."
+}

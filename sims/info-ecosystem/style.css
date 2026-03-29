@@ -1,0 +1,83 @@
+/* Information Ecosystem Flow - vis-network MicroSim styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fafafa;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#network {
+  background: #f7f9fa;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#info-panel {
+  background: #fff;
+  border-left: 2px solid #457b9d;
+  padding: 15px;
+  overflow-y: auto;
+  max-width: 280px;
+}
+
+#info-panel h3 {
+  margin-top: 0;
+  color: #264653;
+}
+
+#info-panel p {
+  color: #5d4037;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+button {
+  font-size: 13px;
+  padding: 6px 14px;
+  cursor: pointer;
+  background: #457b9d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #1d3557;
+}
+
+select {
+  font-size: 13px;
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.legend {
+  display: flex;
+  gap: 12px;
+  padding: 8px;
+  font-size: 11px;
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.legend-swatch {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 3px;
+  border-width: 2px;
+  border-style: solid;
+}

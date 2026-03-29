@@ -1,0 +1,14 @@
+{
+  "sim_id": "food-web-builder",
+  "diagram_name": "Interactive Food Web Builder",
+  "chapter_number": 2,
+  "chapter_title": "\"Ecosystems and Biomes\"",
+  "chapter_dir": "02-ecosystems-and-biomes",
+  "library": "vis-network",
+  "bloom_level": "Apply",
+  "bloom_verb": "Construct",
+  "learning_objective": "Students construct a food web and predict the effects of removing a species.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** food-web-builder<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Bloom Level:** Apply\n**Bloom Verb:** Construct\n**Learning Objective:** Students construct a food web and predict the effects of removing a species.\n**Instructional Rationale:** Building a food web from scratch deepens understanding of trophic relationships. The removal simulation demonstrates trophic cascades concretely.\n\nA network-graph food web with draggable organism nodes. Preset ecosystem: temperate forest. Organisms include: oak tree, grass, berries, caterpillar, rabbit, mouse, deer, frog, snake, fox, owl, hawk, mushroom (decomposer). Students drag arrows between organisms to create feeding relationships. A \"Check Web\" button validates connections. A \"Remove Species\" dropdown lets students remove one organism and see which connections break (edges turn red, affected nodes flash). Population impact arrows (up/down) appear on affected species. Color-coded by trophic level: green (producers), blue (primary consumers), orange (secondary), red (tertiary). Layout uses vis-network physics for organic positioning. Node y-offset at 490 for proper edge label rendering."
+}

@@ -1,0 +1,14 @@
+{
+  "sim_id": "carbon-pricing",
+  "diagram_name": "Carbon Pricing Comparison",
+  "chapter_number": 16,
+  "chapter_title": "\"Chapter 16: Biodiversity Loss and Policy\"",
+  "chapter_dir": "16-biodiversity-loss-and-policy",
+  "library": "p5.js",
+  "bloom_level": "Evaluate",
+  "bloom_verb": "Compare",
+  "learning_objective": "Students compare the mechanisms, advantages, and limitations of carbon tax and cap-and-trade systems.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** carbon-pricing<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Evaluate\n**Bloom Verb:** Compare\n**Learning Objective:** Students compare the mechanisms, advantages, and limitations of carbon tax and cap-and-trade systems.\n**Instructional Rationale:** Side-by-side simulation of both mechanisms lets students experiment with parameters and discover trade-offs themselves rather than being told.\n\n**Visual Elements:**\n\n- Split screen: Carbon Tax (left) vs. Cap and Trade (right)\n- Each side shows: a set of factory icons emitting CO₂, a cost/price indicator, total emissions counter, and a graph of emissions over time\n- Carbon Tax side: adjustable tax rate slider, shows factories reducing emissions based on their individual cost curves\n- Cap and Trade side: adjustable cap slider, shows permit market with buy/sell transactions\n- Bottom panel: comparative summary table updated in real time\n\n**Interactions:**\n\n- Carbon Tax: slider to set $/ton rate (0-200), watch factories respond\n- Cap and Trade: slider to set total cap, watch permits trade at market price\n- Both: \"Run 10 years\" button to simulate long-term outcomes\n- Toggle \"Revenue use\" to see effects of recycling revenue into clean energy\n- Compare button overlays both emissions curves for direct comparison\n\n**Colors:** Carbon tax: blue (#457b9d), cap and trade: green (#2a9d8f), emissions: red-orange gradient, factories: gray (#6c757d), clean energy: bright green (#52b788)"
+}

@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main {
+  max-width: 100%;
+}
+div.vis-network .vis-navigation .vis-button {
+  cursor: pointer;
+}

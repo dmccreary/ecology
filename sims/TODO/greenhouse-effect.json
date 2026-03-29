@@ -1,0 +1,14 @@
+{
+  "sim_id": "greenhouse-effect",
+  "diagram_name": "Greenhouse Effect Energy Balance",
+  "chapter_number": 15,
+  "chapter_title": "\"Chapter 15: Global Climate Change\"",
+  "chapter_dir": "15-global-climate-change",
+  "library": "p5.js",
+  "bloom_level": "Apply",
+  "bloom_verb": "Demonstrate",
+  "learning_objective": "Students demonstrate how increasing greenhouse gas concentrations shift Earth's energy balance and raise surface temperatures.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** greenhouse-effect<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Apply\n**Bloom Verb:** Demonstrate\n**Learning Objective:** Students demonstrate how increasing greenhouse gas concentrations shift Earth's energy balance and raise surface temperatures.\n**Instructional Rationale:** Interactive sliders let students experiment with GHG levels and immediately see temperature effects, building intuition for the mechanism.\n\n**Visual Elements:**\n\n- Side view of Earth with atmosphere layers\n- Yellow arrows (incoming solar radiation) from top\n- Red arrows (outgoing infrared) from surface\n- Orange arrows (re-emitted infrared) trapped by GHG molecules\n- GHG molecules shown as colored dots in atmosphere\n- Temperature gauge showing surface temperature\n- Energy balance bar showing incoming vs. outgoing radiation\n\n**Interactions:**\n\n- Slider: CO2 concentration (pre-industrial 280 ppm to extreme 1000 ppm)\n- Slider: Methane concentration (pre-industrial to 3x current)\n- Real-time temperature readout changes as sliders move\n- Toggle: Show/hide individual gas contributions\n- \"Reset to pre-industrial\" and \"Set to current\" buttons\n\n**Colors:** Solar yellow (#FFD700), infrared red (#FF4444), re-emitted orange (#FF8C00), CO2 molecules gray, CH4 molecules blue-green, atmosphere gradient blue"
+}

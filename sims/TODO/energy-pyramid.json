@@ -1,0 +1,14 @@
+{
+  "sim_id": "energy-pyramid",
+  "diagram_name": "Energy Pyramid Simulator",
+  "chapter_number": 2,
+  "chapter_title": "\"Ecosystems and Biomes\"",
+  "chapter_dir": "02-ecosystems-and-biomes",
+  "library": "p5.js",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Calculate",
+  "learning_objective": "Students calculate energy available at each trophic level using the ten percent rule.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** energy-pyramid<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze\n**Bloom Verb:** Calculate\n**Learning Objective:** Students calculate energy available at each trophic level using the ten percent rule.\n**Instructional Rationale:** Interactive sliders let students manipulate efficiency percentages and see how small changes in transfer efficiency dramatically affect top-predator energy.\n\nA pyramid visualization with 4–5 horizontal bars representing trophic levels, widths proportional to energy. A slider controls producer energy input (1,000–100,000 kcal). A second slider controls transfer efficiency (5%–20%, default 10%). The pyramid redraws in real time as sliders change. Each bar displays: trophic level name, energy in kcal, percentage of original. Color gradient from green (bottom) to red (top). A side panel shows the calculation at each level. A toggle switches between energy, biomass, and numbers pyramid views. Canvas 700×500. Responsive."
+}

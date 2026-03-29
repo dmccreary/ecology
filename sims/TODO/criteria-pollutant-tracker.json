@@ -1,0 +1,14 @@
+{
+  "sim_id": "criteria-pollutant-tracker",
+  "diagram_name": "Criteria Air Pollutants Source-to-Impact Tracker",
+  "chapter_number": 11,
+  "chapter_title": "\"Chapter 11: Atmospheric Pollution\"",
+  "chapter_dir": "11-atmospheric-pollution",
+  "library": "vis-network",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Trace",
+  "learning_objective": "Students trace each criteria air pollutant from its source through atmospheric chemistry to its health and environmental impacts.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: diagram\n**sim-id:** criteria-pollutant-tracker<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze\n**Bloom Verb:** Trace\n**Learning Objective:** Students trace each criteria air pollutant from its source through atmospheric chemistry to its health and environmental impacts.\n**Instructional Rationale:** Network visualization reveals that pollutants share sources and interact with each other -- reinforcing that air pollution is a system, not a list of independent chemicals.\n\nNetwork diagram with three columns. LEFT column: Sources (vehicles, power plants, industry, natural sources). CENTER column: Six criteria pollutants (CO, SO2, NOx, O3, PM, Pb) plus VOCs as a precursor. RIGHT column: Impacts (respiratory disease, cardiovascular disease, acid rain, smog, ecosystem damage, neurological damage). Edges connect sources to pollutants they produce, and pollutants to their impacts. Special dashed edges show secondary formation: NOx + VOCs -> O3, SO2 -> H2SO4 -> acid rain, NOx -> HNO3 -> acid rain. Color coding: sources in gray, primary pollutants in orange, secondary pollutants in red, health impacts in purple, environmental impacts in brown. User can click any node to highlight all connected paths. Hover shows details."
+}

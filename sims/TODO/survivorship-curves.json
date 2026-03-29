@@ -1,0 +1,14 @@
+{
+  "sim_id": "survivorship-curves",
+  "diagram_name": "Survivorship Curve Explorer",
+  "chapter_number": 7,
+  "chapter_title": "\"Chapter 7: Population Ecology\"",
+  "chapter_dir": "07-population-ecology",
+  "library": "p5.js",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Compare",
+  "learning_objective": "Students will compare the three survivorship curve types and match real species to each pattern.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** survivorship-curves<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze\n**Bloom Verb:** Compare\n**Learning Objective:** Students will compare the three survivorship curve types and match real species to each pattern.\n**Instructional Rationale:** Interactive curves with real species examples help students connect abstract demographic patterns to organisms they recognize, building intuition about life history trade-offs.\n\nVisual: Log-scale y-axis (number of survivors, 1 to 1000) and x-axis (percentage of maximum lifespan, 0-100%). Three curves displayed simultaneously: Type I (concave, stays high then drops), Type II (straight diagonal), Type III (convex, drops fast then levels). Each curve has a different color. A species selector dropdown lets students choose real species (human, robin, sea turtle, elephant, songbird, oyster, oak tree) and see which curve type they match, with the selected species' data points overlaid. Include silhouette icons for each species. Hover over any point on a curve to see: \"At X% of maximum lifespan, Y% of the population survives.\""
+}

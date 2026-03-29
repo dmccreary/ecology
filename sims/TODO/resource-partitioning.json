@@ -1,0 +1,14 @@
+{
+  "sim_id": "resource-partitioning",
+  "diagram_name": "Resource Partitioning in Warblers",
+  "chapter_number": 5,
+  "chapter_title": "\"Chapter 5: Species Interactions\"",
+  "chapter_dir": "05-species-interactions",
+  "library": "p5.js",
+  "bloom_level": "Understand",
+  "bloom_verb": "Compare",
+  "learning_objective": "Compare how different species partition resources within a shared habitat to reduce interspecific competition.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** resource-partitioning<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand\n**Bloom Verb:** Compare\n**Learning Objective:** Compare how different species partition resources within a shared habitat to reduce interspecific competition.\n**Instructional Rationale:** Visual overlay of foraging zones on a single tree makes abstract niche concepts concrete and spatial.\n\nLarge conifer tree centered on canvas, drawn with layered triangular canopy sections and visible trunk. Five warbler species shown as colored bird icons, each with a highlighted foraging zone on the tree (semi-transparent colored overlays): Cape May Warbler (top/outer crown, red zone), Blackburnian Warbler (upper interior, orange zone), Bay-breasted Warbler (middle interior, yellow zone), Black-throated Green Warbler (mid-outer branches, green zone), Myrtle Warbler (lower branches and base, blue zone). Birds animate within their zones, hopping between branches. Hover over any bird to see a popup with species name, preferred height range, foraging behavior description, and primary food. Toggle button: \"Show Overlap\" highlights areas where zones overlap and displays competition intensity as a heat map. \"Competitive Exclusion\" mode removes all species except two with maximum overlap and shows one declining over time."
+}

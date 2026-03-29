@@ -1,0 +1,14 @@
+{
+  "sim_id": "phosphorus-runoff",
+  "diagram_name": "Phosphorus Runoff and Eutrophication",
+  "chapter_number": 4,
+  "chapter_title": "\"Chapter 4: Biogeochemical Cycles\"",
+  "chapter_dir": "04-biogeochemical-cycles",
+  "library": "p5.js",
+  "bloom_level": "Evaluate",
+  "bloom_verb": "Predict",
+  "learning_objective": "Predict the downstream effects of excess phosphorus input on aquatic ecosystems.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** phosphorus-runoff<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Evaluate\n**Bloom Verb:** Predict\n**Learning Objective:** Predict the downstream effects of excess phosphorus input on aquatic ecosystems.\n**Instructional Rationale:** Cause-and-effect simulation lets students manipulate fertilizer input and observe eutrophication in real time, building predictive reasoning.\n\nSplit-screen view. Left side: farmland with a slider for \"Fertilizer Application\" (low/medium/high/excessive). Rain button triggers precipitation. Phosphorus particles (orange dots) wash off the field into a stream flowing to the right side. Right side: a lake cross-section showing water column. As phosphorus enters, algae (green) blooms on the surface. An oxygen meter on the side drops as decomposers consume dead algae. Fish icons at the bottom start turning belly-up when oxygen drops below a threshold. A timeline graph at the bottom tracks phosphorus input, algae density, and dissolved oxygen over simulated weeks. \"Add Buffer Strip\" button places vegetation along the stream bank that intercepts some phosphorus before it reaches the lake."
+}

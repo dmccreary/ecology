@@ -1,0 +1,14 @@
+{
+  "sim_id": "ecosystem-concept-map",
+  "diagram_name": "Ecosystem Concept Map",
+  "chapter_number": 1,
+  "chapter_title": "\"Chapter 1: Foundations of Ecology\"",
+  "chapter_dir": "01-foundations-of-ecology",
+  "library": "vis-network",
+  "bloom_level": "Analyze (L4)",
+  "bloom_verb": "Organize, examine",
+  "learning_objective": "Students will be able to organize the 20 foundational ecology concepts into a network showing their relationships and explain how concepts connect to each other.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: graph-model\n**sim-id:** ecosystem-concept-map<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze (L4)\n**Bloom Verb:** Organize, examine\n\n**Learning Objective:** Students will be able to organize the 20 foundational ecology concepts into a network showing their relationships and explain how concepts connect to each other.\n\n**Instructional Rationale:** A network graph explorer supports the Analyze/organize objective by letting students see and interact with the web of relationships between concepts. Clicking a concept highlights its connections, building intuition about how foundational ideas are interdependent.\n\nPurpose: Interactive concept map showing all 20 chapter concepts as nodes with edges representing relationships.\n\nNode Types:\n1. Organization concepts (green circles): Ecology, Ecosystem, Biosphere, Biome, Species, Population, Community, Habitat, Niche, Biodiversity\n2. Energy and matter concepts (gold circles): Energy, Matter, Nutrients, Organic Molecules, Inorganic Molecules, Water Properties\n3. Process concepts (blue circles): Photosynthesis, Cellular Respiration\n4. Factor concepts (orange circles): Biotic Factors, Abiotic Factors\n\nEdge Types:\n- \"contains\" (solid arrows): Ecosystem contains Biotic Factors, Abiotic Factors\n- \"part of\" (dashed arrows): Ecosystem part of Biome, Biome part of Biosphere\n- \"made of\" (solid lines): Population made of Species, Community made of Populations\n- \"depends on\" (dotted arrows): Photosynthesis depends on Energy, Matter, Water Properties\n- \"produces\" (thick arrows): Photosynthesis produces Organic Molecules; Cellular Respiration produces Energy (ATP)\n\nInteractive Features:\n- Click a node to highlight all directly connected nodes and edges\n- Hover over a node to see its definition in a tooltip\n- Hover over an edge to see the relationship description\n- Drag nodes to rearrange the layout\n- Zoom with mouse wheel\n- Button: \"Show All Connections\" / \"Reset View\"\n\nLayout: Force-directed with organization concepts in center, energy/matter concepts on left, process concepts on right\nCanvas: Responsive width, 550px height, slight y-offset on edges (490 instead of 480) for correct label rendering\nImplementation: vis-network with force-directed layout"
+}

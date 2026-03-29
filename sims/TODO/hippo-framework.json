@@ -1,0 +1,14 @@
+{
+  "sim_id": "hippo-framework",
+  "diagram_name": "HIPPO Threat Interaction Web",
+  "chapter_number": 16,
+  "chapter_title": "\"Chapter 16: Biodiversity Loss and Policy\"",
+  "chapter_dir": "16-biodiversity-loss-and-policy",
+  "library": "vis-network",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Differentiate",
+  "learning_objective": "Students differentiate between the five HIPPO threats and analyze how they interact to amplify species vulnerability.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: graph-model\n**sim-id:** hippo-framework<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze\n**Bloom Verb:** Differentiate\n**Learning Objective:** Students differentiate between the five HIPPO threats and analyze how they interact to amplify species vulnerability.\n**Instructional Rationale:** A network diagram showing interactions between threats reinforces systems thinking and moves beyond simple list memorization.\n\n**Visual Elements:**\n\n- Five large nodes in a pentagon arrangement: Habitat Loss, Invasive Species, Pollution, Population, Overexploitation\n- Each node has an icon and color\n- Directed edges show how threats amplify each other (e.g., habitat loss → increased invasive species vulnerability)\n- Edge labels describe the interaction mechanism\n- Central area shows a selected species case study\n- Note: Position nodes with slight y-offsets (not perfectly horizontal) so vis-network renders edge labels correctly\n\n**Interactions:**\n\n- Click a HIPPO node to highlight all its outgoing interactions\n- Dropdown menu to select a case study species (polar bear, monarch butterfly, bluefin tuna, orangutan)\n- For each species, relevant HIPPO nodes light up showing which threats apply\n- Slider: \"Threat intensity\" dims/brightens nodes to show relative importance for selected species\n- Hover over edges to see detailed interaction descriptions\n\n**Colors:** H: forest green (#2d6a4f), I: invasive purple (#7b2cbf), P(pollution): toxic yellow (#ffd166), P(population): orange (#f4a261), O: exploitation red (#e63946)"
+}

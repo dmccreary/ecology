@@ -1,0 +1,14 @@
+{
+  "sim_id": "nitrogen-cycle",
+  "diagram_name": "The Nitrogen Cycle",
+  "chapter_number": 4,
+  "chapter_title": "\"Chapter 4: Biogeochemical Cycles\"",
+  "chapter_dir": "04-biogeochemical-cycles",
+  "library": "p5.js",
+  "bloom_level": "Apply",
+  "bloom_verb": "Diagram",
+  "learning_objective": "Trace nitrogen through fixation, nitrification, assimilation, and denitrification, identifying the organisms involved at each step.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** nitrogen-cycle<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Apply\n**Bloom Verb:** Diagram\n**Learning Objective:** Trace nitrogen through fixation, nitrification, assimilation, and denitrification, identifying the organisms involved at each step.\n**Instructional Rationale:** Step-by-step animation with pause/play allows students to focus on each transformation individually before seeing the whole cycle.\n\nScene shows cross-section of soil with atmosphere above and groundwater below. Nitrogen particles change color as they transform: purple for N2 gas, blue for NH4+, green for NO3-, red for NO2-. Animation shows: (1) N2 descending to root nodules where Rhizobium bacteria glow and convert it to NH4+, (2) NH4+ moving through soil where Nitrosomonas and Nitrobacter bacteria convert it stepwise to NO3-, (3) plant roots absorbing NO3- and particles rising up through stems to leaves, (4) dead leaves falling and decomposers releasing NH4+, (5) in waterlogged zone, bacteria converting NO3- back to N2 which rises to atmosphere. Controls: Play/Pause, Step Forward, \"Add Fertilizer\" button (floods soil with NO3- and shows runoff consequences), speed slider. Each step has a text label that appears describing the process and organisms involved."
+}

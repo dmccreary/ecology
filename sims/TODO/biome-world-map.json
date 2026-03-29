@@ -1,0 +1,14 @@
+{
+  "sim_id": "biome-world-map",
+  "diagram_name": "World Biome Map",
+  "chapter_number": 2,
+  "chapter_title": "\"Ecosystems and Biomes\"",
+  "chapter_dir": "02-ecosystems-and-biomes",
+  "library": "p5.js",
+  "bloom_level": "Understand",
+  "bloom_verb": "Classify",
+  "learning_objective": "Students classify and locate the seven major terrestrial biomes on a world map.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** biome-world-map<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand\n**Bloom Verb:** Classify\n**Learning Objective:** Students classify and locate the seven major terrestrial biomes on a world map.\n**Instructional Rationale:** Spatial visualization helps students connect biome characteristics to geographic location and climate patterns.\n\nA simplified world map projection showing the seven terrestrial biomes in distinct colors. Users hover over regions to see biome name, average temperature range, average precipitation, and a representative organism. A dropdown selector highlights all areas belonging to a single biome. Color key: Tropical Rainforest (dark green), Temperate Forest (medium green), Desert (sandy yellow), Tundra (light blue), Grassland (gold), Chaparral (olive), Taiga (dark blue-green). Canvas 800×500. Responsive layout with legend panel on the right."
+}

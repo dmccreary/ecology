@@ -1,0 +1,14 @@
+{
+  "sim_id": "confidence-interval-viz",
+  "diagram_name": "Confidence Interval Visualizer",
+  "chapter_number": 14,
+  "chapter_title": "\"Chapter 14: Scientific Literacy\"",
+  "chapter_dir": "14-scientific-literacy",
+  "library": "p5.js",
+  "bloom_level": "Understand",
+  "bloom_verb": "Interpret",
+  "learning_objective": "Interpret confidence intervals and margin of error in environmental measurements",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** confidence-interval-viz<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand\n**Bloom Verb:** Interpret\n**Learning Objective:** Interpret confidence intervals and margin of error in environmental measurements\n**Instructional Rationale:** Visual manipulation of sample size and confidence level builds intuition about statistical uncertainty\n\nA simulation with two panels. Top panel: a population of fish (dots) with hidden \"true\" mercury levels. Students draw samples by clicking a \"Sample\" button. Each sample of N fish produces a mean and confidence interval shown as a horizontal line with error bars. Multiple samples accumulate vertically, showing how confidence intervals from different samples overlap. A dashed vertical line shows the true population mean. Students observe that roughly 95% of the 95% confidence intervals contain the true mean. Bottom panel: sliders control sample size (10-500) and confidence level (80%-99%). As sample size increases, intervals narrow. As confidence level increases, intervals widen. A horizontal red line marks a \"safety threshold\" so students can see how uncertainty affects regulatory decisions. Colors: confidence intervals in blue, true mean in green, safety threshold in red, intervals that miss the true mean in orange."
+}

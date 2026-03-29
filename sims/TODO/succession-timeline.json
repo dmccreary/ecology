@@ -1,0 +1,14 @@
+{
+  "sim_id": "succession-timeline",
+  "diagram_name": "Ecological Succession Timeline",
+  "chapter_number": 6,
+  "chapter_title": "\"Chapter 6: Biodiversity and Ecosystem Services\"",
+  "chapter_dir": "06-biodiversity-and-services",
+  "library": "p5.js",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Compare",
+  "learning_objective": "Students will compare primary and secondary succession by manipulating a timeline that shows community changes over time.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** succession-timeline<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze\n**Bloom Verb:** Compare\n**Learning Objective:** Students will compare primary and secondary succession by manipulating a timeline that shows community changes over time.\n**Instructional Rationale:** An animated timeline with togglable succession types lets students directly compare the pace and stages of primary vs. secondary succession, reinforcing that the key difference is the presence or absence of soil.\n\nVisual: Horizontal timeline (0 to 1000 years) with a draggable playhead. Above the timeline, a landscape cross-section animates the succession stages: bare rock -> lichens -> mosses -> grasses -> shrubs -> pioneer trees -> climax forest (for primary). Toggle button switches between primary and secondary succession, with secondary starting at the \"soil present\" stage and progressing faster. Show soil depth increasing as a brown layer below the landscape. Label each stage with dominant species names. Display species richness counter and a small biodiversity graph that increases with time. Include \"disturbance\" button that resets to an earlier stage, demonstrating how disruptions restart succession."
+}

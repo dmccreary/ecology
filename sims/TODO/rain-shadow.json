@@ -1,0 +1,14 @@
+{
+  "sim_id": "rain-shadow",
+  "diagram_name": "Rain Shadow Effect Visualizer",
+  "chapter_number": 8,
+  "chapter_title": "\"Chapter 8: Earth Systems and Resources\"",
+  "chapter_dir": "08-earth-systems",
+  "library": "p5.js",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Explain",
+  "learning_objective": "Students will explain how mountain ranges create wet and dry climate zones through the rain shadow effect.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** rain-shadow<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze\n**Bloom Verb:** Explain\n**Learning Objective:** Students will explain how mountain ranges create wet and dry climate zones through the rain shadow effect.\n**Instructional Rationale:** Animated air flow over a mountain cross-section with real-time humidity and temperature gauges makes the invisible processes of adiabatic cooling and warming visible and intuitive.\n\nVisual: Side-view cross-section showing ocean on the left, a mountain in the center, and lowlands on the right. Animated air parcels (blue dots/clouds) flow from left to right. As air rises over the windward slope, parcels cool (temperature gauge drops), humidity rises, clouds form, and rain falls (animated droplets). At the summit, heavy precipitation shown. On the leeward side, air descends, warms (temperature gauge rises), humidity drops, and the landscape becomes brown and arid. A slider controls mountain height (500m to 5000m), and as the mountain gets taller, the rain shadow effect becomes more extreme. Vegetation changes with moisture: lush forest on windward side, sparse scrubland on leeward side. Labels show temperature and relative humidity at each stage. A \"Real Examples\" dropdown overlays data from actual mountain ranges (Cascades, Himalayas, Andes, Sierra Nevada)."
+}

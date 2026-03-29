@@ -1,0 +1,14 @@
+{
+  "sim_id": "correlation-causation",
+  "diagram_name": "Correlation vs. Causation Challenge",
+  "chapter_number": 14,
+  "chapter_title": "\"Chapter 14: Scientific Literacy\"",
+  "chapter_dir": "14-scientific-literacy",
+  "library": "p5.js",
+  "bloom_level": "Evaluate",
+  "bloom_verb": "Distinguish",
+  "learning_objective": "Distinguish between correlation and causation in environmental data and identify confounding variables",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** correlation-causation<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Evaluate\n**Bloom Verb:** Distinguish\n**Learning Objective:** Distinguish between correlation and causation in environmental data and identify confounding variables\n**Instructional Rationale:** Gamified challenge format with immediate feedback develops the critical thinking habit of questioning causal claims\n\nA quiz-style interactive. Students are presented with a scatter plot showing two correlated variables (e.g., \"CO₂ emissions\" vs. \"global temperature,\" \"organic food sales\" vs. \"autism diagnoses,\" \"number of firefighters at a fire\" vs. \"damage from fire,\" \"DDT use\" vs. \"peregrine falcon decline\"). For each pair, students must classify: \"A causes B,\" \"B causes A,\" \"Both caused by C (confounding variable),\" or \"True causal relationship.\" After answering, a detailed explanation appears showing the actual relationship and the evidence for or against causation. Score tracker at top. Progress through 8-10 scenarios. Scatter plots use real or realistic data. Colors: data points in blue, trend line in red, correct answer highlight in green, incorrect in orange."
+}

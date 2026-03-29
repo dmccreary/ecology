@@ -1,0 +1,14 @@
+{
+  "sim_id": "ocean-zones",
+  "diagram_name": "Ocean Zones Interactive",
+  "chapter_number": 2,
+  "chapter_title": "\"Ecosystems and Biomes\"",
+  "chapter_dir": "02-ecosystems-and-biomes",
+  "library": "p5.js",
+  "bloom_level": "Understand",
+  "bloom_verb": "Describe",
+  "learning_objective": "Students describe the physical conditions and representative organisms of each ocean zone.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** ocean-zones<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand\n**Bloom Verb:** Describe\n**Learning Objective:** Students describe the physical conditions and representative organisms of each ocean zone.\n**Instructional Rationale:** A vertical cross-section visualization helps students grasp the scale of ocean depth and the gradient of conditions (light, temperature, pressure).\n\nVertical cross-section of the ocean from surface (0 m) to deep ocean (6,000 m). Background color gradient from light blue (surface) to black (abyss). Zones are labeled and separated by dashed lines. As users scroll or drag a depth indicator down, the sidebar updates with: zone name, depth range, temperature, pressure, light level, and 2–3 representative organisms with small icons. A light intensity meter shows photosynthetically available radiation declining to zero. Canvas 600×700. Responsive."
+}

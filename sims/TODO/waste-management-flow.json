@@ -1,0 +1,14 @@
+{
+  "sim_id": "waste-management-flow",
+  "diagram_name": "Waste Management Decision Flowchart",
+  "chapter_number": 12,
+  "chapter_title": "\"Chapter 12: Water and Land Pollution\"",
+  "chapter_dir": "12-water-and-land-pollution",
+  "library": "vis-network",
+  "bloom_level": "Evaluate",
+  "bloom_verb": "Prioritize",
+  "learning_objective": "Prioritize waste management strategies using the waste hierarchy and evaluate trade-offs",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** waste-management-flow<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Bloom Level:** Evaluate\n**Bloom Verb:** Prioritize\n**Learning Objective:** Prioritize waste management strategies using the waste hierarchy and evaluate trade-offs\n**Instructional Rationale:** Interactive flowchart forces decision-making and reveals trade-offs between convenience, cost, and environmental impact\n\nAn interactive decision tree / flowchart. Starting node: \"You have waste!\" Branching questions lead to different waste management endpoints. Decision nodes ask: \"Can you avoid creating this waste?\" \"Can you reuse it?\" \"Is it recyclable in your area?\" \"Is it compostable?\" \"Does your area have waste-to-energy incineration?\" Terminal nodes show landfill, incineration, recycling, composting, reuse, and reduction -- each with an environmental impact score (color-coded green to red). Students can click different paths and see cumulative environmental impact. Side panel shows statistics: estimated decomposition time, energy savings from recycling vs. virgin production, greenhouse gas impact. Node colors: green for best options, yellow for moderate, red for worst. Layout: top-to-bottom hierarchy."
+}

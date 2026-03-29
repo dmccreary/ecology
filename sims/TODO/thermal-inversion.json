@@ -1,0 +1,14 @@
+{
+  "sim_id": "thermal-inversion",
+  "diagram_name": "Thermal Inversion Simulator",
+  "chapter_number": 11,
+  "chapter_title": "\"Chapter 11: Atmospheric Pollution\"",
+  "chapter_dir": "11-atmospheric-pollution",
+  "library": "p5.js",
+  "bloom_level": "Understand",
+  "bloom_verb": "Explain",
+  "learning_objective": "Students explain how thermal inversions trap pollutants near the ground by comparing normal and inverted atmospheric temperature profiles.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** thermal-inversion<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand\n**Bloom Verb:** Explain\n**Learning Objective:** Students explain how thermal inversions trap pollutants near the ground by comparing normal and inverted atmospheric temperature profiles.\n**Instructional Rationale:** Animated particle simulation makes the invisible (air movement and pollutant trapping) visible, connecting temperature profiles to pollution outcomes.\n\nSplit-screen simulation. LEFT: Normal atmospheric conditions -- temperature profile shows decreasing temp with altitude. Animated pollution particles (small gray/brown dots) rise from source at bottom (factory, vehicles) and disperse upward and outward. Air is clear above. RIGHT: Thermal inversion -- temperature profile shows warm layer aloft creating a \"lid.\" Pollution particles rise but hit the inversion layer and accumulate below it, creating visible haze that thickens over time. Toggle button switches between normal and inversion. Slider controls emission rate. Temperature profile graph shown on side of each panel. Time counter shows hours elapsed. Pollution concentration meter (AQI-style green-yellow-orange-red-purple scale) displays below each panel."
+}
