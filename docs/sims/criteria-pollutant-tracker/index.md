@@ -11,7 +11,7 @@ quality_score: 0
 
 # Criteria Air Pollutants Source-to-Impact Tracker
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="630" width="100%" scrolling="no"></iframe>
 
 [Run the Criteria Air Pollutants Source-to-Impact Tracker MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

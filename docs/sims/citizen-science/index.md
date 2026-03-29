@@ -11,7 +11,7 @@ quality_score: 0
 
 # Citizen Science Project Finder
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="562" width="100%" scrolling="no"></iframe>
 
 [Run the Citizen Science Project Finder MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

@@ -2,7 +2,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 420;
-let controlHeight = 50;
+let controlHeight = 45;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -24,11 +24,13 @@ function setup() {
 
   solarSlider = createSlider(1, 10, 5, 1);
   solarSlider.parent(document.querySelector('main'));
-  solarSlider.style('width', '140px');
+  solarSlider.position(100, drawHeight + 5);
+  solarSlider.size(canvasWidth / 2 - 120);
 
   vegSlider = createSlider(0, 100, 50, 5);
   vegSlider.parent(document.querySelector('main'));
-  vegSlider.style('width', '140px');
+  vegSlider.position(canvasWidth / 2 + 100, drawHeight + 5);
+  vegSlider.size(canvasWidth / 2 - 120);
 }
 
 function draw() {
@@ -298,13 +300,16 @@ function draw() {
   textSize(12);
   textAlign(LEFT, CENTER);
   noStroke();
-  text('Solar Energy: ' + solarSlider.value(), 10, drawHeight + 15);
-  text('Vegetation: ' + vegSlider.value() + '%', 10, drawHeight + 35);
+  text('Solar: ' + solarSlider.value(), 10, drawHeight + 16);
+  text('Vegetation: ' + vegSlider.value() + '%', canvasWidth / 2 + 10, drawHeight + 16);
 }
 
 function windowResized() {
   updateCanvasSize();
   resizeCanvas(containerWidth, containerHeight);
+  solarSlider.size(canvasWidth / 2 - 120);
+  vegSlider.position(canvasWidth / 2 + 100, drawHeight + 5);
+  vegSlider.size(canvasWidth / 2 - 120);
   redraw();
 }
 

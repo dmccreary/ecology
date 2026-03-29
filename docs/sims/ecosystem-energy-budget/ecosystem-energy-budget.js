@@ -2,7 +2,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 520;
-let controlHeight = 50;
+let controlHeight = 45;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -48,6 +48,7 @@ function setup() {
 
   presetSel = createSelect();
   presetSel.parent(document.querySelector('main'));
+  presetSel.position(10, drawHeight + 5);
   for (let name in presets) {
     presetSel.option(name);
   }
@@ -58,6 +59,7 @@ function setup() {
 
   checkBtn = createButton('Balance Check');
   checkBtn.parent(document.querySelector('main'));
+  checkBtn.position(200, drawHeight + 5);
   checkBtn.mousePressed(checkBalance);
 
   // Load default preset
@@ -176,12 +178,12 @@ function draw() {
     text(balanceMsg, canvasWidth / 2, drawHeight - 5);
   }
 
-  // Controls
+  // Control labels
   noStroke();
   fill(30);
   textSize(12);
   textAlign(LEFT, CENTER);
-  text('Preset ecosystem and balance check above', 10, drawHeight + controlHeight / 2);
+  text('Preset:', 230, drawHeight + 16);
 }
 
 function drawValueBox(key, x, y, w, h, clr, label) {

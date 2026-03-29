@@ -11,7 +11,7 @@ quality_score: 0
 
 # Predator-Prey Population Dynamics
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="402" width="100%" scrolling="no"></iframe>
 
 [Run the Predator-Prey Population Dynamics MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

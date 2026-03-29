@@ -11,7 +11,7 @@ quality_score: 0
 
 # Global Energy Mix Scenario Explorer
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="522" width="100%" scrolling="no"></iframe>
 
 [Run the Global Energy Mix Scenario Explorer MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

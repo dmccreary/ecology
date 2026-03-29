@@ -34,6 +34,7 @@ function setup() {
 
   overlapBtn = createButton('Show Overlap');
   overlapBtn.parent(document.querySelector('main'));
+  overlapBtn.position(10, drawHeight + 5);
   overlapBtn.mousePressed(() => {
     showOverlap = !showOverlap;
     overlapBtn.html(showOverlap ? 'Hide Overlap' : 'Show Overlap');
@@ -199,13 +200,13 @@ function draw() {
     text(warblers[i].name, lx + 16, ly + i * 17);
   }
 
-  // Title
+  // Control area label
   noStroke();
   fill(40);
-  textSize(16);
-  textAlign(CENTER, TOP);
+  textSize(14);
+  textAlign(LEFT, CENTER);
   textStyle(BOLD);
-  text('Resource Partitioning in Warblers', canvasWidth / 2, drawHeight + 10);
+  text('Resource Partitioning in Warblers', 140, drawHeight + 16);
   textStyle(NORMAL);
 }
 

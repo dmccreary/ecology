@@ -3,7 +3,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 450;
-let controlHeight = 50;
+let controlHeight = 45;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -65,6 +65,7 @@ function setup() {
 
   filterSelect = createSelect();
   filterSelect.parent(document.querySelector('main'));
+  filterSelect.position(10, drawHeight + 5);
   filterSelect.option('All Types');
   filterSelect.option('U.S. Law');
   filterSelect.option('International Treaty');
@@ -73,6 +74,7 @@ function setup() {
 
   quizToggle = createCheckbox(' Quiz Mode', false);
   quizToggle.parent(document.querySelector('main'));
+  quizToggle.position(200, drawHeight + 5);
   quizToggle.changed(() => {
     quizMode = quizToggle.checked();
     revealedInQuiz = {};

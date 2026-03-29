@@ -2,7 +2,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 500;
-let controlHeight = 50;
+let controlHeight = 45;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -299,11 +299,31 @@ function draw() {
   rect(0, drawHeight, canvasWidth, controlHeight);
 
   // Label for slider
-  fill(0);
   noStroke();
-  textSize(12);
+  fill(0);
+  textSize(11);
   textAlign(LEFT, CENTER);
-  text('Speed: ' + speedSlider.value(), sliderLeftMargin + 110, drawHeight + controlHeight / 2);
+  text('Speed: ' + speedSlider.value(), canvasWidth * 0.7, drawHeight + 15);
+
+  positionControls();
+}
+
+function positionControls() {
+  let ox = canvasOffsetX();
+  let oy = canvasOffsetY();
+  // Row 1: buttons + slider
+  playBtn.position(ox + 10, oy + drawHeight + 5);
+  stepBtn.position(ox + 90, oy + drawHeight + 5);
+  fertBtn.position(ox + 160, oy + drawHeight + 5);
+  speedSlider.position(ox + canvasWidth * 0.7, oy + drawHeight + 22);
+  speedSlider.size(canvasWidth * 0.25);
+}
+
+function canvasOffsetX() {
+  return document.querySelector('main canvas').getBoundingClientRect().left;
+}
+function canvasOffsetY() {
+  return document.querySelector('main canvas').getBoundingClientRect().top;
 }
 
 function windowResized() {

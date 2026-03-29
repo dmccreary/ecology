@@ -11,7 +11,7 @@ quality_score: 0
 
 # Ecosystem Concept Map
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="630" width="100%" scrolling="no"></iframe>
 
 [Run the Ecosystem Concept Map MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

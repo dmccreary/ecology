@@ -2,7 +2,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 440;
-let controlHeight = 55;
+let controlHeight = 45;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -31,10 +31,12 @@ function setup() {
 
   energySlider = createSlider(5000, 20000, 10000, 500);
   energySlider.parent(document.querySelector('main'));
-  energySlider.style('width', '150px');
+  energySlider.position(sliderLeftMargin, drawHeight + 5);
+  energySlider.size(canvasWidth - sliderLeftMargin - margin);
 
   pauseBtn = createButton('Play');
   pauseBtn.parent(document.querySelector('main'));
+  pauseBtn.position(10, drawHeight + 5);
   pauseBtn.mousePressed(() => {
     paused = !paused;
     pauseBtn.html(paused ? 'Play' : 'Pause');
@@ -226,12 +228,12 @@ function draw() {
   fill('#795548'); rect(100, legY - 5, 10, 10); fill(30); text('Waste', 114, legY);
   fill('#4CAF50'); rect(165, legY - 5, 10, 10); fill(30); text('Growth', 179, legY);
 
-  // Controls
+  // Control labels
   noStroke();
   fill(30);
   textSize(13);
   textAlign(LEFT, CENTER);
-  text('Solar Input: ' + energySlider.value() + ' kcal', 10, drawHeight + controlHeight / 2);
+  text('Solar Input: ' + energySlider.value() + ' kcal', 70, drawHeight + 16);
 }
 
 function drawArrow(x1, y1, x2, y2) {
@@ -245,6 +247,7 @@ function drawArrow(x1, y1, x2, y2) {
 function windowResized() {
   updateCanvasSize();
   resizeCanvas(containerWidth, containerHeight);
+  energySlider.size(canvasWidth - sliderLeftMargin - margin);
   redraw();
 }
 

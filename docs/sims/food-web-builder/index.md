@@ -11,7 +11,7 @@ quality_score: 0
 
 # Interactive Food Web Builder
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="580" width="100%" scrolling="no"></iframe>
 
 [Run the Interactive Food Web Builder MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

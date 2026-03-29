@@ -11,7 +11,7 @@ quality_score: 0
 
 # Conservation Policy Timeline
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="452" width="100%" scrolling="no"></iframe>
 
 [Run the Conservation Policy Timeline MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

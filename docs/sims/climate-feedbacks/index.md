@@ -11,7 +11,7 @@ quality_score: 0
 
 # Climate Feedback Loops
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="500" width="100%" scrolling="no"></iframe>
 
 [Run the Climate Feedback Loops MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

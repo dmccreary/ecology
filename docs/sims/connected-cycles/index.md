@@ -11,7 +11,7 @@ quality_score: 0
 
 # Interconnected Biogeochemical Cycles
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="600" width="100%" scrolling="no"></iframe>
 
 [Run the Interconnected Biogeochemical Cycles MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

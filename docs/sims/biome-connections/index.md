@@ -11,7 +11,7 @@ quality_score: 0
 
 # Biome Connections Network
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="600" width="100%" scrolling="no"></iframe>
 
 [Run the Biome Connections Network MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

@@ -11,7 +11,7 @@ quality_score: 0
 
 # Population Growth Simulator
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="402" width="100%" scrolling="no"></iframe>
 
 [Run the Population Growth Simulator MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

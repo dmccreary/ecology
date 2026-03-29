@@ -2,7 +2,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 500;
-let controlHeight = 50;
+let controlHeight = 45;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -35,6 +35,7 @@ function setup() {
 
   viewToggle = createCheckbox(' Show Total Contribution', false);
   viewToggle.parent(document.querySelector('main'));
+  viewToggle.position(10, drawHeight + 5);
   viewToggle.style('font-size', '14px');
 }
 
@@ -184,7 +185,7 @@ function draw() {
   fill(30);
   textSize(13);
   textAlign(LEFT, CENTER);
-  text('Toggle view mode with checkbox above', 10, drawHeight + controlHeight / 2);
+  text('Toggle view mode:', 180, drawHeight + 16);
 }
 
 function windowResized() {

@@ -11,7 +11,7 @@ quality_score: 0
 
 # Resilience Ball-in-Basin Model
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="402" width="100%" scrolling="no"></iframe>
 
 [Run the Resilience Ball-in-Basin Model MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

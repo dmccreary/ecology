@@ -11,7 +11,7 @@ quality_score: 0
 
 # Correlation vs. Causation Challenge
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="482" width="100%" scrolling="no"></iframe>
 
 [Run the Correlation vs. Causation Challenge MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

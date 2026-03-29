@@ -11,7 +11,7 @@ quality_score: 0
 
 # Interactive Dose-Response Curve Explorer
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="422" width="100%" scrolling="no"></iframe>
 
 [Run the Interactive Dose-Response Curve Explorer MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

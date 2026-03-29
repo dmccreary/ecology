@@ -3,7 +3,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 500;
-let controlHeight = 90;
+let controlHeight = 45;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -52,10 +52,12 @@ function setup() {
 
   viewToggle = createCheckbox(' Show Adaptation View', false);
   viewToggle.parent(document.querySelector('main'));
+  viewToggle.position(10, drawHeight + 5);
   viewToggle.changed(() => { showAdaptation = viewToggle.checked(); });
 
   resetBtn = createButton('Reset All');
   resetBtn.parent(document.querySelector('main'));
+  resetBtn.position(220, drawHeight + 5);
   resetBtn.mousePressed(() => {
     for (let s of solutions) s.active = false;
   });

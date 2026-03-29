@@ -2,7 +2,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 460;
-let controlHeight = 50;
+let controlHeight = 45;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -44,10 +44,12 @@ function setup() {
 
   pauseBtn = createButton('▶ Play');
   pauseBtn.parent(document.querySelector('main'));
+  pauseBtn.position(10, drawHeight + 5);
   pauseBtn.mousePressed(() => { paused = !paused; pauseBtn.html(paused ? '▶ Play' : '❚❚ Pause'); });
 
   modeBtn = createButton('Show Inversion');
   modeBtn.parent(document.querySelector('main'));
+  modeBtn.position(90, drawHeight + 5);
   modeBtn.mousePressed(() => {
     inversionMode = !inversionMode;
     modeBtn.html(inversionMode ? 'Show Normal' : 'Show Inversion');
@@ -57,6 +59,8 @@ function setup() {
 
   emissionSlider = createSlider(1, 5, 3, 1);
   emissionSlider.parent(document.querySelector('main'));
+  emissionSlider.position(sliderLeftMargin + 120, drawHeight + 5);
+  emissionSlider.size(canvasWidth - sliderLeftMargin - 120 - margin);
 }
 
 function draw() {
@@ -274,12 +278,13 @@ function draw() {
   noStroke();
   textSize(11);
   textAlign(LEFT, CENTER);
-  text('Emissions: ' + emissionSlider.value(), sliderLeftMargin + 110, drawHeight + controlHeight / 2);
+  text('Emissions: ' + emissionSlider.value(), 230, drawHeight + 16);
 }
 
 function windowResized() {
   updateCanvasSize();
   resizeCanvas(containerWidth, containerHeight);
+  emissionSlider.size(canvasWidth - sliderLeftMargin - 120 - margin);
   redraw();
 }
 

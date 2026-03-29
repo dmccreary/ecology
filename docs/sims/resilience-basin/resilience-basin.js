@@ -41,6 +41,7 @@ function setup() {
 
   let resetBtn = createButton('Reset');
   resetBtn.parent(document.querySelector('main'));
+  resetBtn.position(sliderLeftMargin + 135, drawHeight + 32);
   resetBtn.mousePressed(() => {
     ballX = 0.3;
     ballVx = 0;

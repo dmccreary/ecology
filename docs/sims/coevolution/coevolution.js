@@ -4,7 +4,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 400;
-let controlHeight = 50;
+let controlHeight = 115;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -193,7 +193,9 @@ function draw() {
   textSize(11);
   textAlign(LEFT, CENTER);
   text('Mutation: ' + nf(mutationSlider.value(), 1, 2), 5, drawHeight + 15);
-  text('Selection: ' + nf(selectionSlider.value(), 1, 2), canvasWidth * 0.3, drawHeight + 15);
+  text('Selection: ' + nf(selectionSlider.value(), 1, 2), 5, drawHeight + 50);
+
+  positionControls();
 
   // Summary at gen 50
   if (generation >= 50 && generation <= 55) {
@@ -285,6 +287,29 @@ function drawTraitGraph(x, y, w, h) {
     vertex(x + (i / maxGen) * w, y + h - (preyAvgHistory[i] / maxTrait) * h);
   }
   endShape();
+}
+
+function positionControls() {
+  let ox = canvasOffsetX();
+  let oy = canvasOffsetY();
+  // Row 1: mutation slider
+  mutationSlider.position(ox + 100, oy + drawHeight + 5);
+  mutationSlider.size(canvasWidth - 130);
+  // Row 2: selection slider
+  selectionSlider.position(ox + 100, oy + drawHeight + 40);
+  selectionSlider.size(canvasWidth - 130);
+  // Row 3: buttons
+  runBtn.position(ox + 10, oy + drawHeight + 75);
+  stepBtn.position(ox + 80, oy + drawHeight + 75);
+  switchBtn.position(ox + 140, oy + drawHeight + 75);
+  resetBtn.position(ox + canvasWidth - 70, oy + drawHeight + 75);
+}
+
+function canvasOffsetX() {
+  return document.querySelector('main canvas').getBoundingClientRect().left;
+}
+function canvasOffsetY() {
+  return document.querySelector('main canvas').getBoundingClientRect().top;
 }
 
 function windowResized() {

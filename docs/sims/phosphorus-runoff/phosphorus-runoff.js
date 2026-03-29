@@ -2,7 +2,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 480;
-let controlHeight = 50;
+let controlHeight = 80;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -288,12 +288,33 @@ function draw() {
   fill('white');
   noStroke();
   rect(0, drawHeight, canvasWidth, controlHeight);
+  noStroke();
   fill(0);
   textSize(11);
   textAlign(LEFT, CENTER);
-  noStroke();
   let fertLabels2 = ['None', 'Low', 'Med', 'High'];
-  text('Fertilizer: ' + fertLabels2[fertSlider.value()], 10, drawHeight + controlHeight / 2);
+  text('Fertilizer: ' + fertLabels2[fertSlider.value()], 10, drawHeight + 15);
+
+  positionControls();
+}
+
+function positionControls() {
+  let ox = canvasOffsetX();
+  let oy = canvasOffsetY();
+  // Row 1: slider
+  fertSlider.position(ox + 100, oy + drawHeight + 5);
+  fertSlider.size(canvasWidth * 0.3);
+  pauseBtn.position(ox + canvasWidth * 0.55, oy + drawHeight + 5);
+  // Row 2: buttons
+  rainBtn.position(ox + 10, oy + drawHeight + 40);
+  bufferBtn.position(ox + 100, oy + drawHeight + 40);
+}
+
+function canvasOffsetX() {
+  return document.querySelector('main canvas').getBoundingClientRect().left;
+}
+function canvasOffsetY() {
+  return document.querySelector('main canvas').getBoundingClientRect().top;
 }
 
 function windowResized() {

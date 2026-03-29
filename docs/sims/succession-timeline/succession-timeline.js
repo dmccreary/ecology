@@ -4,7 +4,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 400;
-let controlHeight = 50;
+let controlHeight = 80;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -225,10 +225,13 @@ function draw() {
   fill('white');
   noStroke();
   rect(0, drawHeight, canvasWidth, controlHeight);
+  noStroke();
   fill(60);
   textSize(11);
   textAlign(LEFT, CENTER);
-  text('Year: ' + currentYear + ' / ' + maxYear, 10, drawHeight + 20);
+  text('Year: ' + currentYear + ' / ' + maxYear, 10, drawHeight + 15);
+
+  positionControls();
 }
 
 function drawLandscape(stageIdx, groundY, soilD, progress) {
@@ -296,6 +299,25 @@ function drawSimpleTree(x, groundY, h, col) {
   fill(col[0], col[1], col[2]);
   ellipse(x, groundY - h * 0.6, h * 0.5, h * 0.5);
   triangle(x, groundY - h, x - h * 0.3, groundY - h * 0.35, x + h * 0.3, groundY - h * 0.35);
+}
+
+function positionControls() {
+  let ox = canvasOffsetX();
+  let oy = canvasOffsetY();
+  // Row 1: time slider
+  timeSlider.position(ox + 80, oy + drawHeight + 5);
+  timeSlider.size(canvasWidth - 110);
+  // Row 2: buttons
+  modeBtn.position(ox + 10, oy + drawHeight + 40);
+  disturbBtn.position(ox + 180, oy + drawHeight + 40);
+  resetBtn.position(ox + 290, oy + drawHeight + 40);
+}
+
+function canvasOffsetX() {
+  return document.querySelector('main canvas').getBoundingClientRect().left;
+}
+function canvasOffsetY() {
+  return document.querySelector('main canvas').getBoundingClientRect().top;
 }
 
 function windowResized() {

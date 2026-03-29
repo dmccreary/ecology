@@ -4,7 +4,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 460;
-let controlHeight = 50;
+let controlHeight = 45;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 15;
@@ -64,6 +64,7 @@ function setup() {
 
   biomeSelect = createSelect();
   biomeSelect.parent(document.querySelector('main'));
+  biomeSelect.position(10, drawHeight + 5);
   biomeSelect.option('All Biomes');
   for (let b of biomes) {
     biomeSelect.option(b.name);

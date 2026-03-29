@@ -11,7 +11,7 @@ quality_score: 0
 
 # The Hydrologic Cycle
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="422" width="100%" scrolling="no"></iframe>
 
 [Run the The Hydrologic Cycle MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

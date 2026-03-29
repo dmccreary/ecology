@@ -11,7 +11,7 @@ quality_score: 0
 
 # Ocean Zones Interactive
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="652" width="100%" scrolling="no"></iframe>
 
 [Run the Ocean Zones Interactive MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

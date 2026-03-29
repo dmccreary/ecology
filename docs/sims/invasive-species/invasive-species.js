@@ -4,7 +4,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 480;
-let controlHeight = 50;
+let controlHeight = 80;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -214,7 +214,10 @@ function draw() {
   fill(60);
   textSize(11);
   textAlign(LEFT, CENTER);
-  text('Time: ' + timeStep, 10, drawHeight + 15);
+  text('Scenario:', 10, drawHeight + 15);
+  text('Time: ' + timeStep, canvasWidth * 0.5, drawHeight + 15);
+
+  positionControls();
 }
 
 function drawSpeciesNode(s, key) {
@@ -258,6 +261,25 @@ function drawSpeciesNode(s, key) {
   fill(80);
   textSize(9);
   text(nf(s.pop * 100, 1, 0) + '%', s.x, by + barH + 8);
+}
+
+function positionControls() {
+  let ox = canvasOffsetX();
+  let oy = canvasOffsetY();
+  // Row 1: select
+  scenarioSel.position(ox + 75, oy + drawHeight + 5);
+  // Row 2: buttons
+  pauseBtn.position(ox + 10, oy + drawHeight + 40);
+  introduceBtn.position(ox + 80, oy + drawHeight + 40);
+  removeBtn.position(ox + 220, oy + drawHeight + 40);
+  resetBtn.position(ox + canvasWidth - 70, oy + drawHeight + 40);
+}
+
+function canvasOffsetX() {
+  return document.querySelector('main canvas').getBoundingClientRect().left;
+}
+function canvasOffsetY() {
+  return document.querySelector('main canvas').getBoundingClientRect().top;
 }
 
 function windowResized() {

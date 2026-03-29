@@ -4,7 +4,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 400;
-let controlHeight = 50;
+let controlHeight = 45;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -46,6 +46,7 @@ function setup() {
 
   varSelect = createSelect();
   varSelect.parent(document.querySelector('main'));
+  varSelect.position(10, drawHeight + 5);
   varSelect.option('Temperature', 'temperature');
   varSelect.option('pH', 'pH');
   varSelect.option('Salinity', 'salinity');
@@ -191,7 +192,7 @@ function draw() {
   fill(60);
   textSize(11);
   textAlign(LEFT, CENTER);
-  text('Drag the line to change conditions', 10, drawHeight + 20);
+  text('Drag the line to change conditions', 180, drawHeight + 16);
 }
 
 function drawZones(species, gx, gy, gw, gh, ev, alpha) {

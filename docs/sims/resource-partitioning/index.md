@@ -11,7 +11,7 @@ quality_score: 0
 
 # Resource Partitioning in Warblers
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="552" width="100%" scrolling="no"></iframe>
 
 [Run the Resource Partitioning in Warblers MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

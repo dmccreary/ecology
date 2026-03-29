@@ -2,7 +2,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 560;
-let controlHeight = 50;
+let controlHeight = 80;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -384,6 +384,36 @@ function draw() {
   fill('white');
   noStroke();
   rect(0, drawHeight, canvasWidth, controlHeight);
+
+  // Control labels
+  noStroke();
+  fill(60);
+  textSize(11);
+  textAlign(LEFT, CENTER);
+  text('Topic:', 10, drawHeight + 15);
+  text('Difficulty:', canvasWidth * 0.28, drawHeight + 15);
+  text('Setting:', canvasWidth * 0.56, drawHeight + 15);
+
+  positionControls();
+}
+
+function positionControls() {
+  let ox = canvasOffsetX();
+  let oy = canvasOffsetY();
+  // Row 1: 3 selects
+  topicFilter.position(ox + 50, oy + drawHeight + 5);
+  diffFilter.position(ox + canvasWidth * 0.35, oy + drawHeight + 5);
+  settingFilter.position(ox + canvasWidth * 0.63, oy + drawHeight + 5);
+  // Row 2: buttons
+  matchBtn.position(ox + 10, oy + drawHeight + 40);
+  resetBtn.position(ox + 120, oy + drawHeight + 40);
+}
+
+function canvasOffsetX() {
+  return document.querySelector('main canvas').getBoundingClientRect().left;
+}
+function canvasOffsetY() {
+  return document.querySelector('main canvas').getBoundingClientRect().top;
 }
 
 function mousePressed() {

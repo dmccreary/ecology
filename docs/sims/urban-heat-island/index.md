@@ -11,7 +11,7 @@ quality_score: 0
 
 # Urban Heat Island Profile
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="442" width="100%" scrolling="no"></iframe>
 
 [Run the Urban Heat Island Profile MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

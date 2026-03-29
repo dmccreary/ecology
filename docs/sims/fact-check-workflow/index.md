@@ -11,7 +11,7 @@ quality_score: 0
 
 # Fact-Checking Workflow
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="562" width="100%" scrolling="no"></iframe>
 
 [Run the Fact-Checking Workflow MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

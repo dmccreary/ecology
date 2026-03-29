@@ -11,7 +11,7 @@ quality_score: 0
 
 # Pollutant Pathways Map
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="442" width="100%" scrolling="no"></iframe>
 
 [Run the Pollutant Pathways Map MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
