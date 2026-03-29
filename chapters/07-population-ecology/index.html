@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook for Ecology.">
+        <meta name="description" content="Learn how populations grow, stabilize, and decline through exponential and logistic models, survivorship curves, carrying capacity, limiting factors, and human demographic patterns.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -23,7 +23,7 @@
     
     
       
-        <title>7-Population Ecology - Ecology - An Interactive Course</title>
+        <title>Chapter 7: Population Ecology - Ecology - An Interactive Course</title>
       
     
     
@@ -51,6 +51,8 @@
     
       <link rel="stylesheet" href="../../css/extra.css">
     
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -70,9 +72,9 @@
       
         <meta property="og:type" content="website">
       
-        <meta property="og:title" content="7-Population Ecology - Ecology - An Interactive Course">
+        <meta property="og:title" content="Chapter 7: Population Ecology - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="An interactive intelligent textbook for Ecology.">
+        <meta property="og:description" content="Learn how populations grow, stabilize, and decline through exponential and logistic models, survivorship curves, carrying capacity, limiting factors, and human demographic patterns.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/assets/images/social/chapters/07-population-ecology/index.png">
       
@@ -86,9 +88,9 @@
       
         <meta name="twitter:card" content="summary_large_image">
       
-        <meta name="twitter:title" content="7-Population Ecology - Ecology - An Interactive Course">
+        <meta name="twitter:title" content="Chapter 7: Population Ecology - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="An interactive intelligent textbook for Ecology.">
+        <meta name="twitter:description" content="Learn how populations grow, stabilize, and decline through exponential and logistic models, survivorship curves, carrying capacity, limiting factors, and human demographic patterns.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/assets/images/social/chapters/07-population-ecology/index.png">
       
@@ -157,7 +159,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              7-Population Ecology
+              Chapter 7: Population Ecology
             
           </span>
         </div>
@@ -635,6 +637,249 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#counting-what-counts-population-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Counting What Counts: Population Basics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generalists-vs-specialists-life-strategy-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generalists vs. Specialists: Life Strategy Matters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#life-history-strategies-r-selected-vs-k-selected" class="md-nav__link">
+    <span class="md-ellipsis">
+      Life History Strategies: r-Selected vs. K-Selected
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#survivorship-curves-the-story-of-death" class="md-nav__link">
+    <span class="md-ellipsis">
+      Survivorship Curves: The Story of Death
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Survivorship Curves: The Story of Death">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-survivorship-curve-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Survivorship Curve Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-math-of-growth-exponential-and-logistic-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Math of Growth: Exponential and Logistic Models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Math of Growth: Exponential and Logistic Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exponential-growth-the-j-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exponential Growth: The J-Curve
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logistic-growth-the-s-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logistic Growth: The S-Curve
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Logistic Growth: The S-Curve">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-population-growth-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Population Growth Simulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overshoot-and-population-crash" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overshoot and Population Crash
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limiting-factors-what-holds-populations-back" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limiting Factors: What Holds Populations Back
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#human-population-ecology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Human Population Ecology
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Human Population Ecology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Numbers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#age-structure-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Age Structure Diagrams
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Age Structure Diagrams">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-age-structure-diagram-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Age Structure Diagram Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#total-fertility-rate-and-the-rule-of-seventy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Total Fertility Rate and the Rule of Seventy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-demographic-transition" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Demographic Transition
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Demographic Transition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-demographic-transition-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Demographic Transition Model
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#population-momentum-and-zero-population-growth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Population Momentum and Zero Population Growth
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#media-literacy-moment-population-predictions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Media Literacy Moment: Population Predictions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connections-the-population-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connections: The Population Web
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-terms-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Terms Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#self-test-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self-Test Questions
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -884,6 +1129,8 @@
       
         
       
+        
+      
     
     
     
@@ -972,6 +1219,8 @@
       
         
       
+        
+      
     
     
     
@@ -1012,6 +1261,12 @@
   
     
     
+      
+        
+      
+        
+      
+        
       
         
       
@@ -1144,6 +1399,249 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#counting-what-counts-population-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Counting What Counts: Population Basics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generalists-vs-specialists-life-strategy-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generalists vs. Specialists: Life Strategy Matters
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#life-history-strategies-r-selected-vs-k-selected" class="md-nav__link">
+    <span class="md-ellipsis">
+      Life History Strategies: r-Selected vs. K-Selected
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#survivorship-curves-the-story-of-death" class="md-nav__link">
+    <span class="md-ellipsis">
+      Survivorship Curves: The Story of Death
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Survivorship Curves: The Story of Death">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-survivorship-curve-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Survivorship Curve Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-math-of-growth-exponential-and-logistic-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Math of Growth: Exponential and Logistic Models
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Math of Growth: Exponential and Logistic Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exponential-growth-the-j-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Exponential Growth: The J-Curve
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logistic-growth-the-s-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      Logistic Growth: The S-Curve
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Logistic Growth: The S-Curve">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-population-growth-simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Population Growth Simulator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overshoot-and-population-crash" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overshoot and Population Crash
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#limiting-factors-what-holds-populations-back" class="md-nav__link">
+    <span class="md-ellipsis">
+      Limiting Factors: What Holds Populations Back
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#human-population-ecology" class="md-nav__link">
+    <span class="md-ellipsis">
+      Human Population Ecology
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Human Population Ecology">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-numbers" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Numbers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#age-structure-diagrams" class="md-nav__link">
+    <span class="md-ellipsis">
+      Age Structure Diagrams
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Age Structure Diagrams">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-age-structure-diagram-explorer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Age Structure Diagram Explorer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#total-fertility-rate-and-the-rule-of-seventy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Total Fertility Rate and the Rule of Seventy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-demographic-transition" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Demographic Transition
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Demographic Transition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-demographic-transition-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Demographic Transition Model
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#population-momentum-and-zero-population-growth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Population Momentum and Zero Population Growth
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#media-literacy-moment-population-predictions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Media Literacy Moment: Population Predictions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connections-the-population-web" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connections: The Population Web
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-terms-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Terms Summary
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#self-test-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Self-Test Questions
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1212,7 +1710,459 @@
 <li><a href="../06-biodiversity-and-services/">Chapter 6: Biodiversity and Ecosystem Services</a></li>
 </ul>
 <hr>
-<p>TODO: Generate Chapter Content</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Bailey Says: Welcome, Explorers!</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/welcome.png" data-desc-position="bottom"><img src="../../img/mascot/welcome.png" class="mascot-admonition-img"></a>
+Get ready, builders -- we're about to tackle one of the biggest questions in ecology: how many is too many? From bacteria doubling every 20 minutes to 8 billion humans on a single planet, population ecology is where math meets the messy real world. Everything's connected, and today you'll see how birth, death, and a little bit of math shape every population on Earth!</p>
+</div>
+<h2 id="counting-what-counts-population-basics">Counting What Counts: Population Basics</h2>
+<p>Before we can understand how populations grow or shrink, we need to define what we're measuring.</p>
+<p><strong>Population size</strong> (<span class="arithmatex">\( N \)</span>) is simply the total number of individuals of a species in a defined area at a specific time. Sounds straightforward, but try counting every ant in a forest or every fish in the ocean. Ecologists use sampling techniques -- mark-recapture, transects, quadrats -- to estimate population size without counting every last individual.</p>
+<p><strong>Population density</strong> takes it one step further: it's the number of individuals per unit area (or volume, for aquatic species). A pond with 500 frogs in 1 hectare has a much higher density than 500 frogs spread across 100 hectares. Density matters because it affects competition, disease transmission, and mate-finding.</p>
+<p><strong>Population distribution</strong> (also called dispersion) describes how individuals are spread across space. Three main patterns exist:</p>
+<ul>
+<li><strong>Clumped</strong>: individuals cluster together (most common pattern) -- herds of bison, schools of fish, patches of wildflowers near a water source</li>
+<li><strong>Uniform</strong>: individuals are evenly spaced -- nesting penguins, creosote bushes in a desert (chemical competition creates spacing)</li>
+<li><strong>Random</strong>: individuals are scattered with no pattern -- dandelions in a lawn, trees in some tropical forests</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Distribution Pattern</th>
+<th>Cause</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clumped</td>
+<td>Social behavior, resource patches</td>
+<td>Wolf packs near prey</td>
+</tr>
+<tr>
+<td>Uniform</td>
+<td>Territorial behavior, competition</td>
+<td>Nesting seabirds</td>
+</tr>
+<tr>
+<td>Random</td>
+<td>No strong social or resource forces</td>
+<td>Oysters on a reef</td>
+</tr>
+</tbody>
+</table>
+<h2 id="generalists-vs-specialists-life-strategy-matters">Generalists vs. Specialists: Life Strategy Matters</h2>
+<p>Not all species play the same game. <strong>Generalist species</strong> thrive in a wide range of conditions and can exploit many different resources. Raccoons eat garbage, fruit, insects, and bird eggs. Coyotes live in deserts, forests, suburbs, and cities. Generalists are the Swiss Army knives of the animal kingdom.</p>
+<p><strong>Specialist species</strong> are finely tuned to specific conditions or resources. Koalas eat only eucalyptus leaves. Spotted owls need old-growth forests. The Karner blue butterfly depends on wild lupine plants. Specialists often outcompete generalists in their preferred habitat, but they're much more vulnerable when conditions change.</p>
+<p>This distinction connects directly to ecological tolerance from Chapter 6: generalists have broad tolerance ranges, specialists have narrow ones. And it sets us up for understanding different reproductive strategies.</p>
+<h2 id="life-history-strategies-r-selected-vs-k-selected">Life History Strategies: r-Selected vs. K-Selected</h2>
+<p>Here's a wild fact: an oyster can release <strong>100 million eggs</strong> in a single spawning event. An elephant produces roughly one calf every four to five years. Both strategies work -- but they work for very different reasons.</p>
+<p><strong>R-selected species</strong> prioritize reproduction rate (<span class="arithmatex">\( r \)</span>). They produce many offspring with little parental investment, mature quickly, and have short lifespans. Think bacteria, insects, dandelions, and mice. Their strategy: flood the world with babies and hope some survive.</p>
+<p><strong>K-selected species</strong> prioritize living near the <strong>carrying capacity</strong> (<span class="arithmatex">\( K \)</span>) of their environment. They produce few offspring with heavy parental investment, mature slowly, and live long lives. Think elephants, whales, eagles, and humans. Their strategy: invest heavily in each offspring to give it the best chance.</p>
+<table>
+<thead>
+<tr>
+<th>Trait</th>
+<th>r-Selected</th>
+<th>K-Selected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Offspring number</td>
+<td>Many</td>
+<td>Few</td>
+</tr>
+<tr>
+<td>Parental care</td>
+<td>Little or none</td>
+<td>Extensive</td>
+</tr>
+<tr>
+<td>Body size</td>
+<td>Usually small</td>
+<td>Usually large</td>
+</tr>
+<tr>
+<td>Maturation</td>
+<td>Fast</td>
+<td>Slow</td>
+</tr>
+<tr>
+<td>Lifespan</td>
+<td>Short</td>
+<td>Long</td>
+</tr>
+<tr>
+<td>Survivorship curve</td>
+<td>Type III</td>
+<td>Type I</td>
+</tr>
+<tr>
+<td>Population size</td>
+<td>Fluctuates wildly</td>
+<td>Relatively stable</td>
+</tr>
+<tr>
+<td>Example</td>
+<td>Mosquitoes, rabbits</td>
+<td>Whales, humans</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Bailey Says: Think About It!</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/thinking.png" data-desc-position="bottom"><img src="../../img/mascot/thinking.png" class="mascot-admonition-img"></a>
+Dam, here's something to chew on! Most species aren't purely r-selected or K-selected -- they fall somewhere on a spectrum. A sea turtle lays hundreds of eggs (r-selected trait) but lives for decades (K-selected trait). Nature doesn't fit neatly into boxes, and that's what makes ecology so fascinating. See how it all fits together?</p>
+</div>
+<h2 id="survivorship-curves-the-story-of-death">Survivorship Curves: The Story of Death</h2>
+<p>Morbid? Maybe. Essential? Absolutely. <strong>Survivorship curves</strong> plot the proportion of individuals surviving to each age in a population. They reveal the <em>when</em> of death, which tells us a lot about a species' life strategy.</p>
+<p>There are three idealized types:</p>
+<p><strong>Type I survivorship</strong>: Most individuals survive to old age, then mortality rises sharply. This pattern is typical of <strong>K-selected species</strong> with high parental care -- humans in developed nations, elephants, large mammals. The curve stays high and flat, then drops steeply at the end.</p>
+<p><strong>Type II survivorship</strong>: Mortality is roughly constant at all ages. At any point in life, an individual has about the same chance of dying. This pattern is seen in some birds, small mammals, and some reptiles. The curve is a steady diagonal decline.</p>
+<p><strong>Type III survivorship</strong>: Most individuals die young, but the few that survive to adulthood live a long time. This is typical of <strong>r-selected species</strong> -- fish, oysters, many insects, oak trees. The curve drops steeply at the start, then levels off for survivors.</p>
+<h4 id="diagram-survivorship-curve-explorer">Diagram: Survivorship Curve Explorer</h4>
+<iframe src="../../sims/survivorship-curves/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Survivorship Curve Explorer</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> survivorship-curves<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Analyze
+<strong>Bloom Verb:</strong> Compare
+<strong>Learning Objective:</strong> Students will compare the three survivorship curve types and match real species to each pattern.
+<strong>Instructional Rationale:</strong> Interactive curves with real species examples help students connect abstract demographic patterns to organisms they recognize, building intuition about life history trade-offs.</p>
+<p>Visual: Log-scale y-axis (number of survivors, 1 to 1000) and x-axis (percentage of maximum lifespan, 0-100%). Three curves displayed simultaneously: Type I (concave, stays high then drops), Type II (straight diagonal), Type III (convex, drops fast then levels). Each curve has a different color. A species selector dropdown lets students choose real species (human, robin, sea turtle, elephant, songbird, oyster, oak tree) and see which curve type they match, with the selected species' data points overlaid. Include silhouette icons for each species. Hover over any point on a curve to see: "At X% of maximum lifespan, Y% of the population survives."</p>
+</details>
+<h2 id="the-math-of-growth-exponential-and-logistic-models">The Math of Growth: Exponential and Logistic Models</h2>
+<p>Now we get to the big equations. Population change depends on four factors:</p>
+<div class="arithmatex">\[
+\Delta N = (B + I) - (D + E)
+\]</div>
+<p>where <span class="arithmatex">\( B \)</span> is <strong>birth rate</strong> (natality), <span class="arithmatex">\( D \)</span> is <strong>death rate</strong> (mortality), <span class="arithmatex">\( I \)</span> is <strong>immigration</strong> (individuals moving in), and <span class="arithmatex">\( E \)</span> is <strong>emigration</strong> (individuals moving out). When births plus immigration exceed deaths plus emigration, the population grows.</p>
+<h3 id="exponential-growth-the-j-curve">Exponential Growth: The J-Curve</h3>
+<p>When resources are unlimited, populations grow at their maximum rate. This is <strong>exponential growth</strong>, and it produces the famous J-shaped curve:</p>
+<div class="arithmatex">\[
+\frac{dN}{dt} = rN
+\]</div>
+<p>where <span class="arithmatex">\( r \)</span> is the intrinsic rate of natural increase (births minus deaths per individual) and <span class="arithmatex">\( N \)</span> is the current population size. The key insight: the larger the population, the faster it grows. Growth compounds on itself.</p>
+<p>Here's a staggering example: a single bacterium dividing every 20 minutes would produce a mass of bacteria exceeding the mass of Earth in less than two days -- if resources were truly unlimited. They're not, of course, which is why exponential growth never lasts forever in the real world.</p>
+<h3 id="logistic-growth-the-s-curve">Logistic Growth: The S-Curve</h3>
+<p>In reality, resources run out. Space fills up. Disease spreads. Predators take notice. <strong>Logistic growth</strong> accounts for these limits by introducing <strong>carrying capacity</strong> (<span class="arithmatex">\( K \)</span>) -- the maximum population size an environment can sustain indefinitely:</p>
+<div class="arithmatex">\[
+\frac{dN}{dt} = rN\left(\frac{K - N}{K}\right)
+\]</div>
+<p>The term <span class="arithmatex">\( \frac{K-N}{K} \)</span> acts as a brake. When <span class="arithmatex">\( N \)</span> is small relative to <span class="arithmatex">\( K \)</span>, the brake is barely applied and growth looks exponential. As <span class="arithmatex">\( N \)</span> approaches <span class="arithmatex">\( K \)</span>, the brake tightens. At <span class="arithmatex">\( N = K \)</span>, growth stops entirely. This produces the S-shaped (sigmoid) curve.</p>
+<p>The population grows fastest at <span class="arithmatex">\( N = K/2 \)</span> -- that's the inflection point of the S-curve.</p>
+<h4 id="diagram-population-growth-simulator">Diagram: Population Growth Simulator</h4>
+<iframe src="../../sims/population-growth/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Population Growth Simulator</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> population-growth<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Apply
+<strong>Bloom Verb:</strong> Model
+<strong>Learning Objective:</strong> Students will model exponential and logistic population growth by adjusting parameters and observing resulting curves.
+<strong>Instructional Rationale:</strong> Real-time parameter manipulation builds intuition about how r and K interact to shape population trajectories. Seeing the J-curve transform into an S-curve as carrying capacity is introduced creates a memorable "aha" moment.</p>
+<p>Visual: Large graph area with time on x-axis and population size on y-axis. Three sliders: initial population N₀ (1-100), growth rate r (0.01-1.0), and carrying capacity K (100-10000). Toggle between exponential and logistic models. Both curves can be displayed simultaneously for comparison. Animated population counter shows current N. A vertical dashed line at K shows carrying capacity. Growth rate indicator shows dN/dt at current time step. Include "Play/Pause" and "Reset" buttons, plus a speed slider. Color: exponential curve in red (danger!), logistic in green (sustainable). Show the inflection point at K/2 with a marker when logistic is selected.</p>
+</details>
+<div class="admonition mascot-encourage">
+<p class="admonition-title">Bailey Says: You've Got This!</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/encouraging.png" data-desc-position="bottom"><img src="../../img/mascot/encouraging.png" class="mascot-admonition-img"></a>
+I know the equations might feel intimidating, but here's the secret: both models are really just answering one question -- "what happens when you keep multiplying?" Exponential growth says "to infinity and beyond!" Logistic growth says "not so fast, there's a limit." Once you get that core idea, the math is just the details. Let's build on that!</p>
+</div>
+<h3 id="overshoot-and-population-crash">Overshoot and Population Crash</h3>
+<p>What happens when a population blows past its carrying capacity? This is called <strong>overshoot</strong> -- the population temporarily exceeds what the environment can support. The consequences can be dramatic.</p>
+<p>When a population overshoots <span class="arithmatex">\( K \)</span>, it depletes resources faster than they can regenerate. Food runs out. Habitat degrades. Disease spreads through the dense, stressed population. The result is a <strong>population crash</strong> -- a rapid, steep decline in numbers, often falling well below the original carrying capacity because the environment has been damaged.</p>
+<p>The classic example is the reindeer of St. Matthew Island, Alaska. In 1944, 29 reindeer were introduced to the island. With abundant food and no predators, the population exploded to about 6,000 by 1963. Then, in the harsh winter of 1963-64, the overgrazed island couldn't support them. The population crashed to just 42 individuals. By 1980, they were all gone.</p>
+<h2 id="limiting-factors-what-holds-populations-back">Limiting Factors: What Holds Populations Back</h2>
+<p><strong>Limiting factors</strong> are environmental conditions that restrict population growth. They come in two flavors:</p>
+<p><strong>Density-dependent factors</strong> get worse as population density increases:</p>
+<ul>
+<li>Competition for food, water, space, and mates</li>
+<li>Predation (more prey in one area attracts more predators)</li>
+<li>Disease and parasitism (spread faster in crowded populations)</li>
+<li>Accumulation of toxic waste products</li>
+<li>Stress-related declines in reproduction</li>
+</ul>
+<p><strong>Density-independent factors</strong> affect populations regardless of density:</p>
+<ul>
+<li>Natural disasters (hurricanes, floods, volcanic eruptions)</li>
+<li>Extreme weather events (drought, unseasonable frost)</li>
+<li>Human activities (habitat destruction, pollution)</li>
+<li>Fire (though fire frequency can be density-dependent in some systems)</li>
+</ul>
+<p>In reality, both types of factors interact. A drought (density-independent) reduces food supply, intensifying competition (density-dependent). Systems thinking again -- everything's connected.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Bailey Says: Think About It!</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/thinking.png" data-desc-position="bottom"><img src="../../img/mascot/thinking.png" class="mascot-admonition-img"></a>
+Wood you believe that carrying capacity isn't a fixed number? It changes! A wet year increases plant growth, raising K for herbivores. A disease outbreak reduces K. Human agriculture dramatically increases K for our species by converting natural ecosystems into food production. When we change K, we change everything downstream. Everything's connected!</p>
+</div>
+<h2 id="human-population-ecology">Human Population Ecology</h2>
+<p>Now let's apply everything we've learned to the most consequential population on Earth: ours.</p>
+<h3 id="the-numbers">The Numbers</h3>
+<p><strong>Human population growth</strong> has been extraordinary. It took all of human history until about 1800 to reach 1 billion people. We hit 8 billion in 2022 -- adding the last billion in just 12 years. The growth curve for humans looks almost perfectly exponential, though growth rates have been slowing since the late 1960s.</p>
+<p>Four factors determine any population's growth: <strong>birth rate</strong>, <strong>death rate</strong>, <strong>immigration</strong>, and <strong>emigration</strong>. For the global human population (where immigration and emigration don't apply -- we haven't colonized Mars yet), it comes down to births minus deaths.</p>
+<h3 id="age-structure-diagrams">Age Structure Diagrams</h3>
+<p><strong>Age structure diagrams</strong> (population pyramids) are powerful tools for predicting a country's demographic future. They show the distribution of a population across age groups, typically split by sex.</p>
+<p>Three basic shapes tell three different stories:</p>
+<ul>
+<li><strong>Rapid growth</strong> (triangle/pyramid shape): Wide base of young people, narrow top. Many young people will soon reproduce. Example: Nigeria, many sub-Saharan African countries.</li>
+<li><strong>Slow growth</strong> (column shape): Roughly equal numbers in each age group. Population is relatively stable. Example: United States, many European countries.</li>
+<li><strong>Declining population</strong> (inverted triangle): Narrow base, wide middle and top. Fewer young people than old. Example: Japan, Italy.</li>
+</ul>
+<h4 id="diagram-age-structure-diagram-explorer">Diagram: Age Structure Diagram Explorer</h4>
+<iframe src="../../sims/age-structure/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Age Structure Diagram Explorer</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> age-structure<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Analyze
+<strong>Bloom Verb:</strong> Interpret
+<strong>Learning Objective:</strong> Students will interpret age structure diagrams to predict future population trends for different countries.
+<strong>Instructional Rationale:</strong> Comparing real country data as interactive pyramids makes abstract demographic concepts concrete and personally relevant.</p>
+<p>Visual: Classic population pyramid with horizontal bars extending left (male) and right (female) from a central axis. Age groups in 5-year increments on the y-axis (0-4, 5-9, ... 80+). A dropdown selector offers 6-8 real countries representing different demographic profiles: Nigeria (rapid growth), India (slowing growth), USA (slow growth), Japan (declining), China (unique profile from one-child policy), Sweden (stable). Animated transition when switching countries. Below the pyramid, display key statistics: total population, median age, dependency ratio, total fertility rate, projected 2050 population. A "Play Forward" button animates the pyramid shifting through projected decades (2025, 2035, 2045) using simplified demographic projections. Color: blue for male, pink for female (standard demographic convention), with reproductive age group (15-49) highlighted in a slightly different shade.</p>
+</details>
+<h3 id="total-fertility-rate-and-the-rule-of-seventy">Total Fertility Rate and the Rule of Seventy</h3>
+<p>The <strong>total fertility rate</strong> (TFR) is the average number of children a woman will have over her lifetime. A TFR of about 2.1 is called <strong>replacement level fertility</strong> -- just enough for each generation to replace itself (the 0.1 accounts for children who don't survive to reproduce).</p>
+<p>When TFR drops below 2.1, a population will eventually decline -- but not immediately, due to <strong>population momentum</strong> (more on that in a moment).</p>
+<p>Want a quick way to estimate how fast a population doubles? Use the <strong>Rule of Seventy</strong>:</p>
+<div class="arithmatex">\[
+\text{Doubling time (years)} = \frac{70}{\text{growth rate (\%)}}
+\]</div>
+<p>If a country's population grows at 2% per year, it will double in approximately 35 years. At 1%, it doubles in 70 years. At 3%, just 23 years. Small differences in growth rate make enormous differences over time.</p>
+<h3 id="the-demographic-transition">The Demographic Transition</h3>
+<p>The <strong>demographic transition</strong> model describes how countries typically move through four stages as they industrialize and develop:</p>
+<ol>
+<li>
+<p><strong>Stage 1 -- Pre-industrial</strong>: High birth rates AND high death rates. Population grows slowly or not at all. (Historical -- no countries are in Stage 1 today.)</p>
+</li>
+<li>
+<p><strong>Stage 2 -- Transitional</strong>: Death rates drop dramatically (better sanitation, medicine, food) while birth rates remain high. Population grows rapidly. (Some countries in sub-Saharan Africa.)</p>
+</li>
+<li>
+<p><strong>Stage 3 -- Industrial</strong>: Birth rates begin to fall (education, urbanization, contraception, changing cultural norms). Population growth slows. (Many developing nations: India, Brazil.)</p>
+</li>
+<li>
+<p><strong>Stage 4 -- Post-industrial</strong>: Both birth and death rates are low. Population stabilizes or begins to decline. (Japan, most of Europe, South Korea.)</p>
+</li>
+</ol>
+<p>Some demographers propose a <strong>Stage 5</strong> where birth rates fall well below death rates and populations shrink -- which Japan and several European countries may be entering.</p>
+<h4 id="diagram-demographic-transition-model">Diagram: Demographic Transition Model</h4>
+<iframe src="../../sims/demographic-transition/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Demographic Transition Model</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> demographic-transition<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand
+<strong>Bloom Verb:</strong> Explain
+<strong>Learning Objective:</strong> Students will explain how birth rates, death rates, and total population change through the four stages of demographic transition.
+<strong>Instructional Rationale:</strong> An animated timeline with real country examples anchors the abstract model in concrete data, helping students see the demographic transition as a lived human experience rather than just a theoretical framework.</p>
+<p>Visual: Large graph with time/stage on x-axis (Stages 1-4 labeled) and rates on y-axis. Three lines: birth rate (red), death rate (blue), and total population (green, on secondary y-axis). As student drags a slider across the stages, the lines animate and a population pyramid thumbnail updates to show the corresponding age structure. Below the graph, a "Country Tracker" panel shows where 5-6 real countries currently sit on the model (placed as dots on the curve). Hovering over a country dot shows its current birth rate, death rate, and growth rate. Stage descriptions appear as labeled regions along the x-axis.</p>
+</details>
+<h3 id="population-momentum-and-zero-population-growth">Population Momentum and Zero Population Growth</h3>
+<p>Here's a concept that surprises many people: even after a country reaches replacement-level fertility (TFR = 2.1), its population can keep growing for decades. This is <strong>population momentum</strong>.</p>
+<p>Why? Because if a large generation of young people is currently entering their reproductive years, even if each couple has only two children, the sheer number of couples produces more births than deaths in the older, smaller generation. It's like a freight train -- even after you hit the brakes, it takes a long time to stop.</p>
+<p><strong>Zero population growth</strong> (ZPG) occurs when births plus immigration exactly equal deaths plus emigration, so the population size remains constant. Achieving ZPG requires not just replacement-level fertility but also enough time for the age structure to stabilize.</p>
+<p>China's famous one-child policy (1979-2015) dramatically reduced fertility, but population momentum meant China's population kept growing for decades afterward. Now China faces a different challenge: a rapidly aging population with fewer young workers to support them.</p>
+<div class="admonition mascot-warning">
+<p class="admonition-title">Bailey Says: Watch Out!</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/warning.png" data-desc-position="bottom"><img src="../../img/mascot/warning.png" class="mascot-admonition-img"></a>
+Common mistake alert! Students often confuse "zero population growth" with "zero births." ZPG doesn't mean nobody's having babies -- it means births and deaths are balanced. A country with ZPG still has bustling maternity wards and, sadly, funerals. The rates just match.</p>
+</div>
+<h2 id="media-literacy-moment-population-predictions">Media Literacy Moment: Population Predictions</h2>
+<p>You'll encounter dramatic claims about population: "Earth can only support 2 billion people!" or "We'll hit 15 billion by 2100!" How do you evaluate these?</p>
+<p>Key questions to ask:</p>
+<ol>
+<li>
+<p><strong>What assumptions drive the projection?</strong> The UN's 2022 projection of 10.4 billion by 2100 assumes continued fertility decline. If fertility drops faster (as in some recent trends), the number could be lower. If it stalls, higher.</p>
+</li>
+<li>
+<p><strong>What does "carrying capacity for humans" mean?</strong> Unlike deer or reindeer, humans modify their carrying capacity through technology, trade, and agriculture. K for humans is not a fixed number -- it depends on consumption patterns, technology, and equity.</p>
+</li>
+<li>
+<p><strong>Who benefits from the claim?</strong> Some population alarmism has historically been used to justify coercive policies targeting marginalized communities. Always ask whose agenda a population claim serves.</p>
+</li>
+</ol>
+<p>The evidence says: human population growth IS slowing, fertility IS declining nearly everywhere, and the biggest demographic challenges of the future may be aging and decline, not just growth.</p>
+<h2 id="connections-the-population-web">Connections: The Population Web</h2>
+<p>Every concept in this chapter connects to the others and to earlier chapters:</p>
+<ul>
+<li><strong>Generalist</strong> and <strong>specialist</strong> species adopt different strategies along the r-K continuum</li>
+<li><strong>R-selected species</strong> show <strong>Type III survivorship</strong> and tend toward <strong>exponential growth</strong> followed by <strong>overshoot</strong> and <strong>crash</strong></li>
+<li><strong>K-selected species</strong> show <strong>Type I survivorship</strong> and tend toward <strong>logistic growth</strong> near <strong>carrying capacity</strong></li>
+<li><strong>Limiting factors</strong> determine the carrying capacity, which shapes whether growth is exponential or logistic</li>
+<li><strong>Age structure diagrams</strong> reveal <strong>population momentum</strong> and predict future growth patterns</li>
+<li>The <strong>demographic transition</strong> explains how <strong>human population growth</strong> shifts from exponential toward <strong>zero population growth</strong></li>
+</ul>
+<h2 id="key-terms-summary">Key Terms Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Population Size</td>
+<td>Total number of individuals in a defined area</td>
+</tr>
+<tr>
+<td>Population Density</td>
+<td>Number of individuals per unit area or volume</td>
+</tr>
+<tr>
+<td>Population Distribution</td>
+<td>Spatial pattern of individuals (clumped, uniform, random)</td>
+</tr>
+<tr>
+<td>Generalist Species</td>
+<td>Species with broad ecological tolerance and resource use</td>
+</tr>
+<tr>
+<td>Specialist Species</td>
+<td>Species with narrow ecological tolerance and specific resource needs</td>
+</tr>
+<tr>
+<td>R-Selected Species</td>
+<td>Species favoring rapid reproduction, many offspring, little parental care</td>
+</tr>
+<tr>
+<td>K-Selected Species</td>
+<td>Species favoring fewer offspring with high parental investment</td>
+</tr>
+<tr>
+<td>Survivorship Curves</td>
+<td>Graphs showing proportion surviving to each age</td>
+</tr>
+<tr>
+<td>Type I Survivorship</td>
+<td>Most mortality occurs in old age</td>
+</tr>
+<tr>
+<td>Type II Survivorship</td>
+<td>Constant mortality rate at all ages</td>
+</tr>
+<tr>
+<td>Type III Survivorship</td>
+<td>Most mortality occurs in early life</td>
+</tr>
+<tr>
+<td>Carrying Capacity</td>
+<td>Maximum population an environment can sustain indefinitely</td>
+</tr>
+<tr>
+<td>Exponential Growth</td>
+<td>Unrestricted growth producing a J-shaped curve</td>
+</tr>
+<tr>
+<td>Logistic Growth</td>
+<td>Growth limited by carrying capacity producing an S-shaped curve</td>
+</tr>
+<tr>
+<td>Overshoot</td>
+<td>Population exceeding carrying capacity</td>
+</tr>
+<tr>
+<td>Population Crash</td>
+<td>Rapid population decline following overshoot</td>
+</tr>
+<tr>
+<td>Limiting Factors</td>
+<td>Environmental conditions that restrict population growth</td>
+</tr>
+<tr>
+<td>Density-Dependent Factors</td>
+<td>Limiting factors that intensify with population density</td>
+</tr>
+<tr>
+<td>Density-Independent Factors</td>
+<td>Limiting factors unrelated to population density</td>
+</tr>
+<tr>
+<td>Birth Rate</td>
+<td>Number of births per individual per unit time</td>
+</tr>
+<tr>
+<td>Death Rate</td>
+<td>Number of deaths per individual per unit time</td>
+</tr>
+<tr>
+<td>Immigration</td>
+<td>Movement of individuals into a population</td>
+</tr>
+<tr>
+<td>Emigration</td>
+<td>Movement of individuals out of a population</td>
+</tr>
+<tr>
+<td>Age Structure Diagrams</td>
+<td>Graphs showing population distribution across age groups</td>
+</tr>
+<tr>
+<td>Total Fertility Rate</td>
+<td>Average number of children per woman over her lifetime</td>
+</tr>
+<tr>
+<td>Rule of Seventy</td>
+<td>Doubling time ≈ 70 / growth rate (%)</td>
+</tr>
+<tr>
+<td>Demographic Transition</td>
+<td>Four-stage model of population change during development</td>
+</tr>
+<tr>
+<td>Human Population Growth</td>
+<td>The trajectory of global human population over time</td>
+</tr>
+<tr>
+<td>Population Momentum</td>
+<td>Continued growth after reaching replacement fertility</td>
+</tr>
+<tr>
+<td>Zero Population Growth</td>
+<td>Population size remains constant (births + immigration = deaths + emigration)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="self-test-questions">Self-Test Questions</h2>
+<details class="question">
+<summary>A population has 500 individuals in a 10-hectare area. What is the population density?</summary>
+<p>Population density = 500 individuals / 10 hectares = <strong>50 individuals per hectare</strong>. This is a simple calculation, but interpreting it requires context -- 50 deer per hectare is very dense, while 50 bacteria per hectare is essentially empty.</p>
+</details>
+<details class="question">
+<summary>Why does exponential growth never last in the real world?</summary>
+<p>Resources are finite. As a population grows, individuals compete for food, water, space, and other necessities. Disease spreads faster in dense populations. Predators respond to abundant prey. These <strong>density-dependent limiting factors</strong> eventually slow growth. Additionally, <strong>density-independent factors</strong> like natural disasters can reduce populations regardless of size. Together, these factors impose a <strong>carrying capacity</strong> that limits growth to the logistic model.</p>
+</details>
+<details class="question">
+<summary>A country has a growth rate of 1.4% per year. Approximately how long until the population doubles?</summary>
+<p>Using the <strong>Rule of Seventy</strong>: Doubling time = 70 / 1.4 = <strong>50 years</strong>. This means if current growth continues, the country's population will double by approximately 2076.</p>
+</details>
+<details class="question">
+<summary>Explain why Japan's population is declining even though people are still having children.</summary>
+<p>Japan's <strong>total fertility rate</strong> (about 1.2) is well below the replacement level of 2.1. This means each generation is smaller than the one before it. While <strong>population momentum</strong> kept Japan growing for a while after fertility dropped, the momentum has now reversed. The <strong>age structure diagram</strong> shows a narrow base (few young people) and a wide top (many elderly), meaning deaths now exceed births. Japan has essentially entered a proposed Stage 5 of the <strong>demographic transition</strong>.</p>
+</details>
+<details class="question">
+<summary>Compare density-dependent and density-independent limiting factors using a specific example.</summary>
+<p>Consider a deer population in a forest. <strong>Density-dependent</strong>: As deer numbers increase, competition for browse intensifies, parasites like ticks spread more easily, and predators (wolves) focus hunting on the dense population. These factors worsen as density rises. <strong>Density-independent</strong>: A severe winter blizzard kills deer regardless of how many there are -- 10 deer or 10,000 deer face the same freezing temperatures. In reality, both types interact: the blizzard (density-independent) reduces food availability, which intensifies competition (density-dependent).</p>
+</details>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Bailey Says: Incredible Work, Builders!</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/celebration.png" data-desc-position="bottom"><img src="../../img/mascot/celebration.png" class="mascot-admonition-img"></a>
+You just powered through 30 concepts -- from counting individuals to predicting the future of 8 billion humans. That's dam impressive! You can now model population growth, read survivorship curves, interpret age structure diagrams, and understand why the demographic transition matters for our planet's future. Next chapter, we're zooming way out to explore the physical systems of Earth itself. Everything's connected -- and you're building a bigger picture every chapter!</p>
+</div>
 
 
 

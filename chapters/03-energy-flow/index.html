@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="An interactive intelligent textbook for Ecology.">
+        <meta name="description" content="How energy enters, moves through, and exits ecosystems — from solar input and primary productivity to thermodynamic constraints and trophic efficiency.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -23,7 +23,7 @@
     
     
       
-        <title>3-Energy Flow - Ecology - An Interactive Course</title>
+        <title>Energy Flow in Ecosystems - Ecology - An Interactive Course</title>
       
     
     
@@ -51,6 +51,8 @@
     
       <link rel="stylesheet" href="../../css/extra.css">
     
+      <link rel="stylesheet" href="../../css/mascot.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -70,9 +72,9 @@
       
         <meta property="og:type" content="website">
       
-        <meta property="og:title" content="3-Energy Flow - Ecology - An Interactive Course">
+        <meta property="og:title" content="Energy Flow in Ecosystems - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="An interactive intelligent textbook for Ecology.">
+        <meta property="og:description" content="How energy enters, moves through, and exits ecosystems — from solar input and primary productivity to thermodynamic constraints and trophic efficiency.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/assets/images/social/chapters/03-energy-flow/index.png">
       
@@ -86,9 +88,9 @@
       
         <meta name="twitter:card" content="summary_large_image">
       
-        <meta name="twitter:title" content="3-Energy Flow - Ecology - An Interactive Course">
+        <meta name="twitter:title" content="Energy Flow in Ecosystems - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="An interactive intelligent textbook for Ecology.">
+        <meta name="twitter:description" content="How energy enters, moves through, and exits ecosystems — from solar input and primary productivity to thermodynamic constraints and trophic efficiency.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/assets/images/social/chapters/03-energy-flow/index.png">
       
@@ -157,7 +159,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              3-Energy Flow
+              Energy Flow in Ecosystems
             
           </span>
         </div>
@@ -551,6 +553,270 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#the-sun-earths-energy-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Sun: Earth's Energy Engine
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Sun: Earth's Energy Engine">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-solar-energy-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Solar Energy Budget
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autotrophs-the-self-feeders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autotrophs: The Self-Feeders
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heterotrophs-the-other-feeders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heterotrophs: The Other-Feeders
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chemosynthesis-life-without-sunlight" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chemosynthesis: Life Without Sunlight
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-physics-of-ecosystems-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Physics of Ecosystems: Thermodynamics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Physics of Ecosystems: Thermodynamics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-first-law-of-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      The First Law of Thermodynamics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-second-law-of-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Second Law of Thermodynamics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primary-productivity-measuring-ecosystem-energy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primary Productivity: Measuring Ecosystem Energy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primary Productivity: Measuring Ecosystem Energy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gross-primary-productivity-gpp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gross Primary Productivity (GPP)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#net-primary-productivity-npp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Net Primary Productivity (NPP)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Net Primary Productivity (NPP)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-global-npp-heatmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Global NPP Heatmap
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biomass" class="md-nav__link">
+    <span class="md-ellipsis">
+      Biomass
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#energy-loss-as-heat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Energy Loss as Heat
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Energy Loss as Heat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-energy-flow-tracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Energy Flow Tracker
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trophic-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trophic Efficiency
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Trophic Efficiency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      A Worked Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#net-ecosystem-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      Net Ecosystem Production
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Net Ecosystem Production">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-ecosystem-carbon-budget-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Ecosystem Carbon Budget Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-checking-spotlight" class="md-nav__link">
+    <span class="md-ellipsis">
+      Source-Checking Spotlight
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-the-energy-budget-of-an-ecosystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: The Energy Budget of an Ecosystem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together: The Energy Budget of an Ecosystem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-complete-ecosystem-energy-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Complete Ecosystem Energy Budget
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-this-matters-real-world-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why This Matters: Real-World Connections
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -884,6 +1150,8 @@
       
         
       
+        
+      
     
     
     
@@ -972,6 +1240,8 @@
       
         
       
+        
+      
     
     
     
@@ -1012,6 +1282,12 @@
   
     
     
+      
+        
+      
+        
+      
+        
       
         
       
@@ -1144,6 +1420,270 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#the-sun-earths-energy-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Sun: Earth's Energy Engine
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Sun: Earth's Energy Engine">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-solar-energy-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Solar Energy Budget
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autotrophs-the-self-feeders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Autotrophs: The Self-Feeders
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#heterotrophs-the-other-feeders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heterotrophs: The Other-Feeders
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chemosynthesis-life-without-sunlight" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chemosynthesis: Life Without Sunlight
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-physics-of-ecosystems-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Physics of Ecosystems: Thermodynamics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Physics of Ecosystems: Thermodynamics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-first-law-of-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      The First Law of Thermodynamics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-second-law-of-thermodynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Second Law of Thermodynamics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#primary-productivity-measuring-ecosystem-energy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primary Productivity: Measuring Ecosystem Energy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Primary Productivity: Measuring Ecosystem Energy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gross-primary-productivity-gpp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Gross Primary Productivity (GPP)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#net-primary-productivity-npp" class="md-nav__link">
+    <span class="md-ellipsis">
+      Net Primary Productivity (NPP)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Net Primary Productivity (NPP)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-global-npp-heatmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Global NPP Heatmap
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biomass" class="md-nav__link">
+    <span class="md-ellipsis">
+      Biomass
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#energy-loss-as-heat" class="md-nav__link">
+    <span class="md-ellipsis">
+      Energy Loss as Heat
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Energy Loss as Heat">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-energy-flow-tracker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Energy Flow Tracker
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trophic-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Trophic Efficiency
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Trophic Efficiency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      A Worked Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#net-ecosystem-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      Net Ecosystem Production
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Net Ecosystem Production">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-ecosystem-carbon-budget-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Ecosystem Carbon Budget Calculator
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-checking-spotlight" class="md-nav__link">
+    <span class="md-ellipsis">
+      Source-Checking Spotlight
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together-the-energy-budget-of-an-ecosystem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting It All Together: The Energy Budget of an Ecosystem
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Putting It All Together: The Energy Budget of an Ecosystem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diagram-complete-ecosystem-energy-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diagram: Complete Ecosystem Energy Budget
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-this-matters-real-world-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why This Matters: Real-World Connections
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Summary
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1194,7 +1734,440 @@
 <li><a href="../02-ecosystems-and-biomes/">Chapter 2: Ecosystems and Biomes</a></li>
 </ul>
 <hr>
-<p>TODO: Generate Chapter Content</p>
+<div class="admonition mascot-welcome">
+<p class="admonition-title">Bailey Says: Welcome, Builders!</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/welcome.png" data-desc-position="bottom"><img src="../../img/mascot/welcome.png" class="mascot-admonition-img"></a>
+Welcome back, explorers! In the last chapter, we toured Earth's biomes and learned the ten percent rule. Now we're going to dig deeper — way deeper — into the <em>why</em> behind energy flow. Why does energy always flow one way? Why can't ecosystems recycle energy the way they recycle nutrients? The answers involve physics, chemistry, and some seriously cool math. <strong>Everything's connected</strong> — even physics and ecology! Let's go!</p>
+</div>
+<h2 id="the-sun-earths-energy-engine">The Sun: Earth's Energy Engine</h2>
+<p>Every ecosystem on Earth runs on energy, and almost all of that energy comes from a single source: the sun. Every second, the sun fuses about 600 million tons of hydrogen into helium, releasing energy that radiates outward in all directions. A tiny fraction of that energy — about one two-billionth — reaches Earth.</p>
+<p>Even that tiny fraction is enormous. The <strong>solar energy input</strong> to Earth's surface averages about <span class="arithmatex">\(1,361 \text{ W/m}^2\)</span> at the top of the atmosphere (the solar constant). After accounting for reflection by clouds and the atmosphere, roughly <strong>47% of incoming solar radiation</strong> reaches Earth's surface.</p>
+<p>But here's the critical bottleneck: of all the solar energy that hits Earth's surface, plants and other photosynthetic organisms capture only about <strong>1–2%</strong> of it. That small percentage powers virtually every food chain, every ecosystem, and every living thing on the planet (with a few fascinating exceptions we'll explore later).</p>
+<p>Why so little? Several reasons:</p>
+<ul>
+<li>Much of Earth's surface is ocean, desert, or ice with sparse vegetation</li>
+<li>Light hits leaves at varying angles, and not all wavelengths are usable</li>
+<li>Photosynthesis itself is limited by water, CO<span class="arithmatex">\(_2\)</span>, and temperature</li>
+<li>Only certain wavelengths of light (400–700 nm, called <strong>photosynthetically active radiation</strong> or PAR) drive photosynthesis</li>
+</ul>
+<h4 id="diagram-solar-energy-budget">Diagram: Solar Energy Budget</h4>
+<iframe src="../../sims/solar-energy-budget/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Solar Energy Budget</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> solar-energy-budget<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Understand
+<strong>Bloom Verb:</strong> Trace
+<strong>Learning Objective:</strong> Students trace the path of solar energy from the sun to its capture by producers, accounting for losses at each step.
+<strong>Instructional Rationale:</strong> A Sankey-style flow diagram makes abstract energy quantities tangible and shows why such a small fraction of solar energy enters ecosystems.</p>
+<p>A Sankey diagram showing solar energy flowing from left to right. Starting value: 100 units of incoming solar radiation. Branches split at each loss point: reflected by atmosphere (6%), reflected by clouds (20%), absorbed by atmosphere (16%), reflected by surface (4%), absorbed by surface but not captured by plants (53%), captured by photosynthesis (~1%). Each branch is a colored flow ribbon with width proportional to energy amount. Hovering over any branch shows the exact percentage and a brief explanation. The photosynthesis ribbon leads to a "Producers" box that glows green. A slider lets users adjust cloud cover to see how it affects the energy reaching producers. Canvas 800×450. Responsive.</p>
+</details>
+<h2 id="autotrophs-the-self-feeders">Autotrophs: The Self-Feeders</h2>
+<p><strong>Autotrophs</strong> are organisms that produce their own food from inorganic raw materials. The word comes from Greek: <em>auto</em> (self) + <em>trophe</em> (nourishment). Autotrophs are the foundation of every ecosystem because they convert inorganic energy (sunlight or chemical energy) into organic molecules that all other life depends on.</p>
+<p>There are two types of autotrophs:</p>
+<p><strong>Photoautotrophs</strong> use sunlight as their energy source. They include:</p>
+<ul>
+<li>Plants (the dominant producers on land)</li>
+<li>Algae (the dominant producers in most aquatic ecosystems)</li>
+<li>Cyanobacteria (the original oxygen-producing photosynthesizers, dating back 2.7 billion years)</li>
+</ul>
+<p><strong>Chemoautotrophs</strong> use chemical energy from inorganic compounds. We'll explore these remarkable organisms in detail shortly.</p>
+<p>The chemical equation for photosynthesis is one of the most important in all of biology:</p>
+<div class="arithmatex">\[
+6\text{CO}_2 + 6\text{H}_2\text{O} + \text{light energy} \rightarrow \text{C}_6\text{H}_{12}\text{O}_6 + 6\text{O}_2
+\]</div>
+<p>This equation tells a beautiful story: plants take two of the simplest, most abundant molecules on Earth (carbon dioxide and water), add sunlight, and build sugar — the energy currency of life. Oxygen is released as a byproduct. Every breath you take exists because of this reaction.</p>
+<h2 id="heterotrophs-the-other-feeders">Heterotrophs: The Other-Feeders</h2>
+<p><strong>Heterotrophs</strong> are organisms that cannot make their own food. They must consume organic molecules produced by other organisms. The word comes from Greek: <em>hetero</em> (other) + <em>trophe</em> (nourishment).</p>
+<p>Heterotrophs include:</p>
+<ul>
+<li><strong>Herbivores:</strong> Eat producers (cows, caterpillars, parrotfish)</li>
+<li><strong>Carnivores:</strong> Eat other consumers (wolves, sharks, dragonflies)</li>
+<li><strong>Omnivores:</strong> Eat both producers and consumers (bears, humans, crows)</li>
+<li><strong>Detritivores:</strong> Eat dead organic matter (earthworms, dung beetles, millipedes)</li>
+<li><strong>Decomposers:</strong> Break down dead matter at the molecular level (fungi, bacteria)</li>
+</ul>
+<p>Heterotrophs obtain energy through <strong>cellular respiration</strong>, which is essentially the reverse of photosynthesis:</p>
+<div class="arithmatex">\[
+\text{C}_6\text{H}_{12}\text{O}_6 + 6\text{O}_2 \rightarrow 6\text{CO}_2 + 6\text{H}_2\text{O} + \text{ATP (energy)}
+\]</div>
+<p>Notice the elegant symmetry: photosynthesis builds glucose from CO<span class="arithmatex">\(_2\)</span> and water using light energy; respiration breaks glucose apart, releasing CO<span class="arithmatex">\(_2\)</span>, water, and usable energy (ATP). This is not a coincidence — it's a fundamental feature of how energy cycles through the biosphere.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Bailey Says: Think About It!</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/thinking.png" data-desc-position="bottom"><img src="../../img/mascot/thinking.png" class="mascot-admonition-img"></a>
+Dam, that's elegant! Photosynthesis and respiration are mirror images of each other. One builds; the other breaks down. One stores energy; the other releases it. But here's the key insight: while <em>matter</em> cycles back and forth between these two reactions, <em>energy</em> flows in only one direction — from the sun, through organisms, and eventually out as heat. <strong>See how it all fits together?</strong></p>
+</div>
+<h2 id="chemosynthesis-life-without-sunlight">Chemosynthesis: Life Without Sunlight</h2>
+<p>Not all autotrophs need sunlight. In 1977, scientists in a deep-sea submersible discovered thriving ecosystems around hydrothermal vents on the ocean floor — in complete darkness, under crushing pressure, in water heated to over 400°C. How was this possible?</p>
+<p>The answer is <strong>chemosynthesis</strong> — the process of using chemical energy from inorganic molecules (like hydrogen sulfide, methane, or ammonia) to produce organic compounds. Chemosynthetic bacteria at hydrothermal vents use this reaction:</p>
+<div class="arithmatex">\[
+6\text{CO}_2 + 6\text{H}_2\text{O} + 3\text{H}_2\text{S} \rightarrow \text{C}_6\text{H}_{12}\text{O}_6 + 3\text{H}_2\text{SO}_4
+\]</div>
+<p>These bacteria form the base of an entirely independent food web. Giant tube worms (up to 2 meters long!) harbor billions of chemosynthetic bacteria inside their bodies in a mutualistic relationship. The tube worm provides hydrogen sulfide from vent water; the bacteria provide sugar.</p>
+<p>Chemosynthesis has profound implications:</p>
+<ul>
+<li>It proves that life doesn't require sunlight — expanding the possibilities for extraterrestrial life</li>
+<li>Vent communities may represent some of the oldest ecosystems on Earth</li>
+<li>Similar processes occur in caves, deep underground, and in cold seeps on the ocean floor</li>
+</ul>
+<h2 id="the-physics-of-ecosystems-thermodynamics">The Physics of Ecosystems: Thermodynamics</h2>
+<p>To truly understand why energy flows the way it does in ecosystems, we need to borrow two fundamental laws from physics. Don't worry — Bailey's here to help make these approachable.</p>
+<h3 id="the-first-law-of-thermodynamics">The First Law of Thermodynamics</h3>
+<p>The first law states: <strong>Energy cannot be created or destroyed, only converted from one form to another.</strong> In ecological terms, this means:</p>
+<ul>
+<li>The total amount of energy entering an ecosystem must equal the total amount leaving it (plus what's stored)</li>
+<li>When a plant converts sunlight into glucose, it hasn't <em>created</em> energy — it has <em>transformed</em> light energy into chemical energy</li>
+<li>When a hawk eats a mouse, chemical energy in the mouse's tissues is converted to chemical energy in the hawk's tissues, plus heat</li>
+</ul>
+<p>This principle, applied to ecology, is what we call <strong>thermodynamics in ecology</strong>. It means we can track energy through ecosystems like accountants track money — every joule must be accounted for.</p>
+<h3 id="the-second-law-of-thermodynamics">The Second Law of Thermodynamics</h3>
+<p>The second law states: <strong>Every energy conversion increases the total entropy (disorder) of the universe.</strong> No energy conversion is 100% efficient — some energy is always "lost" as heat.</p>
+<p>This is the law that shapes everything about ecosystem structure. It explains:</p>
+<ul>
+<li>Why energy pyramids always narrow at the top</li>
+<li>Why there are more plants than herbivores, and more herbivores than carnivores</li>
+<li>Why food chains rarely exceed 4–5 links</li>
+<li>Why ecosystems need a constant input of energy from the sun</li>
+</ul>
+<p><strong>Entropy in ecosystems</strong> is the tendency for energy to become more dispersed and less available to do work. Every time energy is transferred between organisms — from producer to herbivore to carnivore — some of it degrades into low-quality heat that dissipates into the environment. This heat cannot be recaptured or recycled. It's gone.</p>
+<p>This is the fundamental difference between energy and matter in ecosystems. <strong>Matter cycles; energy flows.</strong> Nitrogen, carbon, and water circulate endlessly through ecosystems. But energy takes a one-way trip: in from the sun, out as heat. Ecosystems are open systems with respect to energy.</p>
+<div class="admonition mascot-encourage">
+<p class="admonition-title">Bailey Says: You've Got This!</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/encouraging.png" data-desc-position="bottom"><img src="../../img/mascot/encouraging.png" class="mascot-admonition-img"></a>
+Thermodynamics can sound intimidating, but here's the core idea in plain language: <strong>every time energy changes form, some of it becomes heat you can't use again.</strong> That's it! That single principle explains why the ten percent rule exists, why top predators are rare, and why all life on Earth depends on a constant stream of fresh energy from the sun. <strong>Let's build on that!</strong></p>
+</div>
+<h2 id="primary-productivity-measuring-ecosystem-energy">Primary Productivity: Measuring Ecosystem Energy</h2>
+<p>Now let's learn how ecologists measure the energy that enters and flows through ecosystems. The key concept is <strong>primary productivity</strong> — the rate at which producers convert inorganic energy into organic compounds.</p>
+<h3 id="gross-primary-productivity-gpp">Gross Primary Productivity (GPP)</h3>
+<p><strong>Gross primary productivity</strong> (GPP) is the total amount of energy (or carbon) fixed by producers through photosynthesis (or chemosynthesis) per unit area per unit time. Think of GPP as the <em>total revenue</em> of an ecosystem — all the energy coming in before any expenses.</p>
+<p>GPP is typically measured in:</p>
+<ul>
+<li>grams of carbon per square meter per year (g C/m<span class="arithmatex">\(^2\)</span>/yr)</li>
+<li>kilocalories per square meter per year (kcal/m<span class="arithmatex">\(^2\)</span>/yr)</li>
+<li>grams of oxygen released per square meter per year</li>
+</ul>
+<h3 id="net-primary-productivity-npp">Net Primary Productivity (NPP)</h3>
+<p>Producers don't get to keep all the energy they fix. They must use some of it for their own life processes — growth, maintenance, reproduction, and defense. The energy used by producers for their own respiration (<span class="arithmatex">\(R_a\)</span>) is subtracted from GPP to give <strong>net primary productivity</strong> (NPP):</p>
+<div class="arithmatex">\[
+\text{NPP} = \text{GPP} - R_a
+\]</div>
+<p>Where <span class="arithmatex">\(R_a\)</span> is autotroph respiration.</p>
+<p>NPP represents the energy available to all other organisms in the ecosystem — herbivores, carnivores, decomposers, everyone. It's the "profit" after the producers have paid their metabolic "bills."</p>
+<p>Typically, producers use about 40–70% of their GPP for respiration, meaning NPP is only 30–60% of GPP. Here's what that looks like:</p>
+<table>
+<thead>
+<tr>
+<th>Ecosystem Type</th>
+<th>GPP (g C/m²/yr)</th>
+<th>NPP (g C/m²/yr)</th>
+<th>NPP/GPP Ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tropical Rainforest</td>
+<td>3,500</td>
+<td>2,200</td>
+<td>63%</td>
+</tr>
+<tr>
+<td>Temperate Forest</td>
+<td>2,500</td>
+<td>1,200</td>
+<td>48%</td>
+</tr>
+<tr>
+<td>Grassland</td>
+<td>1,500</td>
+<td>600</td>
+<td>40%</td>
+</tr>
+<tr>
+<td>Open Ocean</td>
+<td>250</td>
+<td>125</td>
+<td>50%</td>
+</tr>
+<tr>
+<td>Desert</td>
+<td>150</td>
+<td>90</td>
+<td>60%</td>
+</tr>
+<tr>
+<td>Tundra</td>
+<td>150</td>
+<td>65</td>
+<td>43%</td>
+</tr>
+</tbody>
+</table>
+<p>Notice something surprising: the open ocean has low productivity per square meter, but because it covers 71% of Earth's surface, it accounts for nearly <strong>half</strong> of all global NPP. Meanwhile, tropical rainforests are the most productive per unit area, but they cover a much smaller area.</p>
+<h4 id="diagram-global-npp-heatmap">Diagram: Global NPP Heatmap</h4>
+<iframe src="../../sims/global-npp-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Global NPP Heatmap</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> global-npp-map<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Analyze
+<strong>Bloom Verb:</strong> Compare
+<strong>Learning Objective:</strong> Students compare net primary productivity across different biomes and explain why some regions are more productive than others.
+<strong>Instructional Rationale:</strong> A color-coded world map makes geographic patterns in productivity visually obvious and invites students to hypothesize about limiting factors.</p>
+<p>A simplified world map with regions colored by NPP value using a gradient from brown (low: desert, tundra, open ocean) through yellow (moderate: grasslands, temperate regions) to dark green (high: tropical rainforests, estuaries). Hovering over a region displays: biome name, NPP in g C/m²/yr, limiting factors (light, water, nutrients, temperature). A bar chart below the map shows total NPP contribution by biome (area × NPP per m²), revealing the ocean's outsized contribution. A toggle switches between "per square meter" and "total contribution" views. Canvas 800×550. Responsive.</p>
+</details>
+<h3 id="biomass">Biomass</h3>
+<p><strong>Biomass</strong> is the total mass of living organic matter in an ecosystem at a given time, usually measured in grams or kilograms per square meter (g/m<span class="arithmatex">\(^2\)</span> or kg/m<span class="arithmatex">\(^2\)</span>). Biomass is a <em>standing crop</em> — a snapshot of how much living material exists right now.</p>
+<p>Biomass and productivity are related but different:</p>
+<ul>
+<li><strong>Productivity</strong> is a rate (how fast new biomass is produced)</li>
+<li><strong>Biomass</strong> is a quantity (how much biomass exists at one moment)</li>
+</ul>
+<p>A fast-growing ecosystem can have low biomass if organisms are consumed or decompose quickly. Phytoplankton in the ocean have extremely high productivity but low biomass because they reproduce and die rapidly. In contrast, a redwood forest has enormous biomass but relatively modest productivity per unit of standing biomass.</p>
+<p>This distinction explains a counterintuitive fact: in many ocean ecosystems, the biomass of consumers (zooplankton) can actually exceed the biomass of producers (phytoplankton) at any given moment. This "inverted biomass pyramid" occurs because phytoplankton reproduce so rapidly that their productivity still exceeds consumer demand, even though their standing biomass is small.</p>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Bailey Says: Think About It!</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/thinking.png" data-desc-position="bottom"><img src="../../img/mascot/thinking.png" class="mascot-admonition-img"></a>
+Wood you believe that a lake can have <em>more</em> animal mass than plant mass and still function perfectly? It's like a bakery that sells bread faster than it accumulates on the shelves — the oven (productivity) matters more than the display case (biomass). <strong>Everything's connected</strong> — you can't understand one without the other!</p>
+</div>
+<h2 id="energy-loss-as-heat">Energy Loss as Heat</h2>
+<p>At every step in an ecosystem, energy is lost as heat. This <strong>energy loss as heat</strong> is not a design flaw — it's an unavoidable consequence of the second law of thermodynamics. Every metabolic reaction, every muscle contraction, every chemical transformation releases heat.</p>
+<p>Let's trace energy through a simple food chain to see where it goes:</p>
+<p><strong>Step 1: Sunlight hits a plant.</strong>
+Of 1,000,000 kcal of solar energy reaching one square meter of forest per year, the plant captures about 10,000 kcal (1%) through photosynthesis. This is the GPP.</p>
+<p><strong>Step 2: The plant uses energy for its own needs.</strong>
+The plant uses about 5,000 kcal for respiration (growth, maintenance, defense). This energy is released as heat. The remaining 5,000 kcal becomes NPP — new leaves, stems, roots, seeds.</p>
+<p><strong>Step 3: A caterpillar eats some leaves.</strong>
+The caterpillar consumes 500 kcal of plant material. Of that:</p>
+<ul>
+<li>100 kcal passes through as feces (undigested material)</li>
+<li>300 kcal is used for respiration and lost as heat</li>
+<li>100 kcal becomes new caterpillar biomass (growth)</li>
+</ul>
+<p><strong>Step 4: A bird eats the caterpillar.</strong>
+The bird gets 100 kcal. Of that:</p>
+<ul>
+<li>25 kcal lost as feces and urine</li>
+<li>60 kcal used for respiration and lost as heat</li>
+<li>15 kcal becomes new bird biomass</li>
+</ul>
+<p>At each step, heat escapes into the environment. This heat warms the air, the soil, the water — and eventually radiates into space. It cannot be recaptured by any organism. This is why ecosystems require a constant input of fresh solar energy.</p>
+<h4 id="diagram-energy-flow-tracker">Diagram: Energy Flow Tracker</h4>
+<iframe src="../../sims/energy-flow-tracker/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Energy Flow Tracker</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> energy-flow-tracker<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Analyze
+<strong>Bloom Verb:</strong> Trace
+<strong>Learning Objective:</strong> Students trace energy through a food chain, accounting for respiration, waste, and transfer at each trophic level.
+<strong>Instructional Rationale:</strong> An animated flow diagram with branching energy paths lets students see exactly where energy goes at each step, making the abstract concept of energy loss concrete.</p>
+<p>An animated energy flow diagram showing energy moving left to right through 4 trophic levels. At each level, the flow splits into three branches: respiration/heat (upward red arrows), waste/feces (downward brown arrows), and transfer to next level (forward green arrow). Animated particles flow along paths to represent energy movement. A slider controls initial solar energy input. Each organism box shows: energy in, energy out (respiration, waste, transfer), and efficiency percentage. Running totals display cumulative heat loss. A "pause" button lets students examine any stage. A pie chart at each level shows the proportion going to heat, waste, and growth. Canvas 800×500. Responsive.</p>
+</details>
+<h2 id="trophic-efficiency">Trophic Efficiency</h2>
+<p><strong>Trophic efficiency</strong> is the percentage of energy transferred from one trophic level to the next. It's a more precise version of the "ten percent rule" we learned in Chapter 2. In reality, trophic efficiency varies considerably:</p>
+<table>
+<thead>
+<tr>
+<th>Organism Type</th>
+<th>Typical Trophic Efficiency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Endotherms (warm-blooded)</td>
+<td>1–5%</td>
+</tr>
+<tr>
+<td>Ectotherms (cold-blooded)</td>
+<td>5–15%</td>
+</tr>
+<tr>
+<td>Insects</td>
+<td>10–20%</td>
+</tr>
+<tr>
+<td>Aquatic invertebrates</td>
+<td>10–25%</td>
+</tr>
+</tbody>
+</table>
+<p>Why the variation? <strong>Endotherms</strong> (mammals and birds) burn enormous amounts of energy just to maintain body temperature. A mouse might use 98% of its food energy on metabolism and convert only 2% into new body mass. An insect, which doesn't regulate body temperature, can convert a much higher percentage of food into growth.</p>
+<p>This has real ecological consequences. Ecosystems dominated by ectothermic consumers (like coral reefs and tropical forests full of insects and reptiles) can support more trophic levels than ecosystems dominated by endothermic consumers (like African savannas full of mammals).</p>
+<p>The formula for trophic efficiency is:</p>
+<div class="arithmatex">\[
+\text{Trophic Efficiency} = \frac{\text{Production at trophic level } n}{\text{Production at trophic level } n-1} \times 100\%
+\]</div>
+<h3 id="a-worked-example">A Worked Example</h3>
+<p>Suppose a grassland ecosystem has the following energy values:</p>
+<ul>
+<li>Producers (grasses): NPP = 20,000 kcal/m<span class="arithmatex">\(^2\)</span>/yr</li>
+<li>Primary consumers (grasshoppers): Production = 2,400 kcal/m<span class="arithmatex">\(^2\)</span>/yr</li>
+<li>Secondary consumers (frogs): Production = 240 kcal/m<span class="arithmatex">\(^2\)</span>/yr</li>
+<li>Tertiary consumers (snakes): Production = 12 kcal/m<span class="arithmatex">\(^2\)</span>/yr</li>
+</ul>
+<p>Trophic efficiencies:</p>
+<ul>
+<li>Level 1 → 2: <span class="arithmatex">\(\frac{2,400}{20,000} \times 100\% = 12\%\)</span></li>
+<li>Level 2 → 3: <span class="arithmatex">\(\frac{240}{2,400} \times 100\% = 10\%\)</span></li>
+<li>Level 3 → 4: <span class="arithmatex">\(\frac{12}{240} \times 100\% = 5\%\)</span></li>
+</ul>
+<p>Notice how efficiency drops at higher levels. Snakes (ectotherms) are more efficient than warm-blooded predators would be, but the overall pattern of declining efficiency holds. From the original 20,000 kcal, only 12 kcal reaches the top predator — that's <strong>0.06%</strong> of the original energy.</p>
+<div class="admonition mascot-tip">
+<p class="admonition-title">Bailey Says: Pro Tip!</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/tip.png" data-desc-position="bottom"><img src="../../img/mascot/tip.png" class="mascot-admonition-img"></a>
+Here's a handy shortcut for trophic efficiency calculations. If the average efficiency is 10%, just move the decimal point one place to the left for each trophic level: 10,000 → 1,000 → 100 → 10. If the efficiency is 20%, multiply by 0.2 at each step. Real ecologists use the actual measured efficiencies, which vary by species and ecosystem. <strong>Let's build on that!</strong></p>
+</div>
+<h2 id="net-ecosystem-production">Net Ecosystem Production</h2>
+<p>So far we've talked about NPP — the energy available to the ecosystem after producers pay their respiratory bills. But what about <em>all</em> the respiration in an ecosystem, including consumers and decomposers?</p>
+<p><strong>Net ecosystem production</strong> (NEP) is the total amount of organic matter accumulated by an ecosystem after accounting for respiration by <em>all</em> organisms:</p>
+<div class="arithmatex">\[
+\text{NEP} = \text{GPP} - R_{\text{total}}
+\]</div>
+<p>Where <span class="arithmatex">\(R_{\text{total}}\)</span> includes respiration by autotrophs, heterotrophs, and decomposers.</p>
+<p>Alternatively:</p>
+<div class="arithmatex">\[
+\text{NEP} = \text{NPP} - R_h
+\]</div>
+<p>Where <span class="arithmatex">\(R_h\)</span> is heterotroph respiration (consumers + decomposers).</p>
+<p>NEP tells us whether an ecosystem is gaining or losing carbon:</p>
+<ul>
+<li><strong>NEP &gt; 0:</strong> The ecosystem is a <em>carbon sink</em> — it's storing more carbon than it releases. Young, growing forests are strong carbon sinks.</li>
+<li><strong>NEP = 0:</strong> The ecosystem is in <em>carbon balance</em> — inputs equal outputs. Mature, old-growth forests are often near carbon balance.</li>
+<li><strong>NEP &lt; 0:</strong> The ecosystem is a <em>carbon source</em> — it's releasing more carbon than it stores. This can happen after a wildfire, during drought, or due to deforestation.</li>
+</ul>
+<p>Understanding NEP is critical for climate science. Earth's ecosystems collectively act as a carbon sink, absorbing about 25–30% of human CO<span class="arithmatex">\(_2\)</span> emissions. But if ecosystems shift from sinks to sources — due to warming, drought, or disturbance — it would accelerate climate change in a dangerous positive feedback loop.</p>
+<h4 id="diagram-ecosystem-carbon-budget-calculator">Diagram: Ecosystem Carbon Budget Calculator</h4>
+<iframe src="../../sims/carbon-budget-calc/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Ecosystem Carbon Budget Calculator</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> carbon-budget-calc<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Evaluate
+<strong>Bloom Verb:</strong> Calculate
+<strong>Learning Objective:</strong> Students calculate GPP, NPP, and NEP for different ecosystem scenarios and determine whether an ecosystem is a carbon sink or source.
+<strong>Instructional Rationale:</strong> An interactive calculator with adjustable parameters lets students explore how changing conditions (warming, drought, fire) shift the carbon balance, connecting productivity concepts to real-world climate implications.</p>
+<p>A dashboard with three panels. Left panel: ecosystem selector dropdown (tropical forest, temperate forest, grassland, ocean, tundra) that sets default GPP, autotroph respiration, and heterotroph respiration values. Center panel: three sliders to adjust GPP, Ra (autotroph respiration), and Rh (heterotroph respiration). A "disturbance" button set (fire, drought, warming) modifies parameters realistically. Right panel: real-time calculation display showing GPP, NPP = GPP - Ra, NEP = NPP - Rh, with a color-coded indicator: green for carbon sink (NEP &gt; 0), red for carbon source (NEP &lt; 0), yellow for balance. A bar chart visualizes the relative sizes of GPP, Ra, Rh, and NEP. Canvas 800×500. Responsive.</p>
+</details>
+<h2 id="source-checking-spotlight">Source-Checking Spotlight</h2>
+<p>Claims about ecosystem productivity and carbon storage appear frequently in climate debates. Here's a critical thinking exercise:</p>
+<p><strong>Claim:</strong> "Planting a trillion trees will solve climate change."</p>
+<p>This claim went viral after a 2019 study in <em>Science</em> estimated that Earth has room for 0.9 billion hectares of new forest canopy. Let's evaluate it:</p>
+<ol>
+<li><strong>Find the original study.</strong> Bastin et al. (2019) in <em>Science</em> — a peer-reviewed, reputable journal. Good start.</li>
+<li><strong>Look for critiques.</strong> Multiple response papers pointed out flaws: the study overestimated available land, underestimated how long trees take to grow, and didn't account for albedo changes (dark forests absorb more heat than light grasslands).</li>
+<li><strong>Check the math.</strong> New forests take 50–100 years to reach peak carbon storage. Meanwhile, fossil fuel emissions continue at record pace. Planting trees is helpful but cannot substitute for reducing emissions.</li>
+<li><strong>Apply what you've learned.</strong> NPP varies enormously by biome and climate. A tree planted in a tropical rainforest stores carbon much faster than one planted in the taiga. Location matters.</li>
+</ol>
+<p>The takeaway: tree planting is valuable but is one tool among many, not a silver bullet. Scientific literacy means looking beyond headlines to understand the assumptions, limitations, and context of any claim.</p>
+<h2 id="putting-it-all-together-the-energy-budget-of-an-ecosystem">Putting It All Together: The Energy Budget of an Ecosystem</h2>
+<p>Let's build a complete energy budget for a temperate forest ecosystem, synthesizing everything we've learned:</p>
+<p><strong>Energy Input:</strong></p>
+<ul>
+<li>Solar radiation reaching the forest: 1,000,000 kcal/m<span class="arithmatex">\(^2\)</span>/yr</li>
+<li>Energy captured by photosynthesis (GPP): 12,000 kcal/m<span class="arithmatex">\(^2\)</span>/yr (1.2%)</li>
+</ul>
+<p><strong>Producer Energy Budget:</strong></p>
+<ul>
+<li>Autotroph respiration (<span class="arithmatex">\(R_a\)</span>): 7,000 kcal/m<span class="arithmatex">\(^2\)</span>/yr</li>
+<li>Net Primary Productivity (NPP): 5,000 kcal/m<span class="arithmatex">\(^2\)</span>/yr</li>
+</ul>
+<p><strong>Consumer and Decomposer Energy Budget:</strong></p>
+<ul>
+<li>Consumed by herbivores: 500 kcal/m<span class="arithmatex">\(^2\)</span>/yr</li>
+<li>Consumed by decomposers: 4,000 kcal/m<span class="arithmatex">\(^2\)</span>/yr</li>
+<li>Heterotroph respiration (<span class="arithmatex">\(R_h\)</span>): 4,200 kcal/m<span class="arithmatex">\(^2\)</span>/yr</li>
+</ul>
+<p><strong>Net Ecosystem Production:</strong></p>
+<ul>
+<li>NEP = NPP - <span class="arithmatex">\(R_h\)</span> = 5,000 - 4,200 = <strong>800 kcal/m<span class="arithmatex">\(^2\)</span>/yr</strong></li>
+</ul>
+<p>This forest is a carbon sink — it's storing 800 kcal/m<span class="arithmatex">\(^2\)</span>/yr more than it releases. That stored energy accumulates as wood, leaf litter, and soil organic matter.</p>
+<p>Notice the accounting: of the original 1,000,000 kcal of solar energy, only 800 kcal (0.08%) ends up stored in the ecosystem. The rest is either reflected, not captured by photosynthesis, or released as heat through respiration. The second law of thermodynamics is relentless.</p>
+<h4 id="diagram-complete-ecosystem-energy-budget">Diagram: Complete Ecosystem Energy Budget</h4>
+<iframe src="../../sims/ecosystem-energy-budget/main.html" width="100%" height="500px" scrolling="no"></iframe>
+
+<details>
+<summary>Complete Ecosystem Energy Budget</summary>
+<p>Type: microsim
+<strong>sim-id:</strong> ecosystem-energy-budget<br>
+<strong>Library:</strong> p5.js<br>
+<strong>Status:</strong> Specified</p>
+<p><strong>Bloom Level:</strong> Create
+<strong>Bloom Verb:</strong> Construct
+<strong>Learning Objective:</strong> Students construct a complete energy budget for an ecosystem, tracing energy from solar input through GPP, NPP, and NEP.
+<strong>Instructional Rationale:</strong> A comprehensive flow diagram with editable values lets students build the energy budget themselves, reinforcing the relationships between all productivity concepts in a single integrated view.</p>
+<p>A comprehensive flow diagram showing the complete energy budget. Solar energy enters from the top. A large box represents producers, with GPP entering and two exits: Ra (heat arrow going up-right) and NPP (arrow going down). NPP splits into: consumed by herbivores, consumed by decomposers, and stored as NEP. Consumer boxes show further energy splits into Rh (heat) and secondary production. All heat arrows converge into a "Total Heat Loss" counter. Students can click on any value to edit it; the diagram recalculates all downstream values automatically and highlights inconsistencies in red. A "balance check" verifies that Energy In = Energy Out + Energy Stored. Ecosystem presets available via dropdown. Canvas 800×600. Responsive.</p>
+</details>
+<div class="admonition mascot-thinking">
+<p class="admonition-title">Bailey Says: Systems Thinking!</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/thinking.png" data-desc-position="bottom"><img src="../../img/mascot/thinking.png" class="mascot-admonition-img"></a>
+Look at that energy budget one more time. Decomposers process 4,000 out of 5,000 kcal of NPP — that's <strong>80%</strong> of all the energy available to heterotrophs! Decomposers really are the unsung heroes. Without them, nutrients would pile up in dead matter and the whole system would collapse. Dam, that's a critical connection! <strong>Everything's connected!</strong></p>
+</div>
+<h2 id="why-this-matters-real-world-connections">Why This Matters: Real-World Connections</h2>
+<p>Understanding energy flow isn't just academic — it has urgent practical applications:</p>
+<p><strong>Agriculture and food security.</strong> Humans redirect a significant portion of Earth's NPP for our own use. Estimates suggest we appropriate about 25–40% of terrestrial NPP through agriculture, forestry, and land conversion. As the human population grows, understanding the limits of NPP helps us plan sustainable food systems.</p>
+<p><strong>Climate change.</strong> NEP determines whether ecosystems absorb or release CO<span class="arithmatex">\(_2\)</span>. As temperatures rise, plant respiration increases faster than photosynthesis in many ecosystems, potentially turning carbon sinks into carbon sources — a dangerous positive feedback loop.</p>
+<p><strong>Renewable energy.</strong> Biofuels are ultimately limited by NPP. Understanding trophic efficiency explains why eating plants is more energy-efficient than eating animals that ate plants — a principle relevant to both personal diet choices and global food policy.</p>
+<p><strong>Conservation.</strong> Protecting high-NPP ecosystems (tropical forests, wetlands, estuaries) preserves the energy base that supports the greatest biodiversity. Ecosystem productivity is a foundation for all the ecological services humans depend on.</p>
+<h2 id="chapter-summary">Chapter Summary</h2>
+<p>In this chapter, you explored the physics and biology of energy flow in ecosystems. You learned that nearly all ecosystem energy comes from <strong>solar energy input</strong>, captured by <strong>autotrophs</strong> through photosynthesis (or by chemoautotrophs through <strong>chemosynthesis</strong>). <strong>Heterotrophs</strong> obtain energy by consuming other organisms.</p>
+<p>The <strong>first and second laws of thermodynamics</strong> govern energy flow. Energy cannot be created or destroyed, but every conversion increases <strong>entropy</strong> and results in <strong>energy loss as heat</strong>. This is why ecosystems need constant solar input and why energy flows one way.</p>
+<p>You learned to measure ecosystem energy using <strong>primary productivity</strong>: <strong>gross primary productivity</strong> (GPP) is total energy fixed; <strong>net primary productivity</strong> (NPP) is what remains after producer respiration. <strong>Biomass</strong> is the standing stock of organic matter. <strong>Trophic efficiency</strong> measures how effectively energy transfers between trophic levels. <strong>Net ecosystem production</strong> (NEP) accounts for all respiration and tells us whether an ecosystem is a carbon sink or source.</p>
+<p>The key insight: energy flows, matter cycles. Every joule of energy that enters an ecosystem will eventually leave as heat. The structure of every food web, the number of trophic levels, the relative abundance of predators and prey — all are consequences of thermodynamics.</p>
+<hr>
+<details class="question">
+<summary>Self-Test: Check Your Understanding</summary>
+<p><strong>1.</strong> What is the difference between GPP and NPP?</p>
+<details class="success">
+<summary>Answer</summary>
+<p>GPP (Gross Primary Productivity) is the total energy fixed by producers through photosynthesis. NPP (Net Primary Productivity) is GPP minus autotroph respiration — the energy actually available to the rest of the ecosystem. NPP = GPP - Ra.</p>
+</details>
+<p><strong>2.</strong> Why is energy lost as heat at every trophic level?</p>
+<details class="success">
+<summary>Answer</summary>
+<p>The second law of thermodynamics states that no energy conversion is 100% efficient. Every metabolic reaction releases some energy as heat, which dissipates into the environment and cannot be recaptured by organisms.</p>
+</details>
+<p><strong>3.</strong> A forest has GPP of 15,000 kcal/m²/yr, autotroph respiration of 9,000 kcal/m²/yr, and heterotroph respiration of 4,500 kcal/m²/yr. Calculate NPP and NEP. Is this ecosystem a carbon sink or source?</p>
+<details class="success">
+<summary>Answer</summary>
+<p>NPP = GPP - Ra = 15,000 - 9,000 = <strong>6,000 kcal/m²/yr</strong>
+NEP = NPP - Rh = 6,000 - 4,500 = <strong>1,500 kcal/m²/yr</strong>
+Since NEP &gt; 0, this ecosystem is a <strong>carbon sink</strong>.</p>
+</details>
+<p><strong>4.</strong> How does chemosynthesis differ from photosynthesis?</p>
+<details class="success">
+<summary>Answer</summary>
+<p>Photosynthesis uses light energy to convert CO₂ and H₂O into organic compounds. Chemosynthesis uses chemical energy from inorganic molecules (like hydrogen sulfide) to produce organic compounds. Both are autotrophic processes, but chemosynthesis does not require sunlight.</p>
+</details>
+<p><strong>5.</strong> Why do endotherms have lower trophic efficiency than ectotherms?</p>
+<details class="success">
+<summary>Answer</summary>
+<p>Endotherms (warm-blooded animals) use a large portion of their food energy to maintain constant body temperature through metabolic heat production. This leaves less energy available for growth and reproduction. Ectotherms don't spend energy on body temperature regulation, so they convert a higher percentage of consumed energy into biomass.</p>
+</details>
+<p><strong>6.</strong> Explain why matter cycles but energy flows in ecosystems.</p>
+<details class="success">
+<summary>Answer</summary>
+<p>Matter (carbon, nitrogen, water) is recycled through ecosystems via biogeochemical cycles — atoms are reused repeatedly. Energy, however, is degraded to heat at every transfer (second law of thermodynamics) and cannot be recycled. Ecosystems require continuous solar energy input because energy exits as heat and is lost to the system.</p>
+</details>
+</details>
+<hr>
+<div class="admonition mascot-celebration">
+<p class="admonition-title">Bailey Says: Incredible Work, Builders!</p>
+<p><a class="glightbox" data-type="image" data-width="100%" data-height="auto" href="../../img/mascot/celebration.png" data-desc-position="bottom"><img src="../../img/mascot/celebration.png" class="mascot-admonition-img"></a>
+You just mastered the physics of ecology! You can now trace energy from the sun through producers, consumers, and decomposers — and you know exactly where every joule goes. You've learned to calculate GPP, NPP, and NEP, and you understand why the second law of thermodynamics shapes every food web on Earth. Dam, that's powerful knowledge! Next up, we'll explore how matter cycles through ecosystems — because while energy flows one way, atoms go around and around forever. <strong>Everything's connected!</strong></p>
+</div>
 
 
 

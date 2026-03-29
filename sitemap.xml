@@ -89,6 +89,10 @@
          <lastmod>2026-03-29</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/ecology/img/mascot/image-prompts/</loc>
+         <lastmod>2026-03-29</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/ecology/learning-graph/</loc>
          <lastmod>2026-03-29</lastmod>
     </url>
@@ -106,6 +110,10 @@
     </url>
     <url>
          <loc>https://dmccreary.github.io/ecology/learning-graph/index-template/</loc>
+         <lastmod>2026-03-29</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/ecology/learning-graph/mascot-test/</loc>
          <lastmod>2026-03-29</lastmod>
     </url>
     <url>
@@ -133,7 +141,23 @@
          <lastmod>2026-03-29</lastmod>
     </url>
     <url>
+         <loc>https://dmccreary.github.io/ecology/logs/04-mascot-generator/</loc>
+         <lastmod>2026-03-29</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/ecology/logs/ch-01-content-generation/</loc>
+         <lastmod>2026-03-29</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/ecology/logs/chapter-content-generator-2026-03-29/</loc>
+         <lastmod>2026-03-29</lastmod>
+    </url>
+    <url>
          <loc>https://dmccreary.github.io/ecology/prompts/01-seed/</loc>
+         <lastmod>2026-03-29</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/ecology/prompts/02-content-generaton-style-guide/</loc>
          <lastmod>2026-03-29</lastmod>
     </url>
     <url>
