@@ -1,0 +1,14 @@
+{
+  "sim_id": "bias-detective",
+  "diagram_name": "Cognitive Bias Detective",
+  "chapter_number": 17,
+  "chapter_title": "\"Chapter 17: Evaluating Environmental Claims\"",
+  "chapter_dir": "17-evaluating-environmental-claims",
+  "library": "p5.js",
+  "bloom_level": "Evaluate",
+  "bloom_verb": "Detect",
+  "learning_objective": "Students detect cognitive biases and logical fallacies in environmental arguments and explain how each distorts reasoning.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** bias-detective<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Evaluate\n**Bloom Verb:** Detect\n**Learning Objective:** Students detect cognitive biases and logical fallacies in environmental arguments and explain how each distorts reasoning.\n**Instructional Rationale:** Gamified bias detection makes abstract reasoning concepts concrete and engaging. Students practice the skill of noticing flawed reasoning in realistic examples.\n\n**Visual Elements:**\n\n- Left panel: environmental claim card (headline, image, source info, argument text)\n- Right panel: \"Bias toolkit\" with labeled buttons for each bias/fallacy type\n- Center: magnifying glass cursor highlighting suspect phrases when hovered\n- Score counter and streak tracker\n- Difficulty levels: Beginner (obvious biases), Intermediate (subtle), Expert (real-world complex claims)\n\n**Interactions:**\n\n- Read the claim and select which bias/fallacy is present from the toolkit\n- Highlight the specific phrase or element that reveals the bias\n- Immediate feedback: correct identification shows explanation; incorrect shows hint\n- Progressive difficulty: 15+ claim cards across three difficulty levels\n- \"Explain your reasoning\" text box for open-ended responses at Expert level\n- Biases covered: confirmation bias, cherry-picking, false balance, appeal to nature, ad hominem, slippery slope, false dichotomy\n\n**Colors:** Claim card: white (#ffffff) on navy (#264653), correct: green (#2a9d8f), incorrect: red (#e63946), highlight: yellow (#ffd166), toolkit: light blue (#a8dadc)"
+}

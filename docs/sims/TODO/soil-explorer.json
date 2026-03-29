@@ -1,0 +1,14 @@
+{
+  "sim_id": "soil-explorer",
+  "diagram_name": "Soil Horizons and Texture Explorer",
+  "chapter_number": 8,
+  "chapter_title": "\"Chapter 8: Earth Systems and Resources\"",
+  "chapter_dir": "08-earth-systems",
+  "library": "p5.js",
+  "bloom_level": "Apply",
+  "bloom_verb": "Classify",
+  "learning_objective": "Students will classify soil types using the texture triangle and identify soil horizons in a profile diagram.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** soil-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Apply\n**Bloom Verb:** Classify\n**Learning Objective:** Students will classify soil types using the texture triangle and identify soil horizons in a profile diagram.\n**Instructional Rationale:** Split-screen interactive combines two related but distinct concepts (horizons and texture) in one tool, reinforcing that soil structure and composition work together.\n\nVisual: Left panel: Cross-section soil profile showing O, A, B, C, and R horizons with realistic colors and textures. Hovering over each horizon highlights it and displays description, typical depth, composition, and ecological role. Animated earthworms, roots, and fungi at appropriate depths. Right panel: Interactive soil texture triangle. Three sliders (sand %, silt %, clay %) constrained to sum to 100%. As student adjusts sliders, a dot moves on the triangle showing the current soil classification. The classification name (sandy loam, silty clay, etc.) updates in real-time. Below, a brief description of that soil type's drainage, nutrient retention, and best agricultural uses. Color the triangle regions in earth tones corresponding to soil color."
+}

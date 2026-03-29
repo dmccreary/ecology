@@ -1,0 +1,14 @@
+{
+  "sim_id": "energy-comparison-dashboard",
+  "diagram_name": "Energy Source Comparison Dashboard",
+  "chapter_number": 9,
+  "chapter_title": "\"Chapter 9: Sustainability and Energy Resources\"",
+  "chapter_dir": "09-sustainability-and-energy",
+  "library": "Chart.js",
+  "bloom_level": "Evaluate",
+  "bloom_verb": "Compare",
+  "learning_objective": "Students compare energy sources across multiple criteria to evaluate trade-offs.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** energy-comparison-dashboard<br/>\n**Library:** Chart.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Evaluate\n**Bloom Verb:** Compare\n**Learning Objective:** Students compare energy sources across multiple criteria to evaluate trade-offs.\n**Instructional Rationale:** Multi-criteria comparison builds systems thinking by showing that no energy source \"wins\" on every dimension -- trade-offs are inherent.\n\nInteractive radar chart comparing 8 energy sources (coal, natural gas, nuclear, solar PV, wind, hydroelectric, geothermal, biomass) across 6 dimensions: EROI, CO2 emissions (inverted so higher = cleaner), land use efficiency, reliability/capacity factor, cost per kWh (inverted so higher = cheaper), and scalability. Dropdown selector to highlight 2-3 sources for direct comparison. Data table below the chart shows actual values. Color-coded by energy type (fossil = amber, nuclear = purple, renewable = green shades)."
+}

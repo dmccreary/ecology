@@ -1,0 +1,14 @@
+{
+  "sim_id": "ecosystem-services-web",
+  "diagram_name": "Ecosystem Services Web",
+  "chapter_number": 6,
+  "chapter_title": "\"Chapter 6: Biodiversity and Ecosystem Services\"",
+  "chapter_dir": "06-biodiversity-and-services",
+  "library": "vis-network",
+  "bloom_level": "Evaluate",
+  "bloom_verb": "Assess",
+  "learning_objective": "Students will assess the interconnections among the four categories of ecosystem services and predict consequences of losing specific services.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: graph-model\n**sim-id:** ecosystem-services-web<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Bloom Level:** Evaluate\n**Bloom Verb:** Assess\n**Learning Objective:** Students will assess the interconnections among the four categories of ecosystem services and predict consequences of losing specific services.\n**Instructional Rationale:** A network graph makes abstract connections between service categories tangible and interactive, supporting systems thinking by letting students trace cascading effects.\n\nVisual: Network diagram with four large hub nodes (Provisioning, Regulating, Cultural, Supporting) connected to specific service nodes (e.g., \"Pollination\" connected to Regulating, \"Food\" connected to Provisioning). Edges show dependencies (Supporting -> all others, Regulating <-> Provisioning). Clicking a node highlights all connected nodes and dims unconnected ones. A \"Remove Service\" mode lets students click a node to remove it and see cascading effects (connected services turn yellow for stressed, red for critically impaired). Include a \"Reset\" button. Node colors: green (Provisioning), blue (Regulating), purple (Cultural), brown (Supporting). Edge labels describe the relationship. Note: offset hub nodes vertically by at least 10px to avoid the vis-network horizontal edge label rendering bug."
+}

@@ -1,0 +1,14 @@
+{
+  "sim_id": "population-growth",
+  "diagram_name": "Population Growth Simulator",
+  "chapter_number": 7,
+  "chapter_title": "\"Chapter 7: Population Ecology\"",
+  "chapter_dir": "07-population-ecology",
+  "library": "p5.js",
+  "bloom_level": "Apply",
+  "bloom_verb": "Model",
+  "learning_objective": "Students will model exponential and logistic population growth by adjusting parameters and observing resulting curves.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** population-growth<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Apply\n**Bloom Verb:** Model\n**Learning Objective:** Students will model exponential and logistic population growth by adjusting parameters and observing resulting curves.\n**Instructional Rationale:** Real-time parameter manipulation builds intuition about how r and K interact to shape population trajectories. Seeing the J-curve transform into an S-curve as carrying capacity is introduced creates a memorable \"aha\" moment.\n\nVisual: Large graph area with time on x-axis and population size on y-axis. Three sliders: initial population N₀ (1-100), growth rate r (0.01-1.0), and carrying capacity K (100-10000). Toggle between exponential and logistic models. Both curves can be displayed simultaneously for comparison. Animated population counter shows current N. A vertical dashed line at K shows carrying capacity. Growth rate indicator shows dN/dt at current time step. Include \"Play/Pause\" and \"Reset\" buttons, plus a speed slider. Color: exponential curve in red (danger!), logistic in green (sustainable). Show the inflection point at K/2 with a marker when logistic is selected."
+}

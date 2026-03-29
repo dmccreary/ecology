@@ -1,0 +1,14 @@
+{
+  "sim_id": "global-npp-map",
+  "diagram_name": "Global NPP Heatmap",
+  "chapter_number": 3,
+  "chapter_title": "\"Energy Flow in Ecosystems\"",
+  "chapter_dir": "03-energy-flow",
+  "library": "p5.js",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Compare",
+  "learning_objective": "Students compare net primary productivity across different biomes and explain why some regions are more productive than others.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** global-npp-map<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze\n**Bloom Verb:** Compare\n**Learning Objective:** Students compare net primary productivity across different biomes and explain why some regions are more productive than others.\n**Instructional Rationale:** A color-coded world map makes geographic patterns in productivity visually obvious and invites students to hypothesize about limiting factors.\n\nA simplified world map with regions colored by NPP value using a gradient from brown (low: desert, tundra, open ocean) through yellow (moderate: grasslands, temperate regions) to dark green (high: tropical rainforests, estuaries). Hovering over a region displays: biome name, NPP in g C/m²/yr, limiting factors (light, water, nutrients, temperature). A bar chart below the map shows total NPP contribution by biome (area × NPP per m²), revealing the ocean's outsized contribution. A toggle switches between \"per square meter\" and \"total contribution\" views. Canvas 800×550. Responsive."
+}

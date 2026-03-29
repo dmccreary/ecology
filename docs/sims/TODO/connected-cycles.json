@@ -1,0 +1,14 @@
+{
+  "sim_id": "connected-cycles",
+  "diagram_name": "Interconnected Biogeochemical Cycles",
+  "chapter_number": 4,
+  "chapter_title": "\"Chapter 4: Biogeochemical Cycles\"",
+  "chapter_dir": "04-biogeochemical-cycles",
+  "library": "vis-network",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Connect",
+  "learning_objective": "Identify linkages between the carbon, nitrogen, phosphorus, and water cycles and explain how disrupting one affects others.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: graph-model\n**sim-id:** connected-cycles<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze\n**Bloom Verb:** Connect\n**Learning Objective:** Identify linkages between the carbon, nitrogen, phosphorus, and water cycles and explain how disrupting one affects others.\n**Instructional Rationale:** A network graph makes invisible connections visible, reinforcing systems thinking.\n\nNetwork diagram with four large cluster nodes (Carbon Cycle - gray, Nitrogen Cycle - blue, Phosphorus Cycle - orange, Water Cycle - light blue) connected by labeled edges. Key shared processes appear as smaller nodes between clusters: \"Decomposition\" connects Carbon, Nitrogen, and Phosphorus. \"Runoff\" connects Water, Nitrogen, and Phosphorus. \"Plant Growth\" connects Carbon, Nitrogen, Phosphorus, and Water. \"Soil Processes\" connects all four. Clicking any node highlights all its connections and displays a tooltip explaining the linkage. Edge thickness represents strength of coupling. Layout uses slight y-offset (490 instead of 480) for horizontal edges to ensure label rendering."
+}

@@ -1,0 +1,14 @@
+{
+  "sim_id": "climate-feedbacks",
+  "diagram_name": "Climate Feedback Loops",
+  "chapter_number": 15,
+  "chapter_title": "\"Chapter 15: Global Climate Change\"",
+  "chapter_dir": "15-global-climate-change",
+  "library": "vis-network",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Diagram",
+  "learning_objective": "Students trace how positive feedback loops in the climate system (ice-albedo, permafrost methane, water vapor) amplify warming.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: graph-model\n**sim-id:** climate-feedbacks<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze\n**Bloom Verb:** Diagram\n**Learning Objective:** Students trace how positive feedback loops in the climate system (ice-albedo, permafrost methane, water vapor) amplify warming.\n**Instructional Rationale:** Interactive causal loop diagram lets students click through each step of each feedback loop, building deep understanding of system amplification.\n\n**Visual Elements:**\n\n- Network graph with labeled nodes for key variables:\n  - Global Temperature, Arctic Ice Cover, Albedo, Solar Absorption\n  - Permafrost Extent, Methane Release, CO2 Release\n  - Water Vapor, Cloud Cover, Ocean Heat\n- Directed edges showing causal relationships\n- Edge labels: \"+\" (amplifying) or \"-\" (dampening)\n- Color-coded loops: ice-albedo (blue), permafrost (brown), water vapor (gray)\n\n**Interactions:**\n\n- Click a feedback loop label to highlight and animate that loop\n- Hover over nodes to see current values and trends\n- \"Trigger warming\" button starts animation showing cascade through all loops\n- Toggle individual loops on/off to see relative contributions\n- Note: Position the starting node at y=490 (slight offset from center at 480) so vis-network renders edge labels correctly on initial load\n\n**Colors:** Warming nodes: red (#e63946), cooling nodes: blue (#457b9d), neutral: gray (#adb5bd), amplifying edges: red, dampening edges: blue"
+}

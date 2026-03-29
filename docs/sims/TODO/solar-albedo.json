@@ -1,0 +1,14 @@
+{
+  "sim_id": "solar-albedo",
+  "diagram_name": "Solar Radiation and Albedo Simulator",
+  "chapter_number": 8,
+  "chapter_title": "\"Chapter 8: Earth Systems and Resources\"",
+  "chapter_dir": "08-earth-systems",
+  "library": "p5.js",
+  "bloom_level": "Apply",
+  "bloom_verb": "Calculate",
+  "learning_objective": "Students will calculate the net energy absorbed by different surfaces and predict how albedo changes affect local temperature.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** solar-albedo<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Apply\n**Bloom Verb:** Calculate\n**Learning Objective:** Students will calculate the net energy absorbed by different surfaces and predict how albedo changes affect local temperature.\n**Instructional Rationale:** Manipulating surface types and seeing real-time energy budgets makes the abstract concept of albedo tangible and connects it to climate feedback loops.\n\nVisual: Side view of Earth's surface with incoming solar arrows from above. A dropdown or row of clickable surface types (snow, ocean, forest, desert, city, ice) changes the ground surface. Reflected arrows bounce off the surface proportional to albedo -- more arrows reflected for high-albedo surfaces. A temperature gauge on the right shows surface temperature rising or falling based on net absorbed energy. Below, a numerical display shows: incoming radiation, reflected radiation, absorbed radiation, and albedo value. A \"Climate Feedback\" toggle shows how changing from ice to ocean creates a positive feedback loop, with an animated cycle diagram. Color: incoming arrows yellow, reflected arrows white, absorbed shown as red glow on surface."
+}

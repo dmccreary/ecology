@@ -1,0 +1,14 @@
+{
+  "sim_id": "ecosystem-energy-budget",
+  "diagram_name": "Complete Ecosystem Energy Budget",
+  "chapter_number": 3,
+  "chapter_title": "\"Energy Flow in Ecosystems\"",
+  "chapter_dir": "03-energy-flow",
+  "library": "p5.js",
+  "bloom_level": "Create",
+  "bloom_verb": "Construct",
+  "learning_objective": "Students construct a complete energy budget for an ecosystem, tracing energy from solar input through GPP, NPP, and NEP.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** ecosystem-energy-budget<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Create\n**Bloom Verb:** Construct\n**Learning Objective:** Students construct a complete energy budget for an ecosystem, tracing energy from solar input through GPP, NPP, and NEP.\n**Instructional Rationale:** A comprehensive flow diagram with editable values lets students build the energy budget themselves, reinforcing the relationships between all productivity concepts in a single integrated view.\n\nA comprehensive flow diagram showing the complete energy budget. Solar energy enters from the top. A large box represents producers, with GPP entering and two exits: Ra (heat arrow going up-right) and NPP (arrow going down). NPP splits into: consumed by herbivores, consumed by decomposers, and stored as NEP. Consumer boxes show further energy splits into Rh (heat) and secondary production. All heat arrows converge into a \"Total Heat Loss\" counter. Students can click on any value to edit it; the diagram recalculates all downstream values automatically and highlights inconsistencies in red. A \"balance check\" verifies that Energy In = Energy Out + Energy Stored. Ecosystem presets available via dropdown. Canvas 800×600. Responsive."
+}

@@ -1,0 +1,14 @@
+{
+  "sim_id": "predator-prey",
+  "diagram_name": "Predator-Prey Population Dynamics",
+  "chapter_number": 5,
+  "chapter_title": "\"Chapter 5: Species Interactions\"",
+  "chapter_dir": "05-species-interactions",
+  "library": "p5.js",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Model",
+  "learning_objective": "Model predator-prey oscillations and predict how changing parameters affects population dynamics.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** predator-prey<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze\n**Bloom Verb:** Model\n**Learning Objective:** Model predator-prey oscillations and predict how changing parameters affects population dynamics.\n**Instructional Rationale:** Interactive simulation with adjustable parameters lets students test hypotheses about population cycles and observe emergent oscillation patterns.\n\nTwo-panel display. Top panel: animated meadow scene with green dots (prey/hares) and red dots (predators/lynx) moving randomly. When a predator contacts prey, prey disappears and predator grows slightly. Prey reproduce at a set rate. Predators die if they don't eat within a time window. Bottom panel: real-time line graph showing prey population (green line) and predator population (red line) over time, producing classic oscillating curves. Sliders: \"Prey Birth Rate\" (0.01-0.1), \"Predation Efficiency\" (0.001-0.01), \"Predator Death Rate\" (0.01-0.1). Buttons: \"Add Disease\" (reduces prey by 50% instantly), \"Remove Predators\" (sets predators to 0 to show prey explosion then crash from overgrazing). Reset button. Starting populations: 200 prey, 20 predators."
+}

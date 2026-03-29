@@ -1,0 +1,14 @@
+{
+  "sim_id": "island-biogeography",
+  "diagram_name": "Island Biogeography Simulator",
+  "chapter_number": 6,
+  "chapter_title": "\"Chapter 6: Biodiversity and Ecosystem Services\"",
+  "chapter_dir": "06-biodiversity-and-services",
+  "library": "p5.js",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Predict",
+  "learning_objective": "Students will predict how island size and distance from mainland affect species richness.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** island-biogeography<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze\n**Bloom Verb:** Predict\n**Learning Objective:** Students will predict how island size and distance from mainland affect species richness.\n**Instructional Rationale:** Interactive manipulation of island parameters lets students discover the species-area relationship and distance effect through experimentation rather than memorization.\n\nVisual: Top-down view showing a mainland (left edge) and an island (center-right). Two sliders control: (1) Island size (small to large), (2) Distance from mainland (near to far). As sliders change, animated dots (representing species) colonize the island. A real-time graph in the corner plots species count over time, showing the equilibrium point where immigration rate equals extinction rate. The equilibrium line shifts as parameters change. Species shown as colored dots with different shapes. Immigration shown as animated arcs from mainland to island. Extinction shown as dots fading out. Include a \"Fast Forward\" button to reach equilibrium quickly. Display numerical values: immigration rate, extinction rate, equilibrium species count."
+}

@@ -1,0 +1,14 @@
+{
+  "sim_id": "energy-flow-tracker",
+  "diagram_name": "Energy Flow Tracker",
+  "chapter_number": 3,
+  "chapter_title": "\"Energy Flow in Ecosystems\"",
+  "chapter_dir": "03-energy-flow",
+  "library": "p5.js",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Trace",
+  "learning_objective": "Students trace energy through a food chain, accounting for respiration, waste, and transfer at each trophic level.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** energy-flow-tracker<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze\n**Bloom Verb:** Trace\n**Learning Objective:** Students trace energy through a food chain, accounting for respiration, waste, and transfer at each trophic level.\n**Instructional Rationale:** An animated flow diagram with branching energy paths lets students see exactly where energy goes at each step, making the abstract concept of energy loss concrete.\n\nAn animated energy flow diagram showing energy moving left to right through 4 trophic levels. At each level, the flow splits into three branches: respiration/heat (upward red arrows), waste/feces (downward brown arrows), and transfer to next level (forward green arrow). Animated particles flow along paths to represent energy movement. A slider controls initial solar energy input. Each organism box shows: energy in, energy out (respiration, waste, transfer), and efficiency percentage. Running totals display cumulative heat loss. A \"pause\" button lets students examine any stage. A pie chart at each level shows the proportion going to heat, waste, and growth. Canvas 800×500. Responsive."
+}

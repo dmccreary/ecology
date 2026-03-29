@@ -1,0 +1,14 @@
+{
+  "sim_id": "ej-mapping",
+  "diagram_name": "Environmental Justice Mapping Tool",
+  "chapter_number": 17,
+  "chapter_title": "\"Chapter 17: Evaluating Environmental Claims\"",
+  "chapter_dir": "17-evaluating-environmental-claims",
+  "library": "p5.js",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Correlate",
+  "learning_objective": "Students correlate the locations of environmental hazards with demographic data to identify patterns of environmental injustice.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: map\n**sim-id:** ej-mapping<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze\n**Bloom Verb:** Correlate\n**Learning Objective:** Students correlate the locations of environmental hazards with demographic data to identify patterns of environmental injustice.\n**Instructional Rationale:** Map-based exploration makes abstract inequality visible and personal, connecting environmental science to social justice in a way that pure text cannot.\n\n**Visual Elements:**\n\n- Simplified map of a fictional city divided into districts\n- Color-coded overlay layers:\n  - Pollution sources (factories, highways, waste sites) as red markers\n  - Income levels (gradient from dark=low to light=high)\n  - Health outcomes (asthma rates, cancer rates) as proportional circles\n  - Green space access as green shading\n- Data panel showing statistics for selected district\n- Legend showing layer controls\n\n**Interactions:**\n\n- Toggle layers on/off to see correlations visually\n- Click districts to see detailed demographics and environmental data\n- \"Propose policy\" tool: place new facilities or green spaces and see impact predictions\n- Compare districts side by side\n- \"Flip perspective\" button: view from different stakeholder perspectives (resident, developer, city planner, environmental advocate)\n- Discussion prompts appear based on what patterns the student discovers\n\n**Colors:** Pollution: red (#e63946), low income: dark orange (#e76f51), high income: light blue (#a8dadc), health risk: purple (#7b2cbf), green space: green (#2a9d8f), neutral: gray (#adb5bd)"
+}

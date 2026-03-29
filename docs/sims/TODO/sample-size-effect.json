@@ -1,0 +1,14 @@
+{
+  "sim_id": "sample-size-effect",
+  "diagram_name": "Sample Size Effect on Reliability",
+  "chapter_number": 14,
+  "chapter_title": "\"Chapter 14: Scientific Literacy\"",
+  "chapter_dir": "14-scientific-literacy",
+  "library": "p5.js",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Compare",
+  "learning_objective": "Compare the reliability of conclusions drawn from small versus large sample sizes",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** sample-size-effect<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze\n**Bloom Verb:** Compare\n**Learning Objective:** Compare the reliability of conclusions drawn from small versus large sample sizes\n**Instructional Rationale:** Repeated sampling demonstrates that small samples produce wildly variable estimates while large samples converge on the truth\n\nA coin-flip simulation adapted to ecological sampling. A population of 10,000 \"organisms\" has a true survival rate (adjustable, default 60%). Students repeatedly draw samples of size N (adjustable from 5 to 500 via slider) and observe the estimated survival rate from each sample plotted as a dot on a number line. With small N, dots scatter widely. With large N, dots cluster tightly around the true value. A histogram accumulates on the right showing the distribution of estimates. Key statistics displayed: range, standard deviation of estimates, percentage of samples within 5% of true value. A \"headlines\" panel generates fake news headlines from extreme samples: \"SPECIES THRIVING! 90% survival!\" (from a lucky sample of 5) versus the boring but accurate result from a sample of 500. Colors: dots colored by distance from true value (green = close, red = far), true value line in bold blue."
+}

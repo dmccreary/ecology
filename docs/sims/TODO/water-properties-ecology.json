@@ -1,0 +1,14 @@
+{
+  "sim_id": "water-properties-ecology",
+  "diagram_name": "Water Properties and Ecological Importance",
+  "chapter_number": 1,
+  "chapter_title": "\"Chapter 1: Foundations of Ecology\"",
+  "chapter_dir": "01-foundations-of-ecology",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "Explain, exemplify",
+  "learning_objective": "Students will be able to explain five key properties of water and connect each property to its ecological importance.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: infographic\n**sim-id:** water-properties-ecology<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand (L2)\n**Bloom Verb:** Explain, exemplify\n\n**Learning Objective:** Students will be able to explain five key properties of water and connect each property to its ecological importance.\n\n**Instructional Rationale:** Hover-to-reveal interactions support the Understand/explain objective by letting students first consider the property, then discover its ecological significance. This predict-then-reveal pattern strengthens comprehension.\n\nPurpose: Interactive diagram showing five key properties of water, each linked to an ecological example.\n\nVisual Elements:\n- Central water molecule (H2O) illustration with polarity indicated\n- Five radiating branches, one per property: Solvent, Heat Capacity, Cohesion/Adhesion, Density Anomaly, Surface Tension\n- Each branch shows a small ecological scene icon (e.g., ice floating on a lake, a water strider on a pond surface, water moving up a tree trunk)\n- Hover over each branch to expand an explanation panel with: property name, definition, molecular basis, and ecological example\n\nInteractive Controls:\n- Hover over each of the 5 property branches to reveal detail panel\n- Click on a branch to \"lock\" it open for comparison\n- Button: \"Quiz Me\" -- hides the ecological examples and asks student to match properties to examples\n- Button: \"Reset\"\n\nColor Scheme: Blues and greens -- water blue (#0277bd) for the molecule, ecosystem green (#2e7d32) for ecological examples\nCanvas: Responsive width, 500px height\nImplementation: p5.js with hover-triggered information panels"
+}

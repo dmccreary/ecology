@@ -1,0 +1,14 @@
+{
+  "sim_id": "biodiversity-levels",
+  "diagram_name": "Biodiversity Levels Pyramid",
+  "chapter_number": 6,
+  "chapter_title": "\"Chapter 6: Biodiversity and Ecosystem Services\"",
+  "chapter_dir": "06-biodiversity-and-services",
+  "library": "p5.js",
+  "bloom_level": "Understand",
+  "bloom_verb": "Classify",
+  "learning_objective": "Students will classify the three levels of biodiversity and give examples of each.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: infographic\n**sim-id:** biodiversity-levels<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand\n**Bloom Verb:** Classify\n**Learning Objective:** Students will classify the three levels of biodiversity and give examples of each.\n**Instructional Rationale:** A visual pyramid helps students see that biodiversity operates at nested scales -- genetic diversity within species diversity within ecosystem diversity.\n\nVisual: Three-tier pyramid with interactive hover/click. Bottom tier: \"Genetic Diversity\" (show DNA helix icon, examples: gene variants in a wolf pack). Middle tier: \"Species Diversity\" (show multiple organism silhouettes, examples: 50 bird species in a forest). Top tier: \"Ecosystem Diversity\" (show landscape icons, examples: forest, wetland, grassland). Each tier clickable to reveal 2-3 real-world examples with brief descriptions. Color scheme: greens and earth tones. Animated transitions between levels when clicked."
+}

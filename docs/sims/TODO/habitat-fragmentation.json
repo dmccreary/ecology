@@ -1,0 +1,14 @@
+{
+  "sim_id": "habitat-fragmentation",
+  "diagram_name": "Habitat Fragmentation Simulator",
+  "chapter_number": 16,
+  "chapter_title": "\"Chapter 16: Biodiversity Loss and Policy\"",
+  "chapter_dir": "16-biodiversity-loss-and-policy",
+  "library": "p5.js",
+  "bloom_level": "Apply",
+  "bloom_verb": "Demonstrate",
+  "learning_objective": "Students demonstrate how fragmentation reduces effective habitat area and isolates populations, leading to local extinctions.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** habitat-fragmentation<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Apply\n**Bloom Verb:** Demonstrate\n**Learning Objective:** Students demonstrate how fragmentation reduces effective habitat area and isolates populations, leading to local extinctions.\n**Instructional Rationale:** Hands-on simulation where students fragment habitat and watch populations respond makes abstract island biogeography principles tangible.\n\n**Visual Elements:**\n\n- Top-down view of a landscape grid (e.g., 40x40 cells)\n- Green cells = habitat, gray cells = developed land\n- Colored dots = individual organisms moving within habitat\n- Edge effect visualization: habitat cells within 2 cells of an edge shown in lighter green\n- Population counter and diversity index display\n- Graph panel showing population over time\n\n**Interactions:**\n\n- Click-and-drag to \"develop\" habitat cells (convert green to gray)\n- Watch organisms respond in real time: populations in small fragments decline\n- Toggle \"Show edge effects\" to highlight degraded interior\n- Toggle \"Show connectivity\" to visualize which fragments are connected\n- \"Add wildlife corridor\" tool: draw thin habitat strips connecting fragments\n- Speed slider for simulation rate\n- Reset button to restore original continuous habitat\n- Presets: \"Road through forest,\" \"Suburban sprawl,\" \"Agricultural mosaic\"\n\n**Colors:** Intact habitat: dark green (#2d6a4f), edge habitat: light green (#95d5b2), developed: gray (#adb5bd), organisms: orange dots (#f4a261), corridors: teal (#2a9d8f)"
+}

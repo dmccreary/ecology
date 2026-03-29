@@ -1,0 +1,14 @@
+{
+  "sim_id": "citizen-science",
+  "diagram_name": "Citizen Science Project Finder",
+  "chapter_number": 17,
+  "chapter_title": "\"Chapter 17: Evaluating Environmental Claims\"",
+  "chapter_dir": "17-evaluating-environmental-claims",
+  "library": "p5.js",
+  "bloom_level": "Apply",
+  "bloom_verb": "Select",
+  "learning_objective": "Students select appropriate citizen science projects based on their interests, location, and available resources.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: infographic\n**sim-id:** citizen-science<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Apply\n**Bloom Verb:** Select\n**Learning Objective:** Students select appropriate citizen science projects based on their interests, location, and available resources.\n**Instructional Rationale:** Making citizen science personally actionable transforms students from passive learners to active participants in environmental research.\n\n**Visual Elements:**\n\n- Interactive card layout of 10+ citizen science projects\n- Each card shows: project name, icon, topic area, difficulty level, time commitment, equipment needed, link\n- Filter sidebar with checkboxes for: topic (birds, water, air, plants, climate), difficulty (beginner, intermediate, advanced), time commitment, indoor/outdoor\n- \"Match me\" quiz that recommends projects based on student preferences\n- Map showing project density by region\n\n**Interactions:**\n\n- Filter projects by interest area and constraints\n- Click cards to expand full project descriptions with getting-started guides\n- \"Match me\" personality quiz (5 questions) → personalized recommendations\n- Save favorites to a \"My Projects\" list\n- Compare projects side by side\n\n**Colors:** Biodiversity projects: green (#2a9d8f), water projects: blue (#457b9d), air projects: light purple (#7b2cbf), climate projects: orange (#f4a261), cards: white on navy (#264653)"
+}

@@ -1,0 +1,14 @@
+{
+  "sim_id": "fact-check-workflow",
+  "diagram_name": "Fact-Checking Workflow",
+  "chapter_number": 17,
+  "chapter_title": "\"Chapter 17: Evaluating Environmental Claims\"",
+  "chapter_dir": "17-evaluating-environmental-claims",
+  "library": "p5.js",
+  "bloom_level": "Apply",
+  "bloom_verb": "Execute",
+  "learning_objective": "Students execute a systematic fact-checking workflow when presented with an environmental claim, reaching an evidence-based conclusion.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: workflow\n**sim-id:** fact-check-workflow<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Apply\n**Bloom Verb:** Execute\n**Learning Objective:** Students execute a systematic fact-checking workflow when presented with an environmental claim, reaching an evidence-based conclusion.\n**Instructional Rationale:** An interactive decision-tree format makes the abstract process concrete and gives students a repeatable tool they can use beyond the classroom.\n\n**Visual Elements:**\n\n- Flowchart/decision tree starting with \"Environmental Claim\" at the top\n- Branching paths based on SIFT steps: Stop → Investigate Source → Find Coverage → Trace to Original\n- At each decision node, yes/no questions guide the user\n- Terminal nodes: \"Likely reliable,\" \"Needs more investigation,\" \"Likely misleading,\" \"Likely false\"\n- Confidence meter showing how strength of conclusion changes at each step\n- Sample claims panel on the left for practice\n\n**Interactions:**\n\n- Select a sample claim from a library (10+ claims of varying reliability)\n- Walk through the decision tree, answering questions at each node\n- At \"Investigate Source,\" click to see source details (funding, credentials, history)\n- At \"Find Coverage,\" see what different sources report about the claim\n- At \"Trace to Original,\" read a simplified version of the original source\n- Final assessment compared to expert evaluation with explanation of any differences\n- \"Bring your own claim\" text input for free-form practice\n\n**Colors:** Reliable: green (#2a9d8f), uncertain: yellow (#e9c46a), misleading: orange (#f4a261), false: red (#e63946), workflow path: navy (#264653), active node: bright blue (#457b9d)"
+}

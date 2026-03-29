@@ -1,0 +1,14 @@
+{
+  "sim_id": "carbon-budget-calc",
+  "diagram_name": "Ecosystem Carbon Budget Calculator",
+  "chapter_number": 3,
+  "chapter_title": "\"Energy Flow in Ecosystems\"",
+  "chapter_dir": "03-energy-flow",
+  "library": "p5.js",
+  "bloom_level": "Evaluate",
+  "bloom_verb": "Calculate",
+  "learning_objective": "Students calculate GPP, NPP, and NEP for different ecosystem scenarios and determine whether an ecosystem is a carbon sink or source.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** carbon-budget-calc<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Evaluate\n**Bloom Verb:** Calculate\n**Learning Objective:** Students calculate GPP, NPP, and NEP for different ecosystem scenarios and determine whether an ecosystem is a carbon sink or source.\n**Instructional Rationale:** An interactive calculator with adjustable parameters lets students explore how changing conditions (warming, drought, fire) shift the carbon balance, connecting productivity concepts to real-world climate implications.\n\nA dashboard with three panels. Left panel: ecosystem selector dropdown (tropical forest, temperate forest, grassland, ocean, tundra) that sets default GPP, autotroph respiration, and heterotroph respiration values. Center panel: three sliders to adjust GPP, Ra (autotroph respiration), and Rh (heterotroph respiration). A \"disturbance\" button set (fire, drought, warming) modifies parameters realistically. Right panel: real-time calculation display showing GPP, NPP = GPP - Ra, NEP = NPP - Rh, with a color-coded indicator: green for carbon sink (NEP > 0), red for carbon source (NEP < 0), yellow for balance. A bar chart visualizes the relative sizes of GPP, Ra, Rh, and NEP. Canvas 800×500. Responsive."
+}

@@ -1,0 +1,14 @@
+{
+  "sim_id": "coevolution",
+  "diagram_name": "Coevolution Arms Race",
+  "chapter_number": 5,
+  "chapter_title": "\"Chapter 5: Species Interactions\"",
+  "chapter_dir": "05-species-interactions",
+  "library": "p5.js",
+  "bloom_level": "Evaluate",
+  "bloom_verb": "Predict",
+  "learning_objective": "Predict how reciprocal selection pressures drive trait escalation in coevolving species.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** coevolution<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Evaluate\n**Bloom Verb:** Predict\n**Learning Objective:** Predict how reciprocal selection pressures drive trait escalation in coevolving species.\n**Instructional Rationale:** Generation-by-generation simulation makes the abstract concept of coevolution visible and interactive.\n\nTwo populations displayed side by side: \"Predator\" (left, red organisms) and \"Prey\" (right, green organisms). Each individual shown as a small circle with a visible trait bar (e.g., predator speed vs. prey speed). Each generation: predators attempt to catch prey. Faster predators catch slower prey. Surviving prey reproduce, biased toward faster offspring. Successful predators reproduce, biased toward faster offspring. Trait distribution histograms shown below each population, shifting rightward over generations. A \"generations\" counter and \"average trait\" display track the arms race escalation. Sliders: \"Mutation Rate\" (controls variation), \"Selection Strength\" (how much trait difference matters). \"Switch to Toxicity Arms Race\" button changes the trait from speed to poison resistance vs. poison strength. Reset button. After 50 generations, a summary panel shows how much both traits have escalated."
+}

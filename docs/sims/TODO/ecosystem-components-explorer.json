@@ -1,0 +1,14 @@
+{
+  "sim_id": "ecosystem-components-explorer",
+  "diagram_name": "Ecosystem Components Interactive Explorer",
+  "chapter_number": 1,
+  "chapter_title": "\"Chapter 1: Foundations of Ecology\"",
+  "chapter_dir": "01-foundations-of-ecology",
+  "library": "p5.js",
+  "bloom_level": "Understand (L2)",
+  "bloom_verb": "Classify, compare",
+  "learning_objective": "Students will be able to classify ecosystem components as biotic or abiotic and explain how they interact.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: infographic\n**sim-id:** ecosystem-components-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand (L2)\n**Bloom Verb:** Classify, compare\n\n**Learning Objective:** Students will be able to classify ecosystem components as biotic or abiotic and explain how they interact.\n\n**Instructional Rationale:** A drag-and-sort interaction pattern supports the Understand/classify objective by requiring students to actively categorize items rather than passively viewing them. Immediate feedback reinforces correct mental models.\n\nPurpose: Interactive sorting activity where students drag ecosystem components into the correct category (biotic or abiotic).\n\nVisual Elements:\n- Central area showing 16 ecosystem component cards with icons and labels (e.g., \"Oak Tree\", \"Sunlight\", \"Mushroom\", \"Soil Minerals\", \"Earthworm\", \"Wind\", \"Bacteria\", \"Water\", \"Deer\", \"Temperature\", \"Algae\", \"Rocks\", \"Frog\", \"Rainfall\", \"Moss\", \"Salinity\")\n- Two labeled drop zones: \"Biotic Factors\" (green, left) and \"Abiotic Factors\" (blue, right)\n- Score counter showing correct/total\n- Reset button to try again\n- After sorting, reveal panel showing one interaction between a biotic and abiotic factor pair\n\nInteractive Controls:\n- Drag cards to drop zones\n- Button: \"Check Answers\" to validate\n- Button: \"Show Interactions\" (appears after correct sorting) to reveal how biotic and abiotic factors connect\n- Button: \"Reset\" to start over\n\nColor Scheme:\n- Biotic zone: green tones (#2e7d32 header, #e8f5e9 background)\n- Abiotic zone: blue tones (#0277bd header, #e1f5fe background)\n- Cards: warm tan (#f5f0e8) with dark brown text\n\nCanvas: Responsive width, 500px height minimum\nImplementation: p5.js with drag-and-drop interaction"
+}

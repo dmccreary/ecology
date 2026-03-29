@@ -1,0 +1,14 @@
+{
+  "sim_id": "ipm-decision-tree",
+  "diagram_name": "Integrated Pest Management Decision Flowchart",
+  "chapter_number": 10,
+  "chapter_title": "\"Chapter 10: Land and Water Use\"",
+  "chapter_dir": "10-land-and-water-use",
+  "library": "vis-network",
+  "bloom_level": "Apply",
+  "bloom_verb": "Implement",
+  "learning_objective": "Students apply IPM decision-making by following the hierarchy of pest control strategies.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: workflow\n**sim-id:** ipm-decision-tree<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Bloom Level:** Apply\n**Bloom Verb:** Implement\n**Learning Objective:** Students apply IPM decision-making by following the hierarchy of pest control strategies.\n**Instructional Rationale:** Interactive decision trees make procedural knowledge concrete and help students understand that IPM is a systematic process, not just \"use less pesticide.\"\n\nInteractive flowchart starting with \"Pest Detected\" node. Decision nodes branch based on: Is pest above economic threshold? (Yes/No) -> If No: \"Continue monitoring.\" If Yes: \"Are cultural controls available?\" -> crop rotation, resistant varieties, habitat modification nodes. If insufficient: \"Are biological controls available?\" -> predator release, parasitoid introduction, microbial pesticide nodes. If insufficient: \"Apply targeted chemical control\" -> specific pesticide, timing, application method nodes. Each terminal node shows estimated cost, effectiveness, and ecological impact rating (green/yellow/red). User clicks through decisions for 3 different pest scenarios (aphids on vegetables, corn borers, weeds in wheat)."
+}

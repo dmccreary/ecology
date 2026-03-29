@@ -1,0 +1,14 @@
+{
+  "sim_id": "soil-health-comparison",
+  "diagram_name": "Soil Health Comparison: Tillage Methods",
+  "chapter_number": 10,
+  "chapter_title": "\"Chapter 10: Land and Water Use\"",
+  "chapter_dir": "10-land-and-water-use",
+  "library": "p5.js",
+  "bloom_level": "Evaluate",
+  "bloom_verb": "Assess",
+  "learning_objective": "Students evaluate the long-term effects of conventional tillage vs. no-till farming on soil health indicators.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** soil-health-comparison<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Evaluate\n**Bloom Verb:** Assess\n**Learning Objective:** Students evaluate the long-term effects of conventional tillage vs. no-till farming on soil health indicators.\n**Instructional Rationale:** Time-lapse simulation makes decades-long soil processes visible in seconds, connecting farming decisions to ecological outcomes that are normally invisible.\n\nSide-by-side cross-section views of soil profiles. LEFT: Conventional tillage. RIGHT: No-till. Both start identical. \"Advance Season\" button progresses through years. Over time, conventional tillage side shows: topsoil thinning, organic matter decreasing (darkens to lighter brown), compaction layer forming, fewer visible organisms (earthworms, roots), increased erosion particles washing off surface during rain events. No-till side shows: stable topsoil depth, darkening organic layer, extensive root networks, visible earthworms and fungal threads, crop residue accumulating on surface, water infiltrating better during rain events. Metrics panels: soil organic carbon %, water infiltration rate, erosion rate, earthworm count, crop yield. Line graphs track each metric over 20 simulated years."
+}

@@ -1,0 +1,14 @@
+{
+  "sim_id": "tipping-points",
+  "diagram_name": "Tipping Points Explorer",
+  "chapter_number": 15,
+  "chapter_title": "\"Chapter 15: Global Climate Change\"",
+  "chapter_dir": "15-global-climate-change",
+  "library": "p5.js",
+  "bloom_level": "Evaluate",
+  "bloom_verb": "Predict",
+  "learning_objective": "Students predict how increasing global temperature activates successive tipping points and explain why the system response is nonlinear.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** tipping-points<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Evaluate\n**Bloom Verb:** Predict\n**Learning Objective:** Students predict how increasing global temperature activates successive tipping points and explain why the system response is nonlinear.\n**Instructional Rationale:** The ball-on-landscape metaphor makes abstract tipping point dynamics tangible. Students physically drag a temperature slider and watch the system shift states.\n\n**Visual Elements:**\n\n- Stability landscape (potential energy curve) showing the ball (Earth's climate state) in a valley\n- As temperature increases, the valley becomes shallower (less stable)\n- At the tipping point, the valley disappears and the ball rolls to a new state\n- Temperature thermometer on the left (0-5°C warming)\n- Timeline of tipping elements along the bottom, lighting up as their thresholds are crossed\n- Before/after panels showing ecosystem state changes\n\n**Interactions:**\n\n- Temperature slider (0-5°C warming above pre-industrial)\n- As slider increases, stability landscape reshapes in real time\n- Tipping point markers flash and activate with sound cue\n- \"Reverse\" mode: pull temperature back down to demonstrate hysteresis (system doesn't snap back)\n- Select different tipping elements to see their individual stability landscapes\n- Reset button returns to pre-industrial state\n\n**Colors:** Stable state: green (#2a9d8f), transitional: yellow (#e9c46a), tipped: red (#e63946), landscape fill: gradient from green to red based on temperature"
+}

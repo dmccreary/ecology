@@ -1,0 +1,14 @@
+{
+  "sim_id": "urban-heat-island",
+  "diagram_name": "Urban Heat Island Profile",
+  "chapter_number": 10,
+  "chapter_title": "\"Chapter 10: Land and Water Use\"",
+  "chapter_dir": "10-land-and-water-use",
+  "library": "p5.js",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Explain",
+  "learning_objective": "Students analyze how urban land cover drives temperature differences between cities and surrounding areas.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** urban-heat-island<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze\n**Bloom Verb:** Explain\n**Learning Objective:** Students analyze how urban land cover drives temperature differences between cities and surrounding areas.\n**Instructional Rationale:** Interactive cross-section visualization connects abstract temperature data to visible landscape features, building spatial reasoning about urban ecology.\n\nCross-section view of a landscape transitioning from rural (left) through suburban to urban core (center) and back to rural (right). Bottom layer shows land cover: green (vegetation), gray (impervious), blue (water). Buildings rise from impervious areas, taller toward center. Temperature curve overlaid in red shows the heat island profile -- dipping over parks, peaking over dense urban core. Interactive: user can click to add/remove trees, green roofs, or reflective surfaces and watch the temperature curve respond in real time. Slider for time of day (showing how heat island effect changes from day to night). Legend showing surface albedo values. Temperature scale on y-axis."
+}

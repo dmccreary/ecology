@@ -1,0 +1,14 @@
+{
+  "sim_id": "emergence-simulator",
+  "diagram_name": "Emergence Simulator",
+  "chapter_number": 13,
+  "chapter_title": "\"Chapter 13: Systems Thinking\"",
+  "chapter_dir": "13-systems-thinking",
+  "library": "p5.js",
+  "bloom_level": "Understand",
+  "bloom_verb": "Explain",
+  "learning_objective": "Explain how complex system-level patterns emerge from simple individual rules",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** emergence-simulator<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Understand\n**Bloom Verb:** Explain\n**Learning Objective:** Explain how complex system-level patterns emerge from simple individual rules\n**Instructional Rationale:** Agent-based flocking simulation makes the abstract concept of emergence tangible and visually compelling\n\nA flocking simulation (boids algorithm) where each agent follows three simple rules: separation (avoid crowding neighbors), alignment (steer toward average heading of neighbors), cohesion (steer toward average position of neighbors). Students adjust sliders for each rule's strength (0-100%). With all sliders at zero, agents move randomly. As rules are activated, emergent flocking behavior appears. A second mode shows \"ecosystem emergence\" -- agents representing producers, herbivores, and predators with simple eat/reproduce/die rules producing emergent population cycles. Counter displays: number of agents, average cluster size, number of distinct flocks. Colors: agents colored by their current heading direction (using HSB color wheel), producing beautiful flowing color patterns in flocks. Background: dark blue."
+}

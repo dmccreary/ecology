@@ -1,0 +1,14 @@
+{
+  "sim_id": "carbon-cycle",
+  "diagram_name": "The Carbon Cycle",
+  "chapter_number": 4,
+  "chapter_title": "\"Chapter 4: Biogeochemical Cycles\"",
+  "chapter_dir": "04-biogeochemical-cycles",
+  "library": "p5.js",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Differentiate",
+  "learning_objective": "Distinguish fast and slow carbon fluxes and predict how changes in one flux affect atmospheric CO2.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** carbon-cycle<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze\n**Bloom Verb:** Differentiate\n**Learning Objective:** Distinguish fast and slow carbon fluxes and predict how changes in one flux affect atmospheric CO2.\n**Instructional Rationale:** Interactive sliders let students manipulate flux rates and observe consequences, building causal reasoning.\n\nCentral diagram showing atmosphere (top), ocean (left), terrestrial biosphere (right), and lithosphere (bottom). Animated carbon particles (small dark circles) flow between reservoirs along labeled arrows. Each arrow labeled with the process (photosynthesis, respiration, decomposition, combustion, ocean absorption, volcanic emission). Reservoir sizes shown as bar charts on the side that update in real time. Sliders: \"Fossil Fuel Burning\" (0-3x current rate), \"Deforestation Rate\" (0-100%), \"Ocean Temperature\" (affects CO2 solubility). A running counter shows atmospheric CO2 in ppm. When CO2 crosses 450 ppm, background tints reddish as visual warning. Reset button returns to pre-industrial baseline."
+}

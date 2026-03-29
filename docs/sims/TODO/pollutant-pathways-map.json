@@ -1,0 +1,14 @@
+{
+  "sim_id": "pollutant-pathways-map",
+  "diagram_name": "Pollutant Pathways Map",
+  "chapter_number": 12,
+  "chapter_title": "\"Chapter 12: Water and Land Pollution\"",
+  "chapter_dir": "12-water-and-land-pollution",
+  "library": "p5.js",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Trace",
+  "learning_objective": "Trace how different pollutants move through environmental pathways from source to receptor",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** pollutant-pathways-map<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze\n**Bloom Verb:** Trace\n**Learning Objective:** Trace how different pollutants move through environmental pathways from source to receptor\n**Instructional Rationale:** Spatial visualization of pollutant transport reinforces systems thinking and reveals hidden connections\n\nA stylized landscape cross-section showing a factory, farmland, city, river, lake, and ocean. Students select a pollutant type from a dropdown (fertilizer runoff, industrial discharge, sewage, thermal pollution, pesticide). Animated particles trace the pollutant's path through the landscape. Along the path, info popups appear showing: transformation processes (bioaccumulation, chemical breakdown), affected organisms, regulatory checkpoints (Clean Water Act permit, Superfund site). Toggle buttons show/hide: point sources, nonpoint sources, treatment facilities, wetland buffers. Color scheme: clean water in blue, pollutant particles color-coded by type, affected zones highlighted in red/orange gradient."
+}

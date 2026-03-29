@@ -1,0 +1,14 @@
+{
+  "sim_id": "stock-flow-sandbox",
+  "diagram_name": "Interactive Stock and Flow Sandbox",
+  "chapter_number": 13,
+  "chapter_title": "\"Chapter 13: Systems Thinking\"",
+  "chapter_dir": "13-systems-thinking",
+  "library": "p5.js",
+  "bloom_level": "Apply",
+  "bloom_verb": "Construct",
+  "learning_objective": "Construct a stock and flow diagram for a simple ecological system and predict how the stock changes over time",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** stock-flow-sandbox<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Apply\n**Bloom Verb:** Construct\n**Learning Objective:** Construct a stock and flow diagram for a simple ecological system and predict how the stock changes over time\n**Instructional Rationale:** Hands-on manipulation of inflow/outflow rates builds intuition about accumulation and equilibrium\n\nA sandbox simulation with a central stock visualized as a tank/reservoir with a water level. Two sliders control inflow rate (0-10 units/sec) and outflow rate (0-10 units/sec). The tank visually fills or drains in real time. A line chart below tracks the stock level over time. A \"dynamic equilibrium\" indicator lights up green when inflow equals outflow. Preset buttons load ecological scenarios: \"Lake Water Budget\" (rain vs. evaporation), \"Deer Population\" (births vs. deaths), \"Carbon in Atmosphere\" (emissions vs. absorption). Each preset sets appropriate labels and initial values. Colors: blue water in tank, green for inflow arrow, red for outflow arrow, yellow highlight when equilibrium achieved."
+}

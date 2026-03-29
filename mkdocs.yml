@@ -35,7 +35,90 @@ nav:
     - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
     - Mascot Style Guide: learning-graph/mascot-test.md
   - MicroSims:
-    - Graph Viewer: sims/graph-viewer/index.md
+    - List of MicroSims: sims/index.md
+    - Acid Rain Formation and Impact Pathway: sims/acid-rain-pathway/index.md
+    - Adaptive Management Cycle: sims/adaptive-management-cycle/index.md
+    - Age Structure Diagram Explorer: sims/age-structure/index.md
+    - Biodiversity Levels Pyramid: sims/biodiversity-levels/index.md
+    - Biomagnification Through a Food Web: sims/biomagnification-food-web/index.md
+    - Biome Connections Network: sims/biome-connections/index.md
+    - Carbon Pricing Comparison: sims/carbon-pricing/index.md
+    - Citizen Science Project Finder: sims/citizen-science/index.md
+    - Climate Feedback Loops: sims/climate-feedbacks/index.md
+    - Climate Solutions Pathway: sims/climate-solutions/index.md
+    - Coevolution Arms Race: sims/coevolution/index.md
+    - Cogeneration System Flow: sims/cogeneration-flow/index.md
+    - Cognitive Bias Detective: sims/bias-detective/index.md
+    - Complete Ecosystem Energy Budget: sims/ecosystem-energy-budget/index.md
+    - Confidence Interval Visualizer: sims/confidence-interval-viz/index.md
+    - Conservation Policy Timeline: sims/conservation-timeline/index.md
+    - Correlation vs. Causation Challenge: sims/correlation-causation/index.md
+    - Criteria Air Pollutants Source-to-Impact Tracker: sims/criteria-pollutant-tracker/index.md
+    - Demographic Transition Model: sims/demographic-transition/index.md
+    - Ecological Succession Timeline: sims/succession-timeline/index.md
+    - Ecosystem Carbon Budget Calculator: sims/carbon-budget-calc/index.md
+    - Ecosystem Components Interactive Explorer: sims/ecosystem-components-explorer/index.md
+    - Ecosystem Concept Map: sims/ecosystem-concept-map/index.md
+    - Ecosystem Services Web: sims/ecosystem-services-web/index.md
+    - Emergence Simulator: sims/emergence-simulator/index.md
+    - Energy Flow Tracker: sims/energy-flow-tracker/index.md
+    - Energy Pyramid Simulator: sims/energy-pyramid/index.md
+    - Energy Source Comparison Dashboard: sims/energy-comparison-dashboard/index.md
+    - ENSO Cycle Interactive: sims/enso-cycle/index.md
+    - Environmental Justice Mapping Tool: sims/ej-mapping/index.md
+    - Eutrophication Cascade: sims/eutrophication-cascade/index.md
+    - Fact-Checking Workflow: sims/fact-check-workflow/index.md
+    - Feedback Loop Explorer: sims/feedback-loop-explorer/index.md
+    - Global Energy Mix Scenario Explorer: sims/energy-mix-explorer/index.md
+    - Global NPP Heatmap: sims/global-npp-map/index.md
+    - Global Wind and Convection Cell Model: sims/global-winds/index.md
+    - Greenhouse Effect Energy Balance: sims/greenhouse-effect/index.md
+    - Habitat Fragmentation Simulator: sims/habitat-fragmentation/index.md
+    - HIPPO Threat Interaction Web: sims/hippo-framework/index.md
+    - Information Ecosystem Flow: sims/info-ecosystem/index.md
+    - Integrated Pest Management Decision Flowchart: sims/ipm-decision-tree/index.md
+    - Interactive Dose-Response Curve Explorer: sims/dose-response-explorer/index.md
+    - Interactive Food Web Builder: sims/food-web-builder/index.md
+    - Interactive Stock and Flow Sandbox: sims/stock-flow-sandbox/index.md
+    - Interconnected Biogeochemical Cycles: sims/connected-cycles/index.md
+    - Invasive Species Impact Network: sims/invasive-species/index.md
+    - Island Biogeography Simulator: sims/island-biogeography/index.md
+    - Learning Graph Viewer: sims/graph-viewer/index.md
+    - Levels of Ecological Organization: sims/ecological-organization-levels/index.md
+    - Monoculture vs. Polyculture Ecosystem Comparison: sims/mono-vs-poly/index.md
+    - Ocean Impacts Dashboard: sims/ocean-impacts/index.md
+    - Ocean Zones Interactive: sims/ocean-zones/index.md
+    - Phosphorus Runoff and Eutrophication: sims/phosphorus-runoff/index.md
+    - Photosynthesis and Cellular Respiration Cycle: sims/photosynthesis-respiration-cycle/index.md
+    - Pollutant Pathways Map: sims/pollutant-pathways-map/index.md
+    - Population Growth Simulator: sims/population-growth/index.md
+    - Predator-Prey Population Dynamics: sims/predator-prey/index.md
+    - Radioactive Decay Simulator: sims/radioactive-decay/index.md
+    - Rain Shadow Effect Visualizer: sims/rain-shadow/index.md
+    - Renewable vs. Nonrenewable Energy Flow: sims/energy-flow-comparison/index.md
+    - Resilience Ball-in-Basin Model: sims/resilience-basin/index.md
+    - Resource Partitioning in Warblers: sims/resource-partitioning/index.md
+    - Sample Size Effect on Reliability: sims/sample-size-effect/index.md
+    - Science's Quality Control Pipeline: sims/peer-review-pipeline/index.md
+    - Soil Health Comparison: Tillage Methods: sims/soil-health-comparison/index.md
+    - Soil Horizons and Texture Explorer: sims/soil-explorer/index.md
+    - Solar Energy Budget: sims/solar-energy-budget/index.md
+    - Solar Radiation and Albedo Simulator: sims/solar-albedo/index.md
+    - Source Credibility Evaluator: sims/source-credibility/index.md
+    - Survivorship Curve Explorer: sims/survivorship-curves/index.md
+    - The Carbon Cycle: sims/carbon-cycle/index.md
+    - The Hydrologic Cycle: sims/hydrologic-cycle/index.md
+    - The Nitrogen Cycle: sims/nitrogen-cycle/index.md
+    - Thermal Inversion Simulator: sims/thermal-inversion/index.md
+    - Tipping Points Explorer: sims/tipping-points/index.md
+    - Tolerance Range Explorer: sims/tolerance-range/index.md
+    - U.S. Air Quality Trends Dashboard: sims/air-quality-trends/index.md
+    - Urban Heat Island Profile: sims/urban-heat-island/index.md
+    - Waste Management Decision Flowchart: sims/waste-management-flow/index.md
+    - Water Properties and Ecological Importance: sims/water-properties-ecology/index.md
+    - World Biome Map: sims/biome-world-map/index.md
+
+
   - Prompts:
     - Seed Prompt: prompts/01-seed.md
     - Content Style Guide: prompts/02-content-generaton-style-guide.md

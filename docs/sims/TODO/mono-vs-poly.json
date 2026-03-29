@@ -1,0 +1,14 @@
+{
+  "sim_id": "mono-vs-poly",
+  "diagram_name": "Monoculture vs. Polyculture Ecosystem Comparison",
+  "chapter_number": 10,
+  "chapter_title": "\"Chapter 10: Land and Water Use\"",
+  "chapter_dir": "10-land-and-water-use",
+  "library": "p5.js",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Compare",
+  "learning_objective": "Students compare the ecological resilience of monoculture and polyculture systems under stress.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** mono-vs-poly<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze\n**Bloom Verb:** Compare\n**Learning Objective:** Students compare the ecological resilience of monoculture and polyculture systems under stress.\n**Instructional Rationale:** Side-by-side simulation lets students observe emergent differences in pest spread, soil health, and yield stability -- making abstract ecological principles concrete.\n\nSplit-screen simulation. LEFT: Monoculture field -- grid of identical green circles (crop plants). RIGHT: Polyculture field -- grid with 3-4 different colored/shaped plants randomly mixed. Both fields experience identical \"stress events\" triggered by buttons: Pest Outbreak (red dots spread through field -- spreads faster in monoculture due to proximity of identical hosts), Drought (plants yellow and shrink -- polyculture retains more moisture due to ground cover diversity), Nutrient Depletion (after 5+ seasons, monoculture yield drops while polyculture maintains). Season counter, yield tracker for both systems. \"Run 10 Seasons\" button for time-lapse comparison. Bar charts below show cumulative yield, pesticide use, and soil health score."
+}

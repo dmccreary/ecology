@@ -1,0 +1,14 @@
+{
+  "sim_id": "invasive-species",
+  "diagram_name": "Invasive Species Impact Network",
+  "chapter_number": 5,
+  "chapter_title": "\"Chapter 5: Species Interactions\"",
+  "chapter_dir": "05-species-interactions",
+  "library": "p5.js",
+  "bloom_level": "Evaluate",
+  "bloom_verb": "Assess",
+  "learning_objective": "Assess how the introduction of an invasive species cascades through a native food web.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** invasive-species<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Evaluate\n**Bloom Verb:** Assess\n**Learning Objective:** Assess how the introduction of an invasive species cascades through a native food web.\n**Instructional Rationale:** Step-by-step cascade visualization helps students trace indirect effects through a community, building systems-thinking skills.\n\nEcosystem food web displayed as a network of species icons (sun → grass → rabbit → fox, grass → deer → wolf, grass → native insect → bird, etc.). All species start with healthy green population bars. An \"Introduce Invasive Species\" button adds a new species (e.g., Burmese python) to the web with a red pulsing icon. Over simulated time steps, the python eats rabbits and deer — their population bars shrink (turn yellow, then red). Fox and wolf populations decline from food loss (secondary effects, bars turn orange). Released from herbivore pressure, grass grows unchecked (bar extends past normal). Bird population changes depending on cascading effects. A \"Remove Invasive\" button allows students to test if the system recovers. Timeline at bottom shows population changes. Dropdown selector lets students choose different invasive species scenarios (python, zebra mussel, kudzu) to compare different cascade patterns."
+}

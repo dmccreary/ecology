@@ -1,0 +1,14 @@
+{
+  "sim_id": "feedback-loop-explorer",
+  "diagram_name": "Feedback Loop Explorer",
+  "chapter_number": 13,
+  "chapter_title": "\"Chapter 13: Systems Thinking\"",
+  "chapter_dir": "13-systems-thinking",
+  "library": "p5.js",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Differentiate",
+  "learning_objective": "Differentiate between reinforcing and balancing feedback loops and predict their effects on system behavior",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** feedback-loop-explorer<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze\n**Bloom Verb:** Differentiate\n**Learning Objective:** Differentiate between reinforcing and balancing feedback loops and predict their effects on system behavior\n**Instructional Rationale:** Side-by-side animated loops with real-time graphs make abstract feedback dynamics visible and comparable\n\nSplit screen. Left panel: a reinforcing feedback loop visualized as a circular arrow diagram with animated flow showing amplification. A stock (e.g., \"algae population\") grows exponentially as the loop runs. Line chart shows exponential curve. Right panel: a balancing feedback loop with animated flow showing counteraction. A stock (e.g., \"body temperature\") oscillates toward a set point. Line chart shows damped oscillation converging to equilibrium. Dropdown menu selects different ecological scenarios for each type: reinforcing (ice-albedo, erosion cycle, invasive species) and balancing (predator-prey, thermoregulation, nutrient cycling). Speed slider controls animation rate. Labels on arrows show the causal relationships. Colors: reinforcing loop in warm red/orange, balancing loop in cool blue/green. \"R\" and \"B\" symbols mark loop types per standard notation."
+}

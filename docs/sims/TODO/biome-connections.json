@@ -1,0 +1,14 @@
+{
+  "sim_id": "biome-connections",
+  "diagram_name": "Biome Connections Network",
+  "chapter_number": 2,
+  "chapter_title": "\"Ecosystems and Biomes\"",
+  "chapter_dir": "02-ecosystems-and-biomes",
+  "library": "vis-network",
+  "bloom_level": "Evaluate",
+  "bloom_verb": "Assess",
+  "learning_objective": "Students assess how material and energy flows connect different biomes across the planet.",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** biome-connections<br/>\n**Library:** vis-network<br/>\n**Status:** Specified\n\n**Bloom Level:** Evaluate\n**Bloom Verb:** Assess\n**Learning Objective:** Students assess how material and energy flows connect different biomes across the planet.\n**Instructional Rationale:** A network graph reveals non-obvious connections between biomes, reinforcing systems thinking. Students explore what happens when one biome is disrupted.\n\nA network graph with nodes for each major biome (7 terrestrial + 6 aquatic = 13 nodes). Edges represent material/energy connections: bird migration, water flow, nutrient transport, atmospheric connections. Edge labels describe the connection type. Clicking a node highlights all its connections and displays a sidebar with details. A \"Disrupt\" button simulates the effect of degrading a selected biome — connected biomes flash yellow with impact descriptions. Node y-offset at 490 for proper edge label rendering. Nodes are color-coded by type (green for terrestrial, blue for aquatic). Physics-based layout. Canvas 800×600."
+}

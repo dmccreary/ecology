@@ -1,0 +1,14 @@
+{
+  "sim_id": "biomagnification-food-web",
+  "diagram_name": "Biomagnification Through a Food Web",
+  "chapter_number": 12,
+  "chapter_title": "\"Chapter 12: Water and Land Pollution\"",
+  "chapter_dir": "12-water-and-land-pollution",
+  "library": "p5.js",
+  "bloom_level": "Analyze",
+  "bloom_verb": "Compare",
+  "learning_objective": "Compare pollutant concentrations across trophic levels and explain why top predators are most affected",
+  "completion_status": "specified",
+  "extracted_date": "2026-03-29",
+  "specification": "Type: microsim\n**sim-id:** biomagnification-food-web<br/>\n**Library:** p5.js<br/>\n**Status:** Specified\n\n**Bloom Level:** Analyze\n**Bloom Verb:** Compare\n**Learning Objective:** Compare pollutant concentrations across trophic levels and explain why top predators are most affected\n**Instructional Rationale:** Visual scaling of toxin concentrations makes the abstract multiplication effect concrete and memorable\n\nA food web pyramid with four trophic levels (producers, primary consumers, secondary consumers, tertiary consumers). Each level shows representative organisms with a colored bar indicating toxin concentration. A slider controls the initial pollutant concentration in water (0.001 to 0.1 ppm). As students adjust the slider, the concentration bars update showing approximately 10x magnification at each level. Organisms at top levels flash red when concentration exceeds a danger threshold. Tooltip on hover shows exact concentration values. Color scheme: water in blue, organisms in natural colors, toxin concentration bars gradient from yellow (low) to orange to red (dangerous)."
+}

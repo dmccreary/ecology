@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+div.vis-network div.vis-navigation div.vis-button {
+  background-color: rgba(200, 200, 200, 0.6);
+  border-radius: 4px;
+}
+
+div.vis-network div.vis-navigation div.vis-button:hover {
+  background-color: rgba(150, 150, 150, 0.8);
+}
