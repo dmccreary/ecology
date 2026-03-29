@@ -2,7 +2,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 540;
-let controlHeight = 50;
+let controlHeight = 45;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -334,6 +334,23 @@ function draw() {
   fill('white');
   noStroke();
   rect(0, drawHeight, canvasWidth, controlHeight);
+
+  positionControls();
+}
+
+function positionControls() {
+  let ox = canvasOffsetX();
+  let oy = canvasOffsetY();
+  // Row 1: select + next button
+  difficultySelect.position(ox + 10, oy + drawHeight + 5);
+  nextBtn.position(ox + 130, oy + drawHeight + 5);
+}
+
+function canvasOffsetX() {
+  return document.querySelector('main canvas').getBoundingClientRect().left;
+}
+function canvasOffsetY() {
+  return document.querySelector('main canvas').getBoundingClientRect().top;
 }
 
 function windowResized() {

@@ -3,7 +3,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 500;
-let controlHeight = 60;
+let controlHeight = 80;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -306,8 +306,10 @@ function draw() {
   fill('#264653');
   textSize(11);
   textAlign(LEFT, CENTER);
-  text('Tax $/ton:', margin, drawHeight + 15);
-  text('Cap %:', margin, drawHeight + 38);
+  text('Tax $/ton:', 10, drawHeight + 15);
+  text('Cap %:', canvasWidth * 0.45, drawHeight + 15);
+
+  positionControls();
 }
 
 function drawFactory(x, y, w, h, emission, baseline, col) {
@@ -332,6 +334,27 @@ function drawFactory(x, y, w, h, emission, baseline, col) {
   textSize(9);
   textAlign(CENTER, TOP);
   text(emission.toFixed(1), x + w / 2, y + h + 2);
+}
+
+function positionControls() {
+  let ox = canvasOffsetX();
+  let oy = canvasOffsetY();
+  // Row 1: tax slider + cap slider
+  taxSlider.position(ox + 80, oy + drawHeight + 5);
+  taxSlider.size(canvasWidth * 0.3);
+  capSlider.position(ox + canvasWidth * 0.52, oy + drawHeight + 5);
+  capSlider.size(canvasWidth * 0.3);
+  // Row 2: buttons
+  runBtn.position(ox + 10, oy + drawHeight + 45);
+  compareBtn.position(ox + 120, oy + drawHeight + 45);
+  resetBtn.position(ox + 210, oy + drawHeight + 45);
+}
+
+function canvasOffsetX() {
+  return document.querySelector('main canvas').getBoundingClientRect().left;
+}
+function canvasOffsetY() {
+  return document.querySelector('main canvas').getBoundingClientRect().top;
 }
 
 function windowResized() {

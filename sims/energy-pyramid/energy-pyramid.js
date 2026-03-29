@@ -31,33 +31,21 @@ function setup() {
   let mainEl = document.querySelector('main');
 
   // Producer energy slider
-  let el1 = document.createElement('span');
-  el1.textContent = 'Producer Energy (kcal): ';
-  el1.style.fontSize = '13px';
-  mainEl.appendChild(el1);
-
   energySlider = createSlider(1000, 100000, 10000, 1000);
   energySlider.parent(mainEl);
-  energySlider.style('width', '150px');
+  energySlider.position(160, drawHeight + 5);
+  energySlider.size(canvasWidth - 160 - margin);
 
   // Efficiency slider
-  let el2 = document.createElement('span');
-  el2.textContent = '  Transfer Efficiency: ';
-  el2.style.fontSize = '13px';
-  mainEl.appendChild(el2);
-
   efficiencySlider = createSlider(5, 20, 10, 1);
   efficiencySlider.parent(mainEl);
-  efficiencySlider.style('width', '120px');
+  efficiencySlider.position(160, drawHeight + 40);
+  efficiencySlider.size(canvasWidth / 2 - 160 - 10);
 
   // View mode select
-  let el3 = document.createElement('span');
-  el3.textContent = '  View: ';
-  el3.style.fontSize = '13px';
-  mainEl.appendChild(el3);
-
   viewSelect = createSelect();
   viewSelect.parent(mainEl);
+  viewSelect.position(canvasWidth / 2 + 50, drawHeight + 40);
   viewSelect.option('Energy (kcal)');
   viewSelect.option('Biomass (kg)');
   viewSelect.option('Numbers');
@@ -69,7 +57,6 @@ function setup() {
   });
   viewSelect.style('font-size', '13px');
   viewSelect.style('padding', '3px');
-  viewSelect.style('margin-left', '4px');
 
   describe('Energy pyramid simulator showing energy transfer between trophic levels with adjustable efficiency', LABEL);
 }
@@ -238,6 +225,15 @@ function draw() {
   fill('white');
   noStroke();
   rect(0, drawHeight, canvasWidth, controlHeight);
+
+  // Control labels
+  noStroke();
+  fill('#3e2723');
+  textSize(12);
+  textAlign(LEFT, CENTER);
+  text('Producer Energy: ' + energySlider.value(), 10, drawHeight + 16);
+  text('Efficiency: ' + efficiencySlider.value() + '%', 10, drawHeight + 51);
+  text('View:', canvasWidth / 2 + 10, drawHeight + 51);
 }
 
 function formatNumber(n) {
@@ -250,6 +246,9 @@ function formatNumber(n) {
 function windowResized() {
   updateCanvasSize();
   resizeCanvas(containerWidth, containerHeight);
+  energySlider.size(canvasWidth - 160 - margin);
+  efficiencySlider.size(canvasWidth / 2 - 160 - 10);
+  viewSelect.position(canvasWidth / 2 + 50, drawHeight + 40);
   redraw();
 }
 

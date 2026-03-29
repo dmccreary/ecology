@@ -2,7 +2,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 440;
-let controlHeight = 50;
+let controlHeight = 45;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -28,20 +28,24 @@ function setup() {
 
   sampleSizeSlider = createSlider(5, 500, 30, 5);
   sampleSizeSlider.parent(document.querySelector('main'));
-  sampleSizeSlider.style('width', '140px');
+  sampleSizeSlider.position(135, drawHeight + 5);
+  sampleSizeSlider.size(140);
 
   sampleBtn = createButton('Draw Sample');
   sampleBtn.parent(document.querySelector('main'));
+  sampleBtn.position(290, drawHeight + 5);
   sampleBtn.mousePressed(drawOneSample);
   sampleBtn.style('font-size','13px');
 
   autoBtn = createButton('Auto (x20)');
   autoBtn.parent(document.querySelector('main'));
+  autoBtn.position(290, drawHeight + 28);
   autoBtn.mousePressed(function() { for(let i=0;i<20;i++) drawOneSample(); });
   autoBtn.style('font-size','13px');
 
   resetBtn = createButton('Reset');
   resetBtn.parent(document.querySelector('main'));
+  resetBtn.position(380, drawHeight + 5);
   resetBtn.mousePressed(function() { estimates = []; headline = ''; });
   resetBtn.style('font-size','13px');
 }
@@ -164,14 +168,9 @@ function draw() {
     text(headline, canvasWidth/2, 417);
   }
 
-  // Position controls
-  let ox = canvasOffsetX(), oy = canvasOffsetY();
+  // Control labels
   noStroke(); fill('#264653'); textSize(12); textAlign(LEFT, CENTER);
-  text('Sample size (N): ' + sampleSizeSlider.value(), 10, drawHeight + 25);
-  sampleSizeSlider.position(ox + 135, oy + drawHeight + 15);
-  sampleBtn.position(ox + 290, oy + drawHeight + 5);
-  autoBtn.position(ox + 290, oy + drawHeight + 28);
-  resetBtn.position(ox + 380, oy + drawHeight + 5);
+  text('Sample size (N): ' + sampleSizeSlider.value(), 10, drawHeight + 16);
 }
 
 function drawOneSample() {
@@ -196,13 +195,6 @@ function drawOneSample() {
     headline = '📰 "Study finds ' + pct + '% survival rate" (n=' + n + ') — Boring but accurate!';
     headlineColor = '#264653';
   }
-}
-
-function canvasOffsetX() {
-  return document.querySelector('main canvas').getBoundingClientRect().left;
-}
-function canvasOffsetY() {
-  return document.querySelector('main canvas').getBoundingClientRect().top;
 }
 
 function windowResized() {

@@ -5,7 +5,7 @@ let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 400;
 let graphHeight = 150;
-let controlHeight = 50;
+let controlHeight = 80;
 let canvasHeight = drawHeight + graphHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -229,12 +229,15 @@ function draw() {
   drawGraph();
 
   // Control labels
+  let ctrlY = drawHeight + graphHeight;
   noStroke();
   fill(60);
   textSize(11);
   textAlign(LEFT, CENTER);
-  text('Island Size: ' + sizeSlider.value(), 5, drawHeight + graphHeight + 15);
-  text('Distance: ' + distSlider.value(), canvasWidth * 0.4, drawHeight + graphHeight + 15);
+  text('Size: ' + sizeSlider.value(), 5, ctrlY + 15);
+  text('Dist: ' + distSlider.value(), canvasWidth * 0.45, ctrlY + 15);
+
+  positionControls();
 }
 
 function drawGraph() {
@@ -281,6 +284,28 @@ function drawGraph() {
   textSize(9);
   textAlign(LEFT, CENTER);
   text('Eq', gx + gw + 3, eqY);
+}
+
+function positionControls() {
+  let ox = canvasOffsetX();
+  let oy = canvasOffsetY();
+  let ctrlY = drawHeight + graphHeight;
+  // Row 1: size slider + distance slider
+  sizeSlider.position(ox + 45, oy + ctrlY + 5);
+  sizeSlider.size(canvasWidth * 0.32);
+  distSlider.position(ox + canvasWidth * 0.52, oy + ctrlY + 5);
+  distSlider.size(canvasWidth * 0.32);
+  // Row 2: buttons
+  pauseBtn.position(ox + 10, oy + ctrlY + 40);
+  fastBtn.position(ox + 80, oy + ctrlY + 40);
+  resetBtn.position(ox + 200, oy + ctrlY + 40);
+}
+
+function canvasOffsetX() {
+  return document.querySelector('main canvas').getBoundingClientRect().left;
+}
+function canvasOffsetY() {
+  return document.querySelector('main canvas').getBoundingClientRect().top;
 }
 
 function windowResized() {

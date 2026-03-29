@@ -2,7 +2,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 440;
-let controlHeight = 50;
+let controlHeight = 45;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -83,9 +83,12 @@ function setup() {
 
   timeSlider = createSlider(0, 23, 14, 1);
   timeSlider.parent(document.querySelector('main'));
+  timeSlider.position(sliderLeftMargin, drawHeight + 5);
+  timeSlider.size(canvasWidth - sliderLeftMargin - 200);
 
   pauseBtn = createButton('Click map to add/remove trees');
   pauseBtn.parent(document.querySelector('main'));
+  pauseBtn.position(canvasWidth - 190, drawHeight + 5);
   pauseBtn.style('font-size', '11px');
   pauseBtn.style('background', '#eee');
 
@@ -224,7 +227,7 @@ function draw() {
   noStroke();
   textSize(12);
   textAlign(LEFT, CENTER);
-  text('Time: ' + nf(timeOfDay, 2) + ':00', sliderLeftMargin + 110, drawHeight + controlHeight / 2);
+  text('Time: ' + nf(timeOfDay, 2) + ':00', 10, drawHeight + 16);
 }
 
 function mousePressed() {
@@ -257,6 +260,8 @@ function mousePressed() {
 function windowResized() {
   updateCanvasSize();
   resizeCanvas(containerWidth, containerHeight);
+  timeSlider.size(canvasWidth - sliderLeftMargin - 200);
+  pauseBtn.position(canvasWidth - 190, drawHeight + 5);
   redraw();
 }
 

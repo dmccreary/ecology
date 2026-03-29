@@ -3,7 +3,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 460;
-let controlHeight = 50;
+let controlHeight = 115;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -293,7 +293,10 @@ function draw() {
   fill('#264653');
   textSize(11);
   textAlign(LEFT, CENTER);
-  text('Speed:', margin, drawHeight + 25);
+  text('Preset:', 10, drawHeight + 15);
+  text('Speed:', 10, drawHeight + 50);
+
+  positionControls();
 }
 
 function mouseDragged() {
@@ -366,6 +369,28 @@ function applyPreset() {
 
   spawnOrganisms(maxOrganisms);
   organisms = organisms.filter(o => grid[o.r][o.c] === 1);
+}
+
+function positionControls() {
+  let ox = canvasOffsetX();
+  let oy = canvasOffsetY();
+  // Row 1: preset select + checkboxes
+  presetSelect.position(ox + 60, oy + drawHeight + 5);
+  edgeToggle.position(ox + canvasWidth * 0.5, oy + drawHeight + 5);
+  connectToggle.position(ox + canvasWidth * 0.7, oy + drawHeight + 5);
+  // Row 2: speed slider
+  speedSlider.position(ox + 60, oy + drawHeight + 40);
+  speedSlider.size(canvasWidth * 0.3);
+  // Row 3: buttons
+  corridorBtn.position(ox + 10, oy + drawHeight + 75);
+  resetBtn.position(ox + 140, oy + drawHeight + 75);
+}
+
+function canvasOffsetX() {
+  return document.querySelector('main canvas').getBoundingClientRect().left;
+}
+function canvasOffsetY() {
+  return document.querySelector('main canvas').getBoundingClientRect().top;
 }
 
 function windowResized() {

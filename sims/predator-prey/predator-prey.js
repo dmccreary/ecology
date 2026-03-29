@@ -5,7 +5,7 @@ let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 400;
 let graphHeight = 180;
-let controlHeight = 50;
+let controlHeight = 115;
 let canvasHeight = drawHeight + graphHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -278,14 +278,45 @@ function drawGraph() {
 }
 
 function drawControls() {
-  let cy = drawHeight + graphHeight + 5;
+  let cy = drawHeight + graphHeight;
   noStroke();
   fill(60);
   textSize(11);
   textAlign(LEFT, CENTER);
-  text('Birth Rate: ' + nf(birthRateSlider.value(), 1, 3), 5, cy + 10);
-  text('Predation: ' + nf(predationSlider.value(), 1, 3), canvasWidth * 0.33, cy + 10);
-  text('Death Rate: ' + nf(deathRateSlider.value(), 1, 3), canvasWidth * 0.66, cy + 10);
+  // Row 1 labels
+  text('Birth Rate: ' + nf(birthRateSlider.value(), 1, 3), 5, cy + 15);
+  // Row 2 labels
+  text('Predation: ' + nf(predationSlider.value(), 1, 3), 5, cy + 50);
+  // Row 3 labels
+  text('Death Rate: ' + nf(deathRateSlider.value(), 1, 3), 5, cy + 85);
+
+  positionControls();
+}
+
+function positionControls() {
+  let ox = canvasOffsetX();
+  let oy = canvasOffsetY();
+  let cy = drawHeight + graphHeight;
+  // Row 1: birth rate slider + pause + reset
+  birthRateSlider.position(ox + sliderLeftMargin, oy + cy + 5);
+  birthRateSlider.size(canvasWidth - sliderLeftMargin - margin);
+  // Row 2: predation slider + disease + remove pred
+  predationSlider.position(ox + sliderLeftMargin, oy + cy + 40);
+  predationSlider.size(canvasWidth - sliderLeftMargin - margin);
+  // Row 3: death rate slider + buttons
+  deathRateSlider.position(ox + sliderLeftMargin, oy + cy + 75);
+  deathRateSlider.size(canvasWidth * 0.4);
+  pauseBtn.position(ox + 10, oy + cy + 5);
+  resetBtn.position(ox + 70, oy + cy + 5);
+  diseaseBtn.position(ox + canvasWidth * 0.65, oy + cy + 75);
+  removePredBtn.position(ox + canvasWidth * 0.8, oy + cy + 75);
+}
+
+function canvasOffsetX() {
+  return document.querySelector('main canvas').getBoundingClientRect().left;
+}
+function canvasOffsetY() {
+  return document.querySelector('main canvas').getBoundingClientRect().top;
 }
 
 function windowResized() {

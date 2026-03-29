@@ -84,15 +84,8 @@ function setup() {
   resetBtn.mousePressed(() => { currentStep = 0; isRunning = false; updatePlayBtn(); });
   styleButton(resetBtn, '#795548');
 
-  // Speed slider
-  let mainEl = document.querySelector('main');
-  let label = document.createElement('span');
-  label.textContent = ' Speed: ';
-  label.style.fontSize = '13px';
-  mainEl.appendChild(label);
-
   speedSlider = createSlider(0.5, 3, 1, 0.5);
-  speedSlider.parent(mainEl);
+  speedSlider.parent(document.querySelector('main'));
   speedSlider.style('width', '100px');
 
   describe('Animated cycle diagram showing photosynthesis and cellular respiration with traceable molecules', LABEL);
@@ -276,6 +269,15 @@ function draw() {
   fill('white');
   noStroke();
   rect(0, drawHeight, canvasWidth, controlHeight);
+
+  // Control labels
+  noStroke();
+  fill(60);
+  textSize(11);
+  textAlign(LEFT, CENTER);
+  text('Speed: ' + nf(speedSlider.value(), 1, 1), 10, drawHeight + 50);
+
+  positionControls();
 }
 
 function drawSun(x, y, active) {
@@ -372,6 +374,26 @@ function drawArrow(x1, y1, x2, y2, col, label, active, showArrow) {
   let my = (y1 + y2) / 2 - 10;
   text(label, mx, my);
   textStyle(NORMAL);
+}
+
+function positionControls() {
+  let ox = canvasOffsetX();
+  let oy = canvasOffsetY();
+  // Row 1: buttons
+  prevBtn.position(ox + 10, oy + drawHeight + 5);
+  nextBtn.position(ox + 120, oy + drawHeight + 5);
+  playBtn.position(ox + 210, oy + drawHeight + 5);
+  resetBtn.position(ox + 330, oy + drawHeight + 5);
+  // Row 2: speed slider
+  speedSlider.position(ox + 80, oy + drawHeight + 40);
+  speedSlider.size(canvasWidth * 0.4);
+}
+
+function canvasOffsetX() {
+  return document.querySelector('main canvas').getBoundingClientRect().left;
+}
+function canvasOffsetY() {
+  return document.querySelector('main canvas').getBoundingClientRect().top;
 }
 
 function windowResized() {

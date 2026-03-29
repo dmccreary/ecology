@@ -2,7 +2,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 480;
-let controlHeight = 50;
+let controlHeight = 45;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -85,6 +85,7 @@ function setup() {
 
   nextBtn = createButton('Next Scenario →');
   nextBtn.parent(document.querySelector('main'));
+  nextBtn.position(10, drawHeight + 5);
   nextBtn.mousePressed(nextScenario);
   nextBtn.style('font-size','14px');
   nextBtn.style('padding','6px 16px');

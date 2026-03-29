@@ -2,7 +2,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 450;
-let controlHeight = 55;
+let controlHeight = 115;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -224,12 +224,42 @@ function draw() {
     text(b.val, bx + barW / 2, by - 2);
   }
 
-  // Controls label
+  // Controls labels
   noStroke();
   fill(30);
-  textSize(12);
+  textSize(11);
   textAlign(LEFT, CENTER);
-  text('Adjust sliders and disturbances above', 10, drawHeight + controlHeight / 2);
+  text('GPP:', 10, drawHeight + 50);
+  text('Ra:', 10, drawHeight + 85);
+  text('Rh:', canvasWidth * 0.48, drawHeight + 85);
+
+  positionControls();
+}
+
+function positionControls() {
+  let ox = canvasOffsetX();
+  let oy = canvasOffsetY();
+  // Row 1: select + disturbance buttons
+  ecosystemSel.position(ox + 10, oy + drawHeight + 5);
+  fireBtn.position(ox + canvasWidth * 0.4, oy + drawHeight + 5);
+  droughtBtn.position(ox + canvasWidth * 0.52, oy + drawHeight + 5);
+  warmingBtn.position(ox + canvasWidth * 0.68, oy + drawHeight + 5);
+  resetBtn.position(ox + canvasWidth * 0.84, oy + drawHeight + 5);
+  // Row 2: GPP slider
+  gppSlider.position(ox + sliderLeftMargin, oy + drawHeight + 40);
+  gppSlider.size(canvasWidth - sliderLeftMargin - margin);
+  // Row 3: Ra + Rh sliders
+  raSlider.position(ox + sliderLeftMargin, oy + drawHeight + 75);
+  raSlider.size((canvasWidth - sliderLeftMargin - margin) * 0.48);
+  rhSlider.position(ox + canvasWidth * 0.55, oy + drawHeight + 75);
+  rhSlider.size((canvasWidth - sliderLeftMargin - margin) * 0.48);
+}
+
+function canvasOffsetX() {
+  return document.querySelector('main canvas').getBoundingClientRect().left;
+}
+function canvasOffsetY() {
+  return document.querySelector('main canvas').getBoundingClientRect().top;
 }
 
 function windowResized() {

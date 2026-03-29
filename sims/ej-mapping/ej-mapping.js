@@ -2,7 +2,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 520;
-let controlHeight = 50;
+let controlHeight = 80;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -295,6 +295,28 @@ function draw() {
   fill('white');
   noStroke();
   rect(0, drawHeight, canvasWidth, controlHeight);
+
+  positionControls();
+}
+
+function positionControls() {
+  let ox = canvasOffsetX();
+  let oy = canvasOffsetY();
+  // Row 1: 4 checkboxes
+  pollutionCb.position(ox + 10, oy + drawHeight + 5);
+  incomeCb.position(ox + 110, oy + drawHeight + 5);
+  healthCb.position(ox + 200, oy + drawHeight + 5);
+  greenCb.position(ox + 280, oy + drawHeight + 5);
+  // Row 2: select + button
+  perspectiveSelect.position(ox + 10, oy + drawHeight + 40);
+  proposalBtn.position(ox + 200, oy + drawHeight + 40);
+}
+
+function canvasOffsetX() {
+  return document.querySelector('main canvas').getBoundingClientRect().left;
+}
+function canvasOffsetY() {
+  return document.querySelector('main canvas').getBoundingClientRect().top;
 }
 
 function mousePressed() {

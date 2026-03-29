@@ -4,7 +4,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 500;
-let controlHeight = 50;
+let controlHeight = 45;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 15;
@@ -68,11 +68,13 @@ function setup() {
 
   quizBtn = createButton('Quiz Me');
   quizBtn.parent(document.querySelector('main'));
+  quizBtn.position(10, drawHeight + 5);
   quizBtn.mousePressed(toggleQuiz);
   styleButton(quizBtn, '#0277bd');
 
   resetBtn = createButton('Reset');
   resetBtn.parent(document.querySelector('main'));
+  resetBtn.position(110, drawHeight + 5);
   resetBtn.mousePressed(resetAll);
   styleButton(resetBtn, '#795548');
 

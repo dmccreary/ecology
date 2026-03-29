@@ -2,7 +2,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 520;
-let controlHeight = 50;
+let controlHeight = 45;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -65,14 +65,17 @@ function setup() {
 
   pauseBtn = createButton('▶ Play');
   pauseBtn.parent(document.querySelector('main'));
+  pauseBtn.position(10, drawHeight + 5);
   pauseBtn.mousePressed(() => { paused = !paused; pauseBtn.html(paused ? '▶ Play' : '❚❚ Pause'); });
 
   advanceBtn = createButton('Advance Year');
   advanceBtn.parent(document.querySelector('main'));
+  advanceBtn.position(90, drawHeight + 5);
   advanceBtn.mousePressed(() => { if (paused) advanceYear(); });
 
   resetBtn = createButton('Reset');
   resetBtn.parent(document.querySelector('main'));
+  resetBtn.position(210, drawHeight + 5);
   resetBtn.mousePressed(resetSim);
 
   resetSim();

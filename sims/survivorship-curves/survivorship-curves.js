@@ -4,7 +4,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 450;
-let controlHeight = 50;
+let controlHeight = 45;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -46,6 +46,7 @@ function setup() {
 
   speciesSelect = createSelect();
   speciesSelect.parent(document.querySelector('main'));
+  speciesSelect.position(10, drawHeight + 5);
   speciesSelect.option('Select a species...', '-1');
   for (let i = 0; i < speciesData.length; i++) {
     speciesSelect.option(speciesData[i].name, String(i));
@@ -245,7 +246,7 @@ function draw() {
   fill(60);
   textSize(11);
   textAlign(LEFT, CENTER);
-  text('Species:', 10, drawHeight + 20);
+  text('Species:', 150, drawHeight + 16);
 }
 
 function getSurvivorsForCurve(type, x) {

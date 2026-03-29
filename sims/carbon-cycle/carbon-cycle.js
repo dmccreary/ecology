@@ -2,7 +2,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 460;
-let controlHeight = 55;
+let controlHeight = 80;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
@@ -248,14 +248,16 @@ function draw() {
     rect(0, 0, canvasWidth, drawHeight);
   }
 
-  // Controls
+  // Controls labels
   noStroke();
   fill(30);
   textSize(11);
   textAlign(LEFT, CENTER);
   text('Fossil: ' + fossilSlider.value() + ' Gt/yr', 10, drawHeight + 15);
-  text('Deforest: ' + deforestSlider.value() + '%', 10, drawHeight + 35);
-  text('Ocean \u0394T: +' + oceanTempSlider.value() + '\u00b0C', canvasWidth / 2, drawHeight + 15);
+  text('Deforest: ' + deforestSlider.value() + '%', canvasWidth * 0.35, drawHeight + 15);
+  text('Ocean \u0394T: +' + oceanTempSlider.value() + '\u00b0C', canvasWidth * 0.67, drawHeight + 15);
+
+  positionControls();
 }
 
 function spawnFlowParticle(type, rate) {
@@ -295,6 +297,29 @@ function drawFlowArrow(x1, y1, x2, y2, clr) {
   let sz = 7;
   line(x2, y2, x2 - sz * cos(angle - PI / 6), y2 - sz * sin(angle - PI / 6));
   line(x2, y2, x2 - sz * cos(angle + PI / 6), y2 - sz * sin(angle + PI / 6));
+}
+
+function positionControls() {
+  let ox = canvasOffsetX();
+  let oy = canvasOffsetY();
+  let slW = canvasWidth * 0.25;
+  // Row 1: 3 sliders with labels drawn on canvas
+  fossilSlider.position(ox + 10, oy + drawHeight + 22);
+  fossilSlider.size(slW);
+  deforestSlider.position(ox + canvasWidth * 0.35, oy + drawHeight + 22);
+  deforestSlider.size(slW);
+  oceanTempSlider.position(ox + canvasWidth * 0.67, oy + drawHeight + 22);
+  oceanTempSlider.size(slW);
+  // Row 2: buttons
+  pauseBtn.position(ox + 10, oy + drawHeight + 50);
+  resetBtn.position(ox + 80, oy + drawHeight + 50);
+}
+
+function canvasOffsetX() {
+  return document.querySelector('main canvas').getBoundingClientRect().left;
+}
+function canvasOffsetY() {
+  return document.querySelector('main canvas').getBoundingClientRect().top;
 }
 
 function windowResized() {

@@ -4,7 +4,7 @@
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 650;
-let controlHeight = 50;
+let controlHeight = 45;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 15;
@@ -76,7 +76,8 @@ function setup() {
 
   depthSlider = createSlider(0, maxDepth, 0, 10);
   depthSlider.parent(mainEl);
-  depthSlider.style('width', '250px');
+  depthSlider.position(100, drawHeight + 5);
+  depthSlider.size(canvasWidth - 100 - margin);
 
   describe('Vertical cross-section of the ocean showing zones from surface to 6000 meters deep', LABEL);
 }
@@ -334,6 +335,7 @@ function getLightAtDepth(d) {
 function windowResized() {
   updateCanvasSize();
   resizeCanvas(containerWidth, containerHeight);
+  depthSlider.size(canvasWidth - 100 - margin);
   redraw();
 }
 
