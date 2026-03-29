@@ -33,14 +33,19 @@ nav:
     - Concept Taxonomy: learning-graph/concept-taxonomy.md
     - Graph Quality Analysis: learning-graph/quality-metrics.md
     - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
+    - Mascot Style Guide: learning-graph/mascot-test.md
   - MicroSims:
     - Graph Viewer: sims/graph-viewer/index.md
   - Prompts:
     - Seed Prompt: prompts/01-seed.md
+    - Content Style Guide: prompts/02-content-generaton-style-guide.md
   - Logs:
     - Course Description Generation: logs/01-course-description-generation.md
     - Learning Graph Generation: logs/02-generate-learning-graph.md
     - Book Chapter Generator: logs/03-book-chapter-generator.md
+    - Mascot Generator: logs/04-mascot-generator.md
+    - Ch 1 Content Generation: logs/ch-01-content-generation.md
+    - Batch Content Generation: logs/chapter-content-generator-2026-03-29.md
   - License: license.md
   - Contact: contact.md
 
@@ -93,6 +98,7 @@ markdown_extensions:
 
 extra_css:
   - css/extra.css
+  - css/mascot.css
 
 extra_javascript:
   - js/extra.js
