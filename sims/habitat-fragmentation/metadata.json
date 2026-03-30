@@ -1,8 +1,8 @@
 {
   "title": "Habitat Fragmentation Simulator",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for habitat fragmentation simulator",
+  "subject": "Ecology",
+  "description": "Convert habitat cells to developed land and observe how fragmentation reduces populations, creates edge effects, and isolates wildlife.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,22 +11,34 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Habitat Fragmentation Simulator",
+    "subjectArea": "Environmental Science",
+    "topic": "Habitat Fragmentation and Biodiversity Loss",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Demonstrate how fragmentation reduces effective habitat area and isolates populations",
+      "Explain the concept of edge effects and how they reduce interior habitat quality",
+      "Evaluate the effectiveness of wildlife corridors in maintaining population connectivity",
+      "Compare different development patterns and their relative impact on biodiversity"
     ],
     "bloomsTaxonomy": "Apply",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "50 minutes",
+    "prerequisites": [
+      "Understanding of habitat and resources",
+      "Basic knowledge of population ecology and carrying capacity",
+      "Familiarity with the concept of biodiversity"
+    ],
+    "standards": [
+      "NGSS HS-LS2-2",
+      "NGSS HS-LS4-6",
+      "AP Environmental Science Topic 16.5",
+      "AP Environmental Science Topic 16.9"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 462
     },
     "responsive": true,
     "dependencies": [],
@@ -36,10 +48,24 @@
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Agent-based simulation with hands-on land-use decision making",
+    "keyQuestions": [
+      "Is it better to preserve one large habitat or several small ones of the same total area?",
+      "How do edge effects reduce the effective size of a habitat patch?",
+      "Under what conditions can wildlife corridors restore population connectivity?",
+      "Which real-world development patterns cause the most fragmentation?",
+      "Why do small isolated populations face higher extinction risk?"
+    ],
+    "commonMisconceptions": [
+      "Students often assume that if 70% of habitat remains, 70% of species will survive (ignoring fragmentation effects)",
+      "Many students believe wildlife corridors always solve fragmentation problems regardless of width or habitat quality",
+      "Students may think edge effects only matter at the very border rather than penetrating several cells deep"
+    ],
+    "assessmentOpportunities": [
+      "Compare population outcomes across different preset scenarios with student-written explanations",
+      "Evaluate student policy recommendations for realistic development scenarios",
+      "Assess understanding of edge effects by having students calculate interior vs. total habitat area"
+    ]
   },
   "chapter": "16-biodiversity-loss-and-policy"
 }

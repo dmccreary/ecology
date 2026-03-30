@@ -1,8 +1,8 @@
 {
   "title": "Global Energy Mix Scenario Explorer",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for global energy mix scenario explorer",
+  "subject": "Ecology",
+  "description": "Interactive simulation where students design an energy portfolio using sliders for 8 sources and observe real-time sustainability metrics",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,59 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Global Energy Mix Scenario Explorer",
+    "subjectArea": "Environmental Science",
+    "topic": "Sustainable Energy Portfolio Design",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Design an energy portfolio that meets demand constraints while minimizing ecological footprint",
+      "Evaluate trade-offs between cost, emissions, land use, and reliability in energy planning",
+      "Explain why achieving sustainability requires balancing multiple competing objectives"
     ],
     "bloomsTaxonomy": "Create",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "50 minutes",
+    "prerequisites": [
+      "Basic understanding of renewable and nonrenewable energy sources",
+      "Awareness of climate change and CO2 emissions",
+      "Familiarity with percentages and proportional reasoning"
+    ],
+    "standards": [
+      "NGSS HS-ESS3-2",
+      "NGSS HS-ESS3-4",
+      "NGSS HS-ETS1-3"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 522
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Constrained design challenge with real-time feedback",
+    "keyQuestions": [
+      "Why can't we switch to 100% renewable energy overnight?",
+      "What happens to grid reliability when you remove all fossil fuels?",
+      "Which trade-offs are you willing to accept in your energy portfolio?",
+      "How does the current global energy mix compare to a sustainable one?",
+      "What role does nuclear energy play in bridging the gap?"
+    ],
+    "commonMisconceptions": [
+      "Students often assume switching to 100% renewables is straightforward and without trade-offs",
+      "Students may not realize that renewables have land use and intermittency challenges",
+      "Students may think cost per kWh is the only factor that matters in energy decisions"
+    ],
+    "assessmentOpportunities": [
+      "Students complete a comparison table for preset scenarios vs. their own design",
+      "Students write a reflection on trade-offs encountered during the challenge mode",
+      "Students evaluate a hypothetical policy proposal using data from the simulation"
+    ]
   },
   "chapter": "09-sustainability-and-energy"
 }

@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for levels of ecological organization.">
+        <meta name="description" content="Interactive p5.js step-through diagram showing the six levels of ecological organization from individual to biosphere, with examples and emergent properties at each level.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Levels of Ecological Organization - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for levels of ecological organization.">
+        <meta property="og:description" content="Interactive p5.js step-through diagram showing the six levels of ecological organization from individual to biosphere, with examples and emergent properties at each level.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/ecological-organization-levels/ecological-organization-levels.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Levels of Ecological Organization - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for levels of ecological organization.">
+        <meta name="twitter:description" content="Interactive p5.js step-through diagram showing the six levels of ecological organization from individual to biosphere, with examples and emergent properties at each level.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/ecological-organization-levels/ecological-organization-levels.png">
       
@@ -1974,9 +1974,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1992,9 +2010,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,81 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This interactive infographic guides students through the six hierarchical levels of ecological organization: Individual, Population, Community, Ecosystem, Biome, and Biosphere. Rather than presenting all levels at once, the step-through design lets students build the hierarchy incrementally using Zoom In and Zoom Out buttons, seeing what new properties and processes emerge at each level.</p>
+<p>Each level is displayed as a concentric ring with a distinctive earth-tone color. When a level is active, students see its name, a one-sentence definition, a concrete example (such as a white-tailed deer at the individual level or a temperate forest at the biome level), and a "What's New?" callout explaining what emerges at that level. For example, at the community level, species interactions like predation and competition appear for the first time.</p>
+<p>This approach supports understanding by making the nesting structure explicit. Students discover that each higher level of organization contains all lower levels plus new emergent properties, building a foundation for understanding why ecologists study systems at different scales.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Start at the Individual level and read the definition, example, and "What's New?" information.</li>
+<li>Click the "Zoom Out" button to expand to the next level of organization.</li>
+<li>At each new level, observe how the visual representation grows to encompass previous levels.</li>
+<li>Read the "What's New?" callout to understand what emergent properties appear at this level.</li>
+<li>Click "Zoom In" to return to lower levels and review.</li>
+<li>Click "Reset" to return to the Individual level.</li>
+<li>Step through all six levels to build a complete picture of ecological organization.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/ecological-organization-levels/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"502px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>40 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Explain the hierarchical levels of ecological organization from individual to biosphere</li>
+<li>Describe what emergent properties arise at each level of organization</li>
+<li>Give concrete examples of each level using local ecosystems</li>
+<li>Explain why ecologists study systems at different organizational scales</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of what an organism is</li>
+<li>Familiarity with the concept of species</li>
+<li>General knowledge of ecosystems from prior science courses</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-LS2-6</strong>: Evaluate claims, evidence, and reasoning that the complex interactions in ecosystems maintain relatively consistent numbers and types of organisms</li>
+<li><strong>AP Environmental Science</strong>: Topic 1.1 -- Introduction to Ecosystems</li>
+<li><strong>NGSS HS-LS4-6</strong>: Create or revise a simulation to test a solution to mitigate adverse impacts of human activity on biodiversity</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Warm-Up</strong> (5 min): Show students a photograph of a forest. Ask them to list everything they can see -- living and nonliving. Then ask: "How would you organize all these things into categories?" This activates prior knowledge about classification and sets up the hierarchy.</p>
+</li>
+<li>
+<p><strong>Step-Through Exploration</strong> (10 min): Students work through the MicroSim individually, recording in a graphic organizer: the level name, definition, one example from the MicroSim, and one example from their local environment. They should pause at each level to consider the "What's New?" information.</p>
+</li>
+<li>
+<p><strong>Application Activity</strong> (15 min): In small groups, students choose a local ecosystem (schoolyard, park, lake) and create their own hierarchy chart identifying a specific example at each level. They must explain what emergent property appears at each level for their chosen ecosystem. Groups present to the class.</p>
+</li>
+<li>
+<p><strong>Reflection and Synthesis</strong> (10 min): Class discussion: "Why can't you understand an ecosystem by only studying individual organisms?" Students write a one-paragraph response connecting the concept of emergent properties to the importance of studying ecology at multiple scales.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>List the six levels of ecological organization from smallest to largest and give one example of each.</li>
+<li>What new properties emerge at the ecosystem level that are not present at the community level?</li>
+<li>A scientist studying wolf-deer predation dynamics is working at which level of ecological organization? Explain your reasoning.</li>
+<li>Explain why understanding all levels of ecological organization is necessary for making sound environmental management decisions.</li>
+<li>How does the concept of emergent properties relate to the phrase "the whole is greater than the sum of its parts"?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Smith, T.M. &amp; Smith, R.L. (2015). <em>Elements of Ecology</em>. 9th ed. Pearson.</li>
+<li>Odum, E.P. &amp; Barrett, G.W. (2005). <em>Fundamentals of Ecology</em>. 5th ed. Thomson Brooks/Cole.</li>
+<li>Chapin, F.S., Matson, P.A. &amp; Vitousek, P. (2011). <em>Principles of Terrestrial Ecosystem Ecology</em>. 2nd ed. Springer.</li>
 </ol>
 
 

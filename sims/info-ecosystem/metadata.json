@@ -1,8 +1,8 @@
 {
   "title": "Information Ecosystem Flow",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for information ecosystem flow",
+  "subject": "Ecology",
+  "description": "Trace how environmental claims flow from scientific sources through media and algorithms, identifying where distortion occurs at each stage.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,62 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Information Ecosystem Flow",
+    "subjectArea": "Environmental Science",
+    "topic": "Information Ecosystem and Media Literacy for Environmental Claims",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Trace how environmental claims flow from original sources through media, algorithms, and social sharing",
+      "Identify specific distortion mechanisms at each stage of the information pipeline",
+      "Compare the accuracy of claims that travel through different pathways",
+      "Apply the information ecosystem model to evaluate real-world environmental claims"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Basic understanding of scientific research and peer review",
+      "Familiarity with how social media algorithms work",
+      "Awareness of current environmental topics"
+    ],
+    "standards": [
+      "NGSS HS-LS2-7 Science and Engineering Practices",
+      "AP Environmental Science Topic 17.1",
+      "Common Core ELA RST.11-12.8"
+    ]
   },
   "technical": {
     "framework": "vis-network",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 600
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "vis-network"
+    ],
     "accessibility": {
       "hasAltText": false,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Pipeline visualization with critical evaluation of real-world claims",
+    "keyQuestions": [
+      "At which stage of the information pipeline does the most distortion typically occur?",
+      "Why do environmental claims that pass through more intermediaries tend to become less accurate?",
+      "How do platform algorithms amplify certain versions of environmental claims?",
+      "What steps can you take to trace an environmental claim back to its original source?",
+      "Why is it important to evaluate the pathway of information rather than just labeling it true or false?"
+    ],
+    "commonMisconceptions": [
+      "Students often believe information is either completely true or completely false, rather than distorted by degrees at each stage",
+      "Many students think algorithms are neutral filters rather than engagement-optimizing systems that can amplify sensationalized content",
+      "Students may assume that all published sources have equal credibility"
+    ],
+    "assessmentOpportunities": [
+      "Evaluate student distortion logs for completeness and accuracy of mechanism identification",
+      "Assess student-created information evaluation checklists for practical utility",
+      "Have students trace a real environmental claim and present their pathway analysis to the class"
+    ]
   },
   "chapter": "17-evaluating-environmental-claims"
 }

@@ -1,8 +1,8 @@
 {
   "title": "Confidence Interval Visualizer",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for confidence interval visualizer",
+  "subject": "Ecology",
+  "description": "Interactive simulation where students draw repeated samples from a fish population to build intuition about confidence intervals, margin of error, and sample size effects",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,57 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Environmental Science",
     "topic": "Confidence Interval Visualizer",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Interpret confidence intervals and margin of error in environmental measurements",
+      "Explain the relationship between sample size and confidence interval width",
+      "Apply understanding of statistical uncertainty to environmental regulatory decisions"
     ],
     "bloomsTaxonomy": "Understand",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "40 minutes",
+    "prerequisites": [
+      "Basic understanding of mean and variability",
+      "Familiarity with population vs. sample concepts"
+    ],
+    "standards": [
+      "NGSS Science and Engineering Practice 4",
+      "NGSS Science and Engineering Practice 5",
+      "Common Core HSS-IC.B.4"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 452
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Repeated sampling with visual accumulation of evidence",
+    "keyQuestions": [
+      "Why do approximately 5% of 95% confidence intervals miss the true mean?",
+      "How does increasing sample size affect the width of confidence intervals?",
+      "What is the trade-off between confidence level and interval precision?",
+      "How should confidence intervals inform environmental safety decisions?"
+    ],
+    "commonMisconceptions": [
+      "Students often believe a 95% confidence interval means there is a 95% probability the true mean is inside that specific interval, rather than understanding it as a property of the sampling procedure",
+      "Many students think a wider confidence interval is always better because it is more likely to contain the true value, not recognizing the trade-off with precision",
+      "Students may assume that a single sample mean is the true population value without considering sampling variability"
+    ],
+    "assessmentOpportunities": [
+      "Students count how many of their 30 intervals miss the true mean and compare to the expected proportion",
+      "Students analyze a real environmental data scenario using confidence interval reasoning",
+      "Students explain the correct interpretation of a confidence interval vs. the common incorrect interpretation"
+    ]
   },
   "chapter": "14-scientific-literacy"
 }

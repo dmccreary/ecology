@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive vis-network MicroSim for interactive food web builder.">
+        <meta name="description" content="Build a temperate forest food web by connecting organisms with feeding relationships, then test trophic cascades by removing species.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Interactive Food Web Builder - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive vis-network MicroSim for interactive food web builder.">
+        <meta property="og:description" content="Build a temperate forest food web by connecting organisms with feeding relationships, then test trophic cascades by removing species.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/food-web-builder/food-web-builder.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Interactive Food Web Builder - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive vis-network MicroSim for interactive food web builder.">
+        <meta name="twitter:description" content="Build a temperate forest food web by connecting organisms with feeding relationships, then test trophic cascades by removing species.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/food-web-builder/food-web-builder.png">
       
@@ -1848,9 +1848,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1866,9 +1884,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2990,39 +3026,80 @@
 
 <p><a class="md-button md-button--primary" href="main.html">Run the Interactive Food Web Builder MicroSim Fullscreen</a>
 <br>
-<a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
+Note: This is a vis-network simulation. Drag nodes to rearrange the web layout.</p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This simulation lets you construct a temperate forest food web by clicking pairs of organisms to create feeding relationships (prey to predator). The network includes producers (oak tree, grass, berries), primary consumers (caterpillar, rabbit, mouse, deer), secondary consumers (frog, snake, fox), tertiary consumers (owl, hawk), and a decomposer (mushroom). Nodes are color-coded by trophic level: green for producers, blue for primary consumers, orange for secondary consumers, and red for tertiary consumers.</p>
+<p>After building your web, use the "Check Web" button to validate your connections against known feeding relationships. The real power of this simulation emerges when you select and remove a species using the dropdown menu. When a species is removed, broken connections turn red, affected organisms flash, and population impact arrows appear showing which species would increase or decrease as a result of the trophic cascade.</p>
+<p>This hands-on approach to food web construction helps students move beyond memorizing "who eats whom" to understanding the interconnected nature of ecosystems and predicting the consequences of species loss.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Create feeding links</strong> by clicking two organisms in sequence. The first click selects the prey, the second click selects the predator, and an arrow is drawn from prey to predator.</li>
+<li><strong>Check your web</strong> by clicking the "Check Web" button to see which connections are correct, incorrect, or missing.</li>
+<li><strong>Remove a species</strong> by selecting one from the "Remove Species" dropdown and clicking the "Remove Species" button.</li>
+<li><strong>Observe the cascade</strong> as broken edges turn red and affected species show population impact arrows (up or down).</li>
+<li><strong>Reset</strong> to try different removal scenarios and compare the cascading effects.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/food-web-builder/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"580px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / Biology)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Construct a food web showing feeding relationships among organisms in a temperate forest ecosystem.</li>
+<li>Classify organisms by trophic level (producer, primary consumer, secondary consumer, tertiary consumer, decomposer).</li>
+<li>Predict the effects of removing a species on other populations in the food web (trophic cascade).</li>
+<li>Explain why biodiversity and interconnectedness contribute to ecosystem stability.</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Understanding of producers, consumers, and decomposers</li>
+<li>Familiarity with the concept of energy transfer between trophic levels</li>
+<li>Basic knowledge of temperate forest organisms</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-LS2-2</strong>: Use mathematical representations to support and revise explanations based on evidence about factors affecting biodiversity and populations in ecosystems.</li>
+<li><strong>NGSS HS-LS2-6</strong>: Evaluate claims, evidence, and reasoning that the complex interactions in ecosystems maintain relatively consistent numbers and types of organisms.</li>
+<li><strong>AP Environmental Science</strong>: Topic 2.5 - Food Webs and Trophic Levels</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Warm-Up</strong> (5 min): As a class, brainstorm organisms found in a temperate forest and discuss what they eat. Review the difference between food chains and food webs.</p>
+</li>
+<li>
+<p><strong>Exploration</strong> (15 min): Students open the simulation and build their own food web by connecting organisms with feeding links. Encourage students to think carefully about each connection before clicking. Use the "Check Web" button to see how accurate their web is.</p>
+</li>
+<li>
+<p><strong>Guided Investigation</strong> (15 min): Students select and remove three different species (one from each trophic level) one at a time. For each removal, they record which species are affected, whether populations increase or decrease, and explain the mechanism behind the cascade. Students compare results: does removing a producer versus a top predator cause a bigger cascade?</p>
+</li>
+<li>
+<p><strong>Reflection and Discussion</strong> (10 min): Class discussion: Which species removal caused the most disruption? Why? Introduce the concept of keystone species. Ask students to identify which organism in this web might be considered a keystone species based on their observations.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>If the fox population were eliminated from this ecosystem, predict what would happen to the rabbit and grass populations. Explain the chain of effects.</li>
+<li>Why does removing a single species from a food web affect more organisms than removing a single link from a food chain?</li>
+<li>A farmer introduces a pesticide that kills all caterpillars. Trace the effects through at least three other species in the web.</li>
+<li>Explain why decomposers are essential to the food web even though they are not prey for other organisms.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Paine, R. T. (1966). Food web complexity and species diversity. <em>The American Naturalist</em>, 100(910), 65-75.</li>
+<li>Estes, J. A., et al. (2011). Trophic downgrading of planet Earth. <em>Science</em>, 333(6040), 301-306.</li>
+<li>Campbell, N. A., &amp; Reece, J. B. (2008). <em>Biology</em> (8th ed.). Pearson Education. Chapter 54: Community Ecology.</li>
 </ol>
 
 

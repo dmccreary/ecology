@@ -1,8 +1,8 @@
 {
   "title": "Solar Radiation and Albedo Simulator",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for solar radiation and albedo simulator",
+  "subject": "Ecology",
+  "description": "Interactive MicroSim demonstrating how surface albedo affects energy absorption, temperature, and climate feedback loops.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,15 +11,27 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Solar Radiation and Albedo Simulator",
+    "subjectArea": "Environmental Science",
+    "topic": "Solar Radiation, Albedo, and Climate Feedback",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Calculate the net energy absorbed by different surfaces and predict how albedo changes affect local temperature",
+      "Explain the relationship between surface albedo and energy balance",
+      "Describe the ice-albedo positive feedback loop and its role in climate change",
+      "Predict how land-use changes affect local and global energy budgets"
     ],
-    "bloomsTaxonomy": "Create",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "bloomsTaxonomy": "Apply",
+    "duration": "40 minutes",
+    "prerequisites": [
+      "Basic understanding of solar radiation and the electromagnetic spectrum",
+      "Familiarity with energy transfer concepts",
+      "Understanding of the greenhouse effect at an introductory level"
+    ],
+    "standards": [
+      "NGSS ESS2.D",
+      "NGSS ESS3.D",
+      "AP Environmental Science Topic 9.2",
+      "AP Environmental Science Topic 9.4"
+    ]
   },
   "technical": {
     "framework": "p5.js",
@@ -36,10 +48,23 @@
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Visual energy budget with surface type comparison and feedback loop animation",
+    "keyQuestions": [
+      "Which surface type absorbs the most solar energy? Which reflects the most?",
+      "What is the ice-albedo feedback loop and why is it called a positive feedback?",
+      "How does replacing forest with a parking lot change local temperature?",
+      "Why is climate change accelerating faster in Arctic regions?"
+    ],
+    "commonMisconceptions": [
+      "Albedo only matters for snow and ice, not for other surface types",
+      "Positive feedback means the effect is beneficial, rather than self-amplifying",
+      "All dark surfaces have the same albedo regardless of material"
+    ],
+    "assessmentOpportunities": [
+      "Students rank surfaces by albedo and verify with the simulation",
+      "Students calculate additional energy absorbed when ice converts to ocean",
+      "Students propose urban design changes to reduce the heat island effect using albedo concepts"
+    ]
   },
   "chapter": "08-earth-systems"
 }

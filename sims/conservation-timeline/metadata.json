@@ -1,8 +1,8 @@
 {
   "title": "Conservation Policy Timeline",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for conservation policy timeline",
+  "subject": "Ecology",
+  "description": "Interactive scrollable timeline showing conservation policy evolution from 1960 to 2030, color-coded by policy type with expandable details and quiz mode",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,22 +11,31 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Environmental Science",
     "topic": "Conservation Policy Timeline",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Summarize the evolution of conservation policy from national laws to international agreements",
+      "Explain how each policy addresses specific threats to biodiversity",
+      "Evaluate the effectiveness of different policy approaches to conservation"
     ],
     "bloomsTaxonomy": "Understand",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "40 minutes",
+    "prerequisites": [
+      "Basic understanding of biodiversity",
+      "Familiarity with the HIPPO framework for biodiversity threats"
+    ],
+    "standards": [
+      "NGSS HS-LS2-7",
+      "NGSS HS-ESS3-4",
+      "AP Environmental Science Topic 9.5"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 452
     },
     "responsive": true,
     "dependencies": [],
@@ -36,10 +45,23 @@
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Chronological exploration with interactive details and self-testing",
+    "keyQuestions": [
+      "How has conservation policy evolved from domestic to international scope?",
+      "Which policies have been most effective and why?",
+      "Why has biodiversity continued to decline despite increasing policy efforts?",
+      "How do economic mechanisms differ from regulatory approaches to conservation?"
+    ],
+    "commonMisconceptions": [
+      "Students often assume that passing a law automatically solves the environmental problem it addresses, not recognizing the gap between policy creation and enforcement",
+      "Many students believe conservation policy is only about protecting individual species, not realizing it increasingly addresses ecosystems and habitats",
+      "Students may think international treaties are more powerful than domestic laws, when in fact enforcement is often weaker at the international level"
+    ],
+    "assessmentOpportunities": [
+      "Students place policies in chronological order and explain the ecological context for each",
+      "Students compare domestic vs. international policy approaches and evaluate their effectiveness",
+      "Students design a new conservation policy that addresses gaps they identified in the timeline"
+    ]
   },
   "chapter": "16-biodiversity-loss-and-policy"
 }

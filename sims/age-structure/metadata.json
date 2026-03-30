@@ -1,8 +1,8 @@
 {
   "title": "Age Structure Diagram Explorer",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for age structure diagram explorer",
+  "subject": "Ecology",
+  "description": "Interactive population pyramid explorer comparing demographics of 10 countries with animated transitions and compare mode",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,61 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Environmental Science",
     "topic": "Age Structure Diagram Explorer",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Interpret age structure diagrams to predict future population trends for different countries",
+      "Classify population pyramids as expansive, stationary, or constrictive",
+      "Compare demographic profiles across countries at different stages of the demographic transition",
+      "Relate total fertility rate and median age to pyramid shape"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Understanding of population growth concepts (birth rate, death rate)",
+      "Basic knowledge of the demographic transition model",
+      "Familiarity with fertility rate concepts"
+    ],
+    "standards": [
+      "NGSS HS-LS2-1",
+      "AP Environmental Science Topic 3.3"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 547
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js"
+    ],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Comparative visual analysis with animated transitions",
+    "keyQuestions": [
+      "How does pyramid shape predict a country's future population growth or decline?",
+      "What is the relationship between total fertility rate and pyramid shape?",
+      "Why does China's pyramid look so different from other countries with similar GDP?",
+      "How does the dependency ratio affect a nation's economic capacity?",
+      "What does the UAE's pyramid reveal about labor migration patterns?"
+    ],
+    "commonMisconceptions": [
+      "A large population always means rapid growth (growth rate depends on age structure, not just size)",
+      "Population pyramids are static snapshots (they represent dynamic processes that change over decades)",
+      "All developing countries have expansive pyramids (many are transitioning, like India and Brazil)"
+    ],
+    "assessmentOpportunities": [
+      "Have students predict 2050 population trends from pyramid shape alone, then check against projections",
+      "Ask students to classify unlabeled pyramids by demographic stage",
+      "Compare two countries and explain the socioeconomic implications of their different age structures"
+    ]
   },
   "chapter": "07-population-ecology"
 }

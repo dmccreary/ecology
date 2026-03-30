@@ -1,0 +1,69 @@
+{
+  "title": "Learning Graph Viewer",
+  "creator": "Dan McCreary",
+  "subject": "Ecology",
+  "description": "Interactive vis-network viewer for exploring the ecology course learning graph, with search, category filtering, and prerequisite navigation.",
+  "date": "2026-03-29",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Environmental Science",
+    "topic": "Ecology Course Learning Graph and Concept Prerequisites",
+    "learningObjectives": [
+      "Navigate the ecology learning graph to identify foundational concepts and their advanced dependents",
+      "Trace prerequisite chains to understand how early concepts support later topics",
+      "Identify clusters of related concepts that form major themes in ecology",
+      "Use the learning graph to plan study sequences and identify knowledge gaps"
+    ],
+    "bloomsTaxonomy": "Analyze",
+    "duration": "30 minutes",
+    "prerequisites": [
+      "Enrollment in or familiarity with a high school ecology course",
+      "Basic ability to navigate interactive web applications"
+    ],
+    "standards": [
+      "NGSS Science and Engineering Practices: Developing and Using Models",
+      "AP Environmental Science Course Overview"
+    ]
+  },
+  "technical": {
+    "framework": "vis-network",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 600
+    },
+    "responsive": true,
+    "dependencies": [
+      "vis-network"
+    ],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Self-directed graph exploration with metacognitive reflection",
+    "keyQuestions": [
+      "Which foundational concepts support the most advanced topics in ecology?",
+      "How many prerequisites must be mastered before studying ecosystem services?",
+      "What does the structure of the learning graph reveal about how ecological concepts are interconnected?",
+      "How can the learning graph help you identify gaps in your understanding?"
+    ],
+    "commonMisconceptions": [
+      "Students often think ecology topics are independent rather than deeply interconnected through shared prerequisites",
+      "Many students believe they can skip foundational concepts and jump directly to advanced topics",
+      "Students may assume all concepts are equally difficult rather than recognizing that some require many more prerequisites"
+    ],
+    "assessmentOpportunities": [
+      "Evaluate student-identified prerequisite chains for completeness and accuracy",
+      "Assess personal study plans for logical sequencing based on the graph structure",
+      "Have students explain why certain concepts are foundational using evidence from the graph"
+    ]
+  },
+  "chapter": "00-introduction"
+}

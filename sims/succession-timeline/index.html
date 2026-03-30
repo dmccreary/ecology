@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for ecological succession timeline.">
+        <meta name="description" content="Animated timeline comparing primary and secondary succession, showing landscape changes, soil development, and biodiversity over time.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Ecological Succession Timeline - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for ecological succession timeline.">
+        <meta property="og:description" content="Animated timeline comparing primary and secondary succession, showing landscape changes, soil development, and biodiversity over time.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/succession-timeline/succession-timeline.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Ecological Succession Timeline - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for ecological succession timeline.">
+        <meta name="twitter:description" content="Animated timeline comparing primary and secondary succession, showing landscape changes, soil development, and biodiversity over time.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/succession-timeline/succession-timeline.png">
       
@@ -1365,9 +1365,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1383,9 +1401,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,72 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim brings ecological succession to life through an animated timeline that spans up to 1,000 years. Students drag a playhead along a horizontal timeline and watch a landscape cross-section transform through successive stages: from bare rock to lichens and mosses, through grasses and shrubs, to pioneer trees and finally a climax forest community. Soil depth visually increases as a brown layer beneath the landscape, reinforcing the connection between soil formation and community development.</p>
+<p>A toggle button switches between primary and secondary succession, making the key differences immediately visible. Secondary succession starts with soil already present and progresses much faster, reaching a climax community in roughly 300 years instead of 1,000. Species richness and a biodiversity graph update in real time as the timeline advances, showing the general trend of increasing diversity through succession.</p>
+<p>A disturbance button resets the landscape to an earlier stage, demonstrating how natural disruptions like fire, storms, or human activity can restart the succession process. This feature helps students understand that succession is not always a one-way journey and that disturbance regimes play an important role in maintaining ecosystem diversity.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Drag the <strong>timeline playhead</strong> along the horizontal axis (0-1000 years) to advance through succession stages.</li>
+<li>Watch the landscape cross-section animate as vegetation and soil develop at each stage.</li>
+<li>Click the <strong>Toggle</strong> button to switch between primary succession (starts on bare rock) and secondary succession (starts with existing soil).</li>
+<li>Observe the <strong>species richness counter</strong> and <strong>biodiversity graph</strong> as they change with the timeline.</li>
+<li>Press the <strong>Disturbance</strong> button to simulate an ecological disruption that resets succession to an earlier stage.</li>
+<li>Use <strong>Reset</strong> to return to the beginning.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/succession-timeline/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"402px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / Ecology)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>50 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Compare the stages, timescales, and starting conditions of primary and secondary succession</li>
+<li>Explain why secondary succession proceeds faster than primary succession</li>
+<li>Analyze the relationship between succession stage, soil development, and biodiversity</li>
+<li>Predict how disturbances affect the trajectory of ecological succession</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Understanding of basic ecosystem concepts (producers, consumers, decomposers)</li>
+<li>Familiarity with biodiversity as a measure of ecosystem health</li>
+<li>Introduction to the concept of ecological communities</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-LS2-6</strong>: Evaluate claims, evidence, and reasoning that the complex interactions in ecosystems maintain relatively consistent numbers and types of organisms</li>
+<li><strong>NGSS HS-LS4-5</strong>: Evaluate the evidence supporting claims that changes in environmental conditions may result in increases or decreases in biodiversity</li>
+<li><strong>AP Environmental Science</strong>: Topic 2.8 -- Ecological Succession</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Engage</strong> (5 min): Show before-and-after photos of Mount St. Helens (1980 eruption and recent recovery). Ask: How long does it take for an ecosystem to recover? What grows back first?</li>
+<li><strong>Explore</strong> (15 min): Students work through primary succession from year 0 to year 1000, recording the dominant species, soil depth, and species richness at 6 key stages. Then toggle to secondary succession and complete the same data table.</li>
+<li><strong>Explain</strong> (15 min): Create a Venn diagram comparing primary and secondary succession. Discuss: Why does soil make such a big difference? What role do pioneer species play? Introduce the concept of climax community and discuss whether true climax communities exist in nature.</li>
+<li><strong>Extend</strong> (15 min): Students use the disturbance button at different points in the timeline and record the effects. Discuss intermediate disturbance hypothesis -- why might moderate disturbance actually increase biodiversity? Students write a paragraph predicting what succession would look like after a forest fire vs. after a glacier retreats.</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>What is the key difference between the starting conditions of primary and secondary succession?</li>
+<li>Why does secondary succession reach a climax community faster than primary succession?</li>
+<li>A volcanic eruption covers an island in lava. Describe the sequence of organisms that would colonize this new surface over the next 500 years.</li>
+<li>How does the disturbance button demonstrate that succession is not always a linear process?</li>
+<li>Using the biodiversity graph, at what stage does species richness increase most rapidly, and why?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Molles, M.C. (2015). <em>Ecology: Concepts and Applications</em> (7th ed.). McGraw-Hill.</li>
+<li>Walker, L.R. &amp; del Moral, R. (2003). <em>Primary Succession and Ecosystem Rehabilitation</em>. Cambridge University Press.</li>
+<li>Connell, J.H. &amp; Slatyer, R.O. (1977). "Mechanisms of Succession in Natural Communities." <em>The American Naturalist</em>, 111(982), 1119-1144.</li>
 </ol>
 
 

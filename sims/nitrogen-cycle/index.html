@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for the nitrogen cycle.">
+        <meta name="description" content="Interactive p5.js step-through animation tracing nitrogen through fixation, nitrification, assimilation, decomposition, and denitrification with labeled organisms at each stage.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="The Nitrogen Cycle - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for the nitrogen cycle.">
+        <meta property="og:description" content="Interactive p5.js step-through animation tracing nitrogen through fixation, nitrification, assimilation, decomposition, and denitrification with labeled organisms at each stage.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/nitrogen-cycle/nitrogen-cycle.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="The Nitrogen Cycle - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for the nitrogen cycle.">
+        <meta name="twitter:description" content="Interactive p5.js step-through animation tracing nitrogen through fixation, nitrification, assimilation, decomposition, and denitrification with labeled organisms at each stage.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/nitrogen-cycle/nitrogen-cycle.png">
       
@@ -2478,9 +2478,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2496,9 +2514,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2988,41 +3024,81 @@
 <h1 id="the-nitrogen-cycle">The Nitrogen Cycle</h1>
 <iframe src="main.html" height="502" width="100%" scrolling="no"></iframe>
 
-<p><a class="md-button md-button--primary" href="main.html">Run the The Nitrogen Cycle MicroSim Fullscreen</a>
+<p><a class="md-button md-button--primary" href="main.html">Run the Nitrogen Cycle MicroSim Fullscreen</a>
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This step-through animation shows a cross-section of soil with atmosphere above and groundwater below. Nitrogen particles change color as they transform through each stage of the cycle: purple for atmospheric N2, blue for ammonium (NH4+), red for nitrite (NO2-), and green for nitrate (NO3-). Each step is accompanied by text labels describing the process and the specific bacteria responsible for each transformation.</p>
+<p>Students can walk through the cycle one step at a time using Play/Pause and Step Forward controls, allowing them to focus on each transformation individually before seeing the whole cycle in motion. The animation shows nitrogen fixation by Rhizobium bacteria in root nodules, stepwise nitrification by Nitrosomonas and Nitrobacter, plant assimilation of nitrate, decomposition releasing ammonium, and denitrification in waterlogged zones returning N2 to the atmosphere.</p>
+<p>An "Add Fertilizer" button floods the soil with nitrate and demonstrates the consequences of excess nitrogen, including runoff into waterways. This feature connects the natural nitrogen cycle to human agricultural impacts, bridging biogeochemistry with environmental science.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Click <strong>Play</strong> to start the animation, or use <strong>Step Forward</strong> to advance through one transformation at a time.</li>
+<li>Watch the nitrogen particles change color as they transform: purple (N2) to blue (NH4+) to red (NO2-) to green (NO3-) and back.</li>
+<li>Read the text labels that appear at each step describing the process name, chemical transformation, and organisms involved.</li>
+<li>Use the <strong>Speed</strong> slider to slow down or speed up the animation.</li>
+<li>Click <strong>Add Fertilizer</strong> to see what happens when excess nitrate enters the system.</li>
+<li>Observe how the cycle completes as denitrifying bacteria in waterlogged soil convert nitrate back to atmospheric N2.</li>
+<li>Use <strong>Pause</strong> at any point to examine the current state of the system.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/nitrogen-cycle/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"502px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / AP Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Trace nitrogen through fixation, nitrification, assimilation, and denitrification stages</li>
+<li>Identify the organisms involved at each step of the nitrogen cycle</li>
+<li>Predict the environmental consequences of adding excess nitrogen fertilizer to an ecosystem</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic chemistry concepts (elements, compounds, chemical formulas)</li>
+<li>Understanding of producers, consumers, and decomposers</li>
+<li>Introduction to the concept of biogeochemical cycles</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li>NGSS HS-LS2-3: Construct and revise an explanation based on evidence for the cycling of matter and flow of energy in aerobic and anaerobic conditions</li>
+<li>AP Environmental Science: Topic 1.5 -- Biogeochemical Cycles (Nitrogen)</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Prediction Phase</strong> (5 min): Draw a blank diagram with atmosphere, soil, plant, and water zones. Ask students to sketch where they think nitrogen goes and what form it takes. These will be compared to the simulation later.</p>
+</li>
+<li>
+<p><strong>Step-Through Exploration</strong> (15 min): Walk through the cycle as a class one step at a time. At each step, students record: (a) the starting form of nitrogen, (b) the ending form, (c) the organism responsible, and (d) where in the environment this occurs. Build a complete cycle table.</p>
+</li>
+<li>
+<p><strong>Fertilizer Experiment</strong> (10 min): Students click "Add Fertilizer" and observe the consequences. They draw the pathway of excess nitrogen from farm field to waterway and predict downstream effects (algal blooms, dead zones). Connect to eutrophication concepts.</p>
+</li>
+<li>
+<p><strong>Synthesis and Diagram</strong> (15 min): Students create their own labeled nitrogen cycle diagram from memory, then compare it to the simulation. Identify any steps they missed or organisms they forgot. Discuss: Why is the nitrogen cycle considered one of the most human-altered biogeochemical cycles?</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Describe the role of Rhizobium bacteria in the nitrogen cycle and explain why legume crops are often used in crop rotation.</li>
+<li>Trace a single nitrogen atom from the atmosphere through all stages of the cycle back to the atmosphere, naming each process and organism involved.</li>
+<li>A farmer applies ammonium nitrate fertilizer to a field next to a lake. Using your knowledge of the nitrogen cycle, predict three consequences that could occur in the lake ecosystem.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Galloway, J.N., et al. (2008). Transformation of the nitrogen cycle: Recent trends, questions, and potential solutions. <em>Science</em>, 320(5878), 889-892.</li>
+<li>Vitousek, P.M., et al. (1997). Human alteration of the global nitrogen cycle: Sources and consequences. <em>Ecological Applications</em>, 7(3), 737-750.</li>
+<li>Schlesinger, W.H., &amp; Bernhardt, E.S. (2013). <em>Biogeochemistry: An Analysis of Global Change</em> (3rd ed.). Academic Press.</li>
 </ol>
 
 

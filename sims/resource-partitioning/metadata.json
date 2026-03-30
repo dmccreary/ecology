@@ -1,8 +1,8 @@
 {
   "title": "Resource Partitioning in Warblers",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for resource partitioning in warblers",
+  "subject": "Ecology",
+  "description": "Interactive MicroSim showing how five warbler species partition foraging zones on a conifer tree to reduce interspecific competition.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,22 +11,33 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Resource Partitioning in Warblers",
+    "subjectArea": "Environmental Science",
+    "topic": "Resource Partitioning and Niche Differentiation",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Compare how different species partition resources within a shared habitat to reduce interspecific competition",
+      "Explain the competitive exclusion principle and how resource partitioning allows coexistence",
+      "Identify niche dimensions along which species can partition resources",
+      "Connect MacArthur's warbler study to broader ecological principles"
     ],
-    "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "bloomsTaxonomy": "Understand",
+    "duration": "40 minutes",
+    "prerequisites": [
+      "Understanding of competition as an ecological interaction",
+      "Basic vocabulary: niche, habitat, species, competition",
+      "Familiarity with food webs and trophic relationships"
+    ],
+    "standards": [
+      "NGSS LS2.A",
+      "NGSS LS4.C",
+      "AP Environmental Science Topic 2.4"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 550
     },
     "responsive": true,
     "dependencies": [],
@@ -36,10 +47,23 @@
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Spatial visualization with hover-to-explore interactivity",
+    "keyQuestions": [
+      "How do five similar warbler species coexist on the same tree?",
+      "What would happen if one warbler species went extinct?",
+      "What are the three main dimensions of resource partitioning?",
+      "How does resource partitioning relate to biodiversity?"
+    ],
+    "commonMisconceptions": [
+      "Species with overlapping habitats always compete directly for the same resources",
+      "Resource partitioning requires species to eat completely different foods",
+      "The competitive exclusion principle means only one species can live in any habitat"
+    ],
+    "assessmentOpportunities": [
+      "Students identify which warbler species pairs have the most overlap and predict competition intensity",
+      "Students create resource partitioning diagrams for other ecosystems",
+      "Students explain why removing one species would affect the others"
+    ]
   },
   "chapter": "05-species-interactions"
 }

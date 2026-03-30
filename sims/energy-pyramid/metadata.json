@@ -1,8 +1,8 @@
 {
   "title": "Energy Pyramid Simulator",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for energy pyramid simulator",
+  "subject": "Ecology",
+  "description": "Interactive pyramid visualization where students adjust producer energy input and transfer efficiency to calculate energy at each trophic level",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,57 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Energy Pyramid Simulator",
+    "subjectArea": "Environmental Science",
+    "topic": "Ecological Energy Pyramids",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Calculate energy available at each trophic level using the ten percent rule",
+      "Explain how small changes in transfer efficiency dramatically affect top-predator energy",
+      "Compare energy, biomass, and numbers pyramids"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "40 minutes",
+    "prerequisites": [
+      "Understanding of trophic levels and food chains",
+      "Basic multiplication and percentage calculations",
+      "Knowledge of producers and consumers"
+    ],
+    "standards": [
+      "NGSS HS-LS2-4",
+      "NGSS HS-LS2-1"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 452
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Interactive exploration with mathematical verification",
+    "keyQuestions": [
+      "How much energy reaches the top of a five-level food chain?",
+      "What happens to the 90% of energy that is not transferred?",
+      "Why are apex predators always rare in ecosystems?",
+      "When can a numbers pyramid be inverted?"
+    ],
+    "commonMisconceptions": [
+      "Students often think the 10% rule is exact rather than an average that varies from 5-20%",
+      "Students may believe energy is destroyed rather than converted to heat at each level",
+      "Students may assume all three pyramid types (energy, biomass, numbers) always look the same"
+    ],
+    "assessmentOpportunities": [
+      "Students complete calculation worksheets at different efficiency settings",
+      "Students solve backward-calculation problems for apex predator energy requirements",
+      "Students compare and sketch the three pyramid view types"
+    ]
   },
   "chapter": "02-ecosystems-and-biomes"
 }

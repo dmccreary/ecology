@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive vis-network MicroSim for information ecosystem flow.">
+        <meta name="description" content="Trace how environmental claims flow from scientific sources through media and algorithms, identifying where distortion occurs at each stage.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Information Ecosystem Flow - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive vis-network MicroSim for information ecosystem flow.">
+        <meta property="og:description" content="Trace how environmental claims flow from scientific sources through media and algorithms, identifying where distortion occurs at each stage.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/info-ecosystem/info-ecosystem.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Information Ecosystem Flow - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive vis-network MicroSim for information ecosystem flow.">
+        <meta name="twitter:description" content="Trace how environmental claims flow from scientific sources through media and algorithms, identifying where distortion occurs at each stage.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/info-ecosystem/info-ecosystem.png">
       
@@ -1785,9 +1785,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1803,9 +1821,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2990,39 +3026,82 @@
 
 <p><a class="md-button md-button--primary" href="main.html">Run the Information Ecosystem Flow MicroSim Fullscreen</a>
 <br>
-<a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
+Note: This is a vis-network simulation. Drag nodes to rearrange the flow layout.</p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This simulation visualizes the information pipeline that environmental claims travel through, from their original source all the way to your understanding and actions. The flow moves left to right through stages: Original Source, Journalist/Creator, Platform Algorithm, Your Feed, Your Understanding, and Your Actions. At each stage, an accuracy gauge shows how much distortion may have been introduced.</p>
+<p>Branching paths show how the same claim can travel through different channels -- a peer-reviewed journal, a press release, a social media post, or a political speech -- with varying levels of accuracy at each step. Red warning triangles mark common distortion points. Clicking on any stage reveals the specific distortion mechanisms that operate there, such as selective quoting, sensationalized headlines, algorithmic amplification of engagement, or confirmation bias.</p>
+<p>By treating the information landscape as an ecosystem with its own flows and filters, this simulation helps students develop critical media literacy skills. Rather than simply labeling information as "true" or "false," students learn to evaluate how the pathway a claim travels affects its accuracy and framing.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Examine the flow diagram</strong> from left to right, noting each stage that information passes through.</li>
+<li><strong>Click on each stage node</strong> to see the common distortion mechanisms that operate at that point.</li>
+<li><strong>Follow different pathways</strong> to see how the same claim arrives differently depending on whether it traveled through a peer-reviewed journal, a news article, or a social media post.</li>
+<li><strong>Note the accuracy gauges</strong> at each stage to see how information quality changes as it passes through more intermediaries.</li>
+<li><strong>Look for the red warning triangles</strong> that mark the stages where the most distortion typically occurs.</li>
+<li><strong>Compare pathways</strong>: trace a claim directly from a journal versus through three layers of media interpretation.</li>
+<li><strong>Drag nodes</strong> to rearrange the layout for a clearer view of specific pathways.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/info-ecosystem/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"600px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / Media Literacy)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Trace how environmental claims flow from original sources through media, algorithms, and social sharing, identifying where distortion occurs at each stage.</li>
+<li>Identify specific distortion mechanisms at each stage of the information pipeline (selective quoting, headline sensationalism, algorithmic amplification, confirmation bias).</li>
+<li>Compare the accuracy of claims that travel through different pathways (journal vs. social media).</li>
+<li>Apply the information ecosystem model to evaluate real-world environmental claims.</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of scientific research and peer review</li>
+<li>Familiarity with how social media algorithms work</li>
+<li>Awareness of current environmental topics (climate change, pollution, biodiversity)</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-LS2-7 (Science and Engineering Practices)</strong>: Obtaining, evaluating, and communicating information.</li>
+<li><strong>AP Environmental Science</strong>: Topic 17.1 - Evaluating Environmental Claims</li>
+<li><strong>Common Core ELA RST.11-12.8</strong>: Evaluate the hypotheses, data, analysis, and conclusions in a science or technical text.</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Warm-Up</strong> (5 min): Show students two different headlines about the same environmental study -- one accurate, one sensationalized. Ask: How did the same study produce such different headlines? Introduce the concept of information distortion.</p>
+</li>
+<li>
+<p><strong>Exploration</strong> (15 min): Students explore the simulation by clicking on each stage of the information pipeline. They create a distortion log listing at least two distortion mechanisms at each stage. Students trace one environmental claim through both the journal pathway and the social media pathway, noting how accuracy changes.</p>
+</li>
+<li>
+<p><strong>Guided Investigation</strong> (15 min): Present students with a real environmental claim (e.g., "Polar bears are thriving"). Students use the simulation to identify which pathway this claim likely traveled through. They identify at least three distortion points where the original research could have been altered. Students then find the original source and compare it to the version that reached social media.</p>
+</li>
+<li>
+<p><strong>Synthesis and Discussion</strong> (10 min): Class discussion: Why do algorithms tend to amplify the most distorted versions of claims? How can you trace a claim back to its original source? Students develop a personal "information evaluation checklist" with at least five steps for verifying an environmental claim.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>A social media post claims "Scientists say coffee cures cancer." Trace this claim through the information ecosystem and identify at least three stages where distortion could have occurred. What might the original study actually have found?</li>
+<li>Why do environmental claims that travel through more intermediaries tend to be less accurate? Use the simulation to explain.</li>
+<li>Explain how platform algorithms can amplify misinformation about environmental topics even without intentionally promoting false information.</li>
+<li>You find two sources about the same environmental issue: a peer-reviewed paper and a blog post. Using the information ecosystem model, explain why these might contain very different claims.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Scheufele, D. A., &amp; Krause, N. M. (2019). Science audiences, misinformation, and fake news. <em>Proceedings of the National Academy of Sciences</em>, 116(16), 7662-7669.</li>
+<li>Vosoughi, S., Roy, D., &amp; Aral, S. (2018). The spread of true and false news online. <em>Science</em>, 359(6380), 1146-1151.</li>
+<li>National Academies of Sciences, Engineering, and Medicine. (2017). <em>Communicating Science Effectively: A Research Agenda</em>. The National Academies Press.</li>
 </ol>
 
 

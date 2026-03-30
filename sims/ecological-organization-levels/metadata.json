@@ -1,8 +1,8 @@
 {
   "title": "Levels of Ecological Organization",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for levels of ecological organization",
+  "subject": "Ecology",
+  "description": "Interactive p5.js step-through diagram showing the six levels of ecological organization from individual to biosphere with examples and emergent properties at each level.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,59 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Environmental Science",
     "topic": "Levels of Ecological Organization",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Explain the hierarchical levels of ecological organization from individual to biosphere",
+      "Describe what emergent properties arise at each level of organization",
+      "Give concrete examples of each level using local ecosystems",
+      "Explain why ecologists study systems at different organizational scales"
     ],
     "bloomsTaxonomy": "Understand",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "40 minutes",
+    "prerequisites": [
+      "Basic understanding of what an organism is",
+      "Familiarity with the concept of species",
+      "General knowledge of ecosystems"
+    ],
+    "standards": [
+      "NGSS HS-LS2-6",
+      "AP Environmental Science: Topic 1.1",
+      "NGSS HS-LS4-6"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 502
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Step-through incremental hierarchy building",
+    "keyQuestions": [
+      "What new properties emerge at each level of ecological organization?",
+      "Why can't you understand an ecosystem by only studying individual organisms?",
+      "At which level do species interactions first appear?",
+      "How does the concept of emergent properties relate to 'the whole is greater than the sum of its parts'?"
+    ],
+    "commonMisconceptions": [
+      "Ecosystem and community mean the same thing",
+      "The biosphere is just a very large ecosystem rather than the sum of all ecosystems",
+      "Properties at higher levels can be fully predicted from lower levels alone"
+    ],
+    "assessmentOpportunities": [
+      "Graphic organizer completion with local ecosystem examples at each level",
+      "Written explanation of emergent properties at a chosen level",
+      "Identification of organizational level from ecological scenario descriptions"
+    ]
   },
   "chapter": "01-foundations-of-ecology"
 }

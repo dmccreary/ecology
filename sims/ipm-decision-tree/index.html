@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive vis-network MicroSim for integrated pest management decision flowchart.">
+        <meta name="description" content="Interactive vis-network decision tree that walks students through the IPM hierarchy of pest control strategies for three real-world crop scenarios.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Integrated Pest Management Decision Flowchart - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive vis-network MicroSim for integrated pest management decision flowchart.">
+        <meta property="og:description" content="Interactive vis-network decision tree that walks students through the IPM hierarchy of pest control strategies for three real-world crop scenarios.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/ipm-decision-tree/ipm-decision-tree.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Integrated Pest Management Decision Flowchart - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive vis-network MicroSim for integrated pest management decision flowchart.">
+        <meta name="twitter:description" content="Interactive vis-network decision tree that walks students through the IPM hierarchy of pest control strategies for three real-world crop scenarios.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/ipm-decision-tree/ipm-decision-tree.png">
       
@@ -1806,9 +1806,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1824,9 +1842,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2988,41 +3024,78 @@
 <h1 id="integrated-pest-management-decision-flowchart">Integrated Pest Management Decision Flowchart</h1>
 <iframe src="main.html" height="600" width="100%" scrolling="no"></iframe>
 
-<p><a class="md-button md-button--primary" href="main.html">Run the Integrated Pest Management Decision Flowchart MicroSim Fullscreen</a>
-<br>
-<a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
+<p><a class="md-button md-button--primary" href="main.html">Run the IPM Decision Flowchart Fullscreen</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This interactive flowchart guides students through the Integrated Pest Management (IPM) decision-making process using a vis-network diagram. Starting from a "Pest Detected" node, students follow branching decisions that mirror the real IPM hierarchy: monitoring, cultural controls, biological controls, and targeted chemical controls. Each path reveals the systematic reasoning behind IPM rather than treating it as simply "use less pesticide."</p>
+<p>Three real-world pest scenarios are available -- aphids on vegetables, corn borers, and weeds in wheat. Each scenario highlights different control strategies and trade-offs. Terminal nodes display estimated cost, effectiveness, and an ecological impact rating (green, yellow, or red) so students can evaluate the consequences of each decision path.</p>
+<p>The flowchart reinforces the idea that IPM is a structured decision process where chemical controls are a last resort, not a first response. By clicking through multiple scenarios, students build procedural knowledge about when and why each control strategy is appropriate.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Select a pest scenario from the dropdown menu at the top (Aphids on Vegetables, Corn Borers, or Weeds in Wheat).</li>
+<li>Start at the "Pest Detected" node and read the first decision question.</li>
+<li>Click on decision branches to follow the IPM hierarchy through cultural, biological, and chemical control options.</li>
+<li>Examine the terminal nodes to compare cost, effectiveness, and ecological impact ratings.</li>
+<li>Try all three scenarios to see how the decision process adapts to different pest situations.</li>
+<li>Note which paths lead to green (low impact) versus red (high impact) ecological outcomes.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/ipm-decision-tree/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"600px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / AP Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Apply the IPM decision-making hierarchy to determine appropriate pest control strategies</li>
+<li>Evaluate the ecological trade-offs of cultural, biological, and chemical pest controls</li>
+<li>Compare IPM approaches across different pest scenarios and crop systems</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of agricultural ecosystems</li>
+<li>Familiarity with types of pests (insects, weeds) and their impacts on crops</li>
+<li>Introduction to the concept of sustainable agriculture</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li>NGSS HS-LS2-7: Design, evaluate, and refine a solution for reducing the impacts of human activities on the environment</li>
+<li>AP Environmental Science: Topic 5.4 -- Integrated Pest Management</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Warm-Up</strong> (5 min): Ask students: "If you found aphids on your tomato plants, what would you do first?" Discuss responses and introduce the concept that IPM follows a specific hierarchy of responses.</p>
+</li>
+<li>
+<p><strong>Guided Exploration</strong> (15 min): Students work through the aphids scenario together as a class. At each decision node, pause and discuss why the flowchart prioritizes monitoring and cultural controls before chemical interventions. Have students note the cost and ecological impact at each terminal node.</p>
+</li>
+<li>
+<p><strong>Independent Investigation</strong> (15 min): Students work in pairs to explore the corn borer and weeds in wheat scenarios. They record in a comparison table: (a) which control strategies are available for each pest, (b) the ecological impact ratings of different paths, and (c) which path they would recommend and why.</p>
+</li>
+<li>
+<p><strong>Synthesis Discussion</strong> (10 min): Groups share their recommended paths. Discuss: Why does IPM use a hierarchical approach? What are the long-term consequences of skipping directly to chemical controls? How does the best strategy differ depending on the pest type?</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Explain why IPM uses a hierarchical decision process rather than immediately applying pesticides.</li>
+<li>For a new pest scenario (Japanese beetles in a rose garden), outline the IPM decision steps you would follow and justify each choice.</li>
+<li>Compare the ecological impact ratings of the three scenarios. What patterns do you notice about when chemical controls become necessary?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>EPA. "Integrated Pest Management (IPM) Principles." United States Environmental Protection Agency. <a href="https://www.epa.gov/safepestcontrol/integrated-pest-management-ipm-principles">https://www.epa.gov/safepestcontrol/integrated-pest-management-ipm-principles</a></li>
+<li>Kogan, M. (1998). Integrated Pest Management: Historical Perspectives and Contemporary Developments. <em>Annual Review of Entomology</em>, 43, 243-270.</li>
+<li>Flint, M.L., &amp; Gouveia, P. (2001). <em>IPM in Practice: Principles and Methods of Integrated Pest Management</em>. University of California ANR Publication 3418.</li>
 </ol>
 
 

@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for age structure diagram explorer.">
+        <meta name="description" content="Interpret population pyramids to predict demographic trends for 10 countries with compare mode.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Age Structure Diagram Explorer - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for age structure diagram explorer.">
+        <meta property="og:description" content="Interpret population pyramids to predict demographic trends for 10 countries with compare mode.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/age-structure/age-structure.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Age Structure Diagram Explorer - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for age structure diagram explorer.">
+        <meta name="twitter:description" content="Interpret population pyramids to predict demographic trends for 10 countries with compare mode.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/age-structure/age-structure.png">
       
@@ -1008,9 +1008,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1026,9 +1044,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,74 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This interactive population pyramid explorer lets students compare the age structures of 10 countries representing the full range of global demographic profiles. From Niger's ultra-expansive youth bulge to Japan's inverted aging pyramid, each country illustrates a different stage of the demographic transition.</p>
+<p>The visualization displays classic population pyramids with horizontal bars for male (left, blue) and female (right, pink) populations in 5-year age increments. Animated transitions when switching countries help students see how the pyramid shape changes. A compare mode places two pyramids side-by-side with matched scales, making demographic differences immediately visible. Key statistics including total population, median age, dependency ratio, total fertility rate (TFR), and projected 2050 population appear below each pyramid.</p>
+<p>This supports the Bloom's taxonomy level of <strong>Analyze</strong>, as students must interpret visual patterns in the data and use them to predict future population trends. The reproductive age group (15-49) is highlighted in a darker shade to draw attention to the demographic engine of population change.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Select a country</strong> from the dropdown menu to view its population pyramid</li>
+<li><strong>Observe the pyramid shape</strong>: expansive (wide base = rapid growth), stationary (even sides = stable), or constrictive (narrow base = decline)</li>
+<li><strong>Read the statistics</strong> below the pyramid: population, median age, dependency ratio, TFR, and 2050 projection</li>
+<li><strong>Note the highlighted reproductive age bands</strong> (darker shades for ages 15-49) -- these drive future population growth</li>
+<li><strong>Click "Compare"</strong> to enter side-by-side mode and select a second country from the new dropdown</li>
+<li><strong>Compare two countries</strong> to see how different demographic profiles produce different pyramid shapes on the same scale</li>
+<li><strong>Click "Single"</strong> to return to single-country view</li>
+<li><strong>Watch the animated transitions</strong> when switching countries to see how the bars shift</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/age-structure/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"547px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>15-20 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Interpret age structure diagrams to predict future population trends for different countries</li>
+<li>Classify population pyramids as expansive, stationary, or constrictive</li>
+<li>Compare demographic profiles across countries at different stages of the demographic transition</li>
+<li>Relate total fertility rate and median age to pyramid shape and projected population change</li>
+<li>Explain how the dependency ratio affects a country's economic and social capacity</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Understanding of population growth concepts (birth rate, death rate)</li>
+<li>Basic knowledge of the demographic transition model</li>
+<li>Familiarity with the concept of fertility rate</li>
+<li>Ability to read and interpret bar charts</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li>NGSS HS-LS2-1: Use mathematical and/or computational representations to support explanations of factors that affect carrying capacity</li>
+<li>AP Environmental Science Topic 3.3: Age Structure Diagrams</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Warm-Up</strong> (2-3 min): Show students the Nigeria pyramid and the Japan pyramid side by side. Ask: "Which country is growing faster? How can you tell just from the shape?"</li>
+<li><strong>Guided Exploration</strong> (5-7 min): Walk through four contrasting countries (Nigeria, India, USA, Japan). For each, have students identify the shape type, note the TFR and median age, and predict whether the population will grow or shrink by 2050.</li>
+<li><strong>Independent Investigation</strong> (5-7 min): Students use compare mode to answer: "What makes China's pyramid unusual? How does the UAE's pyramid differ from all others? Why does Germany's pyramid show an immigration bulge?"</li>
+<li><strong>Reflection</strong> (3-5 min): Discuss: "If you were a government planner in Japan, what challenges would this pyramid predict? What about in Nigeria?" Connect age structure to resource needs, healthcare, and education.</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>What does a wide base on a population pyramid indicate about a country's birth rate?</li>
+<li>Compare Nigeria and Japan using the compare mode. List three specific differences in their demographic statistics and explain what each difference means for the country's future.</li>
+<li>China's pyramid shows an unusual constrictive pattern. What policy caused this shape, and what economic challenges does it predict for the next 25 years?</li>
+<li>The UAE has a massive male surplus in the 25-49 age group. What causes this unusual pattern, and why does it result in an extremely low dependency ratio of 18%?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li><a href="https://en.wikipedia.org/wiki/Population_pyramid">Population Pyramid - Wikipedia</a> - Overview of age structure diagrams and demographic interpretation</li>
+<li><a href="https://population.un.org/wpp/">UN World Population Prospects</a> - Source data for global population projections</li>
+<li><a href="https://p5js.org/reference/">p5.js Reference</a> - JavaScript library used for the interactive visualization</li>
 </ol>
 
 

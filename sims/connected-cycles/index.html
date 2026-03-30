@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive vis-network MicroSim for interconnected biogeochemical cycles.">
+        <meta name="description" content="Interactive vis-network diagram showing how the carbon, nitrogen, phosphorus, and water cycles are linked through shared ecological processes like decomposition, runoff, and plant growth.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Interconnected Biogeochemical Cycles - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive vis-network MicroSim for interconnected biogeochemical cycles.">
+        <meta property="og:description" content="Interactive vis-network diagram showing how the carbon, nitrogen, phosphorus, and water cycles are linked through shared ecological processes like decomposition, runoff, and plant growth.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/connected-cycles/connected-cycles.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Interconnected Biogeochemical Cycles - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive vis-network MicroSim for interconnected biogeochemical cycles.">
+        <meta name="twitter:description" content="Interactive vis-network diagram showing how the carbon, nitrogen, phosphorus, and water cycles are linked through shared ecological processes like decomposition, runoff, and plant growth.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/connected-cycles/connected-cycles.png">
       
@@ -1890,9 +1890,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1908,9 +1926,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2988,41 +3024,82 @@
 <h1 id="interconnected-biogeochemical-cycles">Interconnected Biogeochemical Cycles</h1>
 <iframe src="main.html" height="600" width="100%" scrolling="no"></iframe>
 
-<p><a class="md-button md-button--primary" href="main.html">Run the Interconnected Biogeochemical Cycles MicroSim Fullscreen</a>
-<br>
-<a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
+<p><a class="md-button md-button--primary" href="main.html">Run the Interconnected Biogeochemical Cycles MicroSim Fullscreen</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim uses a network graph to reveal the hidden connections between the four major biogeochemical cycles: carbon, nitrogen, phosphorus, and water. Each cycle appears as a large color-coded cluster node, and shared ecological processes -- decomposition, runoff, plant growth, and soil processes -- appear as smaller linking nodes between them. The edge thickness represents the strength of coupling between processes and cycles.</p>
+<p>Clicking any node highlights all of its connections and displays a tooltip explaining the linkage. This makes invisible connections visible: students can see that disrupting the nitrogen cycle (through excessive fertilizer use, for example) ripples through to affect water quality, carbon storage, and phosphorus availability. The network layout reinforces systems thinking by showing that biogeochemical cycles are not isolated loops but deeply interconnected components of a single Earth system.</p>
+<p>The diagram helps students understand why environmental problems are rarely confined to a single cycle. Eutrophication involves nitrogen and phosphorus. Climate change involves carbon and water. Soil degradation affects all four cycles simultaneously. By exploring these connections interactively, students develop the integrative perspective needed for genuine ecological understanding.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Examine the network diagram showing four major biogeochemical cycles as large colored nodes: Carbon (gray), Nitrogen (blue), Phosphorus (orange), and Water (light blue).</li>
+<li>Identify the smaller linking nodes between cycles representing shared processes: Decomposition, Runoff, Plant Growth, and Soil Processes.</li>
+<li><strong>Click any node</strong> to highlight all of its connections and read a detailed tooltip explaining how it links multiple cycles.</li>
+<li>Observe <strong>edge thickness</strong> -- thicker edges indicate stronger coupling between processes and cycles.</li>
+<li>Trace how a disruption to one cycle would propagate: click on Nitrogen, then follow its connections to understand how excess nitrogen affects Water (through runoff) and Carbon (through plant growth changes).</li>
+<li>Click <strong>Reset View</strong> to return the diagram to its default state after exploring connections.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/connected-cycles/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"600px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / Biology)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>40 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Identify linkages between the carbon, nitrogen, phosphorus, and water cycles</li>
+<li>Explain how disrupting one biogeochemical cycle affects others through shared processes</li>
+<li>Analyze the role of decomposition, runoff, plant growth, and soil processes as connecting mechanisms</li>
+<li>Predict the cascading effects of human activities on interconnected biogeochemical cycles</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of each individual biogeochemical cycle (carbon, nitrogen, phosphorus, water)</li>
+<li>Familiarity with processes such as decomposition, photosynthesis, and nutrient runoff</li>
+<li>Understanding of the concept of a cycle in Earth science</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-ESS2-6</strong>: Develop a quantitative model to describe the cycling of carbon among the hydrosphere, atmosphere, geosphere, and biosphere.</li>
+<li><strong>NGSS HS-LS2-4</strong>: Use mathematical representations to support claims for the cycling of matter and flow of energy among organisms in an ecosystem.</li>
+<li><strong>AP Environmental Science</strong>: Topic 1.3 -- Biogeochemical Cycles</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Engage</strong> (5 min): Ask students to list the four major biogeochemical cycles they have studied. Then ask: "Are these cycles independent or connected?" Have students predict at least one connection between any two cycles before exploring the diagram.</p>
+</li>
+<li>
+<p><strong>Explore</strong> (15 min): Students explore the network diagram systematically. For each of the four shared processes (Decomposition, Runoff, Plant Growth, Soil Processes), students click the node and record which cycles it connects and how. Students create a connections matrix showing which cycles share which processes. Then students choose one cycle and trace all its connections to predict what would happen if that cycle were disrupted.</p>
+</li>
+<li>
+<p><strong>Explain</strong> (10 min): Class discussion using real-world examples. How does excessive nitrogen fertilizer (disrupting the nitrogen cycle) lead to ocean dead zones (affecting the water and phosphorus cycles)? How does deforestation (affecting the carbon cycle) alter water cycling through reduced transpiration? How does soil degradation (soil processes node) simultaneously affect all four cycles? Introduce the concept that Earth's biogeochemistry is a single integrated system.</p>
+</li>
+<li>
+<p><strong>Extend</strong> (10 min): Students select one environmental problem (eutrophication, deforestation, ocean acidification, or soil erosion) and write a "cascade analysis" tracing how it propagates through the network of connected cycles. Students must identify at least three connections from the diagram and explain the mechanism of each.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Name two biogeochemical cycles that are connected through the process of decomposition. Explain the specific connection.</li>
+<li>A farmer applies excessive nitrogen fertilizer. Using the network diagram, trace how this disruption cascades to at least two other biogeochemical cycles.</li>
+<li>Why is plant growth considered a linking process between the carbon, nitrogen, phosphorus, and water cycles? What does each cycle contribute to plant growth?</li>
+<li>If climate change warms soils and increases decomposition rates, predict the effects on the carbon and nitrogen cycles using evidence from the diagram.</li>
+<li>Explain why environmental problems are rarely confined to a single biogeochemical cycle. Use a specific example from the diagram.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Schlesinger, W. H., &amp; Bernhardt, E. S. (2020). <em>Biogeochemistry: An Analysis of Global Change</em> (4th ed.). Academic Press.</li>
+<li>Falkowski, P., et al. (2000). The Global Carbon Cycle: A Test of Our Knowledge of Earth as a System. <em>Science</em>, 290(5490), 291-296.</li>
+<li>Gruber, N., &amp; Galloway, J. N. (2008). An Earth-System Perspective of the Global Nitrogen Cycle. <em>Nature</em>, 451, 293-296.</li>
 </ol>
 
 

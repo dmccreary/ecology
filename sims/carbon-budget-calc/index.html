@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for ecosystem carbon budget calculator.">
+        <meta name="description" content="Calculate GPP, NPP, and NEP for different ecosystems and determine carbon sink or source status.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Ecosystem Carbon Budget Calculator - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for ecosystem carbon budget calculator.">
+        <meta property="og:description" content="Calculate GPP, NPP, and NEP for different ecosystems and determine carbon sink or source status.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/carbon-budget-calc/carbon-budget-calc.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Ecosystem Carbon Budget Calculator - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for ecosystem carbon budget calculator.">
+        <meta name="twitter:description" content="Calculate GPP, NPP, and NEP for different ecosystems and determine carbon sink or source status.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/carbon-budget-calc/carbon-budget-calc.png">
       
@@ -1386,9 +1386,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1404,9 +1422,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,78 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This interactive calculator lets students explore the carbon budget of five ecosystem types by adjusting Gross Primary Productivity (GPP), autotroph respiration (Ra), and heterotroph respiration (Rh). The simulation calculates Net Primary Productivity (NPP = GPP - Ra) and Net Ecosystem Productivity (NEP = NPP - Rh) in real time, with a color-coded indicator showing whether the ecosystem is a carbon sink (green, NEP &gt; 0) or carbon source (red, NEP &lt; 0).</p>
+<p>Students can select from Tropical Forest, Temperate Forest, Grassland, Ocean, and Tundra, each with realistic default parameter values. Disturbance buttons (Fire, Drought, Warming) modify the parameters realistically, showing how environmental changes shift the carbon balance. A bar chart visualizes the relative sizes of GPP, Ra, Rh, and NEP.</p>
+<p>This supports the Bloom's taxonomy level of <strong>Evaluate</strong>, as students must calculate productivity values, determine carbon balance status, and assess how changing conditions affect whether an ecosystem absorbs or releases carbon -- connecting abstract productivity concepts to real-world climate implications.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Select an ecosystem</strong> from the dropdown (Tropical Forest, Temperate Forest, Grassland, Ocean, or Tundra) to load realistic default values</li>
+<li><strong>Adjust the three sliders</strong>: GPP (total photosynthesis), Ra (plant respiration), and Rh (decomposer/animal respiration)</li>
+<li><strong>Read the real-time calculations</strong>: NPP = GPP - Ra, NEP = NPP - Rh</li>
+<li><strong>Watch the color indicator</strong>: green = carbon sink (absorbing CO2), red = carbon source (releasing CO2), yellow = near balance</li>
+<li><strong>Click disturbance buttons</strong> to see how Fire, Drought, or Warming affect the carbon budget:<ul>
+<li><strong>Fire</strong>: reduces GPP (burned vegetation) and increases Rh temporarily (decomposition of dead material)</li>
+<li><strong>Drought</strong>: reduces GPP (less water for photosynthesis)</li>
+<li><strong>Warming</strong>: increases both Ra and Rh (higher metabolic rates)</li>
+</ul>
+</li>
+<li><strong>Compare ecosystems</strong> by switching between types and noting how their default carbon budgets differ</li>
+<li><strong>Click Reset</strong> to restore the default values for the selected ecosystem</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/carbon-budget-calc/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"452px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>15-20 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Calculate GPP, NPP, and NEP for different ecosystem scenarios</li>
+<li>Determine whether an ecosystem is a carbon sink or source based on its carbon budget</li>
+<li>Predict how disturbances (fire, drought, warming) shift the carbon balance</li>
+<li>Compare carbon budgets across five major ecosystem types</li>
+<li>Explain the relationship between ecosystem productivity and climate change</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Understanding of photosynthesis and cellular respiration</li>
+<li>Knowledge of the carbon cycle at a basic level</li>
+<li>Familiarity with the concepts of producers and decomposers</li>
+<li>Understanding that CO2 is a greenhouse gas</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li>NGSS HS-LS2-5: Develop a model to illustrate the role of photosynthesis and cellular respiration in the cycling of carbon</li>
+<li>AP Environmental Science Topic 1.6: Primary Productivity</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Warm-Up</strong> (2-3 min): Ask: "Is a forest always absorbing CO2? Can a forest ever release more CO2 than it absorbs?" Record predictions.</li>
+<li><strong>Guided Exploration</strong> (5-7 min): Select Tropical Forest and review the default values. Walk through the calculation: GPP (3000) - Ra (1500) = NPP (1500); NPP (1500) - Rh (1200) = NEP (300). Ask: "Is this a sink or source? How much carbon per year?" Then click "Fire" and observe the shift.</li>
+<li><strong>Independent Investigation</strong> (5-7 min): Students compare all five ecosystems and record which has the highest NEP (largest sink), which is closest to balance, and which disturbance is most damaging to each. Challenge: "Can you use the sliders to turn a tropical forest into a carbon source? What conditions would cause this in the real world?"</li>
+<li><strong>Reflection</strong> (3-5 min): Discuss: "If global warming increases Rh in all ecosystems, what happens to the global carbon balance? How could this create a positive feedback loop that accelerates climate change?"</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Define GPP, NPP, and NEP. Write the equations that relate them.</li>
+<li>A temperate forest has GPP = 1800, Ra = 900, and Rh = 700. Calculate NPP and NEP. Is this forest a carbon sink or source?</li>
+<li>Using the simulation, apply the "Warming" disturbance to a tundra ecosystem. Explain why warming is particularly dangerous for tundra carbon budgets and how this relates to permafrost thawing.</li>
+<li>Climate scientists warn about a "tipping point" where forests switch from carbon sinks to carbon sources. Using the calculator, demonstrate how increasing temperature (which raises Ra and Rh) could cause this switch. At what point does NEP become negative for a tropical forest?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li><a href="https://en.wikipedia.org/wiki/Net_primary_productivity">Net Primary Productivity - Wikipedia</a> - Overview of productivity concepts and global patterns</li>
+<li><a href="https://en.wikipedia.org/wiki/Carbon_cycle">Carbon Cycle - Wikipedia</a> - How carbon moves through Earth's systems</li>
+<li><a href="https://p5js.org/reference/">p5.js Reference</a> - JavaScript library used for the interactive calculator</li>
 </ol>
 
 

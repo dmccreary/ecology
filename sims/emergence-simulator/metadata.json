@@ -1,8 +1,8 @@
 {
   "title": "Emergence Simulator",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for emergence simulator",
+  "subject": "Ecology",
+  "description": "Interactive flocking simulation demonstrating how complex system-level patterns emerge from simple individual rules using the boids algorithm",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,56 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Emergence Simulator",
+    "subjectArea": "Environmental Science",
+    "topic": "Emergence and Self-Organization",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Explain how complex system-level patterns emerge from simple individual rules",
+      "Identify the three boid rules (separation, alignment, cohesion) and describe each one's effect",
+      "Connect the concept of emergence to real ecological systems"
     ],
     "bloomsTaxonomy": "Understand",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Basic understanding of ecosystems and organism interactions",
+      "Familiarity with the idea that organisms respond to local environmental cues"
+    ],
+    "standards": [
+      "NGSS HS-LS2-6",
+      "NGSS HS-ESS3-6"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 442
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Interactive exploration with systematic variable testing",
+    "keyQuestions": [
+      "How do thousands of birds fly in formation without a leader?",
+      "What happens when you remove one of the three rules?",
+      "Can you find other ecological examples where simple rules produce complex patterns?",
+      "Why is emergence important for understanding ecosystems?"
+    ],
+    "commonMisconceptions": [
+      "Students often assume flocking requires a leader or central control",
+      "Students may think emergence means randomness rather than organized complexity from simple rules",
+      "Students may not connect emergence in animal behavior to emergence in ecosystem processes like nutrient cycling"
+    ],
+    "assessmentOpportunities": [
+      "Students record observations in a table for different slider combinations and explain patterns",
+      "Students write a paragraph connecting emergence to a real ecological system",
+      "Class discussion identifying emergence in non-movement ecological examples"
+    ]
   },
   "chapter": "13-systems-thinking"
 }

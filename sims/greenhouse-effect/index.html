@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for greenhouse effect energy balance.">
+        <meta name="description" content="Adjust CO2 and methane concentrations to see how greenhouse gases trap infrared radiation and raise Earth's surface temperature.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Greenhouse Effect Energy Balance - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for greenhouse effect energy balance.">
+        <meta property="og:description" content="Adjust CO2 and methane concentrations to see how greenhouse gases trap infrared radiation and raise Earth's surface temperature.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/greenhouse-effect/greenhouse-effect.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Greenhouse Effect Energy Balance - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for greenhouse effect energy balance.">
+        <meta name="twitter:description" content="Adjust CO2 and methane concentrations to see how greenhouse gases trap infrared radiation and raise Earth's surface temperature.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/greenhouse-effect/greenhouse-effect.png">
       
@@ -1722,9 +1722,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1740,9 +1758,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,79 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This simulation models Earth's energy balance by showing how incoming solar radiation interacts with greenhouse gas molecules in the atmosphere. Yellow photon arrows represent incoming sunlight, red arrows show infrared radiation emitted from Earth's surface, and orange arrows depict infrared energy re-emitted by greenhouse gas molecules back toward the surface. A temperature gauge displays the resulting surface temperature in real time.</p>
+<p>Two sliders let you control CO2 concentration (from pre-industrial 280 ppm to an extreme 1000 ppm) and methane concentration (from pre-industrial to 3x current levels). As you increase greenhouse gas levels, more infrared radiation is trapped and re-emitted downward, and the temperature gauge rises accordingly. Preset buttons let you quickly compare pre-industrial conditions with current atmospheric concentrations.</p>
+<p>This interactive approach lets students experiment with the mechanism of the greenhouse effect rather than simply reading about it. By manipulating gas concentrations and observing immediate temperature responses, students build intuition for why even small changes in atmospheric composition can have significant climate effects.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Start at pre-industrial levels</strong> by clicking the "Pre-Industrial" button. Observe the baseline temperature and radiation balance.</li>
+<li><strong>Increase CO2</strong> using the slider and watch how additional greenhouse gas molecules trap more infrared radiation, raising surface temperature.</li>
+<li><strong>Increase methane</strong> using the second slider and observe its additional warming effect.</li>
+<li><strong>Click "Current"</strong> to see today's greenhouse gas levels and compare the temperature to pre-industrial conditions.</li>
+<li><strong>Push to extremes</strong> by sliding both controls to maximum and observe the temperature response at very high concentrations.</li>
+<li><strong>Compare scenarios</strong> by switching between pre-industrial and current presets to see the magnitude of human-caused warming.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/greenhouse-effect/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"422px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / Earth Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Demonstrate how increasing greenhouse gas concentrations shift Earth's energy balance and raise surface temperatures.</li>
+<li>Explain the mechanism by which greenhouse gases trap outgoing infrared radiation.</li>
+<li>Compare the relative warming effects of CO2 and methane.</li>
+<li>Distinguish between the natural greenhouse effect and the enhanced greenhouse effect caused by human emissions.</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Understanding of electromagnetic radiation (visible light vs. infrared)</li>
+<li>Basic knowledge of Earth's atmosphere and its composition</li>
+<li>Familiarity with the concept of energy balance (energy in vs. energy out)</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-ESS2-4</strong>: Use a model to describe how variations in the flow of energy into and out of Earth's systems result in changes in climate.</li>
+<li><strong>NGSS HS-ESS3-5</strong>: Analyze geoscience data and the results from global climate models to make an evidence-based forecast of the current rate of global or regional climate change.</li>
+<li><strong>AP Environmental Science</strong>: Topic 15.3 - The Greenhouse Effect; Topic 15.4 - Increases in Greenhouse Gases</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Warm-Up</strong> (5 min): Ask students: "If the greenhouse effect is natural, why is it a problem?" Collect responses. Show the simulation at pre-industrial levels and identify the three types of radiation arrows.</p>
+</li>
+<li>
+<p><strong>Exploration</strong> (10 min): Students set sliders to pre-industrial levels and record the temperature. They then slowly increase CO2 to current levels (420 ppm) and record the new temperature. They reset and do the same for methane alone. Which gas caused more warming per unit change?</p>
+</li>
+<li>
+<p><strong>Guided Investigation</strong> (15 min): Students complete a data table recording temperature at five CO2 levels (280, 400, 560, 750, 1000 ppm) with methane held constant. They plot a graph of CO2 vs. temperature. Is the relationship linear? Students then explore: what happens when both gases increase simultaneously? Is the combined effect additive?</p>
+</li>
+<li>
+<p><strong>Synthesis and Discussion</strong> (15 min): Class discussion: Why is methane a more potent greenhouse gas per molecule even though CO2 gets more attention? How does the simulation help explain the difference between the natural greenhouse effect (keeps Earth habitable at ~15 degrees C) and the enhanced greenhouse effect (additional warming from human emissions)? Students write a paragraph explaining the greenhouse effect mechanism to a younger student.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Explain the step-by-step mechanism by which increasing CO2 leads to higher surface temperatures. Use the terms "infrared radiation," "absorption," and "re-emission."</li>
+<li>At pre-industrial CO2 levels, Earth's average surface temperature is about 15 degrees C. What would happen to this temperature if there were no greenhouse gases at all?</li>
+<li>Methane has a much shorter atmospheric lifetime than CO2 (about 12 years vs. centuries). Why is reducing methane emissions considered a quick win for slowing climate change?</li>
+<li>A classmate says "the greenhouse effect is bad." Using this simulation, explain why this statement is an oversimplification.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>IPCC. (2021). <em>Climate Change 2021: The Physical Science Basis</em>. Contribution of Working Group I to the Sixth Assessment Report.</li>
+<li>Pierrehumbert, R. T. (2010). <em>Principles of Planetary Climate</em>. Cambridge University Press.</li>
+<li>NASA. (2024). The Greenhouse Effect. NASA Climate Change. https://climate.nasa.gov</li>
 </ol>
 
 

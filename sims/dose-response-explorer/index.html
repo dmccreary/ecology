@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for interactive dose-response curve explorer.">
+        <meta name="description" content="Interactive p5.js MicroSim for exploring dose-response curves, LD50 values, threshold effects, and toxicological principles with multiple substances.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Interactive Dose-Response Curve Explorer - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for interactive dose-response curve explorer.">
+        <meta property="og:description" content="Interactive p5.js MicroSim for exploring dose-response curves, LD50 values, threshold effects, and toxicological principles with multiple substances.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/dose-response-explorer/dose-response-explorer.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Interactive Dose-Response Curve Explorer - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for interactive dose-response curve explorer.">
+        <meta name="twitter:description" content="Interactive p5.js MicroSim for exploring dose-response curves, LD50 values, threshold effects, and toxicological principles with multiple substances.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/dose-response-explorer/dose-response-explorer.png">
       
@@ -1827,9 +1827,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1845,9 +1863,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,80 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim allows students to explore one of the fundamental concepts in toxicology: the dose-response relationship. A coordinate plane displays dose on a logarithmic x-axis (mg/kg) against percent response on a linear y-axis (0-100%), with a sigmoid curve showing how biological response increases with dose for a selected substance.</p>
+<p>Students can choose from several substances including DDT, caffeine, nicotine, aspirin, table salt, and ethanol, each with different LD50 values and curve shapes. A draggable vertical marker lets students read the predicted response at any dose. The LD50 point -- the dose that produces a 50% response -- is highlighted with a dashed red horizontal line, making this critical toxicological value easy to identify and compare across substances.</p>
+<p>A threshold mode toggle demonstrates how some toxicological responses remain at zero until a critical dose is reached, then rise sharply. Sliders control curve steepness and threshold position, helping students build intuition about how different substances affect organisms in fundamentally different ways.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Select a substance from the dropdown menu to view its dose-response curve.</li>
+<li>Drag the vertical marker line across the graph to read the predicted response at different doses.</li>
+<li>Locate the LD50 value where the curve crosses the 50% response line (dashed red).</li>
+<li>Compare curves for different substances to see which are more toxic (lower LD50).</li>
+<li>Toggle the threshold mode checkbox to see how threshold effects differ from standard sigmoid curves.</li>
+<li>Adjust the steepness slider to see how curve shape affects the dose range over which response changes rapidly.</li>
+<li>Adjust the threshold slider (in threshold mode) to explore how the critical dose affects the response pattern.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/dose-response-explorer/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"422px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Interpret dose-response curves to identify LD50 values and threshold effects</li>
+<li>Compare the relative toxicity of different substances using LD50 values</li>
+<li>Explain the concept "the dose makes the poison" using evidence from dose-response curves</li>
+<li>Distinguish between threshold and non-threshold dose-response models</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of graphs with logarithmic scales</li>
+<li>Introduction to the concept of toxicity</li>
+<li>Familiarity with concentration and dosage units</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-LS2-7</strong>: Design, evaluate, and refine a solution for reducing the impacts of human activities on the environment</li>
+<li><strong>AP Environmental Science</strong>: Topic 8.9 -- Dose-Response Relationships</li>
+<li><strong>NGSS HS-ETS1-4</strong>: Use a computer simulation to model the impact of proposed solutions</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Warm-Up</strong> (5 min): Present the Paracelsus quote: "The dose makes the poison." Ask students to explain what this means using everyday examples (water, vitamins, caffeine). Can something harmless in small amounts become dangerous?</p>
+</li>
+<li>
+<p><strong>Interactive Exploration</strong> (15 min): Students explore the MicroSim and complete a data table recording the LD50, curve steepness, and relative toxicity ranking for each available substance. They rank substances from most to least toxic and write one sentence explaining their ranking method.</p>
+</li>
+<li>
+<p><strong>Guided Analysis</strong> (15 min): Students toggle to threshold mode and compare it to the standard sigmoid curve. In pairs, they discuss: "Why does the existence of threshold effects matter for setting environmental safety standards?" They draw both curve types in their notebooks and label key features (LD50, threshold, steep region, plateau).</p>
+</li>
+<li>
+<p><strong>Application Activity</strong> (10 min): Present a scenario: "A factory releases a chemical with an LD50 of 500 mg/kg in fish. The current concentration in a nearby river is 2 mg/kg. Should residents be concerned?" Students use the MicroSim to model this scenario and write a brief risk assessment.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Substance A has an LD50 of 50 mg/kg and Substance B has an LD50 of 5,000 mg/kg. Which is more toxic? Explain your reasoning.</li>
+<li>What does the steepness of a dose-response curve tell you about a substance's effects? Why might a steep curve be more dangerous than a gradual one?</li>
+<li>Explain why threshold effects are important for setting safe exposure limits for pollutants in drinking water.</li>
+<li>A pesticide has an LD50 of 100 mg/kg in rats. Does this mean a dose of 99 mg/kg is safe? Explain using what you know about dose-response curves.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Casarett, L.J. &amp; Doull, J. (2013). <em>Casarett and Doull's Toxicology: The Basic Science of Poisons</em>. 8th ed. McGraw-Hill.</li>
+<li>EPA. "Basics of Dose-Response." <a href="https://www.epa.gov/risk/dose-response">https://www.epa.gov/risk/dose-response</a></li>
+<li>Klaassen, C.D. (2019). <em>Casarett and Doull's Toxicology</em>. McGraw-Hill Education.</li>
 </ol>
 
 

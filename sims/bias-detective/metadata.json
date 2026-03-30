@@ -1,8 +1,8 @@
 {
   "title": "Cognitive Bias Detective",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for cognitive bias detective",
+  "subject": "Ecology",
+  "description": "Gamified simulation for detecting cognitive biases and logical fallacies in environmental arguments across three difficulty levels",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,61 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Cognitive Bias Detective",
+    "subjectArea": "Environmental Science",
+    "topic": "Cognitive Biases in Environmental Arguments",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Detect cognitive biases and logical fallacies in environmental arguments",
+      "Explain how each bias type distorts reasoning about ecological issues",
+      "Distinguish between valid scientific arguments and flawed reasoning",
+      "Apply critical thinking skills to evaluate real-world environmental media"
     ],
     "bloomsTaxonomy": "Evaluate",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Basic understanding of environmental issues",
+      "Familiarity with argument and evidence concepts",
+      "Understanding of the difference between opinion and scientific evidence"
+    ],
+    "standards": [
+      "NGSS HS-ETS1-3",
+      "AP Environmental Science: Science Practices"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 542
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js"
+    ],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Gamified critical thinking practice with progressive difficulty",
+    "keyQuestions": [
+      "Which cognitive biases are most common in environmental media?",
+      "How can you distinguish between a valid appeal to scientific consensus and an appeal to authority?",
+      "Why is false balance particularly harmful in science reporting?",
+      "How do your own biases affect how you interpret environmental claims?",
+      "What strategies can you use to evaluate environmental claims more objectively?"
+    ],
+    "commonMisconceptions": [
+      "Natural always means safe or better (the appeal to nature fallacy)",
+      "Giving equal time to both sides is always fair (false balance ignores scientific consensus)",
+      "If an argument attacks a person it must be wrong -- but ad hominem goes both ways; attacking the person does not address the argument"
+    ],
+    "assessmentOpportunities": [
+      "Have students identify biases in real environmental news articles",
+      "Ask students to rewrite a biased claim as a fair, evidence-based argument",
+      "Challenge students to create their own biased claim cards for classmates to detect"
+    ]
   },
   "chapter": "17-evaluating-environmental-claims"
 }

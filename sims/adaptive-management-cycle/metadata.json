@@ -1,8 +1,8 @@
 {
   "title": "Adaptive Management Cycle",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for adaptive management cycle",
+  "subject": "Ecology",
+  "description": "Interactive simulation of the six-step adaptive management cycle with three ecological scenarios and decision-based branching",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,60 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Environmental Science",
     "topic": "Adaptive Management Cycle",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Implement the adaptive management cycle for an ecological management scenario",
+      "Identify the six steps of adaptive management and explain the purpose of each",
+      "Analyze how decisions at one step cascade through subsequent steps",
+      "Evaluate trade-offs between ecological effectiveness, cost, and social acceptance"
     ],
     "bloomsTaxonomy": "Apply",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Understanding of basic ecological concepts",
+      "Familiarity with feedback loops",
+      "Basic knowledge of conservation challenges"
+    ],
+    "standards": [
+      "NGSS HS-LS2-7",
+      "AP Environmental Science Topic 9.7"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 482
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js"
+    ],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Scenario-based decision making with iterative learning cycles",
+    "keyQuestions": [
+      "Why does ecological management require multiple cycles rather than a single plan?",
+      "How do monitoring data inform adjustments in the next cycle?",
+      "What trade-offs exist between aggressive intervention and cautious approaches?",
+      "How does uncertainty in ecosystems make adaptive management necessary?"
+    ],
+    "commonMisconceptions": [
+      "Ecological management is a one-time fix (it requires ongoing cycles of learning)",
+      "More aggressive interventions always produce better results (they often have unintended consequences)",
+      "Monitoring is optional or just a formality (it is the key learning step that drives adaptation)"
+    ],
+    "assessmentOpportunities": [
+      "Compare outcomes from different decision paths through the same scenario",
+      "Ask students to design their own adaptive management plan for a local ecological issue",
+      "Have students explain how Cycle 2 should differ from Cycle 1 based on monitoring data"
+    ]
   },
   "chapter": "13-systems-thinking"
 }

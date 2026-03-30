@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for soil horizons and texture explorer.">
+        <meta name="description" content="Interactive p5.js MicroSim with split-screen soil profile horizons and texture triangle for classifying soil types.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Soil Horizons and Texture Explorer - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for soil horizons and texture explorer.">
+        <meta property="og:description" content="Interactive p5.js MicroSim with split-screen soil profile horizons and texture triangle for classifying soil types.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/soil-explorer/soil-explorer.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Soil Horizons and Texture Explorer - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for soil horizons and texture explorer.">
+        <meta name="twitter:description" content="Interactive p5.js MicroSim with split-screen soil profile horizons and texture triangle for classifying soil types.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/soil-explorer/soil-explorer.png">
       
@@ -2331,9 +2331,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2349,9 +2367,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,9 +3028,19 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim provides a split-screen interactive tool for exploring two related but distinct soil science concepts. The left panel displays a cross-section soil profile showing all five major horizons (O, A, B, C, and R) with realistic colors and textures. Hovering over each horizon reveals its description, typical depth, composition, and ecological role. Animated earthworms, roots, and fungi appear at appropriate depths.</p>
+<p>The right panel features an interactive soil texture triangle. Three sliders for sand, silt, and clay percentages (constrained to sum to 100%) move a dot on the triangle, showing the current soil classification in real time. The classification name (sandy loam, silty clay, etc.) updates dynamically, along with descriptions of that soil type's drainage characteristics, nutrient retention capacity, and best agricultural uses.</p>
+<p>By combining both concepts in one tool, students understand that soil structure (horizons) and composition (texture) work together to determine soil properties. This foundational knowledge is essential for understanding nutrient cycling, water filtration, plant ecology, and land management.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Left panel</strong>: Hover over each colored layer in the soil profile to see the horizon name, depth range, composition, and ecological role.</li>
+<li>Observe the animated organisms (earthworms, roots, fungi) at their characteristic depths.</li>
+<li><strong>Right panel</strong>: Adjust the <strong>Sand, Silt, and Clay sliders</strong> to change the soil composition.</li>
+<li>Watch the dot move on the texture triangle as you adjust the proportions.</li>
+<li>Read the soil classification name and description that update in real time.</li>
+<li>Try to find specific soil types: What slider combination gives you "loam"? What about "clay"?</li>
+<li>Notice how the sliders are constrained to always sum to 100%.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -3007,22 +3053,55 @@
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / AP Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Classify soil types using the texture triangle and identify soil horizons in a profile diagram.</li>
+<li>Describe the composition and ecological role of each soil horizon (O, A, B, C, R).</li>
+<li>Explain how soil texture (sand, silt, clay proportions) affects drainage, nutrient retention, and plant growth.</li>
+<li>Connect soil properties to ecosystem services and agricultural productivity.</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of weathering and erosion processes</li>
+<li>Familiarity with the rock cycle</li>
+<li>Understanding that soil is a non-renewable resource on human timescales</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS ESS2.A</strong>: Earth's Materials and Systems</li>
+<li><strong>NGSS ESS3.A</strong>: Natural Resources</li>
+<li><strong>AP Environmental Science</strong>: Topic 4.2 - Soil Formation and Erosion; Topic 5.4 - Soil Composition</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Engage</strong> (5 min): Bring in (or show images of) three soil samples: sand, clay, and loam. Ask students to predict which would be best for growing crops and why. Introduce the simulation.</p>
+</li>
+<li>
+<p><strong>Explore</strong> (15 min): Students explore the soil profile, hovering over each horizon and recording its name, depth, and role in a data table. Then they move to the texture triangle and find slider combinations for at least five different soil classifications, recording the sand/silt/clay percentages and properties of each.</p>
+</li>
+<li>
+<p><strong>Explain</strong> (15 min): Discuss how soil forms through weathering, biological activity, and time. Explain why the O and A horizons are most ecologically important (organic matter, nutrients, organisms). Connect texture to practical outcomes: sandy soils drain fast but lose nutrients; clay soils hold water but can waterlog roots; loam is the agricultural ideal. Discuss why topsoil loss through erosion is such a serious environmental problem.</p>
+</li>
+<li>
+<p><strong>Extend</strong> (10 min): Students are given a scenario: "A farmer wants to grow tomatoes. The soil test shows 70% sand, 20% silt, 10% clay." They use the texture triangle to classify the soil, describe its properties, and recommend amendments. Then they explain which soil horizon the farmer should be most concerned about preserving.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>List the five soil horizons in order from surface to bedrock and describe the ecological importance of each.</li>
+<li>A soil sample is 40% sand, 40% silt, and 20% clay. Use the texture triangle to classify this soil. Would it be good for agriculture? Why or why not?</li>
+<li>Why is topsoil (A horizon) considered a non-renewable resource on human timescales?</li>
+<li>How does soil texture affect water filtration and nutrient availability for plants?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Brady, N.C. &amp; Weil, R.R. (2016). <em>The Nature and Properties of Soils</em>, 15th ed. Pearson.</li>
+<li>USDA Natural Resources Conservation Service: Soil Texture Calculator. <a href="https://www.nrcs.usda.gov/">https://www.nrcs.usda.gov/</a></li>
+<li>Jenny, H. (1941). <em>Factors of Soil Formation</em>. McGraw-Hill.</li>
 </ol>
 
 

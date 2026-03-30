@@ -1,8 +1,8 @@
 {
   "title": "Greenhouse Effect Energy Balance",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for greenhouse effect energy balance",
+  "subject": "Ecology",
+  "description": "Adjust CO2 and methane concentrations to see how greenhouse gases trap infrared radiation and raise Earth's surface temperature.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,60 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Greenhouse Effect Energy Balance",
+    "subjectArea": "Environmental Science",
+    "topic": "Greenhouse Effect and Energy Balance",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Demonstrate how increasing greenhouse gas concentrations shift Earth's energy balance and raise surface temperatures",
+      "Explain the mechanism by which greenhouse gases trap outgoing infrared radiation",
+      "Compare the relative warming effects of CO2 and methane",
+      "Distinguish between the natural greenhouse effect and the enhanced greenhouse effect"
     ],
     "bloomsTaxonomy": "Apply",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Understanding of electromagnetic radiation",
+      "Basic knowledge of Earth's atmosphere",
+      "Familiarity with energy balance concepts"
+    ],
+    "standards": [
+      "NGSS HS-ESS2-4",
+      "NGSS HS-ESS3-5",
+      "AP Environmental Science Topic 15.3",
+      "AP Environmental Science Topic 15.4"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 422
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Slider-based experimentation with data collection and graphing",
+    "keyQuestions": [
+      "How does the greenhouse effect keep Earth habitable, and what happens when it is enhanced?",
+      "Why does increasing CO2 from 280 to 560 ppm cause a different temperature change than 560 to 840 ppm?",
+      "How do CO2 and methane compare in their warming effect per molecule?",
+      "What would Earth's temperature be without any greenhouse gases?"
+    ],
+    "commonMisconceptions": [
+      "Students often confuse the greenhouse effect with the ozone hole, thinking they are the same problem",
+      "Many students believe the greenhouse effect is entirely harmful rather than a natural process enhanced by human activity",
+      "Students may think CO2 is the only greenhouse gas that matters"
+    ],
+    "assessmentOpportunities": [
+      "Evaluate student-created CO2 vs. temperature graphs for accuracy and interpretation",
+      "Assess written explanations of the greenhouse mechanism using correct scientific terminology",
+      "Compare student predictions about combined gas effects with simulation results"
+    ]
   },
   "chapter": "15-global-climate-change"
 }

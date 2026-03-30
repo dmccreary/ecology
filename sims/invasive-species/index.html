@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for invasive species impact network.">
+        <meta name="description" content="Introduce invasive species into a native food web and watch cascade effects ripple through the ecosystem over simulated time steps.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Invasive Species Impact Network - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for invasive species impact network.">
+        <meta property="og:description" content="Introduce invasive species into a native food web and watch cascade effects ripple through the ecosystem over simulated time steps.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/invasive-species/invasive-species.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Invasive Species Impact Network - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for invasive species impact network.">
+        <meta name="twitter:description" content="Introduce invasive species into a native food web and watch cascade effects ripple through the ecosystem over simulated time steps.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/invasive-species/invasive-species.png">
       
@@ -1911,9 +1911,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1929,9 +1947,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,81 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This simulation displays a native ecosystem food web as a network of species icons connected by feeding relationships. All species start with healthy green population bars. When you click the "Introduce Invasive Species" button, a new species (shown with a red pulsing icon) enters the web and begins disrupting native populations. Over simulated time steps, the invasive species' prey populations shrink, their bars turning yellow then red. Secondary effects cascade outward: predators that depended on those prey also decline, while species released from herbivore pressure may grow unchecked.</p>
+<p>A dropdown selector lets students choose between three invasive species scenarios -- Burmese Python, Zebra Mussel, and Kudzu -- each producing a different cascade pattern through the food web. The Burmese Python targets mammals, reducing prey for native predators. The Zebra Mussel filters plankton, collapsing aquatic food chains. Kudzu smothers native plants, disrupting the base of the web. A "Remove Invasive" button tests whether the ecosystem can recover after the invader is eliminated.</p>
+<p>A timeline at the bottom tracks population changes over time, making it easy to identify which species are affected first, which are affected most severely, and how long the cascade takes to propagate through the entire web.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Observe the healthy food web</strong> with all species showing green population bars at equilibrium.</li>
+<li><strong>Select an invasive species</strong> from the dropdown menu (Burmese Python, Zebra Mussel, or Kudzu).</li>
+<li><strong>Click "Introduce Invasive Species"</strong> and watch the red pulsing icon enter the web.</li>
+<li><strong>Observe the cascade</strong> as prey populations decline (bars turn yellow, then red), predators starve (secondary effects), and released species grow.</li>
+<li><strong>Watch the timeline</strong> at the bottom to track how quickly effects spread through the web.</li>
+<li><strong>Click "Remove Invasive"</strong> to test whether the ecosystem recovers, and note which species bounce back and which do not.</li>
+<li><strong>Compare scenarios</strong> by trying all three invasive species and noting the different cascade patterns each produces.</li>
+<li><strong>Reset</strong> to restore the original ecosystem and try a different scenario.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/invasive-species/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"482px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / Biology)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Assess how the introduction of an invasive species cascades through a native food web.</li>
+<li>Trace direct and indirect effects of invasive species on multiple trophic levels.</li>
+<li>Compare different types of invasive species (predator, filter feeder, plant) and their distinct cascade patterns.</li>
+<li>Evaluate whether ecosystem recovery is possible after invasive species removal.</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Understanding of food webs and trophic levels</li>
+<li>Basic knowledge of population dynamics (growth, decline, carrying capacity)</li>
+<li>Familiarity with the concept of invasive species</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-LS2-2</strong>: Use mathematical representations to support and revise explanations based on evidence about factors affecting biodiversity and populations in ecosystems.</li>
+<li><strong>NGSS HS-LS2-6</strong>: Evaluate claims, evidence, and reasoning that the complex interactions in ecosystems maintain relatively consistent numbers and types of organisms.</li>
+<li><strong>AP Environmental Science</strong>: Topic 5.7 - Invasive Species; Topic 2.5 - Food Webs</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Warm-Up</strong> (5 min): Show photos of three invasive species (Burmese python in the Everglades, zebra mussels on a Great Lakes pier, kudzu covering a forest). Ask students to predict how each might affect native species.</p>
+</li>
+<li>
+<p><strong>Exploration</strong> (10 min): Students introduce the Burmese Python and observe the cascade for at least 30 time steps. They record which species are affected first (direct prey), which are affected second (predators of prey), and any unexpected effects (species that increase). Students sketch the cascade pathway.</p>
+</li>
+<li>
+<p><strong>Guided Investigation</strong> (20 min): Students systematically test all three scenarios. For each, they create a table recording: species directly affected, species indirectly affected, time to first secondary effect, most severely impacted species, and whether the ecosystem recovers after removal. Students compare: Which invasive species caused the most widespread damage? Which cascade was fastest?</p>
+</li>
+<li>
+<p><strong>Synthesis and Discussion</strong> (10 min): Class discussion: Why is it often harder to remove an invasive species than to prevent its introduction? Use the "Remove Invasive" results to discuss ecosystem hysteresis (the system may not return to its original state). Connect to real-world examples: Why have Burmese pythons been so devastating to Everglades mammals?</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>When the Burmese Python is introduced, rabbit and deer populations decline. Explain why fox and wolf populations also decline even though the python does not eat them.</li>
+<li>Compare the cascade patterns of the three invasive species scenarios. Which affects the most trophic levels and why?</li>
+<li>After removing the invasive species, some native populations recover but others do not. Explain why complete ecosystem recovery may be impossible even after the invader is removed.</li>
+<li>A lake manager discovers zebra mussels in a local reservoir. Using evidence from this simulation, write a brief report explaining the potential cascade effects on the lake ecosystem.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Simberloff, D. (2013). <em>Invasive Species: What Everyone Needs to Know</em>. Oxford University Press.</li>
+<li>Dorcas, M. E., et al. (2012). Severe mammal declines coincide with proliferation of invasive Burmese pythons in Everglades National Park. <em>Proceedings of the National Academy of Sciences</em>, 109(7), 2418-2422.</li>
+<li>Strayer, D. L. (2010). Alien species in fresh waters: ecological effects, interactions with other stressors, and prospects for the future. <em>Freshwater Biology</em>, 55, 152-174.</li>
 </ol>
 
 

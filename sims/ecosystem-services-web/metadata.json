@@ -1,8 +1,8 @@
 {
   "title": "Ecosystem Services Web",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for ecosystem services web",
+  "subject": "Ecology",
+  "description": "Interactive vis-network diagram showing the four categories of ecosystem services with interconnections and a Remove Service mode to explore cascading effects.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,62 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Ecosystem Services Web",
+    "subjectArea": "Environmental Science",
+    "topic": "Ecosystem Services and Biodiversity",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Assess the interconnections among the four categories of ecosystem services",
+      "Predict consequences of losing specific ecosystem services",
+      "Evaluate which ecosystem services are most critical based on connectivity",
+      "Explain why Supporting services underpin all other service categories"
     ],
     "bloomsTaxonomy": "Evaluate",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "50 minutes",
+    "prerequisites": [
+      "Understanding of ecosystems and how they function",
+      "Introduction to the concept of ecosystem services",
+      "Basic knowledge of biodiversity"
+    ],
+    "standards": [
+      "NGSS HS-LS2-7",
+      "AP Environmental Science: Topic 2.7",
+      "NGSS HS-ESS3-3"
+    ]
   },
   "technical": {
     "framework": "vis-network",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 600
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "vis-network"
+    ],
     "accessibility": {
       "hasAltText": false,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Network visualization with service removal cascading effects",
+    "keyQuestions": [
+      "Which service category, when removed, causes the most widespread cascade?",
+      "Why are Supporting services considered the foundation of all ecosystem services?",
+      "What happens to food production if pollination is lost?",
+      "How does removing a Regulating service affect Provisioning services?",
+      "Why should ecosystem services be considered in land development decisions?"
+    ],
+    "commonMisconceptions": [
+      "Ecosystem services are independent and can be managed separately",
+      "Cultural services are less important than Provisioning services",
+      "Technology can fully replace lost ecosystem services"
+    ],
+    "assessmentOpportunities": [
+      "Cascade severity ranking across service categories",
+      "Policy recommendation based on service removal analysis",
+      "Written argument for why a specific wetland should be preserved"
+    ]
   },
   "chapter": "06-biodiversity-and-services"
 }

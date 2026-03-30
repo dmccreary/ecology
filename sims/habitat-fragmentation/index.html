@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for habitat fragmentation simulator.">
+        <meta name="description" content="Convert habitat cells to developed land and observe how fragmentation reduces populations, creates edge effects, and isolates wildlife.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Habitat Fragmentation Simulator - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for habitat fragmentation simulator.">
+        <meta property="og:description" content="Convert habitat cells to developed land and observe how fragmentation reduces populations, creates edge effects, and isolates wildlife.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/habitat-fragmentation/habitat-fragmentation.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Habitat Fragmentation Simulator - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for habitat fragmentation simulator.">
+        <meta name="twitter:description" content="Convert habitat cells to developed land and observe how fragmentation reduces populations, creates edge effects, and isolates wildlife.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/habitat-fragmentation/habitat-fragmentation.png">
       
@@ -1743,9 +1743,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1761,9 +1779,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,81 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This simulation presents a top-down view of a 40x40 landscape grid where green cells represent intact habitat and gray cells represent developed land. Orange dots represent individual organisms moving within the habitat. Students can click and drag to "develop" habitat cells, converting them from green to gray, and watch in real time as organisms respond to the shrinking and fragmenting habitat.</p>
+<p>The simulation includes several visualization tools that deepen understanding. The "Show Edge Effects" toggle highlights habitat cells near developed edges in lighter green, revealing how much interior habitat is lost even when the total area looks large. The "Show Connectivity" toggle visualizes which habitat fragments remain connected, helping students see isolation patterns. A corridor tool lets students draw thin habitat strips between fragments to test whether wildlife corridors can restore connectivity and slow population decline.</p>
+<p>Preset scenarios such as "Road through forest," "Suburban sprawl," and "Agricultural mosaic" demonstrate common real-world fragmentation patterns. A population graph tracks organisms over time, making the relationship between fragmentation and population decline visible and measurable.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Observe the initial state</strong> of continuous habitat with a healthy population of organisms moving freely.</li>
+<li><strong>Click and drag</strong> on the grid to develop habitat cells. Watch how organisms in affected areas respond.</li>
+<li><strong>Try preset scenarios</strong> using the dropdown to see common fragmentation patterns (road, sprawl, agriculture).</li>
+<li><strong>Toggle "Show Edge Effects"</strong> to see how habitat quality degrades near developed borders.</li>
+<li><strong>Toggle "Show Connectivity"</strong> to visualize which fragments are still connected to each other.</li>
+<li><strong>Use the corridor tool</strong> to draw narrow habitat strips connecting isolated fragments and observe whether populations recover.</li>
+<li><strong>Adjust simulation speed</strong> with the speed slider to observe long-term population trends.</li>
+<li><strong>Reset</strong> to restore the original continuous habitat and try different development patterns.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/habitat-fragmentation/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"462px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / Biology)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>50 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Demonstrate how fragmentation reduces effective habitat area and isolates populations, leading to local extinctions.</li>
+<li>Explain the concept of edge effects and how they reduce interior habitat quality.</li>
+<li>Evaluate the effectiveness of wildlife corridors in maintaining population connectivity.</li>
+<li>Compare different development patterns and their relative impact on biodiversity.</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Understanding of habitat as the area where an organism lives and finds resources</li>
+<li>Basic knowledge of population ecology (carrying capacity, population decline)</li>
+<li>Familiarity with the concept of biodiversity</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-LS2-2</strong>: Use mathematical representations to support and revise explanations based on evidence about factors affecting biodiversity and populations in ecosystems.</li>
+<li><strong>NGSS HS-LS4-6</strong>: Create or revise a simulation to test a solution to mitigate adverse impacts of human activity on biodiversity.</li>
+<li><strong>AP Environmental Science</strong>: Topic 16.5 - Habitat Fragmentation; Topic 16.9 - Habitat Connectivity</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Warm-Up</strong> (5 min): Show students an aerial photo of a fragmented landscape. Ask: "If you were a small mammal, what problems would you face living here?" Collect responses on the board.</p>
+</li>
+<li>
+<p><strong>Exploration</strong> (15 min): Students start with continuous habitat and make their own development decisions by clicking cells. They record the population count at intervals as they progressively fragment the landscape. After reaching 50% development, they toggle edge effects and calculate how much "effective" interior habitat remains.</p>
+</li>
+<li>
+<p><strong>Guided Investigation</strong> (20 min): Students reset and try each preset scenario. For each, they record: total habitat remaining, number of fragments, largest fragment size, population after 100 time steps. They rank the three scenarios from least to most harmful and explain why. Then students use the corridor tool to connect the two largest fragments in the "Road through forest" scenario and observe whether population stabilizes.</p>
+</li>
+<li>
+<p><strong>Synthesis and Discussion</strong> (10 min): Class discussion: Is it better to have one large habitat patch or several small ones (the SLOSS debate)? How do wildlife corridors help, and what are their limitations? Students write a brief policy recommendation for a town planning board considering a new highway through a forested area.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>You develop 30% of a habitat grid as a single road. Your classmate develops 30% as scattered suburban plots. Which pattern causes more fragmentation and why? Use evidence from the simulation.</li>
+<li>Explain how edge effects reduce the effective size of a habitat fragment even when total habitat area is the same.</li>
+<li>A conservation group proposes building a wildlife corridor between two forest fragments. What factors would determine whether this corridor is effective?</li>
+<li>Using the simulation data, explain why small isolated fragments lose populations faster than one continuous habitat of the same total area.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Fahrig, L. (2003). Effects of habitat fragmentation on biodiversity. <em>Annual Review of Ecology, Evolution, and Systematics</em>, 34(1), 487-515.</li>
+<li>Haddad, N. M., et al. (2015). Habitat fragmentation and its lasting impact on Earth's ecosystems. <em>Science Advances</em>, 1(2), e1500052.</li>
+<li>Wilson, E. O. (2016). <em>Half-Earth: Our Planet's Fight for Life</em>. Liveright Publishing.</li>
 </ol>
 
 

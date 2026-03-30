@@ -1,8 +1,8 @@
 {
   "title": "Interactive Dose-Response Curve Explorer",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for interactive dose-response curve explorer",
+  "subject": "Ecology",
+  "description": "Interactive p5.js MicroSim for exploring dose-response curves, LD50 values, threshold effects, and toxicological principles with multiple substances.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,59 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Interactive Dose-Response Curve Explorer",
+    "subjectArea": "Environmental Science",
+    "topic": "Dose-Response Relationships and Toxicology",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Interpret dose-response curves to identify LD50 values and threshold effects",
+      "Compare relative toxicity of different substances using LD50 values",
+      "Explain the concept 'the dose makes the poison'",
+      "Distinguish between threshold and non-threshold dose-response models"
     ],
     "bloomsTaxonomy": "Understand",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Basic understanding of graphs with logarithmic scales",
+      "Introduction to the concept of toxicity",
+      "Familiarity with concentration and dosage units"
+    ],
+    "standards": [
+      "NGSS HS-LS2-7",
+      "AP Environmental Science: Topic 8.9",
+      "NGSS HS-ETS1-4"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 422
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Interactive parameter manipulation with multiple substances",
+    "keyQuestions": [
+      "Which substance has the lowest LD50 and what does that mean for its toxicity?",
+      "How does curve steepness affect the range of doses that are 'somewhat dangerous'?",
+      "Why do threshold effects matter for setting environmental safety standards?",
+      "Is a dose just below the LD50 truly safe?"
+    ],
+    "commonMisconceptions": [
+      "Natural substances are always safer than synthetic ones",
+      "Any amount of a toxic substance is dangerous (ignoring dose dependence)",
+      "LD50 means that any dose below it is completely safe"
+    ],
+    "assessmentOpportunities": [
+      "Toxicity ranking exercise using LD50 comparisons",
+      "Risk assessment writing for a real-world pollution scenario",
+      "Diagram labeling of dose-response curve features"
+    ]
   },
   "chapter": "12-water-and-land-pollution"
 }

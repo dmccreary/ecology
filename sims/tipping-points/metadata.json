@@ -1,8 +1,8 @@
 {
   "title": "Tipping Points Explorer",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for tipping points explorer",
+  "subject": "Ecology",
+  "description": "Interactive stability landscape showing how increasing global temperature triggers successive climate tipping points with nonlinear system responses and hysteresis",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,59 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Tipping Points Explorer",
+    "subjectArea": "Environmental Science",
+    "topic": "Climate Tipping Points and Nonlinear System Dynamics",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Predict how increasing global temperature activates successive tipping points and explain why the system response is nonlinear",
+      "Define hysteresis and explain why some climate changes are effectively irreversible",
+      "Evaluate the consequences of crossing specific climate tipping points"
     ],
     "bloomsTaxonomy": "Evaluate",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "50 minutes",
+    "prerequisites": [
+      "Basic understanding of climate change and greenhouse effect",
+      "Familiarity with global temperature trends",
+      "Introduction to feedback loops"
+    ],
+    "standards": [
+      "NGSS HS-ESS3-5",
+      "NGSS HS-ESS2-4",
+      "AP Environmental Science Topic 9.5"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 510
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Physical metaphor (ball-on-landscape) with slider-driven exploration",
+    "keyQuestions": [
+      "What does it mean for a climate system to cross a tipping point?",
+      "Why can't we simply reverse climate tipping points by reducing temperature?",
+      "How do positive feedback loops relate to tipping point dynamics?",
+      "Why did the Paris Agreement set temperature targets at 1.5 and 2.0 degrees C?",
+      "How might one tipping point cascade into triggering others?"
+    ],
+    "commonMisconceptions": [
+      "Students often think climate change effects are linear and proportional to temperature increase, when many critical changes are threshold-driven",
+      "Students may believe all climate changes are reversible if we reduce emissions, not understanding hysteresis",
+      "Students sometimes think tipping points only affect one part of the Earth system, not realizing cascading effects"
+    ],
+    "assessmentOpportunities": [
+      "Have students create a tipping point threshold chart recording activation temperatures and consequences",
+      "Ask students to research and present on cascading effects from a specific tipping element",
+      "Students write a policy brief using simulation evidence to argue for specific temperature targets"
+    ]
   },
   "chapter": "15-global-climate-change"
 }

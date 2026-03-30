@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for enso cycle interactive.">
+        <meta name="description" content="Interactive p5.js visualization showing how trade winds, ocean temperatures, and atmospheric circulation interact during Normal, El Nino, and La Nina phases.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="ENSO Cycle Interactive - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for enso cycle interactive.">
+        <meta property="og:description" content="Interactive p5.js visualization showing how trade winds, ocean temperatures, and atmospheric circulation interact during Normal, El Nino, and La Nina phases.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/enso-cycle/enso-cycle.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="ENSO Cycle Interactive - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for enso cycle interactive.">
+        <meta name="twitter:description" content="Interactive p5.js visualization showing how trade winds, ocean temperatures, and atmospheric circulation interact during Normal, El Nino, and La Nina phases.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/enso-cycle/enso-cycle.png">
       
@@ -1554,9 +1554,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1572,9 +1590,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,76 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim presents a cross-section view of the Pacific Ocean from South America (right) to Australia/Indonesia (left), showing the interactions between trade winds, ocean surface temperatures, the thermocline, upwelling, and precipitation patterns during the three phases of the El Nino-Southern Oscillation (ENSO) cycle.</p>
+<p>In Normal conditions, strong trade winds push warm surface water westward, causing upwelling of cold, nutrient-rich water along the South American coast. During El Nino, trade winds weaken or reverse, allowing warm water to flow eastward, suppressing upwelling and shifting rainfall patterns. During La Nina, trade winds strengthen beyond normal, intensifying the typical pattern with even colder eastern Pacific waters and stronger western Pacific rainfall.</p>
+<p>ENSO is one of the most important climate patterns on Earth, affecting weather, agriculture, fisheries, and ecosystems across the globe. Understanding this cycle helps students see how ocean-atmosphere interactions create far-reaching ecological consequences -- from coral bleaching in the Pacific to drought in Australia and flooding in South America.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Observe the Normal state</strong> -- note the direction of trade wind arrows, the warm water (red) pooling in the western Pacific, and upwelling (blue arrows) along South America.</li>
+<li><strong>Click the toggle button</strong> to switch to El Nino and watch the animated transition -- winds weaken, warm water migrates eastward, upwelling stops, and rain shifts.</li>
+<li><strong>Click again for La Nina</strong> -- winds strengthen, cold water dominates the eastern Pacific, and western Pacific rainfall intensifies.</li>
+<li><strong>Use the speed slider</strong> to control the animation rate.</li>
+<li><strong>Hover over regions</strong> to see local effects such as drought, flooding, and temperature changes.</li>
+<li><strong>Compare all three states</strong> by cycling through them and noting the position of the thermocline line.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/enso-cycle/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"422px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / Earth Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ol>
+<li>Explain how trade winds, ocean temperatures, and atmospheric circulation interact during El Nino and La Nina phases.</li>
+<li>Describe the ecological and weather consequences of each ENSO phase in different regions.</li>
+<li>Identify ENSO as a coupled ocean-atmosphere system with global effects.</li>
+</ol>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of ocean currents and wind patterns</li>
+<li>Familiarity with the concept of upwelling</li>
+<li>Knowledge of how ocean temperature affects weather and precipitation</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-ESS2-4</strong>: Use a model to describe how variations in the flow of energy into and out of Earth's systems result in changes in climate.</li>
+<li><strong>NGSS HS-ESS3-5</strong>: Analyze geoscience data to make the claim that one change to Earth's surface can create feedbacks that cause changes to other Earth systems.</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Engage</strong> (5 min): Show a map of global ENSO effects (drought in Australia, flooding in Peru, poor anchovy harvests off South America). Ask students what could connect all these events. Introduce ENSO.</p>
+</li>
+<li>
+<p><strong>Explore</strong> (15 min): Students cycle through all three ENSO states and complete a comparison chart with rows for: Trade Wind Direction/Strength, Eastern Pacific Temperature, Western Pacific Temperature, Thermocline Depth (East), Upwelling (Yes/No), and Rainfall Pattern.</p>
+</li>
+<li>
+<p><strong>Explain</strong> (15 min): Discuss the feedback mechanisms that drive ENSO. Why does weakening of trade winds cause warming, and how does warming further weaken trade winds? Connect to ecological impacts: How does suppressed upwelling affect fisheries? How does coral bleaching relate to El Nino warming?</p>
+</li>
+<li>
+<p><strong>Extend</strong> (10 min): Students research one specific ENSO event (e.g., 1997-98 El Nino) and write a short summary connecting the ocean-atmosphere changes they observed in the simulation to real-world ecological and economic impacts.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>During El Nino, why do anchovy populations crash off the coast of South America?</li>
+<li>How does La Nina intensify the normal Pacific circulation pattern, and what ecological consequences does this have?</li>
+<li>Explain why ENSO is described as a "coupled ocean-atmosphere system" using evidence from the simulation.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Philander, S. G. (1990). <em>El Nino, La Nina, and the Southern Oscillation</em>. Academic Press.</li>
+<li>McPhaden, M. J., Zebiak, S. E., &amp; Glantz, M. H. (2006). "ENSO as an Integrating Concept in Earth Science." <em>Science</em>, 314(5806), 1740-1745.</li>
+<li>NOAA Climate.gov. "ENSO: El Nino-Southern Oscillation." https://www.climate.gov/enso</li>
 </ol>
 
 

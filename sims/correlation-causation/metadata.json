@@ -1,8 +1,8 @@
 {
   "title": "Correlation vs. Causation Challenge",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for correlation vs. causation challenge",
+  "subject": "Ecology",
+  "description": "Interactive quiz-style MicroSim where students classify relationships between correlated environmental variables as causal, reverse causal, confounded, or truly causal.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,59 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Correlation vs. Causation Challenge",
+    "subjectArea": "Environmental Science",
+    "topic": "Correlation vs. Causation in Environmental Data",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Distinguish between correlation and causation in environmental datasets",
+      "Identify confounding variables that may explain observed correlations",
+      "Evaluate the strength of evidence supporting causal claims",
+      "Apply critical thinking skills to environmental data interpretation"
     ],
     "bloomsTaxonomy": "Evaluate",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Basic understanding of scatter plots and trend lines",
+      "Familiarity with variables in scientific studies",
+      "Introduction to the scientific method"
+    ],
+    "standards": [
+      "NGSS HS-ESS3-4",
+      "AP Environmental Science: Science Practices",
+      "Common Core Math HSS-ID.C.9"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 482
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Gamified assessment with immediate feedback",
+    "keyQuestions": [
+      "Does this scatter plot show that one variable causes the other?",
+      "What confounding variables could explain this correlation?",
+      "What evidence would you need to establish true causation?",
+      "How might this correlation be misused in environmental policy arguments?"
+    ],
+    "commonMisconceptions": [
+      "If two variables are correlated, one must cause the other",
+      "A strong correlation is sufficient evidence for causation",
+      "If A happens before B, then A must cause B"
+    ],
+    "assessmentOpportunities": [
+      "Score tracking across 8-10 scenarios measures ability to classify relationships",
+      "Written explanations for each scenario reveal depth of reasoning",
+      "Extension activity applying skills to real news headlines"
+    ]
   },
   "chapter": "14-scientific-literacy"
 }

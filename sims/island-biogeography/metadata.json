@@ -1,8 +1,8 @@
 {
   "title": "Island Biogeography Simulator",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for island biogeography simulator",
+  "subject": "Ecology",
+  "description": "Interactive p5.js simulation demonstrating how island size and distance from mainland affect species richness through immigration and extinction dynamics",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,59 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Island Biogeography Simulator",
+    "subjectArea": "Environmental Science",
+    "topic": "Island Biogeography and Species Richness",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Predict how island size and distance from mainland affect species richness",
+      "Explain the equilibrium theory of island biogeography using immigration and extinction rates",
+      "Apply island biogeography principles to real-world conservation scenarios"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Understanding of species diversity and richness",
+      "Basic knowledge of immigration and extinction",
+      "Familiarity with reading line graphs"
+    ],
+    "standards": [
+      "NGSS HS-LS2-2",
+      "AP Environmental Science Topic 2.3"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 400
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js"
+    ],
     "accessibility": {
       "hasAltText": false,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Interactive parameter exploration with real-time graphing",
+    "keyQuestions": [
+      "Why does a larger island support more species at equilibrium?",
+      "How does distance from the mainland affect the rate of new species arriving?",
+      "What happens to the equilibrium point when you change only one variable?",
+      "How does this model apply to forest fragments surrounded by farmland?"
+    ],
+    "commonMisconceptions": [
+      "Students often think island size only matters because of physical space -- it also affects habitat diversity and population viability",
+      "Many students assume species accumulate indefinitely rather than reaching an equilibrium balance",
+      "Students may not realize that island biogeography applies to any isolated habitat, not just oceanic islands"
+    ],
+    "assessmentOpportunities": [
+      "Have students predict equilibrium species count for untested parameter combinations before running the simulation",
+      "Ask students to design a nature reserve system using island biogeography principles",
+      "Compare student data tables from the 2x2 exploration to identify which factor has a stronger effect"
+    ]
   },
   "chapter": "06-biodiversity-and-services"
 }

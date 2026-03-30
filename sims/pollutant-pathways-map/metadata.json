@@ -1,8 +1,8 @@
 {
   "title": "Pollutant Pathways Map",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for pollutant pathways map",
+  "subject": "Ecology",
+  "description": "Interactive p5.js landscape cross-section where students trace how five pollutant types move through environmental pathways from source to receptor",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,61 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Pollutant Pathways Map",
+    "subjectArea": "Environmental Science",
+    "topic": "Pollutant Transport and Environmental Pathways",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Trace how different pollutants move through environmental pathways from source to receptor",
+      "Distinguish between point source and nonpoint source pollution",
+      "Evaluate the effectiveness of treatment plants and wetland buffers for different pollutant types"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Basic understanding of water flow in landscapes",
+      "Introduction to types of pollutants and their sources",
+      "Familiarity with point source and nonpoint source pollution concepts"
+    ],
+    "standards": [
+      "NGSS HS-ESS3-4",
+      "AP Environmental Science Topic 8.1",
+      "AP Environmental Science Topic 8.3",
+      "AP Environmental Science Topic 8.10"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 440
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js"
+    ],
     "accessibility": {
       "hasAltText": false,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Spatial visualization with pollutant pathway tracing and toggle-based exploration",
+    "keyQuestions": [
+      "Why are nonpoint source pollutants harder to regulate than point source pollutants?",
+      "How does a pollutant released at a factory upstream affect organisms in a lake downstream?",
+      "What role do wetland buffers play in intercepting pollutants before they reach waterways?",
+      "How does bioaccumulation cause pesticides to affect organisms far from the original source?"
+    ],
+    "commonMisconceptions": [
+      "All pollution comes from factories -- nonpoint source pollution from agriculture and urban runoff is often a larger contributor to water quality problems",
+      "Treatment plants remove all pollutants -- different treatment technologies target different contaminants, and some pollutants pass through conventional treatment",
+      "Pollutants stay where they are released -- water transport can carry contaminants far from their source, affecting ecosystems across an entire watershed"
+    ],
+    "assessmentOpportunities": [
+      "Have students create a comparison table of all five pollutant types covering source, pathway, and mitigation",
+      "Ask students to design a watershed management plan addressing both point and nonpoint sources",
+      "Use the toggle features to evaluate which mitigation infrastructure is most effective for each pollutant type"
+    ]
   },
   "chapter": "12-water-and-land-pollution"
 }

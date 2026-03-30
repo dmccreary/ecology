@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive vis-network MicroSim for cogeneration system flow.">
+        <meta name="description" content="Interactive vis-network flow diagram comparing conventional separate generation (56% efficient) with combined heat and power cogeneration (85% efficient).">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Cogeneration System Flow - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive vis-network MicroSim for cogeneration system flow.">
+        <meta property="og:description" content="Interactive vis-network flow diagram comparing conventional separate generation (56% efficient) with combined heat and power cogeneration (85% efficient).">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/cogeneration-flow/cogeneration-flow.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Cogeneration System Flow - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive vis-network MicroSim for cogeneration system flow.">
+        <meta name="twitter:description" content="Interactive vis-network flow diagram comparing conventional separate generation (56% efficient) with combined heat and power cogeneration (85% efficient).">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/cogeneration-flow/cogeneration-flow.png">
       
@@ -1197,9 +1197,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1215,9 +1233,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2988,41 +3024,82 @@
 <h1 id="cogeneration-system-flow">Cogeneration System Flow</h1>
 <iframe src="main.html" height="630" width="100%" scrolling="no"></iframe>
 
-<p><a class="md-button md-button--primary" href="main.html">Run the Cogeneration System Flow MicroSim Fullscreen</a>
-<br>
-<a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
+<p><a class="md-button md-button--primary" href="main.html">Run the Cogeneration System Flow MicroSim Fullscreen</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim uses a flow diagram to compare two approaches to generating electricity and heat: conventional separate generation and combined heat and power (CHP) cogeneration. The side-by-side layout makes energy losses immediately visible, reinforcing the concept that efficiency means capturing energy that would otherwise be wasted.</p>
+<p>On the left, the conventional system shows how fuel input splits between a power plant (producing electricity with significant waste heat) and a separate boiler (producing useful heat with its own losses). Together, the two systems use 200 units of fuel to produce 113 units of useful energy -- only 56% efficient. On the right, the cogeneration system feeds 100 units of fuel into a single CHP unit that produces both electricity and useful heat, delivering 85 units of useful energy from 100 units of fuel -- 85% efficient.</p>
+<p>Animated flow particles show energy movement through the system, and waste heat is highlighted in red to make inefficiency visible. Clicking on any node reveals detailed information about that component's energy inputs and outputs. This visual approach helps students grasp why cogeneration is a key strategy for reducing fossil fuel consumption and greenhouse gas emissions.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Examine the <strong>left side</strong> showing conventional separate generation: trace the flow from fuel input through the power plant and boiler to useful energy and waste heat.</li>
+<li>Examine the <strong>right side</strong> showing CHP cogeneration: trace how a single system produces both electricity and useful heat from the same fuel.</li>
+<li><strong>Click any node</strong> in the diagram to see detailed energy values for that component.</li>
+<li>Compare the <strong>waste heat</strong> (red) in both systems -- notice how much more energy is wasted in conventional generation.</li>
+<li>Note the efficiency percentages: 56% for conventional vs. 85% for cogeneration.</li>
+<li>Consider where the "extra" energy comes from in cogeneration -- it is waste heat that is captured rather than discarded.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/cogeneration-flow/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"630px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / Physics)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>35 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Trace energy flow through a cogeneration system and compare total efficiency to conventional separate generation</li>
+<li>Explain why waste heat recovery is the key advantage of combined heat and power systems</li>
+<li>Calculate overall system efficiency from input and output energy values</li>
+<li>Evaluate cogeneration as a strategy for reducing fossil fuel consumption and emissions</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Understanding of energy forms (thermal, electrical, chemical)</li>
+<li>Basic concept of efficiency as useful output divided by total input</li>
+<li>Awareness that burning fossil fuels produces both useful energy and waste heat</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-PS3-3</strong>: Design, build, and refine a device that works within given constraints to convert one form of energy into another form of energy.</li>
+<li><strong>NGSS HS-ESS3-4</strong>: Evaluate or refine a technological solution that reduces impacts of human activities on natural systems.</li>
+<li><strong>AP Environmental Science</strong>: Topic 6.2 -- Energy Sources and Fuel Types</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Engage</strong> (5 min): Ask students what happens to the heat produced by a power plant. Where does it go? Introduce the concept that a typical power plant converts only about one-third of fuel energy into electricity, with two-thirds lost as waste heat. What if we could capture that waste?</p>
+</li>
+<li>
+<p><strong>Explore</strong> (10 min): Students examine the diagram, clicking each node to record the energy values. They create a simple energy budget table for each system: fuel in, electricity out, useful heat out, waste heat. Students calculate the efficiency of each system independently using the formula: efficiency = useful energy output / total fuel input.</p>
+</li>
+<li>
+<p><strong>Explain</strong> (10 min): Class discussion connecting the diagram to real-world applications. Where is cogeneration used? (Hospitals, universities, district heating, industrial facilities.) Why is it not used everywhere? Discuss barriers: need for both heat and electricity demand at the same location, higher upfront costs, infrastructure requirements. Connect to broader sustainability: if we could convert all conventional plants to CHP, how much fuel would we save?</p>
+</li>
+<li>
+<p><strong>Extend</strong> (10 min): Students research one real cogeneration facility and create a brief profile: location, fuel type, electricity capacity, heat uses, and estimated CO2 savings compared to separate generation. Share findings with the class.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>A conventional system uses 200 units of fuel to produce 113 units of useful energy. A CHP system uses 100 units to produce 85 units. Calculate the efficiency of each and explain the difference.</li>
+<li>Where does the "extra" efficiency in cogeneration come from? What specific energy is captured that conventional systems waste?</li>
+<li>Why is cogeneration particularly well-suited for hospitals, universities, and industrial complexes? What do these facilities have in common?</li>
+<li>If a city replaced 10 conventional power plants with CHP systems of equal electrical output, estimate the percentage reduction in total fuel consumption.</li>
+<li>What are two barriers that prevent cogeneration from being adopted everywhere?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>U.S. Department of Energy. (2023). Combined Heat and Power Basics. <a href="https://www.energy.gov/eere/amo/combined-heat-and-power-basics">energy.gov</a></li>
+<li>EPA. (2024). Catalog of CHP Technologies. U.S. Environmental Protection Agency.</li>
+<li>IEA. (2023). Energy Efficiency 2023. International Energy Agency, Chapter on District Heating and CHP.</li>
 </ol>
 
 

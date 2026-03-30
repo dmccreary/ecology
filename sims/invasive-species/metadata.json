@@ -1,8 +1,8 @@
 {
   "title": "Invasive Species Impact Network",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for invasive species impact network",
+  "subject": "Ecology",
+  "description": "Introduce invasive species into a native food web and watch cascade effects ripple through the ecosystem over simulated time steps.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,60 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Invasive Species Impact Network",
+    "subjectArea": "Environmental Science",
+    "topic": "Invasive Species and Trophic Cascades",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Assess how the introduction of an invasive species cascades through a native food web",
+      "Trace direct and indirect effects of invasive species on multiple trophic levels",
+      "Compare different types of invasive species and their distinct cascade patterns",
+      "Evaluate whether ecosystem recovery is possible after invasive species removal"
     ],
     "bloomsTaxonomy": "Evaluate",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Understanding of food webs and trophic levels",
+      "Basic knowledge of population dynamics",
+      "Familiarity with the concept of invasive species"
+    ],
+    "standards": [
+      "NGSS HS-LS2-2",
+      "NGSS HS-LS2-6",
+      "AP Environmental Science Topic 5.7",
+      "AP Environmental Science Topic 2.5"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 482
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Scenario comparison with cascading effects observation",
+    "keyQuestions": [
+      "Why do invasive species often have advantages over native species in a new ecosystem?",
+      "How do indirect effects of invasive species differ from direct effects?",
+      "Can an ecosystem fully recover after an invasive species is removed?",
+      "Why is prevention more effective than removal for managing invasive species?"
+    ],
+    "commonMisconceptions": [
+      "Students often think invasive species only affect the species they directly eat or compete with, missing indirect cascade effects",
+      "Many students believe that removing an invasive species will automatically restore the ecosystem to its original state",
+      "Students may think all non-native species are invasive, when many introduced species do not become harmful"
+    ],
+    "assessmentOpportunities": [
+      "Evaluate student cascade pathway diagrams for completeness of direct and indirect effects",
+      "Compare student scenario comparison tables across the three invasive species",
+      "Assess written explanations of why ecosystem recovery is often incomplete after invasive removal"
+    ]
   },
   "chapter": "05-species-interactions"
 }

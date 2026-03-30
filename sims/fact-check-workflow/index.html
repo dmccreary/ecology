@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for fact-checking workflow.">
+        <meta name="description" content="Interactive p5.js decision-tree workflow guiding students through the SIFT method to evaluate environmental claims using source investigation, coverage finding, and original tracing.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Fact-Checking Workflow - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for fact-checking workflow.">
+        <meta property="og:description" content="Interactive p5.js decision-tree workflow guiding students through the SIFT method to evaluate environmental claims using source investigation, coverage finding, and original tracing.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/fact-check-workflow/fact-check-workflow.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Fact-Checking Workflow - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for fact-checking workflow.">
+        <meta name="twitter:description" content="Interactive p5.js decision-tree workflow guiding students through the SIFT method to evaluate environmental claims using source investigation, coverage finding, and original tracing.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/fact-check-workflow/fact-check-workflow.png">
       
@@ -1617,9 +1617,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1635,9 +1653,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,79 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim guides students through a systematic fact-checking process using the SIFT framework -- Stop, Investigate the Source, Find Better Coverage, and Trace to the Original -- applied to environmental claims. Students select from a library of sample claims ranging from well-supported science to outright misinformation and walk through a decision tree at each step.</p>
+<p>At each node in the workflow, students answer yes/no questions that affect a confidence meter. When investigating the source, they can view details about funding, credentials, and publication history. When finding coverage, they see what multiple news sources report. When tracing to the original, they read a simplified version of the primary source. Their final assessment is compared to an expert evaluation with an explanation of any differences.</p>
+<p>In an era of widespread environmental misinformation -- from climate denial to exaggerated eco-claims -- the ability to systematically evaluate environmental claims is a critical scientific literacy skill. This simulation gives students a repeatable, transferable tool they can use whenever they encounter claims about environmental issues in the news, on social media, or in everyday conversation.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Select a sample claim</strong> from the panel on the left side of the screen.</li>
+<li><strong>Read the claim carefully</strong> and form an initial impression before proceeding.</li>
+<li><strong>Follow the SIFT steps</strong> in order -- at each step, answer the yes/no questions presented.</li>
+<li><strong>At "Investigate Source"</strong> -- click to view source details including funding, credentials, and history.</li>
+<li><strong>At "Find Coverage"</strong> -- see what multiple sources report about the claim and whether they agree.</li>
+<li><strong>At "Trace to Original"</strong> -- read the simplified version of the original source material.</li>
+<li><strong>View your final assessment</strong> and compare it to the expert evaluation.</li>
+<li><strong>Try multiple claims</strong> to practice the workflow with different types of claims.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/fact-check-workflow/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"562px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / Media Literacy)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>50 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ol>
+<li>Execute a systematic fact-checking workflow (SIFT) when presented with an environmental claim.</li>
+<li>Evaluate source credibility by examining funding, credentials, and publication history.</li>
+<li>Distinguish between reliable, uncertain, misleading, and false environmental claims using evidence.</li>
+</ol>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of scientific evidence and peer review</li>
+<li>Awareness of common environmental topics (climate change, pollution, biodiversity)</li>
+<li>Familiarity with the concept of bias in media</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-ESS3-4</strong>: Evaluate or refine a technological solution that reduces impacts of human activities on natural systems.</li>
+<li><strong>CCSS.ELA-LITERACY.RST.9-10.8</strong>: Assess the extent to which the reasoning and evidence in a text support the author's claim.</li>
+<li><strong>CCSS.ELA-LITERACY.RST.11-12.7</strong>: Integrate and evaluate multiple sources of information presented in diverse formats.</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Engage</strong> (5 min): Present two contrasting headlines about the same environmental topic -- one accurate, one misleading. Ask students which they think is correct and how they would find out. Introduce the SIFT method.</p>
+</li>
+<li>
+<p><strong>Explore</strong> (20 min): Students work through at least 4 sample claims in the simulation, recording for each: the claim text, their initial impression, what they learned at each SIFT step, their final assessment, and whether it matched the expert assessment. They identify which step was most informative for each claim.</p>
+</li>
+<li>
+<p><strong>Explain</strong> (15 min): Class discussion on patterns they noticed. Which types of claims were hardest to evaluate? What made sources more or less credible? Discuss the difference between "Likely misleading" (contains a kernel of truth but distorted) and "Likely false" (fabricated or unsupported).</p>
+</li>
+<li>
+<p><strong>Extend</strong> (10 min): Students find a real environmental claim from social media or news and apply the SIFT workflow independently, documenting their process and conclusion in a short written analysis.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Describe the four steps of the SIFT method and explain why the order matters.</li>
+<li>A website claims that a common household product is "destroying the ozone layer." The site has no author listed and sells an alternative product. What would the "Investigate Source" step reveal, and how should that affect your confidence?</li>
+<li>Why is "Trace to Original" often the most important step, and what should you look for in the original source?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Caulfield, M. (2019). <em>SIFT (The Four Moves)</em>. Hapgood. https://hapgood.us/2019/06/19/sift-the-four-moves/</li>
+<li>Wineburg, S. &amp; McGrew, S. (2019). "Lateral Reading and the Nature of Expertise." <em>Teachers College Record</em>, 121(11).</li>
+<li>Cook, J. et al. (2017). "Neutralizing misinformation through inoculation." <em>PLOS ONE</em>, 12(5), e0175799.</li>
 </ol>
 
 

@@ -1,8 +1,8 @@
 {
   "title": "Ecosystem Carbon Budget Calculator",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for ecosystem carbon budget calculator",
+  "subject": "Ecology",
+  "description": "Interactive calculator for GPP, NPP, and NEP with five ecosystem types, adjustable parameters, and disturbance simulation",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,61 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Ecosystem Carbon Budget Calculator",
+    "subjectArea": "Environmental Science",
+    "topic": "Ecosystem Carbon Budget and Productivity",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Calculate GPP, NPP, and NEP for different ecosystem scenarios",
+      "Determine whether an ecosystem is a carbon sink or source",
+      "Predict how disturbances (fire, drought, warming) shift the carbon balance",
+      "Compare carbon budgets across major ecosystem types"
     ],
     "bloomsTaxonomy": "Evaluate",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Understanding of photosynthesis and cellular respiration",
+      "Knowledge of the carbon cycle",
+      "Familiarity with producer and decomposer concepts"
+    ],
+    "standards": [
+      "NGSS HS-LS2-5",
+      "AP Environmental Science Topic 1.6"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 452
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js"
+    ],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Calculator-based quantitative exploration with disturbance scenarios",
+    "keyQuestions": [
+      "Can a healthy forest ever become a carbon source? Under what conditions?",
+      "Which ecosystem type has the largest carbon sink capacity and why?",
+      "How do fire, drought, and warming each affect the carbon budget differently?",
+      "What is the climate change feedback loop between warming, respiration, and carbon release?",
+      "Why is tundra permafrost thawing considered a climate tipping point?"
+    ],
+    "commonMisconceptions": [
+      "Forests always absorb CO2 (disturbed or old-growth forests can be carbon neutral or even sources)",
+      "NPP and NEP are the same thing (NEP also accounts for heterotrophic respiration by decomposers and animals)",
+      "Warming only affects photosynthesis (it actually increases respiration rates more than photosynthesis, potentially flipping sink to source)"
+    ],
+    "assessmentOpportunities": [
+      "Have students calculate NPP and NEP from given GPP, Ra, and Rh values",
+      "Ask students to determine the tipping point where a tropical forest switches from sink to source under warming",
+      "Challenge students to rank the five ecosystems by carbon sink capacity and explain the ecological reasons for differences"
+    ]
   },
   "chapter": "03-energy-flow"
 }

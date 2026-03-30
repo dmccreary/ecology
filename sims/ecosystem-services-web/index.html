@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive vis-network MicroSim for ecosystem services web.">
+        <meta name="description" content="Interactive vis-network diagram showing the four categories of ecosystem services with interconnections and a " remove service" mode to explore cascading effects.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Ecosystem Services Web - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive vis-network MicroSim for ecosystem services web.">
+        <meta property="og:description" content="Interactive vis-network diagram showing the four categories of ecosystem services with interconnections and a " remove service" mode to explore cascading effects.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/ecosystem-services-web/ecosystem-services-web.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Ecosystem Services Web - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive vis-network MicroSim for ecosystem services web.">
+        <meta name="twitter:description" content="Interactive vis-network diagram showing the four categories of ecosystem services with interconnections and a " remove service" mode to explore cascading effects.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/ecosystem-services-web/ecosystem-services-web.png">
       
@@ -1449,9 +1449,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1467,9 +1485,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2988,41 +3024,83 @@
 <h1 id="ecosystem-services-web">Ecosystem Services Web</h1>
 <iframe src="main.html" height="600" width="100%" scrolling="no"></iframe>
 
-<p><a class="md-button md-button--primary" href="main.html">Run the Ecosystem Services Web MicroSim Fullscreen</a>
-<br>
-<a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
+<p><a class="md-button md-button--primary" href="main.html">Run the Ecosystem Services Web Fullscreen</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This interactive network diagram maps the four categories of ecosystem services -- Provisioning, Regulating, Cultural, and Supporting -- along with their specific component services and the connections between them. Large hub nodes represent the four categories, with smaller nodes for specific services like Pollination, Food Production, Water Purification, and Recreation, all connected by labeled edges describing dependencies and relationships.</p>
+<p>The most powerful feature is the "Remove Service" mode. When activated, students can click on any service node to remove it and observe cascading effects across the network. Connected services turn yellow (stressed) or red (critically impaired), dramatically illustrating how the loss of a single ecosystem service can destabilize an entire web of interconnected services. For example, removing Pollination stresses Food Production, which in turn affects Provisioning services broadly.</p>
+<p>The color coding distinguishes service categories at a glance: green for Provisioning, blue for Regulating, purple for Cultural, and brown for Supporting. Edge labels describe relationships between services. This network visualization makes the abstract concept of ecosystem service interdependence tangible and interactive, supporting the kind of systems thinking that is essential for environmental decision-making.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Explore the network by clicking on service nodes to highlight their connections.</li>
+<li>Note how the four hub nodes (Provisioning, Regulating, Cultural, Supporting) connect to specific services.</li>
+<li>Read edge labels to understand the relationships between services.</li>
+<li>Switch to "Remove Service" mode using the mode selector.</li>
+<li>Click on a service node to remove it and watch cascading effects (yellow = stressed, red = critically impaired).</li>
+<li>Try removing different services to compare the severity of cascading effects.</li>
+<li>Click "Reset" to restore all services and try a different removal scenario.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/ecosystem-services-web/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"600px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>50 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Assess the interconnections among the four categories of ecosystem services</li>
+<li>Predict consequences of losing specific ecosystem services using the network model</li>
+<li>Evaluate which ecosystem services are most critical based on their connectivity</li>
+<li>Explain why Supporting services underpin all other service categories</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Understanding of what ecosystems are and how they function</li>
+<li>Introduction to the concept of ecosystem services</li>
+<li>Basic knowledge of biodiversity and its ecological role</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-LS2-7</strong>: Design, evaluate, and refine a solution for reducing the impacts of human activities on the environment</li>
+<li><strong>AP Environmental Science</strong>: Topic 2.7 -- Ecosystem Services</li>
+<li><strong>NGSS HS-ESS3-3</strong>: Create a computational simulation to illustrate the relationships among management of natural resources, the sustainability of human populations, and biodiversity</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Warm-Up</strong> (5 min): Ask students: "What did nature do for you today?" Students list everything they can think of (clean air, food, water, recreation, etc.). Group responses into the four service categories on the board, introducing the classification framework.</p>
+</li>
+<li>
+<p><strong>Network Exploration</strong> (10 min): Students explore the full network in "Explore" mode, clicking each hub node and recording all connected specific services. They create a table with four columns (one per category) listing the services and their connections to other categories.</p>
+</li>
+<li>
+<p><strong>Removal Scenario Analysis</strong> (20 min): In pairs, students switch to "Remove Service" mode and conduct three experiments: (a) Remove a Supporting service and document all cascading effects. (b) Remove a Provisioning service and compare the cascade. (c) Remove a Cultural service and compare. For each, they record which services turn yellow and red. They rank the four categories by "cascade severity."</p>
+</li>
+<li>
+<p><strong>Policy Application</strong> (15 min): Present a scenario: "A city wants to fill in a wetland for housing development." Students use the network to identify which ecosystem services would be lost, trace the cascading effects, and write a one-page policy recommendation. They must reference at least three specific service connections from the network.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Name and define the four categories of ecosystem services and give two examples of each.</li>
+<li>Why are Supporting services sometimes called the "foundation" of all ecosystem services? Use evidence from the network diagram.</li>
+<li>You removed Pollination from the network. Describe the cascade of effects that followed and explain why each connection makes ecological sense.</li>
+<li>A developer argues that losing one wetland is not significant because there are other wetlands nearby. Use the ecosystem services web to construct a counter-argument.</li>
+<li>Which single service removal caused the most widespread cascading effects in your experiments? Why do you think this service is so critical?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Millennium Ecosystem Assessment. (2005). <em>Ecosystems and Human Well-being: Synthesis</em>. Island Press.</li>
+<li>Costanza, R., et al. (1997). "The Value of the World's Ecosystem Services and Natural Capital." <em>Nature</em> 387: 253-260.</li>
+<li>Daily, G.C. (1997). <em>Nature's Services: Societal Dependence on Natural Ecosystems</em>. Island Press.</li>
 </ol>
 
 

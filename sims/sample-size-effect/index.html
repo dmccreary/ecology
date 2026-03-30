@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for sample size effect on reliability.">
+        <meta name="description" content="Interactive p5.js MicroSim demonstrating how sample size affects the reliability of ecological sampling estimates through repeated sampling visualization.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Sample Size Effect on Reliability - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for sample size effect on reliability.">
+        <meta property="og:description" content="Interactive p5.js MicroSim demonstrating how sample size affects the reliability of ecological sampling estimates through repeated sampling visualization.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/sample-size-effect/sample-size-effect.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Sample Size Effect on Reliability - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for sample size effect on reliability.">
+        <meta name="twitter:description" content="Interactive p5.js MicroSim demonstrating how sample size affects the reliability of ecological sampling estimates through repeated sampling visualization.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/sample-size-effect/sample-size-effect.png">
       
@@ -2268,9 +2268,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2286,9 +2304,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,9 +3028,20 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim demonstrates one of the most important concepts in scientific literacy: why sample size matters. A population of 10,000 organisms has a true survival rate (default 60%) that students try to estimate by drawing samples of various sizes. Each sample's estimated survival rate is plotted as a dot on a number line, color-coded by distance from the true value.</p>
+<p>With small samples (N=5), the dots scatter wildly across the number line -- some samples suggest 100% survival while others suggest 0%. With large samples (N=500), the dots cluster tightly around the true value. A histogram accumulates showing the distribution of estimates, and key statistics (range, standard deviation, percentage within 5% of truth) update in real time.</p>
+<p>A "headlines" panel generates fake news headlines from extreme samples, illustrating how cherry-picking small studies can produce misleading conclusions. This makes the abstract statistical concept tangible and connects directly to scientific literacy skills that students need for evaluating ecological research claims.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Observe the true survival rate marked as a blue line on the number line.</li>
+<li>Adjust the <strong>Sample Size slider</strong> (5-500) to set how many organisms are sampled each time.</li>
+<li>Click <strong>Take Sample</strong> to draw one random sample and see the estimate plotted as a dot.</li>
+<li>Click <strong>Auto Sample</strong> to rapidly draw many samples and watch the distribution build.</li>
+<li>Compare the spread of dots at small sample sizes (5-10) vs. large sample sizes (200-500).</li>
+<li>Watch the statistics panel: range, standard deviation, and percentage of samples near the true value.</li>
+<li>Read the generated "headlines" panel to see how small samples produce misleading conclusions.</li>
+<li>Click <strong>Reset</strong> to clear all samples and try a different sample size.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -3007,22 +3054,55 @@
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / AP Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>40 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Compare the reliability of conclusions drawn from small versus large sample sizes.</li>
+<li>Explain why larger samples produce more reliable estimates of population parameters.</li>
+<li>Evaluate ecological research claims by considering sample size and variability.</li>
+<li>Recognize how misleading conclusions can arise from small or cherry-picked samples.</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of averages and percentages</li>
+<li>Familiarity with the concept of sampling in ecology (mark-recapture, quadrats)</li>
+<li>Understanding that scientists study samples because they cannot measure entire populations</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS Practice 4</strong>: Analyzing and Interpreting Data</li>
+<li><strong>NGSS Practice 5</strong>: Using Mathematics and Computational Thinking</li>
+<li><strong>AP Environmental Science</strong>: Science Practices - Data Analysis</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Engage</strong> (5 min): Show two real contradictory headlines about the same ecological topic (e.g., "Bee Populations Thriving!" vs. "Bee Populations Collapsing!"). Ask how both could be published. Introduce the idea that sample size and sampling method determine what conclusions you can draw.</p>
+</li>
+<li>
+<p><strong>Explore</strong> (15 min): Students take 20 samples at N=5 and record the range and standard deviation. Then they reset and take 20 samples at N=100, recording the same statistics. They repeat at N=500. Students create a table comparing sample size to variability.</p>
+</li>
+<li>
+<p><strong>Explain</strong> (10 min): Discuss the law of large numbers and why larger samples converge on the true value. Introduce the concept of confidence intervals. Explain why ecological studies specify sample sizes and why peer reviewers check them. Connect to real sampling methods: how many quadrats do you need? How many fish must you tag?</p>
+</li>
+<li>
+<p><strong>Extend</strong> (10 min): Students read the "headlines" generated from extreme small samples and write a paragraph explaining why a single small study should not drive policy decisions. They propose a minimum sample size for a hypothetical study of frog survival rates in a local pond.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Why do small samples produce more variable estimates than large samples?</li>
+<li>A news article claims "Species X survival rate is 90%!" based on a study of 8 animals. How confident should you be in this conclusion? Explain.</li>
+<li>An ecologist wants to estimate the percentage of trees infected by a beetle in a national forest. Would a sample of 10 trees or 500 trees give a more reliable estimate? Why?</li>
+<li>How does understanding sample size help you evaluate claims about environmental issues in the news?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Gotelli, N.J. &amp; Ellison, A.M. (2013). <em>A Primer of Ecological Statistics</em>, 2nd ed. Sinauer Associates.</li>
+<li>Krebs, C.J. (2014). <em>Ecology: The Experimental Analysis of Distribution and Abundance</em>, 6th ed. Pearson.</li>
+<li>Ioannidis, J.P.A. (2005). Why most published research findings are false. <em>PLoS Medicine</em>, 2(8), e124.</li>
 </ol>
 
 

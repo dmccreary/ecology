@@ -1,8 +1,8 @@
 {
   "title": "Feedback Loop Explorer",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for feedback loop explorer",
+  "subject": "Ecology",
+  "description": "Side-by-side animated comparison of reinforcing and balancing feedback loops with real-time graphs across multiple ecological scenarios",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,57 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Feedback Loop Explorer",
+    "subjectArea": "Environmental Science",
+    "topic": "Feedback Loops in Ecological Systems",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Differentiate between reinforcing and balancing feedback loops and predict their effects on system behavior",
+      "Identify reinforcing and balancing loops in real ecological scenarios",
+      "Explain how the interaction of both loop types determines ecosystem stability"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Basic understanding of cause and effect in ecological systems",
+      "Familiarity with population dynamics concepts",
+      "Ability to read and interpret line graphs"
+    ],
+    "standards": [
+      "NGSS HS-LS2-2",
+      "NGSS HS-ESS2-4"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 462
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Side-by-side comparison with multiple scenario selection",
+    "keyQuestions": [
+      "What shape does the graph take for a reinforcing loop vs. a balancing loop?",
+      "Why do 'positive' and 'negative' feedback not mean 'good' and 'bad'?",
+      "What happens when a reinforcing loop overpowers a balancing loop in an ecosystem?",
+      "Can you identify both loop types in a single ecological system?"
+    ],
+    "commonMisconceptions": [
+      "Students frequently assume 'positive feedback' means a good outcome and 'negative feedback' means a bad outcome",
+      "Students may think balancing loops always produce a perfectly flat line rather than oscillation",
+      "Students may not realize that most real ecosystems contain both reinforcing and balancing loops simultaneously"
+    ],
+    "assessmentOpportunities": [
+      "Students draw and label causal loop diagrams for each scenario",
+      "Students predict graph shapes before viewing simulation output",
+      "Students identify both loop types in a real-world ecological issue and create diagrams"
+    ]
   },
   "chapter": "13-systems-thinking"
 }

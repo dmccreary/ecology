@@ -1,8 +1,8 @@
 {
   "title": "Urban Heat Island Profile",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for urban heat island profile",
+  "subject": "Ecology",
+  "description": "Interactive cross-section visualization showing how urban land cover creates temperature differences, with tools to add trees, green roofs, and reflective surfaces",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,57 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Urban Heat Island Profile",
+    "subjectArea": "Environmental Science",
+    "topic": "Urban Heat Island Effect",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Analyze how urban land cover drives temperature differences between cities and surrounding areas",
+      "Evaluate the effectiveness of different mitigation strategies for urban heat islands",
+      "Compare daytime and nighttime heat island dynamics"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "50 minutes",
+    "prerequisites": [
+      "Understanding of basic energy concepts (absorption, reflection)",
+      "Familiarity with land use types (urban, suburban, rural)"
+    ],
+    "standards": [
+      "NGSS HS-ESS3-4",
+      "NGSS HS-ESS2-4",
+      "AP Environmental Science Topic 5.11"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 485
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Interactive cross-section with click-to-modify land cover and real-time temperature feedback",
+    "keyQuestions": [
+      "Why is the urban core consistently warmer than surrounding rural areas?",
+      "How does adding vegetation change the temperature profile?",
+      "Why does the heat island effect intensify at night?",
+      "Which mitigation strategy is most cost-effective per degree of cooling?"
+    ],
+    "commonMisconceptions": [
+      "Students often think the urban heat island effect is only about pavement being hot to the touch, not realizing it affects ambient air temperature across an entire region",
+      "Students may believe the heat island effect only matters during summer heat waves, when it actually affects energy use, air quality, and ecosystems year-round",
+      "Students sometimes think planting a few trees can eliminate the heat island, not understanding the scale of intervention needed"
+    ],
+    "assessmentOpportunities": [
+      "Have students create data tables comparing temperature reduction from different mitigation strategies",
+      "Ask students to design an urban heat island mitigation plan with budget constraints",
+      "Students analyze thermal satellite imagery of their own city using concepts from the simulation"
+    ]
   },
   "chapter": "10-land-and-water-use"
 }

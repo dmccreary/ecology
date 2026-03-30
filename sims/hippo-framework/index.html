@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive vis-network MicroSim for hippo threat interaction web.">
+        <meta name="description" content="Explore the five HIPPO threats to biodiversity and analyze how they interact using species case studies.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="HIPPO Threat Interaction Web - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive vis-network MicroSim for hippo threat interaction web.">
+        <meta property="og:description" content="Explore the five HIPPO threats to biodiversity and analyze how they interact using species case studies.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/hippo-framework/hippo-framework.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="HIPPO Threat Interaction Web - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive vis-network MicroSim for hippo threat interaction web.">
+        <meta name="twitter:description" content="Explore the five HIPPO threats to biodiversity and analyze how they interact using species case studies.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/hippo-framework/hippo-framework.png">
       
@@ -1764,9 +1764,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1782,9 +1800,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2990,39 +3026,82 @@
 
 <p><a class="md-button md-button--primary" href="main.html">Run the HIPPO Threat Interaction Web MicroSim Fullscreen</a>
 <br>
-<a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
+Note: This is a vis-network simulation. Drag nodes to rearrange the layout.</p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This simulation displays the five major threats to biodiversity organized in the HIPPO framework: Habitat Loss, Invasive Species, Pollution, Population (human), and Overexploitation. Each threat is represented as a color-coded node arranged in a pentagon, with directed edges showing how the threats amplify one another. For example, habitat loss increases vulnerability to invasive species, and human population growth drives both overexploitation and pollution.</p>
+<p>A dropdown menu lets students select case study species -- polar bear, monarch butterfly, bluefin tuna, or orangutan -- to see which HIPPO threats apply to each. When a species is selected, the relevant threat nodes light up and an information box describes how the threats interact for that particular species. Hovering over edges reveals detailed descriptions of the interaction mechanisms between threats.</p>
+<p>By visualizing threats as an interconnected web rather than a simple ranked list, this simulation reinforces systems thinking. Students learn that biodiversity loss is rarely caused by a single factor -- it results from multiple interacting threats that compound one another.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Examine the HIPPO nodes</strong> arranged in a pentagon. Each is color-coded: green (Habitat Loss), purple (Invasive Species), yellow (Pollution), orange (Population), red (Overexploitation).</li>
+<li><strong>Read the edge labels</strong> connecting the nodes to understand how each threat amplifies or interacts with the others.</li>
+<li><strong>Select a case study species</strong> from the dropdown menu (Polar Bear, Monarch Butterfly, Bluefin Tuna, or Orangutan).</li>
+<li><strong>Observe which nodes light up</strong> to see which HIPPO threats apply to the selected species.</li>
+<li><strong>Read the information panel</strong> for a description of how the threats interact for that species.</li>
+<li><strong>Hover over edges</strong> to see detailed descriptions of the interaction mechanisms.</li>
+<li><strong>Compare species</strong> by selecting different case studies and noting which threats are shared and which are unique.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/hippo-framework/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"600px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / Biology)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>40 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Differentiate between the five HIPPO threats and analyze how they interact to amplify species vulnerability.</li>
+<li>Apply the HIPPO framework to specific endangered species case studies.</li>
+<li>Evaluate which threats are most significant for different species and ecosystems.</li>
+<li>Explain why addressing biodiversity loss requires targeting multiple interacting threats simultaneously.</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of biodiversity and why it matters</li>
+<li>Familiarity with the concept of endangered species</li>
+<li>Knowledge of habitat loss and its causes</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-LS4-6</strong>: Create or revise a simulation to test a solution to mitigate adverse impacts of human activity on biodiversity.</li>
+<li><strong>NGSS HS-LS2-7</strong>: Design, evaluate, and refine a solution for reducing the impacts of human activities on the environment and biodiversity.</li>
+<li><strong>AP Environmental Science</strong>: Topic 16.1 - Introduction to Biodiversity; Topic 16.4 - Threats to Biodiversity</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Warm-Up</strong> (5 min): Write "HIPPO" on the board and ask students to guess what each letter stands for. Reveal the framework and briefly define each threat.</p>
+</li>
+<li>
+<p><strong>Exploration</strong> (10 min): Students explore the simulation without selecting a species first. They examine each node and read all edge labels. They create a list of all the threat interactions shown in the web (e.g., "Habitat Loss increases vulnerability to Invasive Species").</p>
+</li>
+<li>
+<p><strong>Guided Investigation</strong> (15 min): Students select each of the four case study species in turn. For each species, they record: which HIPPO threats apply, which threat is most severe, and how the threats interact for that species. Students create a comparison table. Key question: Are any threats common to all four species?</p>
+</li>
+<li>
+<p><strong>Synthesis and Discussion</strong> (10 min): Class discussion: Which HIPPO threat affects the most species? If you could eliminate one threat globally, which would save the most species and why? Why is it not enough to address just one threat at a time? Students write a conservation action plan for one species that addresses at least three HIPPO threats.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Explain how habitat loss and invasive species interact to threaten the monarch butterfly. Why is addressing only one of these threats insufficient?</li>
+<li>Using the simulation, identify two threats common to all four case study species. What does this suggest about priorities for global conservation?</li>
+<li>Human population growth is linked to every other HIPPO threat. Trace the causal pathway from population growth to overexploitation of bluefin tuna.</li>
+<li>Design a conservation strategy for the orangutan that addresses at least three HIPPO threats. Explain how your strategy accounts for the interactions between threats.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Wilson, E. O. (2002). <em>The Future of Life</em>. Alfred A. Knopf. (Origin of the HIPPO framework)</li>
+<li>Primack, R. B. (2014). <em>Essentials of Conservation Biology</em> (6th ed.). Sinauer Associates.</li>
+<li>IUCN. (2024). The IUCN Red List of Threatened Species. https://www.iucnredlist.org</li>
 </ol>
 
 

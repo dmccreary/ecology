@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for adaptive management cycle.">
+        <meta name="description" content="Implement the adaptive management cycle by making decisions in ecological management scenarios.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Adaptive Management Cycle - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for adaptive management cycle.">
+        <meta property="og:description" content="Implement the adaptive management cycle by making decisions in ecological management scenarios.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/adaptive-management-cycle/adaptive-management-cycle.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Adaptive Management Cycle - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for adaptive management cycle.">
+        <meta name="twitter:description" content="Implement the adaptive management cycle by making decisions in ecological management scenarios.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/adaptive-management-cycle/adaptive-management-cycle.png">
       
@@ -987,9 +987,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1005,9 +1023,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,75 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This interactive simulation lets students walk through the six steps of adaptive management -- Assess, Design, Implement, Monitor, Evaluate, and Adjust -- using real-world ecological scenarios. At each step, students face a decision with two or three options, and their choices affect the outcomes they observe in subsequent steps.</p>
+<p>Three complete scenarios are available: Wolf Reintroduction, Invasive Species Control, and Wetland Restoration. Each scenario demonstrates how adaptive management works in practice, with realistic trade-offs between ecological effectiveness, cost, and social acceptance. After completing one cycle, students can start a second cycle informed by their first round of monitoring data.</p>
+<p>This supports the Bloom's taxonomy level of <strong>Apply</strong>, as students actively implement management decisions and observe how uncertainty requires iterative learning. The simulation reinforces that ecological management is not a one-time action but an ongoing process of learning and adjustment.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Select a scenario</strong> from the dropdown menu at the bottom (Wolf Reintroduction, Invasive Species, or Wetland Restoration)</li>
+<li><strong>Click "Start Cycle"</strong> in the center panel to begin the management process</li>
+<li><strong>Read the situation description</strong> at each step, then click one of the three choice buttons</li>
+<li><strong>Review the outcome</strong> that appears after each choice, showing the consequence of your decision</li>
+<li><strong>Click "Next"</strong> to advance to the next step in the cycle</li>
+<li><strong>Watch the circular diagram</strong> on the left -- completed steps are highlighted in color with green connecting arrows</li>
+<li><strong>Check the Decision Log</strong> at the bottom to review all outcomes from your choices</li>
+<li><strong>After completing all six steps</strong>, click "Start Cycle 2" to begin a new round of management informed by previous results</li>
+<li><strong>Click "Reset Cycle"</strong> to start over with the same or a different scenario</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/adaptive-management-cycle/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"482px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>15-20 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Implement the adaptive management cycle for an ecological management scenario</li>
+<li>Identify the six steps of adaptive management and explain the purpose of each</li>
+<li>Analyze how decisions at one step cascade through subsequent steps</li>
+<li>Evaluate trade-offs between ecological effectiveness, cost, and social acceptance</li>
+<li>Explain why ecological management requires iterative cycles rather than one-time interventions</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Understanding of basic ecological concepts (food webs, invasive species, habitat restoration)</li>
+<li>Familiarity with the concept of feedback loops</li>
+<li>Basic knowledge of conservation challenges</li>
+<li>Understanding that ecosystems are dynamic and respond to management actions</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li>NGSS HS-LS2-7: Design, evaluate, and refine a solution for reducing the impacts of human activities on the environment</li>
+<li>AP Environmental Science Topic 9.7: Sustainable Land Use Strategies</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Warm-Up</strong> (2-3 min): Ask students: "If you were managing a national park and discovered a new invasive species, what would be your first step? Your second?" List responses and compare to the adaptive management framework.</li>
+<li><strong>Guided Exploration</strong> (5-7 min): As a class, work through one complete cycle of the Wolf Reintroduction scenario. At each step, discuss the trade-offs before voting on a choice. Record outcomes on the board.</li>
+<li><strong>Independent Investigation</strong> (5-7 min): Have students individually complete the Invasive Species or Wetland Restoration scenario. Challenge: Try to complete two full cycles and note how Cycle 2 differs from Cycle 1.</li>
+<li><strong>Reflection</strong> (3-5 min): Discussion questions: "Did any outcomes surprise you? How would a real manager use monitoring data to inform Cycle 2? Why is adaptive management better than a rigid plan?"</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Name the six steps of the adaptive management cycle in order.</li>
+<li>In the Wolf Reintroduction scenario, what happens when you choose "Release across multiple sites"? How does this trade-off compare to releasing in core habitat only?</li>
+<li>Compare the outcomes of two different choice paths through the same scenario. What patterns do you notice about the relationship between aggressive interventions and unintended consequences?</li>
+<li>A city wants to restore a polluted river. Design the first three steps of an adaptive management plan, explaining what decisions you would make and why monitoring is essential before moving to the next cycle.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li><a href="https://en.wikipedia.org/wiki/Adaptive_management">Adaptive Management - Wikipedia</a> - Overview of adaptive management theory and applications in natural resource management</li>
+<li><a href="https://www.usgs.gov/programs/science-analytics-and-synthesis/adaptive-management">USGS Adaptive Management</a> - Federal guidance on applying adaptive management to conservation</li>
+<li><a href="https://p5js.org/reference/">p5.js Reference</a> - JavaScript library used for the interactive simulation</li>
 </ol>
 
 

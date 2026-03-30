@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for predator-prey population dynamics.">
+        <meta name="description" content="Interactive p5.js MicroSim modeling Lotka-Volterra predator-prey oscillations with an animated meadow and real-time population graphs.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Predator-Prey Population Dynamics - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for predator-prey population dynamics.">
+        <meta property="og:description" content="Interactive p5.js MicroSim modeling Lotka-Volterra predator-prey oscillations with an animated meadow and real-time population graphs.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/predator-prey/predator-prey.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Predator-Prey Population Dynamics - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for predator-prey population dynamics.">
+        <meta name="twitter:description" content="Interactive p5.js MicroSim modeling Lotka-Volterra predator-prey oscillations with an animated meadow and real-time population graphs.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/predator-prey/predator-prey.png">
       
@@ -2142,9 +2142,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2160,9 +2178,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,9 +3028,20 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim brings the classic Lotka-Volterra predator-prey relationship to life through an agent-based simulation. The top panel displays an animated meadow where green dots (prey/hares) and red dots (predators/lynx) move and interact. When a predator contacts a prey item, the prey is consumed. Prey reproduce at a set rate, while predators die if they fail to feed within a time window.</p>
+<p>The bottom panel plots real-time population curves for both species, producing the characteristic oscillating waves seen in natural predator-prey systems. Students can adjust prey birth rate, predation efficiency, and predator death rate to observe how parameter changes affect the amplitude, frequency, and stability of population cycles.</p>
+<p>Special scenario buttons allow students to introduce sudden disturbances -- a disease event that halves the prey population, or complete predator removal -- to observe cascading effects on population dynamics. These scenarios mirror real ecological events and help students understand why maintaining predator populations is critical for ecosystem stability.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Observe the animated meadow where green dots (prey) and red dots (predators) move and interact.</li>
+<li>Watch the population graph below as it traces prey and predator numbers over time.</li>
+<li>Adjust the <strong>Prey Birth Rate</strong> slider to change how quickly prey reproduce.</li>
+<li>Adjust the <strong>Predation Efficiency</strong> slider to change how effectively predators catch prey.</li>
+<li>Adjust the <strong>Predator Death Rate</strong> slider to change how quickly unfed predators die.</li>
+<li>Click <strong>Add Disease</strong> to instantly reduce prey by 50% and observe the cascading effect.</li>
+<li>Click <strong>Remove Predators</strong> to see what happens when predators are eliminated.</li>
+<li>Click <strong>Reset</strong> to return to starting conditions (200 prey, 20 predators).</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -3007,22 +3054,55 @@
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / AP Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Model predator-prey oscillations and predict how changing parameters affects population dynamics.</li>
+<li>Analyze the feedback loops that create cyclical population patterns.</li>
+<li>Predict the consequences of removing predators or introducing disease to an ecosystem.</li>
+<li>Connect simulation behavior to real-world examples such as the lynx-hare cycle.</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of food webs and trophic levels</li>
+<li>Familiarity with population growth concepts</li>
+<li>Ability to interpret line graphs with multiple variables</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS LS2.A</strong>: Interdependent Relationships in Ecosystems</li>
+<li><strong>NGSS LS2.C</strong>: Ecosystem Dynamics, Functioning, and Resilience</li>
+<li><strong>AP Environmental Science</strong>: Topic 3.3 - Carrying Capacity</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Engage</strong> (5 min): Show the classic Hudson Bay Company fur trading records for lynx and snowshoe hare pelts. Ask students what pattern they notice and what might cause it. Introduce the simulation as a way to test their hypotheses.</p>
+</li>
+<li>
+<p><strong>Explore</strong> (15 min): Students run the simulation with default parameters and sketch the population curves. They record what happens when they increase prey birth rate, increase predation efficiency, or increase predator death rate. Students document at least three parameter combinations and their results.</p>
+</li>
+<li>
+<p><strong>Explain</strong> (15 min): Discuss the feedback loops: more prey leads to more predators, which leads to fewer prey, which leads to fewer predators. Students use the "Remove Predators" button to observe trophic cascades. Connect to real examples: wolf reintroduction in Yellowstone, sea otter-urchin-kelp relationships.</p>
+</li>
+<li>
+<p><strong>Extend</strong> (10 min): Students use the "Add Disease" button and predict what will happen before pressing it. They write a paragraph explaining why predator removal does not lead to permanently high prey populations, using evidence from the simulation.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Explain why predator and prey populations oscillate rather than reaching a stable equilibrium.</li>
+<li>What happened when you removed all predators? Why did the prey population eventually crash even without predators?</li>
+<li>If a disease reduced the prey population by 50%, predict what would happen to the predator population over the next several generations.</li>
+<li>How does this simulation relate to the reintroduction of wolves to Yellowstone National Park?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Lotka, A.J. (1925). <em>Elements of Physical Biology</em>. Williams &amp; Wilkins.</li>
+<li>Elton, C. &amp; Nicholson, M. (1942). The ten-year cycle in numbers of the lynx in Canada. <em>Journal of Animal Ecology</em>, 11(2), 215-244.</li>
+<li>Ripple, W.J. &amp; Beschta, R.L. (2012). Trophic cascades in Yellowstone. <em>Biological Conservation</em>, 145(1), 205-213.</li>
 </ol>
 
 

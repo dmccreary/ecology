@@ -1,8 +1,8 @@
 {
   "title": "Biome Connections Network",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for biome connections network",
+  "subject": "Ecology",
+  "description": "Interactive network graph showing material and energy flow connections between 13 terrestrial and aquatic biomes with disruption simulation",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,60 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Biome Connections Network",
+    "subjectArea": "Environmental Science",
+    "topic": "Biome Connections and Ecological Connectivity",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Assess how material and energy flows connect different biomes across the planet",
+      "Identify types of connections between biomes including migration, water flow, nutrient transport, and atmospheric connections",
+      "Predict cascading effects when one biome is disrupted",
+      "Evaluate which biomes are most critical to global ecological stability"
     ],
     "bloomsTaxonomy": "Evaluate",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Knowledge of major terrestrial and aquatic biome types",
+      "Understanding of food webs and energy flow",
+      "Basic familiarity with migration and nutrient cycling"
+    ],
+    "standards": [
+      "NGSS HS-LS2-2",
+      "AP Environmental Science Topic 1.1"
+    ]
   },
   "technical": {
     "framework": "vis-network",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 600
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "vis-network"
+    ],
     "accessibility": {
       "hasAltText": false,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Network visualization with disruption simulation for systems thinking",
+    "keyQuestions": [
+      "Which biome has the most connections to other biomes?",
+      "What happens to distant biomes when a tropical rainforest is disrupted?",
+      "How do atmospheric connections differ from direct material flows?",
+      "Why must conservation efforts consider biome connectivity rather than protecting individual biomes in isolation?"
+    ],
+    "commonMisconceptions": [
+      "Biomes are independent and isolated from each other (they are connected by multiple material and energy flows)",
+      "Only adjacent biomes affect each other (bird migration and atmospheric transport connect distant biomes)",
+      "Aquatic and terrestrial biomes are separate systems (they are connected through water cycles, nutrient runoff, and migration)"
+    ],
+    "assessmentOpportunities": [
+      "Have students rank biomes by connectivity and predict which disruption would cause the most cascading damage",
+      "Ask students to trace a specific material flow (e.g., nutrients from forests to oceans) through multiple connected biomes",
+      "Challenge students to design a global conservation strategy that prioritizes the most connected biomes"
+    ]
   },
   "chapter": "02-ecosystems-and-biomes"
 }

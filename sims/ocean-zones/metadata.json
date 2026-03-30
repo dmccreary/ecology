@@ -1,8 +1,8 @@
 {
   "title": "Ocean Zones Interactive",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for ocean zones interactive",
+  "subject": "Ecology",
+  "description": "Interactive p5.js vertical cross-section of the ocean from surface to 6000m showing physical conditions and representative organisms at each depth zone",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,59 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Ocean Zones Interactive",
+    "subjectArea": "Environmental Science",
+    "topic": "Ocean Zones and Marine Ecosystems",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Describe the physical conditions and representative organisms of each ocean zone",
+      "Explain how light, temperature, and pressure gradients determine marine life distribution",
+      "Compare adaptations of organisms living at different ocean depths"
     ],
     "bloomsTaxonomy": "Understand",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "35 minutes",
+    "prerequisites": [
+      "Basic understanding of marine ecosystems",
+      "Conceptual knowledge of light, temperature, and pressure changes with depth",
+      "Introduction to organism adaptations"
+    ],
+    "standards": [
+      "NGSS HS-LS4-5",
+      "AP Environmental Science Topic 1.2"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 650
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js"
+    ],
     "accessibility": {
       "hasAltText": false,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Interactive depth exploration with real-time data display",
+    "keyQuestions": [
+      "Why is the epipelagic zone the most biologically productive ocean layer?",
+      "How do organisms in the deep ocean obtain energy without sunlight?",
+      "What adaptations allow organisms to survive the extreme pressure of the abyssal zone?",
+      "How does the thermocline affect nutrient mixing between ocean layers?"
+    ],
+    "commonMisconceptions": [
+      "The deep ocean is lifeless -- in fact, diverse communities thrive around hydrothermal vents and on the ocean floor",
+      "Ocean temperature decreases steadily with depth -- most temperature change occurs in the thermocline, with deep water being relatively uniform",
+      "Light penetrates much deeper than it actually does -- the photic zone extends only about 200m, less than 5% of average ocean depth"
+    ],
+    "assessmentOpportunities": [
+      "Have students graph temperature, light, and pressure versus depth and identify non-linear patterns",
+      "Ask students to explain why a specific organism cannot survive outside its zone",
+      "Compare student pre-exploration sketches with actual conditions revealed by the simulation"
+    ]
   },
   "chapter": "02-ecosystems-and-biomes"
 }

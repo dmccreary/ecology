@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for cognitive bias detective.">
+        <meta name="description" content="Detect cognitive biases and logical fallacies in environmental arguments through gamified practice.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Cognitive Bias Detective - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for cognitive bias detective.">
+        <meta property="og:description" content="Detect cognitive biases and logical fallacies in environmental arguments through gamified practice.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/bias-detective/bias-detective.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Cognitive Bias Detective - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for cognitive bias detective.">
+        <meta name="twitter:description" content="Detect cognitive biases and logical fallacies in environmental arguments through gamified practice.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/bias-detective/bias-detective.png">
       
@@ -1218,9 +1218,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1236,9 +1254,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,74 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This gamified simulation presents students with environmental claims that contain cognitive biases or logical fallacies. Students read each claim carefully, identify which bias or fallacy is present from a toolkit of seven options, and receive immediate feedback with explanations. Claims span three difficulty levels from obvious biases to subtle real-world examples.</p>
+<p>The seven biases and fallacies covered are: Confirmation Bias, Cherry-Picking, False Balance, Appeal to Nature, Ad Hominem, Slippery Slope, and False Dichotomy. Each claim card includes a headline, source attribution, and argument text. The simulation tracks score and streak to motivate continued practice.</p>
+<p>This supports the Bloom's taxonomy level of <strong>Evaluate</strong>, as students must critically assess arguments, detect flawed reasoning, and explain how each bias distorts environmental discourse. These skills are essential for scientific literacy and for evaluating the environmental claims students encounter in media and public debate.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Read the claim card</strong> on the left side, noting the headline, source, and argument text</li>
+<li><strong>Select a difficulty level</strong> from the dropdown (Beginner, Intermediate, or Expert) to filter claim complexity</li>
+<li><strong>Identify the bias or fallacy</strong> by clicking the appropriate button in the toolkit panel on the right</li>
+<li><strong>Read the feedback</strong>: correct answers show a green explanation of why the bias applies; incorrect answers show a hint to guide you</li>
+<li><strong>Track your score and streak</strong> displayed at the top of the screen</li>
+<li><strong>Click "Next Claim"</strong> to advance to the next environmental argument</li>
+<li><strong>Look for suspect phrases</strong> -- the key language that reveals the bias is often a specific phrase or logical structure in the text</li>
+<li><strong>Try all difficulty levels</strong> to progress from obvious biases (Beginner) through subtle examples (Expert)</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/bias-detective/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"542px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>15-20 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Detect cognitive biases and logical fallacies in environmental arguments</li>
+<li>Explain how each bias type distorts reasoning about ecological issues</li>
+<li>Distinguish between valid scientific arguments and flawed reasoning in environmental claims</li>
+<li>Apply critical thinking skills to evaluate real-world environmental media</li>
+<li>Identify specific language patterns that signal biased reasoning</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of environmental issues (climate change, pollution, conservation)</li>
+<li>Familiarity with the concept of argument and evidence</li>
+<li>Understanding of the difference between opinion and scientific evidence</li>
+<li>Awareness that media sources can present biased perspectives</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li>NGSS HS-ETS1-3: Evaluate a solution to a complex real-world problem based on prioritized criteria and trade-offs</li>
+<li>AP Environmental Science: Science Practices -- Analyzing Data and Evidence</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Warm-Up</strong> (2-3 min): Show students an environmental headline and ask: "Does this seem trustworthy? What makes you think so?" Introduce the concept that our brains have built-in shortcuts (biases) that can fool us.</li>
+<li><strong>Guided Exploration</strong> (5-7 min): Work through 3-4 Beginner claims as a class. For each, read the claim aloud, discuss what feels wrong, then reveal the bias. Build a class reference chart of bias definitions.</li>
+<li><strong>Independent Investigation</strong> (5-7 min): Students work individually through Intermediate and Expert claims. Challenge: achieve a 5-claim streak without mistakes. Have students record the most surprising bias they encountered.</li>
+<li><strong>Reflection</strong> (3-5 min): Ask: "Which bias do you think is most common in environmental media? Which is hardest to detect? How will you use these skills when reading news about environmental issues?"</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Define "Appeal to Nature" and give an example of how it might be used in an environmental argument.</li>
+<li>A news article presents equal space to 3 climate scientists and 3 climate skeptics. What bias does this represent, and why is it misleading given the scientific consensus?</li>
+<li>Compare Cherry-Picking and Confirmation Bias. How are they different, and how might they work together to distort someone's understanding of deforestation data?</li>
+<li>Find a real environmental claim from a news source or social media. Identify any biases or fallacies present and explain how they affect the argument's validity. What additional evidence would you need to evaluate the claim fairly?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_cognitive_biases">List of Cognitive Biases - Wikipedia</a> - Comprehensive catalog of known cognitive biases and their effects on reasoning</li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_fallacies">Logical Fallacies - Wikipedia</a> - Reference for common logical fallacies in argumentation</li>
+<li><a href="https://p5js.org/reference/">p5.js Reference</a> - JavaScript library used for the interactive simulation</li>
 </ol>
 
 

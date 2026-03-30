@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for ocean zones interactive.">
+        <meta name="description" content="Interactive p5.js vertical cross-section of the ocean from surface to 6000m, showing physical conditions and representative organisms at each depth zone.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Ocean Zones Interactive - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for ocean zones interactive.">
+        <meta property="og:description" content="Interactive p5.js vertical cross-section of the ocean from surface to 6000m, showing physical conditions and representative organisms at each depth zone.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/ocean-zones/ocean-zones.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Ocean Zones Interactive - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for ocean zones interactive.">
+        <meta name="twitter:description" content="Interactive p5.js vertical cross-section of the ocean from surface to 6000m, showing physical conditions and representative organisms at each depth zone.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/ocean-zones/ocean-zones.png">
       
@@ -2037,9 +2037,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2055,9 +2073,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2988,41 +3024,81 @@
 <h1 id="ocean-zones-interactive">Ocean Zones Interactive</h1>
 <iframe src="main.html" height="652" width="100%" scrolling="no"></iframe>
 
-<p><a class="md-button md-button--primary" href="main.html">Run the Ocean Zones Interactive MicroSim Fullscreen</a>
+<p><a class="md-button md-button--primary" href="main.html">Run the Ocean Zones Interactive Fullscreen</a>
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This visualization presents a vertical cross-section of the ocean from the surface (0 m) down to the deep ocean (6,000 m). A background color gradient shifts from light blue at the surface to complete black in the abyssal zone, giving students an intuitive sense of how light diminishes with depth. Ocean zones are labeled and separated by dashed lines, with a draggable depth indicator that students can move up and down through the water column.</p>
+<p>As the depth indicator moves, a sidebar updates in real time with the current zone name, depth range, temperature, pressure, light level, and two to three representative organisms shown with small icons. A light intensity meter displays photosynthetically available radiation declining to zero, reinforcing the concept that photosynthesis is limited to the upper ocean. This helps students grasp the enormous scale of ocean depth and the dramatic gradient of physical conditions.</p>
+<p>The visualization makes abstract depth measurements concrete by placing familiar organisms at their correct depths and connecting physical conditions (light, temperature, pressure) to the biological communities found in each zone. Students develop an understanding of why different organisms are adapted to specific ocean layers.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Observe the full ocean cross-section with its color gradient from light blue (surface) to black (deep ocean).</li>
+<li>Drag the <strong>depth indicator</strong> downward through the water column to explore each zone.</li>
+<li>Read the sidebar information that updates as you move through zones: zone name, depth range, temperature, pressure, and light level.</li>
+<li>Note the representative organisms displayed for each zone and consider their adaptations.</li>
+<li>Watch the <strong>light intensity meter</strong> decline as you descend, reaching zero in the aphotic zones.</li>
+<li>Compare conditions between zones by moving the depth indicator back and forth between them.</li>
+<li>Use the depth slider below the visualization for precise control over your position in the water column.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/ocean-zones/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"652px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>35 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Describe the physical conditions (light, temperature, pressure) of each ocean zone</li>
+<li>Identify representative organisms found at different ocean depths</li>
+<li>Explain how physical gradients determine the distribution of marine life</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of marine ecosystems</li>
+<li>Familiarity with how light, temperature, and pressure change with depth (conceptual level)</li>
+<li>Introduction to organism adaptations</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li>NGSS HS-LS4-5: Evaluate the evidence supporting claims that changes in environmental conditions may result in changes to an ecosystem</li>
+<li>AP Environmental Science: Topic 1.2 -- Terrestrial and Aquatic Biomes</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Quick Sketch</strong> (5 min): Before using the simulation, students sketch what they think the ocean looks like at 100 m, 1,000 m, and 5,000 m depth. Include temperature, light level, and one organism they think lives there. Save for later comparison.</p>
+</li>
+<li>
+<p><strong>Guided Zone Tour</strong> (10 min): As a class, slowly descend through all five zones. At each zone boundary, pause and record zone name, depth range, temperature, pressure, light level, and representative organisms in a data table. Discuss what changes most dramatically at each transition.</p>
+</li>
+<li>
+<p><strong>Adaptation Analysis</strong> (10 min): Students work in pairs. Each pair is assigned one zone and must explain: Why can the organisms in this zone survive here but not in other zones? What specific adaptations do they need for the temperature, pressure, and light conditions? Share findings with the class.</p>
+</li>
+<li>
+<p><strong>Gradient Graphing</strong> (10 min): Students create three graphs: temperature vs. depth, light vs. depth, and pressure vs. depth using data from the simulation. Discuss: Which variable changes linearly? Which changes exponentially? Where is the sharpest gradient?</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Explain why photosynthesis can only occur in the epipelagic zone and describe the consequences for food webs in deeper zones.</li>
+<li>A deep-sea fish is brought to the surface. Using the pressure data from the simulation, explain what would happen to the organism and why.</li>
+<li>Compare the mesopelagic and bathypelagic zones. What physical factor changes most dramatically between them, and how does this affect the organisms found in each?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Garrison, T.S., &amp; Ellis, R. (2016). <em>Oceanography: An Invitation to Marine Science</em> (9th ed.). Cengage Learning.</li>
+<li>Ramirez-Llodra, E., et al. (2010). Deep, diverse and definitely different: Unique attributes of the world's largest ecosystem. <em>Biogeosciences</em>, 7, 2851-2899.</li>
+<li>NOAA. "Ocean Zones." National Ocean Service. <a href="https://oceanservice.noaa.gov/">https://oceanservice.noaa.gov/</a></li>
 </ol>
 
 

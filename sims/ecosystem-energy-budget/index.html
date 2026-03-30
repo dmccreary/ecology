@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for complete ecosystem energy budget.">
+        <meta name="description" content="Interactive p5.js MicroSim where students construct and balance a complete ecosystem energy budget, tracing energy from solar input through GPP, NPP, and NEP.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Complete Ecosystem Energy Budget - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for complete ecosystem energy budget.">
+        <meta property="og:description" content="Interactive p5.js MicroSim where students construct and balance a complete ecosystem energy budget, tracing energy from solar input through GPP, NPP, and NEP.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/ecosystem-energy-budget/ecosystem-energy-budget.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Complete Ecosystem Energy Budget - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for complete ecosystem energy budget.">
+        <meta name="twitter:description" content="Interactive p5.js MicroSim where students construct and balance a complete ecosystem energy budget, tracing energy from solar input through GPP, NPP, and NEP.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/ecosystem-energy-budget/ecosystem-energy-budget.png">
       
@@ -1239,9 +1239,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1257,9 +1275,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,82 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This comprehensive MicroSim presents the complete energy budget of an ecosystem as an interactive flow diagram. Solar energy enters from the top and flows through producers, consumers, and decomposers, with energy lost as heat at each step. Students can see and edit all the key values: Gross Primary Productivity (GPP), autotrophic respiration (Ra), Net Primary Productivity (NPP), consumption by herbivores and decomposers, Net Ecosystem Productivity (NEP), heterotrophic respiration, and secondary production.</p>
+<p>The power of this MicroSim lies in its interactivity. Students can click on any value to edit it, and the diagram automatically recalculates all downstream values, highlighting any inconsistencies in red. A "Balance Check" feature verifies the fundamental constraint that Energy In must equal Energy Out plus Energy Stored, reinforcing the first law of thermodynamics in an ecological context.</p>
+<p>Ecosystem presets via a dropdown menu let students compare energy budgets across different ecosystem types, revealing how tropical forests, grasslands, and aquatic systems allocate energy differently. This integrated view connects all the productivity concepts (GPP, NPP, NEP) that are often taught separately, helping students see the complete energy picture.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Examine the flow diagram showing energy moving from solar input through producers to consumers and decomposers.</li>
+<li>Note the values at each step: GPP, Ra, NPP, herbivore consumption, decomposer consumption, and NEP.</li>
+<li>Click on any value to edit it and watch downstream values recalculate automatically.</li>
+<li>Values highlighted in red indicate an energy budget inconsistency -- adjust values to balance the budget.</li>
+<li>Click the "Balance Check" button to verify that Energy In = Energy Out + Energy Stored.</li>
+<li>Use the ecosystem preset dropdown to compare energy budgets across different ecosystem types.</li>
+<li>Observe how all heat arrows converge into the Total Heat Loss counter.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/ecosystem-energy-budget/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"522px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>55 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Construct a complete energy budget for an ecosystem tracing energy from solar input through GPP, NPP, and NEP</li>
+<li>Explain the relationship between GPP, Ra, NPP, and NEP</li>
+<li>Apply the first law of thermodynamics to verify energy balance in an ecosystem</li>
+<li>Compare energy allocation patterns across different ecosystem types</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Understanding of photosynthesis and cellular respiration</li>
+<li>Introduction to the concept of trophic levels</li>
+<li>Basic knowledge of the first and second laws of thermodynamics</li>
+<li>Familiarity with the terms producers, consumers, and decomposers</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-LS2-4</strong>: Use mathematical representations to support claims for the cycling of matter and flow of energy among organisms in an ecosystem</li>
+<li><strong>AP Environmental Science</strong>: Topic 1.4 -- Primary Productivity</li>
+<li><strong>NGSS HS-LS2-3</strong>: Construct and revise an explanation based on evidence for the cycling of matter and flow of energy in aerobic and anaerobic conditions</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Warm-Up</strong> (5 min): Write on the board: "A forest receives 10,000 kJ/m2/day of solar energy. Only about 20 kJ ends up stored in new wood. Where did the rest go?" Have students brainstorm all possible energy pathways.</p>
+</li>
+<li>
+<p><strong>Guided Budget Construction</strong> (20 min): Using the MicroSim, walk through the energy budget as a class. Start with solar input and trace energy through each step, asking students to predict each value before revealing it. Key questions at each step: "What fraction of energy moves forward? What fraction is lost as heat? Why?"</p>
+</li>
+<li>
+<p><strong>Independent Exploration</strong> (15 min): Students select different ecosystem presets and complete a comparison table recording GPP, NPP, NEP, and the ratio NPP/GPP for each ecosystem type. They answer: "Which ecosystem is most efficient at storing energy? Which loses the most to respiration? Why might this be?"</p>
+</li>
+<li>
+<p><strong>Budget Challenge</strong> (15 min): Students intentionally create an unbalanced budget by editing values and then must identify and fix the inconsistencies. This hands-on debugging reinforces understanding of the energy balance constraint. Extension: Students design the energy budget for a hypothetical ecosystem and present it to the class.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Define GPP, NPP, and NEP, and write the mathematical equation relating them.</li>
+<li>Why is NPP always less than GPP? Where does the difference go?</li>
+<li>An ecosystem has a GPP of 5,000 kJ/m2/yr and an NPP of 2,500 kJ/m2/yr. What is its autotrophic respiration rate? What percentage of GPP is used for plant respiration?</li>
+<li>If NEP is negative for a year, what does this tell you about the ecosystem? Is it gaining or losing carbon?</li>
+<li>Why do only about 10% of the energy at one trophic level transfer to the next? Use the energy budget to explain this rule.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Chapin, F.S., Matson, P.A. &amp; Vitousek, P. (2011). <em>Principles of Terrestrial Ecosystem Ecology</em>. 2nd ed. Springer.</li>
+<li>Odum, E.P. &amp; Barrett, G.W. (2005). <em>Fundamentals of Ecology</em>. 5th ed. Thomson Brooks/Cole.</li>
+<li>Lindeman, R.L. (1942). "The Trophic-Dynamic Aspect of Ecology." <em>Ecology</em> 23(4): 399-417.</li>
 </ol>
 
 

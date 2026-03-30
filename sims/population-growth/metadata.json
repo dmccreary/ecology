@@ -1,8 +1,8 @@
 {
   "title": "Population Growth Simulator",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for population growth simulator",
+  "subject": "Ecology",
+  "description": "Interactive MicroSim modeling exponential and logistic population growth with adjustable parameters for initial population, growth rate, and carrying capacity.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,15 +11,26 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Environmental Science",
     "topic": "Population Growth Simulator",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Model exponential and logistic population growth by adjusting parameters and observing resulting curves",
+      "Explain the relationship between growth rate (r), carrying capacity (K), and population size (N)",
+      "Predict how changes in environmental conditions affect population growth patterns",
+      "Compare exponential and logistic growth models and identify when each applies"
     ],
-    "bloomsTaxonomy": "Create",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "bloomsTaxonomy": "Apply",
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Basic understanding of population ecology vocabulary",
+      "Familiarity with interpreting line graphs",
+      "Understanding of exponential functions from algebra"
+    ],
+    "standards": [
+      "NGSS LS2.A",
+      "NGSS LS2.C",
+      "AP Environmental Science Topic 3.2"
+    ]
   },
   "technical": {
     "framework": "p5.js",
@@ -36,10 +47,23 @@
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Interactive exploration with parameter manipulation",
+    "keyQuestions": [
+      "Why does the logistic growth curve level off while the exponential curve does not?",
+      "At what population size is the growth rate fastest in logistic growth?",
+      "What real-world factors determine a population's carrying capacity?",
+      "Can any population grow exponentially forever?"
+    ],
+    "commonMisconceptions": [
+      "Populations always grow exponentially when resources are available",
+      "Carrying capacity is a fixed number that never changes",
+      "Population growth stops completely at carrying capacity rather than fluctuating around it"
+    ],
+    "assessmentOpportunities": [
+      "Students predict population trajectories before running the simulation and compare to actual results",
+      "Students explain the biological meaning of the inflection point at K/2",
+      "Students identify real-world scenarios that match exponential vs. logistic growth"
+    ]
   },
   "chapter": "07-population-ecology"
 }

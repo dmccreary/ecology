@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for pollutant pathways map.">
+        <meta name="description" content="Interactive p5.js landscape cross-section where students trace how different pollutants move through environmental pathways from source to receptor.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Pollutant Pathways Map - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for pollutant pathways map.">
+        <meta property="og:description" content="Interactive p5.js landscape cross-section where students trace how different pollutants move through environmental pathways from source to receptor.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/pollutant-pathways-map/pollutant-pathways-map.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Pollutant Pathways Map - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for pollutant pathways map.">
+        <meta name="twitter:description" content="Interactive p5.js landscape cross-section where students trace how different pollutants move through environmental pathways from source to receptor.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/pollutant-pathways-map/pollutant-pathways-map.png">
       
@@ -2100,9 +2100,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2118,9 +2136,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2988,41 +3024,80 @@
 <h1 id="pollutant-pathways-map">Pollutant Pathways Map</h1>
 <iframe src="main.html" height="442" width="100%" scrolling="no"></iframe>
 
-<p><a class="md-button md-button--primary" href="main.html">Run the Pollutant Pathways Map MicroSim Fullscreen</a>
+<p><a class="md-button md-button--primary" href="main.html">Run the Pollutant Pathways Map Fullscreen</a>
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This simulation presents a stylized landscape cross-section featuring a factory, farmland, city, river, lake, and ocean. Students select a pollutant type from a dropdown menu -- fertilizer runoff, industrial discharge, sewage, thermal pollution, or pesticide -- and watch animated particles trace that pollutant's path through the landscape. Each pollutant type is color-coded and follows a different route based on its source and transport mechanism.</p>
+<p>Along each pathway, information popups appear describing transformation processes such as bioaccumulation and chemical breakdown, affected organisms, and regulatory checkpoints including Clean Water Act permits and Superfund site designations. Toggle buttons let students show or hide point sources, nonpoint sources, treatment facilities, and wetland buffers, revealing how different infrastructure elements intercept or fail to intercept pollutants.</p>
+<p>The spatial visualization reinforces systems thinking by revealing hidden connections between distant parts of the landscape. Students discover that a factory discharge upstream affects organisms in the lake downstream, and that nonpoint source pollution from farmland is harder to regulate than point source pollution from a factory. The simulation connects physical geography, chemistry, biology, and environmental policy in a single interactive view.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Select a pollutant type from the <strong>dropdown menu</strong>: Fertilizer Runoff, Industrial Discharge, Sewage, Thermal Pollution, or Pesticide.</li>
+<li>Watch the animated particles trace the pollutant's path from source through the landscape to its final destination.</li>
+<li>Read the <strong>information popups</strong> that appear along the pathway describing transformation processes and affected organisms.</li>
+<li>Use the <strong>toggle buttons</strong> to show or hide: point sources, nonpoint sources, treatment facilities, and wetland buffers.</li>
+<li>Compare pathways by switching between different pollutant types and noting which landscape features each passes through.</li>
+<li>Notice which pollutants are intercepted by treatment facilities or wetland buffers and which pass through unimpeded.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/pollutant-pathways-map/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"442px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / AP Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Trace how different pollutants move through environmental pathways from source to receptor</li>
+<li>Distinguish between point source and nonpoint source pollution</li>
+<li>Evaluate the effectiveness of different mitigation strategies (treatment plants, wetland buffers) for different pollutant types</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of water flow in landscapes (rivers, lakes, groundwater)</li>
+<li>Introduction to types of pollutants and their sources</li>
+<li>Familiarity with the concepts of point source and nonpoint source pollution</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li>NGSS HS-ESS3-4: Evaluate or refine a technological solution that reduces impacts of human activities on natural systems</li>
+<li>AP Environmental Science: Topic 8.1 -- Sources of Pollution; Topic 8.3 -- Thermal Pollution; Topic 8.10 -- Pollution and Human Health</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Landscape Orientation</strong> (5 min): Before selecting any pollutant, have students identify all the features in the landscape: factory, farmland, city, river, lake, ocean. Discuss: How are these connected by water flow? Where might pollution enter the system?</p>
+</li>
+<li>
+<p><strong>Pollutant Comparison</strong> (15 min): Students work in pairs, each pair assigned two pollutant types. They trace both pollutants through the landscape and fill in a comparison table: source type (point vs. nonpoint), pathway through landscape, transformation processes, affected organisms, and regulatory mechanisms. Pairs share findings with the class.</p>
+</li>
+<li>
+<p><strong>Mitigation Analysis</strong> (15 min): Students toggle the treatment facilities and wetland buffers on and off for each pollutant type. They record which pollutants are effectively intercepted and which are not. Discuss: Why are nonpoint source pollutants harder to control than point source pollutants? What additional mitigation strategies might work?</p>
+</li>
+<li>
+<p><strong>Policy Proposal</strong> (10 min): Students draft a one-paragraph policy recommendation for reducing pollution in the watershed shown in the simulation. They must address at least one point source and one nonpoint source pollutant, citing specific mitigation strategies and the regulatory tools available (Clean Water Act permits, Superfund designation).</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Explain the difference between point source and nonpoint source pollution using two specific examples from the simulation.</li>
+<li>Trace the pathway of pesticide from farmland to the ocean. At each stage, describe one transformation process that occurs and one organism that is affected.</li>
+<li>A community wants to reduce pollution entering their lake. Using evidence from the simulation, compare the effectiveness of building a treatment plant versus restoring wetland buffers. Which approach addresses more pollutant types?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Manahan, S.E. (2017). <em>Environmental Chemistry</em> (10th ed.). CRC Press.</li>
+<li>EPA. "Summary of the Clean Water Act." United States Environmental Protection Agency. <a href="https://www.epa.gov/laws-regulations/summary-clean-water-act">https://www.epa.gov/laws-regulations/summary-clean-water-act</a></li>
+<li>Carpenter, S.R., et al. (1998). Nonpoint pollution of surface waters with phosphorus and nitrogen. <em>Ecological Applications</em>, 8(3), 559-568.</li>
 </ol>
 
 

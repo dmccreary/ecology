@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive vis-network MicroSim for biome connections network.">
+        <meta name="description" content="Assess how material and energy flows connect different biomes across the planet using a network graph.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Biome Connections Network - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive vis-network MicroSim for biome connections network.">
+        <meta property="og:description" content="Assess how material and energy flows connect different biomes across the planet using a network graph.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/biome-connections/biome-connections.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Biome Connections Network - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive vis-network MicroSim for biome connections network.">
+        <meta name="twitter:description" content="Assess how material and energy flows connect different biomes across the planet using a network graph.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/biome-connections/biome-connections.png">
       
@@ -1071,9 +1071,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1089,9 +1107,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2988,41 +3024,76 @@
 <h1 id="biome-connections-network">Biome Connections Network</h1>
 <iframe src="main.html" height="600" width="100%" scrolling="no"></iframe>
 
-<p><a class="md-button md-button--primary" href="main.html">Run the Biome Connections Network MicroSim Fullscreen</a>
-<br>
-<a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
+<p><a class="md-button md-button--primary" href="main.html">Run the Biome Connections Network MicroSim Fullscreen</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This interactive network graph reveals the often non-obvious connections between the world's major biomes through material and energy flows. Thirteen biome nodes (7 terrestrial and 6 aquatic) are connected by edges representing bird migration, water flow, nutrient transport, and atmospheric connections. The visualization uses a physics-based layout with color coding -- green for terrestrial biomes and blue for aquatic biomes.</p>
+<p>Clicking any biome node highlights all its connections and displays details in a sidebar panel. The "Disrupt" feature simulates what happens when a selected biome is degraded, with connected biomes flashing yellow and showing impact descriptions. This systems-level view reinforces that no biome exists in isolation.</p>
+<p>This supports the Bloom's taxonomy level of <strong>Evaluate</strong>, as students must assess the relative importance of different biome connections and predict cascading effects when one biome is disrupted. The visualization makes abstract systems thinking tangible by showing how disrupting one node propagates through the entire network.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Click any biome node</strong> to highlight its connections and see detailed information in the side panel</li>
+<li><strong>Read the edge labels</strong> to understand the type of connection between biomes (migration, water flow, nutrient transport, atmospheric)</li>
+<li><strong>Select a biome from the dropdown</strong> at the top and click <strong>"Disrupt Biome"</strong> to simulate what happens when that biome is degraded</li>
+<li><strong>Observe the yellow flash</strong> on connected biomes showing how disruption propagates through the network</li>
+<li><strong>Read the impact descriptions</strong> in the sidebar to understand the cascading consequences</li>
+<li><strong>Click "Reset View"</strong> to restore the original network state</li>
+<li><strong>Notice the color coding</strong>: green nodes are terrestrial biomes, blue nodes are aquatic biomes</li>
+<li><strong>Drag nodes</strong> to rearrange the layout and explore the network structure</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/biome-connections/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"600px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>15-20 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Assess how material and energy flows connect different biomes across the planet</li>
+<li>Identify at least four types of connections between biomes (migration, water flow, nutrient transport, atmospheric)</li>
+<li>Predict cascading effects when one biome is disrupted</li>
+<li>Evaluate which biomes are most critical to global ecological stability based on their connectivity</li>
+<li>Explain why conservation requires a systems-level perspective</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Knowledge of the major terrestrial and aquatic biome types</li>
+<li>Understanding of food webs and energy flow</li>
+<li>Basic familiarity with migration and nutrient cycling</li>
+<li>Concept of ecosystems as interconnected systems</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li>NGSS HS-LS2-2: Use mathematical representations to support and revise explanations of factors affecting biodiversity</li>
+<li>AP Environmental Science Topic 1.1: Introduction to Ecosystems</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Warm-Up</strong> (2-3 min): Ask students: "Can a forest fire in Siberia affect ocean life in the Pacific? How?" Accept all hypotheses and revisit after the exploration.</li>
+<li><strong>Guided Exploration</strong> (5-7 min): Click through 3-4 biomes as a class. For each, identify its connections and classify them by type. Ask: "Which biome has the most connections? What does that suggest about its ecological importance?"</li>
+<li><strong>Independent Investigation</strong> (5-7 min): Have students use the Disrupt feature on three different biomes and record the cascading impacts. Challenge: "Which biome disruption causes the most widespread damage? Which biome is most isolated?"</li>
+<li><strong>Reflection</strong> (3-5 min): Return to the warm-up question. Discuss: "Now that you see the connections, how does deforestation in one biome affect distant oceans? Why does this mean that environmental protection must be global?"</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Name four types of connections that link biomes to each other.</li>
+<li>Click on a tropical rainforest node. What biomes is it connected to, and through what mechanisms? Why does this make tropical deforestation a global concern?</li>
+<li>Compare the impact of disrupting a highly connected biome versus a relatively isolated one. What pattern do you observe? How does this inform conservation priorities?</li>
+<li>A country argues that protecting its wetlands is unnecessary because wetlands are "just swamps." Using the network diagram, construct an argument for why wetland conservation benefits biomes beyond the country's borders.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li><a href="https://en.wikipedia.org/wiki/Biome">Biome - Wikipedia</a> - Overview of the world's major terrestrial and aquatic biomes</li>
+<li><a href="https://en.wikipedia.org/wiki/Ecological_connectivity">Ecosystem Connectivity - Wikipedia</a> - How material and energy flows connect ecosystems across landscapes</li>
+<li><a href="https://visjs.github.io/vis-network/docs/network/">vis.js Network Documentation</a> - JavaScript library used for the interactive network graph</li>
 </ol>
 
 

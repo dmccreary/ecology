@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for population growth simulator.">
+        <meta name="description" content="Interactive p5.js MicroSim modeling exponential and logistic population growth with adjustable parameters for initial population, growth rate, and carrying capacity.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Population Growth Simulator - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for population growth simulator.">
+        <meta property="og:description" content="Interactive p5.js MicroSim modeling exponential and logistic population growth with adjustable parameters for initial population, growth rate, and carrying capacity.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/population-growth/population-growth.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Population Growth Simulator - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for population growth simulator.">
+        <meta name="twitter:description" content="Interactive p5.js MicroSim modeling exponential and logistic population growth with adjustable parameters for initial population, growth rate, and carrying capacity.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/population-growth/population-growth.png">
       
@@ -2121,9 +2121,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2139,9 +2157,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,9 +3028,19 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim allows students to explore two fundamental models of population growth: exponential growth and logistic growth. By adjusting parameters such as initial population size (N0), intrinsic growth rate (r), and carrying capacity (K), students can observe how populations change over time under different conditions.</p>
+<p>The simulation plots population size against time, displaying the characteristic J-curve of exponential growth and the S-curve of logistic growth. When both models are shown simultaneously, students can directly compare how the introduction of carrying capacity transforms unlimited growth into a pattern that levels off. The inflection point at K/2 is marked on the logistic curve, highlighting where growth rate is at its maximum.</p>
+<p>Real-time parameter manipulation builds intuition about how r and K interact to shape population trajectories. Watching the J-curve transform into an S-curve as carrying capacity is introduced creates a memorable understanding of why no population can grow without limits.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Use the <strong>N0 slider</strong> to set the initial population size (1-100 individuals).</li>
+<li>Adjust the <strong>growth rate (r) slider</strong> to change how fast the population reproduces (0.01-1.0).</li>
+<li>Set the <strong>carrying capacity (K) slider</strong> to define the environmental limit (100-10,000).</li>
+<li>Toggle between <strong>Exponential</strong> and <strong>Logistic</strong> checkboxes to display one or both growth curves.</li>
+<li>Press <strong>Play</strong> to start the simulation and watch the population change over time.</li>
+<li>Use the <strong>Speed slider</strong> to control animation speed.</li>
+<li>Press <strong>Reset</strong> to clear the graph and start over with new parameters.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -3007,22 +3053,55 @@
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / AP Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Model exponential and logistic population growth by adjusting parameters and observing resulting curves.</li>
+<li>Explain the relationship between growth rate (r), carrying capacity (K), and population size (N).</li>
+<li>Predict how changes in environmental conditions affect population growth patterns.</li>
+<li>Compare exponential and logistic growth models and identify when each applies.</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of population ecology vocabulary (population, growth rate, carrying capacity)</li>
+<li>Familiarity with interpreting line graphs</li>
+<li>Understanding of exponential functions from algebra</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS LS2.A</strong>: Interdependent Relationships in Ecosystems</li>
+<li><strong>NGSS LS2.C</strong>: Ecosystem Dynamics, Functioning, and Resilience</li>
+<li><strong>AP Environmental Science</strong>: Topic 3.2 - Population Growth and Resource Availability</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Engage</strong> (5 min): Ask students: "Can any population grow forever? Why or why not?" Discuss examples of populations that have exploded and then crashed (deer on Kaibab Plateau, invasive species). Introduce the simulation.</p>
+</li>
+<li>
+<p><strong>Explore</strong> (15 min): Students experiment with the exponential model first. They set different values of r and N0 and observe the J-curve. Then they enable the logistic model, add carrying capacity, and observe the S-curve. Students record observations about what happens when r is very high vs. very low, and when K changes.</p>
+</li>
+<li>
+<p><strong>Explain</strong> (15 min): Class discussion connecting observations to the equations dN/dt = rN (exponential) and dN/dt = rN(1 - N/K) (logistic). Students identify the inflection point at K/2 and explain why growth rate peaks there. Discuss real-world factors that determine carrying capacity.</p>
+</li>
+<li>
+<p><strong>Extend</strong> (10 min): Students predict what will happen to a population of 50 organisms with r=0.5 and K=500, then test their prediction. They explore scenarios: What if carrying capacity suddenly drops (habitat destruction)? What if growth rate increases (reduced predation)?</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Why does the logistic growth curve level off while the exponential curve does not?</li>
+<li>A population of rabbits has r = 0.3 and K = 1000. At what population size is the growth rate fastest? Explain your reasoning.</li>
+<li>Give two real-world examples of factors that would reduce a population's carrying capacity.</li>
+<li>If you removed all predators from an ecosystem, would you expect the prey population to follow exponential or logistic growth? Explain.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Gotelli, N.J. (2008). <em>A Primer of Ecology</em>, 4th ed. Sinauer Associates.</li>
+<li>Molles, M.C. (2015). <em>Ecology: Concepts and Applications</em>, 7th ed. McGraw-Hill.</li>
+<li>HHMI BioInteractive: Population Dynamics. <a href="https://www.biointeractive.org/">https://www.biointeractive.org/</a></li>
 </ol>
 
 

@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive vis-network MicroSim for ecosystem concept map.">
+        <meta name="description" content="Interactive vis-network concept map showing 20 foundational ecology concepts as nodes with relationship edges, supporting analysis of how ecological ideas interconnect.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Ecosystem Concept Map - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive vis-network MicroSim for ecosystem concept map.">
+        <meta property="og:description" content="Interactive vis-network concept map showing 20 foundational ecology concepts as nodes with relationship edges, supporting analysis of how ecological ideas interconnect.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/ecosystem-concept-map/ecosystem-concept-map.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Ecosystem Concept Map - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive vis-network MicroSim for ecosystem concept map.">
+        <meta name="twitter:description" content="Interactive vis-network concept map showing 20 foundational ecology concepts as nodes with relationship edges, supporting analysis of how ecological ideas interconnect.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/ecosystem-concept-map/ecosystem-concept-map.png">
       
@@ -1428,9 +1428,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1446,9 +1464,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2988,41 +3024,83 @@
 <h1 id="ecosystem-concept-map">Ecosystem Concept Map</h1>
 <iframe src="main.html" height="630" width="100%" scrolling="no"></iframe>
 
-<p><a class="md-button md-button--primary" href="main.html">Run the Ecosystem Concept Map MicroSim Fullscreen</a>
-<br>
-<a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
+<p><a class="md-button md-button--primary" href="main.html">Run the Ecosystem Concept Map Fullscreen</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This interactive concept map displays 20 foundational ecology concepts as a network graph, revealing the web of relationships that connects ideas like Ecosystem, Biodiversity, Photosynthesis, Energy, and Biotic Factors. Built with vis-network, the force-directed layout naturally clusters related concepts while showing how different domains of ecological knowledge interconnect.</p>
+<p>Concepts are color-coded by category: organization concepts (green) like Ecosystem, Biosphere, and Niche; energy and matter concepts (gold) like Nutrients, Organic Molecules, and Water Properties; process concepts (blue) like Photosynthesis and Cellular Respiration; and factor concepts (orange) like Biotic and Abiotic Factors. Edges are labeled with relationship types including "contains," "part of," "made of," "depends on," and "produces."</p>
+<p>Clicking any concept node highlights all directly connected nodes and edges, helping students trace how a single idea connects to multiple others. Hovering reveals definitions and relationship descriptions. Students can drag nodes to rearrange the layout, zoom with the mouse wheel, and use the reset button to return to the default view. This exploration supports systems thinking by making abstract conceptual connections visible and interactive.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Explore the concept map by observing how nodes cluster and connect.</li>
+<li>Click any concept node to highlight all its direct connections, dimming unrelated nodes.</li>
+<li>Hover over a node to read its definition in a tooltip.</li>
+<li>Hover over an edge to see the relationship description between two concepts.</li>
+<li>Drag nodes to rearrange the layout for better visibility of specific connections.</li>
+<li>Use the mouse wheel to zoom in and out of the network.</li>
+<li>Click "Show All Connections" or "Reset View" to return to the full network view.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/ecosystem-concept-map/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"630px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>50 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Organize foundational ecology concepts into a network showing their relationships</li>
+<li>Explain how ecological concepts connect to and depend on each other</li>
+<li>Trace pathways through the concept network to explain ecological processes</li>
+<li>Analyze which concepts serve as central hubs connecting multiple ideas</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Completion of Chapter 1 introductory readings on ecology foundations</li>
+<li>Basic understanding of photosynthesis and cellular respiration</li>
+<li>Familiarity with ecosystem terminology (biotic, abiotic, habitat, niche)</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-LS2-3</strong>: Construct and revise an explanation based on evidence for the cycling of matter and flow of energy in aerobic and anaerobic conditions</li>
+<li><strong>AP Environmental Science</strong>: Topic 1.1 -- Introduction to Ecosystems</li>
+<li><strong>NGSS HS-LS2-4</strong>: Use mathematical representations to support claims for the cycling of matter and flow of energy among organisms in an ecosystem</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Warm-Up</strong> (5 min): Give students a list of 10 ecology terms from the concept map. Ask them to draw lines connecting terms they think are related and label each connection. This pre-assessment reveals existing mental models.</p>
+</li>
+<li>
+<p><strong>Guided Exploration</strong> (15 min): Students explore the concept map by clicking each of the four concept categories (organization, energy/matter, process, factor). For each category, they record: the concepts in that group, how many connections each has to other categories, and which concept has the most connections overall.</p>
+</li>
+<li>
+<p><strong>Pathway Tracing</strong> (15 min): In pairs, students trace three specific pathways through the network and write a paragraph for each: (a) From Photosynthesis to Biosphere -- how does photosynthesis connect to the largest scale of life? (b) From Abiotic Factors to Biodiversity -- how do nonliving factors influence the variety of life? (c) From Energy to Community -- how does energy flow relate to community structure?</p>
+</li>
+<li>
+<p><strong>Concept Map Extension</strong> (15 min): Students identify two concepts they think should be added to the map (e.g., Climate Change, Decomposition, Food Web). They describe where each would connect, what edges it would have, and why it belongs. This exercise extends analysis to synthesis.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Which concept in the network has the most connections to other concepts? Why does this make it a central idea in ecology?</li>
+<li>Trace a pathway from Energy through Photosynthesis to Ecosystem. Describe each relationship along the path.</li>
+<li>How are the concepts of Habitat and Niche related but different? Use their connections in the network to support your answer.</li>
+<li>If you removed the concept of "Water Properties" from the map, which other concepts would be most affected? Explain why.</li>
+<li>Why is a concept map more useful than a simple list for understanding ecology?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Novak, J.D. &amp; Canas, A.J. (2008). "The Theory Underlying Concept Maps and How to Construct Them." Florida Institute for Human and Machine Cognition.</li>
+<li>Odum, E.P. &amp; Barrett, G.W. (2005). <em>Fundamentals of Ecology</em>. 5th ed. Thomson Brooks/Cole.</li>
+<li>Begon, M., Townsend, C.R. &amp; Harper, J.L. (2006). <em>Ecology: From Individuals to Ecosystems</em>. 4th ed. Blackwell Publishing.</li>
 </ol>
 
 

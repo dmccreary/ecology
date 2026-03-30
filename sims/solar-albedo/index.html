@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for solar radiation and albedo simulator.">
+        <meta name="description" content="Interactive p5.js MicroSim demonstrating how surface albedo affects energy absorption, temperature, and climate feedback loops.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Solar Radiation and Albedo Simulator - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for solar radiation and albedo simulator.">
+        <meta property="og:description" content="Interactive p5.js MicroSim demonstrating how surface albedo affects energy absorption, temperature, and climate feedback loops.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/solar-albedo/solar-albedo.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Solar Radiation and Albedo Simulator - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for solar radiation and albedo simulator.">
+        <meta name="twitter:description" content="Interactive p5.js MicroSim demonstrating how surface albedo affects energy absorption, temperature, and climate feedback loops.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/solar-albedo/solar-albedo.png">
       
@@ -2373,9 +2373,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2391,9 +2409,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,9 +3028,19 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim makes the concept of albedo -- the fraction of incoming solar radiation reflected by a surface -- tangible and visual. Students select different surface types (fresh snow, sea ice, ocean, forest, desert, city) and watch as incoming yellow solar arrows strike the surface and are reflected or absorbed in proportion to the albedo value.</p>
+<p>High-albedo surfaces like fresh snow (0.85) reflect most incoming radiation, keeping the surface cool, while low-albedo surfaces like ocean (0.06) absorb almost all radiation, warming significantly. A temperature gauge and numerical energy budget display incoming, reflected, and absorbed radiation in real time. The surface appearance changes to match the selected type, and a red glow indicates absorbed energy.</p>
+<p>The "Climate Feedback" toggle reveals the ice-albedo feedback loop -- one of the most important positive feedback mechanisms in climate science. As ice melts, it exposes darker ocean, which absorbs more energy, causing more warming, which melts more ice. This animated cycle diagram connects surface-level physics to global climate dynamics.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Select a <strong>surface type</strong> from the dropdown: Fresh Snow, Sea Ice, Ocean, Forest, Desert, or City.</li>
+<li>Observe the yellow incoming arrows and white reflected arrows -- more reflection means higher albedo.</li>
+<li>Watch the <strong>temperature gauge</strong> rise or fall based on net absorbed energy.</li>
+<li>Read the <strong>energy budget display</strong>: incoming radiation, reflected radiation, absorbed radiation, and albedo value.</li>
+<li>Compare surfaces: Which absorbs the most? Which reflects the most?</li>
+<li>Toggle the <strong>Climate Feedback</strong> checkbox to see the ice-albedo positive feedback loop animation.</li>
+<li>Switch between ice and ocean surfaces to understand how melting ice accelerates warming.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -3007,22 +3053,55 @@
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / AP Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>40 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Calculate the net energy absorbed by different surfaces and predict how albedo changes affect local temperature.</li>
+<li>Explain the relationship between surface albedo and energy balance.</li>
+<li>Describe the ice-albedo positive feedback loop and its role in climate change.</li>
+<li>Predict how land-use changes (deforestation, urbanization) affect local and global energy budgets.</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of solar radiation and the electromagnetic spectrum</li>
+<li>Familiarity with the concept of energy transfer (absorption and reflection)</li>
+<li>Understanding of the greenhouse effect at an introductory level</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS ESS2.D</strong>: Weather and Climate</li>
+<li><strong>NGSS ESS3.D</strong>: Global Climate Change</li>
+<li><strong>AP Environmental Science</strong>: Topic 9.2 - Global Climate Change; Topic 9.4 - The Greenhouse Effect</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Engage</strong> (5 min): Ask students: "Why do you wear light-colored clothing on a hot day?" Connect personal experience to the scientific concept of albedo. Ask what would happen if all the ice in the Arctic melted -- would it affect global temperature?</p>
+</li>
+<li>
+<p><strong>Explore</strong> (15 min): Students cycle through all six surface types and record the albedo value, absorbed radiation, and resulting temperature for each. They rank the surfaces from highest to lowest albedo and create a bar chart. Students toggle the feedback loop and describe what they observe.</p>
+</li>
+<li>
+<p><strong>Explain</strong> (10 min): Discuss Earth's average albedo (approximately 0.30) and the energy budget. Explain the ice-albedo feedback: warming melts ice, exposing dark ocean, which absorbs more heat, causing more warming. This is a positive feedback loop that amplifies climate change. Discuss the urban heat island effect as another albedo-related phenomenon (cities have lower albedo than surrounding vegetation).</p>
+</li>
+<li>
+<p><strong>Extend</strong> (10 min): Students calculate: If Arctic ice cover decreases from 7 million km2 to 4 million km2, and the albedo changes from 0.60 (ice) to 0.06 (ocean), how much additional energy is absorbed? Students discuss the implications for global climate and local ecosystems that depend on ice (polar bears, seals, Arctic marine food webs).</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Rank the following surfaces from highest to lowest albedo: forest, fresh snow, ocean, desert. Explain how albedo affects the temperature of each surface.</li>
+<li>Explain the ice-albedo feedback loop in your own words. Why is it called a "positive" feedback even though its effects may be harmful?</li>
+<li>A developer wants to replace a forest (albedo 0.15) with a parking lot (albedo 0.10). How would this change affect local temperature? What about if they used white concrete (albedo 0.55) instead?</li>
+<li>How does the concept of albedo help explain why climate change is accelerating in Arctic regions faster than elsewhere on Earth?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Trenberth, K.E. et al. (2009). Earth's global energy budget. <em>Bulletin of the American Meteorological Society</em>, 90(3), 311-324.</li>
+<li>Pistone, K. et al. (2014). Observational determination of albedo decrease caused by vanishing Arctic sea ice. <em>PNAS</em>, 111(9), 3322-3326.</li>
+<li>NASA Earth Observatory: Arctic Sea Ice. <a href="https://earthobservatory.nasa.gov/">https://earthobservatory.nasa.gov/</a></li>
 </ol>
 
 

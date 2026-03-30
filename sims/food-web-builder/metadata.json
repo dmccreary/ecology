@@ -1,8 +1,8 @@
 {
   "title": "Interactive Food Web Builder",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for interactive food web builder",
+  "subject": "Ecology",
+  "description": "Build a temperate forest food web by connecting organisms with feeding relationships, then test trophic cascades by removing species.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,60 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Interactive Food Web Builder",
+    "subjectArea": "Environmental Science",
+    "topic": "Food Webs and Trophic Cascades",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Construct a food web showing feeding relationships among organisms in a temperate forest ecosystem",
+      "Classify organisms by trophic level",
+      "Predict the effects of removing a species on other populations in the food web",
+      "Explain why biodiversity and interconnectedness contribute to ecosystem stability"
     ],
-    "bloomsTaxonomy": "Create",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "bloomsTaxonomy": "Apply",
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Understanding of producers, consumers, and decomposers",
+      "Familiarity with energy transfer between trophic levels"
+    ],
+    "standards": [
+      "NGSS HS-LS2-2",
+      "NGSS HS-LS2-6",
+      "AP Environmental Science Topic 2.5"
+    ]
   },
   "technical": {
     "framework": "vis-network",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 580
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "vis-network"
+    ],
     "accessibility": {
       "hasAltText": false,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Constructivist exploration with guided investigation",
+    "keyQuestions": [
+      "What happens to other species when a top predator is removed from the food web?",
+      "Which species in this web might be considered a keystone species and why?",
+      "How does the number of connections an organism has relate to its importance in the ecosystem?",
+      "Why do trophic cascades affect species that are not directly connected to the removed organism?"
+    ],
+    "commonMisconceptions": [
+      "Students often think food webs are simple linear chains rather than complex interconnected networks",
+      "Many students believe removing a top predator has no effect on producers",
+      "Students may think decomposers are unimportant because they are at the bottom of the web"
+    ],
+    "assessmentOpportunities": [
+      "Evaluate the accuracy of student-constructed food webs before checking",
+      "Assess written predictions about species removal cascades against simulation results",
+      "Have students identify the keystone species and justify their choice with evidence from the simulation"
+    ]
   },
   "chapter": "02-ecosystems-and-biomes"
 }

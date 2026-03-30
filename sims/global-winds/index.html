@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for global wind and convection cell model.">
+        <meta name="description" content="Explore Earth's atmospheric circulation with animated convection cells, wind patterns, and Coriolis effect toggle.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Global Wind and Convection Cell Model - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for global wind and convection cell model.">
+        <meta property="og:description" content="Explore Earth's atmospheric circulation with animated convection cells, wind patterns, and Coriolis effect toggle.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/global-winds/global-winds.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Global Wind and Convection Cell Model - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for global wind and convection cell model.">
+        <meta name="twitter:description" content="Explore Earth's atmospheric circulation with animated convection cells, wind patterns, and Coriolis effect toggle.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/global-winds/global-winds.png">
       
@@ -1701,9 +1701,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1719,9 +1737,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,77 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This simulation presents a cross-section of Earth's atmosphere from pole to pole, showing the three major convection cells in each hemisphere: the Hadley Cell, the Ferrel Cell, and the Polar Cell. Animated circulation loops illustrate how warm air rises at the equator and at 60 degrees latitude while cool air sinks at 30 degrees and at the poles, driving the global wind belts that shape Earth's climate zones.</p>
+<p>Surface wind arrows are labeled with their traditional names -- Trade Winds, Westerlies, and Polar Easterlies. A toggle switches between "No Rotation" (straight north-south winds) and "With Rotation" (Coriolis-deflected winds), letting students see firsthand how Earth's rotation curves wind paths to the right in the Northern Hemisphere and to the left in the Southern Hemisphere. Hovering over any latitude band reveals the wind name, direction, typical weather, and associated biome.</p>
+<p>By connecting atmospheric physics to biome distribution, this simulation helps students understand why rainforests cluster near the equator, why deserts form at 30 degrees latitude, and why mid-latitude regions experience variable weather with frequent storms.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Observe the convection cells</strong> as animated loops showing rising and sinking air in each hemisphere.</li>
+<li><strong>Toggle the Coriolis Effect checkbox</strong> to compare straight winds (no rotation) with deflected winds (Earth rotation). Notice how wind directions shift.</li>
+<li><strong>Hover over any latitude band</strong> to see the wind name, direction, typical weather pattern, and associated biome for that region.</li>
+<li><strong>Identify precipitation patterns</strong> by observing where air rises (wet zones at 0 and 60 degrees) versus where air sinks (dry zones at 30 and 90 degrees).</li>
+<li><strong>Connect winds to biomes</strong> by noting how the distribution of rainforests, deserts, temperate forests, and tundra matches the atmospheric circulation pattern.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/global-winds/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"482px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / Earth Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>40 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Describe how convection cells, the Coriolis effect, and global wind patterns interact to create Earth's major climate zones.</li>
+<li>Identify the three convection cells (Hadley, Ferrel, Polar) and explain why air rises or sinks at specific latitudes.</li>
+<li>Explain how the Coriolis effect deflects winds and creates the Trade Winds, Westerlies, and Polar Easterlies.</li>
+<li>Connect global wind and precipitation patterns to the distribution of biomes.</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of convection (warm air rises, cool air sinks)</li>
+<li>Knowledge that Earth rotates on its axis</li>
+<li>Familiarity with major biome types (rainforest, desert, temperate forest, tundra)</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-ESS2-4</strong>: Use a model to describe how variations in the flow of energy into and out of Earth's systems result in changes in climate.</li>
+<li><strong>AP Environmental Science</strong>: Topic 8.1 - Earth's Atmosphere; Topic 4.4 - Biome Distribution</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Warm-Up</strong> (5 min): Ask students why the equator is rainy while many deserts sit at 30 degrees latitude. Accept hypotheses without correcting them yet.</p>
+</li>
+<li>
+<p><strong>Exploration</strong> (10 min): Students explore the simulation with the Coriolis effect turned off first. They identify where air rises and sinks, and note which latitudes would be wet versus dry. Students sketch the convection cell pattern.</p>
+</li>
+<li>
+<p><strong>Guided Investigation</strong> (15 min): Students turn on the Coriolis effect and observe how wind directions change. They hover over each latitude band to record the wind name, direction, and associated biome. Students complete a table mapping latitude to wind pattern to biome. Key question: Why do the Westerlies blow from the southwest in the Northern Hemisphere?</p>
+</li>
+<li>
+<p><strong>Synthesis and Discussion</strong> (10 min): Return to the warm-up question. Students explain the equator-desert pattern using convection cells. Discuss how climate change could shift convection cell boundaries, and what that would mean for biome distribution and agriculture.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Explain why air rises at the equator and sinks at 30 degrees latitude. What effect does this have on precipitation at each location?</li>
+<li>If Earth did not rotate, how would global wind patterns differ? Use the simulation's toggle to support your answer.</li>
+<li>A city at 35 degrees north latitude experiences mild, wet winters and dry summers. Which wind belt influences this city, and which convection cell drives that wind?</li>
+<li>Predict how the expansion of Hadley cells due to climate change might affect the location and size of desert biomes.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Lutgens, F. K., &amp; Tarbuck, E. J. (2016). <em>The Atmosphere: An Introduction to Meteorology</em> (13th ed.). Pearson.</li>
+<li>Hartmann, D. L. (1994). <em>Global Physical Climatology</em>. Academic Press.</li>
+<li>NOAA. (2024). Global Atmospheric Circulation. National Oceanic and Atmospheric Administration. https://www.noaa.gov</li>
 </ol>
 
 

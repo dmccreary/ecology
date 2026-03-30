@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for photosynthesis and cellular respiration cycle.">
+        <meta name="description" content="Interactive p5.js step-through animation showing how photosynthesis and cellular respiration form a complementary cycle, tracing CO2, O2, glucose, and water between producers and consumers.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Photosynthesis and Cellular Respiration Cycle - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for photosynthesis and cellular respiration cycle.">
+        <meta property="og:description" content="Interactive p5.js step-through animation showing how photosynthesis and cellular respiration form a complementary cycle, tracing CO2, O2, glucose, and water between producers and consumers.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/photosynthesis-respiration-cycle/photosynthesis-respiration-cycle.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Photosynthesis and Cellular Respiration Cycle - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for photosynthesis and cellular respiration cycle.">
+        <meta name="twitter:description" content="Interactive p5.js step-through animation showing how photosynthesis and cellular respiration form a complementary cycle, tracing CO2, O2, glucose, and water between producers and consumers.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/photosynthesis-respiration-cycle/photosynthesis-respiration-cycle.png">
       
@@ -2079,9 +2079,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2097,9 +2115,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2988,41 +3024,83 @@
 <h1 id="photosynthesis-and-cellular-respiration-cycle">Photosynthesis and Cellular Respiration Cycle</h1>
 <iframe src="main.html" height="502" width="100%" scrolling="no"></iframe>
 
-<p><a class="md-button md-button--primary" href="main.html">Run the Photosynthesis and Cellular Respiration Cycle MicroSim Fullscreen</a>
+<p><a class="md-button md-button--primary" href="main.html">Run the Photosynthesis-Respiration Cycle Fullscreen</a>
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This step-through animation makes the invisible exchange of gases and energy between producers and consumers visible. A green plant on the left performs photosynthesis while a deer on the right performs cellular respiration. Labeled arrows show the continuous flow of molecules between them: O2 from plant to deer, CO2 from deer to plant, and glucose flowing through the food chain. The sun provides energy input to the plant, while heat waves leaving the deer show energy dissipation.</p>
+<p>Students can walk through six stages one at a time: sunlight energy input, plant absorption of CO2 and H2O, plant production of glucose and O2, deer consumption of glucose and O2, deer production of CO2, H2O, and ATP, and finally the full cycle view with all arrows animating. Molecule counters at each stage show concrete quantities (6 CO2 + 6 H2O yields 1 glucose + 6 O2), helping students move beyond memorizing equations to understanding the actual molecular exchange.</p>
+<p>A "Show Molecule Counts" toggle lets students switch between a simplified view and a detailed quantitative view. The speed slider and play/pause controls allow self-paced exploration, making this suitable for both initial instruction and review.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Click <strong>Next Step</strong> to advance through the six stages of the photosynthesis-respiration cycle one at a time.</li>
+<li>Read the step description that appears, explaining what is happening at each stage.</li>
+<li>Watch the molecule arrows animate between the plant and deer, showing the direction of each substance.</li>
+<li>Toggle <strong>Show Molecule Counts</strong> to see the specific quantities of CO2, H2O, O2, and glucose at each stage.</li>
+<li>Click <strong>Previous Step</strong> to go back and re-examine any stage.</li>
+<li>Click <strong>Play Cycle</strong> to see the entire loop animate continuously.</li>
+<li>Adjust the <strong>Speed</strong> slider to slow down the animation for detailed study or speed it up for an overview.</li>
+<li>Click <strong>Reset</strong> to return to the beginning.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/photosynthesis-respiration-cycle/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"502px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>40 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Explain how photosynthesis and cellular respiration form a complementary cycle</li>
+<li>Trace the flow of energy and the cycling of matter (CO2, O2, glucose, water) between producers and consumers</li>
+<li>Compare the inputs and outputs of photosynthesis and cellular respiration</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of atoms and molecules</li>
+<li>Introduction to the concepts of producers and consumers</li>
+<li>Familiarity with chemical equations at a conceptual level</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li>NGSS HS-LS1-5: Use a model to illustrate how photosynthesis transforms light energy into stored chemical energy</li>
+<li>NGSS HS-LS1-7: Use a model to illustrate that cellular respiration is a chemical process whereby the bonds of food molecules are broken and the bonds in new compounds are formed</li>
+<li>AP Environmental Science: Topic 1.1 -- Energy Flow in Ecosystems</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Equation Matching</strong> (5 min): Write the photosynthesis and respiration equations on the board. Ask: "What do you notice about the inputs and outputs?" Students identify that one's outputs are the other's inputs, foreshadowing the cycle concept.</p>
+</li>
+<li>
+<p><strong>Step-Through Exploration</strong> (15 min): Walk through all six stages as a class with molecule counts enabled. At each step, students record the inputs, outputs, and energy changes in a two-column table (photosynthesis side vs. respiration side). By step 6, students should see the cycle is complete.</p>
+</li>
+<li>
+<p><strong>Molecule Tracking Challenge</strong> (10 min): Students pick a single oxygen atom and trace it through the entire cycle: from CO2 in the atmosphere, through photosynthesis into O2, inhaled by the deer, used in respiration, and released as CO2. They write the journey as a narrative from the atom's perspective.</p>
+</li>
+<li>
+<p><strong>Energy Flow Discussion</strong> (10 min): Discuss the key difference: matter cycles but energy flows. Where does the energy enter the cycle? (Sunlight.) Where does it leave? (Heat from the deer.) Why must the sun continuously supply energy? Connect to the first and second laws of thermodynamics.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Explain why photosynthesis and cellular respiration are described as complementary processes. Include the chemical inputs and outputs of each.</li>
+<li>A sealed terrarium with plants and small animals survives for months without opening. Using the photosynthesis-respiration cycle, explain how the organisms inside can continue to survive.</li>
+<li>If all photosynthetic organisms on Earth disappeared, what would happen to atmospheric O2 and CO2 levels over time? Explain using the cycle model.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Campbell, N.A., &amp; Reece, J.B. (2017). <em>Biology</em> (11th ed.). Pearson. Chapters 8-9.</li>
+<li>Raven, P.H., Evert, R.F., &amp; Eichhorn, S.E. (2013). <em>Biology of Plants</em> (8th ed.). W.H. Freeman.</li>
+<li>Chapin, F.S., Matson, P.A., &amp; Vitousek, P.M. (2011). <em>Principles of Terrestrial Ecosystem Ecology</em> (2nd ed.). Springer. Chapter 5.</li>
 </ol>
 
 

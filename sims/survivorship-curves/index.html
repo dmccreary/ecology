@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for survivorship curve explorer.">
+        <meta name="description" content="Interactive graph comparing Type I, II, and III survivorship curves with real species data overlays and hover-to-reveal demographic details.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Survivorship Curve Explorer - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for survivorship curve explorer.">
+        <meta property="og:description" content="Interactive graph comparing Type I, II, and III survivorship curves with real species data overlays and hover-to-reveal demographic details.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/survivorship-curves/survivorship-curves.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Survivorship Curve Explorer - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for survivorship curve explorer.">
+        <meta name="twitter:description" content="Interactive graph comparing Type I, II, and III survivorship curves with real species data overlays and hover-to-reveal demographic details.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/survivorship-curves/survivorship-curves.png">
       
@@ -2415,9 +2415,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2433,9 +2451,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,72 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim displays the three classic survivorship curve types on a semi-logarithmic graph, allowing students to visually compare how different life history strategies affect survival patterns across a lifespan. Type I curves (humans, elephants) show high survival through most of life followed by rapid mortality in old age. Type II curves (robins, songbirds) show a constant mortality rate throughout life. Type III curves (sea turtles, oysters, oak trees) show extremely high juvenile mortality with few survivors living to old age.</p>
+<p>A species selector dropdown lets students choose specific organisms and see their data points overlaid on the corresponding curve type. This connection between abstract demographic curves and real organisms students recognize builds intuition about life history trade-offs -- why some species invest heavily in a few offspring while others produce thousands with minimal parental care.</p>
+<p>Hovering over any point on a curve reveals the exact survival statistics at that point, expressed as both a percentage of the original cohort surviving and the percentage of maximum lifespan reached. This interactivity encourages students to make precise quantitative observations rather than just noting general curve shapes.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Observe the three survivorship curves displayed simultaneously: <strong>Type I</strong> (blue, concave), <strong>Type II</strong> (green, straight diagonal), and <strong>Type III</strong> (red, convex).</li>
+<li>Note the <strong>log scale</strong> on the y-axis showing number of survivors from 1 to 1000.</li>
+<li>Use the <strong>Species</strong> dropdown to select a real species (Human, Elephant, Robin, Songbird, Sea Turtle, Oyster, Oak Tree).</li>
+<li>Observe which curve type the selected species matches and see its data points overlaid.</li>
+<li>Hover over any point on a curve to see: "At X% of maximum lifespan, Y% of the population survives."</li>
+<li>Compare species within the same curve type and across types to build understanding of life history strategies.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/survivorship-curves/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"452px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / Ecology)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Compare the three survivorship curve types and describe the mortality pattern each represents</li>
+<li>Match real species to the appropriate survivorship curve type based on their life history traits</li>
+<li>Explain the relationship between reproductive strategy and survivorship pattern</li>
+<li>Interpret semi-logarithmic survivorship graphs quantitatively</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Understanding of population concepts (birth rate, death rate, cohort)</li>
+<li>Basic familiarity with logarithmic scales</li>
+<li>Introduction to species reproductive strategies (r-selected vs. K-selected)</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-LS2-1</strong>: Use mathematical and/or computational representations to support explanations of factors that affect carrying capacity</li>
+<li><strong>NGSS HS-LS2-2</strong>: Use mathematical representations to support and revise explanations based on evidence about factors affecting biodiversity</li>
+<li><strong>AP Environmental Science</strong>: Topic 3.3 -- Survivorship Curves</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Engage</strong> (5 min): Ask students: If 1000 sea turtle eggs hatch, how many do you think survive to adulthood? What about 1000 human babies? Record guesses and revisit after the simulation.</li>
+<li><strong>Explore</strong> (15 min): Students cycle through each species in the dropdown, recording which curve type it matches and its maximum lifespan. They hover over each curve at 25%, 50%, and 75% of maximum lifespan to fill in a data table comparing survival rates across types.</li>
+<li><strong>Explain</strong> (15 min): Connect survivorship patterns to reproductive strategies. Type I organisms invest heavily in few offspring (K-selected traits). Type III organisms produce vast numbers with high juvenile mortality (r-selected traits). Discuss energy trade-offs: parental care vs. offspring quantity.</li>
+<li><strong>Extend</strong> (10 min): Students choose a species not in the simulation and predict which survivorship curve type it would follow, justifying their answer with evidence about its reproductive strategy, parental care, and typical causes of mortality.</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Describe the key difference in mortality patterns between Type I and Type III survivorship curves.</li>
+<li>Why do sea turtles lay hundreds of eggs while elephants typically have one calf at a time? Explain using survivorship curve concepts.</li>
+<li>A species has a constant 10% mortality rate per year regardless of age. Which survivorship curve type does it follow, and why does the log-scale graph show a straight line?</li>
+<li>Predict the survivorship curve type for a species of salmon that dies shortly after spawning. Justify your prediction.</li>
+<li>How would you expect human survivorship curves to differ between a developed and a developing country?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Deevey, E.S. (1947). "Life Tables for Natural Populations of Animals." <em>The Quarterly Review of Biology</em>, 22(4), 283-314.</li>
+<li>Molles, M.C. (2015). <em>Ecology: Concepts and Applications</em> (7th ed.). McGraw-Hill.</li>
+<li>Pianka, E.R. (1970). "On r- and K-Selection." <em>The American Naturalist</em>, 104(940), 592-597.</li>
 </ol>
 
 

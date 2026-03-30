@@ -1,8 +1,8 @@
 {
   "title": "Ecosystem Concept Map",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for ecosystem concept map",
+  "subject": "Ecology",
+  "description": "Interactive vis-network concept map showing 20 foundational ecology concepts as nodes with labeled relationship edges, supporting analysis of conceptual interconnections.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,62 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Ecosystem Concept Map",
+    "subjectArea": "Environmental Science",
+    "topic": "Foundational Ecology Concepts and Relationships",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Organize foundational ecology concepts into a network showing their relationships",
+      "Explain how ecological concepts connect to and depend on each other",
+      "Trace pathways through the concept network to explain ecological processes",
+      "Analyze which concepts serve as central hubs connecting multiple ideas"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "50 minutes",
+    "prerequisites": [
+      "Completion of Chapter 1 introductory readings",
+      "Basic understanding of photosynthesis and cellular respiration",
+      "Familiarity with ecosystem terminology"
+    ],
+    "standards": [
+      "NGSS HS-LS2-3",
+      "AP Environmental Science: Topic 1.1",
+      "NGSS HS-LS2-4"
+    ]
   },
   "technical": {
     "framework": "vis-network",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 630
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "vis-network"
+    ],
     "accessibility": {
       "hasAltText": false,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Interactive concept network exploration with click-to-highlight",
+    "keyQuestions": [
+      "Which concept has the most connections to other concepts and why?",
+      "How does Energy connect to Ecosystem through intermediate concepts?",
+      "How are Habitat and Niche related but different?",
+      "If you removed Water Properties, which concepts would be most affected?",
+      "Why is a concept map more useful than a list for understanding ecology?"
+    ],
+    "commonMisconceptions": [
+      "Ecology concepts are independent topics rather than an interconnected web",
+      "Habitat and niche mean the same thing",
+      "Abiotic factors are less important than biotic factors in ecosystems"
+    ],
+    "assessmentOpportunities": [
+      "Pathway tracing exercise connecting distant concepts through intermediate nodes",
+      "Identification of the most connected hub concepts with justification",
+      "Proposal of new concepts to add to the map with connection descriptions"
+    ]
   },
   "chapter": "01-foundations-of-ecology"
 }

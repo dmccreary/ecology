@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for source credibility evaluator.">
+        <meta name="description" content="Interactive tool where students evaluate environmental science claims by rating source expertise, evidence quality, transparency, and consistency.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Source Credibility Evaluator - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for source credibility evaluator.">
+        <meta property="og:description" content="Interactive tool where students evaluate environmental science claims by rating source expertise, evidence quality, transparency, and consistency.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/source-credibility/source-credibility.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Source Credibility Evaluator - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for source credibility evaluator.">
+        <meta name="twitter:description" content="Interactive tool where students evaluate environmental science claims by rating source expertise, evidence quality, transparency, and consistency.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/source-credibility/source-credibility.png">
       
@@ -2394,9 +2394,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2412,9 +2430,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,71 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim is a gamified evaluation tool that teaches students to systematically assess the credibility of environmental science claims. Students are presented with a series of mock environmental claims paired with source descriptions spanning the credibility spectrum -- from peer-reviewed journals and government reports to blog posts and social media.</p>
+<p>For each claim-source pair, students rate four criteria using sliders: expertise of the source, quality of evidence presented, transparency of methods and funding, and consistency with broader scientific literature. The tool calculates a credibility score and compares it to an expert rating, providing specific feedback on what the student assessed correctly and what they missed.</p>
+<p>Scientific literacy is a critical skill for informed citizenship. In an era of widespread misinformation about environmental issues like climate change, pollution, and biodiversity loss, students need structured practice in evaluating sources. This simulation builds those habits through repeated, scaffolded evaluation exercises with immediate feedback.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Read the environmental claim displayed at the top of the screen along with the source description.</li>
+<li>Adjust the four rating sliders (0-10) to evaluate the source on: <strong>Expertise</strong>, <strong>Evidence Quality</strong>, <strong>Transparency</strong>, and <strong>Consistency with Literature</strong>.</li>
+<li>Click <strong>Submit</strong> to see how your credibility score compares to the expert rating.</li>
+<li>Read the feedback explaining what you got right and what you missed.</li>
+<li>Click <strong>Next</strong> to advance to the next scenario. Work through all 8 scenarios to complete the exercise.</li>
+<li>Track your running score to see how your evaluation skills improve.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/source-credibility/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"502px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / Scientific Literacy)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>50 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Evaluate the credibility of environmental science claims by assessing source quality, methodology, and potential bias</li>
+<li>Distinguish between peer-reviewed research, government reports, industry publications, and informal sources</li>
+<li>Identify indicators of bias, conflicts of interest, and poor methodology in environmental claims</li>
+<li>Apply a systematic rubric for source evaluation</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of the scientific method</li>
+<li>Familiarity with common environmental science topics (climate change, pollution, biodiversity)</li>
+<li>Introduction to types of scientific publications</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS Science and Engineering Practice 8</strong>: Obtaining, evaluating, and communicating information</li>
+<li><strong>CCSS.ELA-LITERACY.RST.9-10.8</strong>: Assess the extent to which the reasoning and evidence in a text support the author's claim</li>
+<li><strong>AP Environmental Science</strong>: Science Practices -- Analyze sources of information</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Engage</strong> (10 min): Show students two contrasting headlines about the same environmental issue (one from a peer-reviewed source, one from social media). Discuss initial reactions and what makes one seem more trustworthy.</li>
+<li><strong>Explore</strong> (20 min): Students work through the 8 scenarios in the MicroSim, recording their ratings and the expert feedback for each. Encourage discussion with a partner after every 2-3 scenarios.</li>
+<li><strong>Explain</strong> (10 min): Class discussion synthesizing patterns. What criteria were hardest to evaluate? Which source types were most commonly rated incorrectly? Introduce the CRAAP test framework (Currency, Relevance, Authority, Accuracy, Purpose) and connect it to the four slider criteria.</li>
+<li><strong>Extend</strong> (10 min): Students find a real environmental news article online and apply the four-criteria rubric to evaluate it. Share findings with the class.</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>A website claims that a new pesticide is completely safe for pollinators. The site is funded by the pesticide manufacturer. Which credibility criterion is most affected, and why?</li>
+<li>Explain why peer review is important for establishing the credibility of scientific claims.</li>
+<li>Describe three red flags that would lower your confidence in an environmental science claim.</li>
+<li>How does understanding source credibility help you make better decisions about environmental issues in your community?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Wineburg, S. &amp; McGrew, S. (2019). "Lateral Reading and the Nature of Expertise." <em>Teachers College Record</em>, 121(11).</li>
+<li>CRAAP Test. Meriam Library, California State University, Chico. <a href="https://library.csuchico.edu/help/source-or-information-good">https://library.csuchico.edu/help/source-or-information-good</a></li>
+<li>Cook, J. et al. (2017). "Neutralizing misinformation through inoculation." <em>PLOS ONE</em>, 12(4).</li>
 </ol>
 
 

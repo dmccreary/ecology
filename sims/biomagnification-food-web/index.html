@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for biomagnification through a food web.">
+        <meta name="description" content="Compare pollutant concentrations across trophic levels and see why top predators are most affected.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Biomagnification Through a Food Web - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for biomagnification through a food web.">
+        <meta property="og:description" content="Compare pollutant concentrations across trophic levels and see why top predators are most affected.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/biomagnification-food-web/biomagnification-food-web.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Biomagnification Through a Food Web - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for biomagnification through a food web.">
+        <meta name="twitter:description" content="Compare pollutant concentrations across trophic levels and see why top predators are most affected.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/biomagnification-food-web/biomagnification-food-web.png">
       
@@ -1050,9 +1050,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1068,9 +1086,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,73 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This interactive simulation demonstrates biomagnification -- the process by which pollutant concentrations increase at each successive trophic level in a food web. A four-level trophic pyramid displays representative organisms from producers through tertiary consumers, with colored concentration bars that update in real time as students adjust the initial water pollution level.</p>
+<p>Students use a slider to set the initial pollutant concentration in water (0.001 to 0.1 ppm), and the visualization shows approximately 10x magnification at each trophic level. When concentrations exceed a danger threshold at higher trophic levels, organisms flash red to indicate toxic exposure. Hovering over organisms reveals exact concentration values.</p>
+<p>This supports the Bloom's taxonomy level of <strong>Analyze</strong>, as students must compare concentrations across levels and explain the multiplicative pattern that makes top predators like eagles and orcas most vulnerable to persistent pollutants such as DDT, mercury, and PCBs.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Adjust the concentration slider</strong> at the bottom to set the initial pollutant level in water (0.001 to 0.1 ppm)</li>
+<li><strong>Observe the concentration bars</strong> next to each trophic level -- they show the relative toxin concentration using a yellow-to-red color gradient</li>
+<li><strong>Watch for red flashing</strong> at higher trophic levels when concentrations exceed the danger threshold of 5.0 ppm</li>
+<li><strong>Read the trophic level labels</strong>: Producers (phytoplankton, algae), Primary Consumers (zooplankton, snail), Secondary Consumers (bass, fox), Tertiary Consumers (eagle, orca)</li>
+<li><strong>Hover over organisms</strong> to see exact concentration values in ppm</li>
+<li><strong>Notice the ~10x multiplication</strong> at each level: if water has 0.01 ppm, producers have ~0.01, primary consumers ~0.1, secondary consumers ~1.0, and tertiary consumers ~10.0 ppm</li>
+<li><strong>Experiment with low values</strong> (0.001 ppm) to see how even tiny initial concentrations become dangerous at the top</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/biomagnification-food-web/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"482px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>15-20 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Compare pollutant concentrations across trophic levels and explain why top predators are most affected</li>
+<li>Calculate the approximate magnification factor between adjacent trophic levels</li>
+<li>Predict when toxin concentrations will exceed danger thresholds based on initial water pollution levels</li>
+<li>Connect biomagnification to real-world examples like DDT in bald eagles and mercury in tuna</li>
+<li>Explain why persistent, fat-soluble pollutants are most subject to biomagnification</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Understanding of food webs and trophic levels</li>
+<li>Knowledge of the concepts of producer, consumer, and predator</li>
+<li>Basic understanding of what pollutants are</li>
+<li>Familiarity with parts per million (ppm) as a concentration unit</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li>NGSS HS-LS2-4: Use mathematical representations to support claims for the cycling of matter and flow of energy among organisms in an ecosystem</li>
+<li>AP Environmental Science Topic 8.5: Bioaccumulation and Biomagnification</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Warm-Up</strong> (3 min): Ask: "If a lake has a tiny amount of mercury -- just 0.01 ppm -- do you think it's safe to eat fish from that lake? Why or why not?" Record predictions.</li>
+<li><strong>Guided Exploration</strong> (5-7 min): Set the slider to 0.01 ppm. Walk through each trophic level together, noting the concentration. Ask: "What is the concentration at the tertiary consumer level? Is it safe?" Then show what happens at 0.05 ppm initial concentration.</li>
+<li><strong>Independent Investigation</strong> (5-7 min): Challenge students to find the threshold initial concentration where tertiary consumers first exceed the danger level. Then ask: "At what initial concentration do secondary consumers become endangered? Primary consumers?" Have them record their findings in a table.</li>
+<li><strong>Reflection</strong> (3-5 min): Connect to real-world cases: DDT and bald eagle eggshell thinning, mercury advisories for pregnant women eating tuna, PCBs in Great Lakes fish. Ask: "Why did banning DDT help eagle populations recover?"</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>What is the approximate magnification factor for pollutant concentration between each trophic level in this simulation?</li>
+<li>If the initial water concentration is 0.005 ppm, calculate the expected concentration at each trophic level. At which level does the concentration first exceed 1.0 ppm?</li>
+<li>Why are persistent, fat-soluble chemicals (like DDT and mercury) more subject to biomagnification than water-soluble chemicals? What property of these molecules causes them to accumulate in tissues?</li>
+<li>A factory releases a "safe" level of 0.02 ppm of a persistent chemical into a river. Using this simulation, argue whether this concentration is truly safe for the entire food web. What does this example teach about how we should set pollution standards?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li><a href="https://en.wikipedia.org/wiki/Biomagnification">Biomagnification - Wikipedia</a> - Overview of biomagnification processes and notable historical examples</li>
+<li><a href="https://www.epa.gov/mercury/how-people-are-exposed-mercury">EPA: Mercury and Fish Consumption</a> - Health advisories related to mercury biomagnification in aquatic food webs</li>
+<li><a href="https://p5js.org/reference/">p5.js Reference</a> - JavaScript library used for the interactive simulation</li>
 </ol>
 
 

@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for emergence simulator.">
+        <meta name="description" content="Interactive p5.js flocking simulation demonstrating how complex system-level patterns emerge from simple individual rules using the boids algorithm.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Emergence Simulator - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for emergence simulator.">
+        <meta property="og:description" content="Interactive p5.js flocking simulation demonstrating how complex system-level patterns emerge from simple individual rules using the boids algorithm.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/emergence-simulator/emergence-simulator.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Emergence Simulator - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for emergence simulator.">
+        <meta name="twitter:description" content="Interactive p5.js flocking simulation demonstrating how complex system-level patterns emerge from simple individual rules using the boids algorithm.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/emergence-simulator/emergence-simulator.png">
       
@@ -1470,9 +1470,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1488,9 +1506,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,9 +3028,19 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim demonstrates the concept of <strong>emergence</strong> -- the phenomenon where complex, organized patterns arise from simple rules followed by individual agents. Using the classic boids flocking algorithm, the simulation shows how three basic behaviors (separation, alignment, and cohesion) can produce the beautiful, coordinated flocking patterns seen in bird murmurations and fish schools.</p>
+<p>Each agent in the simulation follows only its nearest neighbors and has no awareness of the flock as a whole. Yet when dozens of agents interact simultaneously, coherent group behavior "emerges" without any central control. The agents are colored by their heading direction using the HSB color wheel, so flocks display flowing color patterns that make group alignment visually obvious.</p>
+<p>This concept is central to ecology because ecosystems themselves are emergent systems -- the stability of a food web, the spatial patterns in a forest, and the cycling of nutrients all emerge from the interactions of individual organisms following simple behavioral rules.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Observe the default state</strong> -- when the simulation loads, agents move with moderate separation, alignment, and cohesion values, producing loose flocking behavior.</li>
+<li><strong>Set all sliders to zero</strong> -- watch how agents move randomly with no coordination.</li>
+<li><strong>Increase the Separation slider</strong> -- agents avoid crowding but do not flock together.</li>
+<li><strong>Increase the Alignment slider</strong> -- agents begin to steer in similar directions, forming streams.</li>
+<li><strong>Increase the Cohesion slider</strong> -- agents pull toward group centers, forming tight clusters.</li>
+<li><strong>Combine all three rules</strong> -- observe how realistic flocking emerges from the interaction of these simple rules.</li>
+<li><strong>Click Reset</strong> to randomize agent positions and start fresh.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -3007,22 +3053,51 @@
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ol>
+<li>Explain how complex system-level patterns emerge from simple individual rules.</li>
+<li>Identify the three boid rules (separation, alignment, cohesion) and describe each one's effect.</li>
+<li>Connect the concept of emergence to real ecological systems such as flocking, schooling, and ecosystem self-organization.</li>
+</ol>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of ecosystems and organism interactions</li>
+<li>Familiarity with the idea that organisms respond to local environmental cues</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-LS2-6</strong>: Evaluate claims about the effects of group behavior on individual and species' chances to survive and reproduce.</li>
+<li><strong>NGSS HS-ESS3-6</strong>: Use a computational representation to illustrate relationships among Earth systems.</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Engage</strong> (5 min): Ask students: "How do thousands of starlings fly in a murmuration without a leader?" Show a short video of bird murmuration. Introduce the idea that no single bird is in charge.</p>
+</li>
+<li>
+<p><strong>Explore</strong> (15 min): Students open the simulation and systematically test each slider independently, recording observations in a table with columns for Separation, Alignment, Cohesion, and Observed Behavior. They should test at least 5 different slider combinations.</p>
+</li>
+<li>
+<p><strong>Explain</strong> (15 min): Class discussion connecting observations to the concept of emergence. Introduce vocabulary: emergence, self-organization, agent-based model. Ask students to identify other ecological examples of emergence (ant colonies, coral reef formation, nutrient cycling).</p>
+</li>
+<li>
+<p><strong>Extend</strong> (10 min): Students write a paragraph explaining how one real ecological system (e.g., ant foraging trails, fish schooling for predator avoidance) demonstrates emergence, using evidence from their simulation exploration.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Why does flocking behavior appear even though no single agent knows about the overall flock pattern?</li>
+<li>What happens when you remove the cohesion rule but keep alignment high? How does this relate to real animal groups?</li>
+<li>Give an example of emergence in an ecosystem that does not involve animal movement.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Reynolds, C. W. (1987). "Flocks, Herds, and Schools: A Distributed Behavioral Model." <em>Computer Graphics</em>, 21(4), 25-34.</li>
+<li>Camazine, S. et al. (2001). <em>Self-Organization in Biological Systems</em>. Princeton University Press.</li>
+<li>Levin, S. A. (1998). "Ecosystems and the Biosphere as Complex Adaptive Systems." <em>Ecosystems</em>, 1(5), 431-436.</li>
 </ol>
 
 

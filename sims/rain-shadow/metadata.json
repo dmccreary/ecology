@@ -1,8 +1,8 @@
 {
   "title": "Rain Shadow Effect Visualizer",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for rain shadow effect visualizer",
+  "subject": "Ecology",
+  "description": "Interactive MicroSim demonstrating how mountain ranges create wet and dry climate zones through adiabatic cooling and warming.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,15 +11,26 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Rain Shadow Effect Visualizer",
+    "subjectArea": "Environmental Science",
+    "topic": "Rain Shadow Effect and Biome Distribution",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Explain how mountain ranges create wet and dry climate zones through the rain shadow effect",
+      "Describe the process of adiabatic cooling and warming as air moves over terrain",
+      "Predict how mountain height affects precipitation patterns and biome distribution",
+      "Connect rain shadow effects to real-world geography and ecosystem distribution"
     ],
-    "bloomsTaxonomy": "Create",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "bloomsTaxonomy": "Analyze",
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Basic understanding of the water cycle",
+      "Familiarity with biomes and climate zones",
+      "Understanding of how temperature affects air moisture capacity"
+    ],
+    "standards": [
+      "NGSS ESS2.D",
+      "AP Environmental Science Topic 1.1",
+      "AP Environmental Science Topic 4.3"
+    ]
   },
   "technical": {
     "framework": "p5.js",
@@ -36,10 +47,24 @@
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Animated cross-section with parameter manipulation and real-world examples",
+    "keyQuestions": [
+      "Why is the leeward side of a mountain range drier than the windward side?",
+      "How does mountain height affect the severity of the rain shadow?",
+      "What happens to temperature and humidity as air rises over a mountain?",
+      "How does the rain shadow effect influence where biomes are located?",
+      "Why are many of the world's deserts located in rain shadows?"
+    ],
+    "commonMisconceptions": [
+      "Mountains block rain clouds from passing over them like a wall",
+      "The leeward side is dry because rain clouds run out of water, rather than because of adiabatic warming",
+      "Rain shadow effects are the same regardless of mountain height"
+    ],
+    "assessmentOpportunities": [
+      "Students predict vegetation changes at different mountain heights before testing",
+      "Students compare simulation results to real mountain range data",
+      "Students explain the step-by-step process of rain shadow formation in their own words"
+    ]
   },
   "chapter": "08-earth-systems"
 }

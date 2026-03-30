@@ -1,8 +1,8 @@
 {
   "title": "Radioactive Decay Simulator",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for radioactive decay simulator",
+  "subject": "Ecology",
+  "description": "Interactive MicroSim visualizing exponential decay of radioactive atoms with adjustable half-life and real-time decay curve plotting.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,15 +11,25 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Radioactive Decay Simulator",
+    "subjectArea": "Environmental Science",
+    "topic": "Radioactive Decay and Nuclear Waste",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Visualize exponential decay and predict remaining radioactivity after multiple half-lives",
+      "Explain how individual probabilistic events produce predictable population-level patterns",
+      "Calculate the fraction of radioactive material remaining after a given number of half-lives",
+      "Connect radioactive decay to environmental issues including nuclear waste management"
     ],
     "bloomsTaxonomy": "Apply",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "35 minutes",
+    "prerequisites": [
+      "Understanding of exponential functions",
+      "Basic concept of atoms and isotopes",
+      "Familiarity with probability concepts"
+    ],
+    "standards": [
+      "NGSS PS1.C",
+      "AP Environmental Science Topic 6.7"
+    ]
   },
   "technical": {
     "framework": "p5.js",
@@ -36,10 +46,23 @@
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Visual simulation connecting probabilistic micro-events to macro-patterns",
+    "keyQuestions": [
+      "After 4 half-lives, what fraction of the original material remains?",
+      "Why does the decay curve never reach exactly zero?",
+      "How long must nuclear waste be stored to be considered safe?",
+      "How is radiometric dating used to study ecological history?"
+    ],
+    "commonMisconceptions": [
+      "All radioactive material decays at the same rate",
+      "After two half-lives, all the radioactive material is gone",
+      "Individual atoms decay at predictable times rather than probabilistically"
+    ],
+    "assessmentOpportunities": [
+      "Students predict remaining atoms after N half-lives and verify with the simulation",
+      "Students calculate storage time for nuclear waste using half-life data",
+      "Students compare observed decay curves to the mathematical formula"
+    ]
   },
   "chapter": "09-sustainability-and-energy"
 }

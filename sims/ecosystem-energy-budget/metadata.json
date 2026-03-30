@@ -1,8 +1,8 @@
 {
   "title": "Complete Ecosystem Energy Budget",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for complete ecosystem energy budget",
+  "subject": "Ecology",
+  "description": "Interactive p5.js MicroSim where students construct and balance a complete ecosystem energy budget, tracing energy from solar input through GPP, NPP, and NEP.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,61 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Complete Ecosystem Energy Budget",
+    "subjectArea": "Environmental Science",
+    "topic": "Ecosystem Energy Budgets and Productivity",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Construct a complete energy budget tracing energy from solar input through GPP, NPP, and NEP",
+      "Explain the relationship between GPP, Ra, NPP, and NEP",
+      "Apply the first law of thermodynamics to verify energy balance in an ecosystem",
+      "Compare energy allocation patterns across different ecosystem types"
     ],
     "bloomsTaxonomy": "Create",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "55 minutes",
+    "prerequisites": [
+      "Understanding of photosynthesis and cellular respiration",
+      "Introduction to trophic levels",
+      "Basic knowledge of thermodynamics",
+      "Familiarity with producers, consumers, and decomposers"
+    ],
+    "standards": [
+      "NGSS HS-LS2-4",
+      "AP Environmental Science: Topic 1.4",
+      "NGSS HS-LS2-3"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 522
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Editable flow diagram with automatic recalculation and balance checking",
+    "keyQuestions": [
+      "Where does the energy go that does not become NPP?",
+      "Why is NPP always less than GPP?",
+      "What does a negative NEP value tell you about an ecosystem?",
+      "Why do only about 10% of energy transfer from one trophic level to the next?",
+      "Which ecosystem type is most efficient at storing energy?"
+    ],
+    "commonMisconceptions": [
+      "Energy is recycled through ecosystems like matter is",
+      "NPP and GPP are the same thing",
+      "All energy consumed by herbivores becomes herbivore biomass"
+    ],
+    "assessmentOpportunities": [
+      "Energy budget construction from scratch using editable values",
+      "Balance check debugging exercise to find and fix inconsistencies",
+      "Cross-ecosystem comparison table with efficiency calculations"
+    ]
   },
   "chapter": "03-energy-flow"
 }

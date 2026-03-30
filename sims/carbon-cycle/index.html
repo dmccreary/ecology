@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for the carbon cycle.">
+        <meta name="description" content="Interactive p5.js simulation showing carbon fluxes between atmosphere, ocean, terrestrial biosphere, and lithosphere with adjustable fossil fuel, deforestation, and ocean temperature parameters.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="The Carbon Cycle - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for the carbon cycle.">
+        <meta property="og:description" content="Interactive p5.js simulation showing carbon fluxes between atmosphere, ocean, terrestrial biosphere, and lithosphere with adjustable fossil fuel, deforestation, and ocean temperature parameters.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/carbon-cycle/carbon-cycle.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="The Carbon Cycle - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for the carbon cycle.">
+        <meta name="twitter:description" content="Interactive p5.js simulation showing carbon fluxes between atmosphere, ocean, terrestrial biosphere, and lithosphere with adjustable fossil fuel, deforestation, and ocean temperature parameters.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/carbon-cycle/carbon-cycle.png">
       
@@ -2436,9 +2436,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2454,9 +2472,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,81 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim models the global carbon cycle by showing how carbon moves between four major reservoirs: the atmosphere, oceans, terrestrial biosphere, and lithosphere. Animated carbon particles flow along labeled pathways representing key processes such as photosynthesis, respiration, decomposition, combustion, ocean absorption, and volcanic emission. Real-time bar charts display the changing size of each reservoir as fluxes shift.</p>
+<p>Students can manipulate three sliders to explore how human activities and environmental changes alter the carbon balance. Increasing fossil fuel burning or deforestation rates adds carbon to the atmosphere, while changing ocean temperature affects CO2 solubility. A running counter displays atmospheric CO2 in parts per million, and when levels cross 450 ppm the background tints red as a visual warning of dangerous warming thresholds.</p>
+<p>The simulation begins at pre-industrial baseline values and updates continuously, allowing students to observe both fast fluxes (photosynthesis, respiration) and slow fluxes (volcanic emissions, lithosphere storage) and to reason about how perturbations propagate through the system.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Click the <strong>Start</strong> button to begin the simulation and watch carbon particles flow between reservoirs.</li>
+<li>Adjust the <strong>Fossil Fuel Burning</strong> slider (0-3x current rate) to increase or decrease anthropogenic carbon emissions and observe how atmospheric CO2 responds.</li>
+<li>Move the <strong>Deforestation Rate</strong> slider (0-100%) to simulate loss of terrestrial carbon sinks and note the effect on land and atmosphere reservoirs.</li>
+<li>Change the <strong>Ocean Temperature</strong> slider to explore how warming oceans absorb less CO2, shifting the balance toward the atmosphere.</li>
+<li>Watch the <strong>CO2 ppm counter</strong> and the <strong>reservoir bar charts</strong> to track changes in real time.</li>
+<li>Notice the red background tint when CO2 exceeds 450 ppm, indicating a dangerous threshold.</li>
+<li>Click <strong>Reset</strong> to return all values to the pre-industrial baseline and start a new experiment.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/carbon-cycle/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"462px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Distinguish between fast carbon fluxes (photosynthesis, respiration) and slow carbon fluxes (volcanic emissions, lithosphere storage)</li>
+<li>Predict how changes in fossil fuel burning, deforestation, and ocean temperature affect atmospheric CO2 concentration</li>
+<li>Analyze cause-and-effect relationships within the carbon cycle system</li>
+<li>Evaluate the relative magnitude of natural vs. anthropogenic carbon fluxes</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of photosynthesis and cellular respiration</li>
+<li>Familiarity with the concept of chemical reservoirs and fluxes</li>
+<li>Understanding of parts per million (ppm) as a unit of concentration</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-ESS2-6</strong>: Develop a quantitative model to describe the cycling of carbon among the hydrosphere, atmosphere, geosphere, and biosphere.</li>
+<li><strong>NGSS HS-ESS3-6</strong>: Use a computational representation to illustrate the relationships among Earth systems and how those relationships are being modified due to human activity.</li>
+<li><strong>AP Environmental Science</strong>: Topic 1.3 -- Biogeochemical Cycles</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Engage</strong> (5 min): Ask students what happens to the CO2 released when they drive a car or heat a building. Where does it go? Introduce the four carbon reservoirs and have students predict which is largest.</p>
+</li>
+<li>
+<p><strong>Explore</strong> (15 min): Students interact with the simulation individually or in pairs. First, run the simulation at baseline settings to observe natural carbon cycling. Then systematically increase fossil fuel burning to 3x while keeping other sliders constant. Record the CO2 ppm at 10-year intervals. Reset and repeat with deforestation at 100%. Reset and repeat with elevated ocean temperature. Document observations in a data table.</p>
+</li>
+<li>
+<p><strong>Explain</strong> (15 min): Class discussion connecting observations to concepts. Why does deforestation increase atmospheric CO2 even though no fossil fuels are burned? Why does a warmer ocean release more CO2? Compare the magnitude of natural fluxes to human perturbations. Introduce the concept of carbon sinks and sources.</p>
+</li>
+<li>
+<p><strong>Extend</strong> (10 min): Challenge students to find a combination of slider settings that keeps CO2 below 450 ppm. Discuss what real-world policies or technologies correspond to each slider. Students write a brief paragraph explaining one feedback loop they observed.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>If fossil fuel burning doubles, what happens to the rate of ocean CO2 absorption, and why?</li>
+<li>Explain why deforestation is considered both a carbon source and the loss of a carbon sink.</li>
+<li>A warming ocean absorbs less CO2. How does this create a positive feedback loop for climate change?</li>
+<li>Compare the size of the lithosphere carbon reservoir to the atmosphere. Why does even a small percentage release from the lithosphere have large atmospheric effects?</li>
+<li>Design an experiment using this simulation to test whether reducing deforestation or reducing fossil fuel burning is more effective at lowering atmospheric CO2.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Friedlingstein, P., et al. (2023). Global Carbon Budget 2023. <em>Earth System Science Data</em>, 15, 5301-5369.</li>
+<li>NASA Earth Observatory. (2024). The Carbon Cycle. <a href="https://earthobservatory.nasa.gov/features/CarbonCycle">earthobservatory.nasa.gov</a></li>
+<li>IPCC (2021). Climate Change 2021: The Physical Science Basis. Chapter 5: Global Carbon and Other Biogeochemical Cycles.</li>
 </ol>
 
 

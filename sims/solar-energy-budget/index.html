@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for solar energy budget.">
+        <meta name="description" content="Interactive Sankey diagram showing how solar energy flows from the sun through the atmosphere to producers, with adjustable cloud cover.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Solar Energy Budget - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for solar energy budget.">
+        <meta property="og:description" content="Interactive Sankey diagram showing how solar energy flows from the sun through the atmosphere to producers, with adjustable cloud cover.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/solar-energy-budget/solar-energy-budget.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Solar Energy Budget - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for solar energy budget.">
+        <meta name="twitter:description" content="Interactive Sankey diagram showing how solar energy flows from the sun through the atmosphere to producers, with adjustable cloud cover.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/solar-energy-budget/solar-energy-budget.png">
       
@@ -2352,9 +2352,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2370,9 +2388,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,70 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim uses a Sankey-style flow diagram to visualize how 100 units of incoming solar radiation are partitioned as they travel from the sun to Earth's surface. Energy is lost at each step through reflection by the atmosphere, clouds, and surface, as well as absorption by atmospheric gases. Only about 1% of the original solar energy is ultimately captured by photosynthesis and enters the biological portion of the ecosystem.</p>
+<p>The diagram makes these abstract energy quantities tangible by displaying proportionally-sized flow ribbons for each pathway. Students can hover over any branch to see the exact percentage and a brief explanation of that energy loss. A cloud cover slider lets students explore how changing cloud conditions affect the amount of energy reaching producers.</p>
+<p>Understanding Earth's energy budget is foundational to ecology because it explains why ecosystems are energy-limited and why food chains rarely exceed four or five trophic levels. The tiny fraction captured by photosynthesis sets the upper bound on all biological productivity.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Observe the Sankey diagram showing solar energy flowing from left to right, starting with 100 units of incoming solar radiation.</li>
+<li>Hover over any colored flow ribbon to see its exact percentage and explanation.</li>
+<li>Adjust the <strong>Cloud Cover</strong> slider to see how increasing or decreasing cloud cover changes the energy reaching producers.</li>
+<li>Notice how the green "Captured by Photosynthesis" ribbon is extremely thin compared to other losses.</li>
+<li>Compare the relative sizes of different energy loss pathways to understand where most solar energy goes.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/solar-energy-budget/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"402px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / Ecology)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Trace the path of solar energy from the sun through the atmosphere to producers</li>
+<li>Explain why only a small fraction (~1%) of solar energy is captured by photosynthesis</li>
+<li>Analyze how cloud cover affects the energy budget and ecosystem productivity</li>
+<li>Connect Earth's energy budget to the concept of energy limitation in ecosystems</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of photosynthesis</li>
+<li>Familiarity with the concept of energy transfer</li>
+<li>Introduction to ecosystems and producers</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-LS2-4</strong>: Use mathematical representations to support claims for the cycling of matter and flow of energy among organisms in an ecosystem</li>
+<li><strong>NGSS HS-ESS2-2</strong>: Analyze geoscience data to make the claim that one change to Earth's surface can create feedbacks that cause changes to other Earth systems</li>
+<li><strong>AP Environmental Science</strong>: Topic 1.3 -- Energy Flow in Ecosystems</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Engage</strong> (5 min): Ask students to estimate what percentage of sunlight actually powers life on Earth. Record predictions on the board.</li>
+<li><strong>Explore</strong> (15 min): Students interact with the MicroSim, adjusting cloud cover and hovering over each branch. They record the percentage for each energy pathway in a data table.</li>
+<li><strong>Explain</strong> (15 min): Class discussion connecting the energy budget to ecosystem productivity. Why are there so few top predators? Why do food chains rarely exceed 4-5 levels? Relate to the 10% rule of energy transfer.</li>
+<li><strong>Extend</strong> (10 min): Students increase cloud cover to maximum and predict what would happen to an ecosystem if cloud cover permanently increased. Write a short paragraph connecting energy budget changes to ecosystem effects.</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>If 1000 kJ of solar energy reaches Earth's atmosphere, approximately how much energy enters the food web through photosynthesis?</li>
+<li>Explain two reasons why so little solar energy is captured by producers.</li>
+<li>How would a significant increase in cloud cover affect primary productivity in an ecosystem?</li>
+<li>Why does the energy budget help explain why there are more herbivores than carnivores in most ecosystems?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Chapin, F.S., Matson, P.A., &amp; Vitousek, P.M. (2011). <em>Principles of Terrestrial Ecosystem Ecology</em> (2nd ed.). Springer.</li>
+<li>NASA Earth Observatory. "The Earth's Energy Budget." <a href="https://earthobservatory.nasa.gov">https://earthobservatory.nasa.gov</a></li>
+<li>Odum, E.P. &amp; Barrett, G.W. (2005). <em>Fundamentals of Ecology</em> (5th ed.). Thomson Brooks/Cole.</li>
 </ol>
 
 

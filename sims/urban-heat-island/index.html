@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for urban heat island profile.">
+        <meta name="description" content="Interactive cross-section visualization showing how urban land cover creates temperature differences, with tools to add trees, green roofs, and reflective surfaces.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Urban Heat Island Profile - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for urban heat island profile.">
+        <meta property="og:description" content="Interactive cross-section visualization showing how urban land cover creates temperature differences, with tools to add trees, green roofs, and reflective surfaces.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/urban-heat-island/urban-heat-island.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Urban Heat Island Profile - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for urban heat island profile.">
+        <meta name="twitter:description" content="Interactive cross-section visualization showing how urban land cover creates temperature differences, with tools to add trees, green roofs, and reflective surfaces.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/urban-heat-island/urban-heat-island.png">
       
@@ -2583,9 +2583,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2601,9 +2619,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,72 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim presents an interactive cross-section of a landscape transitioning from rural areas through suburbs to an urban core and back again. The bottom layer shows land cover types -- green vegetation, gray impervious surfaces, and blue water features -- while buildings of varying heights rise from the urban zones. A red temperature curve overlaid on the landscape reveals the classic urban heat island profile, with temperatures peaking over the dense urban core and dipping over parks and vegetated areas.</p>
+<p>The key interactive feature allows students to click on locations to add trees, green roofs, or reflective surfaces and watch the temperature curve respond in real time. This cause-and-effect interaction directly connects mitigation strategies to measurable temperature outcomes, building understanding of why urban planning decisions matter for environmental health.</p>
+<p>A time-of-day slider reveals how the heat island effect changes from day to night. During the day, impervious surfaces absorb solar radiation. At night, they release stored heat, keeping urban areas warmer than surrounding rural areas. This day-night comparison is essential for understanding why urban heat islands affect nighttime cooling and human health, particularly during heat waves.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Observe the cross-section landscape showing the transition from rural (left) through suburban to urban core (center) and back to rural (right).</li>
+<li>Note the <strong>red temperature curve</strong> showing higher temperatures over the urban core and lower temperatures over vegetated areas.</li>
+<li>Click on locations in the landscape to <strong>add or remove trees</strong>, green roofs, or reflective surfaces, and watch the temperature curve update.</li>
+<li>Adjust the <strong>Time of Day</strong> slider to see how the heat island effect varies between day and night.</li>
+<li>Compare temperature differences between vegetated parks and adjacent impervious surfaces.</li>
+<li>Experiment with adding green infrastructure to the urban core and measure the temperature reduction.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/urban-heat-island/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"442px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>50 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Analyze how urban land cover types drive temperature differences between cities and surrounding areas</li>
+<li>Explain the mechanisms behind the urban heat island effect (albedo, thermal mass, evapotranspiration)</li>
+<li>Evaluate the effectiveness of different mitigation strategies (trees, green roofs, reflective surfaces)</li>
+<li>Compare daytime and nighttime heat island dynamics</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Understanding of basic energy concepts (absorption, reflection, radiation)</li>
+<li>Familiarity with land use types (urban, suburban, rural)</li>
+<li>Introduction to albedo and surface properties</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-ESS3-4</strong>: Evaluate or refine a technological solution that reduces impacts of human activities on natural systems</li>
+<li><strong>NGSS HS-ESS2-4</strong>: Use a model to describe how variations in the flow of energy into and out of Earth's systems result in changes in climate</li>
+<li><strong>AP Environmental Science</strong>: Topic 5.11 -- Urban Land Use and Sprawl</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Engage</strong> (5 min): Show a thermal satellite image of a city. Ask: Why are some parts of the city much hotter than others? What do the hottest areas have in common? Introduce the term "urban heat island."</li>
+<li><strong>Explore</strong> (15 min): Students record baseline temperatures at five locations across the profile (rural, suburban, park, urban core, suburban). Then they systematically add trees to the urban core and record new temperatures. Repeat with green roofs and reflective surfaces. Create a data table comparing the temperature reduction from each strategy.</li>
+<li><strong>Explain</strong> (15 min): Discuss three mechanisms: (a) Albedo -- dark surfaces absorb more heat than light surfaces. (b) Evapotranspiration -- plants cool the air by releasing water vapor. (c) Thermal mass -- concrete and asphalt store heat and release it at night. Use the time-of-day slider to demonstrate nighttime heat retention.</li>
+<li><strong>Extend</strong> (15 min): Students design an urban heat island mitigation plan for their own community. Given a limited budget, which strategies would they prioritize? Justify choices using data from the simulation. Consider equity: Which neighborhoods are most affected by heat islands?</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Explain three mechanisms that cause urban areas to be warmer than surrounding rural areas.</li>
+<li>Using data from the simulation, which mitigation strategy produced the greatest temperature reduction in the urban core?</li>
+<li>Why is the urban heat island effect often stronger at night than during the day?</li>
+<li>A city is planning to reduce its heat island effect by 2 degrees C. Design a combination of strategies that could achieve this goal, using evidence from the simulation.</li>
+<li>How does the urban heat island effect disproportionately affect low-income neighborhoods, and what environmental justice implications does this raise?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Oke, T.R. (1982). "The Energetic Basis of the Urban Heat Island." <em>Quarterly Journal of the Royal Meteorological Society</em>, 108(455), 1-24.</li>
+<li>EPA. "Heat Island Effect." <a href="https://www.epa.gov/heatislands">https://www.epa.gov/heatislands</a></li>
+<li>Santamouris, M. (2014). "Cooling the Cities -- A Review of Reflective and Green Roof Mitigation Technologies." <em>Solar Energy</em>, 103, 682-703.</li>
 </ol>
 
 

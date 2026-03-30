@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive vis-network MicroSim for science's quality control pipeline.">
+        <meta name="description" content="Interactive vis-network flowchart showing the journey of a research finding from initial question through peer review, publication, replication, and scientific consensus.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Science's Quality Control Pipeline - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive vis-network MicroSim for science's quality control pipeline.">
+        <meta property="og:description" content="Interactive vis-network flowchart showing the journey of a research finding from initial question through peer review, publication, replication, and scientific consensus.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/peer-review-pipeline/peer-review-pipeline.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Science's Quality Control Pipeline - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive vis-network MicroSim for science's quality control pipeline.">
+        <meta name="twitter:description" content="Interactive vis-network flowchart showing the journey of a research finding from initial question through peer review, publication, replication, and scientific consensus.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/peer-review-pipeline/peer-review-pipeline.png">
       
@@ -2289,9 +2289,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2307,9 +2325,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2988,41 +3024,78 @@
 <h1 id="sciences-quality-control-pipeline">Science's Quality Control Pipeline</h1>
 <iframe src="main.html" height="600" width="100%" scrolling="no"></iframe>
 
-<p><a class="md-button md-button--primary" href="main.html">Run the Science's Quality Control Pipeline MicroSim Fullscreen</a>
-<br>
-<a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
+<p><a class="md-button md-button--primary" href="main.html">Run the Peer Review Pipeline Fullscreen</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This interactive pipeline diagram demystifies the often-invisible process of how scientific knowledge is validated. Using a vis-network flowchart, it shows the journey of a research finding from initial research question through study design, data collection, analysis, manuscript preparation, journal submission, peer review, publication, replication attempts, and ultimately scientific consensus. Branching paths at the peer review stage show three possible outcomes: accept, revise and resubmit, or reject.</p>
+<p>Each node is clickable and reveals a description panel explaining what happens at that stage, common pitfalls, and how long it typically takes. A confidence tracker bar at the top shows how the reliability of a scientific claim changes at each stage -- low at the hypothesis stage, medium at publication, high after successful replication, and very high at consensus. A failed replication path leads to reassessment, illustrating that science is self-correcting.</p>
+<p>The color scheme reinforces the narrative: early research stages appear in light blue, the peer review bottleneck in yellow (caution), successful publication in green, and failed paths in red. This visualization helps students understand why peer-reviewed research carries more weight than preliminary findings and why replication is essential.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Start at the leftmost node ("Research Question") and click on it to read what happens at this stage.</li>
+<li>Follow the pipeline from left to right, clicking each node to learn about that stage of the scientific process.</li>
+<li>Watch the <strong>confidence tracker</strong> bar at the top change as you move through the pipeline stages.</li>
+<li>At the peer review stage, explore all three branches: accept, revise and resubmit, and reject.</li>
+<li>Follow the path past publication to replication attempts, and notice the branch between successful replication (leading to consensus) and failed replication (leading to reassessment).</li>
+<li>Note the time estimates at each stage to understand why building scientific consensus takes years.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/peer-review-pipeline/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"600px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Science / AP Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>40 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Describe the steps from initial research through peer review, publication, and replication to scientific consensus</li>
+<li>Explain why peer review and replication are essential for building reliable scientific knowledge</li>
+<li>Evaluate the confidence level of scientific claims based on where they are in the pipeline</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of the scientific method (hypothesis, experiment, analysis)</li>
+<li>Familiarity with the concept of scientific publications and journals</li>
+<li>Introduction to evaluating sources of information</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li>NGSS Science and Engineering Practice 8: Obtaining, evaluating, and communicating information</li>
+<li>AP Environmental Science: Topic 10.1 -- Introduction to Sustainability; Science Practices</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Source Sorting Warm-Up</strong> (5 min): Give students five claims about ecology (e.g., "Coffee cures cancer" from a blog, "Biodiversity loss accelerates extinction" from a peer-reviewed journal). Ask: Which do you trust more and why? Discuss what makes some sources more reliable.</p>
+</li>
+<li>
+<p><strong>Pipeline Walk-Through</strong> (15 min): As a class, click through every node in the pipeline. At each stage, discuss: What could go wrong here? How does this step increase our confidence in the findings? Students create a timeline showing each stage and its typical duration.</p>
+</li>
+<li>
+<p><strong>Peer Review Role Play</strong> (10 min): Divide students into groups of three: author, reviewer 1, and reviewer 2. Give them a simplified one-paragraph "manuscript abstract" about an ecological finding. Reviewers write two strengths and two weaknesses. Author responds to the reviews. Discuss: Was this process useful? How might it catch errors?</p>
+</li>
+<li>
+<p><strong>Claim Evaluation</strong> (10 min): Present three ecological claims at different pipeline stages (preliminary study, single published paper, replicated consensus). Students rank them by confidence level and justify their rankings using the pipeline model.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Explain why a single published study, even in a prestigious journal, does not constitute scientific consensus.</li>
+<li>A news headline reads "Scientists discover that deforestation reverses climate change." This is based on one unpublished preprint. Using the pipeline model, evaluate the confidence level of this claim.</li>
+<li>Describe how the peer review process serves as quality control and identify two limitations of peer review.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>National Academies of Sciences (2019). <em>Reproducibility and Replicability in Science</em>. The National Academies Press.</li>
+<li>Kelly, C.D. (2019). Rate and success of study replication in ecology and evolution. <em>PeerJ</em>, 7, e7654.</li>
+<li>Oreskes, N. (2019). <em>Why Trust Science?</em> Princeton University Press.</li>
 </ol>
 
 

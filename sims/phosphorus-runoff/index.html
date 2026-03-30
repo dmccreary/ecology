@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for phosphorus runoff and eutrophication.">
+        <meta name="description" content="Interactive p5.js simulation showing how fertilizer application rates drive phosphorus runoff, algal blooms, oxygen depletion, and fish kills in a connected farm-to-lake system.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Phosphorus Runoff and Eutrophication - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for phosphorus runoff and eutrophication.">
+        <meta property="og:description" content="Interactive p5.js simulation showing how fertilizer application rates drive phosphorus runoff, algal blooms, oxygen depletion, and fish kills in a connected farm-to-lake system.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/phosphorus-runoff/phosphorus-runoff.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Phosphorus Runoff and Eutrophication - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for phosphorus runoff and eutrophication.">
+        <meta name="twitter:description" content="Interactive p5.js simulation showing how fertilizer application rates drive phosphorus runoff, algal blooms, oxygen depletion, and fish kills in a connected farm-to-lake system.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/phosphorus-runoff/phosphorus-runoff.png">
       
@@ -2058,9 +2058,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2076,9 +2094,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2988,41 +3024,82 @@
 <h1 id="phosphorus-runoff-and-eutrophication">Phosphorus Runoff and Eutrophication</h1>
 <iframe src="main.html" height="482" width="100%" scrolling="no"></iframe>
 
-<p><a class="md-button md-button--primary" href="main.html">Run the Phosphorus Runoff and Eutrophication MicroSim Fullscreen</a>
+<p><a class="md-button md-button--primary" href="main.html">Run the Phosphorus Runoff Simulation Fullscreen</a>
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This cause-and-effect simulation lets students manipulate fertilizer application on farmland and observe the downstream cascade of eutrophication in real time. The left side shows farmland with an adjustable fertilizer application slider (low to excessive). When rain is triggered, orange phosphorus particles wash off the field into a stream flowing to a lake on the right side. As phosphorus accumulates, algae blooms on the lake surface, an oxygen meter drops as decomposers consume the dead algae, and fish begin turning belly-up when dissolved oxygen falls below a critical threshold.</p>
+<p>A timeline graph at the bottom tracks three variables simultaneously: phosphorus input, algae density, and dissolved oxygen over simulated weeks. This reveals the delayed cause-and-effect chain -- phosphorus input leads to algal growth, which leads to oxygen depletion -- helping students understand why eutrophication is a time-lagged process. The "Add Buffer Strip" button places riparian vegetation along the stream bank that intercepts some phosphorus before it reaches the lake, demonstrating a real-world mitigation strategy.</p>
+<p>The simulation builds predictive reasoning by letting students experiment with different fertilizer levels and observe how the system responds. Students learn that the relationship between fertilizer input and ecological damage is not linear -- there are tipping points beyond which the lake ecosystem collapses rapidly.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Set the <strong>Fertilizer Application</strong> slider to a level (low, medium, high, or excessive).</li>
+<li>Click <strong>Rain</strong> to trigger precipitation and watch phosphorus particles (orange dots) wash off the field into the stream.</li>
+<li>Observe the lake on the right: algae (green) grows on the surface as phosphorus enters.</li>
+<li>Watch the <strong>oxygen meter</strong> on the side decline as decomposers consume dead algae.</li>
+<li>Note when fish at the bottom begin turning belly-up, indicating a fish kill from oxygen depletion.</li>
+<li>Monitor the <strong>timeline graph</strong> at the bottom to see the delayed relationship between phosphorus input, algae density, and dissolved oxygen.</li>
+<li>Click <strong>Add Buffer Strip</strong> to place vegetation along the stream bank and observe how it reduces phosphorus reaching the lake.</li>
+<li>Compare runs with different fertilizer levels and with or without the buffer strip.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/phosphorus-runoff/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"482px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / AP Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Predict the downstream effects of excess phosphorus input on aquatic ecosystems</li>
+<li>Explain the eutrophication cascade from nutrient loading through algal bloom to hypoxia</li>
+<li>Evaluate the effectiveness of buffer strips as a mitigation strategy for agricultural runoff</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Understanding of the phosphorus cycle basics</li>
+<li>Familiarity with concepts of producers, consumers, and decomposers in aquatic ecosystems</li>
+<li>Introduction to water quality and dissolved oxygen</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li>NGSS HS-ESS3-4: Evaluate or refine a technological solution that reduces impacts of human activities on natural systems</li>
+<li>AP Environmental Science: Topic 8.4 -- Eutrophication; Topic 1.5 -- Biogeochemical Cycles (Phosphorus)</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Prediction Phase</strong> (5 min): Show students a picture of a lake with an algal bloom. Ask: "What caused this? What do you think is happening under the surface?" Record predictions and revisit after the simulation.</p>
+</li>
+<li>
+<p><strong>Controlled Experiment</strong> (15 min): Students run four trials with increasing fertilizer levels (low, medium, high, excessive), each time triggering rain and recording: weeks until algal bloom appears, peak algae density, minimum dissolved oxygen level, and whether fish died. They organize results in a data table and identify the tipping point where the ecosystem collapses.</p>
+</li>
+<li>
+<p><strong>Mitigation Testing</strong> (10 min): Students repeat the excessive fertilizer trial but add the buffer strip first. They compare results to the same trial without the buffer and calculate what percentage of phosphorus was intercepted. Discuss: Is the buffer strip alone sufficient at the highest fertilizer levels?</p>
+</li>
+<li>
+<p><strong>Case Study Connection</strong> (15 min): Present the Lake Erie algal bloom crisis or the Gulf of Mexico dead zone. Students use their simulation data to explain the real-world mechanism. They write a policy recommendation addressing both source reduction (fertilizer management) and mitigation (buffer strips, wetlands) strategies.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Explain the step-by-step mechanism by which excess phosphorus leads to fish kills, including the role of algae and decomposers.</li>
+<li>Using your simulation data, at what fertilizer application level does the lake ecosystem reach a tipping point? What evidence supports your answer?</li>
+<li>A city proposes building a new housing development next to a lake. Drawing on this simulation, recommend three measures to prevent eutrophication of the lake.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Carpenter, S.R. (2008). Phosphorus control is critical to mitigating eutrophication. <em>Proceedings of the National Academy of Sciences</em>, 105(32), 11039-11040.</li>
+<li>Schindler, D.W., et al. (2008). Eutrophication of lakes cannot be controlled by reducing nitrogen input. <em>Proceedings of the National Academy of Sciences</em>, 105(32), 11254-11258.</li>
+<li>Mayer, P.M., et al. (2007). Meta-analysis of nitrogen removal in riparian buffers. <em>Journal of Environmental Quality</em>, 36(4), 1172-1180.</li>
 </ol>
 
 

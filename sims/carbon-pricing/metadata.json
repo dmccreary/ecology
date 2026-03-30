@@ -1,8 +1,8 @@
 {
   "title": "Carbon Pricing Comparison",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for carbon pricing comparison",
+  "subject": "Ecology",
+  "description": "Side-by-side simulation comparing carbon tax and cap-and-trade mechanisms with adjustable policy parameters and long-term emissions projections",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,22 +11,30 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Environmental Science",
     "topic": "Carbon Pricing Comparison",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Compare the mechanisms, advantages, and limitations of carbon tax and cap-and-trade systems",
+      "Evaluate how different policy parameters affect emissions reductions and economic costs",
+      "Explain the concepts of price certainty vs. quantity certainty in environmental policy"
     ],
     "bloomsTaxonomy": "Evaluate",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Basic understanding of supply and demand",
+      "Familiarity with greenhouse gas emissions and climate change"
+    ],
+    "standards": [
+      "NGSS HS-ESS3-4",
+      "AP Environmental Science Topic 9.7"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 502
     },
     "responsive": true,
     "dependencies": [],
@@ -36,10 +44,23 @@
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Comparative analysis through interactive simulation",
+    "keyQuestions": [
+      "What is the difference between a carbon tax and cap-and-trade?",
+      "Which system provides more certainty about total emissions levels?",
+      "How do individual factory cost curves affect the outcome of each policy?",
+      "Why might a government prefer one carbon pricing mechanism over the other?"
+    ],
+    "commonMisconceptions": [
+      "Students often assume that a higher carbon tax always leads to lower emissions, not recognizing that factories with very high abatement costs may simply pay the tax",
+      "Many students believe cap-and-trade means all factories must reduce equally, rather than trading permits so reductions happen where they are cheapest",
+      "Students may think carbon pricing eliminates all emissions rather than reducing them to an economically efficient level"
+    ],
+    "assessmentOpportunities": [
+      "Students predict which factories will reduce emissions under each policy before running the simulation",
+      "Students write a policy brief recommending one system with evidence from their experiments",
+      "Students explain why the permit price under cap-and-trade may differ from the tax rate needed to achieve the same total reduction"
+    ]
   },
   "chapter": "16-biodiversity-loss-and-policy"
 }

@@ -1,8 +1,8 @@
 {
   "title": "The Hydrologic Cycle",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for the hydrologic cycle",
+  "subject": "Ecology",
+  "description": "Animated landscape showing water moving through evaporation, precipitation, runoff, and groundwater with adjustable solar energy and vegetation.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,59 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "The Hydrologic Cycle",
+    "subjectArea": "Environmental Science",
+    "topic": "The Hydrologic (Water) Cycle",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Trace the movement of water through the hydrologic cycle and identify key processes",
+      "Explain how solar energy drives the water cycle by powering evaporation",
+      "Analyze how vegetation cover affects the partitioning of water between transpiration, runoff, and infiltration",
+      "Predict how changes to one component of the water cycle affect the entire system"
     ],
     "bloomsTaxonomy": "Understand",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "40 minutes",
+    "prerequisites": [
+      "Understanding of the three states of water",
+      "Basic knowledge of evaporation and condensation",
+      "Familiarity with the concept of a cycle in Earth science"
+    ],
+    "standards": [
+      "NGSS HS-ESS2-5",
+      "NGSS HS-LS2-4",
+      "AP Environmental Science Topic 4.3"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 422
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Animated process visualization with slider-based variable manipulation",
+    "keyQuestions": [
+      "How does solar energy drive the entire water cycle?",
+      "What role does vegetation play in the water cycle beyond just using water?",
+      "How does deforestation change the balance between runoff and infiltration?",
+      "Why is the water cycle described as a closed system at the global level?"
+    ],
+    "commonMisconceptions": [
+      "Students often omit transpiration from the water cycle, thinking only oceans and lakes contribute to evaporation",
+      "Many students think water only moves in one direction through the cycle rather than through multiple simultaneous pathways",
+      "Students may believe groundwater is a separate system disconnected from the surface water cycle"
+    ],
+    "assessmentOpportunities": [
+      "Compare student memory drawings of the water cycle with the simulation to identify gaps in understanding",
+      "Evaluate cause-and-effect statements from the slider experiments",
+      "Assess predictions about deforestation impacts on downstream water resources"
+    ]
   },
   "chapter": "04-biogeochemical-cycles"
 }

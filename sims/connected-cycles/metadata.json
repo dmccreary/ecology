@@ -1,8 +1,8 @@
 {
   "title": "Interconnected Biogeochemical Cycles",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for interconnected biogeochemical cycles",
+  "subject": "Ecology",
+  "description": "Interactive network diagram showing how the carbon, nitrogen, phosphorus, and water cycles are linked through shared ecological processes",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,60 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Environmental Science",
     "topic": "Interconnected Biogeochemical Cycles",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Identify linkages between the carbon, nitrogen, phosphorus, and water cycles",
+      "Explain how disrupting one biogeochemical cycle affects others through shared processes",
+      "Predict cascading effects of human activities on interconnected biogeochemical cycles"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "40 minutes",
+    "prerequisites": [
+      "Basic understanding of individual biogeochemical cycles",
+      "Familiarity with decomposition, photosynthesis, and nutrient runoff"
+    ],
+    "standards": [
+      "NGSS HS-ESS2-6",
+      "NGSS HS-LS2-4",
+      "AP Environmental Science Topic 1.3"
+    ]
   },
   "technical": {
     "framework": "vis-network",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 600
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "vis-network"
+    ],
     "accessibility": {
       "hasAltText": false,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Systems thinking through interactive network exploration",
+    "keyQuestions": [
+      "How are the four major biogeochemical cycles connected?",
+      "What shared processes link multiple cycles together?",
+      "How does disrupting one cycle cascade to affect others?",
+      "Why are environmental problems rarely confined to a single biogeochemical cycle?",
+      "What role do soil processes play in connecting all four cycles?"
+    ],
+    "commonMisconceptions": [
+      "Students often study each biogeochemical cycle in isolation and fail to recognize the deep connections between them",
+      "Many students think nutrient cycles are simple closed loops rather than interconnected networks with multiple pathways and feedback mechanisms",
+      "Students may not realize that disrupting one cycle can have unexpected consequences in seemingly unrelated cycles"
+    ],
+    "assessmentOpportunities": [
+      "Students create a connections matrix showing which cycles share which processes",
+      "Students write a cascade analysis tracing how one environmental problem propagates through multiple cycles",
+      "Students predict effects of specific human activities on interconnected cycles and justify their reasoning"
+    ]
   },
   "chapter": "04-biogeochemical-cycles"
 }

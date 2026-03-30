@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive vis-network MicroSim for acid rain formation and impact pathway.">
+        <meta name="description" content="Trace SO2 and NOx emissions through atmospheric chemistry to acid deposition and ecological damage.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Acid Rain Formation and Impact Pathway - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive vis-network MicroSim for acid rain formation and impact pathway.">
+        <meta property="og:description" content="Trace SO2 and NOx emissions through atmospheric chemistry to acid deposition and ecological damage.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/acid-rain-pathway/acid-rain-pathway.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Acid Rain Formation and Impact Pathway - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive vis-network MicroSim for acid rain formation and impact pathway.">
+        <meta name="twitter:description" content="Trace SO2 and NOx emissions through atmospheric chemistry to acid deposition and ecological damage.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/acid-rain-pathway/acid-rain-pathway.png">
       
@@ -966,9 +966,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -984,9 +1002,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2988,41 +3024,74 @@
 <h1 id="acid-rain-formation-and-impact-pathway">Acid Rain Formation and Impact Pathway</h1>
 <iframe src="main.html" height="600" width="100%" scrolling="no"></iframe>
 
-<p><a class="md-button md-button--primary" href="main.html">Run the Acid Rain Formation and Impact Pathway MicroSim Fullscreen</a>
-<br>
-<a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
+<p><a class="md-button md-button--primary" href="main.html">Run the Acid Rain Formation and Impact Pathway MicroSim Fullscreen</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This interactive network diagram traces the complete pathway of acid rain formation, from emission sources through atmospheric chemistry to ecological and infrastructure damage. Students follow the journey of sulfur dioxide (SO2) and nitrogen oxides (NOx) as they are released from coal plants, vehicles, and industrial furnaces, undergo chemical transformations in the atmosphere, and ultimately fall as acid precipitation.</p>
+<p>The visualization uses a landscape-style left-to-right flow to emphasize that acid rain is a systems problem. By clicking individual nodes, students can explore how each stage connects to others and understand the multi-step causal chain that links human activity to environmental degradation. This supports the Bloom's taxonomy level of <strong>Analyze</strong>, as students must trace and decompose the pathway into its component processes.</p>
+<p>Understanding acid rain as a connected system helps students appreciate why solutions require addressing multiple emission sources and why damage can occur far from the pollution source due to wind transport.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Click any node</strong> in the network to highlight its connections and see detailed information in the side panel</li>
+<li><strong>Follow the left-to-right flow</strong>: emission sources (gray) release pollutants (orange), which undergo chemical reactions (red), are transported by wind (blue), and cause impacts on water, land, and infrastructure</li>
+<li><strong>Read the info panel</strong> on the right for definitions and explanations of each stage</li>
+<li><strong>Observe the connection labels</strong> on edges to understand the relationship between nodes (emits, reacts, carried by, deposits as, acidifies, damages, corrodes, leaches)</li>
+<li><strong>Click the pH Scale Reference node</strong> at the bottom to see how acid rain pH compares to common substances</li>
+<li><strong>Click "Reset View"</strong> to restore the full diagram and clear highlights</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/acid-rain-pathway/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"600px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>15-20 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Trace the pathway from SO2 and NOx emissions through atmospheric chemistry to acid deposition and ecological damage</li>
+<li>Identify the three main emission sources of acid rain precursors</li>
+<li>Explain the chemical reactions that convert SO2 and NOx into sulfuric and nitric acid</li>
+<li>Describe at least three ecological impacts of acid rain on aquatic, terrestrial, and built environments</li>
+<li>Analyze how wind transport connects distant emission sources to local environmental damage</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of chemical reactions and pH</li>
+<li>Familiarity with fossil fuel combustion</li>
+<li>Knowledge of ecosystem components (aquatic, terrestrial)</li>
+<li>Understanding of the difference between cause and effect in environmental systems</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li>NGSS HS-ESS3-4: Evaluate or refine a technological solution that reduces impacts of human activities on natural systems</li>
+<li>AP Environmental Science Topic 7.2: Introduction to Air Pollution</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Warm-Up</strong> (3 min): Ask students to predict where acid rain falls -- near the pollution source or far away? Have them write their prediction and reasoning.</li>
+<li><strong>Guided Exploration</strong> (7 min): Walk through the diagram left to right. Click each source node and ask students to identify what pollutant it emits. Follow the pathway through atmospheric chemistry to deposition. Ask: "Why does clicking the Wind Transport node matter?"</li>
+<li><strong>Independent Investigation</strong> (5-7 min): Have students click each impact node and record the specific damage described. Challenge them to rank which impact they think is most ecologically significant and explain their reasoning.</li>
+<li><strong>Reflection</strong> (3-5 min): Return to the warm-up prediction. Discuss how wind transport means acid rain is a transboundary pollution problem. Ask: "Why does this make acid rain harder to regulate than local pollution?"</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>What two primary pollutants combine with water to form acid rain?</li>
+<li>Using the diagram, trace the complete pathway from a coal power plant to lake acidification. How many steps are involved?</li>
+<li>Why do the secondary impact arrows show that soil nutrient leaching also weakens forests? What pattern does this reveal about ecosystem interconnection?</li>
+<li>The Clean Air Act significantly reduced SO2 emissions in the United States. Based on this pathway diagram, predict which downstream impacts would recover first and which would take longest. Justify your answer.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li><a href="https://en.wikipedia.org/wiki/Acid_rain">Acid Rain - Wikipedia</a> - Comprehensive overview of acid rain chemistry, history, and ecological effects</li>
+<li><a href="https://www.epa.gov/acidrain/effects-acid-rain">EPA: Effects of Acid Rain</a> - U.S. Environmental Protection Agency resource on acid rain impacts</li>
+<li><a href="https://visjs.github.io/vis-network/docs/network/">vis.js Network Documentation</a> - JavaScript library used for the interactive network diagram</li>
 </ol>
 
 

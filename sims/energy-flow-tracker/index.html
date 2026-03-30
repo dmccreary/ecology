@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for energy flow tracker.">
+        <meta name="description" content="Interactive p5.js animated simulation tracing energy through a food chain with branching losses to respiration, waste, and transfer at each trophic level.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Energy Flow Tracker - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for energy flow tracker.">
+        <meta property="og:description" content="Interactive p5.js animated simulation tracing energy through a food chain with branching losses to respiration, waste, and transfer at each trophic level.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/energy-flow-tracker/energy-flow-tracker.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Energy Flow Tracker - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for energy flow tracker.">
+        <meta name="twitter:description" content="Interactive p5.js animated simulation tracing energy through a food chain with branching losses to respiration, waste, and transfer at each trophic level.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/energy-flow-tracker/energy-flow-tracker.png">
       
@@ -1491,9 +1491,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1509,9 +1527,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,9 +3028,18 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim provides an animated visualization of energy flowing through four trophic levels in a food chain -- from producers to primary, secondary, and tertiary consumers. At each level, the energy flow splits into three branches: respiration and heat loss (upward), waste and feces (downward), and transfer to the next trophic level (forward).</p>
+<p>The animation makes the abstract concept of energy loss at each trophic level concrete and visible. Animated particles flow along the branching paths, and each organism box displays the energy entering, the energy lost to respiration and waste, and the transfer efficiency percentage. Students can see at a glance why top predators receive only a tiny fraction of the original solar energy input.</p>
+<p>This simulation directly illustrates the second law of thermodynamics as it applies to ecosystems: energy is degraded at every transfer, with most converted to heat through metabolic processes. Understanding this principle is essential for explaining why food chains rarely exceed four or five trophic levels and why ecosystems require continuous energy input from the Sun.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Adjust the solar energy slider</strong> to set the initial energy input entering the producer level.</li>
+<li><strong>Press Play</strong> to start the animation and watch energy particles flow through the food chain from left to right.</li>
+<li><strong>Observe the branching paths</strong> -- red arrows show energy lost to respiration/heat, brown arrows show waste, and green arrows show energy transferred to the next level.</li>
+<li><strong>Read the energy values</strong> displayed on each trophic level box showing energy in, energy out, and efficiency.</li>
+<li><strong>Press Pause</strong> to freeze the animation and examine any stage in detail.</li>
+<li><strong>Compare efficiency percentages</strong> across levels to understand the cumulative energy loss.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -3007,22 +3052,52 @@
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ol>
+<li>Trace energy through a food chain, accounting for respiration, waste, and transfer at each trophic level.</li>
+<li>Calculate the percentage of energy available at each successive trophic level.</li>
+<li>Explain why food chains are limited to 4-5 trophic levels.</li>
+</ol>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Understanding of food chains and trophic levels</li>
+<li>Basic knowledge of photosynthesis and cellular respiration</li>
+<li>Familiarity with the concept of energy conservation</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-LS2-4</strong>: Use mathematical representations to support claims for the cycling of matter and flow of energy among organisms in an ecosystem.</li>
+<li><strong>NGSS HS-LS1-5</strong>: Use a model to illustrate that cellular respiration is a chemical process whereby the bonds of food molecules and oxygen molecules are broken and new compounds are formed.</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Engage</strong> (5 min): Ask students: "If a field of grass captures 10,000 kcal of solar energy, how much energy is available to a hawk at the top of the food chain?" Have them guess before using the simulation.</p>
+</li>
+<li>
+<p><strong>Explore</strong> (15 min): Students set the solar energy slider to 10,000 kcal and record the energy values at each trophic level. They create a data table with columns for Trophic Level, Energy In, Respiration Loss, Waste Loss, Energy Transferred, and Efficiency %. They repeat with different starting values.</p>
+</li>
+<li>
+<p><strong>Explain</strong> (15 min): Discuss the 10% rule and why it is an approximation. Connect energy loss to the second law of thermodynamics. Explain why large carnivores are rare, why shorter food chains are more energy-efficient, and why vegetarian diets can support more people per acre.</p>
+</li>
+<li>
+<p><strong>Extend</strong> (10 min): Students calculate how many kilograms of grass are needed to support one kilogram of hawk biomass, working backward through the trophic levels. Discuss implications for conservation of apex predators.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>If producers capture 50,000 kcal of solar energy, approximately how much energy is available to tertiary consumers? Show your calculation.</li>
+<li>Where does the "lost" energy at each trophic level actually go? Is it destroyed?</li>
+<li>Why do most ecosystems have only 4-5 trophic levels rather than 10 or more?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Lindeman, R. L. (1942). "The Trophic-Dynamic Aspect of Ecology." <em>Ecology</em>, 23(4), 399-417.</li>
+<li>Odum, E. P. &amp; Barrett, G. W. (2005). <em>Fundamentals of Ecology</em> (5th ed.). Thomson Brooks/Cole.</li>
+<li>Chapin, F. S., Matson, P. A., &amp; Mooney, H. A. (2011). <em>Principles of Terrestrial Ecosystem Ecology</em>. Springer.</li>
 </ol>
 
 

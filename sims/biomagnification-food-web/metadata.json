@@ -1,8 +1,8 @@
 {
   "title": "Biomagnification Through a Food Web",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for biomagnification through a food web",
+  "subject": "Ecology",
+  "description": "Interactive trophic pyramid showing how pollutant concentrations magnify approximately 10x at each level with adjustable initial concentration",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,60 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Environmental Science",
     "topic": "Biomagnification Through a Food Web",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Compare pollutant concentrations across trophic levels and explain why top predators are most affected",
+      "Calculate the approximate magnification factor between adjacent trophic levels",
+      "Predict when toxin concentrations will exceed danger thresholds",
+      "Connect biomagnification to real-world examples like DDT and mercury"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Understanding of food webs and trophic levels",
+      "Knowledge of producer, consumer, and predator concepts",
+      "Familiarity with parts per million (ppm) as a concentration unit"
+    ],
+    "standards": [
+      "NGSS HS-LS2-4",
+      "AP Environmental Science Topic 8.5"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 482
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js"
+    ],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Slider-driven quantitative exploration with visual danger indicators",
+    "keyQuestions": [
+      "Why are top predators most vulnerable to persistent pollutants?",
+      "What initial water concentration is truly 'safe' for the entire food web?",
+      "How does the 10x magnification factor explain why DDT nearly drove eagles to extinction?",
+      "Why do fish consumption advisories target large predatory fish like tuna and swordfish?"
+    ],
+    "commonMisconceptions": [
+      "If the water concentration is safe for humans, the food web is safe (biomagnification can create dangerous levels at higher trophic levels)",
+      "All pollutants biomagnify equally (only persistent, fat-soluble chemicals accumulate significantly)",
+      "Biomagnification only happens in aquatic ecosystems (it also occurs in terrestrial food webs)"
+    ],
+    "assessmentOpportunities": [
+      "Have students calculate concentrations at each trophic level for a given initial value",
+      "Ask students to determine the maximum safe initial concentration for top predators",
+      "Challenge students to explain why banning DDT helped eagle populations recover using the magnification model"
+    ]
   },
   "chapter": "12-water-and-land-pollution"
 }

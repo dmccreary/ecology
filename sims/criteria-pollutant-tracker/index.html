@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive vis-network MicroSim for criteria air pollutants source-to-impact tracker.">
+        <meta name="description" content="Interactive vis-network diagram tracing six EPA criteria air pollutants from their sources through atmospheric chemistry to health and environmental impacts.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Criteria Air Pollutants Source-to-Impact Tracker - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive vis-network MicroSim for criteria air pollutants source-to-impact tracker.">
+        <meta property="og:description" content="Interactive vis-network diagram tracing six EPA criteria air pollutants from their sources through atmospheric chemistry to health and environmental impacts.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/criteria-pollutant-tracker/criteria-pollutant-tracker.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Criteria Air Pollutants Source-to-Impact Tracker - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive vis-network MicroSim for criteria air pollutants source-to-impact tracker.">
+        <meta name="twitter:description" content="Interactive vis-network diagram tracing six EPA criteria air pollutants from their sources through atmospheric chemistry to health and environmental impacts.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/criteria-pollutant-tracker/criteria-pollutant-tracker.png">
       
@@ -1323,9 +1323,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1341,9 +1359,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2988,41 +3024,82 @@
 <h1 id="criteria-air-pollutants-source-to-impact-tracker">Criteria Air Pollutants Source-to-Impact Tracker</h1>
 <iframe src="main.html" height="630" width="100%" scrolling="no"></iframe>
 
-<p><a class="md-button md-button--primary" href="main.html">Run the Criteria Air Pollutants Source-to-Impact Tracker MicroSim Fullscreen</a>
-<br>
-<a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
+<p><a class="md-button md-button--primary" href="main.html">Run the Criteria Air Pollutants Source-to-Impact Tracker Fullscreen</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This interactive network diagram visualizes the complete pathway of the six EPA criteria air pollutants -- from emission sources through atmospheric chemistry to their health and environmental impacts. The three-column layout places pollution sources (vehicles, power plants, industry, natural sources) on the left, the six criteria pollutants plus VOC precursors in the center, and the resulting health and environmental impacts on the right.</p>
+<p>The network reveals a crucial insight that textbook lists often obscure: pollutants share sources and interact with each other. For example, NOx and VOCs combine to form ground-level ozone, while SO2 and NOx both contribute to acid rain through different chemical pathways. Special dashed edges show these secondary formation pathways, helping students see air pollution as an interconnected system rather than a list of independent chemicals.</p>
+<p>Students can click any node to highlight all connected paths, making it easy to trace a single pollutant from source to impact or to identify which sources contribute to multiple problems. The color coding distinguishes sources (gray), primary pollutants (orange), secondary pollutants (red), health impacts (purple), and environmental impacts (brown).</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Explore the network by observing the three-column layout: Sources, Pollutants, and Impacts.</li>
+<li>Click on any pollutant node (center column) to highlight all its source connections and downstream impacts.</li>
+<li>Click on a source node (left column) to see all pollutants it produces.</li>
+<li>Click on an impact node (right column) to trace back which pollutants cause it.</li>
+<li>Look for dashed edges showing secondary formation pathways (e.g., NOx + VOCs forming ozone).</li>
+<li>Hover over nodes and edges to read detailed descriptions.</li>
+<li>Drag nodes to rearrange the layout for better visibility.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/criteria-pollutant-tracker/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"630px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>50 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Trace each criteria air pollutant from its source through atmospheric chemistry to health and environmental impacts</li>
+<li>Explain how pollutants share common sources and interact with each other in the atmosphere</li>
+<li>Distinguish between primary pollutants (emitted directly) and secondary pollutants (formed by chemical reactions)</li>
+<li>Analyze why reducing emissions from a single source can have multiple environmental benefits</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic chemistry concepts (chemical reactions, molecules)</li>
+<li>Understanding of the atmosphere's composition</li>
+<li>Introduction to the Clean Air Act and EPA regulatory framework</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-ESS3-6</strong>: Use a computational representation to illustrate the relationships among Earth systems</li>
+<li><strong>AP Environmental Science</strong>: Topic 7.2 -- Air Pollution</li>
+<li><strong>NGSS HS-LS2-7</strong>: Design, evaluate, and refine a solution for reducing the impacts of human activities on the environment</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Warm-Up</strong> (5 min): Show students a photo of smog over a city. Ask: "How many different pollutants do you think are in that air? Where did they come from?" Record predictions on the board.</p>
+</li>
+<li>
+<p><strong>Guided Exploration</strong> (15 min): Students explore the network diagram, starting by clicking each of the six criteria pollutants and recording in a table: the pollutant name, its sources, and its impacts. Students should note which pollutants share sources.</p>
+</li>
+<li>
+<p><strong>Analysis Activity</strong> (20 min): Working in pairs, students answer: "If a city closes its coal-fired power plant, which pollutants would decrease? Which impacts would be reduced?" Students trace all paths from the power plant node and write a paragraph explaining the cascading benefits. Repeat for vehicle emissions.</p>
+</li>
+<li>
+<p><strong>Synthesis Discussion</strong> (10 min): Class discussion on why the Clean Air Act regulates these six specific pollutants. How does the network view help explain why targeting certain sources is more cost-effective than targeting individual pollutants?</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Explain the difference between a primary pollutant and a secondary pollutant, giving one example of each from the network diagram.</li>
+<li>Which single pollution source connects to the most criteria pollutants? Why does this make it a high priority for regulation?</li>
+<li>Trace the complete pathway from vehicle exhaust to acid rain, naming all intermediate steps.</li>
+<li>Why is ground-level ozone considered a secondary pollutant, and what does this mean for strategies to reduce it?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>EPA. "Criteria Air Pollutants." <a href="https://www.epa.gov/criteria-air-pollutants">https://www.epa.gov/criteria-air-pollutants</a></li>
+<li>Seinfeld, J.H. &amp; Pandis, S.N. (2016). <em>Atmospheric Chemistry and Physics</em>. 3rd ed. Wiley.</li>
+<li>Jacobson, M.Z. (2012). <em>Air Pollution and Global Warming: History, Science, and Solutions</em>. Cambridge University Press.</li>
 </ol>
 
 

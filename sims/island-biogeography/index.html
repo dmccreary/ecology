@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for island biogeography simulator.">
+        <meta name="description" content="Interactive p5.js simulation demonstrating how island size and distance from mainland affect species richness through immigration and extinction dynamics.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Island Biogeography Simulator - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for island biogeography simulator.">
+        <meta property="og:description" content="Interactive p5.js simulation demonstrating how island size and distance from mainland affect species richness through immigration and extinction dynamics.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/island-biogeography/island-biogeography.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Island Biogeography Simulator - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for island biogeography simulator.">
+        <meta name="twitter:description" content="Interactive p5.js simulation demonstrating how island size and distance from mainland affect species richness through immigration and extinction dynamics.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/island-biogeography/island-biogeography.png">
       
@@ -1932,9 +1932,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1950,9 +1968,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2988,41 +3024,82 @@
 <h1 id="island-biogeography-simulator">Island Biogeography Simulator</h1>
 <iframe src="main.html" height="402" width="100%" scrolling="no"></iframe>
 
-<p><a class="md-button md-button--primary" href="main.html">Run the Island Biogeography Simulator MicroSim Fullscreen</a>
+<p><a class="md-button md-button--primary" href="main.html">Run the Island Biogeography Simulator Fullscreen</a>
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This simulation brings MacArthur and Wilson's theory of island biogeography to life. Students manipulate two key variables -- island size and distance from the mainland -- and observe how these factors control species richness through the balance of immigration and extinction rates. Colored dots representing different species colonize the island via animated arcs from the mainland, while extinctions are shown as dots fading out.</p>
+<p>A real-time graph plots species count over time, clearly showing the equilibrium point where immigration rate equals extinction rate. As students adjust the sliders, they can see this equilibrium shift: larger islands support more species (lower extinction rate), and closer islands receive more colonizers (higher immigration rate). The "Fast Forward" button lets students quickly reach equilibrium to compare parameter combinations.</p>
+<p>This interactive approach lets students discover the species-area relationship and distance effect through experimentation rather than memorization, building intuition about a foundational concept in conservation biology and habitat fragmentation.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Observe the mainland on the left edge and the island in the center of the display.</li>
+<li>Adjust the <strong>Island Size</strong> slider to make the island larger or smaller and observe how this affects extinction rate and equilibrium species count.</li>
+<li>Adjust the <strong>Distance from Mainland</strong> slider to move the island closer or farther from the mainland, noting how immigration rate changes.</li>
+<li>Watch the species graph in the corner to see the equilibrium point where immigration and extinction rates balance.</li>
+<li>Click <strong>Fast Forward</strong> to quickly reach equilibrium for the current settings.</li>
+<li>Use <strong>Pause</strong> to freeze the simulation and examine the current state.</li>
+<li>Click <strong>Reset</strong> to clear all species and start a new colonization from scratch.</li>
+<li>Compare: set a large near island versus a small far island and note the difference in equilibrium species counts.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/island-biogeography/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"402px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / AP Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Predict how island size and distance from mainland affect species richness</li>
+<li>Explain the equilibrium theory of island biogeography using immigration and extinction rates</li>
+<li>Apply island biogeography principles to real-world conservation scenarios such as habitat fragmentation</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Understanding of species diversity and richness concepts</li>
+<li>Basic knowledge of immigration and extinction in ecological contexts</li>
+<li>Familiarity with reading line graphs over time</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li>NGSS HS-LS2-2: Use mathematical representations to support explanations of factors affecting biodiversity</li>
+<li>AP Environmental Science: Topic 2.3 -- Biodiversity</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Prediction Phase</strong> (5 min): Before interacting with the simulation, students write predictions: "Which will have more species -- a large island close to the mainland or a small island far from the mainland? Why?" Collect predictions for later comparison.</p>
+</li>
+<li>
+<p><strong>Guided Exploration</strong> (15 min): As a class, systematically test four combinations: large-near, large-far, small-near, small-far. For each, record the equilibrium species count, immigration rate, and extinction rate. Students fill in a 2x2 data table.</p>
+</li>
+<li>
+<p><strong>Independent Investigation</strong> (15 min): Students explore intermediate slider positions to answer: "Is island size or distance more important for species richness?" They create graphs of equilibrium species count vs. each variable while holding the other constant.</p>
+</li>
+<li>
+<p><strong>Real-World Application</strong> (10 min): Discuss how island biogeography applies to habitat fragments on land. "How is a forest patch surrounded by farmland like an island?" Students brainstorm how this theory informs wildlife corridor design and nature reserve planning.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Using the equilibrium model, explain why a large island close to the mainland has the highest species richness.</li>
+<li>A nature reserve is being planned. Using island biogeography theory, would you recommend one large reserve or several small ones? Justify your answer.</li>
+<li>How does the concept of immigration rate in island biogeography relate to wildlife corridors connecting fragmented habitats?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>MacArthur, R.H., &amp; Wilson, E.O. (1967). <em>The Theory of Island Biogeography</em>. Princeton University Press.</li>
+<li>Lomolino, M.V. (2000). A call for a new paradigm of island biogeography. <em>Global Ecology and Biogeography</em>, 9(1), 1-6.</li>
+<li>Whittaker, R.J., &amp; Fernandez-Palacios, J.M. (2007). <em>Island Biogeography: Ecology, Evolution, and Conservation</em>. Oxford University Press.</li>
 </ol>
 
 

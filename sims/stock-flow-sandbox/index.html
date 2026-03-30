@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for interactive stock and flow sandbox.">
+        <meta name="description" content="Hands-on simulation where students manipulate inflow and outflow rates to explore accumulation, depletion, and dynamic equilibrium in ecological systems.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Interactive Stock and Flow Sandbox - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for interactive stock and flow sandbox.">
+        <meta property="og:description" content="Hands-on simulation where students manipulate inflow and outflow rates to explore accumulation, depletion, and dynamic equilibrium in ecological systems.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/stock-flow-sandbox/stock-flow-sandbox.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Interactive Stock and Flow Sandbox - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for interactive stock and flow sandbox.">
+        <meta name="twitter:description" content="Hands-on simulation where students manipulate inflow and outflow rates to explore accumulation, depletion, and dynamic equilibrium in ecological systems.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/stock-flow-sandbox/stock-flow-sandbox.png">
       
@@ -1869,9 +1869,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1887,9 +1905,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,71 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim provides a hands-on sandbox for exploring the fundamental systems thinking concept of stocks and flows. A central stock is visualized as a tank that fills or drains in real time based on inflow and outflow rates controlled by sliders. A line chart tracks the stock level over time, making accumulation and depletion patterns immediately visible.</p>
+<p>The simulation includes preset ecological scenarios that put the abstract stock-and-flow concept into real-world context: a Lake Water Budget (rainfall vs. evaporation), a Deer Population (births vs. deaths), and Carbon in Atmosphere (emissions vs. absorption). Each preset loads appropriate labels and initial values, helping students see the same mathematical pattern across very different ecological systems.</p>
+<p>A dynamic equilibrium indicator lights up when inflow equals outflow, reinforcing the important concept that equilibrium does not mean nothing is happening -- it means the rates of change are balanced. This intuition is essential for understanding homeostasis, population dynamics, and biogeochemical cycles throughout ecology.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Observe the tank visualization showing the current stock level as a blue water fill.</li>
+<li>Adjust the <strong>Inflow</strong> slider (0-10 units/sec) and <strong>Outflow</strong> slider (0-10 units/sec) to change the rates.</li>
+<li>Watch the tank fill or drain in real time and observe the stock level line chart below.</li>
+<li>Set inflow equal to outflow to achieve <strong>dynamic equilibrium</strong> (the green indicator lights up).</li>
+<li>Use the <strong>Preset</strong> dropdown to load ecological scenarios: Lake Water Budget, Deer Population, or Carbon in Atmosphere.</li>
+<li>Experiment with different rate combinations and observe how quickly the stock responds.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/stock-flow-sandbox/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"442px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / Systems Thinking)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Construct a mental model of stock and flow dynamics for a simple ecological system</li>
+<li>Predict how a stock changes over time when inflow and outflow rates differ</li>
+<li>Explain the concept of dynamic equilibrium using evidence from the simulation</li>
+<li>Apply stock-and-flow thinking to multiple ecological contexts</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of rates (things per unit time)</li>
+<li>Introduction to ecological systems concepts</li>
+<li>Familiarity with line graphs and interpreting trends</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-LS2-2</strong>: Use mathematical representations to support and revise explanations based on evidence about factors affecting biodiversity</li>
+<li><strong>NGSS HS-ESS2-6</strong>: Develop a quantitative model to describe the cycling of carbon among the hydrosphere, atmosphere, geosphere, and biosphere</li>
+<li><strong>AP Environmental Science</strong>: Topic 9.3 -- The Carbon Cycle</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Engage</strong> (5 min): Show a bathtub analogy -- what happens when you turn on the faucet but leave the drain open? When does the water level stay constant? Introduce the terms stock, inflow, outflow, and equilibrium.</li>
+<li><strong>Explore</strong> (15 min): Students set custom inflow/outflow values and sketch predictions before running the simulation. Test: What happens when inflow = 8, outflow = 3? When inflow = outflow = 5? When inflow = 2, outflow = 7?</li>
+<li><strong>Explain</strong> (15 min): Switch to ecological presets. For each scenario, students identify what the stock, inflow, and outflow represent in the real system. Discuss: What would cause the deer population to reach equilibrium? What does it mean for atmospheric CO2 when emissions exceed absorption?</li>
+<li><strong>Extend</strong> (10 min): Students design their own stock-and-flow scenario for an ecological system not included in the presets (e.g., soil nitrogen, fish population in a lake, groundwater aquifer). They describe the stock, inflow, outflow, and conditions for equilibrium.</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>If the inflow rate is 7 units/sec and the outflow rate is 4 units/sec, what happens to the stock over time? Sketch the expected graph.</li>
+<li>Explain why dynamic equilibrium does not mean "nothing is changing" in a population.</li>
+<li>In the Carbon in Atmosphere scenario, what real-world changes would increase the outflow (absorption) to restore equilibrium?</li>
+<li>How does stock-and-flow thinking help ecologists predict the effects of environmental changes?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Meadows, D.H. (2008). <em>Thinking in Systems: A Primer</em>. Chelsea Green Publishing.</li>
+<li>Ford, A. (2010). <em>Modeling the Environment</em> (2nd ed.). Island Press.</li>
+<li>Sterman, J.D. (2000). <em>Business Dynamics: Systems Thinking and Modeling for a Complex World</em>. McGraw-Hill.</li>
 </ol>
 
 

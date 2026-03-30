@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for tolerance range explorer.">
+        <meta name="description" content="Interactive bell curves showing specialist and generalist species tolerance ranges across environmental gradients, with draggable condition markers and zone highlighting.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Tolerance Range Explorer - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for tolerance range explorer.">
+        <meta property="og:description" content="Interactive bell curves showing specialist and generalist species tolerance ranges across environmental gradients, with draggable condition markers and zone highlighting.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/tolerance-range/tolerance-range.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Tolerance Range Explorer - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for tolerance range explorer.">
+        <meta name="twitter:description" content="Interactive bell curves showing specialist and generalist species tolerance ranges across environmental gradients, with draggable condition markers and zone highlighting.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/tolerance-range/tolerance-range.png">
       
@@ -2541,9 +2541,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2559,9 +2577,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,71 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim lets students physically explore the concept of ecological tolerance by manipulating environmental conditions and observing how specialist and generalist species respond differently. Two overlapping bell curves represent the tolerance ranges of a narrow-tolerance specialist (such as brook trout) and a wide-tolerance generalist (such as largemouth bass). Each curve shows how population performance (growth rate) varies across an environmental gradient.</p>
+<p>A draggable vertical line represents the current environmental condition. As students move this line, both curves highlight whether each species is in its optimal zone (green), stress zone (yellow), or intolerance zone (red). This immediate visual feedback helps students understand why some species thrive in stable environments while others succeed in variable ones.</p>
+<p>A dropdown selector lets students switch between different environmental variables -- temperature, pH, salinity, and dissolved oxygen -- each with its own pair of specialist and generalist species. This variety demonstrates that tolerance range concepts apply universally across environmental factors, not just temperature, and that the same species can be a specialist for one factor and a generalist for another.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Observe the two overlapping bell curves: the narrow curve represents a <strong>specialist species</strong> and the wide curve represents a <strong>generalist species</strong>.</li>
+<li><strong>Drag the vertical line</strong> left and right along the environmental gradient to change the current condition.</li>
+<li>Watch how each species' zone changes: <strong>green</strong> (optimal), <strong>yellow</strong> (stress), or <strong>red</strong> (intolerance) as conditions shift.</li>
+<li>Use the <strong>dropdown</strong> to switch between environmental variables: Temperature, pH, Salinity, or Dissolved Oxygen.</li>
+<li>Notice how different species pairs appear for each variable, each with different optimal ranges.</li>
+<li>Find the condition where one species is in its optimal zone while the other is in its stress zone.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/tolerance-range/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"402px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / Ecology)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>40 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Demonstrate how changes in environmental conditions affect organism survival by manipulating tolerance curves</li>
+<li>Distinguish between specialist and generalist species based on their tolerance range width</li>
+<li>Predict which species will be more vulnerable to environmental change</li>
+<li>Apply tolerance range concepts across multiple environmental variables</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of species and their habitats</li>
+<li>Familiarity with the concept of environmental factors (abiotic conditions)</li>
+<li>Introduction to population growth and limiting factors</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-LS2-6</strong>: Evaluate claims, evidence, and reasoning that the complex interactions in ecosystems maintain relatively consistent numbers and types of organisms</li>
+<li><strong>NGSS HS-LS4-5</strong>: Evaluate the evidence supporting claims that changes in environmental conditions may result in increases or decreases in biodiversity</li>
+<li><strong>AP Environmental Science</strong>: Topic 2.2 -- Range of Tolerance</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Engage</strong> (5 min): Ask students: Why do we find trout in cold mountain streams but bass in warm ponds? Could you put a bass in a mountain stream and expect it to thrive? Introduce the concept that every species has a range of conditions it can tolerate.</li>
+<li><strong>Explore</strong> (15 min): Students drag the condition line across the temperature gradient and record in a data table which zone each species is in at 5 degrees C, 15 degrees C, 25 degrees C, 35 degrees C, and 45 degrees C. Repeat for at least one other environmental variable.</li>
+<li><strong>Explain</strong> (10 min): Define optimal range, stress zone, and zone of intolerance. Compare specialist (narrow curve) to generalist (wide curve) strategies. Discuss trade-offs: specialists often outperform generalists under optimal conditions but are more vulnerable to environmental change.</li>
+<li><strong>Extend</strong> (10 min): Climate change scenario -- If average water temperature increases by 3 degrees C, which species is more at risk? Students use the simulation to find the answer and write a prediction about community composition changes in a warming stream.</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Define the terms "optimal range," "stress zone," and "zone of intolerance" in the context of species tolerance.</li>
+<li>Why is a generalist species more likely to survive a sudden environmental change than a specialist?</li>
+<li>Using the temperature tolerance curves, predict what would happen to a brook trout population if stream temperature increased from 14 degrees C to 22 degrees C.</li>
+<li>A lake has a pH of 5.0 due to acid rain. Using tolerance range concepts, explain why some fish species disappear while others survive.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Shelford, V.E. (1913). <em>Animal Communities in Temperate America</em>. University of Chicago Press.</li>
+<li>Smith, T.M. &amp; Smith, R.L. (2015). <em>Elements of Ecology</em> (9th ed.). Pearson.</li>
+<li>Begon, M., Townsend, C.R., &amp; Harper, J.L. (2006). <em>Ecology: From Individuals to Ecosystems</em> (4th ed.). Blackwell Publishing.</li>
 </ol>
 
 

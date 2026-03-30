@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for thermal inversion simulator.">
+        <meta name="description" content="Split-screen particle simulation comparing normal atmospheric conditions with thermal inversion, showing how pollutants accumulate when trapped by a warm air layer.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Thermal Inversion Simulator - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for thermal inversion simulator.">
+        <meta property="og:description" content="Split-screen particle simulation comparing normal atmospheric conditions with thermal inversion, showing how pollutants accumulate when trapped by a warm air layer.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/thermal-inversion/thermal-inversion.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Thermal Inversion Simulator - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for thermal inversion simulator.">
+        <meta name="twitter:description" content="Split-screen particle simulation comparing normal atmospheric conditions with thermal inversion, showing how pollutants accumulate when trapped by a warm air layer.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/thermal-inversion/thermal-inversion.png">
       
@@ -2499,9 +2499,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2517,9 +2535,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,71 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim makes the invisible dynamics of atmospheric pollution visible through an animated particle simulation. Under normal atmospheric conditions, temperature decreases with altitude, allowing warm polluted air to rise and disperse. During a thermal inversion, a layer of warm air aloft acts as a "lid," trapping pollutants near the ground where people live and breathe.</p>
+<p>The simulation shows pollution particles (small gray and brown dots) emitted from sources at ground level. Under normal conditions, the particles rise and disperse throughout the atmosphere. During a thermal inversion, particles accumulate below the warm layer, creating visible haze that thickens over time. A temperature profile graph alongside each panel shows the critical difference in atmospheric temperature structure.</p>
+<p>An AQI-style pollution concentration meter (color-coded green through purple) tracks air quality in real time, demonstrating how rapidly conditions can deteriorate during an inversion event. Students can adjust the emission rate and toggle between normal and inversion modes to directly compare the outcomes, building an intuitive understanding of why geography and weather patterns make some cities particularly vulnerable to smog events.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Click <strong>Play</strong> to start the simulation and observe pollution particles emitting from ground-level sources.</li>
+<li>Toggle between <strong>Normal</strong> and <strong>Inversion</strong> modes to see how atmospheric temperature structure affects pollutant behavior.</li>
+<li>Adjust the <strong>Emission Rate</strong> slider to control how many pollution particles are released per unit time.</li>
+<li>Watch the temperature profile graphs on the side of each panel to see the difference between normal (temperature decreasing with altitude) and inverted (warm layer aloft) conditions.</li>
+<li>Monitor the <strong>AQI pollution meter</strong> below the panels as it changes from green (Good) through yellow, orange, red, and purple (Very Unhealthy).</li>
+<li>Observe how hours of elapsed time correlate with pollution concentration buildup during an inversion.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/thermal-inversion/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"462px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Explain how thermal inversions trap pollutants near the ground</li>
+<li>Compare normal and inverted atmospheric temperature profiles</li>
+<li>Analyze the relationship between emission rates, atmospheric conditions, and air quality</li>
+<li>Connect thermal inversion events to real-world smog and public health impacts</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of air pollution sources and types</li>
+<li>Familiarity with temperature and altitude relationships</li>
+<li>Introduction to the concept of air quality</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-ESS2-4</strong>: Use a model to describe how variations in the flow of energy into and out of Earth's systems result in changes in climate</li>
+<li><strong>NGSS HS-ESS3-6</strong>: Use a computational representation to illustrate the relationships among Earth systems and how those relationships are being modified due to human activity</li>
+<li><strong>AP Environmental Science</strong>: Topic 7.2 -- Air Pollution</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Engage</strong> (5 min): Show photos of Los Angeles or Beijing during severe smog events. Ask: Why do some days have much worse air quality than others, even if pollution sources stay the same?</li>
+<li><strong>Explore</strong> (15 min): Students run the simulation in normal mode first, observing how particles disperse. Then switch to inversion mode with the same emission rate and record observations every simulated hour. Create a two-column comparison chart noting particle behavior, visibility, and AQI readings.</li>
+<li><strong>Explain</strong> (15 min): Draw the two temperature profiles on the board. Explain that warm air rises (convection) under normal conditions, carrying pollutants away. During an inversion, the warm layer above acts as a ceiling. Discuss real-world examples: Los Angeles basin geography, London's Great Smog of 1952, winter inversions in mountain valleys.</li>
+<li><strong>Extend</strong> (10 min): Students experiment with different emission rates under inversion conditions. At what emission rate does AQI stay in the "Good" range even during an inversion? Discuss policy implications: Should cities issue pollution advisories based on weather forecasts?</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Draw and label the temperature profiles for normal atmospheric conditions and a thermal inversion.</li>
+<li>Explain why a thermal inversion causes pollution to accumulate near the ground instead of dispersing.</li>
+<li>A city in a mountain valley experiences frequent winter inversions. What policies would you recommend to protect public health during these events?</li>
+<li>Why do coastal cities like Los Angeles experience more thermal inversions than cities on flat plains?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Jacobson, M.Z. (2012). <em>Air Pollution and Global Warming: History, Science, and Solutions</em> (2nd ed.). Cambridge University Press.</li>
+<li>EPA. "Air Quality Index (AQI) Basics." <a href="https://www.airnow.gov/aqi/aqi-basics/">https://www.airnow.gov/aqi/aqi-basics/</a></li>
+<li>Lutgens, F.K. &amp; Tarbuck, E.J. (2016). <em>The Atmosphere: An Introduction to Meteorology</em> (13th ed.). Pearson.</li>
 </ol>
 
 

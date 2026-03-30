@@ -1,8 +1,8 @@
 {
   "title": "Thermal Inversion Simulator",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for thermal inversion simulator",
+  "subject": "Ecology",
+  "description": "Split-screen particle simulation comparing normal atmospheric conditions with thermal inversion, showing how pollutants accumulate when trapped by a warm air layer",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,57 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Thermal Inversion Simulator",
+    "subjectArea": "Environmental Science",
+    "topic": "Thermal Inversions and Air Pollution",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Explain how thermal inversions trap pollutants near the ground by comparing normal and inverted temperature profiles",
+      "Analyze the relationship between emission rates, atmospheric conditions, and air quality",
+      "Connect thermal inversion events to real-world smog and public health impacts"
     ],
     "bloomsTaxonomy": "Understand",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Basic understanding of air pollution sources",
+      "Familiarity with temperature and altitude relationships"
+    ],
+    "standards": [
+      "NGSS HS-ESS2-4",
+      "NGSS HS-ESS3-6",
+      "AP Environmental Science Topic 7.2"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 505
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Animated particle simulation with side-by-side comparison",
+    "keyQuestions": [
+      "How does the temperature profile of the atmosphere affect pollutant dispersal?",
+      "Why does a thermal inversion act as a 'lid' trapping pollution near the ground?",
+      "What geographic features make some cities more vulnerable to inversions?",
+      "How do weather forecasts help cities prepare for poor air quality events?"
+    ],
+    "commonMisconceptions": [
+      "Students often think thermal inversions are caused by pollution, when actually inversions are weather phenomena that trap existing pollution",
+      "Students may believe that reducing emissions during an inversion has no effect, when in fact lower emissions mean less accumulation under the lid",
+      "Students sometimes think warm air always rises, not understanding that it only rises when it is warmer than the surrounding air"
+    ],
+    "assessmentOpportunities": [
+      "Have students create comparison charts of particle behavior under normal vs. inversion conditions",
+      "Ask students to research a historical smog event and explain the role of thermal inversions",
+      "Students design a public health advisory policy for a city prone to inversions"
+    ]
   },
   "chapter": "11-atmospheric-pollution"
 }

@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for the hydrologic cycle.">
+        <meta name="description" content="Animated landscape showing water moving through evaporation, precipitation, runoff, and groundwater with adjustable solar energy and vegetation.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="The Hydrologic Cycle - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for the hydrologic cycle.">
+        <meta property="og:description" content="Animated landscape showing water moving through evaporation, precipitation, runoff, and groundwater with adjustable solar energy and vegetation.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/hydrologic-cycle/hydrologic-cycle.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="The Hydrologic Cycle - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for the hydrologic cycle.">
+        <meta name="twitter:description" content="Animated landscape showing water moving through evaporation, precipitation, runoff, and groundwater with adjustable solar energy and vegetation.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/hydrologic-cycle/hydrologic-cycle.png">
       
@@ -2457,9 +2457,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2475,9 +2493,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2988,41 +3024,83 @@
 <h1 id="the-hydrologic-cycle">The Hydrologic Cycle</h1>
 <iframe src="main.html" height="422" width="100%" scrolling="no"></iframe>
 
-<p><a class="md-button md-button--primary" href="main.html">Run the The Hydrologic Cycle MicroSim Fullscreen</a>
+<p><a class="md-button md-button--primary" href="main.html">Run the Hydrologic Cycle MicroSim Fullscreen</a>
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This simulation presents an animated landscape showing the continuous movement of water through the hydrologic cycle. An ocean on the left provides the primary water source, with mountains in the center and plains on the right. Blue water particles rise from the ocean surface through evaporation, drift across the sky as clouds, and fall as precipitation over the mountains. Some particles flow as surface runoff through a river back to the ocean, while others sink underground into a groundwater layer.</p>
+<p>A forest section demonstrates transpiration, with green arrows showing water vapor released by trees back into the atmosphere. Two slider controls let students experiment with the system: "Solar Energy" adjusts the evaporation rate, and "Vegetation Cover" changes the ratio of transpiration to surface runoff. Hovering over different processes reveals labels explaining each step of the cycle.</p>
+<p>By showing all processes simultaneously rather than as a static diagram, this simulation helps students appreciate that the water cycle is a dynamic, interconnected system where changes to one process immediately affect all others. Increasing solar energy speeds up evaporation and precipitation, while changing vegetation cover shifts the balance between water retained by plants and water flowing over the surface.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Watch the animation</strong> to see water particles moving through the complete cycle: evaporation from the ocean, cloud formation, precipitation, surface runoff, and groundwater infiltration.</li>
+<li><strong>Hover over processes</strong> to see labels identifying evaporation, condensation, precipitation, transpiration, runoff, and infiltration.</li>
+<li><strong>Adjust the Solar Energy slider</strong> to increase or decrease evaporation rate. Notice how more solar energy means more evaporation, more clouds, and more precipitation.</li>
+<li><strong>Adjust the Vegetation Cover slider</strong> to change the ratio of transpiration to surface runoff. High vegetation means more water returns to the atmosphere through plants and less runs off over the surface.</li>
+<li><strong>Observe the groundwater layer</strong> to see how infiltration feeds underground water storage.</li>
+<li><strong>Compare extreme settings</strong>: What happens with maximum solar energy and no vegetation? What about low solar energy and full vegetation cover?</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/hydrologic-cycle/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"422px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / Earth Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>40 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Trace the movement of water through the hydrologic cycle and identify key processes (evaporation, condensation, precipitation, transpiration, runoff, infiltration).</li>
+<li>Explain how solar energy drives the water cycle by powering evaporation.</li>
+<li>Analyze how vegetation cover affects the partitioning of water between transpiration, runoff, and infiltration.</li>
+<li>Predict how changes to one component of the water cycle affect the entire system.</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Understanding of the three states of water (solid, liquid, gas)</li>
+<li>Basic knowledge of evaporation and condensation</li>
+<li>Familiarity with the concept of a cycle in Earth science</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-ESS2-5</strong>: Plan and conduct an investigation of the properties of water and its effects on Earth materials and surface processes.</li>
+<li><strong>NGSS HS-LS2-4</strong>: Use mathematical representations to support claims for the cycling of matter and flow of energy among organisms in an ecosystem.</li>
+<li><strong>AP Environmental Science</strong>: Topic 4.3 - The Hydrologic (Water) Cycle</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Warm-Up</strong> (5 min): Ask students to draw the water cycle from memory on a blank sheet. After drawing, compare their diagrams with a partner. Most students will draw a simple loop -- note what processes are commonly omitted (transpiration, groundwater, infiltration).</p>
+</li>
+<li>
+<p><strong>Exploration</strong> (10 min): Students open the simulation and observe the default settings. They identify all the processes shown in the animation and compare with their memory drawings. What did they miss? Students label at least six processes visible in the simulation.</p>
+</li>
+<li>
+<p><strong>Guided Investigation</strong> (15 min): Students conduct two experiments. Experiment 1: Hold vegetation constant and vary solar energy from minimum to maximum, recording observations about evaporation rate, cloud density, and precipitation intensity. Experiment 2: Hold solar energy constant and vary vegetation cover, recording changes to runoff, transpiration, and groundwater levels. Students write cause-and-effect statements for each experiment.</p>
+</li>
+<li>
+<p><strong>Synthesis and Discussion</strong> (10 min): Class discussion: How does deforestation affect the local water cycle? (Connect to vegetation slider.) How might climate change affect the water cycle? (Connect to solar energy slider.) Students predict what would happen to a river downstream if all forests in its watershed were cleared.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Trace a water molecule from the ocean through the entire hydrologic cycle back to the ocean, identifying each process it undergoes along the way.</li>
+<li>Using the simulation, explain how increasing solar energy affects both evaporation and precipitation. Why do these two processes change together?</li>
+<li>A farmer clears forest to create crop fields. Using the vegetation cover slider as a model, predict how this change affects surface runoff and groundwater recharge. What are the consequences for downstream communities?</li>
+<li>Why is transpiration sometimes called the "invisible" part of the water cycle? How significant is it compared to evaporation from surface water?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Oki, T., &amp; Kanae, S. (2006). Global hydrological cycles and world water resources. <em>Science</em>, 313(5790), 1068-1072.</li>
+<li>Trenberth, K. E., Smith, L., Qian, T., et al. (2007). Estimates of the global water budget and its annual cycle using observational and model data. <em>Journal of Hydrometeorology</em>, 8(4), 758-769.</li>
+<li>USGS. (2024). The Water Cycle. U.S. Geological Survey. https://www.usgs.gov/special-topics/water-science-school/science/water-cycle</li>
 </ol>
 
 

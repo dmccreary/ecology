@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for conservation policy timeline.">
+        <meta name="description" content="Interactive scrollable timeline showing the evolution of conservation policy from 1960 to 2030, color-coded by policy type with expandable details on provisions, threats addressed, and effectiveness.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Conservation Policy Timeline - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for conservation policy timeline.">
+        <meta property="og:description" content="Interactive scrollable timeline showing the evolution of conservation policy from 1960 to 2030, color-coded by policy type with expandable details on provisions, threats addressed, and effectiveness.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/conservation-timeline/conservation-timeline.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Conservation Policy Timeline - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for conservation policy timeline.">
+        <meta name="twitter:description" content="Interactive scrollable timeline showing the evolution of conservation policy from 1960 to 2030, color-coded by policy type with expandable details on provisions, threats addressed, and effectiveness.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/conservation-timeline/conservation-timeline.png">
       
@@ -1281,9 +1281,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1299,9 +1317,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,81 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim presents the history of conservation policy as an interactive, scrollable timeline spanning from 1960 to 2030. Major policy milestones appear as labeled nodes along the timeline, color-coded by type: U.S. laws (blue), international treaties (green), and economic mechanisms (orange). A background trend line shows global species decline, providing context for why each policy was enacted.</p>
+<p>Clicking any policy node expands to reveal detailed information including the date of enactment, key provisions, which species or threats the policy addresses, and an effectiveness rating. Connecting lines between related policies show how legislation built upon earlier frameworks, helping students see policy evolution as a connected progression rather than isolated events. Students can filter by policy type to focus on domestic, international, or economic approaches.</p>
+<p>A "Quiz Mode" toggle transforms the timeline into a study tool: nodes show only dates, and students must identify the correct policy. This dual-use design supports both initial learning and review, helping students build a chronological understanding of how conservation policy has responded to escalating environmental threats.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Scroll or drag horizontally to navigate the timeline from 1960 to 2030.</li>
+<li><strong>Click any policy node</strong> to expand its details: date, key provisions, threats addressed, and effectiveness rating.</li>
+<li>Use the <strong>Filter</strong> dropdown to show only U.S. laws (blue), international treaties (green), or economic mechanisms (orange).</li>
+<li>Notice the <strong>connecting lines</strong> between related policies showing how later legislation built on earlier frameworks.</li>
+<li>Observe the <strong>species decline trend</strong> line in the background to understand the ecological context for each policy.</li>
+<li>Toggle <strong>Quiz Mode</strong> to test your knowledge: nodes show only dates, and you must identify each policy by clicking.</li>
+<li>Hover over policy nodes to see which HIPPO threats (Habitat loss, Invasive species, Pollution, Population, Overexploitation) each policy addresses.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/conservation-timeline/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"452px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / U.S. History)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>40 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Summarize the evolution of conservation policy from national laws to international agreements</li>
+<li>Explain how each major policy addresses specific ecological threats</li>
+<li>Identify patterns in policy development, including how later policies built on earlier ones</li>
+<li>Evaluate the effectiveness of different policy approaches to conservation</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of biodiversity and why it matters</li>
+<li>Familiarity with the concept of endangered species</li>
+<li>Understanding of the HIPPO framework for biodiversity threats (Habitat loss, Invasive species, Pollution, Population, Overexploitation)</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-LS2-7</strong>: Design, evaluate, and refine a solution for reducing the impacts of human activities on the environment.</li>
+<li><strong>NGSS HS-ESS3-4</strong>: Evaluate or refine a technological solution that reduces impacts of human activities on natural systems.</li>
+<li><strong>AP Environmental Science</strong>: Topic 8.11 -- Introduced Species; Topic 9.5 -- Global Initiatives</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Engage</strong> (5 min): Ask students to name any environmental law they know. Most will mention the Endangered Species Act. Ask: "What came before it? What came after?" Explain that conservation policy has a rich history spanning over 60 years, and each law was a response to specific ecological crises.</p>
+</li>
+<li>
+<p><strong>Explore</strong> (15 min): Students navigate the timeline chronologically, clicking each policy node to read its details. For each policy, students record: the year, the name, whether it is domestic or international, which HIPPO threats it addresses, and its effectiveness rating. Students identify at least two examples of later policies building on earlier ones (shown by connecting lines).</p>
+</li>
+<li>
+<p><strong>Explain</strong> (10 min): Class discussion examining patterns. What trend do students notice in the shift from domestic to international policy? Why did economic mechanisms emerge later? Which policies have the highest effectiveness ratings and what do they have in common? Why has the species decline trend continued despite increasing policy? Discuss the gap between policy creation and enforcement.</p>
+</li>
+<li>
+<p><strong>Extend</strong> (10 min): Students use Quiz Mode to test each other in pairs. Then each student writes a brief proposal for a "2030 conservation policy" that addresses gaps they identified in the existing policy timeline. The proposal must specify which threats it addresses, its scope (domestic or international), and its enforcement mechanism.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Place the following policies in chronological order: CITES, Endangered Species Act, Kyoto Protocol, Clean Air Act. What ecological context motivated each one?</li>
+<li>Compare a U.S. domestic law (e.g., ESA) with an international treaty (e.g., CBD). What are the advantages and limitations of each approach?</li>
+<li>The Montreal Protocol has the highest effectiveness rating on the timeline. What features of this policy contributed to its success?</li>
+<li>Why has global biodiversity continued to decline despite the increasing number of conservation policies since the 1960s?</li>
+<li>Design a conservation policy for a specific threat not well addressed by existing legislation. Explain what makes your approach different from previous policies.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Mace, G. M., et al. (2018). Aiming Higher to Bend the Curve of Biodiversity Loss. <em>Nature Sustainability</em>, 1, 448-451.</li>
+<li>Millennium Ecosystem Assessment. (2005). <em>Ecosystems and Human Well-being: Biodiversity Synthesis</em>. World Resources Institute.</li>
+<li>U.S. Fish and Wildlife Service. (2024). History of the Endangered Species Act. <a href="https://www.fws.gov/law/endangered-species-act">fws.gov</a></li>
 </ol>
 
 

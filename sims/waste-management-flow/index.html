@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive vis-network MicroSim for waste management decision flowchart.">
+        <meta name="description" content="Interactive decision tree using vis-network where students navigate waste management choices, comparing environmental impact scores for each pathway.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Waste Management Decision Flowchart - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive vis-network MicroSim for waste management decision flowchart.">
+        <meta property="og:description" content="Interactive decision tree using vis-network where students navigate waste management choices, comparing environmental impact scores for each pathway.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/waste-management-flow/waste-management-flow.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Waste Management Decision Flowchart - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive vis-network MicroSim for waste management decision flowchart.">
+        <meta name="twitter:description" content="Interactive decision tree using vis-network where students navigate waste management choices, comparing environmental impact scores for each pathway.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/waste-management-flow/waste-management-flow.png">
       
@@ -2604,9 +2604,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2622,9 +2640,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2988,41 +3024,73 @@
 <h1 id="waste-management-decision-flowchart">Waste Management Decision Flowchart</h1>
 <iframe src="main.html" height="600" width="100%" scrolling="no"></iframe>
 
-<p><a class="md-button md-button--primary" href="main.html">Run the Waste Management Decision Flowchart MicroSim Fullscreen</a>
-<br>
-<a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
+<p><a class="md-button md-button--primary" href="main.html">Run the Waste Management Decision Flowchart MicroSim Fullscreen</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim presents the waste hierarchy as an interactive decision flowchart built with vis-network. Starting from "You have waste!", students navigate through a series of branching decision questions: Can you avoid creating this waste? Can you reuse it? Is it recyclable? Is it compostable? Each path leads to a different waste management endpoint -- reduction, reuse, recycling, composting, incineration, or landfill -- with color-coded environmental impact scores ranging from green (best) to red (worst).</p>
+<p>The interactive flowchart forces active decision-making rather than passive reading about waste management options. Clicking any node reveals detailed information in a side panel, including estimated decomposition times, energy savings from recycling versus virgin production, and greenhouse gas impacts. This transforms abstract waste hierarchy concepts into concrete, quantitative comparisons.</p>
+<p>By exploring multiple paths through the flowchart, students discover that the best environmental outcome always starts at the top of the waste hierarchy (reduce, then reuse) and that options lower on the hierarchy (incineration, landfill) carry significantly higher environmental costs. This experience builds the intuition needed to make better waste decisions in daily life and to evaluate community waste management policies.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Start at the top node: "You have waste!" and read the first decision question.</li>
+<li>Click on decision nodes (diamond shapes) to follow different paths through the flowchart.</li>
+<li>Click on any <strong>endpoint node</strong> (colored boxes) to see detailed environmental impact information in the side panel.</li>
+<li>Compare the <strong>environmental impact scores</strong> (green = best, red = worst) across different endpoints.</li>
+<li>Trace multiple paths to see how different decisions lead to different outcomes.</li>
+<li>Read the side panel statistics for each option: decomposition time, energy savings, and greenhouse gas impact.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/waste-management-flow/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"600px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Prioritize waste management strategies using the waste hierarchy (reduce, reuse, recycle, compost, incinerate, landfill)</li>
+<li>Evaluate trade-offs between convenience, cost, and environmental impact for each waste management option</li>
+<li>Analyze the environmental consequences of different waste disposal methods</li>
+<li>Apply the waste hierarchy to real-world waste decisions</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of solid waste and pollution</li>
+<li>Familiarity with recycling concepts</li>
+<li>Introduction to greenhouse gases and their sources</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-ESS3-4</strong>: Evaluate or refine a technological solution that reduces impacts of human activities on natural systems</li>
+<li><strong>NGSS HS-ETS1-3</strong>: Evaluate a solution to a complex real-world problem based on prioritized criteria and trade-offs</li>
+<li><strong>AP Environmental Science</strong>: Topic 8.10 -- Solid Waste Disposal</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Engage</strong> (5 min): Bring in a bag of typical household waste items (plastic bottle, newspaper, banana peel, old t-shirt, broken electronics). Ask students: What would you do with each of these? Record responses.</li>
+<li><strong>Explore</strong> (15 min): Students navigate the flowchart for each waste item from the bag, recording which endpoint they reach and the environmental impact score. They also record the side panel statistics (decomposition time, energy savings) for each endpoint.</li>
+<li><strong>Explain</strong> (15 min): Introduce the waste hierarchy formally. Why is reduction better than recycling? Discuss the energy and resource costs at each level. Compare landfill decomposition times (plastic bag: 500+ years) with composting times (banana peel: 2-5 weeks). Discuss why "recycling" is not always the best answer.</li>
+<li><strong>Extend</strong> (10 min): Students conduct a mini waste audit of their school lunch. Categorize each waste item using the flowchart and calculate a total environmental impact score. Propose three changes that would move the school's waste profile toward the top of the hierarchy.</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>List the waste hierarchy from most to least environmentally preferable. Why is "reduce" at the top rather than "recycle"?</li>
+<li>A plastic water bottle can be recycled, but a reusable water bottle eliminates the waste entirely. Compare the environmental impact of these two approaches using evidence from the flowchart.</li>
+<li>Why might waste-to-energy incineration be preferable to landfilling in some situations? What are its drawbacks?</li>
+<li>Design a waste reduction plan for your school cafeteria that moves at least three waste streams higher on the waste hierarchy.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>EPA. "Sustainable Materials Management: Non-Hazardous Materials and Waste Management Hierarchy." <a href="https://www.epa.gov/smm/sustainable-materials-management-non-hazardous-materials-and-waste-management-hierarchy">https://www.epa.gov/smm/sustainable-materials-management-non-hazardous-materials-and-waste-management-hierarchy</a></li>
+<li>McDougall, F.R. et al. (2001). <em>Integrated Solid Waste Management: A Life Cycle Inventory</em> (2nd ed.). Blackwell Science.</li>
+<li>Hoornweg, D. &amp; Bhada-Tata, P. (2012). <em>What a Waste: A Global Review of Solid Waste Management</em>. World Bank.</li>
 </ol>
 
 

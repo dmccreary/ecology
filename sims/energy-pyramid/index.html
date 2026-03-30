@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for energy pyramid simulator.">
+        <meta name="description" content="Interactive p5.js pyramid visualization where students calculate energy available at each trophic level by adjusting producer input and transfer efficiency.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Energy Pyramid Simulator - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for energy pyramid simulator.">
+        <meta property="og:description" content="Interactive p5.js pyramid visualization where students calculate energy available at each trophic level by adjusting producer input and transfer efficiency.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/energy-pyramid/energy-pyramid.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Energy Pyramid Simulator - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for energy pyramid simulator.">
+        <meta name="twitter:description" content="Interactive p5.js pyramid visualization where students calculate energy available at each trophic level by adjusting producer input and transfer efficiency.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/energy-pyramid/energy-pyramid.png">
       
@@ -1512,9 +1512,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1530,9 +1548,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,76 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim displays a classic ecological energy pyramid with 4-5 horizontal bars representing trophic levels, where bar widths are proportional to available energy. Two sliders let students control the producer energy input (1,000 to 100,000 kcal) and the transfer efficiency between levels (5% to 20%, defaulting to the standard 10%).</p>
+<p>The pyramid redraws in real time as students manipulate the sliders, making it visually obvious how small changes in transfer efficiency have dramatic effects on the energy available to top predators. Each bar displays the trophic level name, energy in kilocalories, and the percentage of original energy remaining. A color gradient from green (producers) to red (top predators) reinforces the declining energy theme.</p>
+<p>A dropdown toggle lets students switch between three pyramid views: energy (kcal), biomass (kg), and numbers of organisms. This comparison reveals that while energy always forms a classic upright pyramid, numbers pyramids can sometimes be inverted (as when a single tree supports many insects), deepening understanding of why ecologists prefer energy pyramids as the most consistent representation.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Set the producer energy input</strong> using the first slider to establish the base of the pyramid.</li>
+<li><strong>Adjust the transfer efficiency</strong> slider to see how changes from 5% to 20% affect energy at each level.</li>
+<li><strong>Read the labels</strong> on each bar to see the trophic level name, energy value, and percentage of original energy.</li>
+<li><strong>Use the view toggle</strong> to switch between energy, biomass, and numbers views.</li>
+<li><strong>Compare extreme settings</strong> -- try 5% efficiency vs. 20% efficiency and note how top predator energy changes dramatically.</li>
+<li><strong>Note the calculation panel</strong> on the side showing the math at each level.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/energy-pyramid/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"452px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>40 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ol>
+<li>Calculate energy available at each trophic level using the ten percent rule.</li>
+<li>Explain how small changes in transfer efficiency dramatically affect top-predator energy.</li>
+<li>Compare energy, biomass, and numbers pyramids and explain when each is most useful.</li>
+</ol>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Understanding of trophic levels and food chains</li>
+<li>Basic multiplication and percentage calculations</li>
+<li>Knowledge of producers and consumers</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-LS2-4</strong>: Use mathematical representations to support claims for the cycling of matter and flow of energy among organisms in an ecosystem.</li>
+<li><strong>NGSS HS-LS2-1</strong>: Use mathematical and/or computational representations to support explanations of factors that affect carrying capacity.</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Engage</strong> (5 min): Present the question: "If a grassland produces 100,000 kcal of energy, how much is available for wolves?" Have students predict before using the simulation.</p>
+</li>
+<li>
+<p><strong>Explore</strong> (15 min): Students complete a calculation worksheet: (a) Set producer energy to 10,000 kcal and efficiency to 10%, record energy at each level. (b) Repeat with 5% and 20% efficiency. (c) Switch to biomass and numbers views and sketch what they see.</p>
+</li>
+<li>
+<p><strong>Explain</strong> (10 min): Discuss why the 10% rule is an approximation, what happens to the other 90% (respiration, waste, movement), and why this limits food chain length. Compare the three pyramid types and discuss when numbers pyramids can be inverted.</p>
+</li>
+<li>
+<p><strong>Extend</strong> (10 min): Students solve a real-world problem: "A nature reserve supports 5 wolves, each needing 3,000 kcal/day. Working backward through the pyramid, how much producer energy must the reserve generate daily?" They verify their calculation with the simulation.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>At 10% transfer efficiency with 50,000 kcal of producer energy, how much energy reaches the quaternary consumers? Show your work.</li>
+<li>Why does doubling the transfer efficiency from 10% to 20% more than double the energy available to top predators?</li>
+<li>Under what circumstances could a numbers pyramid be inverted while the energy pyramid remains upright?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Lindeman, R. L. (1942). "The Trophic-Dynamic Aspect of Ecology." <em>Ecology</em>, 23(4), 399-417.</li>
+<li>Odum, H. T. (1957). "Trophic Structure and Productivity of Silver Springs, Florida." <em>Ecological Monographs</em>, 27(1), 55-112.</li>
+<li>Campbell, N. A. &amp; Reece, J. B. (2008). <em>Biology</em> (8th ed.). Pearson Benjamin Cummings. Chapter 54.</li>
 </ol>
 
 

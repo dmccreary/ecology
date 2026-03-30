@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for resilience ball-in-basin model.">
+        <meta name="description" content="Interactive p5.js MicroSim demonstrating ecosystem resilience and regime shifts using the ball-in-basin metaphor with adjustable disturbance and resilience.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Resilience Ball-in-Basin Model - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for resilience ball-in-basin model.">
+        <meta property="og:description" content="Interactive p5.js MicroSim demonstrating ecosystem resilience and regime shifts using the ball-in-basin metaphor with adjustable disturbance and resilience.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/resilience-basin/resilience-basin.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Resilience Ball-in-Basin Model - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for resilience ball-in-basin model.">
+        <meta name="twitter:description" content="Interactive p5.js MicroSim demonstrating ecosystem resilience and regime shifts using the ball-in-basin metaphor with adjustable disturbance and resilience.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/resilience-basin/resilience-basin.png">
       
@@ -2226,9 +2226,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2244,9 +2262,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,9 +3028,18 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim uses the ball-in-basin metaphor to make the abstract concept of ecosystem resilience and regime shifts physically intuitive. A ball representing the current ecosystem state sits in a landscape of two basins: a green "Healthy Forest" basin and a brown "Degraded Grassland" basin, separated by a ridge that represents the tipping point threshold.</p>
+<p>Students apply disturbances by adjusting the disturbance slider, which pushes the ball toward the threshold. Small disturbances cause the ball to rock but return to its stable state. A sufficiently large disturbance pushes the ball over the ridge into the degraded state -- a regime shift that is difficult to reverse. The resilience slider controls the depth of the healthy basin: a deeper basin means the ecosystem can absorb larger disturbances before shifting.</p>
+<p>The "Slow Degradation" button demonstrates how gradual environmental changes (pollution, habitat loss, climate change) can erode resilience over time, making the system increasingly vulnerable until even a small disturbance triggers a catastrophic shift. This demonstrates why preventing gradual degradation is just as important as avoiding sudden shocks.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Observe the ball sitting in the green "Healthy Forest" basin.</li>
+<li>Adjust the <strong>Disturbance slider</strong> to push the ball toward the threshold -- small values cause it to rock and return, large values push it over.</li>
+<li>Adjust the <strong>Resilience slider</strong> to change the depth of the healthy basin -- deeper basins resist larger disturbances.</li>
+<li>Click the <strong>Slow Degradation</strong> button to watch resilience gradually erode until the system tips.</li>
+<li>Observe the real-time labels showing current state, resilience level, and distance to threshold.</li>
+<li>Experiment with combinations: What happens with high resilience and high disturbance? Low resilience and small disturbance?</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -3007,22 +3052,55 @@
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / AP Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Predict when a system will undergo a regime shift based on disturbance magnitude and resilience.</li>
+<li>Explain the ball-in-basin metaphor for ecosystem stability and tipping points.</li>
+<li>Analyze how gradual environmental degradation can make systems vulnerable to sudden collapse.</li>
+<li>Connect the resilience model to real-world examples of ecosystem regime shifts.</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Understanding of ecosystem stability and disturbance concepts</li>
+<li>Basic understanding of feedback loops (positive and negative)</li>
+<li>Familiarity with examples of ecosystem change (deforestation, coral bleaching)</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS LS2.C</strong>: Ecosystem Dynamics, Functioning, and Resilience</li>
+<li><strong>NGSS ESS3.C</strong>: Human Impacts on Earth Systems</li>
+<li><strong>AP Environmental Science</strong>: Topic 2.8 - Ecological Tolerance; Topic 9.10 - Sustainability</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Engage</strong> (5 min): Show before/after images of ecosystem regime shifts: clear lake to algae-choked lake, coral reef to algae-covered rubble, forest to grassland. Ask: "What caused these changes? Can they be reversed?" Introduce the concept of tipping points.</p>
+</li>
+<li>
+<p><strong>Explore</strong> (15 min): Students experiment with the simulation, finding the minimum disturbance needed to cause a regime shift at different resilience levels. They create a data table: resilience level vs. disturbance threshold. Then they use the Slow Degradation button and record what happens to the threshold over time.</p>
+</li>
+<li>
+<p><strong>Explain</strong> (15 min): Discuss resilience theory: stable states, basins of attraction, thresholds, and hysteresis (why it is harder to restore an ecosystem than to degrade it). Connect the ball-in-basin model to specific examples: Lake Erie eutrophication, Caribbean coral reef collapse, Sahel desertification. Explain why the degraded state is also stable (positive feedback loops maintain it).</p>
+</li>
+<li>
+<p><strong>Extend</strong> (10 min): Students choose a real ecosystem and draw their own ball-in-basin diagram, labeling the stable states, threshold, and specific factors that affect resilience. They write a management recommendation explaining how to keep the system in the healthy basin.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>In the ball-in-basin model, what does the depth of a basin represent? What does the ridge between basins represent?</li>
+<li>Explain why gradual environmental degradation can be more dangerous than a single large disturbance.</li>
+<li>Give a real-world example of a regime shift in an ecosystem. What was the "ball," what were the two "basins," and what pushed the system over the threshold?</li>
+<li>Why is it often harder to restore a degraded ecosystem than it was to degrade it? Use the model to explain.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Walker, B. &amp; Salt, D. (2006). <em>Resilience Thinking: Sustaining Ecosystems and People in a Changing World</em>. Island Press.</li>
+<li>Scheffer, M. et al. (2001). Catastrophic shifts in ecosystems. <em>Nature</em>, 413, 591-596.</li>
+<li>Folke, C. et al. (2004). Regime shifts, resilience, and biodiversity in ecosystem management. <em>Annual Review of Ecology, Evolution, and Systematics</em>, 35, 557-581.</li>
 </ol>
 
 

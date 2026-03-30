@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for feedback loop explorer.">
+        <meta name="description" content="Interactive p5.js split-screen simulation comparing reinforcing and balancing feedback loops with animated causal diagrams and real-time graphs across ecological scenarios.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Feedback Loop Explorer - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for feedback loop explorer.">
+        <meta property="og:description" content="Interactive p5.js split-screen simulation comparing reinforcing and balancing feedback loops with animated causal diagrams and real-time graphs across ecological scenarios.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/feedback-loop-explorer/feedback-loop-explorer.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Feedback Loop Explorer - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for feedback loop explorer.">
+        <meta name="twitter:description" content="Interactive p5.js split-screen simulation comparing reinforcing and balancing feedback loops with animated causal diagrams and real-time graphs across ecological scenarios.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/feedback-loop-explorer/feedback-loop-explorer.png">
       
@@ -1638,9 +1638,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1656,9 +1674,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,76 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim presents a side-by-side comparison of the two fundamental types of feedback loops in ecological systems: reinforcing (positive) loops and balancing (negative) loops. The left panel shows a reinforcing loop with animated circular arrows demonstrating amplification, while the right panel shows a balancing loop with animated flow demonstrating counteraction toward equilibrium.</p>
+<p>Each panel includes a real-time graph: the reinforcing loop produces exponential growth curves, while the balancing loop produces damped oscillations converging to a set point. A dropdown menu lets students select from multiple ecological scenarios -- reinforcing loops include ice-albedo feedback, erosion cycles, and invasive species spread; balancing loops include predator-prey dynamics, thermoregulation, and nutrient cycling.</p>
+<p>Understanding feedback loops is foundational to systems thinking in ecology. Reinforcing loops drive runaway change (algal blooms, population explosions, ice sheet collapse), while balancing loops maintain ecosystem stability (predator-prey regulation, nutrient recycling, climate regulation). Most real ecological systems contain both types interacting simultaneously, and the balance between them determines whether a system remains stable or tips into a new state.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Observe the default scenario</strong> -- both panels animate simultaneously, showing reinforcing (left, warm red/orange) and balancing (right, cool blue/green) loops.</li>
+<li><strong>Watch the graphs</strong> -- the reinforcing loop graph shows exponential growth while the balancing loop graph shows oscillation converging to equilibrium.</li>
+<li><strong>Read the arrow labels</strong> -- each arrow in the causal diagrams shows the relationship between variables with + or - signs.</li>
+<li><strong>Use the dropdown</strong> to switch between ecological scenarios and see how different systems exhibit the same loop types.</li>
+<li><strong>Adjust the speed slider</strong> to slow down or speed up the animation for closer observation.</li>
+<li><strong>Note the "R" and "B" symbols</strong> marking reinforcing and balancing loops per standard systems notation.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/feedback-loop-explorer/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"462px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / Biology)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ol>
+<li>Differentiate between reinforcing and balancing feedback loops and predict their effects on system behavior.</li>
+<li>Identify reinforcing and balancing loops in real ecological scenarios.</li>
+<li>Explain how the interaction of both loop types determines ecosystem stability.</li>
+</ol>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of cause and effect in ecological systems</li>
+<li>Familiarity with population dynamics concepts</li>
+<li>Ability to read and interpret line graphs</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-LS2-2</strong>: Use mathematical representations to support and revise explanations based on evidence about factors affecting biodiversity and populations in ecosystems.</li>
+<li><strong>NGSS HS-ESS2-4</strong>: Use a model to describe how variations in the flow of energy into and out of Earth's systems result in changes in climate.</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Engage</strong> (5 min): Ask students: "If you push a snowball down a hill, what happens? If you push a pendulum, what happens?" Use these as everyday metaphors for reinforcing (snowball gets bigger) and balancing (pendulum returns to center) feedback. Introduce the simulation.</p>
+</li>
+<li>
+<p><strong>Explore</strong> (15 min): Students examine all available scenarios in both panels. For each scenario, they draw the causal loop diagram on paper, label all arrows with + or -, and identify the loop type (R or B). They sketch the expected graph shape before looking at the simulation graph to test their prediction.</p>
+</li>
+<li>
+<p><strong>Explain</strong> (15 min): Class discussion on how reinforcing and balancing loops produce different system behaviors. Introduce vocabulary: positive feedback, negative feedback, equilibrium, exponential growth, oscillation. Discuss why "positive" and "negative" in feedback loops do not mean "good" and "bad." Explore how tipping points occur when reinforcing loops overpower balancing loops.</p>
+</li>
+<li>
+<p><strong>Extend</strong> (10 min): Students identify both a reinforcing and a balancing feedback loop in a real-world ecological issue of their choice (e.g., deforestation, ocean acidification, invasive species management) and draw labeled causal loop diagrams for each.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>What is the key difference between a reinforcing and a balancing feedback loop in terms of system behavior over time?</li>
+<li>In the ice-albedo scenario, explain each step of the reinforcing loop and why it leads to accelerating warming.</li>
+<li>A lake ecosystem has both a reinforcing loop (algal growth feeds more algal growth through nutrient release from dead algae) and a balancing loop (zooplankton eat algae, controlling their population). What would happen if the zooplankton were removed?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Meadows, D. H. (2008). <em>Thinking in Systems: A Primer</em>. Chelsea Green Publishing.</li>
+<li>Sterman, J. D. (2000). <em>Business Dynamics: Systems Thinking and Modeling for a Complex World</em>. McGraw-Hill.</li>
+<li>Ford, A. (2010). <em>Modeling the Environment</em> (2nd ed.). Island Press.</li>
 </ol>
 
 

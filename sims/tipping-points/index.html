@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for tipping points explorer.">
+        <meta name="description" content="Interactive stability landscape showing how increasing global temperature triggers successive climate tipping points with nonlinear system responses and hysteresis.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Tipping Points Explorer - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for tipping points explorer.">
+        <meta property="og:description" content="Interactive stability landscape showing how increasing global temperature triggers successive climate tipping points with nonlinear system responses and hysteresis.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/tipping-points/tipping-points.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Tipping Points Explorer - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for tipping points explorer.">
+        <meta name="twitter:description" content="Interactive stability landscape showing how increasing global temperature triggers successive climate tipping points with nonlinear system responses and hysteresis.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/tipping-points/tipping-points.png">
       
@@ -2520,9 +2520,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2538,9 +2556,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,72 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim uses the ball-on-landscape metaphor to make abstract tipping point dynamics tangible. Earth's climate state is represented as a ball sitting in a valley on a stability landscape. As global temperature increases, the valley gradually becomes shallower, representing decreasing stability. At the tipping point, the valley disappears entirely and the ball rolls into a new, fundamentally different state.</p>
+<p>Students control a temperature slider (0-5 degrees C warming above pre-industrial levels) and watch the stability landscape reshape in real time. A timeline of major tipping elements runs along the bottom, lighting up as their temperature thresholds are crossed: the Greenland Ice Sheet, Amazon Rainforest, West Antarctic Ice Sheet, coral reefs, and Arctic permafrost. Each element includes before-and-after descriptions showing the dramatic state changes that occur when thresholds are exceeded.</p>
+<p>A critical feature is the "reverse" mode: when students pull the temperature back down, the system does not snap back to its original state. This demonstrates hysteresis -- the idea that some environmental changes are effectively irreversible on human timescales. This concept is central to understanding why preventing tipping points is far more practical than trying to reverse them.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Start with the temperature slider at 0 degrees C (pre-industrial baseline) and observe the ball resting stably in the valley.</li>
+<li>Slowly increase the <strong>Temperature</strong> slider and watch the stability landscape reshape -- the valley becomes shallower.</li>
+<li>Note when each <strong>tipping element</strong> along the bottom timeline lights up as its threshold is crossed.</li>
+<li>Click on different tipping elements to see their individual stability landscapes and before/after ecosystem descriptions.</li>
+<li>Try pulling the temperature back down to observe <strong>hysteresis</strong> -- the system does not return to its original state.</li>
+<li>Press <strong>Reset</strong> to return to pre-industrial conditions and explore different tipping element pathways.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/tipping-points/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"462px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science / Climate Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>50 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Predict how increasing global temperature activates successive tipping points</li>
+<li>Explain why the climate system response to warming is nonlinear</li>
+<li>Define hysteresis and explain why some climate changes are effectively irreversible</li>
+<li>Evaluate the consequences of crossing specific climate tipping points for ecosystems and human societies</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of climate change and greenhouse effect</li>
+<li>Familiarity with global temperature trends</li>
+<li>Introduction to feedback loops (positive and negative)</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-ESS3-5</strong>: Analyze geoscience data and the results from global climate models to make an evidence-based forecast of the current rate of global or regional climate change</li>
+<li><strong>NGSS HS-ESS2-4</strong>: Use a model to describe how variations in the flow of energy into and out of Earth's systems result in changes in climate</li>
+<li><strong>AP Environmental Science</strong>: Topic 9.5 -- Global Climate Change</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Engage</strong> (5 min): Demonstrate the ball-on-landscape concept physically with a marble and a bowl. Tip the bowl slightly -- the marble returns. Tip it past a certain point -- the marble rolls away and does not come back. This is a tipping point.</li>
+<li><strong>Explore</strong> (15 min): Students slowly increase the temperature slider from 0 to 5 degrees C, recording which tipping elements activate at each threshold. They note the before/after state for each element. Then they attempt to reverse the changes by reducing temperature.</li>
+<li><strong>Explain</strong> (15 min): Discuss nonlinearity: Why don't ecosystems respond proportionally to temperature changes? Introduce positive feedback loops (ice-albedo feedback, permafrost carbon release). Explain hysteresis using the simulation as evidence. Discuss why the Paris Agreement targets 1.5 and 2.0 degrees C specifically.</li>
+<li><strong>Extend</strong> (15 min): Assign each student group a specific tipping element to research. What are the cascading effects if that element tips? How might tipping one element accelerate the tipping of others (cascading tipping points)? Groups present 2-minute summaries.</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Explain what a climate tipping point is using the ball-and-landscape metaphor from the simulation.</li>
+<li>Why does pulling the temperature slider back down not restore the original ecosystem state? What is this phenomenon called?</li>
+<li>At approximately what temperature threshold do coral reefs face irreversible decline? What percentage of marine species depend on coral reef ecosystems?</li>
+<li>How could the melting of Arctic permafrost create a positive feedback loop that accelerates further warming?</li>
+<li>Evaluate the argument: "We can always fix climate change later by reducing emissions." Use evidence from the simulation to support your response.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Lenton, T.M. et al. (2019). "Climate tipping points -- too risky to bet against." <em>Nature</em>, 575, 592-595.</li>
+<li>IPCC (2021). <em>Climate Change 2021: The Physical Science Basis</em>. Contribution of Working Group I to the Sixth Assessment Report.</li>
+<li>Steffen, W. et al. (2018). "Trajectories of the Earth System in the Anthropocene." <em>Proceedings of the National Academy of Sciences</em>, 115(33), 8252-8259.</li>
 </ol>
 
 

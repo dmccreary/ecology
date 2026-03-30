@@ -1,8 +1,8 @@
 {
   "title": "Survivorship Curve Explorer",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for survivorship curve explorer",
+  "subject": "Ecology",
+  "description": "Interactive graph comparing Type I, II, and III survivorship curves with real species data overlays and hover-to-reveal demographic details",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,58 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Survivorship Curve Explorer",
+    "subjectArea": "Environmental Science",
+    "topic": "Survivorship Curves and Life History Strategies",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Compare the three survivorship curve types and match real species to each pattern",
+      "Explain the relationship between reproductive strategy and survivorship pattern",
+      "Interpret semi-logarithmic survivorship graphs quantitatively"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Understanding of population concepts (birth rate, death rate)",
+      "Basic familiarity with logarithmic scales",
+      "Introduction to r-selected and K-selected species"
+    ],
+    "standards": [
+      "NGSS HS-LS2-1",
+      "NGSS HS-LS2-2",
+      "AP Environmental Science Topic 3.3"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 495
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Interactive exploration with species comparison and quantitative data extraction",
+    "keyQuestions": [
+      "Why do some species produce thousands of offspring while others produce very few?",
+      "What does a constant mortality rate look like on a survivorship graph?",
+      "How do parental care and offspring number represent a trade-off?",
+      "Which survivorship type is most common in nature, and why?"
+    ],
+    "commonMisconceptions": [
+      "Students often think Type III species are less successful than Type I, not realizing both strategies are equally valid evolutionary solutions",
+      "Students may confuse survivorship curves with population growth curves",
+      "Students sometimes think all mammals are Type I, when some small mammals are closer to Type II"
+    ],
+    "assessmentOpportunities": [
+      "Have students fill in a data table by hovering over curves at specific lifespan percentages",
+      "Ask students to predict survivorship curve types for novel species and justify their reasoning",
+      "Students compare human survivorship curves across historical time periods or countries"
+    ]
   },
   "chapter": "07-population-ecology"
 }

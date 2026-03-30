@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for world biome map.">
+        <meta name="description" content="Classify and locate the seven major terrestrial biomes on an interactive world map with hover details.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="World Biome Map - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for world biome map.">
+        <meta property="og:description" content="Classify and locate the seven major terrestrial biomes on an interactive world map with hover details.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/biome-world-map/biome-world-map.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="World Biome Map - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for world biome map.">
+        <meta name="twitter:description" content="Classify and locate the seven major terrestrial biomes on an interactive world map with hover details.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/biome-world-map/biome-world-map.png">
       
@@ -2646,9 +2646,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2664,9 +2682,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,71 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This interactive world map displays the seven major terrestrial biomes in distinct colors, helping students connect biome characteristics to geographic location and climate patterns. Regions on the simplified map projection are color-coded by biome type, and hovering over any region reveals the biome name, average temperature range, average precipitation, and a representative organism.</p>
+<p>A dropdown selector lets students highlight all areas belonging to a single biome, making global distribution patterns immediately visible. Students can see how tropical rainforests cluster near the equator, how tundra and taiga span the northern latitudes, and how deserts form in specific climate zones. A color key legend identifies all seven biome types.</p>
+<p>This supports the Bloom's taxonomy level of <strong>Understand</strong>, as students classify biomes by their characteristics and locate them geographically. The spatial visualization makes abstract climate-biome relationships concrete and personally relevant.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Hover over any colored region</strong> on the map to see the biome name, temperature range, precipitation, and a representative organism in the info panel</li>
+<li><strong>Use the dropdown selector</strong> at the bottom to highlight all regions belonging to a single biome type</li>
+<li><strong>Select "All"</strong> to return to the full map view showing all biomes</li>
+<li><strong>Read the color key</strong>: Tropical Rainforest (dark green), Temperate Forest (medium green), Desert (sandy yellow), Tundra (light blue), Grassland (gold/lime), Chaparral (olive), Taiga (dark teal)</li>
+<li><strong>Notice geographic patterns</strong>: biomes are distributed in rough latitudinal bands related to climate</li>
+<li><strong>Compare biomes</strong> by hovering over similar biomes on different continents to see how temperature and precipitation ranges overlap</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/biome-world-map/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"462px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / Environmental Science)</p>
 <h3 id="duration">Duration</h3>
 <p>10-15 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Classify and locate the seven major terrestrial biomes on a world map</li>
+<li>Describe the temperature range, precipitation, and representative organisms of each biome</li>
+<li>Explain the relationship between latitude, climate, and biome distribution</li>
+<li>Compare the geographic extent of different biomes across continents</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of climate (temperature and precipitation)</li>
+<li>Knowledge of what an ecosystem is</li>
+<li>Familiarity with world geography (continents, equator, poles)</li>
+<li>Understanding that different organisms live in different environments</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li>NGSS HS-LS2-6: Evaluate claims, evidence, and reasoning that the complex interactions in ecosystems maintain relatively consistent numbers and types of organisms</li>
+<li>AP Environmental Science Topic 1.2: Terrestrial Biomes</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Warm-Up</strong> (2-3 min): Show a photo of a desert and a tropical rainforest. Ask: "Why can't the same organisms live in both places? What determines which biome forms in a location?"</li>
+<li><strong>Guided Exploration</strong> (5 min): Use the dropdown to highlight each biome one at a time. For each, note: where is it located? What latitude range? Ask students to identify the pattern (biomes form in latitudinal bands).</li>
+<li><strong>Independent Investigation</strong> (5 min): Students hover over regions to complete a table: Biome | Temperature Range | Precipitation | Location | Representative Organism. Challenge: "Which two biomes have the most overlap in temperature range? How do they differ?"</li>
+<li><strong>Reflection</strong> (3 min): Ask: "If global temperatures rise 2 degrees C, which biomes might expand and which might shrink? Where would new deserts form?"</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Which biome receives the most precipitation and where is it located geographically?</li>
+<li>Compare the taiga and the tundra. What temperature and precipitation differences explain why trees grow in one but not the other?</li>
+<li>Deserts are found on every continent. Using the map, identify three desert regions and explain why deserts form at roughly the same latitudes (around 30 degrees N and S).</li>
+<li>Climate change is predicted to shift biome boundaries poleward. Using this map, predict which biome is most at risk of shrinking and which is most likely to expand. Explain your reasoning using temperature and precipitation data.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li><a href="https://en.wikipedia.org/wiki/Biome">Biome - Wikipedia</a> - Overview of terrestrial biome classification and characteristics</li>
+<li><a href="https://www.worldwildlife.org/biomes">World Wildlife Fund: Biomes</a> - Detailed descriptions of global biome types and their conservation status</li>
+<li><a href="https://p5js.org/reference/">p5.js Reference</a> - JavaScript library used for the interactive map visualization</li>
 </ol>
 
 

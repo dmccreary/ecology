@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for coevolution arms race.">
+        <meta name="description" content="Generation-by-generation simulation showing how reciprocal selection pressures drive trait escalation between predator and prey populations with adjustable mutation and selection parameters.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Coevolution Arms Race - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for coevolution arms race.">
+        <meta property="og:description" content="Generation-by-generation simulation showing how reciprocal selection pressures drive trait escalation between predator and prey populations with adjustable mutation and selection parameters.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/coevolution/coevolution.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Coevolution Arms Race - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for coevolution arms race.">
+        <meta name="twitter:description" content="Generation-by-generation simulation showing how reciprocal selection pressures drive trait escalation between predator and prey populations with adjustable mutation and selection parameters.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/coevolution/coevolution.png">
       
@@ -1176,9 +1176,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1194,9 +1212,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,82 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim makes the abstract concept of coevolution visible and interactive by simulating an evolutionary arms race between predator and prey populations over multiple generations. Two populations are displayed side by side: predators (red) and prey (green), each represented as circles with visible trait bars showing their speed. Each generation, faster predators catch slower prey, and the survivors reproduce with variation, causing both populations to shift toward higher trait values over time.</p>
+<p>Trait distribution histograms below each population show the shift in real time, making natural selection tangible. A generation counter and average trait display track the escalation, and after 50 generations a summary panel shows how much both traits have increased. Students can adjust mutation rate and selection strength sliders to explore how these evolutionary parameters affect the pace and pattern of the arms race.</p>
+<p>A "Switch to Toxicity Arms Race" button changes the scenario from speed-based pursuit to a toxin resistance vs. toxin strength arms race, demonstrating that coevolution operates through many different trait dimensions. This helps students understand that the underlying evolutionary mechanism is the same regardless of the specific traits involved.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Click <strong>Start</strong> to begin the simulation and watch predator and prey populations evolve generation by generation.</li>
+<li>Observe the <strong>trait bars</strong> on each individual -- longer bars indicate higher speed (or toxicity).</li>
+<li>Watch the <strong>histograms</strong> below each population shift rightward as both populations escalate their traits over generations.</li>
+<li>Adjust the <strong>Mutation Rate</strong> slider to increase or decrease the amount of genetic variation introduced each generation.</li>
+<li>Adjust the <strong>Selection Strength</strong> slider to control how much the trait difference between predator and prey matters for survival.</li>
+<li>Click <strong>Step</strong> to advance one generation at a time for careful observation.</li>
+<li>Click <strong>Switch to Toxicity Arms Race</strong> to change from speed to a poison resistance vs. poison strength scenario.</li>
+<li>Click <strong>Reset</strong> to restart the simulation with fresh populations and observe different evolutionary trajectories.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/coevolution/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"402px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / AP Biology)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>40 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Predict how reciprocal selection pressures drive trait escalation in coevolving species</li>
+<li>Explain why neither predator nor prey populations gain a lasting advantage in an evolutionary arms race</li>
+<li>Analyze how mutation rate and selection strength affect the pace and outcome of coevolution</li>
+<li>Compare coevolutionary arms races across different trait dimensions (speed, toxicity)</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Understanding of natural selection and how traits are inherited</li>
+<li>Familiarity with the concepts of variation, selection, and reproduction</li>
+<li>Basic understanding of predator-prey relationships</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-LS4-2</strong>: Construct an explanation based on evidence that the process of evolution primarily results from natural selection.</li>
+<li><strong>NGSS HS-LS4-3</strong>: Apply concepts of statistics and probability to support explanations that organisms with an advantageous heritable trait tend to increase in proportion to organisms lacking this trait.</li>
+<li><strong>AP Biology</strong>: Topic 7.1 -- Natural Selection</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Engage</strong> (5 min): Show images of the rough-skinned newt and the garter snake -- a classic coevolution example where newt toxicity and snake resistance have escalated to extraordinary levels. Ask: Why would a newt be toxic enough to kill almost any predator, yet the garter snake can eat it safely? Introduce the concept of an evolutionary arms race.</p>
+</li>
+<li>
+<p><strong>Explore</strong> (15 min): Students run the simulation three times with different parameters. Run 1: Default settings, run for 50 generations, record predator and prey average trait values. Run 2: Double the mutation rate, run for 50 generations, compare escalation rate. Run 3: Minimize selection strength, run for 50 generations, observe the difference. Then switch to the toxicity arms race and run for 50 generations. Record results in a comparison table.</p>
+</li>
+<li>
+<p><strong>Explain</strong> (10 min): Class discussion connecting simulation observations to evolutionary theory. Why do both populations escalate together? What would happen if one population stopped evolving? Introduce the Red Queen hypothesis: organisms must constantly evolve just to maintain their relative fitness. Discuss how this applies to real-world examples: cheetah-gazelle speed, bacteria-immune system, insect-pesticide resistance.</p>
+</li>
+<li>
+<p><strong>Extend</strong> (10 min): Students predict what would happen if a third species were introduced (e.g., a competing predator). Students sketch a diagram showing how the coevolutionary dynamics might change and write a hypothesis testable with the simulation.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>After 50 generations, predator and prey average speeds both increased by similar amounts. Why does neither population "win" the arms race?</li>
+<li>What happened to the rate of trait escalation when you increased the mutation rate? Explain why using evolutionary principles.</li>
+<li>When selection strength was low, the arms race slowed significantly. Explain this result in terms of differential survival and reproduction.</li>
+<li>Describe the Red Queen hypothesis and explain how this simulation demonstrates it.</li>
+<li>Give a real-world example of coevolution and identify the reciprocal selection pressures involved.</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Dawkins, R., &amp; Krebs, J. R. (1979). Arms Races between and within Species. <em>Proceedings of the Royal Society B</em>, 205(1161), 489-511.</li>
+<li>Brodie, E. D., &amp; Brodie, E. D. (1999). Predator-Prey Arms Races. <em>BioScience</em>, 49(7), 557-568.</li>
+<li>Van Valen, L. (1973). A New Evolutionary Law. <em>Evolutionary Theory</em>, 1, 1-30. (The Red Queen hypothesis)</li>
 </ol>
 
 

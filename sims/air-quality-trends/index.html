@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive Chart.js MicroSim for u.s. air quality trends dashboard.">
+        <meta name="description" content="Assess Clean Air Act effectiveness by analyzing emission trends for six criteria pollutants alongside GDP.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="U.S. Air Quality Trends Dashboard - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive Chart.js MicroSim for u.s. air quality trends dashboard.">
+        <meta property="og:description" content="Assess Clean Air Act effectiveness by analyzing emission trends for six criteria pollutants alongside GDP.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/air-quality-trends/air-quality-trends.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="U.S. Air Quality Trends Dashboard - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive Chart.js MicroSim for u.s. air quality trends dashboard.">
+        <meta name="twitter:description" content="Assess Clean Air Act effectiveness by analyzing emission trends for six criteria pollutants alongside GDP.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/air-quality-trends/air-quality-trends.png">
       
@@ -2562,9 +2562,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2580,9 +2598,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2986,15 +3022,23 @@
 
 
 <h1 id="us-air-quality-trends-dashboard">U.S. Air Quality Trends Dashboard</h1>
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="450" width="100%" scrolling="no"></iframe>
 
-<p><a class="md-button md-button--primary" href="main.html">Run the U.S. Air Quality Trends Dashboard MicroSim Fullscreen</a>
-<br>
-<a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
+<p><a class="md-button md-button--primary" href="main.html">Run the U.S. Air Quality Trends Dashboard MicroSim Fullscreen</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This multi-line time series chart displays U.S. air pollutant emissions from 1970 to 2025, indexed to 1970 levels (= 100), alongside GDP growth on a secondary axis. Students can visually assess the effectiveness of the Clean Air Act by observing how all six criteria pollutants declined dramatically while the economy grew more than four-fold.</p>
+<p>The dual-axis design powerfully counters the common misconception that environmental regulation harms the economy. Six pollutant lines (CO, Lead, NO2, SO2, PM2.5, and O3 precursors) each show different rates of decline, while the GDP line rises steadily. Gray recession bands provide economic context, and key policy milestones are annotated below the chart.</p>
+<p>This supports the Bloom's taxonomy level of <strong>Evaluate</strong>, as students must assess the effectiveness of environmental policy by interpreting complex multi-variable data and drawing evidence-based conclusions about the relationship between regulation, pollution, and economic growth.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li><strong>Hover over any data point</strong> to see exact values for all pollutants and GDP at that year</li>
+<li><strong>Click legend items</strong> at the bottom of the chart to toggle individual pollutant lines on and off</li>
+<li><strong>Read the left y-axis</strong> for pollutant emissions (indexed, 1970 = 100%) and the <strong>right y-axis</strong> for GDP index</li>
+<li><strong>Notice the gray shaded bands</strong> marking recession years for economic context</li>
+<li><strong>Read the key milestones</strong> below the chart: 1970 Clean Air Act, 1990 Amendments, 1996 leaded gas ban, 2005 Clean Air Interstate Rule, and 2015 updated ozone standards</li>
+<li><strong>Compare decline rates</strong>: Lead (Pb) dropped fastest after the leaded gas ban, while PM2.5 declined most gradually</li>
+<li><strong>Observe the GDP line</strong> (green dashed) rising steadily even as all pollutants decline</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -3007,22 +3051,48 @@
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Biology / Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>15-20 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Assess the effectiveness of the Clean Air Act by analyzing emission trends for all six criteria pollutants</li>
+<li>Interpret dual-axis time series charts to compare pollution trends with economic indicators</li>
+<li>Identify key policy milestones and their impact on emission reduction rates</li>
+<li>Evaluate the claim that environmental regulation harms economic growth using data evidence</li>
+<li>Compare the rates of decline among different pollutants and explain the differences</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Understanding of what air pollutants are and their health effects</li>
+<li>Basic graph reading skills (time series, dual axes)</li>
+<li>Knowledge of the concept of environmental regulation</li>
+<li>Familiarity with GDP as an economic indicator</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li>NGSS HS-ESS3-4: Evaluate or refine a technological solution that reduces impacts of human activities on natural systems</li>
+<li>AP Environmental Science Topic 7.3: Photochemical Smog and Topic 7.5: Clean Air Act</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li><strong>Warm-Up</strong> (3 min): Ask students: "Do you think cleaning up air pollution helps or hurts the economy?" Take a quick poll and record predictions.</li>
+<li><strong>Guided Exploration</strong> (5-7 min): Display the chart and identify each line together. Ask: "Which pollutant was eliminated most successfully? What policy caused this?" (Answer: Lead, due to the leaded gasoline ban.) Compare the GDP line to the pollutant lines.</li>
+<li><strong>Independent Investigation</strong> (5-7 min): Students toggle individual pollutants on and off to isolate trends. Challenge questions: "Which pollutant is declining slowest? Why might PM2.5 be harder to reduce than Lead? Do recessions cause temporary dips in pollution?"</li>
+<li><strong>Reflection</strong> (3-5 min): Return to the warm-up poll. Ask: "Has the data changed your mind? What does the simultaneous decline in pollution and rise in GDP suggest about the relationship between regulation and the economy?"</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>Name the six criteria pollutants regulated under the Clean Air Act.</li>
+<li>Using the chart, identify which pollutant showed the sharpest decline between 1980 and 1990 and explain what policy change caused it.</li>
+<li>Compare the trends for SO2 and PM2.5. Why might one decline faster than the other, given that they come from different sources and require different control technologies?</li>
+<li>A politician claims that environmental regulations will destroy the economy. Using evidence from this chart, construct a counter-argument. What does the simultaneous decline in all six pollutants and the 330% GDP growth from 1970 to 2025 demonstrate?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li><a href="https://en.wikipedia.org/wiki/Clean_Air_Act_(United_States)">Clean Air Act - Wikipedia</a> - History and provisions of U.S. air quality legislation</li>
+<li><a href="https://www.epa.gov/air-trends">EPA Air Trends</a> - Official U.S. EPA data on criteria pollutant emission trends</li>
+<li><a href="https://www.chartjs.org/docs/latest/">Chart.js Documentation</a> - JavaScript charting library used for the visualization</li>
 </ol>
 
 

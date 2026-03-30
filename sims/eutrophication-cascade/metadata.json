@@ -1,8 +1,8 @@
 {
   "title": "Eutrophication Cascade",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for eutrophication cascade",
+  "subject": "Ecology",
+  "description": "Interactive simulation tracing the cascade from nutrient input through algal bloom, oxygen depletion, and dead zone formation in a lake ecosystem",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,60 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Eutrophication Cascade",
+    "subjectArea": "Environmental Science",
+    "topic": "Eutrophication and Water Pollution",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Trace the step-by-step cascade from nutrient input to dead zone formation",
+      "Identify nitrogen and phosphorus as the primary nutrients driving eutrophication",
+      "Explain the role of decomposer bacteria in oxygen depletion",
+      "Connect eutrophication to real-world sources such as agricultural runoff"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Understanding of nutrient cycles (nitrogen and phosphorus)",
+      "Basic knowledge of dissolved oxygen and aquatic life requirements",
+      "Familiarity with algae and decomposition"
+    ],
+    "standards": [
+      "NGSS HS-LS2-6",
+      "NGSS HS-ESS3-4",
+      "NGSS HS-ESS3-6"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 402
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Controlled variable testing with cascading consequences",
+    "keyQuestions": [
+      "What happens to dissolved oxygen when you increase nutrient input?",
+      "Which nutrient has a stronger effect -- nitrogen or phosphorus?",
+      "Why don't fish survive in a dead zone even though there is plenty of water?",
+      "How long does it take for a lake to recover after nutrient input stops?",
+      "What human activities contribute to eutrophication?"
+    ],
+    "commonMisconceptions": [
+      "Students often think algal blooms directly poison fish rather than understanding the oxygen depletion mechanism",
+      "Students may not realize that reducing nutrient input does not lead to immediate recovery",
+      "Students may think eutrophication only happens in oceans, not in freshwater lakes and rivers"
+    ],
+    "assessmentOpportunities": [
+      "Students complete a controlled-variable data table comparing nitrogen-only vs. phosphorus-only effects",
+      "Students write a causal chain explanation connecting agricultural runoff to fish kills",
+      "Students propose and justify a management solution that interrupts the eutrophication cascade"
+    ]
   },
   "chapter": "12-water-and-land-pollution"
 }

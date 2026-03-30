@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Interactive p5.js MicroSim for correlation vs. causation challenge.">
+        <meta name="description" content="Interactive quiz-style MicroSim where students classify relationships between correlated environmental variables as causal, reverse causal, confounded, or truly causal.">
       
       
         <meta name="author" content="Dan McCreary">
@@ -74,7 +74,7 @@
       
         <meta property="og:title" content="Correlation vs. Causation Challenge - Ecology - An Interactive Course">
       
-        <meta property="og:description" content="Interactive p5.js MicroSim for correlation vs. causation challenge.">
+        <meta property="og:description" content="Interactive quiz-style MicroSim where students classify relationships between correlated environmental variables as causal, reverse causal, confounded, or truly causal.">
       
         <meta property="og:image" content="https://dmccreary.github.io/ecology/sims/correlation-causation/correlation-causation.png">
       
@@ -90,7 +90,7 @@
       
         <meta name="twitter:title" content="Correlation vs. Causation Challenge - Ecology - An Interactive Course">
       
-        <meta name="twitter:description" content="Interactive p5.js MicroSim for correlation vs. causation challenge.">
+        <meta name="twitter:description" content="Interactive quiz-style MicroSim where students classify relationships between correlated environmental variables as causal, reverse causal, confounded, or truly causal.">
       
         <meta name="twitter:image" content="https://dmccreary.github.io/ecology/sims/correlation-causation/correlation-causation.png">
       
@@ -1302,9 +1302,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -1320,9 +1338,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2922,9 +2940,27 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#learning-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Objectives
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#standards-alignment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Standards Alignment
     </span>
   </a>
   
@@ -2940,9 +2976,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#assessment" class="md-nav__link">
+  <a href="#assessment-questions" class="md-nav__link">
     <span class="md-ellipsis">
-      Assessment
+      Assessment Questions
     </span>
   </a>
   
@@ -2992,37 +3028,80 @@
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>TODO: Describe what this MicroSim demonstrates.</p>
+<p>This MicroSim presents students with a series of scatter plots showing two correlated environmental variables and challenges them to determine the true nature of the relationship. For each scenario, students see realistic data plotted with blue data points and a red trend line, then must classify the relationship as "A causes B," "B causes A," "Both caused by a confounding variable," or "True causal relationship."</p>
+<p>The scenarios draw from real-world environmental examples such as CO2 emissions vs. global temperature, organic food sales vs. autism diagnoses, number of firefighters at a fire vs. fire damage, and DDT use vs. peregrine falcon decline. After each answer, a detailed explanation reveals the actual relationship and the evidence supporting the correct classification.</p>
+<p>A score tracker at the top monitors progress through 8-10 scenarios, reinforcing the critical thinking habit of questioning causal claims in environmental science. This gamified format with immediate feedback helps students internalize one of the most important skills in scientific literacy.</p>
 <h2 id="how-to-use">How to Use</h2>
-<p>TODO: Describe how students should interact with this MicroSim.</p>
+<ol>
+<li>Read the scatter plot title showing two correlated variables.</li>
+<li>Examine the data points and trend line to observe the correlation pattern.</li>
+<li>Select one of the four classification options for the relationship.</li>
+<li>Read the explanation that appears after answering to understand the actual relationship.</li>
+<li>Click "Next" to advance to the next scenario.</li>
+<li>Track your score at the top of the screen as you progress through all scenarios.</li>
+<li>Try to achieve a perfect score by carefully considering confounding variables and evidence for each relationship.</li>
+</ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
 <p>You can add this MicroSim to any web page by adding this to your HTML:</p>
 <div class="highlight"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/correlation-causation/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"450px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"482px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>
 <h2 id="lesson-plan">Lesson Plan</h2>
 <h3 id="grade-level">Grade Level</h3>
-<p>9-12 (High School Geometry)</p>
+<p>9-12 (High School Environmental Science)</p>
 <h3 id="duration">Duration</h3>
-<p>10-15 minutes</p>
+<p>45 minutes</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<ul>
+<li>Distinguish between correlation and causation in environmental datasets</li>
+<li>Identify confounding variables that may explain observed correlations</li>
+<li>Evaluate the strength of evidence supporting causal claims</li>
+<li>Apply critical thinking skills to environmental data interpretation</li>
+</ul>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>TODO: List prerequisites.</p>
+<ul>
+<li>Basic understanding of scatter plots and trend lines</li>
+<li>Familiarity with the concept of variables in scientific studies</li>
+<li>Introduction to the scientific method and evidence-based reasoning</li>
+</ul>
+<h3 id="standards-alignment">Standards Alignment</h3>
+<ul>
+<li><strong>NGSS HS-ESS3-4</strong>: Evaluate or refine a technological solution that reduces impacts of human activities on natural systems</li>
+<li><strong>AP Environmental Science</strong>: Science Practices -- Analyzing Data</li>
+<li><strong>Common Core Math HSS-ID.C.9</strong>: Distinguish between correlation and causation</li>
+</ul>
 <h3 id="activities">Activities</h3>
 <ol>
-<li><strong>Exploration</strong> (5 min): TODO</li>
-<li><strong>Guided Practice</strong> (5 min): TODO</li>
-<li><strong>Assessment</strong> (5 min): TODO</li>
+<li>
+<p><strong>Warm-Up</strong> (5 min): Ask students to share examples of correlations they have heard about in the news. Write them on the board and ask: "Does one thing actually cause the other?"</p>
+</li>
+<li>
+<p><strong>Interactive Exploration</strong> (15 min): Students work through the Correlation vs. Causation Challenge individually. They should write down their reasoning for each scenario before selecting an answer.</p>
+</li>
+<li>
+<p><strong>Guided Discussion</strong> (15 min): As a class, review the most commonly missed scenarios. For each, identify what made the relationship confusing and what evidence would be needed to establish true causation. Introduce the criteria for establishing causation (temporal precedence, mechanism, ruling out confounders).</p>
+</li>
+<li>
+<p><strong>Extension Activity</strong> (10 min): Students find a news headline claiming a causal relationship between two environmental variables. They write a brief analysis identifying whether the claim is supported by evidence or is merely a correlation.</p>
+</li>
 </ol>
-<h3 id="assessment">Assessment</h3>
-<p>TODO: List assessment criteria.</p>
+<h3 id="assessment-questions">Assessment Questions</h3>
+<ol>
+<li>A study finds that cities with more bike lanes have lower obesity rates. Does this prove bike lanes reduce obesity? What confounding variables might explain this correlation?</li>
+<li>Explain the difference between correlation and causation using an environmental example not covered in the simulation.</li>
+<li>What three criteria should be met before concluding that one variable causes changes in another?</li>
+<li>Why is the ability to distinguish correlation from causation particularly important in environmental policy decisions?</li>
+</ol>
 <h2 id="references">References</h2>
 <ol>
-<li>TODO: Add references.</li>
+<li>Pearson, K. (1896). "Mathematical Contributions to the Theory of Evolution." <em>Philosophical Transactions of the Royal Society</em>.</li>
+<li>National Research Council. (2012). <em>A Framework for K-12 Science Education</em>. Washington, DC: The National Academies Press.</li>
+<li>EPA. "Environmental Data and Research." <a href="https://www.epa.gov/data">https://www.epa.gov/data</a></li>
 </ol>
 
 
