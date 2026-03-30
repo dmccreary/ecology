@@ -400,3 +400,5 @@ Through it all, you saw how **genetic diversity** provides the raw material for 
 !!! mascot-celebration "Bailey Says: Outstanding Work, Builders!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img">
     You just mapped out nature's entire social network — from predators and parasites to partners and competitors! Dam, that's a lot of relationships to keep track of! But now you can look at any ecosystem and see the invisible threads connecting every species. Everything's connected, builders! Now let's build on that foundation as we dive into biodiversity in the next chapter!
+
+[See Annotated References](./references.md)

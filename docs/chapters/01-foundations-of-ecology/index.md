@@ -499,3 +499,5 @@ Let's review the foundational ideas from this chapter:
 
 ??? question "Test Your Understanding: What would happen if photosynthesis suddenly stopped worldwide?"
     If photosynthesis stopped, the consequences would cascade through every ecosystem on Earth. First, no new glucose would be produced, so producers (plants, algae) would stop growing and eventually die. Without producers, herbivores would lose their food source. Then carnivores would follow. Atmospheric oxygen would gradually decrease as cellular respiration continued consuming it. CO2 levels would rise. The entire food web would collapse from the bottom up. This thought experiment illustrates why photosynthesis is the foundation of nearly all life -- and why **everything's connected!**
+
+[See Annotated References](./references.md)

@@ -424,3 +424,5 @@ These tools apply to every chapter in this course. The nutrient cycles of Chapte
 
 ??? question "Why are leverage points near the top of Meadows' hierarchy (goals, paradigms) more effective than those at the bottom (numbers, parameters)?"
     Leverage points at the top of the hierarchy change the **fundamental structure and purpose** of a system, which then automatically adjusts everything downstream. Changing the goal of a system from "maximize short-term profit" to "maximize long-term sustainability" transforms every decision made within that system. Changing a paradigm reshapes how people perceive and interact with the entire system. In contrast, tweaking numbers (like a pollution limit from 50 to 45 ppm) only adjusts a single parameter without changing the underlying structure or incentives that produced the problem. The system often compensates for parameter changes, but it cannot easily compensate for a fundamental shift in goals or worldview.
+
+[See Annotated References](./references.md)

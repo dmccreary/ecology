@@ -644,3 +644,5 @@ Type: infographic
 !!! mascot-celebration "Bailey Says: Dam Good Work, Builders!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img">
     You just tackled one of the most complex chapters in this entire course -- and you made it through! You now understand the greenhouse effect, feedback loops, tipping points, and why every fraction of a degree matters. That's serious systems thinking. Remember: understanding the problem is the first step toward building solutions. Everything's connected -- and so are we. Let's build on that!
+
+[See Annotated References](./references.md)

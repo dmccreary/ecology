@@ -459,3 +459,5 @@ The HIPPO threats interact. Policy responses must too. A carbon tax reduces clim
 !!! mascot-celebration "Bailey Says: Dam Impressive, Builders!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img">
     You've just navigated through extinction science, conservation policy, economic instruments, and international diplomacy -- that's a LOT of ground to cover! You now have the tools to analyze why species are at risk and evaluate whether policies are actually working. Remember: every species saved, every corridor built, every habitat protected is a victory for the web of life. Everything's connected -- and you're now part of the solution. Let's build on that!
+
+[See Annotated References](./references.md)

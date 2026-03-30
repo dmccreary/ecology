@@ -496,3 +496,5 @@ Sustainability means using resources at a rate that can continue indefinitely. H
 !!! mascot-celebration "Bailey Says: Great Work, Builders!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img">
     You just powered through 30 energy concepts -- from fossil fuels to fusion, from EROI to efficiency! Dam, that was a lot of ground to cover. But now you've got the tools to evaluate any energy claim with real data and systems thinking. Remember: there's no perfect energy source, just smart combinations and honest trade-offs. Everything's connected, and now YOU can see the connections! On to Chapter 10!
+
+[See Annotated References](./references.md)

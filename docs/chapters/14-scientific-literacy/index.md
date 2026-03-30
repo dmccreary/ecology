@@ -411,3 +411,5 @@ The goal isn't to become cynical about science. Science is humanity's most relia
 
 ??? question "You see a news headline: 'Scientists Warn: All Fish Will Be Gone by 2050.' How would you evaluate this claim?"
     Apply the SIFT method and scientific literacy tools: (1) **Stop** -- don't react emotionally. (2) **Investigate the source** -- is this from a credible news outlet or a clickbait site? (3) **Find the original study** -- trace the claim back to the peer-reviewed research. Does the study actually say "all fish will be gone" or something more nuanced? (4) **Check for fallacies** -- is the headline a false dichotomy or an exaggeration? (5) **Evaluate the statistics** -- what was the sample size, confidence interval, and methodology? What assumptions went into the projection? (6) **Look for consensus** -- do other fisheries scientists agree with this projection? (7) **Check for conflicts of interest** -- who funded the study? Headlines often exaggerate study conclusions dramatically, so the actual paper likely says something much more qualified.
+
+[See Annotated References](./references.md)

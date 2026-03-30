@@ -7,25 +7,61 @@ site_author: Dan McCreary
 nav:
   - Home: index.md
   - Course Description: course-description.md
+  - Glossary: glossary.md
+  - FAQ: faq.md
   - Chapters:
     - Overview: chapters/index.md
-    - 1-Foundations of Ecology: chapters/01-foundations-of-ecology/index.md
-    - 2-Ecosystems and Biomes: chapters/02-ecosystems-and-biomes/index.md
-    - 3-Energy Flow: chapters/03-energy-flow/index.md
-    - 4-Biogeochemical Cycles: chapters/04-biogeochemical-cycles/index.md
-    - 5-Species Interactions: chapters/05-species-interactions/index.md
-    - 6-Biodiversity and Services: chapters/06-biodiversity-and-services/index.md
-    - 7-Population Ecology: chapters/07-population-ecology/index.md
-    - 8-Earth Systems: chapters/08-earth-systems/index.md
-    - 9-Sustainability and Energy: chapters/09-sustainability-and-energy/index.md
-    - 10-Land and Water Use: chapters/10-land-and-water-use/index.md
-    - 11-Atmospheric Pollution: chapters/11-atmospheric-pollution/index.md
-    - 12-Water and Land Pollution: chapters/12-water-and-land-pollution/index.md
-    - 13-Systems Thinking: chapters/13-systems-thinking/index.md
-    - 14-Scientific Literacy: chapters/14-scientific-literacy/index.md
-    - 15-Global Climate Change: chapters/15-global-climate-change/index.md
-    - 16-Biodiversity Loss and Policy: chapters/16-biodiversity-loss-and-policy/index.md
-    - 17-Evaluating Claims: chapters/17-evaluating-environmental-claims/index.md
+    - 1-Foundations of Ecology:
+      - chapters/01-foundations-of-ecology/index.md
+      - References: chapters/01-foundations-of-ecology/references.md
+    - 2-Ecosystems and Biomes:
+      - chapters/02-ecosystems-and-biomes/index.md
+      - References: chapters/02-ecosystems-and-biomes/references.md
+    - 3-Energy Flow:
+      - chapters/03-energy-flow/index.md
+      - References: chapters/03-energy-flow/references.md
+    - 4-Biogeochemical Cycles:
+      - chapters/04-biogeochemical-cycles/index.md
+      - References: chapters/04-biogeochemical-cycles/references.md
+    - 5-Species Interactions:
+      - chapters/05-species-interactions/index.md
+      - References: chapters/05-species-interactions/references.md
+    - 6-Biodiversity and Services:
+      - chapters/06-biodiversity-and-services/index.md
+      - References: chapters/06-biodiversity-and-services/references.md
+    - 7-Population Ecology:
+      - chapters/07-population-ecology/index.md
+      - References: chapters/07-population-ecology/references.md
+    - 8-Earth Systems:
+      - chapters/08-earth-systems/index.md
+      - References: chapters/08-earth-systems/references.md
+    - 9-Sustainability and Energy:
+      - chapters/09-sustainability-and-energy/index.md
+      - References: chapters/09-sustainability-and-energy/references.md
+    - 10-Land and Water Use:
+      - chapters/10-land-and-water-use/index.md
+      - References: chapters/10-land-and-water-use/references.md
+    - 11-Atmospheric Pollution:
+      - chapters/11-atmospheric-pollution/index.md
+      - References: chapters/11-atmospheric-pollution/references.md
+    - 12-Water and Land Pollution:
+      - chapters/12-water-and-land-pollution/index.md
+      - References: chapters/12-water-and-land-pollution/references.md
+    - 13-Systems Thinking:
+      - chapters/13-systems-thinking/index.md
+      - References: chapters/13-systems-thinking/references.md
+    - 14-Scientific Literacy:
+      - chapters/14-scientific-literacy/index.md
+      - References: chapters/14-scientific-literacy/references.md
+    - 15-Global Climate Change:
+      - chapters/15-global-climate-change/index.md
+      - References: chapters/15-global-climate-change/references.md
+    - 16-Biodiversity Loss and Policy:
+      - chapters/16-biodiversity-loss-and-policy/index.md
+      - References: chapters/16-biodiversity-loss-and-policy/references.md
+    - 17-Evaluating Claims:
+      - chapters/17-evaluating-environmental-claims/index.md
+      - References: chapters/17-evaluating-environmental-claims/references.md
   - Learning Graph:
     - Introduction: learning-graph/index.md
     - Course Description Assessment: learning-graph/course-description-assessment.md

@@ -439,3 +439,5 @@ Air pollution encompasses both primary pollutants (emitted directly from sources
 !!! mascot-celebration "Bailey Says: You Crushed It, Builders!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img">
     Dam, you just navigated 20 concepts about air pollution -- from the chemistry of smog to the policy that cleaned our skies! Here's what I want you to take away: air pollution is one of the clearest examples of a problem that science identified, technology addressed, and policy solved. Not perfectly, not completely, but dramatically. The Clean Air Act proves that when we understand the connections and act on the evidence, we can build a healthier world. Everything's connected, and now you can trace every pollutant from source to solution. That's real power!
+
+[See Annotated References](./references.md)

@@ -423,3 +423,5 @@ Understanding these physical systems is essential for understanding everything t
 !!! mascot-celebration "Bailey Says: Outstanding Work, Builders!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img">
     You just mastered the physical foundations of ecology -- from the tectonic forces that build continents to the wind patterns that distribute rain to the soil that feeds every food web on land. Dam, that's a lot of ground to cover (pun absolutely intended)! You now understand why deserts sit where they do, why mountains create biodiversity hotspots, and why soil is way more than just dirt. Everything's connected -- and now you can trace those connections from the center of the Earth to the top of the atmosphere!
+
+[See Annotated References](./references.md)

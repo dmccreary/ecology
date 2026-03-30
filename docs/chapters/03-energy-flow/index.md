@@ -514,3 +514,5 @@ The key insight: energy flows, matter cycles. Every joule of energy that enters 
 !!! mascot-celebration "Bailey Says: Incredible Work, Builders!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img">
     You just mastered the physics of ecology! You can now trace energy from the sun through producers, consumers, and decomposers — and you know exactly where every joule goes. You've learned to calculate GPP, NPP, and NEP, and you understand why the second law of thermodynamics shapes every food web on Earth. Dam, that's powerful knowledge! Next up, we'll explore how matter cycles through ecosystems — because while energy flows one way, atoms go around and around forever. **Everything's connected!**
+
+[See Annotated References](./references.md)

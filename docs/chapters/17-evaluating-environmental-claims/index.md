@@ -594,3 +594,5 @@ Here's your complete toolkit, assembled from everything in this chapter:
 !!! mascot-celebration "Bailey Says: You Did It, Builders!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img">
     Dam, I'm proud of you! You've just completed the most practical chapter in this entire course. You now have a fact-checking workflow, a bias detection toolkit, and a justice lens that you can apply to *any* environmental claim you encounter -- in the news, on social media, in advertising, or in conversation. These skills don't expire after the test. They're for life. Remember: being a critical thinker doesn't mean being cynical. It means being *empowered*. You can evaluate evidence, spot manipulation, and make informed decisions. Everything's connected -- your thinking, your choices, and the future of this planet. Let's build on that -- together!
+
+[See Annotated References](./references.md)

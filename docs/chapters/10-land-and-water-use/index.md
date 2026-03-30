@@ -485,3 +485,5 @@ Human land and water use profoundly shapes Earth's ecosystems. The Tragedy of th
 !!! mascot-celebration "Bailey Says: Fantastic Work, Builders!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img">
     Dam, you just covered everything from the Tragedy of the Commons to urban heat islands! That's 30 concepts about how humans use -- and sometimes abuse -- the land and water we all share. But remember: every problem we explored also has solutions. Sustainable forestry, IPM, no-till farming, green infrastructure -- these aren't just ideas, they're real practices being used right now by smart people who think in systems. You're becoming one of those people! Everything's connected, and now you can see the whole web. On to Chapter 11!
+
+[See Annotated References](./references.md)

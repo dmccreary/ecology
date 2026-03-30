@@ -362,3 +362,5 @@ Key connections to remember:
 
 ??? question "Why is the Clean Water Act more effective at controlling point source pollution than nonpoint source pollution?"
     The Clean Water Act's primary enforcement tool is the NPDES permit system, which requires point sources to obtain permits limiting their discharges. Since point sources are identifiable locations, they can be monitored and regulated. Nonpoint source pollution comes from diffuse, widespread sources (like millions of acres of farmland), making it impractical to issue individual permits. Controlling nonpoint source pollution requires land-use management practices and voluntary programs rather than direct permitting.
+
+[See Annotated References](./references.md)

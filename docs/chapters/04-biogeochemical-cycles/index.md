@@ -417,3 +417,5 @@ The key takeaway? **Matter cycles, but it doesn't always cycle at the same rate.
 !!! mascot-celebration "Bailey Says: Great Job, Builders!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img">
     You just traced atoms through the entire planet — from atmosphere to ocean to underground aquifer and back again! Dam, that's impressive! Remember: nature's recycling program has been running for billions of years. Our job is to make sure we don't break it. Everything's connected! Now let's build on that as we head into Chapter 5!
+
+[See Annotated References](./references.md)

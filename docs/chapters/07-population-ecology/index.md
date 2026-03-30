@@ -413,3 +413,5 @@ Every concept in this chapter connects to the others and to earlier chapters:
 !!! mascot-celebration "Bailey Says: Incredible Work, Builders!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img">
     You just powered through 30 concepts -- from counting individuals to predicting the future of 8 billion humans. That's dam impressive! You can now model population growth, read survivorship curves, interpret age structure diagrams, and understand why the demographic transition matters for our planet's future. Next chapter, we're zooming way out to explore the physical systems of Earth itself. Everything's connected -- and you're building a bigger picture every chapter!
+
+[See Annotated References](./references.md)

@@ -511,3 +511,5 @@ The key takeaway? Every biome, every organism, every energy transfer is part of 
 !!! mascot-celebration "Bailey Says: Great Work, Builders!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img">
     You just toured the entire planet — from tropical rainforests to deep-sea hydrothermal vents! You've built food webs, calculated energy transfers, and discovered that **everything's connected**. Dam, that's a lot of ground (and water) to cover! Next chapter, we'll zoom in even further on how energy flows through ecosystems. **Let's build on that!**
+
+[See Annotated References](./references.md)

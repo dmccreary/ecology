@@ -402,3 +402,5 @@ Visual: Network diagram with four large hub nodes (Provisioning, Regulating, Cul
 !!! mascot-celebration "Bailey Says: Great Work, Builders!"
     <img src="../../img/mascot/celebration.png" class="mascot-admonition-img">
     You've just built a solid foundation in biodiversity and ecosystem services! You now understand that diversity operates at multiple levels, that ecosystems provide trillions of dollars in free services, and that nature has its own way of rebuilding after disturbance. Dam impressive work! Next up, we'll zoom in on individual populations and learn how they grow, crash, and everything in between. Everything's connected -- and now you can see the connections!
+
+[See Annotated References](./references.md)
