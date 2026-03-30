@@ -10,9 +10,12 @@ let margin = 25;
 let sliderLeftMargin = 120;
 let defaultTextSize = 16;
 
-let scenarioSelect;
+let rSelect;
+let bSelect;
 let speedSlider;
-let running = true;
+let playBtn;
+let resetBtn;
+let running = false;
 let time = 0;
 
 let reinforcingScenarios = {
@@ -61,22 +64,35 @@ function setup() {
   rKeys = Object.keys(reinforcingScenarios);
   bKeys = Object.keys(balancingScenarios);
 
-  scenarioSelect = createSelect();
-  scenarioSelect.parent(document.querySelector('main'));
-  for (let r of rKeys) scenarioSelect.option(r);
-  scenarioSelect.changed(() => {
-    rIdx = rKeys.indexOf(scenarioSelect.value());
-    bIdx = rIdx;
+  playBtn = createButton('Start Simulation');
+  playBtn.parent(document.querySelector('main'));
+  playBtn.mousePressed(() => {
+    running = !running;
+    playBtn.html(running ? 'Pause Simulation' : 'Start Simulation');
+  });
+
+  rSelect = createSelect();
+  rSelect.parent(document.querySelector('main'));
+  for (let r of rKeys) rSelect.option(r);
+  rSelect.changed(() => {
+    rIdx = rKeys.indexOf(rSelect.value());
+    resetSim();
+  });
+
+  bSelect = createSelect();
+  bSelect.parent(document.querySelector('main'));
+  for (let b of bKeys) bSelect.option(b);
+  bSelect.changed(() => {
+    bIdx = bKeys.indexOf(bSelect.value());
     resetSim();
   });
 
   speedSlider = createSlider(0.5, 5, 1.5, 0.5);
   speedSlider.parent(document.querySelector('main'));
-  speedSlider.style('width', '120px');
+  speedSlider.style('width', '100px');
 
-  let resetBtn = createButton('Reset');
+  resetBtn = createButton('Reset');
   resetBtn.parent(document.querySelector('main'));
-  resetBtn.position(sliderLeftMargin + 135, drawHeight + 32);
   resetBtn.mousePressed(resetSim);
 }
 
@@ -92,7 +108,9 @@ function draw() {
   updateCanvasSize();
 
   let spd = speedSlider.value();
-  time += spd * 0.02;
+  if (running) {
+    time += spd * 0.02;
+  }
 
   let halfW = canvasWidth / 2 - 5;
 
@@ -106,7 +124,7 @@ function draw() {
   bStock = setpoint + 40 * exp(-0.15 * time) * cos(1.2 * time);
 
   // Record history
-  if (frameCount % 2 === 0) {
+  if (running && frameCount % 2 === 0) {
     rHistory.push(min(rStock, 200));
     bHistory.push(bStock);
     if (rHistory.length > maxHistory) rHistory.shift();
@@ -128,10 +146,10 @@ function draw() {
   textAlign(CENTER, TOP);
   text('Reinforcing Loop (R)', halfW / 2, 6);
 
-  drawCausalLoop(halfW / 2, 130, min(halfW * 0.35, 90), rScenario, color(220, 100, 50), 'R');
+  drawCausalLoop(halfW / 2, 180, min(halfW * 0.35, 90), rScenario, color(220, 100, 50), 'R');
 
   // Reinforcing chart
-  let chartY = 250;
+  let chartY = 330;
   let chartH = drawHeight - chartY - 15;
   let chartW = halfW - 30;
   let chartX = 15;
@@ -150,7 +168,7 @@ function draw() {
   textAlign(CENTER, TOP);
   text('Balancing Loop (B)', rx + halfW / 2, 6);
 
-  drawCausalLoop(rx + halfW / 2, 130, min(halfW * 0.35, 90), bScenario, color(50, 130, 200), 'B');
+  drawCausalLoop(rx + halfW / 2, 180, min(halfW * 0.35, 90), bScenario, color(50, 130, 200), 'B');
 
   // Balancing chart
   drawChart(rx + 15, chartY, chartW, chartH, bHistory, color(50, 130, 200), 100, 'Damped Oscillation');
@@ -162,13 +180,29 @@ function draw() {
 
   fill(0);
   noStroke();
-  textSize(13);
+  textSize(12);
   textAlign(LEFT, CENTER);
-  text('Scenario:', 10, drawHeight + 18);
-  scenarioSelect.position(85, drawHeight + 8);
 
-  text('Speed: ' + nf(spd, 1, 1), 10, drawHeight + 42);
-  speedSlider.position(sliderLeftMargin, drawHeight + 34);
+  let midX = canvasWidth / 2;
+  let row1Y = drawHeight + 10;
+  let row2Y = drawHeight + 36;
+
+  // Row 1: Play button | Reinforcing select | Balancing select
+  playBtn.position(10, row1Y - 2);
+
+  fill(200, 80, 30);
+  text('R:', 145, row1Y + 8);
+  rSelect.position(160, row1Y);
+
+  fill(30, 100, 180);
+  text('B:', midX + 10, row1Y + 8);
+  bSelect.position(midX + 28, row1Y);
+
+  // Row 2: Speed slider | Reset
+  fill(0);
+  text('Speed: ' + nf(spd, 1, 1), 10, row2Y + 8);
+  speedSlider.position(100, row2Y);
+  resetBtn.position(210, row2Y);
 }
 
 function drawCausalLoop(cx, cy, radius, scenario, col, label) {
@@ -239,12 +273,51 @@ function drawCausalLoop(cx, cy, radius, scenario, col, label) {
     text(nodes[i], nx, ny);
   }
 
-  // Center label
+  // Center loop indicator: circular clockwise arrow around label
+  drawLoopIndicator(cx, cy, 18, col, label);
+}
+
+function drawLoopIndicator(cx, cy, r, col, label) {
+  // Draw a clockwise circular arrow (CLD standard)
+  // Arc spans ~300 degrees, leaving a gap for the arrowhead
+  let gapAngle = PI / 3; // 60-degree gap
+  let startA = -PI / 2 + gapAngle / 2; // start just past top
+  let endA = startA + TWO_PI - gapAngle;  // end just before top
+
+  noFill();
+  stroke(col);
+  strokeWeight(2);
+
+  // Draw arc as small line segments (clockwise)
+  let steps = 40;
+  beginShape();
+  for (let i = 0; i <= steps; i++) {
+    let a = startA + (i / steps) * (endA - startA);
+    vertex(cx + cos(a) * r, cy + sin(a) * r);
+  }
+  endShape();
+
+  // Arrowhead at the end of the arc (clockwise direction)
+  let tipAngle = endA;
+  let tipX = cx + cos(tipAngle) * r;
+  let tipY = cy + sin(tipAngle) * r;
+  // Tangent direction for clockwise motion, rotated 30° CCW
+  let tangent = tipAngle + PI / 2 - PI / 12;
+
   fill(col);
   noStroke();
-  textSize(22);
+  push();
+  translate(tipX, tipY);
+  rotate(tangent);
+  triangle(0, 0, -10, -4, -10, 4);
+  pop();
+
+  // Label text centered
+  fill(col);
+  noStroke();
+  textSize(18);
   textAlign(CENTER, CENTER);
-  text(label, cx, cy);
+  text(label, cx, cy + 1);
 }
 
 function drawChart(x, y, w, h, history, col, maxVal, label) {
