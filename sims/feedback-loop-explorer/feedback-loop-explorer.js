@@ -277,18 +277,29 @@ function drawCausalLoop(cx, cy, radius, scenario, col, label) {
   drawLoopIndicator(cx, cy, 18, col, label);
 }
 
-function drawLoopIndicator(cx, cy, r, col, label) {
-  // Draw a clockwise circular arrow (CLD standard)
-  // Arc spans ~300 degrees, leaving a gap for the arrowhead
-  let gapAngle = PI / 3; // 60-degree gap
-  let startA = -PI / 2 + gapAngle / 2; // start just past top
-  let endA = startA + TWO_PI - gapAngle;  // end just before top
+function drawLoopIndicator(cx, cy, r, col, label, dc) {
+  // Draw a circular arrow around a CLD loop label
+  // dc: 'CW' for clockwise (default), 'CCW' for counter-clockwise
+  if (!dc) dc = 'CW';
+  let ccw = (dc === 'CCW');
+
+  let gapAngle = PI / 3; // 60-degree gap at top
+
+  // CW: arc runs from startA to endA in positive direction
+  // CCW: arc runs from startA to endA in negative direction
+  let startA, endA;
+  if (ccw) {
+    startA = -PI / 2 - gapAngle / 2;
+    endA = startA - (TWO_PI - gapAngle);
+  } else {
+    startA = -PI / 2 + gapAngle / 2;
+    endA = startA + (TWO_PI - gapAngle);
+  }
 
   noFill();
   stroke(col);
   strokeWeight(2);
 
-  // Draw arc as small line segments (clockwise)
   let steps = 40;
   beginShape();
   for (let i = 0; i <= steps; i++) {
@@ -297,12 +308,17 @@ function drawLoopIndicator(cx, cy, r, col, label) {
   }
   endShape();
 
-  // Arrowhead at the end of the arc (clockwise direction)
+  // Arrowhead at end of arc
   let tipAngle = endA;
   let tipX = cx + cos(tipAngle) * r;
   let tipY = cy + sin(tipAngle) * r;
-  // Tangent direction for clockwise motion, rotated 30° CCW
-  let tangent = tipAngle + PI / 2 - PI / 12;
+  // Tangent along arc direction, with 15° adjustment for visual centering
+  let tangent;
+  if (ccw) {
+    tangent = tipAngle - PI / 2 + PI / 12;
+  } else {
+    tangent = tipAngle + PI / 2 - PI / 12;
+  }
 
   fill(col);
   noStroke();

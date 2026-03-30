@@ -11,8 +11,10 @@ let sliderLeftMargin = 160;
 let defaultTextSize = 16;
 
 let solarSlider, vegSlider;
+let playBtn;
 let particles = [];
-let paused = false;
+let paused = true;
+let animFrame = 0;
 let hoverLabel = '';
 let hoverX = 0, hoverY = 0;
 
@@ -23,19 +25,25 @@ function setup() {
   textSize(defaultTextSize);
   describe('Animated hydrologic cycle showing evaporation, precipitation, runoff, and groundwater', LABEL);
 
+  playBtn = createButton('Start Simulation');
+  playBtn.parent(document.querySelector('main'));
+  playBtn.mousePressed(() => {
+    paused = !paused;
+    playBtn.html(paused ? 'Start Simulation' : 'Pause Simulation');
+  });
+
   solarSlider = createSlider(1, 10, 5, 1);
   solarSlider.parent(document.querySelector('main'));
-  solarSlider.position(100, drawHeight + 5);
-  solarSlider.size(canvasWidth / 2 - 120);
+  solarSlider.size(canvasWidth / 2 - 150);
 
   vegSlider = createSlider(0, 100, 50, 5);
   vegSlider.parent(document.querySelector('main'));
-  vegSlider.position(canvasWidth / 2 + 100, drawHeight + 5);
-  vegSlider.size(canvasWidth / 2 - 120);
+  vegSlider.size(canvasWidth / 2 - 150);
 }
 
 function draw() {
   updateCanvasSize();
+  if (!paused) animFrame++;
   background(135, 200, 250); // sky
 
   // Draw area border
@@ -49,16 +57,29 @@ function draw() {
 
   hoverLabel = '';
 
-  // Sun
+  // Sun with rays scaled by solar energy
+  let sunX = 70, sunY = 45;
+  let rayLen = 10 + solarEnergy * 3;
+  let numRays = 12;
+  stroke(255, 220, 50, 150);
+  strokeWeight(2 + solarEnergy * 0.3);
+  for (let i = 0; i < numRays; i++) {
+    let a = (TWO_PI * i) / numRays;
+    let inner = 28;
+    line(sunX + cos(a) * inner, sunY + sin(a) * inner,
+         sunX + cos(a) * (inner + rayLen), sunY + sin(a) * (inner + rayLen));
+  }
   noStroke();
   fill(255, 220, 50, 200);
-  ellipse(70, 45, 50, 50);
+  ellipse(sunX, sunY, 50, 50);
   fill(255, 240, 100);
-  ellipse(70, 45, 40, 40);
+  ellipse(sunX, sunY, 40, 40);
 
   // Landscape layers
   let groundY = drawHeight * 0.6;
-  let waterTableY = drawHeight * 0.82;
+  // Water table rises with vegetation (more infiltration) and drops with solar (more evaporation)
+  let waterTableBase = drawHeight * 0.82;
+  let waterTableY = waterTableBase + (solarEnergy - 5) * 2 - vegCover * 15;
 
   // Ocean (left)
   let oceanW = canvasWidth * 0.28;
@@ -69,7 +90,7 @@ function draw() {
   // Ocean surface waves
   fill(50, 130, 200);
   for (let x = 0; x < oceanW; x += 20) {
-    let wy = groundY + sin((x + frameCount * 2) * 0.1) * 3;
+    let wy = groundY + sin((x + animFrame * 2) * 0.1) * 3;
     ellipse(x, wy, 25, 6);
   }
 
@@ -99,12 +120,13 @@ function draw() {
   noStroke();
   rect(oceanW, groundY, canvasWidth - oceanW, drawHeight - groundY);
 
-  // Groundwater layer
-  fill(80, 140, 180, 120);
+  // Groundwater layer — constrain water table between soil and bottom
+  waterTableY = constrain(waterTableY, groundY + 20, drawHeight - 10);
+  fill(70, 150, 210);
   rect(oceanW, waterTableY, canvasWidth - oceanW, drawHeight - waterTableY);
 
   if (mouseX > oceanW && mouseY > waterTableY && mouseY < drawHeight) {
-    hoverLabel = 'Groundwater: Water seeps through soil and rock, stored in aquifers';
+    hoverLabel = 'Groundwater: More vegetation increases infiltration; higher solar increases evaporation';
     hoverX = mouseX; hoverY = mouseY;
   }
 
@@ -232,8 +254,11 @@ function draw() {
       fill(30, 80, 200, p.alpha);
       ellipse(p.x, p.y, 4, 8);
     } else if (p.type === 'transpiration') {
-      fill(100, 220, 100, p.alpha);
-      ellipse(p.x, p.y, 5, 5);
+      stroke(255, 255, 255, p.alpha);
+      strokeWeight(1);
+      fill(80, 160, 255, p.alpha);
+      ellipse(p.x, p.y, 6, 6);
+      noStroke();
     } else if (p.type === 'runoff') {
       fill(60, 140, 220, p.alpha);
       ellipse(p.x, p.y, 5, 5);
@@ -251,7 +276,7 @@ function draw() {
   let cloudY = 35;
   fill(240, 240, 245, 200);
   noStroke();
-  let cloudOffset = (frameCount * 0.3) % canvasWidth;
+  let cloudOffset = (animFrame * 0.3) % canvasWidth;
   for (let c = 0; c < 3; c++) {
     let cx2 = (canvasWidth * 0.3 + c * canvasWidth * 0.25 + cloudOffset) % (canvasWidth + 100) - 50;
     ellipse(cx2, cloudY, 60, 25);
@@ -262,17 +287,17 @@ function draw() {
   // Process labels
   noStroke();
   fill(30);
-  textSize(10);
+  textSize(14);
   textAlign(CENTER, CENTER);
   text('OCEAN', oceanW / 2, groundY + 30);
   text('GROUNDWATER', canvasWidth * 0.65, waterTableY + 15);
 
   fill(255, 220, 50);
-  textSize(9);
+  textSize(13);
   text('Evaporation \u2191', oceanW / 2, groundY - 15);
   fill(30, 80, 200);
   text('Precipitation \u2193', canvasWidth * 0.55, 65);
-  fill(100, 200, 100);
+  fill(255);
   text('Transpiration \u2191', forestX + forestW / 2, groundY - 65);
 
   // Hover tooltip
@@ -297,20 +322,31 @@ function draw() {
   noStroke();
   rect(0, drawHeight, canvasWidth, controlHeight);
 
+  let col2 = 145;
+  let midX = canvasWidth / 2 + 60;
+
+  playBtn.position(10, drawHeight + 8);
+
   fill(30);
   textSize(12);
   textAlign(LEFT, CENTER);
   noStroke();
-  text('Solar: ' + solarSlider.value(), 10, drawHeight + 16);
-  text('Vegetation: ' + vegSlider.value() + '%', canvasWidth / 2 + 10, drawHeight + 16);
+  let solarStart = col2 + 55;
+  let solarW = max(60, midX - solarStart - 10);
+  text('Solar: ' + solarSlider.value(), col2, drawHeight + 16);
+  solarSlider.position(solarStart, drawHeight + 8);
+  solarSlider.size(solarW);
+
+  let vegStart = midX + 100;
+  let vegW = max(60, canvasWidth - vegStart - 10);
+  text('Vegetation: ' + vegSlider.value() + '%', midX, drawHeight + 16);
+  vegSlider.position(vegStart, drawHeight + 6);
+  vegSlider.size(vegW);
 }
 
 function windowResized() {
   updateCanvasSize();
   resizeCanvas(containerWidth, containerHeight);
-  solarSlider.size(canvasWidth / 2 - 120);
-  vegSlider.position(canvasWidth / 2 + 100, drawHeight + 5);
-  vegSlider.size(canvasWidth / 2 - 120);
   redraw();
 }
 

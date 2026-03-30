@@ -1,0 +1,48 @@
+{
+  "title": "Ecological Succession Timeline",
+  "creator": "Dan McCreary",
+  "subject": "Biology",
+  "description": "Interactive MicroSim showing how primary and secondary ecological succession progress over time.",
+  "date": "2026-02-27",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Biology",
+    "topic": "Ecological Succession",
+    "learningObjectives": [
+      "Compare the sequence and timing of stages in primary versus secondary succession.",
+      "Identify example organisms that characterize each stage and describe their ecological roles."
+    ],
+    "bloomsTaxonomy": "Create",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Basic knowledge of trophic roles and ecosystems"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 830
+    },
+    "responsive": true,
+    "dependencies": [],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration",
+    "keyQuestions": [],
+    "commonMisconceptions": [],
+    "assessmentOpportunities": []
+  },
+  "chapter": "19-community-ecology-and-species-interactions"
+}
