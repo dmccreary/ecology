@@ -7,7 +7,7 @@ hide:
 
 # List of MicroSims for Ecology
 
-This course has **81 interactive MicroSims** to help students explore ecology concepts through hands-on simulations, network diagrams, and data visualizations.
+This course has **83 interactive MicroSims** to help students explore ecology concepts through hands-on simulations, network diagrams, and data visualizations.
 
 <div class="grid cards" markdown>
 
@@ -52,6 +52,12 @@ This course has **81 interactive MicroSims** to help students explore ecology co
     ![Biomagnification Through a Food Web](./biomagnification-food-web/biomagnification-food-web.png)
 
     Interactive p5.js MicroSim for biomagnification through a food web.
+
+-   **[Biogeochemical Cycles Dashboard](./biogeochemical-cycles/index.md)**
+
+    ![Biogeochemical Cycles Dashboard](./biogeochemical-cycles/biogeochemical-cycles.png)
+
+    Interactive p5.js MicroSim for biogeochemical cycles dashboard with carbon, nitrogen, phosphorus, and water cycle overlays.
 
 -   **[Biome Connections Network](./biome-connections/index.md)**
 
@@ -448,6 +454,12 @@ This course has **81 interactive MicroSims** to help students explore ecology co
     ![Interactive Stock and Flow Sandbox](./stock-flow-sandbox/stock-flow-sandbox.png)
 
     Interactive p5.js MicroSim for interactive stock and flow sandbox.
+
+-   **[Ecological Succession Stages](./ecological-succession/index.md)**
+
+    ![Ecological Succession Stages](./ecological-succession/ecological-succession.png)
+
+    Interactive p5.js MicroSim visualizing primary vs secondary succession with stage illustrations and interactive controls.
 
 -   **[Ecological Succession Timeline](./succession-timeline/index.md)**
 

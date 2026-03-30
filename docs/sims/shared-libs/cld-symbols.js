@@ -14,6 +14,9 @@
 //   drawLoopIndicator(200, 150, 18, color(220, 100, 50), 'R');        // CW default
 //   drawLoopIndicator(200, 150, 18, color(220, 100, 50), 'R', 'CW'); // explicit CW
 //   drawLoopIndicator(500, 150, 18, color(50, 130, 200), 'B', 'CCW'); // CCW
+//
+// To include in a MicroSim's main.html, add before the sim's own script:
+//   <script src="../shared-libs/cld-symbols.js"></script>
 
 function drawLoopIndicator(cx, cy, r, col, label, dc) {
   // Draw a circular arrow around a CLD loop label

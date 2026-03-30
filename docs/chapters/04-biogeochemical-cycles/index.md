@@ -67,6 +67,12 @@ In this chapter, we will trace four major biogeochemical cycles:
 
 Each cycle has its own pace, its own reservoirs, and its own vulnerabilities. But they are all connected. Disrupting one cycle sends ripples through the others.
 
+#### Diagram: Biogeochemical Cycles Dashboard
+
+Use this interactive landscape dashboard to preview all four cycles in one view. Switch between tabs to see how carbon, nitrogen, phosphorus, and water flow through the same landscape. Hover markers to learn about each reservoir and flux, and toggle the "Human Impact" layer to see how human activities alter natural flows. We will explore each cycle in detail in the sections that follow.
+
+<iframe src="../../sims/biogeochemical-cycles/main.html" width="100%" height="468px" scrolling="no"></iframe>
+
 ---
 
 ## The Hydrologic Cycle: Earth's Water Highway

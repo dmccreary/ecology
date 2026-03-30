@@ -282,6 +282,12 @@ The classic example is an abandoned farm field:
 3. **Years 20-50**: Fast-growing trees like pines or birches form an early forest
 4. **Years 50-200+**: Shade-tolerant hardwoods gradually replace the pioneer trees, building toward a climax community
 
+#### Diagram: Ecological Succession Stages
+
+Explore the five major stages of both primary and secondary succession side by side. Scrub through the timeline to watch the landscape transform, compare soil depth development, and examine the species that characterize each stage.
+
+<iframe src="../../sims/ecological-succession/main.html" width="100%" height="830px" scrolling="no"></iframe>
+
 #### Diagram: Ecological Succession Timeline
 
 <iframe src="../../sims/succession-timeline/main.html" width="100%" height="482px" scrolling="no"></iframe>
