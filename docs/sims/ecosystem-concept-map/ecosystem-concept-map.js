@@ -1,4 +1,5 @@
 // Ecosystem Concept Map - vis-network
+// CANVAS_HEIGHT: 620
 // Interactive concept map showing 20 foundational ecology concepts
 
 document.addEventListener('DOMContentLoaded', function () {

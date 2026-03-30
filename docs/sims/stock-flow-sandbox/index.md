@@ -11,7 +11,7 @@ quality_score: 82
 
 # Interactive Stock and Flow Sandbox
 
-<iframe src="main.html" height="442" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="532" width="100%" scrolling="no"></iframe>
 
 [Run the Interactive Stock and Flow Sandbox MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -40,7 +40,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/stock-flow-sandbox/main.html"
-        height="442px"
+        height="532px"
         width="100%"
         scrolling="no"></iframe>
 ```

@@ -11,7 +11,7 @@ quality_score: 77
 
 # Water Properties and Ecological Importance
 
-<iframe src="main.html" height="502" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="547" width="100%" scrolling="no"></iframe>
 
 [Run the Water Properties and Ecological Importance MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -40,7 +40,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/water-properties-ecology/main.html"
-        height="502px"
+        height="547px"
         width="100%"
         scrolling="no"></iframe>
 ```

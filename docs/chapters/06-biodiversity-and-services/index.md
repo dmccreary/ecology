@@ -89,7 +89,7 @@ Ecosystem diversity also provides insurance. If a drought devastates grasslands,
 
 #### Diagram: Biodiversity Levels Pyramid
 
-<iframe src="../../sims/biodiversity-levels/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/biodiversity-levels/main.html" width="100%" height="512px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Biodiversity Levels Pyramid</summary>
@@ -191,7 +191,7 @@ where \( S \) is the number of species, \( A \) is the area, and \( c \) and \( 
 
 #### Diagram: Island Biogeography Simulator
 
-<iframe src="../../sims/island-biogeography/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/island-biogeography/main.html" width="100%" height="632px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Island Biogeography Simulator</summary>
@@ -222,7 +222,7 @@ Species with broad tolerance ranges for many factors are called **generalists** 
 
 #### Diagram: Tolerance Range Explorer
 
-<iframe src="../../sims/tolerance-range/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/tolerance-range/main.html" width="100%" height="447px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Tolerance Range Explorer</summary>
@@ -284,7 +284,7 @@ The classic example is an abandoned farm field:
 
 #### Diagram: Ecological Succession Timeline
 
-<iframe src="../../sims/succession-timeline/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/succession-timeline/main.html" width="100%" height="482px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Ecological Succession Timeline</summary>
@@ -343,7 +343,7 @@ Biodiversity, ecosystem services, island biogeography, tolerance, and succession
 
 #### Diagram: Ecosystem Services Web
 
-<iframe src="../../sims/ecosystem-services-web/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/ecosystem-services-web/main.html" width="100%" height="622px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Ecosystem Services Web</summary>

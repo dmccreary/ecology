@@ -11,7 +11,7 @@ quality_score: 78
 
 # Carbon Pricing Comparison
 
-<iframe src="main.html" height="502" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="582" width="100%" scrolling="no"></iframe>
 
 [Run the Carbon Pricing Comparison MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -40,7 +40,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/carbon-pricing/main.html"
-        height="502px"
+        height="582px"
         width="100%"
         scrolling="no"></iframe>
 ```

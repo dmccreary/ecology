@@ -1,4 +1,5 @@
 // The Carbon Cycle - Interactive Model
+// CANVAS_HEIGHT: 540
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 460;

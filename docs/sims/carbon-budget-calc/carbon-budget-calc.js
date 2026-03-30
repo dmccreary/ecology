@@ -1,4 +1,5 @@
 // Ecosystem Carbon Budget Calculator
+// CANVAS_HEIGHT: 565
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 450;

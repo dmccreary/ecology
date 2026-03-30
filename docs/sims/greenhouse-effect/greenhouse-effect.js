@@ -1,4 +1,5 @@
 // Greenhouse Effect Energy Balance - p5.js
+// CANVAS_HEIGHT: 490
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 420;

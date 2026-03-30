@@ -11,7 +11,7 @@ quality_score: 80
 
 # Population Growth Simulator
 
-<iframe src="main.html" height="402" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="512" width="100%" scrolling="no"></iframe>
 
 [Run the Population Growth Simulator MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -41,7 +41,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/population-growth/main.html"
-        height="450px"
+        height="512px"
         width="100%"
         scrolling="no"></iframe>
 ```

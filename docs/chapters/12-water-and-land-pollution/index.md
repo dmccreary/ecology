@@ -90,7 +90,7 @@ Some algal blooms produce toxins dangerous to fish, wildlife, and even humans. B
 
 #### Diagram: Eutrophication Cascade
 
-<iframe src="../../sims/eutrophication-cascade/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/eutrophication-cascade/main.html" width="100%" height="492px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Eutrophication Cascade</summary>
@@ -142,7 +142,7 @@ This accumulation happens through two related but distinct processes. **Bioaccum
 
 #### Diagram: Biomagnification Through a Food Web
 
-<iframe src="../../sims/biomagnification-food-web/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/biomagnification-food-web/main.html" width="100%" height="532px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Biomagnification Through a Food Web</summary>
@@ -198,7 +198,7 @@ A **dose-response curve** is a graph showing the relationship between the amount
 
 #### Diagram: Interactive Dose-Response Curve Explorer
 
-<iframe src="../../sims/dose-response-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/dose-response-explorer/main.html" width="100%" height="502px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Interactive Dose-Response Curve Explorer</summary>
@@ -244,7 +244,7 @@ The waste management hierarchy prioritizes approaches from most to least desirab
 
 #### Diagram: Waste Management Decision Flowchart
 
-<iframe src="../../sims/waste-management-flow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/waste-management-flow/main.html" width="100%" height="647px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Waste Management Decision Flowchart</summary>
@@ -309,7 +309,7 @@ Practice this with any pollution-related news story you encounter this week. Hea
 
 #### Diagram: Pollutant Pathways Map
 
-<iframe src="../../sims/pollutant-pathways-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/pollutant-pathways-map/main.html" width="100%" height="492px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Pollutant Pathways Map</summary>

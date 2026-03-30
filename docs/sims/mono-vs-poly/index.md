@@ -11,7 +11,7 @@ quality_score: 80
 
 # Monoculture vs. Polyculture Ecosystem Comparison
 
-<iframe src="main.html" height="482" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="532" width="100%" scrolling="no"></iframe>
 
 [Run the Monoculture vs. Polyculture Comparison Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -41,7 +41,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/mono-vs-poly/main.html"
-        height="482px"
+        height="532px"
         width="100%"
         scrolling="no"></iframe>
 ```

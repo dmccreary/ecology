@@ -11,7 +11,7 @@ quality_score: 78
 
 # Criteria Air Pollutants Source-to-Impact Tracker
 
-<iframe src="main.html" height="630" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="657" width="100%" scrolling="no"></iframe>
 
 [Run the Criteria Air Pollutants Source-to-Impact Tracker Fullscreen](./main.html){ .md-button .md-button--primary }
 
@@ -39,7 +39,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/criteria-pollutant-tracker/main.html"
-        height="630px"
+        height="657px"
         width="100%"
         scrolling="no"></iframe>
 ```

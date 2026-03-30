@@ -11,7 +11,7 @@ quality_score: 75
 
 # Citizen Science Project Finder
 
-<iframe src="main.html" height="562" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="642" width="100%" scrolling="no"></iframe>
 
 [Run the Citizen Science Project Finder MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -41,7 +41,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/citizen-science/main.html"
-        height="562px"
+        height="642px"
         width="100%"
         scrolling="no"></iframe>
 ```

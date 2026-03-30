@@ -98,7 +98,7 @@ The result: the environmental information that reaches you through social media 
 
 #### Diagram: Information Ecosystem Flow
 
-<iframe src="../../sims/info-ecosystem/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/info-ecosystem/main.html" width="100%" height="627px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Information Ecosystem Flow</summary>
@@ -208,7 +208,7 @@ For environmental claims that cite "science" or "studies," add these checks:
 
 #### Diagram: Fact-Checking Workflow
 
-<iframe src="../../sims/fact-check-workflow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/fact-check-workflow/main.html" width="100%" height="607px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Fact-Checking Workflow</summary>
@@ -303,7 +303,7 @@ The best defense against confirmation bias is *actively seeking out* the stronge
 
 #### Diagram: Cognitive Bias Detective
 
-<iframe src="../../sims/bias-detective/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/bias-detective/main.html" width="100%" height="587px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Cognitive Bias Detective</summary>
@@ -402,7 +402,7 @@ When evaluating environmental claims and policies, always ask: **Who benefits? W
 
 #### Diagram: Environmental Justice Mapping Tool
 
-<iframe src="../../sims/ej-mapping/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/ej-mapping/main.html" width="100%" height="602px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Environmental Justice Mapping Tool</summary>
@@ -460,7 +460,7 @@ Citizen science matters because:
 
 #### Diagram: Citizen Science Project Finder
 
-<iframe src="../../sims/citizen-science/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/citizen-science/main.html" width="100%" height="642px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Citizen Science Project Finder</summary>

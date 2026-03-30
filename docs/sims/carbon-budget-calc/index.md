@@ -11,7 +11,7 @@ quality_score: 83
 
 # Ecosystem Carbon Budget Calculator
 
-<iframe src="main.html" height="452" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="567" width="100%" scrolling="no"></iframe>
 
 [Run the Ecosystem Carbon Budget Calculator MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -44,7 +44,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/carbon-budget-calc/main.html"
-        height="452px"
+        height="567px"
         width="100%"
         scrolling="no"></iframe>
 ```

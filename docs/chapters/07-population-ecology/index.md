@@ -126,7 +126,7 @@ There are three idealized types:
 
 #### Diagram: Survivorship Curve Explorer
 
-<iframe src="../../sims/survivorship-curves/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/survivorship-curves/main.html" width="100%" height="497px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Survivorship Curve Explorer</summary>
@@ -179,7 +179,7 @@ The population grows fastest at \( N = K/2 \) -- that's the inflection point of 
 
 #### Diagram: Population Growth Simulator
 
-<iframe src="../../sims/population-growth/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/population-growth/main.html" width="100%" height="512px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Population Growth Simulator</summary>
@@ -302,7 +302,7 @@ Some demographers propose a **Stage 5** where birth rates fall well below death 
 
 #### Diagram: Demographic Transition Model
 
-<iframe src="../../sims/demographic-transition/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/demographic-transition/main.html" width="100%" height="482px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Demographic Transition Model</summary>

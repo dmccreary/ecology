@@ -192,7 +192,7 @@ Fragmentation is devastating for several reasons:
 
 #### Diagram: Habitat Fragmentation Simulator
 
-<iframe src="../../sims/habitat-fragmentation/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/habitat-fragmentation/main.html" width="100%" height="577px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Habitat Fragmentation Simulator</summary>
@@ -307,7 +307,7 @@ The Paris Agreement is a diplomatic achievement, but current national pledges ar
 
 #### Diagram: Conservation Policy Timeline
 
-<iframe src="../../sims/conservation-timeline/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/conservation-timeline/main.html" width="100%" height="497px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Conservation Policy Timeline</summary>
@@ -372,7 +372,7 @@ The European Union Emissions Trading System (EU ETS) is the world's largest cap-
 
 #### Diagram: Carbon Pricing Comparison
 
-<iframe src="../../sims/carbon-pricing/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/carbon-pricing/main.html" width="100%" height="582px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Carbon Pricing Comparison</summary>

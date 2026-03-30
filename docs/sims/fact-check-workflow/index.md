@@ -11,7 +11,7 @@ quality_score: 85
 
 # Fact-Checking Workflow
 
-<iframe src="main.html" height="562" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="607" width="100%" scrolling="no"></iframe>
 
 [Run the Fact-Checking Workflow MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -42,7 +42,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/fact-check-workflow/main.html"
-        height="562px"
+        height="607px"
         width="100%"
         scrolling="no"></iframe>
 ```

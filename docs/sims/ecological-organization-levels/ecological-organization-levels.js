@@ -1,4 +1,5 @@
 // Levels of Ecological Organization
+// CANVAS_HEIGHT: 545
 // Step-through nested diagram from Individual to Biosphere
 
 let containerWidth;

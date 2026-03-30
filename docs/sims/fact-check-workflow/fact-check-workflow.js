@@ -1,4 +1,5 @@
 // Fact-Checking Workflow MicroSim
+// CANVAS_HEIGHT: 605
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 560;

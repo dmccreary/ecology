@@ -11,7 +11,7 @@ quality_score: 82
 
 # The Carbon Cycle
 
-<iframe src="main.html" height="462" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="542" width="100%" scrolling="no"></iframe>
 
 [Run the The Carbon Cycle MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -41,7 +41,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/carbon-cycle/main.html"
-        height="462px"
+        height="542px"
         width="100%"
         scrolling="no"></iframe>
 ```

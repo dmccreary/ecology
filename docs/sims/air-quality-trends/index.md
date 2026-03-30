@@ -11,7 +11,7 @@ quality_score: 78
 
 # U.S. Air Quality Trends Dashboard
 
-<iframe src="main.html" height="450" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="482" width="100%" scrolling="no"></iframe>
 
 [Run the U.S. Air Quality Trends Dashboard MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
@@ -39,7 +39,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/air-quality-trends/main.html"
-        height="450px"
+        height="482px"
         width="100%"
         scrolling="no"></iframe>
 ```

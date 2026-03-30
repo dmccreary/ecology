@@ -1,4 +1,5 @@
 // Habitat Fragmentation Simulator
+// CANVAS_HEIGHT: 575
 // Apply: Demonstrate how fragmentation reduces effective habitat
 let containerWidth;
 let canvasWidth = 400;

@@ -1,4 +1,5 @@
 // Confidence Interval Visualizer - p5.js
+// CANVAS_HEIGHT: 540
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 450;

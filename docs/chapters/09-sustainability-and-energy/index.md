@@ -213,7 +213,7 @@ Where \( N(t) \) is the amount remaining after time \( t \), \( N_0 \) is the in
 
 #### Diagram: Radioactive Decay Simulator
 
-<iframe src="../../sims/radioactive-decay/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/radioactive-decay/main.html" width="100%" height="477px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Radioactive Decay Simulator</summary>
@@ -309,7 +309,7 @@ Currently, over 95% of hydrogen is gray. For hydrogen to be a clean energy solut
 
 #### Diagram: Energy Source Comparison Dashboard
 
-<iframe src="../../sims/energy-comparison-dashboard/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/energy-comparison-dashboard/main.html" width="100%" height="707px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Energy Source Comparison Dashboard</summary>
@@ -378,7 +378,7 @@ Examples of energy efficiency gains:
 
 #### Diagram: Cogeneration System Flow
 
-<iframe src="../../sims/cogeneration-flow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/cogeneration-flow/main.html" width="100%" height="677px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Cogeneration System Flow</summary>
@@ -409,7 +409,7 @@ The energy transition is not just a technical challenge. It's a systems challeng
 
 #### Diagram: Global Energy Mix Scenario Explorer
 
-<iframe src="../../sims/energy-mix-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/energy-mix-explorer/main.html" width="100%" height="742px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Global Energy Mix Scenario Explorer</summary>

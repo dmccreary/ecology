@@ -1,4 +1,5 @@
 // Interactive Stock and Flow Sandbox MicroSim
+// CANVAS_HEIGHT: 530
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 440;

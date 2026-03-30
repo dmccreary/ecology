@@ -1,4 +1,5 @@
 // Global Wind and Convection Cell Model
+// CANVAS_HEIGHT: 525
 // Cross-section of Earth from pole to pole with atmospheric circulation
 
 let containerWidth;

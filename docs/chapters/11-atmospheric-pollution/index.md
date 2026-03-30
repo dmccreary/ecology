@@ -146,7 +146,7 @@ The leaded gasoline story is one of the most dramatic environmental health victo
 
 #### Diagram: Criteria Air Pollutants Source-to-Impact Tracker
 
-<iframe src="../../sims/criteria-pollutant-tracker/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/criteria-pollutant-tracker/main.html" width="100%" height="657px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Criteria Air Pollutants Source-to-Impact Tracker</summary>
@@ -199,7 +199,7 @@ Thermal inversions are responsible for some of the worst air pollution disasters
 
 #### Diagram: Thermal Inversion Simulator
 
-<iframe src="../../sims/thermal-inversion/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/thermal-inversion/main.html" width="100%" height="507px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Thermal Inversion Simulator</summary>
@@ -271,7 +271,7 @@ Acid rain is a powerful example of how pollution in one location affects ecosyst
 
 #### Diagram: Acid Rain Formation and Impact Pathway
 
-<iframe src="../../sims/acid-rain-pathway/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/acid-rain-pathway/main.html" width="100%" height="627px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Acid Rain Formation and Impact Pathway</summary>
@@ -351,7 +351,7 @@ Modern three-way catalytic converters reduce these pollutants by over 90%. They 
 
 #### Diagram: U.S. Air Quality Trends Dashboard
 
-<iframe src="../../sims/air-quality-trends/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/air-quality-trends/main.html" width="100%" height="482px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>U.S. Air Quality Trends Dashboard</summary>

@@ -1,4 +1,5 @@
 // Emergence Simulator - Boids Flocking MicroSim
+// CANVAS_HEIGHT: 515
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 440;

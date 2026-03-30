@@ -11,7 +11,7 @@ quality_score: 85
 
 # Complete Ecosystem Energy Budget
 
-<iframe src="main.html" height="522" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="567" width="100%" scrolling="no"></iframe>
 
 [Run the Complete Ecosystem Energy Budget MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -41,7 +41,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/ecosystem-energy-budget/main.html"
-        height="522px"
+        height="567px"
         width="100%"
         scrolling="no"></iframe>
 ```

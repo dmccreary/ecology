@@ -1,4 +1,5 @@
 // Renewable vs. Nonrenewable Energy Flow - vis-network diagram
+// CANVAS_HEIGHT: 580
 // Two clusters showing energy pathways from source to end use
 
 document.addEventListener('DOMContentLoaded', function() {

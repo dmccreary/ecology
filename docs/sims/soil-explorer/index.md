@@ -11,7 +11,7 @@ quality_score: 81
 
 # Soil Horizons and Texture Explorer
 
-<iframe src="main.html" height="522" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="582" width="100%" scrolling="no"></iframe>
 
 [Run the Soil Horizons and Texture Explorer MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -41,7 +41,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/soil-explorer/main.html"
-        height="450px"
+        height="582px"
         width="100%"
         scrolling="no"></iframe>
 ```

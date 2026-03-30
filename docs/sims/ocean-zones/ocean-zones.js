@@ -1,4 +1,5 @@
 // Ocean Zones Interactive
+// CANVAS_HEIGHT: 695
 // Vertical cross-section from surface to deep ocean with depth indicator
 
 let containerWidth;

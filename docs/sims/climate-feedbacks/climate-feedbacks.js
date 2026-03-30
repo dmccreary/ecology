@@ -1,4 +1,5 @@
 // Climate Feedback Loops - vis-network
+// CANVAS_HEIGHT: 560
 document.addEventListener('DOMContentLoaded', function() {
   const mainEl = document.querySelector('main');
 

@@ -1,4 +1,5 @@
 // Ecosystem Services Web - vis-network graph
+// CANVAS_HEIGHT: 620
 // Interactive network showing four categories of ecosystem services
 
 document.addEventListener('DOMContentLoaded', function() {

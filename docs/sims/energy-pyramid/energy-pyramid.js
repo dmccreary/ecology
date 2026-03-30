@@ -1,4 +1,5 @@
 // Energy Pyramid Simulator
+// CANVAS_HEIGHT: 530
 // Interactive pyramid with adjustable energy input and transfer efficiency
 
 let containerWidth;

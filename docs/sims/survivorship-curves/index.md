@@ -11,7 +11,7 @@ quality_score: 82
 
 # Survivorship Curve Explorer
 
-<iframe src="main.html" height="452" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="497" width="100%" scrolling="no"></iframe>
 
 [Run the Survivorship Curve Explorer MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -40,7 +40,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/survivorship-curves/main.html"
-        height="452px"
+        height="497px"
         width="100%"
         scrolling="no"></iframe>
 ```

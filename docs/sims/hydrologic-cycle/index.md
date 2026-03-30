@@ -11,7 +11,7 @@ quality_score: 78
 
 # The Hydrologic Cycle
 
-<iframe src="main.html" height="422" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="467" width="100%" scrolling="no"></iframe>
 
 [Run the Hydrologic Cycle MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -40,7 +40,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/hydrologic-cycle/main.html"
-        height="422px"
+        height="467px"
         width="100%"
         scrolling="no"></iframe>
 ```

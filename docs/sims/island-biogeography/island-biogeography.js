@@ -1,4 +1,5 @@
 // Island Biogeography Simulator
+// CANVAS_HEIGHT: 630
 // Demonstrates species-area relationship and distance effect
 
 let containerWidth;

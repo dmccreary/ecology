@@ -11,7 +11,7 @@ quality_score: 85
 
 # Tipping Points Explorer
 
-<iframe src="main.html" height="462" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="512" width="100%" scrolling="no"></iframe>
 
 [Run the Tipping Points Explorer MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -40,7 +40,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/tipping-points/main.html"
-        height="462px"
+        height="512px"
         width="100%"
         scrolling="no"></iframe>
 ```

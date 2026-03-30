@@ -11,7 +11,7 @@ quality_score: 83
 
 # Global Energy Mix Scenario Explorer
 
-<iframe src="main.html" height="522" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="742" width="100%" scrolling="no"></iframe>
 
 [Run the Global Energy Mix Scenario Explorer MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -40,7 +40,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/energy-mix-explorer/main.html"
-        height="522px"
+        height="742px"
         width="100%"
         scrolling="no"></iframe>
 ```

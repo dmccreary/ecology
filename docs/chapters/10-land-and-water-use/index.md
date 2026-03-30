@@ -154,7 +154,7 @@ The results were staggering. Global food production more than doubled between 19
 
 #### Diagram: Monoculture vs. Polyculture Ecosystem Comparison
 
-<iframe src="../../sims/mono-vs-poly/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/mono-vs-poly/main.html" width="100%" height="532px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Monoculture vs. Polyculture Ecosystem Comparison</summary>
@@ -233,7 +233,7 @@ IPM typically reduces pesticide use by 50-70% while maintaining yields. It's not
 
 #### Diagram: Integrated Pest Management Decision Flowchart
 
-<iframe src="../../sims/ipm-decision-tree/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/ipm-decision-tree/main.html" width="100%" height="647px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Integrated Pest Management Decision Flowchart</summary>
@@ -344,7 +344,7 @@ The **urban heat island** effect occurs when cities are significantly warmer tha
 
 #### Diagram: Urban Heat Island Profile
 
-<iframe src="../../sims/urban-heat-island/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/urban-heat-island/main.html" width="100%" height="487px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Urban Heat Island Profile</summary>
@@ -396,7 +396,7 @@ The trade-off? No-till farming sometimes requires more herbicide to control weed
 
 #### Diagram: Soil Health Comparison: Tillage Methods
 
-<iframe src="../../sims/soil-health-comparison/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/soil-health-comparison/main.html" width="100%" height="567px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Soil Health Comparison: Tillage Methods</summary>

@@ -1,4 +1,5 @@
 // Biodiversity Levels Pyramid
+// CANVAS_HEIGHT: 510
 // Interactive three-tier pyramid showing genetic, species, and ecosystem diversity
 
 let containerWidth;

@@ -1,4 +1,5 @@
 // Information Ecosystem Flow - vis-network
+// CANVAS_HEIGHT: 625
 // Traces how environmental claims flow from sources through media to audience understanding
 
 document.addEventListener('DOMContentLoaded', function () {

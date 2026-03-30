@@ -1,4 +1,5 @@
 // Interactive Food Web Builder - vis-network
+// CANVAS_HEIGHT: 605
 // Students build feeding relationships and test species removal
 
 document.addEventListener('DOMContentLoaded', function () {

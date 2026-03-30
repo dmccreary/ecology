@@ -1,4 +1,5 @@
 // Cognitive Bias Detective MicroSim
+// CANVAS_HEIGHT: 585
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 540;

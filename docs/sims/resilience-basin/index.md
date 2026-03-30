@@ -11,7 +11,7 @@ quality_score: 83
 
 # Resilience Ball-in-Basin Model
 
-<iframe src="main.html" height="402" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="477" width="100%" scrolling="no"></iframe>
 
 [Run the Resilience Ball-in-Basin Model MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -40,7 +40,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/resilience-basin/main.html"
-        height="450px"
+        height="477px"
         width="100%"
         scrolling="no"></iframe>
 ```

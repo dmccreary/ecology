@@ -11,7 +11,7 @@ quality_score: 79
 
 # Ocean Zones Interactive
 
-<iframe src="main.html" height="652" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="697" width="100%" scrolling="no"></iframe>
 
 [Run the Ocean Zones Interactive Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -41,7 +41,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/ocean-zones/main.html"
-        height="652px"
+        height="697px"
         width="100%"
         scrolling="no"></iframe>
 ```

@@ -84,7 +84,7 @@ The magic of ecology is that biotic and abiotic factors don't exist in isolation
 
 #### Diagram: Ecosystem Components Interactive Explorer
 
-<iframe src="../../sims/ecosystem-components-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/ecosystem-components-explorer/main.html" width="100%" height="547px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Ecosystem Components Interactive Explorer</summary>
@@ -174,7 +174,7 @@ You'll explore individual biomes in detail in Chapter 2. For now, the key idea i
 
 #### Diagram: Levels of Ecological Organization
 
-<iframe src="../../sims/ecological-organization-levels/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/ecological-organization-levels/main.html" width="100%" height="547px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Levels of Ecological Organization</summary>
@@ -266,7 +266,7 @@ What makes water so special? Its molecular structure -- two hydrogen atoms bonde
 
 #### Diagram: Water Properties and Ecological Importance
 
-<iframe src="../../sims/water-properties-ecology/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/water-properties-ecology/main.html" width="100%" height="547px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Water Properties and Ecological Importance</summary>
@@ -340,7 +340,7 @@ Here's the beautiful systems-level insight: **photosynthesis and cellular respir
 
 #### Diagram: Photosynthesis and Cellular Respiration Cycle
 
-<iframe src="../../sims/photosynthesis-respiration-cycle/main.html" width="100%" height="550px" scrolling="no"></iframe>
+<iframe src="../../sims/photosynthesis-respiration-cycle/main.html" width="100%" height="582px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Photosynthesis and Cellular Respiration Cycle</summary>

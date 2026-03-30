@@ -1,4 +1,5 @@
 // Thermal Inversion Simulator
+// CANVAS_HEIGHT: 505
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 460;

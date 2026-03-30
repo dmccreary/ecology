@@ -11,7 +11,7 @@ quality_score: 78
 
 # Interactive Food Web Builder
 
-<iframe src="main.html" height="580" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="607" width="100%" scrolling="no"></iframe>
 
 [Run the Interactive Food Web Builder MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -39,7 +39,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/food-web-builder/main.html"
-        height="580px"
+        height="607px"
         width="100%"
         scrolling="no"></iframe>
 ```

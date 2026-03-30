@@ -1,4 +1,5 @@
 // Resource Partitioning in Warblers
+// CANVAS_HEIGHT: 595
 // Interactive diagram showing foraging zones on a conifer tree
 
 let containerWidth;

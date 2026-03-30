@@ -11,7 +11,7 @@ quality_score: 82
 
 # Energy Flow Tracker
 
-<iframe src="main.html" height="442" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="487" width="100%" scrolling="no"></iframe>
 
 [Run the Energy Flow Tracker MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -40,7 +40,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/energy-flow-tracker/main.html"
-        height="450px"
+        height="487px"
         width="100%"
         scrolling="no"></iframe>
 ```

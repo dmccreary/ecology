@@ -98,7 +98,7 @@ The relationship is intuitive:
 
 #### Diagram: Interactive Stock and Flow Sandbox
 
-<iframe src="../../sims/stock-flow-sandbox/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/stock-flow-sandbox/main.html" width="100%" height="532px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Interactive Stock and Flow Sandbox</summary>
@@ -163,7 +163,7 @@ Most real systems contain *both* reinforcing and balancing loops working simulta
 
 #### Diagram: Feedback Loop Explorer
 
-<iframe src="../../sims/feedback-loop-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/feedback-loop-explorer/main.html" width="100%" height="517px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Feedback Loop Explorer</summary>
@@ -236,7 +236,7 @@ You cannot predict emergent properties by studying parts in isolation. This is w
 
 #### Diagram: Emergence Simulator
 
-<iframe src="../../sims/emergence-simulator/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/emergence-simulator/main.html" width="100%" height="517px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Emergence Simulator</summary>
@@ -331,7 +331,7 @@ Real-world regime shifts:
 
 #### Diagram: Resilience Ball-in-Basin Model
 
-<iframe src="../../sims/resilience-basin/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/resilience-basin/main.html" width="100%" height="477px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Resilience Ball-in-Basin Model</summary>
@@ -368,7 +368,7 @@ This is systems thinking in action. You acknowledge that your mental model is in
 
 #### Diagram: Adaptive Management Cycle
 
-<iframe src="../../sims/adaptive-management-cycle/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/adaptive-management-cycle/main.html" width="100%" height="532px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Adaptive Management Cycle</summary>

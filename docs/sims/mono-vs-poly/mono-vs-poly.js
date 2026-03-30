@@ -1,4 +1,5 @@
 // Monoculture vs. Polyculture Ecosystem Comparison - p5.js
+// CANVAS_HEIGHT: 530
 // Side-by-side simulation of pest spread, drought, and nutrient depletion
 
 let containerWidth;

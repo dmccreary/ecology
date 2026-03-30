@@ -11,7 +11,7 @@ quality_score: 79
 
 # Tolerance Range Explorer
 
-<iframe src="main.html" height="402" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="447" width="100%" scrolling="no"></iframe>
 
 [Run the Tolerance Range Explorer MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -40,7 +40,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/tolerance-range/main.html"
-        height="402px"
+        height="447px"
         width="100%"
         scrolling="no"></iframe>
 ```

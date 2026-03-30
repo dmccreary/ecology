@@ -11,7 +11,7 @@ quality_score: 79
 
 # ENSO Cycle Interactive
 
-<iframe src="main.html" height="422" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="472" width="100%" scrolling="no"></iframe>
 
 [Run the ENSO Cycle Interactive MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -40,7 +40,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/enso-cycle/main.html"
-        height="422px"
+        height="472px"
         width="100%"
         scrolling="no"></iframe>
 ```

@@ -84,7 +84,7 @@ The ENSO Cycle is a natural oscillation -- it's been happening for thousands of 
 
 #### Diagram: ENSO Cycle Interactive
 
-<iframe src="../../sims/enso-cycle/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/enso-cycle/main.html" width="100%" height="472px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>ENSO Cycle Interactive</summary>
@@ -181,7 +181,7 @@ Carbon dioxide gets the most attention because we release enormous quantities of
 
 #### Diagram: Greenhouse Effect Energy Balance
 
-<iframe src="../../sims/greenhouse-effect/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/greenhouse-effect/main.html" width="100%" height="492px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Greenhouse Effect Energy Balance</summary>
@@ -341,7 +341,7 @@ Even modest sea level rise threatens:
 
 #### Diagram: Ocean Impacts Dashboard
 
-<iframe src="../../sims/ocean-impacts/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/ocean-impacts/main.html" width="100%" height="697px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Ocean Impacts Dashboard</summary>
@@ -416,7 +416,7 @@ Scientists estimate that Arctic permafrost contains roughly 1,500 billion metric
 
 #### Diagram: Climate Feedback Loops
 
-<iframe src="../../sims/climate-feedbacks/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/climate-feedbacks/main.html" width="100%" height="562px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Climate Feedback Loops</summary>
@@ -487,7 +487,7 @@ Notice that many of these thresholds cluster around 1.5-2.0°C of warming -- the
 
 #### Diagram: Tipping Points Explorer
 
-<iframe src="../../sims/tipping-points/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/tipping-points/main.html" width="100%" height="512px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Tipping Points Explorer</summary>
@@ -568,7 +568,7 @@ Understanding climate science isn't just academic -- it empowers action. Here ar
 
 #### Diagram: Climate Solutions Pathway
 
-<iframe src="../../sims/climate-solutions/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/climate-solutions/main.html" width="100%" height="547px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Climate Solutions Pathway</summary>

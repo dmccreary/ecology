@@ -60,7 +60,7 @@ Why so little? Several reasons:
 
 #### Diagram: Solar Energy Budget
 
-<iframe src="../../sims/solar-energy-budget/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/solar-energy-budget/main.html" width="100%" height="452px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Solar Energy Budget</summary>
@@ -215,7 +215,7 @@ Notice something surprising: the open ocean has low productivity per square mete
 
 #### Diagram: Global NPP Heatmap
 
-<iframe src="../../sims/global-npp-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/global-npp-map/main.html" width="100%" height="547px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Global NPP Heatmap</summary>
@@ -279,7 +279,7 @@ At each step, heat escapes into the environment. This heat warms the air, the so
 
 #### Diagram: Energy Flow Tracker
 
-<iframe src="../../sims/energy-flow-tracker/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/energy-flow-tracker/main.html" width="100%" height="487px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Energy Flow Tracker</summary>
@@ -368,7 +368,7 @@ Understanding NEP is critical for climate science. Earth's ecosystems collective
 
 #### Diagram: Ecosystem Carbon Budget Calculator
 
-<iframe src="../../sims/carbon-budget-calc/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/carbon-budget-calc/main.html" width="100%" height="567px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Ecosystem Carbon Budget Calculator</summary>
@@ -430,7 +430,7 @@ Notice the accounting: of the original 1,000,000 kcal of solar energy, only 800 
 
 #### Diagram: Complete Ecosystem Energy Budget
 
-<iframe src="../../sims/ecosystem-energy-budget/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/ecosystem-energy-budget/main.html" width="100%" height="567px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Complete Ecosystem Energy Budget</summary>

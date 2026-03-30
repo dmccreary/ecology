@@ -1,4 +1,5 @@
 // Correlation vs. Causation Challenge - p5.js
+// CANVAS_HEIGHT: 525
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 480;

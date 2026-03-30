@@ -1,4 +1,5 @@
 // Climate Solutions Pathway MicroSim
+// CANVAS_HEIGHT: 545
 // Evaluate: Assess relative impact of climate solutions
 let containerWidth;
 let canvasWidth = 400;

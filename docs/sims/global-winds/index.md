@@ -11,7 +11,7 @@ quality_score: 79
 
 # Global Wind and Convection Cell Model
 
-<iframe src="main.html" height="482" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="527" width="100%" scrolling="no"></iframe>
 
 [Run the Global Wind and Convection Cell Model MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -39,7 +39,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/global-winds/main.html"
-        height="482px"
+        height="527px"
         width="100%"
         scrolling="no"></iframe>
 ```

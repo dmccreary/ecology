@@ -11,7 +11,7 @@ quality_score: 79
 
 # Solar Radiation and Albedo Simulator
 
-<iframe src="main.html" height="422" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="472" width="100%" scrolling="no"></iframe>
 
 [Run the Solar Radiation and Albedo Simulator MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -41,7 +41,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/solar-albedo/main.html"
-        height="450px"
+        height="472px"
         width="100%"
         scrolling="no"></iframe>
 ```

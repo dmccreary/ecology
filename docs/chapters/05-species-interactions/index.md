@@ -96,7 +96,7 @@ This oscillation was famously documented in the **lynx and snowshoe hare** popul
 
 #### Diagram: Predator-Prey Population Dynamics
 
-<iframe src="../../sims/predator-prey/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/predator-prey/main.html" width="100%" height="697px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Predator-Prey Population Dynamics Simulator</summary>
@@ -152,7 +152,7 @@ Resource partitioning reduces competition enough for species to coexist. It is w
 
 #### Diagram: Resource Partitioning in Warblers
 
-<iframe src="../../sims/resource-partitioning/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/resource-partitioning/main.html" width="100%" height="597px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Resource Partitioning Interactive Diagram</summary>
@@ -310,7 +310,7 @@ Invasive species are one of the top five drivers of biodiversity loss worldwide.
 
 #### Diagram: Invasive Species Impact Network
 
-<iframe src="../../sims/invasive-species/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/invasive-species/main.html" width="100%" height="562px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Invasive Species Cascade Simulator</summary>

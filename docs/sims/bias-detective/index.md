@@ -11,7 +11,7 @@ quality_score: 82
 
 # Cognitive Bias Detective
 
-<iframe src="main.html" height="542" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="587" width="100%" scrolling="no"></iframe>
 
 [Run the Cognitive Bias Detective MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -42,7 +42,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/bias-detective/main.html"
-        height="542px"
+        height="587px"
         width="100%"
         scrolling="no"></iframe>
 ```

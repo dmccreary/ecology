@@ -11,7 +11,7 @@ quality_score: 82
 
 # Predator-Prey Population Dynamics
 
-<iframe src="main.html" height="402" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="697" width="100%" scrolling="no"></iframe>
 
 [Run the Predator-Prey Population Dynamics MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -42,7 +42,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/predator-prey/main.html"
-        height="450px"
+        height="697px"
         width="100%"
         scrolling="no"></iframe>
 ```

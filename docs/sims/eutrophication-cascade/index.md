@@ -11,7 +11,7 @@ quality_score: 84
 
 # Eutrophication Cascade
 
-<iframe src="main.html" height="402" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="492" width="100%" scrolling="no"></iframe>
 
 [Run the Eutrophication Cascade MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -41,7 +41,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/eutrophication-cascade/main.html"
-        height="402px"
+        height="492px"
         width="100%"
         scrolling="no"></iframe>
 ```

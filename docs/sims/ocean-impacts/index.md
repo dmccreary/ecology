@@ -11,7 +11,7 @@ quality_score: 81
 
 # Ocean Impacts Dashboard
 
-<iframe src="main.html" height="450px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="697px" width="100%" scrolling="no"></iframe>
 
 [Run the Ocean Impacts Dashboard Fullscreen](./main.html){ .md-button .md-button--primary }
 
@@ -38,7 +38,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/ocean-impacts/main.html"
-        height="450px"
+        height="697px"
         width="100%"
         scrolling="no"></iframe>
 ```

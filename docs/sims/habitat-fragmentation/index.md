@@ -11,7 +11,7 @@ quality_score: 83
 
 # Habitat Fragmentation Simulator
 
-<iframe src="main.html" height="462" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="577" width="100%" scrolling="no"></iframe>
 
 [Run the Habitat Fragmentation Simulator MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -42,7 +42,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/habitat-fragmentation/main.html"
-        height="462px"
+        height="577px"
         width="100%"
         scrolling="no"></iframe>
 ```

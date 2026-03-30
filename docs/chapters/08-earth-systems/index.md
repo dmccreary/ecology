@@ -133,7 +133,7 @@ The ideal soil for most plants is **loam** -- a balanced mix of roughly 40% sand
 
 #### Diagram: Soil Horizons and Texture Explorer
 
-<iframe src="../../sims/soil-explorer/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/soil-explorer/main.html" width="100%" height="582px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Soil Horizons and Texture Explorer</summary>
@@ -241,7 +241,7 @@ Albedo creates powerful feedback loops. As Arctic ice melts, dark ocean water re
 
 #### Diagram: Solar Radiation and Albedo Simulator
 
-<iframe src="../../sims/solar-albedo/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/solar-albedo/main.html" width="100%" height="472px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Solar Radiation and Albedo Simulator</summary>
@@ -291,7 +291,7 @@ The Coriolis effect is what turns simple north-south winds into the curved **glo
 
 #### Diagram: Global Wind and Convection Cell Model
 
-<iframe src="../../sims/global-winds/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/global-winds/main.html" width="100%" height="527px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Global Wind and Convection Cell Model</summary>
@@ -327,7 +327,7 @@ The Pacific Northwest rainforests (windward) and the dry Eastern Washington/Oreg
 
 #### Diagram: Rain Shadow Effect Visualizer
 
-<iframe src="../../sims/rain-shadow/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/rain-shadow/main.html" width="100%" height="477px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Rain Shadow Effect Visualizer</summary>

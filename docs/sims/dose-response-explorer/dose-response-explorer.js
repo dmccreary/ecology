@@ -1,4 +1,5 @@
 // Interactive Dose-Response Curve Explorer MicroSim
+// CANVAS_HEIGHT: 500
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 420;

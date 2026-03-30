@@ -11,7 +11,7 @@ quality_score: 82
 
 # Island Biogeography Simulator
 
-<iframe src="main.html" height="402" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="632" width="100%" scrolling="no"></iframe>
 
 [Run the Island Biogeography Simulator Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -42,7 +42,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/island-biogeography/main.html"
-        height="402px"
+        height="632px"
         width="100%"
         scrolling="no"></iframe>
 ```

@@ -1,4 +1,5 @@
 // Conservation Policy Timeline MicroSim
+// CANVAS_HEIGHT: 495
 // Understand: Summarize evolution of conservation policy
 let containerWidth;
 let canvasWidth = 400;

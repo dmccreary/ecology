@@ -11,7 +11,7 @@ quality_score: 80
 
 # Resource Partitioning in Warblers
 
-<iframe src="main.html" height="552" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="597" width="100%" scrolling="no"></iframe>
 
 [Run the Resource Partitioning in Warblers MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -40,7 +40,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/resource-partitioning/main.html"
-        height="450px"
+        height="597px"
         width="100%"
         scrolling="no"></iframe>
 ```

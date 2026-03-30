@@ -1,4 +1,5 @@
 // Learning Graph Viewer Script
+// CANVAS_HEIGHT: 600
 // Loads and displays an interactive learning graph using vis-network
 
 let network = null;

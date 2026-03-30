@@ -1,4 +1,5 @@
 // Photosynthesis and Cellular Respiration Cycle
+// CANVAS_HEIGHT: 580
 // Step-through animation showing complementary relationship
 
 let containerWidth;

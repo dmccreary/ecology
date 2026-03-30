@@ -11,7 +11,7 @@ quality_score: 80
 
 # Climate Feedback Loops
 
-<iframe src="main.html" height="500" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="562" width="100%" scrolling="no"></iframe>
 
 [Run the Climate Feedback Loops MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
@@ -40,7 +40,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/climate-feedbacks/main.html"
-        height="500px"
+        height="562px"
         width="100%"
         scrolling="no"></iframe>
 ```

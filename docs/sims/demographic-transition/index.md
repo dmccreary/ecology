@@ -11,7 +11,7 @@ quality_score: 82
 
 # Demographic Transition Model
 
-<iframe src="main.html" height="432" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="482" width="100%" scrolling="no"></iframe>
 
 [Run the Demographic Transition Model MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -40,7 +40,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/demographic-transition/main.html"
-        height="432px"
+        height="482px"
         width="100%"
         scrolling="no"></iframe>
 ```

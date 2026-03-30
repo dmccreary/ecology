@@ -1,4 +1,5 @@
 // Global NPP Heatmap
+// CANVAS_HEIGHT: 545
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 500;

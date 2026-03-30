@@ -1,4 +1,5 @@
 // Cogeneration System Flow - vis-network diagram
+// CANVAS_HEIGHT: 675
 // Compares conventional separate generation vs CHP cogeneration
 
 document.addEventListener('DOMContentLoaded', function () {

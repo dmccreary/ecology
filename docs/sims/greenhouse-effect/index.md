@@ -11,7 +11,7 @@ quality_score: 82
 
 # Greenhouse Effect Energy Balance
 
-<iframe src="main.html" height="422" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="492" width="100%" scrolling="no"></iframe>
 
 [Run the Greenhouse Effect Energy Balance MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -40,7 +40,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/greenhouse-effect/main.html"
-        height="422px"
+        height="492px"
         width="100%"
         scrolling="no"></iframe>
 ```

@@ -1,4 +1,5 @@
 // Energy Source Comparison Dashboard - Chart.js Radar Chart
+// CANVAS_HEIGHT: 705
 // Multi-criteria comparison of 8 energy sources
 
 document.addEventListener('DOMContentLoaded', function() {

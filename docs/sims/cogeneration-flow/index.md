@@ -11,7 +11,7 @@ quality_score: 76
 
 # Cogeneration System Flow
 
-<iframe src="main.html" height="630" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="677" width="100%" scrolling="no"></iframe>
 
 [Run the Cogeneration System Flow MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
@@ -38,7 +38,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/cogeneration-flow/main.html"
-        height="630px"
+        height="677px"
         width="100%"
         scrolling="no"></iframe>
 ```

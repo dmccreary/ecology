@@ -11,7 +11,7 @@ quality_score: 82
 
 # Feedback Loop Explorer
 
-<iframe src="main.html" height="462" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="517" width="100%" scrolling="no"></iframe>
 
 [Run the Feedback Loop Explorer MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -40,7 +40,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/feedback-loop-explorer/main.html"
-        height="462px"
+        height="517px"
         width="100%"
         scrolling="no"></iframe>
 ```

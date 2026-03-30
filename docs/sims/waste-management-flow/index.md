@@ -11,7 +11,7 @@ quality_score: 76
 
 # Waste Management Decision Flowchart
 
-<iframe src="main.html" height="600" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="647" width="100%" scrolling="no"></iframe>
 
 [Run the Waste Management Decision Flowchart MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
@@ -38,7 +38,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/waste-management-flow/main.html"
-        height="600px"
+        height="647px"
         width="100%"
         scrolling="no"></iframe>
 ```

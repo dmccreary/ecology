@@ -11,7 +11,7 @@ quality_score: 80
 
 # Pollutant Pathways Map
 
-<iframe src="main.html" height="442" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="492" width="100%" scrolling="no"></iframe>
 
 [Run the Pollutant Pathways Map Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -40,7 +40,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/pollutant-pathways-map/main.html"
-        height="442px"
+        height="492px"
         width="100%"
         scrolling="no"></iframe>
 ```

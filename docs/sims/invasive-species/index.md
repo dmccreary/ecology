@@ -11,7 +11,7 @@ quality_score: 81
 
 # Invasive Species Impact Network
 
-<iframe src="main.html" height="482" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="562" width="100%" scrolling="no"></iframe>
 
 [Run the Invasive Species Impact Network MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -42,7 +42,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/invasive-species/main.html"
-        height="482px"
+        height="562px"
         width="100%"
         scrolling="no"></iframe>
 ```

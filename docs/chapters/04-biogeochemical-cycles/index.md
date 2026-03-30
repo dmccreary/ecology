@@ -91,7 +91,7 @@ Once airborne, water vapor rises, cools, condenses around tiny particles, and fo
 
 #### Diagram: The Hydrologic Cycle
 
-<iframe src="../../sims/hydrologic-cycle/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/hydrologic-cycle/main.html" width="100%" height="467px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>The Hydrologic Cycle Interactive Diagram</summary>
@@ -163,7 +163,7 @@ Carbon returns to the atmosphere through:
 
 #### Diagram: The Carbon Cycle
 
-<iframe src="../../sims/carbon-cycle/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/carbon-cycle/main.html" width="100%" height="542px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>The Carbon Cycle Interactive Model</summary>
@@ -243,7 +243,7 @@ Denitrification might seem wasteful — why let nitrogen escape? But it is a vit
 
 #### Diagram: The Nitrogen Cycle
 
-<iframe src="../../sims/nitrogen-cycle/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/nitrogen-cycle/main.html" width="100%" height="547px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>The Nitrogen Cycle Step-by-Step</summary>
@@ -298,7 +298,7 @@ Excess phosphorus in water bodies triggers **eutrophication** — explosive grow
 
 #### Diagram: Phosphorus Runoff and Eutrophication
 
-<iframe src="../../sims/phosphorus-runoff/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/phosphorus-runoff/main.html" width="100%" height="562px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Phosphorus Runoff and Eutrophication Simulator</summary>
@@ -328,7 +328,7 @@ These four cycles do not operate in isolation. They are deeply intertwined:
 
 #### Diagram: Interconnected Biogeochemical Cycles
 
-<iframe src="../../sims/connected-cycles/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/connected-cycles/main.html" width="100%" height="627px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Interconnected Biogeochemical Cycles Network</summary>

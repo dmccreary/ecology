@@ -1,4 +1,5 @@
 // Demographic Transition Model
+// CANVAS_HEIGHT: 480
 // Interactive visualization of birth rates, death rates, and population through 4 stages
 
 let containerWidth;

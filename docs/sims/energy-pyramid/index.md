@@ -11,7 +11,7 @@ quality_score: 81
 
 # Energy Pyramid Simulator
 
-<iframe src="main.html" height="452" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="532" width="100%" scrolling="no"></iframe>
 
 [Run the Energy Pyramid Simulator MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -40,7 +40,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/energy-pyramid/main.html"
-        height="452px"
+        height="532px"
         width="100%"
         scrolling="no"></iframe>
 ```

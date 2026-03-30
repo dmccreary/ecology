@@ -11,7 +11,7 @@ quality_score: 84
 
 # Soil Health Comparison: Tillage Methods
 
-<iframe src="main.html" height="522" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="567" width="100%" scrolling="no"></iframe>
 
 [Run the Soil Health Comparison: Tillage Methods MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -41,7 +41,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/soil-health-comparison/main.html"
-        height="450px"
+        height="567px"
         width="100%"
         scrolling="no"></iframe>
 ```

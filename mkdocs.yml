@@ -1,14 +1,13 @@
-site_name: Ecology - An Interactive Course
+site_name: Ecology
 repo_url: https://github.com/dmccreary/ecology
 site_url: https://dmccreary.github.io/ecology/
-site_description: An interactive intelligent textbook for Ecology.
+site_description: An interactive intelligent textbook for Ecology with interactive simulations and a focus on systems thinking.
 site_author: Dan McCreary
 
 nav:
   - Home: index.md
+  - About This Textbook: about.md
   - Course Description: course-description.md
-  - Glossary: glossary.md
-  - FAQ: faq.md
   - Chapters:
     - Overview: chapters/index.md
     - 1-Foundations of Ecology:
@@ -154,23 +153,28 @@ nav:
     - Water Properties and Ecological Importance: sims/water-properties-ecology/index.md
     - World Biome Map: sims/biome-world-map/index.md
 
-
   - Prompts:
     - Seed Prompt: prompts/01-seed.md
-    - Content Style Guide: prompts/02-content-generaton-style-guide.md
-  - Logs:
+    - Content Style Guide: prompts/02-content-generation-style-guide.md
+  
+  - Sample Session Logs:
     - Course Description Generation: logs/01-course-description-generation.md
     - Learning Graph Generation: logs/02-generate-learning-graph.md
     - Book Chapter Generator: logs/03-book-chapter-generator.md
     - Mascot Generator: logs/04-mascot-generator.md
     - Ch 1 Content Generation: logs/ch-01-content-generation.md
     - Batch Content Generation: logs/chapter-content-generator-2026-03-29.md
+  
+  - Glossary: glossary.md
+  - FAQ: faq.md
+  - Teachers Guide: teachers-guide/index.md
   - License: license.md
   - Contact: contact.md
 
 theme:
   name: material
-  # logo: img/logo.png
+  # We are using the neutral mascot pose as our
+  logo: img/mascot/neutral.png
   favicon: img/favicon.ico
   palette:
     primary: 'green'

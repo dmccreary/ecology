@@ -1,4 +1,5 @@
 // Complete Ecosystem Energy Budget
+// CANVAS_HEIGHT: 565
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 520;

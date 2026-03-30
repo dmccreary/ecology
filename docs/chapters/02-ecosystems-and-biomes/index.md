@@ -72,7 +72,7 @@ There are seven major terrestrial biomes you need to know. Let's explore them fr
 
 #### Diagram: World Biome Map
 
-<iframe src="../../sims/biome-world-map/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/biome-world-map/main.html" width="100%" height="507px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>World Biome Map Interactive</summary>
@@ -265,7 +265,7 @@ Yet life thrives here. Deep-sea communities cluster around **hydrothermal vents*
 
 #### Diagram: Ocean Zones Interactive
 
-<iframe src="../../sims/ocean-zones/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/ocean-zones/main.html" width="100%" height="697px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Ocean Zones Interactive</summary>
@@ -349,7 +349,7 @@ The classic example is the reintroduction of wolves to Yellowstone National Park
 
 #### Diagram: Interactive Food Web Builder
 
-<iframe src="../../sims/food-web-builder/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/food-web-builder/main.html" width="100%" height="607px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Interactive Food Web Builder</summary>
@@ -400,7 +400,7 @@ There are three types of ecological pyramids:
 
 #### Diagram: Energy Pyramid Simulator
 
-<iframe src="../../sims/energy-pyramid/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/energy-pyramid/main.html" width="100%" height="532px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Energy Pyramid Simulator</summary>

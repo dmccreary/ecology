@@ -11,7 +11,7 @@ quality_score: 80
 
 # World Biome Map
 
-<iframe src="main.html" height="462" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="507" width="100%" scrolling="no"></iframe>
 
 [Run the World Biome Map MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -40,7 +40,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/biome-world-map/main.html"
-        height="462px"
+        height="507px"
         width="100%"
         scrolling="no"></iframe>
 ```

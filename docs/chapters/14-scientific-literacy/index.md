@@ -169,7 +169,7 @@ To establish causation, you need:
 
 #### Diagram: Correlation vs. Causation Challenge
 
-<iframe src="../../sims/correlation-causation/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/correlation-causation/main.html" width="100%" height="527px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Correlation vs. Causation Challenge</summary>
@@ -236,7 +236,7 @@ Why does this matter for environmental science? Because decisions often hinge on
 
 #### Diagram: Confidence Interval Visualizer
 
-<iframe src="../../sims/confidence-interval-viz/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/confidence-interval-viz/main.html" width="100%" height="542px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Confidence Interval Visualizer</summary>
@@ -255,7 +255,7 @@ A simulation with two panels. Top panel: a population of fish (dots) with hidden
 
 #### Diagram: Sample Size Effect on Reliability
 
-<iframe src="../../sims/sample-size-effect/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/sample-size-effect/main.html" width="100%" height="487px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Sample Size Effect on Reliability</summary>
@@ -355,7 +355,7 @@ This five-step process takes about five minutes and dramatically improves your a
 
 #### Diagram: Source Credibility Evaluator
 
-<iframe src="../../sims/source-credibility/main.html" width="100%" height="500px" scrolling="no"></iframe>
+<iframe src="../../sims/source-credibility/main.html" width="100%" height="547px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Source Credibility Evaluator</summary>

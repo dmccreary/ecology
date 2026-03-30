@@ -11,7 +11,7 @@ quality_score: 80
 
 # Biodiversity Levels Pyramid
 
-<iframe src="main.html" height="502" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="512" width="100%" scrolling="no"></iframe>
 
 [Run the Biodiversity Levels Pyramid MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -40,7 +40,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/biodiversity-levels/main.html"
-        height="502px"
+        height="512px"
         width="100%"
         scrolling="no"></iframe>
 ```

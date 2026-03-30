@@ -11,7 +11,7 @@ quality_score: 76
 
 # Information Ecosystem Flow
 
-<iframe src="main.html" height="600" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="627" width="100%" scrolling="no"></iframe>
 
 [Run the Information Ecosystem Flow MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -41,7 +41,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/info-ecosystem/main.html"
-        height="600px"
+        height="627px"
         width="100%"
         scrolling="no"></iframe>
 ```

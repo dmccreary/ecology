@@ -1,4 +1,5 @@
 // Resilience Ball-in-Basin Model MicroSim
+// CANVAS_HEIGHT: 475
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 400;

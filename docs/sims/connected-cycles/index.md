@@ -11,7 +11,7 @@ quality_score: 77
 
 # Interconnected Biogeochemical Cycles
 
-<iframe src="main.html" height="600" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="627" width="100%" scrolling="no"></iframe>
 
 [Run the Interconnected Biogeochemical Cycles MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 
@@ -38,7 +38,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/ecology/sims/connected-cycles/main.html"
-        height="600px"
+        height="627px"
         width="100%"
         scrolling="no"></iframe>
 ```
