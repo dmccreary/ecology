@@ -798,6 +798,12 @@ The principle that all communities, regardless of race, income, or social status
 
 **Example:** Low-income communities and communities of color are disproportionately located near landfills, factories, and highways, raising environmental justice concerns.
 
+#### Environmental Science
+
+An interdisciplinary field that integrates physical, biological, and information sciences to study the environment and develop solutions to environmental problems. Environmental Science is the term used for college-level Advanced Placement (AP) courses that cover topics including ecosystems, biodiversity, population ecology, land and water use, energy, pollution, and climate change. This textbook covers all standard Environmental Science topics as well as additional systems thinking, scientific literacy, and media literacy topics.
+
+**Example:** A student taking AP Environmental Science would study biogeochemical cycles, ecosystem services, and human impacts on the environment — all topics covered in this textbook along with causal loop diagrams and critical evaluation of environmental claims.
+
 #### Environmental Misinformation
 
 False or misleading claims about environmental issues, spread intentionally or unintentionally, that can undermine public understanding and delay effective policy responses.

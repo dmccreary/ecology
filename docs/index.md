@@ -8,7 +8,7 @@ image: img/cover.png
 
 ![Ecology Cover](./img/cover.png){ width="100%" }
 
-Welcome to our interactive intelligent textbook for Ecology! This textbook is designed for high school students (grades 9-12) who want to understand how natural systems work and how they are connected together. This course covers topics aligned with introductory college-level ecology and AP Environmental Science frameworks -- from ecosystems and biodiversity to climate change and environmental policy -- with 81 hands-on simulations, an interactive learning graph, and a focus on systems thinking and scientific literacy throughout.
+Welcome to our interactive intelligent textbook on Ecology! This textbook is designed for high school students (grades 9-12) who want to understand how natural systems work and how they are connected together. This course covers topics aligned with introductory college-level ecology and college placement [Environmental Science](./glossary.md#environmental-science) frameworks -- from ecosystems and biodiversity to climate change and environmental policy -- with 81 hands-on simulations, an interactive learning graph, and a focus on systems thinking and scientific literacy throughout.
 This course is not associated with The College Board in any way and no endorsement from The College Board is implied.
 
 ## What You Will Learn

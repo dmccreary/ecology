@@ -7,12 +7,13 @@ let controlHeight = 75;
 let canvasHeight = drawHeight + controlHeight;
 let containerHeight = canvasHeight;
 let margin = 25;
-let sliderLeftMargin = 160;
+let sliderLeftMargin = 260;
 let defaultTextSize = 16;
 
 let resilienceSlider, disturbanceSlider;
-let degradeBtn;
+let degradeBtn, startBtn, resetBtn;
 let ballX, ballVx;
+let running = false;
 let degrading = false;
 let degradeAmount = 0;
 let gravity = 0.15;
@@ -33,6 +34,13 @@ function setup() {
   disturbanceSlider.parent(document.querySelector('main'));
   disturbanceSlider.style('width', '120px');
 
+  startBtn = createButton('Start Simulation');
+  startBtn.parent(document.querySelector('main'));
+  startBtn.mousePressed(() => {
+    running = !running;
+    startBtn.html(running ? 'Pause' : 'Start Simulation');
+  });
+
   degradeBtn = createButton('Slow Degradation');
   degradeBtn.parent(document.querySelector('main'));
   degradeBtn.mousePressed(() => {
@@ -40,16 +48,17 @@ function setup() {
     if (!degrading) degradeAmount = 0;
   });
 
-  let resetBtn = createButton('Reset');
+  resetBtn = createButton('Reset');
   resetBtn.parent(document.querySelector('main'));
-  resetBtn.position(sliderLeftMargin + 135, drawHeight + 32);
   resetBtn.mousePressed(() => {
     ballX = 0.3;
     ballVx = 0;
+    running = false;
     degrading = false;
     degradeAmount = 0;
     resilienceSlider.value(70);
     disturbanceSlider.value(0);
+    startBtn.html('Start Simulation');
   });
 
   ballX = 0.3; // fraction across canvas (0-1)
@@ -64,7 +73,7 @@ function draw() {
   let disturbance = disturbanceSlider.value();
 
   // Slow degradation
-  if (degrading) {
+  if (running && degrading) {
     degradeAmount += 0.05;
     if (resilience <= 10) {
       degrading = false;
@@ -153,19 +162,22 @@ function draw() {
 
   // Physics: compute ball position
   let ballScreenX = ballX * canvasWidth;
-  let slope = getBasinSlope(ballX, ridgePos, healthyDepth, degradedDepth);
-  let force = slope * gravity;
-  ballVx += force;
-  ballVx *= friction;
+  if (running) {
+    let slope = getBasinSlope(ballX, ridgePos, healthyDepth, degradedDepth);
+    let force = slope * gravity;
+    ballVx += force;
+    ballVx *= friction;
 
-  // Apply disturbance as impulse toward right
-  if (disturbance > 0) {
-    ballVx += disturbance * 0.0003;
-    disturbanceSlider.value(max(0, disturbance - 0.3));
+    // Apply disturbance as impulse toward right
+    if (disturbance > 0) {
+      ballVx += disturbance * 0.0003;
+      disturbanceSlider.value(max(0, disturbance - 0.3));
+    }
+
+    ballX += ballVx * 0.01;
+    ballX = constrain(ballX, 0.02, 0.98);
+    ballScreenX = ballX * canvasWidth;
   }
-
-  ballX += ballVx * 0.01;
-  ballX = constrain(ballX, 0.02, 0.98);
 
   // Ball position on landscape
   let ballLandscapeY = landscapeY + getBasinY(ballX, ridgePos, healthyDepth, degradedDepth) * 200;
@@ -216,13 +228,16 @@ function draw() {
   textSize(13);
   textAlign(LEFT, CENTER);
 
-  text('Resilience: ' + nf(resilience, 1, 0) + '%', 10, drawHeight + 16);
+  startBtn.position(10, drawHeight + 7);
+
+  text('Resilience: ' + nf(resilience, 1, 0) + '%', 120, drawHeight + 16);
   resilienceSlider.position(sliderLeftMargin, drawHeight + 7);
 
-  text('Disturbance: ' + disturbance, 10, drawHeight + 40);
+  text('Disturbance: ' + disturbance, 120, drawHeight + 40);
   disturbanceSlider.position(sliderLeftMargin, drawHeight + 32);
 
   degradeBtn.position(sliderLeftMargin + 135, drawHeight + 7);
+  resetBtn.position(sliderLeftMargin + 135, drawHeight + 32);
 }
 
 function getBasinY(frac, ridgePos, healthyDepth, degradedDepth) {
