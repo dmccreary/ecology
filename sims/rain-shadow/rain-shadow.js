@@ -1,4 +1,5 @@
 // Rain Shadow Effect Visualizer
+// CANVAS_HEIGHT: 475
 // Animated air flow over a mountain with temperature and humidity changes
 
 let containerWidth;

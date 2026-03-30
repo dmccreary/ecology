@@ -1,4 +1,5 @@
 // Biome Connections Network - vis-network
+// CANVAS_HEIGHT: 590
 // Network graph showing material/energy flows between biomes
 
 document.addEventListener('DOMContentLoaded', function () {

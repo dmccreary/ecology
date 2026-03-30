@@ -1,4 +1,5 @@
 // Phosphorus Runoff and Eutrophication Simulator
+// CANVAS_HEIGHT: 560
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 480;

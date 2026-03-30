@@ -1,4 +1,5 @@
 // World Biome Map Interactive
+// CANVAS_HEIGHT: 505
 // Simplified world map showing 7 terrestrial biomes with hover info
 
 let containerWidth;

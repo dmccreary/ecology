@@ -1,4 +1,5 @@
 // Carbon Pricing Comparison MicroSim
+// CANVAS_HEIGHT: 580
 // Evaluate: Compare carbon tax vs cap-and-trade
 let containerWidth;
 let canvasWidth = 400;

@@ -1,4 +1,5 @@
 // Ecosystem Components Interactive Explorer
+// CANVAS_HEIGHT: 545
 // Drag-and-sort activity: classify components as biotic or abiotic
 
 let containerWidth;

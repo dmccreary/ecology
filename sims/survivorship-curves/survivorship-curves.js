@@ -1,4 +1,5 @@
 // Survivorship Curve Explorer
+// CANVAS_HEIGHT: 495
 // Compare Type I, II, and III survivorship curves with real species
 
 let containerWidth;

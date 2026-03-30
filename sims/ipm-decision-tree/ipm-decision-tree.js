@@ -1,4 +1,5 @@
 // Integrated Pest Management Decision Flowchart - vis-network
+// CANVAS_HEIGHT: 645
 // Interactive decision tree for IPM strategies
 
 document.addEventListener('DOMContentLoaded', function () {

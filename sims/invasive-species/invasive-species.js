@@ -1,4 +1,5 @@
 // Invasive Species Cascade Simulator
+// CANVAS_HEIGHT: 560
 // Shows how invasive species cascade through a food web
 
 let containerWidth;

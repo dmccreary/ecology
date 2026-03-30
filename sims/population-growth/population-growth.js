@@ -1,4 +1,5 @@
 // Population Growth Simulator
+// CANVAS_HEIGHT: 510
 // Exponential vs Logistic growth with interactive controls
 
 let containerWidth;

@@ -1,4 +1,5 @@
 // Tolerance Range Explorer
+// CANVAS_HEIGHT: 445
 // Interactive bell curves for specialist vs generalist species
 
 let containerWidth;

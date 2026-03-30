@@ -1,4 +1,5 @@
 // Energy Flow Tracker - Animated trophic level energy flow
+// CANVAS_HEIGHT: 485
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 440;

@@ -1,4 +1,5 @@
 // Interconnected Biogeochemical Cycles - vis-network
+// CANVAS_HEIGHT: 625
 // Shows how carbon, nitrogen, phosphorus, and water cycles are linked through shared processes
 
 document.addEventListener('DOMContentLoaded', function () {

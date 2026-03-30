@@ -1,4 +1,5 @@
 // Predator-Prey Population Dynamics Simulator
+// CANVAS_HEIGHT: 695
 // Lotka-Volterra inspired agent-based model
 
 let containerWidth;

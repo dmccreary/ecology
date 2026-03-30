@@ -1,4 +1,5 @@
 // Citizen Science Project Finder MicroSim
+// CANVAS_HEIGHT: 640
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 560;

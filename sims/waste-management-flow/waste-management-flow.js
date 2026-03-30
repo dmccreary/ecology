@@ -1,4 +1,5 @@
 // Waste Management Decision Flowchart - vis-network
+// CANVAS_HEIGHT: 645
 document.addEventListener('DOMContentLoaded', function() {
   const mainEl = document.querySelector('main');
 

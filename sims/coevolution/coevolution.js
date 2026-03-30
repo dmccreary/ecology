@@ -1,4 +1,5 @@
 // Coevolution Arms Race Simulator
+// CANVAS_HEIGHT: 515
 // Shows trait escalation between predator and prey populations
 
 let containerWidth;
@@ -23,9 +24,12 @@ let preyAvgHistory = [];
 
 // Controls
 let mutationSlider, selectionSlider;
-let resetBtn, stepBtn, runBtn, switchBtn;
+let resetBtn, stepBtn, runBtn, modeRadio;
 let running = false;
 let traitMode = 'speed'; // 'speed' or 'toxicity'
+let showSummary = false;
+let summaryDismissed = false;
+let okBtn;
 
 function setup() {
   updateCanvasSize();
@@ -42,25 +46,38 @@ function setup() {
   selectionSlider.parent(document.querySelector('main'));
   selectionSlider.style('width', '110px');
 
-  runBtn = createButton('Start');
+  runBtn = createButton('Start Simulation');
   runBtn.parent(document.querySelector('main'));
-  runBtn.mousePressed(() => { running = !running; runBtn.html(running ? 'Pause' : 'Start'); });
+  runBtn.mousePressed(() => { running = !running; runBtn.html(running ? 'Pause Simulation' : 'Start Simulation'); });
 
   stepBtn = createButton('Step');
   stepBtn.parent(document.querySelector('main'));
   stepBtn.mousePressed(() => { if (!running) runGeneration(); });
 
-  switchBtn = createButton('Switch to Toxicity');
-  switchBtn.parent(document.querySelector('main'));
-  switchBtn.mousePressed(() => {
-    traitMode = traitMode === 'speed' ? 'toxicity' : 'speed';
-    switchBtn.html(traitMode === 'speed' ? 'Switch to Toxicity' : 'Switch to Speed');
+  modeRadio = createRadio();
+  modeRadio.parent(document.querySelector('main'));
+  modeRadio.option('speed', 'Speed Mode');
+  modeRadio.option('toxicity', 'Venom Toxicity Mode');
+  modeRadio.selected('speed');
+  modeRadio.changed(() => {
+    traitMode = modeRadio.value();
     resetSim();
   });
 
   resetBtn = createButton('Reset');
   resetBtn.parent(document.querySelector('main'));
   resetBtn.mousePressed(resetSim);
+
+  okBtn = createButton('OK');
+  okBtn.parent(document.querySelector('main'));
+  okBtn.mousePressed(() => {
+    showSummary = false;
+    summaryDismissed = true;
+    okBtn.hide();
+    running = true;
+    runBtn.html('Pause Simulation');
+  });
+  okBtn.hide();
 
   resetSim();
 }
@@ -76,7 +93,10 @@ function resetSim() {
   predAvgHistory = [avg(predPop)];
   preyAvgHistory = [avg(preyPop)];
   running = false;
-  if (runBtn) runBtn.html('Start');
+  showSummary = false;
+  summaryDismissed = false;
+  if (runBtn) runBtn.html('Start Simulation');
+  if (okBtn) okBtn.hide();
 }
 
 function avg(arr) {
@@ -168,8 +188,8 @@ function draw() {
   text('Generation: ' + generation, canvasWidth / 2, 25);
 
   // Draw histograms
-  drawHistogram(predPop, 10, 50, halfW - 20, histH, [200, 60, 60], 'Predator ' + (traitMode === 'speed' ? 'Speed' : 'Resistance'));
-  drawHistogram(preyPop, halfW + 10, 50, halfW - 20, histH, [50, 150, 50], 'Prey ' + (traitMode === 'speed' ? 'Speed' : 'Toxin Strength'));
+  drawHistogram(predPop, 10, 50, halfW - 20, histH, [200, 60, 60], 'Predator ' + (traitMode === 'speed' ? 'Speed' : 'Venom Strength') + ' Distribution');
+  drawHistogram(preyPop, halfW + 10, 50, halfW - 20, histH, [50, 150, 50], 'Prey ' + (traitMode === 'speed' ? 'Speed' : 'Resistance') + ' Distribution');
 
   // Draw organisms
   drawOrganisms(predPop, 10, 160, halfW - 20, 80, [200, 60, 60]);
@@ -180,9 +200,10 @@ function draw() {
   fill(200, 60, 60);
   textSize(12);
   textAlign(CENTER, TOP);
-  text('Avg: ' + nf(avg(predPop), 1, 1), halfW / 2, 250);
+  let avgLabel = traitMode === 'speed' ? 'Average Speed: ' : 'Average Strength: ';
+  text(avgLabel + nf(avg(predPop), 1, 1), halfW / 2, 250);
   fill(50, 150, 50);
-  text('Avg: ' + nf(avg(preyPop), 1, 1), halfW + halfW / 2, 250);
+  text(avgLabel + nf(avg(preyPop), 1, 1), halfW + halfW / 2, 250);
 
   // Trait history graph
   drawTraitGraph(10, 270, canvasWidth - 20, drawHeight - 280);
@@ -197,8 +218,15 @@ function draw() {
 
   positionControls();
 
-  // Summary at gen 50
-  if (generation >= 50 && generation <= 55) {
+  // Pause and show summary at gen 50
+  if (generation === 50 && !summaryDismissed && !showSummary) {
+    showSummary = true;
+    running = false;
+    runBtn.html('Start Simulation');
+    okBtn.show();
+  }
+
+  if (showSummary) {
     fill(255, 255, 200, 220);
     stroke(180, 150, 50);
     strokeWeight(1);
@@ -210,7 +238,8 @@ function draw() {
     textAlign(CENTER, CENTER);
     let predEsc = nf(avg(predPop) - predAvgHistory[0], 1, 1);
     let preyEsc = nf(avg(preyPop) - preyAvgHistory[0], 1, 1);
-    text('After 50 gens: Predator trait +' + predEsc + ', Prey trait +' + preyEsc, canvasWidth / 2, 125);
+    text('After 50 gens: Predator trait +' + predEsc + ', Prey trait +' + preyEsc, canvasWidth / 2, 118);
+    // OK button is positioned in positionControls
   }
 }
 
@@ -243,12 +272,22 @@ function drawHistogram(pop, x, y, w, h, col, label) {
 
 function drawOrganisms(pop, x, y, w, h, col) {
   noStroke();
-  for (let i = 0; i < min(pop.length, 50); i++) {
-    let px = x + random(w);
-    let py = y + random(h);
-    let sz = map(pop[i], 20, 120, 4, 10);
-    fill(col[0], col[1], col[2], 150);
-    ellipse(px, py, sz, sz);
+  let count = min(pop.length, 50);
+  let cols = ceil(sqrt(count));
+  let rows = ceil(count / cols);
+  let cellW = w / cols;
+  let cellH = h / rows;
+  let barH = max(2, cellH * 0.4);
+  let maxBarW = cellW - 2;
+  for (let i = 0; i < count; i++) {
+    let c = i % cols;
+    let r = floor(i / cols);
+    let bx = x + c * cellW + 1;
+    let by = y + r * cellH + (cellH - barH) / 2;
+    let bw = map(pop[i], 0, 150, maxBarW * 0.05, maxBarW);
+    bw = constrain(bw, 2, maxBarW);
+    fill(col[0], col[1], col[2], 180);
+    rect(bx, by, bw, barH, 1);
   }
 }
 
@@ -268,7 +307,22 @@ function drawTraitGraph(x, y, w, h) {
   if (predAvgHistory.length < 2) return;
 
   let maxGen = maxGenerations;
-  let maxTrait = 150;
+
+  // Auto-scale y-axis to data range with padding
+  let allVals = predAvgHistory.concat(preyAvgHistory);
+  let minTrait = Math.min(...allVals);
+  let maxTrait = Math.max(...allVals);
+  let padding = Math.max((maxTrait - minTrait) * 0.2, 5);
+  minTrait = Math.max(0, minTrait - padding);
+  maxTrait = maxTrait + padding;
+
+  // Y-axis labels
+  noStroke();
+  fill(150);
+  textSize(9);
+  textAlign(RIGHT, CENTER);
+  text(nf(maxTrait, 1, 0), x + 22, y + 14);
+  text(nf(minTrait, 1, 0), x + 22, y + h - 4);
 
   // Predator line
   stroke(200, 60, 60);
@@ -276,7 +330,8 @@ function drawTraitGraph(x, y, w, h) {
   noFill();
   beginShape();
   for (let i = 0; i < predAvgHistory.length; i++) {
-    vertex(x + (i / maxGen) * w, y + h - (predAvgHistory[i] / maxTrait) * h);
+    let vy = y + h - ((predAvgHistory[i] - minTrait) / (maxTrait - minTrait)) * h;
+    vertex(x + (i / maxGen) * w, vy);
   }
   endShape();
 
@@ -284,11 +339,13 @@ function drawTraitGraph(x, y, w, h) {
   stroke(50, 150, 50);
   beginShape();
   for (let i = 0; i < preyAvgHistory.length; i++) {
-    vertex(x + (i / maxGen) * w, y + h - (preyAvgHistory[i] / maxTrait) * h);
+    let vy = y + h - ((preyAvgHistory[i] - minTrait) / (maxTrait - minTrait)) * h;
+    vertex(x + (i / maxGen) * w, vy);
   }
   endShape();
 }
 
+// Position controls based on canvas location to ensure they stay aligned on window resize
 function positionControls() {
   let ox = canvasOffsetX();
   let oy = canvasOffsetY();
@@ -298,11 +355,19 @@ function positionControls() {
   // Row 2: selection slider
   selectionSlider.position(ox + 100, oy + drawHeight + 40);
   selectionSlider.size(canvasWidth - 130);
-  // Row 3: buttons
+  // Row 3: buttons and mode radio
+  // "Start Simulation"
   runBtn.position(ox + 10, oy + drawHeight + 75);
-  stepBtn.position(ox + 80, oy + drawHeight + 75);
-  switchBtn.position(ox + 140, oy + drawHeight + 75);
-  resetBtn.position(ox + canvasWidth - 70, oy + drawHeight + 75);
+  // "Step" button
+  stepBtn.position(ox + 140, oy + drawHeight + 75);
+  // "Reset" button
+  resetBtn.position(ox + 200, oy + drawHeight + 75);
+  // Mode radio button
+  modeRadio.position(ox + 280, oy + drawHeight + 78);
+  // OK button centered on summary box
+  if (showSummary) {
+    okBtn.position(ox + canvasWidth / 2 - 15, oy + 135);
+  }
 }
 
 function canvasOffsetX() {

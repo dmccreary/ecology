@@ -1,4 +1,5 @@
 // Urban Heat Island Profile MicroSim
+// CANVAS_HEIGHT: 485
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 440;

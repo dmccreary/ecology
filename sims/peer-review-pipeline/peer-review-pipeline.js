@@ -1,4 +1,5 @@
 // Peer Review Pipeline - vis-network diagram
+// CANVAS_HEIGHT: 510
 // Science's Quality Control Pipeline
 document.addEventListener('DOMContentLoaded', function() {
   const mainEl = document.querySelector('main');

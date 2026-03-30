@@ -1,4 +1,5 @@
 // Age Structure Diagram Explorer
+// CANVAS_HEIGHT: 545
 // Interactive population pyramids with compare mode for 10 diverse countries
 
 let containerWidth;
@@ -17,6 +18,7 @@ let compareBtn;
 let compareMode = false;
 let animProgress = 1;
 let animProgress2 = 1;
+let hoveredRow = -1;
 
 // Age groups (5-year increments)
 const ageGroups = ['0-4','5-9','10-14','15-19','20-24','25-29','30-34','35-39',
@@ -218,7 +220,7 @@ function drawSingleMode() {
   fill(0);
   textSize(16);
   textAlign(CENTER, TOP);
-  text('Age Structure: ' + name, canvasWidth / 2, 5);
+  text('Age Structure Diagram: ' + name, canvasWidth / 2, 5);
 
   // Shape label
   textSize(11);
@@ -239,12 +241,30 @@ function drawSingleMode() {
   }
   maxVal = max(maxVal, 1);
 
+  // Detect hovered row
+  hoveredRow = -1;
+  for (let i = 0; i < ageGroups.length; i++) {
+    let y = pyrBottom - (i + 1) * (barH + 1);
+    if (mouseX >= 0 && mouseX <= canvasWidth && mouseY >= y && mouseY < y + barH) {
+      hoveredRow = i;
+      break;
+    }
+  }
+
   // Draw bars
   for (let i = 0; i < ageGroups.length; i++) {
     let y = pyrBottom - (i + 1) * (barH + 1);
     let maleW = map(displayMale[i], 0, maxVal, 0, maxBarW);
     let femaleW = map(displayFemale[i], 0, maxVal, 0, maxBarW);
     let isRepro = (i >= 3 && i <= 9);
+    let isHovered = (i === hoveredRow);
+
+    // Highlight hovered row
+    if (isHovered) {
+      fill(255, 255, 200, 40);
+      noStroke();
+      rect(margin, y, canvasWidth - 2 * margin, barH);
+    }
 
     // Male (left)
     noStroke();
@@ -255,12 +275,53 @@ function drawSingleMode() {
     fill(isRepro ? color(190, 60, 100) : color(220, 130, 160));
     rect(centerX + 2, y, femaleW, barH);
 
-    // Age label
-    fill(60);
+    // Center divider — contrast with text color
+    let smallBars = displayMale[i] < 1 && displayFemale[i] < 1;
     noStroke();
-    textSize(9);
+    fill(smallBars ? 255 : 0);
+    rect(centerX - 2, y, 4, barH);
+
+    // Age label — black when bars are narrow (< 1%)
+    fill(smallBars ? 0 : 255);
+    noStroke();
+    textSize(13);
     textAlign(CENTER, CENTER);
     text(ageGroups[i], centerX, y + barH / 2);
+  }
+
+  // Draw tooltip for hovered row
+  if (hoveredRow >= 0) {
+    let mPct = displayMale[hoveredRow].toFixed(1);
+    let fPct = displayFemale[hoveredRow].toFixed(1);
+    let label = ageGroups[hoveredRow] + ':  ♂ ' + mPct + '%   ♀ ' + fPct + '%';
+
+    textSize(12);
+    let tw = textWidth(label) + 16;
+    let th = 26;
+    let tx = mouseX + 12;
+    let ty = mouseY - th - 6;
+
+    // Keep tooltip on canvas
+    if (tx + tw > canvasWidth - 4) tx = mouseX - tw - 8;
+    if (ty < 4) ty = mouseY + 16;
+
+    // Shadow
+    fill(0, 0, 0, 40);
+    noStroke();
+    rect(tx + 2, ty + 2, tw, th, 5);
+
+    // Box
+    fill(40, 40, 60);
+    stroke(120);
+    strokeWeight(1);
+    rect(tx, ty, tw, th, 5);
+
+    // Text
+    fill(255);
+    noStroke();
+    textSize(12);
+    textAlign(LEFT, CENTER);
+    text(label, tx + 8, ty + th / 2);
   }
 
   // Axis labels
@@ -351,7 +412,7 @@ function drawCompareMode() {
   textAlign(LEFT, TOP);
   text('Pop: ' + c1.pop, 8, statY);
   text('Median: ' + c1.median, 8, statY + 14);
-  text('TFR: ' + c1.tfr, 8, statY + 28);
+  text('Total Fertility Rate: ' + c1.tfr, 8, statY + 28);
   text('Dep: ' + c1.dep + '%', 8, statY + 42);
 
   textAlign(RIGHT, TOP);
@@ -361,7 +422,7 @@ function drawCompareMode() {
   textAlign(LEFT, TOP);
   text('Pop: ' + c2.pop, halfW + 8, statY);
   text('Median: ' + c2.median, halfW + 8, statY + 14);
-  text('TFR: ' + c2.tfr, halfW + 8, statY + 28);
+  text('Total Fertility Rate: ' + c2.tfr, halfW + 8, statY + 28);
   text('Dep: ' + c2.dep + '%', halfW + 8, statY + 42);
 
   textAlign(RIGHT, TOP);
@@ -374,7 +435,7 @@ function drawCompareMode() {
   fill(80);
   textSize(10);
   textAlign(CENTER, TOP);
-  text('Median age gap: ' + medianDiff + ' years  |  TFR gap: ' + tfrDiff, canvasWidth / 2, statY + 60);
+  text('Median age gap: ' + medianDiff + ' years  |  Total Fertility Rate gap: ' + tfrDiff, canvasWidth / 2, statY + 60);
 
   // Legend
   textSize(9);
@@ -384,6 +445,50 @@ function drawCompareMode() {
   fill(0);
   textAlign(LEFT, CENTER);
   text('Repro age (15-49)', 20, statY + 79);
+
+  // Hover tooltip for compare mode
+  hoveredRow = -1;
+  for (let i = 0; i < ageGroups.length; i++) {
+    let y = pyrBottom - (i + 1) * (barH + 1);
+    if (mouseX >= 0 && mouseX <= canvasWidth && mouseY >= y && mouseY < y + barH) {
+      hoveredRow = i;
+      break;
+    }
+  }
+
+  if (hoveredRow >= 0) {
+    let onLeft = mouseX < halfW;
+    let mData = onLeft ? displayMale : displayMale2;
+    let fData = onLeft ? displayFemale : displayFemale2;
+    let cName = onLeft ? name1 : name2;
+    let mPct = mData[hoveredRow].toFixed(1);
+    let fPct = fData[hoveredRow].toFixed(1);
+    let label = cName + ' ' + ageGroups[hoveredRow] + ':  ♂ ' + mPct + '%   ♀ ' + fPct + '%';
+
+    textSize(11);
+    let tw = textWidth(label) + 16;
+    let th = 24;
+    let tx = mouseX + 12;
+    let ty = mouseY - th - 6;
+
+    if (tx + tw > canvasWidth - 4) tx = mouseX - tw - 8;
+    if (ty < 4) ty = mouseY + 16;
+
+    fill(0, 0, 0, 40);
+    noStroke();
+    rect(tx + 2, ty + 2, tw, th, 5);
+
+    fill(40, 40, 60);
+    stroke(120);
+    strokeWeight(1);
+    rect(tx, ty, tw, th, 5);
+
+    fill(255);
+    noStroke();
+    textSize(11);
+    textAlign(LEFT, CENTER);
+    text(label, tx + 8, ty + th / 2);
+  }
 }
 
 function drawPyramid(maleData, femaleData, centerX, maxBarW, barH, pyrTop, pyrBottom, maxVal,
@@ -401,11 +506,18 @@ function drawPyramid(maleData, femaleData, centerX, maxBarW, barH, pyrTop, pyrBo
     fill(isRepro ? femaleRepro : femaleNorm);
     rect(centerX + 1, y, femaleW, barH);
 
+    let smallBars = maleData[i] < 1 && femaleData[i] < 1;
+
+    // Center divider — contrast with text color
+    noStroke();
+    fill(smallBars ? 255 : 0);
+    rect(centerX - 1, y, 2, barH);
+
     // Age label (only show every other in compare mode for readability)
     if (i % 2 === 0) {
-      fill(60);
+      fill(smallBars ? 0 : 255);
       noStroke();
-      textSize(7);
+      textSize(11);
       textAlign(CENTER, CENTER);
       text(ageGroups[i], centerX, y + barH / 2);
     }
@@ -420,7 +532,7 @@ function drawStats(c, name, col1, statY, col2) {
   text('Population: ' + c.pop, col1, statY);
   text('Median Age: ' + c.median, col2, statY);
   text('Dependency Ratio: ' + c.dep + '%', col1, statY + 16);
-  text('TFR: ' + c.tfr, col2, statY + 16);
+  text('Total Fertility Rate: ' + c.tfr, col2, statY + 16);
   text('Projected 2050: ' + c.proj2050, col1, statY + 32);
 
   // Legend

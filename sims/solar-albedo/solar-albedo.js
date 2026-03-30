@@ -1,4 +1,5 @@
 // Solar Radiation and Albedo Simulator
+// CANVAS_HEIGHT: 470
 // Interactive surface type selector with energy budget display
 
 let containerWidth;

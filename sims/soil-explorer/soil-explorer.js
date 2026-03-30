@@ -1,4 +1,5 @@
 // Soil Horizons and Texture Explorer
+// CANVAS_HEIGHT: 580
 // Left panel: soil profile, Right panel: texture triangle
 
 let containerWidth;

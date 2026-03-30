@@ -1,4 +1,5 @@
 // Water Properties and Ecological Importance
+// CANVAS_HEIGHT: 545
 // Interactive diagram with 5 water properties and their ecological connections
 
 let containerWidth;

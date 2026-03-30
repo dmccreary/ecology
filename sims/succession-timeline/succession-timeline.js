@@ -1,4 +1,5 @@
 // Ecological Succession Timeline
+// CANVAS_HEIGHT: 480
 // Animated timeline showing primary and secondary succession stages
 
 let containerWidth;

@@ -1,4 +1,5 @@
 // Biomagnification Through a Food Web MicroSim
+// CANVAS_HEIGHT: 530
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 480;

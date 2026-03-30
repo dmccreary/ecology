@@ -1,4 +1,5 @@
 // Criteria Air Pollutants Source-to-Impact Tracker - vis-network
+// CANVAS_HEIGHT: 655
 // Three-column network: Sources -> Six criteria pollutants + VOCs -> Health and environmental impacts
 
 document.addEventListener('DOMContentLoaded', function () {

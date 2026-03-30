@@ -1,4 +1,5 @@
 // The Hydrologic Cycle - Animated landscape
+// CANVAS_HEIGHT: 465
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 420;

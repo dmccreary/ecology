@@ -1,4 +1,5 @@
 // U.S. Air Quality Trends Dashboard - Chart.js
+// CANVAS_HEIGHT: 480
 // This file uses Chart.js (loaded via CDN in main.html)
 
 document.addEventListener('DOMContentLoaded', function () {

@@ -1,4 +1,5 @@
 // Radioactive Decay Simulator
+// CANVAS_HEIGHT: 475
 // Visual representation of atoms decaying with exponential decay curve
 
 let containerWidth;

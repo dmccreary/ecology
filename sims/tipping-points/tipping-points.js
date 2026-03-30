@@ -1,4 +1,5 @@
 // Tipping Points Explorer - p5.js
+// CANVAS_HEIGHT: 510
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 460;

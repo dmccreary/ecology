@@ -1111,6 +1111,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="About This MicroSim">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#speed-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Speed Mode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#venom-toxicity-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Venom Toxicity Mode
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2935,6 +2959,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="About This MicroSim">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#speed-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Speed Mode
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#venom-toxicity-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Venom Toxicity Mode
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -3066,24 +3114,40 @@
 
 
 <h1 id="coevolution-arms-race">Coevolution Arms Race</h1>
-<iframe src="main.html" height="402" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="510" width="100%" scrolling="no"></iframe>
 
 <p><a class="md-button md-button--primary" href="main.html">Run the Coevolution Arms Race MicroSim Fullscreen</a>
 <br>
 <a href="https://editor.p5js.org/">Edit in the p5.js Editor</a></p>
 <h2 id="about-this-microsim">About This MicroSim</h2>
-<p>This MicroSim makes the abstract concept of coevolution visible and interactive by simulating an evolutionary arms race between predator and prey populations over multiple generations. Two populations are displayed side by side: predators (red) and prey (green), each represented as circles with visible trait bars showing their speed. Each generation, faster predators catch slower prey, and the survivors reproduce with variation, causing both populations to shift toward higher trait values over time.</p>
-<p>Trait distribution histograms below each population show the shift in real time, making natural selection tangible. A generation counter and average trait display track the escalation, and after 50 generations a summary panel shows how much both traits have increased. Students can adjust mutation rate and selection strength sliders to explore how these evolutionary parameters affect the pace and pattern of the arms race.</p>
-<p>A "Switch to Toxicity Arms Race" button changes the scenario from speed-based pursuit to a toxin resistance vs. toxin strength arms race, demonstrating that coevolution operates through many different trait dimensions. This helps students understand that the underlying evolutionary mechanism is the same regardless of the specific traits involved.</p>
+<p>This MicroSim makes the abstract concept of coevolution visible and interactive by simulating an evolutionary arms race between predator and prey populations over multiple generations. Two populations are displayed side by side: predators (red) and prey (green), each represented by horizontal trait bars. Each generation, individuals interact, and those with advantageous traits are more likely to survive and reproduce with variation, causing both populations to escalate their traits over time.</p>
+<p>Trait distribution histograms show the population shift in real time, making natural selection tangible. A generation counter and average trait display track the escalation, and at generation 50 a summary panel pauses the simulation to show how much both traits have increased. Students can adjust mutation rate and selection strength sliders to explore how these evolutionary parameters affect the pace and pattern of the arms race.</p>
+<p>The simulation offers two modes that demonstrate coevolution through different trait dimensions:</p>
+<h3 id="speed-mode">Speed Mode</h3>
+<p>Models a classic predator-prey pursuit arms race, like <strong>cheetahs and gazelles</strong>.</p>
+<ul>
+<li><strong>Predator Speed</strong> — Faster predators are more likely to catch prey. Natural selection favors predators that can outrun their prey.</li>
+<li><strong>Prey Speed</strong> — Faster prey are more likely to escape. Natural selection favors prey that can outrun their predators.</li>
+<li><strong>Result</strong> — Both populations escalate toward higher speeds over generations. Neither side gains a lasting advantage because each improvement by one side creates selection pressure on the other.</li>
+</ul>
+<h3 id="venom-toxicity-mode">Venom Toxicity Mode</h3>
+<p>Models a biochemical arms race, like <strong>venomous snakes and their prey</strong> (e.g., kingsnakes vs. rattlesnakes, or coral snakes vs. ground squirrels).</p>
+<ul>
+<li><strong>Predator Venom Strength</strong> — Predators with more potent venom are more likely to subdue prey. Natural selection favors increasingly toxic venom.</li>
+<li><strong>Prey Resistance</strong> — Prey with greater physiological resistance to venom are more likely to survive encounters. Natural selection favors increased resistance.</li>
+<li><strong>Result</strong> — Venom potency and prey resistance escalate together. This explains why some venomous species produce far more toxin than seems necessary for any single prey item — they are locked in an ongoing arms race.</li>
+</ul>
+<p>Both modes demonstrate the same underlying evolutionary mechanism: <strong>reciprocal selection pressure</strong> drives continuous trait escalation in both populations, illustrating the Red Queen hypothesis — organisms must keep evolving just to maintain their relative fitness.</p>
 <h2 id="how-to-use">How to Use</h2>
 <ol>
-<li>Click <strong>Start</strong> to begin the simulation and watch predator and prey populations evolve generation by generation.</li>
-<li>Observe the <strong>trait bars</strong> on each individual -- longer bars indicate higher speed (or toxicity).</li>
-<li>Watch the <strong>histograms</strong> below each population shift rightward as both populations escalate their traits over generations.</li>
+<li>Click <strong>Start Simulation</strong> to begin and watch predator and prey populations evolve generation by generation.</li>
+<li>Observe the <strong>trait bars</strong> on each individual — longer bars indicate higher trait values (speed or venom/resistance).</li>
+<li>Watch the <strong>histograms</strong> shift rightward as both populations escalate their traits over generations.</li>
+<li>At <strong>generation 50</strong>, the simulation pauses and displays a summary of trait escalation. Click <strong>OK</strong> to dismiss and resume.</li>
 <li>Adjust the <strong>Mutation Rate</strong> slider to increase or decrease the amount of genetic variation introduced each generation.</li>
 <li>Adjust the <strong>Selection Strength</strong> slider to control how much the trait difference between predator and prey matters for survival.</li>
 <li>Click <strong>Step</strong> to advance one generation at a time for careful observation.</li>
-<li>Click <strong>Switch to Toxicity Arms Race</strong> to change from speed to a poison resistance vs. poison strength scenario.</li>
+<li>Select <strong>Speed Mode</strong> or <strong>Venom Toxicity Mode</strong> using the radio buttons to switch between arms race scenarios.</li>
 <li>Click <strong>Reset</strong> to restart the simulation with fresh populations and observe different evolutionary trajectories.</li>
 </ol>
 <h2 id="iframe-embed-code">Iframe Embed Code</h2>
@@ -3092,7 +3156,7 @@
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://dmccreary.github.io/ecology/sims/coevolution/main.html"</span>
-        <span class="na">height</span><span class="o">=</span><span class="s">"402px"</span>
+        <span class="na">height</span><span class="o">=</span><span class="s">"550px"</span>
         <span class="na">width</span><span class="o">=</span><span class="s">"100%"</span>
         <span class="na">scrolling</span><span class="o">=</span><span class="s">"no"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></tbody></table></div>

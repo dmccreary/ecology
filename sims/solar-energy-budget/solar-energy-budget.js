@@ -1,4 +1,5 @@
 // Solar Energy Budget - Sankey-style flow diagram
+// CANVAS_HEIGHT: 450
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 400;

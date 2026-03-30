@@ -1,4 +1,5 @@
 // HIPPO Threat Interaction Web - vis-network
+// CANVAS_HEIGHT: 565
 // Analyze: Differentiate between the five HIPPO threats
 
 document.addEventListener('DOMContentLoaded', function () {

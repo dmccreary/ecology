@@ -1,4 +1,5 @@
 // Global Energy Mix Scenario Explorer - p5.js
+// CANVAS_HEIGHT: 740
 // Students design an energy portfolio and see real-time sustainability metrics
 
 let containerWidth;

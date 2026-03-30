@@ -1,4 +1,5 @@
 // Environmental Justice Mapping Tool MicroSim
+// CANVAS_HEIGHT: 600
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 520;

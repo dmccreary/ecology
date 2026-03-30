@@ -1,4 +1,5 @@
 // Ocean Impacts Dashboard - Chart.js
+// CANVAS_HEIGHT: 695
 document.addEventListener('DOMContentLoaded', function() {
   const mainEl = document.querySelector('main');
   mainEl.style.fontFamily = 'Arial, sans-serif';

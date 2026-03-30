@@ -1,4 +1,5 @@
 // Soil Health Comparison: Tillage Methods MicroSim
+// CANVAS_HEIGHT: 565
 let containerWidth;
 let canvasWidth = 400;
 let drawHeight = 520;

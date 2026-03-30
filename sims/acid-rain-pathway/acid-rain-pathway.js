@@ -1,4 +1,5 @@
 // Acid Rain Formation and Impact Pathway - vis-network
+// CANVAS_HEIGHT: 625
 // Traces SO2 and NOx from emission sources through atmospheric chemistry to ecological damage
 
 document.addEventListener('DOMContentLoaded', function () {
