@@ -1,8 +1,8 @@
 {
   "title": "Coevolution Arms Race",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for coevolution arms race",
+  "subject": "Ecology",
+  "description": "Generation-by-generation simulation showing how reciprocal selection pressures drive trait escalation between predator and prey populations",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,58 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Environmental Science",
     "topic": "Coevolution Arms Race",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Predict how reciprocal selection pressures drive trait escalation in coevolving species",
+      "Explain why neither predator nor prey gains a lasting advantage in an evolutionary arms race",
+      "Analyze how mutation rate and selection strength affect the pace of coevolution"
     ],
     "bloomsTaxonomy": "Evaluate",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "40 minutes",
+    "prerequisites": [
+      "Understanding of natural selection and heritable traits",
+      "Basic understanding of predator-prey relationships"
+    ],
+    "standards": [
+      "NGSS HS-LS4-2",
+      "NGSS HS-LS4-3",
+      "AP Biology Topic 7.1"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 402
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Generation-by-generation simulation with parameter exploration",
+    "keyQuestions": [
+      "Why do both predator and prey traits escalate over time?",
+      "What happens to the arms race when mutation rate increases?",
+      "Why does neither population gain a lasting advantage?",
+      "How does the Red Queen hypothesis explain coevolutionary arms races?",
+      "What are real-world examples of coevolution between predators and prey?"
+    ],
+    "commonMisconceptions": [
+      "Students often think evolution has a goal or endpoint, rather than understanding it as an ongoing process driven by selection pressures",
+      "Many students believe the predator should always win because it is stronger, not understanding that prey evolve counter-adaptations",
+      "Students may think coevolution only involves predator-prey relationships, not recognizing mutualistic coevolution"
+    ],
+    "assessmentOpportunities": [
+      "Students compare trait escalation rates under different mutation and selection parameters",
+      "Students explain the Red Queen hypothesis using evidence from their simulation runs",
+      "Students predict outcomes of introducing a third species and justify their reasoning"
+    ]
   },
   "chapter": "05-species-interactions"
 }

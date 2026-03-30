@@ -1,8 +1,8 @@
 {
   "title": "Source Credibility Evaluator",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for source credibility evaluator",
+  "subject": "Ecology",
+  "description": "Interactive tool where students evaluate environmental science claims by rating source expertise, evidence quality, transparency, and consistency",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,57 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Source Credibility Evaluator",
+    "subjectArea": "Environmental Science",
+    "topic": "Source Credibility and Scientific Literacy",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Evaluate the credibility of environmental science claims by assessing source quality, methodology, and potential bias",
+      "Distinguish between peer-reviewed research, government reports, industry publications, and informal sources",
+      "Apply a systematic rubric for source evaluation"
     ],
-    "bloomsTaxonomy": "Create",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "bloomsTaxonomy": "Evaluate",
+    "duration": "50 minutes",
+    "prerequisites": [
+      "Basic understanding of the scientific method",
+      "Familiarity with common environmental science topics"
+    ],
+    "standards": [
+      "NGSS Science and Engineering Practice 8",
+      "CCSS.ELA-LITERACY.RST.9-10.8",
+      "AP Environmental Science Science Practices"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 500
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Gamified evaluation with scoring rubric and immediate feedback",
+    "keyQuestions": [
+      "What makes a source credible in environmental science?",
+      "How can you identify potential bias in environmental claims?",
+      "Why is peer review important for scientific credibility?",
+      "How does funding source affect the trustworthiness of research?"
+    ],
+    "commonMisconceptions": [
+      "Students often assume that any published article is equally credible regardless of the source",
+      "Students may believe that government reports are always unbiased",
+      "Students sometimes think that the number of citations alone determines credibility"
+    ],
+    "assessmentOpportunities": [
+      "Track student scores across all 8 scenarios to identify patterns in evaluation skills",
+      "Have students apply the four-criteria rubric to real environmental news articles",
+      "Ask students to create their own claim-source pairs for classmates to evaluate"
+    ]
   },
   "chapter": "14-scientific-literacy"
 }

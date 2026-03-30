@@ -1,8 +1,8 @@
 {
   "title": "Citizen Science Project Finder",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for citizen science project finder",
+  "subject": "Ecology",
+  "description": "Interactive tool helping students discover and select citizen science projects based on interests, location, and available resources",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,22 +11,30 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Environmental Science",
     "topic": "Citizen Science Project Finder",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Select appropriate citizen science projects based on interests, location, and available resources",
+      "Explain how citizen science contributes to authentic environmental research",
+      "Evaluate the scientific rigor and accessibility of different citizen science programs"
     ],
-    "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "bloomsTaxonomy": "Apply",
+    "duration": "35 minutes",
+    "prerequisites": [
+      "Basic understanding of the scientific method",
+      "Familiarity with ecology concepts such as biodiversity and climate monitoring"
+    ],
+    "standards": [
+      "NGSS HS-LS2-7",
+      "NGSS Science and Engineering Practice 3"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 562
     },
     "responsive": true,
     "dependencies": [],
@@ -36,10 +44,22 @@
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Personalized exploration with guided reflection",
+    "keyQuestions": [
+      "How does citizen science contribute to real scientific research?",
+      "What makes a citizen science project scientifically valid?",
+      "How do citizen science platforms ensure data quality from volunteers?",
+      "What project best matches your interests and resources?"
+    ],
+    "commonMisconceptions": [
+      "Students often assume citizen science data is unreliable because volunteers are not professional scientists",
+      "Many students think citizen science is only about counting birds, not realizing the breadth of projects spanning climate, water, air, and biodiversity"
+    ],
+    "assessmentOpportunities": [
+      "Students create an action plan for participating in one citizen science project",
+      "Students compare two projects at different difficulty levels and evaluate their scientific contributions",
+      "Students explain how distributed data collection by volunteers enables research that professionals alone could not accomplish"
+    ]
   },
   "chapter": "17-evaluating-environmental-claims"
 }

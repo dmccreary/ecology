@@ -1,8 +1,8 @@
 {
   "title": "Global Wind and Convection Cell Model",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for global wind and convection cell model",
+  "subject": "Ecology",
+  "description": "Explore Earth's atmospheric circulation with animated convection cells, wind patterns, and Coriolis effect toggle.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,59 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Global Wind and Convection Cell Model",
+    "subjectArea": "Environmental Science",
+    "topic": "Global Atmospheric Circulation and Wind Patterns",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Describe how convection cells, the Coriolis effect, and global wind patterns interact to create Earth's major climate zones",
+      "Identify the three convection cells and explain why air rises or sinks at specific latitudes",
+      "Explain how the Coriolis effect deflects winds and creates named wind belts",
+      "Connect global wind and precipitation patterns to biome distribution"
     ],
-    "bloomsTaxonomy": "Create",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "bloomsTaxonomy": "Understand",
+    "duration": "40 minutes",
+    "prerequisites": [
+      "Basic understanding of convection",
+      "Knowledge that Earth rotates on its axis",
+      "Familiarity with major biome types"
+    ],
+    "standards": [
+      "NGSS HS-ESS2-4",
+      "AP Environmental Science Topic 8.1",
+      "AP Environmental Science Topic 4.4"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 482
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Model-based inquiry with toggle comparison",
+    "keyQuestions": [
+      "Why are most of the world's deserts located near 30 degrees latitude?",
+      "How does the Coriolis effect change the direction of surface winds?",
+      "What is the relationship between convection cells and biome distribution?",
+      "How might climate change shift the boundaries of convection cells?"
+    ],
+    "commonMisconceptions": [
+      "Students often think winds blow directly from the poles to the equator without deflection",
+      "Many students confuse the Coriolis effect with centrifugal force or believe it directly causes weather",
+      "Students may think all latitudes receive equal precipitation"
+    ],
+    "assessmentOpportunities": [
+      "Have students sketch convection cells from memory after exploring the simulation",
+      "Assess student ability to explain the Coriolis effect using the toggle feature",
+      "Evaluate completed latitude-wind-biome mapping tables"
+    ]
   },
   "chapter": "08-earth-systems"
 }

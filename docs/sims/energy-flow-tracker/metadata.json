@@ -1,8 +1,8 @@
 {
   "title": "Energy Flow Tracker",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for energy flow tracker",
+  "subject": "Ecology",
+  "description": "Animated energy flow diagram tracing energy through four trophic levels with branching losses to respiration, waste, and transfer",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,57 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Energy Flow Tracker",
+    "subjectArea": "Environmental Science",
+    "topic": "Energy Flow in Food Chains",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Trace energy through a food chain, accounting for respiration, waste, and transfer at each trophic level",
+      "Calculate the percentage of energy available at each successive trophic level",
+      "Explain why food chains are limited to 4-5 trophic levels"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Understanding of food chains and trophic levels",
+      "Basic knowledge of photosynthesis and cellular respiration",
+      "Familiarity with energy conservation"
+    ],
+    "standards": [
+      "NGSS HS-LS2-4",
+      "NGSS HS-LS1-5"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 442
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Animated visualization with pause-and-examine capability",
+    "keyQuestions": [
+      "Where does the energy go at each trophic level?",
+      "Why is only about 10% of energy transferred from one level to the next?",
+      "What limits the number of trophic levels in an ecosystem?",
+      "How does the second law of thermodynamics apply to food chains?"
+    ],
+    "commonMisconceptions": [
+      "Students often think energy is 'lost' or destroyed rather than converted to heat",
+      "Students may believe the 10% rule is exact rather than an approximation that varies by ecosystem",
+      "Students may confuse energy flow (one-directional) with nutrient cycling (circular)"
+    ],
+    "assessmentOpportunities": [
+      "Students create a data table tracking energy values at each trophic level",
+      "Students calculate how much producer biomass supports one kilogram of apex predator",
+      "Students explain why shorter food chains are more energy-efficient"
+    ]
   },
   "chapter": "03-energy-flow"
 }

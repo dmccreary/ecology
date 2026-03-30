@@ -1,8 +1,8 @@
 {
   "title": "Climate Solutions Pathway",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for climate solutions pathway",
+  "subject": "Ecology",
+  "description": "Interactive simulation where students activate and combine climate solutions across five sectors to see projected temperature pathway outcomes",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,22 +11,31 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Environmental Science",
     "topic": "Climate Solutions Pathway",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Assess the relative impact of different climate solutions and explain how mitigation and adaptation strategies work together",
+      "Evaluate the feasibility and scalability of solutions across energy, transport, land use, industry, and policy sectors",
+      "Construct a portfolio of solutions that achieves meaningful emissions reductions"
     ],
     "bloomsTaxonomy": "Evaluate",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Understanding of the greenhouse effect and global warming",
+      "Familiarity with major sources of greenhouse gas emissions by sector"
+    ],
+    "standards": [
+      "NGSS HS-ESS3-4",
+      "NGSS HS-ETS1-3",
+      "AP Environmental Science Topic 9.7"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 502
     },
     "responsive": true,
     "dependencies": [],
@@ -36,10 +45,23 @@
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Solutions-oriented portfolio building with comparative analysis",
+    "keyQuestions": [
+      "Which sector offers the largest total emissions reduction potential?",
+      "Why is a portfolio approach more effective than relying on one solution?",
+      "What is the difference between mitigation and adaptation strategies?",
+      "What barriers prevent high-potential solutions from being widely adopted?"
+    ],
+    "commonMisconceptions": [
+      "Students often believe a single technology like solar power can solve climate change on its own, not recognizing the need for a portfolio of solutions across sectors",
+      "Many students confuse mitigation (reducing emissions) with adaptation (adjusting to climate impacts)",
+      "Students may think individual actions like recycling are sufficient without recognizing the need for systemic policy changes"
+    ],
+    "assessmentOpportunities": [
+      "Students build a climate solutions portfolio and justify their selections",
+      "Students compare sector-by-sector reduction potentials and explain the differences",
+      "Students research one real-world solution and connect simulation findings to implementation challenges"
+    ]
   },
   "chapter": "15-global-climate-change"
 }

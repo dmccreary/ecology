@@ -1,8 +1,8 @@
 {
   "title": "Monoculture vs. Polyculture Ecosystem Comparison",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for monoculture vs. polyculture ecosystem comparison",
+  "subject": "Ecology",
+  "description": "Split-screen p5.js simulation comparing pest spread, drought resilience, and yield stability between monoculture and polyculture farming systems",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,61 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Monoculture vs. Polyculture Ecosystem Comparison",
+    "subjectArea": "Environmental Science",
+    "topic": "Monoculture vs. Polyculture Agricultural Systems",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Compare the ecological resilience of monoculture and polyculture systems under stress",
+      "Analyze how crop diversity affects long-term soil health and yield stability",
+      "Evaluate the trade-offs between monoculture efficiency and polyculture resilience"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Basic understanding of agricultural practices",
+      "Familiarity with biodiversity and ecosystem services",
+      "Introduction to soil science and nutrient cycling"
+    ],
+    "standards": [
+      "NGSS HS-LS2-6",
+      "AP Environmental Science Topic 5.3",
+      "AP Environmental Science Topic 5.5"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 480
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js"
+    ],
     "accessibility": {
       "hasAltText": false,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Side-by-side comparison with controlled stress experiments",
+    "keyQuestions": [
+      "Why do pests spread faster when all plants in a field are the same species?",
+      "How does plant diversity help a field retain soil moisture during drought?",
+      "What happens to soil health after many seasons of monoculture versus polyculture?",
+      "Why might a farmer choose monoculture despite its ecological disadvantages?",
+      "How do the simulation results connect to real-world agricultural sustainability?"
+    ],
+    "commonMisconceptions": [
+      "Monoculture always produces more food -- while per-season yields may be higher initially, cumulative yield often favors polyculture due to soil degradation",
+      "Polyculture means lower productivity -- diverse systems can match or exceed monoculture yields when measured over multiple seasons",
+      "Pest resistance is mainly about pesticides -- crop diversity itself is a powerful pest management strategy"
+    ],
+    "assessmentOpportunities": [
+      "Have students graph cumulative yield over 20 seasons and identify the crossover point",
+      "Ask students to design a polyculture planting plan for a specific climate and soil type",
+      "Compare simulation data to published research on monoculture vs. polyculture yields"
+    ]
   },
   "chapter": "10-land-and-water-use"
 }

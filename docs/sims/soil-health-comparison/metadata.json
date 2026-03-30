@@ -1,8 +1,8 @@
 {
   "title": "Soil Health Comparison: Tillage Methods",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for soil health comparison: tillage methods",
+  "subject": "Ecology",
+  "description": "Interactive MicroSim comparing the long-term effects of conventional tillage vs. no-till farming on soil health indicators over 20 simulated years.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,22 +11,34 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Soil Health Comparison: Tillage Methods",
+    "subjectArea": "Environmental Science",
+    "topic": "Soil Health and Sustainable Agriculture",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Evaluate the long-term effects of conventional tillage vs. no-till farming on soil health indicators",
+      "Analyze how farming practices affect soil organic carbon, water infiltration, erosion, and biodiversity",
+      "Assess the trade-offs between short-term agricultural productivity and long-term soil sustainability",
+      "Propose evidence-based farming recommendations that balance yield with soil conservation"
     ],
     "bloomsTaxonomy": "Evaluate",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Understanding of soil horizons and basic soil properties",
+      "Familiarity with sustainable vs. unsustainable resource use",
+      "Basic knowledge of agriculture and food production"
+    ],
+    "standards": [
+      "NGSS ESS3.C",
+      "NGSS ESS3.A",
+      "AP Environmental Science Topic 5.3",
+      "AP Environmental Science Topic 5.5"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 520
     },
     "responsive": true,
     "dependencies": [],
@@ -36,10 +48,24 @@
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Time-lapse side-by-side comparison with quantitative metrics",
+    "keyQuestions": [
+      "How does soil organic carbon change over 20 years under each tillage method?",
+      "Why does water infiltration decrease with conventional tillage?",
+      "Is no-till farming always better, or are there trade-offs?",
+      "How do soil health practices connect to climate change and water quality?",
+      "Why might a farmer resist switching to no-till despite long-term benefits?"
+    ],
+    "commonMisconceptions": [
+      "Tilling soil is always necessary for good crop growth",
+      "Soil health changes are visible within a single growing season rather than over decades",
+      "No-till farming always produces lower yields than conventional tillage"
+    ],
+    "assessmentOpportunities": [
+      "Students compare metrics at year 5 vs. year 20 to evaluate short-term vs. long-term outcomes",
+      "Students write a recommendation letter to a farmer using simulation data as evidence",
+      "Students connect soil health metrics to broader environmental impacts"
+    ]
   },
   "chapter": "10-land-and-water-use"
 }

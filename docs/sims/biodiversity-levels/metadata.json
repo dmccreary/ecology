@@ -1,8 +1,8 @@
 {
   "title": "Biodiversity Levels Pyramid",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for biodiversity levels pyramid",
+  "subject": "Ecology",
+  "description": "Interactive three-tier pyramid showing genetic, species, and ecosystem diversity with clickable real-world examples",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,60 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Biodiversity Levels Pyramid",
+    "subjectArea": "Environmental Science",
+    "topic": "Biodiversity Levels",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Classify the three levels of biodiversity and give examples of each",
+      "Explain how genetic, species, and ecosystem diversity are nested within each other",
+      "Provide real-world examples of each biodiversity level",
+      "Describe why all three levels are important for ecosystem resilience"
     ],
     "bloomsTaxonomy": "Understand",
     "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "prerequisites": [
+      "Basic understanding of genes and DNA",
+      "Knowledge of what a species is",
+      "Familiarity with the concept of an ecosystem"
+    ],
+    "standards": [
+      "NGSS HS-LS4-5",
+      "AP Environmental Science Topic 2.2"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 502
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js"
+    ],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Visual hierarchy with interactive drill-down examples",
+    "keyQuestions": [
+      "Why is genetic diversity considered the foundation of all biodiversity?",
+      "How does losing one level of biodiversity affect the other two?",
+      "Can you have high species diversity but low genetic diversity? What are the consequences?",
+      "Why do conservationists need to protect all three levels, not just species?"
+    ],
+    "commonMisconceptions": [
+      "Biodiversity only means the number of species (it also includes genetic and ecosystem diversity)",
+      "All members of a species are genetically identical (genetic variation within species is crucial for adaptation)",
+      "Ecosystem diversity is less important than species diversity (losing entire ecosystem types has cascading effects)"
+    ],
+    "assessmentOpportunities": [
+      "Have students classify examples into the correct biodiversity level",
+      "Ask students to explain why a monoculture crop field has low genetic diversity and what risks this creates",
+      "Challenge students to identify all three levels of biodiversity in their local environment"
+    ]
   },
   "chapter": "06-biodiversity-and-services"
 }

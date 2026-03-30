@@ -1,8 +1,8 @@
 {
   "title": "Demographic Transition Model",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for demographic transition model",
+  "subject": "Ecology",
+  "description": "Interactive p5.js MicroSim showing how birth rates, death rates, and total population change through the four stages of demographic transition with real country examples.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,60 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Demographic Transition Model",
+    "subjectArea": "Environmental Science",
+    "topic": "Demographic Transition and Human Population Dynamics",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Explain how birth rates, death rates, and total population change through the four stages of demographic transition",
+      "Identify which stage real countries currently occupy and explain determining factors",
+      "Predict future population trends for countries at different stages",
+      "Analyze the relationship between economic development and population growth"
     ],
     "bloomsTaxonomy": "Understand",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "50 minutes",
+    "prerequisites": [
+      "Basic understanding of birth rate and death rate",
+      "Population growth terminology",
+      "Introduction to human population trends"
+    ],
+    "standards": [
+      "NGSS HS-ESS3-3",
+      "AP Environmental Science: Topic 3.3",
+      "NGSS HS-LS2-1"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 432
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Animated timeline with real country examples",
+    "keyQuestions": [
+      "In which stage does the most rapid population growth occur and why?",
+      "Why do death rates typically decline before birth rates?",
+      "What factors drive a country from one stage to the next?",
+      "What challenges do Stage 4 countries face with declining populations?",
+      "How does the demographic transition model help predict future resource needs?"
+    ],
+    "commonMisconceptions": [
+      "Population growth is the same in all countries",
+      "High population growth is caused by rising birth rates rather than falling death rates",
+      "All countries will eventually reach Stage 4 at the same pace"
+    ],
+    "assessmentOpportunities": [
+      "Stage identification exercise with real country data",
+      "Prediction writing for countries in transition",
+      "Comparison analysis of two countries at different stages"
+    ]
   },
   "chapter": "07-population-ecology"
 }

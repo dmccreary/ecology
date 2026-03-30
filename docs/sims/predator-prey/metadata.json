@@ -1,8 +1,8 @@
 {
   "title": "Predator-Prey Population Dynamics",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for predator-prey population dynamics",
+  "subject": "Ecology",
+  "description": "Interactive MicroSim modeling Lotka-Volterra predator-prey oscillations with an animated meadow and real-time population graphs.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,15 +11,26 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Environmental Science",
     "topic": "Predator-Prey Population Dynamics",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Model predator-prey oscillations and predict how changing parameters affects population dynamics",
+      "Analyze the feedback loops that create cyclical population patterns",
+      "Predict the consequences of removing predators or introducing disease to an ecosystem",
+      "Connect simulation behavior to real-world examples such as the lynx-hare cycle"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Basic understanding of food webs and trophic levels",
+      "Familiarity with population growth concepts",
+      "Ability to interpret line graphs with multiple variables"
+    ],
+    "standards": [
+      "NGSS LS2.A",
+      "NGSS LS2.C",
+      "AP Environmental Science Topic 3.3"
+    ]
   },
   "technical": {
     "framework": "p5.js",
@@ -36,10 +47,23 @@
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Agent-based simulation with scenario testing",
+    "keyQuestions": [
+      "Why do predator and prey populations oscillate rather than reaching equilibrium?",
+      "What happens to prey populations when predators are removed?",
+      "How does a disease outbreak in the prey population affect predators?",
+      "What parameter changes lead to stable vs. unstable oscillations?"
+    ],
+    "commonMisconceptions": [
+      "Removing predators always benefits prey populations in the long term",
+      "Predator and prey populations peak at the same time rather than being offset",
+      "Predator-prey cycles always have the same amplitude and period"
+    ],
+    "assessmentOpportunities": [
+      "Students predict outcomes of the Disease and Remove Predators buttons before pressing them",
+      "Students explain the time lag between predator and prey population peaks",
+      "Students connect simulation results to the Yellowstone wolf reintroduction case study"
+    ]
   },
   "chapter": "05-species-interactions"
 }

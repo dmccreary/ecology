@@ -1,8 +1,8 @@
 {
   "title": "The Nitrogen Cycle",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for the nitrogen cycle",
+  "subject": "Ecology",
+  "description": "Step-through p5.js animation tracing nitrogen through fixation, nitrification, assimilation, decomposition, and denitrification with labeled organisms",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,59 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Environmental Science",
     "topic": "The Nitrogen Cycle",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Trace nitrogen through fixation, nitrification, assimilation, and denitrification stages",
+      "Identify the organisms involved at each step of the nitrogen cycle",
+      "Predict the environmental consequences of adding excess nitrogen fertilizer"
     ],
     "bloomsTaxonomy": "Apply",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Basic chemistry concepts (elements, compounds)",
+      "Understanding of producers, consumers, and decomposers",
+      "Introduction to biogeochemical cycles"
+    ],
+    "standards": [
+      "NGSS HS-LS2-3",
+      "AP Environmental Science Topic 1.5"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 500
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js"
+    ],
     "accessibility": {
       "hasAltText": false,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Step-through animation with pause-and-discuss",
+    "keyQuestions": [
+      "Why can't most organisms use atmospheric nitrogen (N2) directly?",
+      "What role do bacteria play in making nitrogen available to plants?",
+      "How does adding fertilizer disrupt the natural nitrogen cycle?",
+      "Why is denitrification important for completing the cycle?"
+    ],
+    "commonMisconceptions": [
+      "Plants absorb nitrogen directly from the air -- in reality, atmospheric N2 must be fixed by bacteria before plants can use it",
+      "Nitrogen fixation is the only way nitrogen enters the soil -- decomposition of organic matter also releases usable nitrogen",
+      "Fertilizer is the same as what bacteria produce -- synthetic fertilizers bypass the biological cycle and can overwhelm natural processing capacity"
+    ],
+    "assessmentOpportunities": [
+      "Have students draw the nitrogen cycle from memory after the step-through and compare to the simulation",
+      "Ask students to trace a single nitrogen atom through the complete cycle naming each process",
+      "Connect the fertilizer experiment to real-world eutrophication case studies"
+    ]
   },
   "chapter": "04-biogeochemical-cycles"
 }

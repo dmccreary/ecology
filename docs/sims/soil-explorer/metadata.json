@@ -1,8 +1,8 @@
 {
   "title": "Soil Horizons and Texture Explorer",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for soil horizons and texture explorer",
+  "subject": "Ecology",
+  "description": "Interactive MicroSim with split-screen soil profile horizons and texture triangle for classifying soil types.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,22 +11,34 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Soil Horizons and Texture Explorer",
+    "subjectArea": "Environmental Science",
+    "topic": "Soil Horizons and Texture Classification",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Classify soil types using the texture triangle and identify soil horizons in a profile diagram",
+      "Describe the composition and ecological role of each soil horizon (O, A, B, C, R)",
+      "Explain how soil texture affects drainage, nutrient retention, and plant growth",
+      "Connect soil properties to ecosystem services and agricultural productivity"
     ],
     "bloomsTaxonomy": "Apply",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Basic understanding of weathering and erosion processes",
+      "Familiarity with the rock cycle",
+      "Understanding that soil is a non-renewable resource on human timescales"
+    ],
+    "standards": [
+      "NGSS ESS2.A",
+      "NGSS ESS3.A",
+      "AP Environmental Science Topic 4.2",
+      "AP Environmental Science Topic 5.4"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 520
     },
     "responsive": true,
     "dependencies": [],
@@ -36,10 +48,23 @@
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Split-screen interactive exploration with hover-to-learn and slider-based classification",
+    "keyQuestions": [
+      "What is the ecological role of each soil horizon?",
+      "How does soil texture affect water drainage and nutrient retention?",
+      "Why is the A horizon (topsoil) considered a non-renewable resource?",
+      "What soil texture is ideal for agriculture and why?"
+    ],
+    "commonMisconceptions": [
+      "Soil is just dirt with no internal structure or organization",
+      "Sandy soil is always better because it drains well, ignoring nutrient loss",
+      "Soil forms quickly and is easily replaceable after erosion"
+    ],
+    "assessmentOpportunities": [
+      "Students classify soil samples given sand/silt/clay percentages using the texture triangle",
+      "Students match soil horizons to their ecological roles from memory",
+      "Students recommend soil amendments for a given agricultural scenario"
+    ]
   },
   "chapter": "08-earth-systems"
 }

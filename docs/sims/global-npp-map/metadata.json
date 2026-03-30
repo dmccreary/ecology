@@ -1,8 +1,8 @@
 {
   "title": "Global NPP Heatmap",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for global npp heatmap",
+  "subject": "Ecology",
+  "description": "Compare net primary productivity across biomes using an interactive heatmap with per-square-meter and total contribution views.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,59 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Global NPP Heatmap",
+    "subjectArea": "Environmental Science",
+    "topic": "Net Primary Productivity Across Biomes",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Compare net primary productivity across different biomes and explain why some regions are more productive than others",
+      "Identify the limiting factors that constrain productivity in each biome",
+      "Distinguish between per-area productivity and total global contribution",
+      "Explain why the open ocean is the largest total contributor to global NPP"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "40 minutes",
+    "prerequisites": [
+      "Understanding of photosynthesis as the basis of primary productivity",
+      "Basic knowledge of Earth's major biomes",
+      "Familiarity with the concept of limiting factors"
+    ],
+    "standards": [
+      "NGSS HS-LS2-4",
+      "AP Environmental Science Topic 3.2",
+      "AP Environmental Science Topic 2.2"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 502
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Data analysis and pattern recognition through interactive visualization",
+    "keyQuestions": [
+      "Why do tropical rainforests have the highest per-area NPP?",
+      "Why does the open ocean contribute more total NPP than any single terrestrial biome?",
+      "What limiting factors explain the low productivity of deserts and tundra?",
+      "How might climate change shift global NPP patterns?"
+    ],
+    "commonMisconceptions": [
+      "Students often assume the most productive biome per area is also the largest total contributor to global NPP",
+      "Many students underestimate ocean productivity because they focus on per-area values rather than total area",
+      "Students may believe all aquatic ecosystems have similar productivity levels"
+    ],
+    "assessmentOpportunities": [
+      "Compare student predictions from the warm-up with actual NPP values from the simulation",
+      "Evaluate written explanations of the per-area vs. total contribution distinction",
+      "Assess student ability to link limiting factors to productivity patterns"
+    ]
   },
   "chapter": "03-energy-flow"
 }

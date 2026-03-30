@@ -1,8 +1,8 @@
 {
   "title": "Fact-Checking Workflow",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for fact-checking workflow",
+  "subject": "Ecology",
+  "description": "Interactive decision-tree workflow guiding students through the SIFT method to systematically evaluate environmental claims",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,59 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Fact-Checking Workflow",
+    "subjectArea": "Environmental Science",
+    "topic": "Evaluating Environmental Claims",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Execute a systematic fact-checking workflow (SIFT) when presented with an environmental claim",
+      "Evaluate source credibility by examining funding, credentials, and publication history",
+      "Distinguish between reliable, uncertain, misleading, and false environmental claims using evidence"
     ],
-    "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "bloomsTaxonomy": "Apply",
+    "duration": "50 minutes",
+    "prerequisites": [
+      "Basic understanding of scientific evidence and peer review",
+      "Awareness of common environmental topics",
+      "Familiarity with the concept of media bias"
+    ],
+    "standards": [
+      "NGSS HS-ESS3-4",
+      "CCSS.ELA-LITERACY.RST.9-10.8",
+      "CCSS.ELA-LITERACY.RST.11-12.7"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 562
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Guided decision-tree workflow with expert comparison",
+    "keyQuestions": [
+      "How can you tell if a source is credible when evaluating an environmental claim?",
+      "Why is it important to check multiple sources rather than relying on one?",
+      "What is the difference between a misleading claim and a false claim?",
+      "How does tracing to the original source change your assessment?",
+      "What patterns do you notice among claims that turn out to be misleading?"
+    ],
+    "commonMisconceptions": [
+      "Students often judge claims by whether they 'sound scientific' rather than by checking sources",
+      "Students may assume professional-looking websites are always credible",
+      "Students may think fact-checking means simply Googling the claim rather than following a systematic process"
+    ],
+    "assessmentOpportunities": [
+      "Students record their process and findings for at least 4 claims in a structured table",
+      "Students apply the SIFT method to a real environmental claim found independently",
+      "Students compare their assessments to expert evaluations and reflect on discrepancies"
+    ]
   },
   "chapter": "17-evaluating-environmental-claims"
 }

@@ -1,8 +1,8 @@
 {
   "title": "Climate Feedback Loops",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for climate feedback loops",
+  "subject": "Ecology",
+  "description": "Interactive causal loop diagram showing how positive feedback loops in the climate system amplify global warming through ice-albedo, permafrost methane, and water vapor mechanisms",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,60 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Environmental Science",
     "topic": "Climate Feedback Loops",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Trace how positive feedback loops in the climate system amplify warming",
+      "Diagram the causal chain in the ice-albedo, permafrost-methane, and water vapor feedback loops",
+      "Distinguish between positive and negative feedback in Earth systems"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "40 minutes",
+    "prerequisites": [
+      "Basic understanding of the greenhouse effect",
+      "Familiarity with the concept of albedo"
+    ],
+    "standards": [
+      "NGSS HS-ESS2-4",
+      "NGSS HS-ESS3-6",
+      "AP Environmental Science Topic 9.4"
+    ]
   },
   "technical": {
     "framework": "vis-network",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 500
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "vis-network"
+    ],
     "accessibility": {
       "hasAltText": false,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Systems thinking through interactive causal loop diagrams",
+    "keyQuestions": [
+      "How does the ice-albedo feedback loop amplify Arctic warming?",
+      "Why is permafrost thawing considered a potential climate tipping point?",
+      "What is the difference between a positive and negative feedback loop?",
+      "How do multiple feedback loops interact to make climate projections more uncertain?",
+      "Why is water vapor considered a feedback rather than a climate forcing?"
+    ],
+    "commonMisconceptions": [
+      "Students often confuse positive feedback with a good outcome -- in systems science, positive feedback means amplifying, which can amplify harmful changes",
+      "Many students think climate change is a simple linear process rather than a complex system with reinforcing feedback loops",
+      "Students may believe that stopping emissions immediately would halt all warming, not accounting for committed warming from feedback loops already in motion"
+    ],
+    "assessmentOpportunities": [
+      "Students trace each feedback loop as a written causal chain sequence",
+      "Students draw their own causal loop diagram for a negative feedback in the climate system",
+      "Students explain why the Arctic is warming faster than the global average using feedback concepts"
+    ]
   },
   "chapter": "15-global-climate-change"
 }

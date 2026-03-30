@@ -1,8 +1,8 @@
 {
   "title": "Integrated Pest Management Decision Flowchart",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for integrated pest management decision flowchart",
+  "subject": "Ecology",
+  "description": "Interactive vis-network decision tree guiding students through the IPM hierarchy of pest control strategies across three crop scenarios",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,59 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Integrated Pest Management Decision Flowchart",
+    "subjectArea": "Environmental Science",
+    "topic": "Integrated Pest Management",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Apply the IPM decision-making hierarchy to determine appropriate pest control strategies",
+      "Evaluate the ecological trade-offs of cultural, biological, and chemical pest controls",
+      "Compare IPM approaches across different pest scenarios and crop systems"
     ],
     "bloomsTaxonomy": "Apply",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Basic understanding of agricultural ecosystems",
+      "Familiarity with types of pests and their crop impacts",
+      "Introduction to sustainable agriculture concepts"
+    ],
+    "standards": [
+      "NGSS HS-LS2-7",
+      "AP Environmental Science Topic 5.4"
+    ]
   },
   "technical": {
     "framework": "vis-network",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 600
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "vis-network"
+    ],
     "accessibility": {
       "hasAltText": false,
-      "keyboardNavigable": false
+      "keyboardNavigable": true
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Interactive decision-tree exploration",
+    "keyQuestions": [
+      "Why does IPM prioritize cultural and biological controls before chemical ones?",
+      "How do the ecological impacts differ between the three pest scenarios?",
+      "What long-term consequences arise from skipping directly to chemical controls?",
+      "How does the economic threshold concept influence IPM decisions?"
+    ],
+    "commonMisconceptions": [
+      "IPM means never using pesticides -- it actually means using them as a last resort in a systematic hierarchy",
+      "All pest control methods have similar ecological impacts -- in reality, chemical controls typically have much higher ecological costs",
+      "IPM is less effective than conventional pest control -- studies show IPM can be equally effective with lower environmental impact"
+    ],
+    "assessmentOpportunities": [
+      "Have students design an IPM plan for a novel pest scenario not covered in the simulation",
+      "Compare student decision paths and discuss why different groups may choose different strategies",
+      "Ask students to calculate the cumulative ecological cost of different decision paths"
+    ]
   },
   "chapter": "10-land-and-water-use"
 }

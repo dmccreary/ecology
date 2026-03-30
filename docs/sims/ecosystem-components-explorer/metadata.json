@@ -1,8 +1,8 @@
 {
   "title": "Ecosystem Components Interactive Explorer",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for ecosystem components interactive explorer",
+  "subject": "Ecology",
+  "description": "Interactive p5.js drag-and-sort activity where students classify 16 ecosystem components as biotic or abiotic factors and explore their interactions.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,59 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Ecosystem Components Interactive Explorer",
+    "subjectArea": "Environmental Science",
+    "topic": "Biotic and Abiotic Ecosystem Components",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Classify ecosystem components as biotic or abiotic factors",
+      "Explain the difference between biotic and abiotic factors with specific examples",
+      "Describe how biotic and abiotic factors interact within an ecosystem",
+      "Identify components that may be challenging to classify and explain why"
     ],
-    "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "bloomsTaxonomy": "Understand",
+    "duration": "35 minutes",
+    "prerequisites": [
+      "Basic understanding of living vs. nonliving things",
+      "Introduction to the concept of an ecosystem",
+      "Familiarity with common organisms and environmental factors"
+    ],
+    "standards": [
+      "NGSS HS-LS2-2",
+      "AP Environmental Science: Topic 1.1",
+      "NGSS HS-LS2-6"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 502
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Drag-and-sort classification with immediate feedback",
+    "keyQuestions": [
+      "What makes something a biotic factor vs. an abiotic factor?",
+      "Are dead leaves biotic or abiotic? What about soil?",
+      "How do biotic and abiotic factors depend on each other?",
+      "Can an ecosystem exist with only biotic or only abiotic factors?"
+    ],
+    "commonMisconceptions": [
+      "Dead organisms are abiotic because they are no longer alive",
+      "Soil is purely abiotic (it actually contains both biotic and abiotic components)",
+      "Biotic and abiotic factors operate independently of each other"
+    ],
+    "assessmentOpportunities": [
+      "Sorting accuracy score as formative assessment",
+      "Written explanations for commonly misclassified items",
+      "Biotic-abiotic interaction descriptions after completing the sort"
+    ]
   },
   "chapter": "01-foundations-of-ecology"
 }

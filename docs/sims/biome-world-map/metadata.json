@@ -1,8 +1,8 @@
 {
   "title": "World Biome Map",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for world biome map",
+  "subject": "Ecology",
+  "description": "Interactive world map showing seven terrestrial biomes with hover details for temperature, precipitation, and representative organisms",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,60 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "World Biome Map",
+    "subjectArea": "Environmental Science",
+    "topic": "World Biome Distribution",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Classify and locate the seven major terrestrial biomes on a world map",
+      "Describe the temperature range, precipitation, and representative organisms of each biome",
+      "Explain the relationship between latitude, climate, and biome distribution",
+      "Compare the geographic extent of different biomes across continents"
     ],
     "bloomsTaxonomy": "Understand",
     "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "prerequisites": [
+      "Basic understanding of climate (temperature and precipitation)",
+      "Knowledge of what an ecosystem is",
+      "Familiarity with world geography"
+    ],
+    "standards": [
+      "NGSS HS-LS2-6",
+      "AP Environmental Science Topic 1.2"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 462
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js"
+    ],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Spatial visualization with geographic exploration",
+    "keyQuestions": [
+      "Why do biomes form in roughly latitudinal bands around the Earth?",
+      "What two climate factors most determine which biome develops in a location?",
+      "Why do similar biomes exist on different continents despite being separated by oceans?",
+      "How might climate change shift biome boundaries?"
+    ],
+    "commonMisconceptions": [
+      "Biome boundaries are sharp lines (in reality they are gradual transitions called ecotones)",
+      "Temperature alone determines biome type (precipitation is equally important)",
+      "Each continent has unique biomes (similar biomes appear on multiple continents due to similar climate conditions)"
+    ],
+    "assessmentOpportunities": [
+      "Have students create a biome identification key based on temperature and precipitation ranges",
+      "Ask students to predict where new biomes would form if climate conditions changed",
+      "Challenge students to explain why Australia has unique biome distributions compared to similar latitudes elsewhere"
+    ]
   },
   "chapter": "02-ecosystems-and-biomes"
 }

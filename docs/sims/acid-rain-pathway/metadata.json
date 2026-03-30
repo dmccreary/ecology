@@ -1,8 +1,8 @@
 {
   "title": "Acid Rain Formation and Impact Pathway",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for acid rain formation and impact pathway",
+  "subject": "Ecology",
+  "description": "Interactive network diagram tracing SO2 and NOx from emission sources through atmospheric chemistry to acid deposition and ecological damage",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,60 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Environmental Science",
     "topic": "Acid Rain Formation and Impact Pathway",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Trace the pathway from SO2 and NOx emissions through atmospheric chemistry to acid deposition and ecological damage",
+      "Identify the three main emission sources of acid rain precursors",
+      "Explain the chemical reactions that convert SO2 and NOx into sulfuric and nitric acid",
+      "Describe ecological impacts of acid rain on aquatic, terrestrial, and built environments"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Basic understanding of chemical reactions and pH",
+      "Familiarity with fossil fuel combustion",
+      "Knowledge of ecosystem components"
+    ],
+    "standards": [
+      "NGSS HS-ESS3-4",
+      "AP Environmental Science Topic 7.2"
+    ]
   },
   "technical": {
     "framework": "vis-network",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 600
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "vis-network"
+    ],
     "accessibility": {
       "hasAltText": false,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Interactive exploration with pathway tracing",
+    "keyQuestions": [
+      "How do emissions from one region cause environmental damage in another?",
+      "Why is acid rain considered a systems problem rather than a simple pollution issue?",
+      "What chemical transformations occur between emission and deposition?",
+      "Which ecological impacts of acid rain are reversible and which are permanent?"
+    ],
+    "commonMisconceptions": [
+      "Acid rain only falls near pollution sources (wind can carry pollutants hundreds of miles)",
+      "Acid rain is caused by a single pollutant (both SO2 and NOx contribute)",
+      "Acid rain only affects lakes (it also damages forests, soils, and buildings)"
+    ],
+    "assessmentOpportunities": [
+      "Have students trace the complete pathway from a specific source to a specific impact",
+      "Ask students to predict which impacts would recover first if emissions were reduced",
+      "Challenge students to explain why transboundary pollution requires international cooperation"
+    ]
   },
   "chapter": "11-atmospheric-pollution"
 }

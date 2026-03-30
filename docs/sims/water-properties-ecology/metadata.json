@@ -1,8 +1,8 @@
 {
   "title": "Water Properties and Ecological Importance",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for water properties and ecological importance",
+  "subject": "Ecology",
+  "description": "Interactive diagram showing five key properties of water with hover-to-reveal ecological connections, a central H2O molecule, and a quiz mode",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,57 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Environmental Science",
     "topic": "Water Properties and Ecological Importance",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Explain five key properties of water and connect each property to its ecological importance",
+      "Describe how the molecular structure of water gives rise to these properties",
+      "Predict ecological consequences if water lacked any one of these properties"
     ],
-    "bloomsTaxonomy": "Apply",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "bloomsTaxonomy": "Understand",
+    "duration": "40 minutes",
+    "prerequisites": [
+      "Basic understanding of molecular structure and polarity",
+      "Familiarity with hydrogen bonding"
+    ],
+    "standards": [
+      "NGSS HS-LS2-3",
+      "NGSS HS-PS1-3",
+      "AP Environmental Science Topic 1.1"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 545
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Hover-to-reveal predict-then-discover with self-assessment quiz mode",
+    "keyQuestions": [
+      "How does the polarity of water molecules give rise to its unique properties?",
+      "Why is water's density anomaly critical for aquatic life in cold climates?",
+      "How do cohesion and adhesion work together to transport water in plants?",
+      "What would happen to Earth's climate without water's high heat capacity?"
+    ],
+    "commonMisconceptions": [
+      "Students often think ice floats because it contains air bubbles, rather than understanding that water expands when it crystallizes into a less dense structure",
+      "Students may believe water's solvent properties only apply to dissolving salt, not realizing it dissolves gases, minerals, and organic molecules essential for life",
+      "Students sometimes confuse cohesion (water-to-water attraction) with adhesion (water-to-other-surface attraction)"
+    ],
+    "assessmentOpportunities": [
+      "Use the Quiz Me feature to test property-to-example matching",
+      "Have students write explanations connecting molecular structure to each ecological property",
+      "Ask students to predict what would happen to specific ecosystems if one water property were removed"
+    ]
   },
   "chapter": "01-foundations-of-ecology"
 }

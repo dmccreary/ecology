@@ -1,8 +1,8 @@
 {
   "title": "Renewable vs. Nonrenewable Energy Flow",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for renewable vs. nonrenewable energy flow",
+  "subject": "Ecology",
+  "description": "Interactive network diagram comparing renewable and nonrenewable energy pathways from original source to end use",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,58 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Renewable vs. Nonrenewable Energy Flow",
+    "subjectArea": "Environmental Science",
+    "topic": "Energy Sources and Pathways",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Compare renewable and nonrenewable energy pathways from source to end use",
+      "Explain that renewable vs. nonrenewable describes replenishment rate, not the fundamental source",
+      "Trace energy transformations from original source through to human use"
     ],
-    "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "bloomsTaxonomy": "Understand",
+    "duration": "35 minutes",
+    "prerequisites": [
+      "Basic understanding of energy forms (kinetic, thermal, chemical, radiant)",
+      "Awareness of common energy sources used by humans"
+    ],
+    "standards": [
+      "NGSS HS-ESS3-2",
+      "NGSS HS-PS3-1"
+    ]
   },
   "technical": {
     "framework": "vis-network",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 660
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "vis-network"
+    ],
     "accessibility": {
       "hasAltText": false,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Visual network tracing and pathway comparison",
+    "keyQuestions": [
+      "Where does the energy in coal originally come from?",
+      "What makes an energy source renewable versus nonrenewable?",
+      "How many transformation steps does solar energy undergo before reaching your home?",
+      "Why is biomass renewable but fossil fuels are not, if both come from the Sun?"
+    ],
+    "commonMisconceptions": [
+      "Students often think renewable means 'infinite' rather than 'replenished on human timescales'",
+      "Students may not realize that fossil fuels are stored ancient solar energy",
+      "Students may believe geothermal energy comes from the Sun"
+    ],
+    "assessmentOpportunities": [
+      "Students complete a pathway-tracing table for all energy sources",
+      "Students draw their own energy pathway diagram for their home",
+      "Class discussion on the definition and nuance of 'renewable'"
+    ]
   },
   "chapter": "09-sustainability-and-energy"
 }

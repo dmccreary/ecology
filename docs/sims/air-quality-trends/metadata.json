@@ -1,8 +1,8 @@
 {
   "title": "U.S. Air Quality Trends Dashboard",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for u.s. air quality trends dashboard",
+  "subject": "Ecology",
+  "description": "Multi-line time series chart showing six criteria pollutant emission trends alongside GDP growth from 1970-2025",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,15 +11,25 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "U.S. Air Quality Trends Dashboard",
+    "subjectArea": "Environmental Science",
+    "topic": "U.S. Air Quality Trends and the Clean Air Act",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Assess the effectiveness of the Clean Air Act by analyzing emission trends for all six criteria pollutants alongside economic indicators",
+      "Interpret dual-axis time series charts comparing pollution and economic data",
+      "Identify key policy milestones and their impact on emission reduction rates",
+      "Evaluate the claim that environmental regulation harms economic growth"
     ],
     "bloomsTaxonomy": "Evaluate",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Understanding of air pollutants and their health effects",
+      "Basic graph reading skills",
+      "Knowledge of environmental regulation concepts"
+    ],
+    "standards": [
+      "NGSS HS-ESS3-4",
+      "AP Environmental Science Topic 7.3, 7.5"
+    ]
   },
   "technical": {
     "framework": "Chart.js",
@@ -29,17 +39,32 @@
       "height": 450
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "Chart.js"
+    ],
     "accessibility": {
       "hasAltText": false,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Data-driven inquiry with dual-axis comparison",
+    "keyQuestions": [
+      "Does the data support or refute the claim that environmental regulation harms the economy?",
+      "Which pollutant was most successfully controlled and what policy drove the change?",
+      "Why do different pollutants decline at different rates?",
+      "What role do recessions play in temporary pollution reductions?"
+    ],
+    "commonMisconceptions": [
+      "Environmental regulation always hurts the economy (GDP grew 330% while all pollutants declined)",
+      "Air quality has gotten worse over time (all six criteria pollutants have declined dramatically since 1970)",
+      "The Clean Air Act was a single policy (it was amended multiple times with different provisions targeting different pollutants)"
+    ],
+    "assessmentOpportunities": [
+      "Have students identify inflection points in the data and match them to policy milestones",
+      "Ask students to construct an evidence-based argument about regulation and economic growth",
+      "Challenge students to predict which pollutant will be hardest to reduce further and why"
+    ]
   },
   "chapter": "11-atmospheric-pollution"
 }

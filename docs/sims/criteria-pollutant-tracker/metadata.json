@@ -1,8 +1,8 @@
 {
   "title": "Criteria Air Pollutants Source-to-Impact Tracker",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for criteria air pollutants source-to-impact tracker",
+  "subject": "Ecology",
+  "description": "Interactive vis-network diagram tracing six EPA criteria air pollutants from their sources through atmospheric chemistry to health and environmental impacts.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,61 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Criteria Air Pollutants Source-to-Impact Tracker",
+    "subjectArea": "Environmental Science",
+    "topic": "Criteria Air Pollutants and Atmospheric Pollution",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Trace each criteria air pollutant from its source through atmospheric chemistry to health and environmental impacts",
+      "Explain how pollutants share common sources and interact with each other",
+      "Distinguish between primary and secondary pollutants",
+      "Analyze why reducing emissions from a single source can have multiple environmental benefits"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "50 minutes",
+    "prerequisites": [
+      "Basic chemistry concepts",
+      "Understanding of atmospheric composition",
+      "Introduction to the Clean Air Act and EPA"
+    ],
+    "standards": [
+      "NGSS HS-ESS3-6",
+      "AP Environmental Science: Topic 7.2",
+      "NGSS HS-LS2-7"
+    ]
   },
   "technical": {
     "framework": "vis-network",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 630
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "vis-network"
+    ],
     "accessibility": {
       "hasAltText": false,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Network visualization with interactive path tracing",
+    "keyQuestions": [
+      "Which pollution source connects to the most criteria pollutants?",
+      "How does ground-level ozone form as a secondary pollutant?",
+      "If a city closes its coal-fired power plant, which impacts would be reduced?",
+      "Why is air pollution better understood as a system than a list of chemicals?"
+    ],
+    "commonMisconceptions": [
+      "Each air pollutant comes from a single unique source",
+      "All criteria pollutants are emitted directly into the air (ignoring secondary formation)",
+      "Reducing one pollutant only affects one health or environmental outcome"
+    ],
+    "assessmentOpportunities": [
+      "Path-tracing exercise from source to impact demonstrates systems understanding",
+      "Comparison of cascade effects when different sources are eliminated",
+      "Written analysis of why the Clean Air Act regulates these six specific pollutants"
+    ]
   },
   "chapter": "11-atmospheric-pollution"
 }

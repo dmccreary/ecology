@@ -1,8 +1,8 @@
 {
   "title": "Phosphorus Runoff and Eutrophication",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for phosphorus runoff and eutrophication",
+  "subject": "Ecology",
+  "description": "Interactive p5.js simulation showing how fertilizer rates drive phosphorus runoff, algal blooms, oxygen depletion, and fish kills with buffer strip mitigation",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,61 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Environmental Science",
     "topic": "Phosphorus Runoff and Eutrophication",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Predict the downstream effects of excess phosphorus input on aquatic ecosystems",
+      "Explain the eutrophication cascade from nutrient loading through algal bloom to hypoxia",
+      "Evaluate the effectiveness of buffer strips as a mitigation strategy for agricultural runoff"
     ],
     "bloomsTaxonomy": "Evaluate",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Understanding of the phosphorus cycle basics",
+      "Familiarity with aquatic ecosystem food webs",
+      "Introduction to water quality and dissolved oxygen"
+    ],
+    "standards": [
+      "NGSS HS-ESS3-4",
+      "AP Environmental Science Topic 8.4",
+      "AP Environmental Science Topic 1.5"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 480
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js"
+    ],
     "accessibility": {
       "hasAltText": false,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Cause-and-effect simulation with controlled variable manipulation",
+    "keyQuestions": [
+      "Why is there a time delay between phosphorus input and fish kills?",
+      "At what fertilizer level does the lake ecosystem reach a tipping point?",
+      "How do buffer strips reduce phosphorus reaching waterways?",
+      "Why is phosphorus considered the limiting nutrient in most freshwater systems?",
+      "How does this simulation connect to real-world events like the Gulf of Mexico dead zone?"
+    ],
+    "commonMisconceptions": [
+      "Algal blooms are caused by the algae being toxic -- the primary problem is oxygen depletion when algae die and decompose, not the algae themselves",
+      "More fertilizer always means more crop production -- beyond optimal levels, excess fertilizer runs off without benefit to crops",
+      "Eutrophication effects are immediate -- there is a significant time lag between nutrient input and ecosystem collapse"
+    ],
+    "assessmentOpportunities": [
+      "Have students identify the tipping point in fertilizer levels using their experimental data",
+      "Ask students to design a comprehensive runoff prevention plan for a farm near a lake",
+      "Connect simulation results to the Lake Erie or Gulf of Mexico dead zone case studies"
+    ]
   },
   "chapter": "04-biogeochemical-cycles"
 }

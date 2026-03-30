@@ -1,8 +1,8 @@
 {
   "title": "HIPPO Threat Interaction Web",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for hippo threat interaction web",
+  "subject": "Ecology",
+  "description": "Explore the five HIPPO threats to biodiversity and analyze how they interact using species case studies.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,62 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "HIPPO Threat Interaction Web",
+    "subjectArea": "Environmental Science",
+    "topic": "HIPPO Framework and Threats to Biodiversity",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Differentiate between the five HIPPO threats and analyze how they interact to amplify species vulnerability",
+      "Apply the HIPPO framework to specific endangered species case studies",
+      "Evaluate which threats are most significant for different species and ecosystems",
+      "Explain why addressing biodiversity loss requires targeting multiple interacting threats"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "40 minutes",
+    "prerequisites": [
+      "Basic understanding of biodiversity",
+      "Familiarity with the concept of endangered species",
+      "Knowledge of habitat loss and its causes"
+    ],
+    "standards": [
+      "NGSS HS-LS4-6",
+      "NGSS HS-LS2-7",
+      "AP Environmental Science Topic 16.1",
+      "AP Environmental Science Topic 16.4"
+    ]
   },
   "technical": {
     "framework": "vis-network",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 600
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "vis-network"
+    ],
     "accessibility": {
       "hasAltText": false,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Case study analysis with interactive network visualization",
+    "keyQuestions": [
+      "Which HIPPO threat affects the greatest number of endangered species?",
+      "How do the five threats interact to compound species vulnerability?",
+      "If you could eliminate one HIPPO threat globally, which would have the greatest impact on biodiversity conservation?",
+      "Why is it insufficient to address only a single threat when trying to save an endangered species?"
+    ],
+    "commonMisconceptions": [
+      "Students often think of HIPPO threats as independent rather than interacting and compounding",
+      "Many students rank overexploitation (hunting/fishing) as the top threat when habitat loss is actually the leading cause of biodiversity loss globally",
+      "Students may believe that addressing one threat is sufficient to save a species"
+    ],
+    "assessmentOpportunities": [
+      "Evaluate species comparison tables for completeness and accuracy of threat identification",
+      "Assess conservation action plans for addressing multiple interacting threats",
+      "Have students explain causal pathways between threats using evidence from the simulation"
+    ]
   },
   "chapter": "16-biodiversity-loss-and-policy"
 }

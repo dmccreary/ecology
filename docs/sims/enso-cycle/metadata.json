@@ -1,8 +1,8 @@
 {
   "title": "ENSO Cycle Interactive",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for enso cycle interactive",
+  "subject": "Ecology",
+  "description": "Interactive visualization of Normal, El Nino, and La Nina phases showing trade wind, ocean temperature, and atmospheric circulation interactions",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,57 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "ENSO Cycle Interactive",
+    "subjectArea": "Environmental Science",
+    "topic": "ENSO and Ocean-Atmosphere Interactions",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Explain how trade winds, ocean temperatures, and atmospheric circulation interact during El Nino and La Nina phases",
+      "Describe the ecological and weather consequences of each ENSO phase",
+      "Identify ENSO as a coupled ocean-atmosphere system with global effects"
     ],
     "bloomsTaxonomy": "Understand",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Basic understanding of ocean currents and wind patterns",
+      "Familiarity with the concept of upwelling",
+      "Knowledge of how ocean temperature affects weather"
+    ],
+    "standards": [
+      "NGSS HS-ESS2-4",
+      "NGSS HS-ESS3-5"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 422
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Animated state comparison with regional detail on hover",
+    "keyQuestions": [
+      "What drives the shift from Normal to El Nino conditions?",
+      "How does suppressed upwelling affect marine ecosystems?",
+      "Why does El Nino cause drought in Australia but flooding in Peru?",
+      "How are ENSO events connected to coral bleaching?"
+    ],
+    "commonMisconceptions": [
+      "Students often think El Nino is simply 'warm weather' rather than a specific ocean-atmosphere pattern",
+      "Students may not realize that ENSO affects global weather patterns far beyond the Pacific",
+      "Students may confuse ENSO (a natural oscillation) with long-term climate change"
+    ],
+    "assessmentOpportunities": [
+      "Students complete a three-column comparison chart for Normal, El Nino, and La Nina states",
+      "Students research a specific historical ENSO event and connect it to simulation observations",
+      "Students explain feedback mechanisms driving ENSO transitions"
+    ]
   },
   "chapter": "15-global-climate-change"
 }

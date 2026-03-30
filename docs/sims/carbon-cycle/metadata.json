@@ -1,8 +1,8 @@
 {
   "title": "The Carbon Cycle",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for the carbon cycle",
+  "subject": "Ecology",
+  "description": "Interactive simulation showing carbon fluxes between atmosphere, ocean, terrestrial biosphere, and lithosphere with adjustable fossil fuel, deforestation, and ocean temperature parameters",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,58 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Environmental Science",
     "topic": "The Carbon Cycle",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Distinguish fast and slow carbon fluxes and predict how changes in one flux affect atmospheric CO2",
+      "Analyze cause-and-effect relationships within the carbon cycle system",
+      "Evaluate the relative magnitude of natural vs. anthropogenic carbon fluxes"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Basic understanding of photosynthesis and cellular respiration",
+      "Familiarity with chemical reservoirs and fluxes"
+    ],
+    "standards": [
+      "NGSS HS-ESS2-6",
+      "NGSS HS-ESS3-6",
+      "AP Environmental Science Topic 1.3"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 462
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Interactive exploration with guided inquiry",
+    "keyQuestions": [
+      "What happens to atmospheric CO2 when fossil fuel burning doubles?",
+      "Why does deforestation increase atmospheric CO2 even without burning fossil fuels?",
+      "How does ocean temperature affect the carbon cycle?",
+      "What is the difference between a carbon source and a carbon sink?",
+      "Why is the carbon cycle considered a system with feedback loops?"
+    ],
+    "commonMisconceptions": [
+      "Students often think all carbon fluxes operate on the same timescale, when geological processes are millions of times slower than biological ones",
+      "Many students believe the ocean is an unlimited carbon sink that can absorb any amount of CO2",
+      "Students may not realize that deforestation removes both a carbon sink and releases stored carbon"
+    ],
+    "assessmentOpportunities": [
+      "Students predict outcomes before adjusting sliders, then compare predictions to observations",
+      "Students explain the feedback loop between ocean warming and reduced CO2 absorption",
+      "Students design an experiment using the simulation to compare mitigation strategies"
+    ]
   },
   "chapter": "04-biogeochemical-cycles"
 }

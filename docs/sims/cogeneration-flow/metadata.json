@@ -1,8 +1,8 @@
 {
   "title": "Cogeneration System Flow",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for cogeneration system flow",
+  "subject": "Ecology",
+  "description": "Interactive flow diagram comparing conventional separate generation (56% efficient) with combined heat and power cogeneration (85% efficient)",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,59 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
+    "subjectArea": "Environmental Science",
     "topic": "Cogeneration System Flow",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Trace energy flow through a cogeneration system and compare total efficiency to conventional separate generation",
+      "Explain why waste heat recovery is the key advantage of combined heat and power systems",
+      "Evaluate cogeneration as a strategy for reducing fossil fuel consumption and emissions"
     ],
-    "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "bloomsTaxonomy": "Understand",
+    "duration": "35 minutes",
+    "prerequisites": [
+      "Understanding of energy forms (thermal, electrical, chemical)",
+      "Basic concept of efficiency as useful output divided by total input"
+    ],
+    "standards": [
+      "NGSS HS-PS3-3",
+      "NGSS HS-ESS3-4",
+      "AP Environmental Science Topic 6.2"
+    ]
   },
   "technical": {
     "framework": "vis-network",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 630
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "vis-network"
+    ],
     "accessibility": {
       "hasAltText": false,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Visual comparison with quantitative analysis",
+    "keyQuestions": [
+      "What happens to the waste heat in a conventional power plant?",
+      "How does cogeneration capture energy that would otherwise be wasted?",
+      "Why is cogeneration not used in every building?",
+      "How much fuel could be saved by converting conventional plants to CHP?"
+    ],
+    "commonMisconceptions": [
+      "Students often think cogeneration creates more energy, when it actually captures waste heat that conventional systems discard",
+      "Many students assume all power plants are equally efficient, not realizing that two-thirds of fuel energy is typically wasted as heat",
+      "Students may confuse cogeneration with renewable energy -- CHP still burns fuel but uses it more efficiently"
+    ],
+    "assessmentOpportunities": [
+      "Students calculate and compare efficiency of both systems from the energy flow data",
+      "Students explain why cogeneration is well-suited for specific facility types",
+      "Students research a real CHP facility and estimate its CO2 savings"
+    ]
   },
   "chapter": "09-sustainability-and-energy"
 }

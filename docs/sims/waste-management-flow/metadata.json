@@ -1,8 +1,8 @@
 {
   "title": "Waste Management Decision Flowchart",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for waste management decision flowchart",
+  "subject": "Ecology",
+  "description": "Interactive decision tree using vis-network where students navigate waste management choices, comparing environmental impact scores for each pathway",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,59 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Waste Management Decision Flowchart",
+    "subjectArea": "Environmental Science",
+    "topic": "Waste Management and the Waste Hierarchy",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Prioritize waste management strategies using the waste hierarchy and evaluate trade-offs",
+      "Analyze the environmental consequences of different waste disposal methods",
+      "Apply the waste hierarchy to real-world waste decisions"
     ],
     "bloomsTaxonomy": "Evaluate",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Basic understanding of solid waste and pollution",
+      "Familiarity with recycling concepts"
+    ],
+    "standards": [
+      "NGSS HS-ESS3-4",
+      "NGSS HS-ETS1-3",
+      "AP Environmental Science Topic 8.10"
+    ]
   },
   "technical": {
     "framework": "vis-network",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 600
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "vis-network"
+    ],
     "accessibility": {
       "hasAltText": false,
-      "keyboardNavigable": false
+      "keyboardNavigable": true
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Interactive decision-making with environmental impact scoring",
+    "keyQuestions": [
+      "Why is waste reduction more effective than recycling from an environmental standpoint?",
+      "What are the hidden environmental costs of landfilling versus composting?",
+      "How do decomposition times vary across different materials in landfills?",
+      "When might incineration be a better option than landfilling?"
+    ],
+    "commonMisconceptions": [
+      "Students often think recycling is the best environmental option, not realizing that reduction and reuse are significantly better",
+      "Students may believe that all materials decompose within a few years in landfills, not understanding that many plastics persist for centuries",
+      "Students sometimes think composting and landfilling are similar since both involve burying waste"
+    ],
+    "assessmentOpportunities": [
+      "Have students trace flowchart paths for common household waste items and compare impact scores",
+      "Ask students to conduct a school waste audit and propose hierarchy-based improvements",
+      "Students design a community waste management plan prioritizing top-of-hierarchy strategies"
+    ]
   },
   "chapter": "12-water-and-land-pollution"
 }

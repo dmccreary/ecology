@@ -1,8 +1,8 @@
 {
   "title": "Tolerance Range Explorer",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for tolerance range explorer",
+  "subject": "Ecology",
+  "description": "Interactive bell curves showing specialist and generalist species tolerance ranges across environmental gradients, with draggable condition markers and zone highlighting",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,57 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Tolerance Range Explorer",
+    "subjectArea": "Environmental Science",
+    "topic": "Species Tolerance Ranges",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Demonstrate how changes in environmental conditions affect organism survival by manipulating tolerance curves",
+      "Distinguish between specialist and generalist species based on tolerance range width",
+      "Predict which species will be more vulnerable to environmental change"
     ],
     "bloomsTaxonomy": "Apply",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "40 minutes",
+    "prerequisites": [
+      "Basic understanding of species habitats",
+      "Familiarity with environmental factors and abiotic conditions"
+    ],
+    "standards": [
+      "NGSS HS-LS2-6",
+      "NGSS HS-LS4-5",
+      "AP Environmental Science Topic 2.2"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 445
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Draggable exploration with species comparison across environmental gradients",
+    "keyQuestions": [
+      "Why do specialist species have narrower tolerance ranges than generalists?",
+      "At what environmental condition does one species begin to outperform the other?",
+      "How does climate change affect specialists differently than generalists?",
+      "Can a species be a specialist for one environmental variable and a generalist for another?"
+    ],
+    "commonMisconceptions": [
+      "Students often think specialists are 'better' than generalists, not understanding that each strategy has advantages in different environments",
+      "Students may assume that stress zones are always lethal, when organisms can survive in stress zones but with reduced fitness",
+      "Students sometimes think tolerance ranges are fixed, not realizing that acclimation and adaptation can shift them over time"
+    ],
+    "assessmentOpportunities": [
+      "Have students create data tables recording species zones at specific environmental values",
+      "Ask students to predict community composition changes under climate change scenarios",
+      "Students research a local species and sketch its tolerance curve for a key environmental variable"
+    ]
   },
   "chapter": "06-biodiversity-and-services"
 }

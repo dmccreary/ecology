@@ -1,8 +1,8 @@
 {
   "title": "Interactive Stock and Flow Sandbox",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for interactive stock and flow sandbox",
+  "subject": "Ecology",
+  "description": "Hands-on simulation where students manipulate inflow and outflow rates to explore accumulation, depletion, and dynamic equilibrium in ecological systems",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,57 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Interactive Stock and Flow Sandbox",
+    "subjectArea": "Environmental Science",
+    "topic": "Stock and Flow Dynamics in Ecological Systems",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Construct a stock and flow diagram for a simple ecological system and predict how the stock changes over time",
+      "Explain the concept of dynamic equilibrium using simulation evidence",
+      "Apply stock-and-flow thinking to multiple ecological contexts"
     ],
     "bloomsTaxonomy": "Apply",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Basic understanding of rates",
+      "Introduction to ecological systems concepts"
+    ],
+    "standards": [
+      "NGSS HS-LS2-2",
+      "NGSS HS-ESS2-6",
+      "AP Environmental Science Topic 9.3"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 530
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Hands-on manipulation with ecological scenario presets",
+    "keyQuestions": [
+      "What happens to a stock when inflow exceeds outflow?",
+      "What conditions produce dynamic equilibrium in an ecological system?",
+      "How does the same stock-and-flow pattern appear in different ecological systems?",
+      "What real-world factors control the inflow and outflow of carbon in the atmosphere?"
+    ],
+    "commonMisconceptions": [
+      "Students often think equilibrium means nothing is happening, rather than balanced rates",
+      "Students may assume stocks change instantly when rates change, not understanding the gradual accumulation process",
+      "Students sometimes confuse the stock level with the flow rate"
+    ],
+    "assessmentOpportunities": [
+      "Have students predict stock behavior before running the simulation, then compare with results",
+      "Ask students to design their own ecological stock-and-flow scenario",
+      "Students explain how changing one rate in a real ecosystem would affect the stock over time"
+    ]
   },
   "chapter": "13-systems-thinking"
 }

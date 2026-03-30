@@ -1,8 +1,8 @@
 {
   "title": "Energy Source Comparison Dashboard",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for energy source comparison dashboard",
+  "subject": "Ecology",
+  "description": "Interactive radar chart comparing 8 energy sources across EROI, emissions, land use, reliability, cost, and scalability",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,15 +11,24 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Energy Source Comparison Dashboard",
+    "subjectArea": "Environmental Science",
+    "topic": "Energy Source Trade-offs",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Compare energy sources across multiple criteria to evaluate trade-offs",
+      "Interpret radar charts as a tool for multi-dimensional data comparison",
+      "Explain why no single energy source is optimal across all dimensions"
     ],
     "bloomsTaxonomy": "Evaluate",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Basic understanding of renewable vs. nonrenewable energy",
+      "Familiarity with CO2 emissions and climate change",
+      "Ability to read charts and graphs"
+    ],
+    "standards": [
+      "NGSS HS-ESS3-2",
+      "NGSS HS-ESS3-4"
+    ]
   },
   "technical": {
     "framework": "Chart.js",
@@ -29,17 +38,32 @@
       "height": 450
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "Chart.js"
+    ],
     "accessibility": {
       "hasAltText": false,
-      "keyboardNavigable": false
+      "keyboardNavigable": true
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Multi-criteria comparison and trade-off analysis",
+    "keyQuestions": [
+      "Which energy source scores highest on the most dimensions?",
+      "Why is there no single 'best' energy source?",
+      "How does EROI affect the long-term viability of an energy source?",
+      "What trade-offs exist between cost and environmental impact?"
+    ],
+    "commonMisconceptions": [
+      "Students often believe one energy source is clearly best across all criteria",
+      "Students may not realize that low cost can mask high environmental externalities",
+      "Students may assume renewable always means zero environmental impact"
+    ],
+    "assessmentOpportunities": [
+      "Students complete pairwise comparison worksheets using dashboard data",
+      "Students write a recommendation memo citing specific data points",
+      "Class discussion on why different countries make different energy choices"
+    ]
   },
   "chapter": "09-sustainability-and-energy"
 }

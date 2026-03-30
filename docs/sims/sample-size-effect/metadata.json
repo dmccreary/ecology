@@ -1,8 +1,8 @@
 {
   "title": "Sample Size Effect on Reliability",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for sample size effect on reliability",
+  "subject": "Ecology",
+  "description": "Interactive MicroSim demonstrating how sample size affects the reliability of ecological sampling estimates through repeated sampling visualization.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,15 +11,26 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Sample Size Effect on Reliability",
+    "subjectArea": "Environmental Science",
+    "topic": "Sample Size and Scientific Reliability",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Compare the reliability of conclusions drawn from small versus large sample sizes",
+      "Explain why larger samples produce more reliable estimates of population parameters",
+      "Evaluate ecological research claims by considering sample size and variability",
+      "Recognize how misleading conclusions can arise from small or cherry-picked samples"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "40 minutes",
+    "prerequisites": [
+      "Basic understanding of averages and percentages",
+      "Familiarity with ecological sampling concepts",
+      "Understanding that scientists study samples because they cannot measure entire populations"
+    ],
+    "standards": [
+      "NGSS Practice 4",
+      "NGSS Practice 5",
+      "AP Environmental Science Science Practices"
+    ]
   },
   "technical": {
     "framework": "p5.js",
@@ -36,10 +47,24 @@
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Repeated sampling simulation with statistical visualization",
+    "keyQuestions": [
+      "Why do small samples produce more variable estimates than large samples?",
+      "How confident should you be in a study based on only 8 animals?",
+      "What is a minimum sample size for reliable ecological estimates?",
+      "How does understanding sample size help evaluate environmental news claims?",
+      "Why might two studies of the same species report very different survival rates?"
+    ],
+    "commonMisconceptions": [
+      "A single sample of any size gives the true population value",
+      "Doubling the sample size doubles the accuracy of the estimate",
+      "Small samples are unreliable because of bias rather than random variation"
+    ],
+    "assessmentOpportunities": [
+      "Students compare variability statistics across sample sizes in a data table",
+      "Students evaluate fake headlines generated from extreme small samples",
+      "Students propose minimum sample sizes for hypothetical ecological studies"
+    ]
   },
   "chapter": "14-scientific-literacy"
 }

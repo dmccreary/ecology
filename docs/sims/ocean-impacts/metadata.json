@@ -1,8 +1,8 @@
 {
   "title": "Ocean Impacts Dashboard",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for ocean impacts dashboard",
+  "subject": "Ecology",
+  "description": "Four synchronized Chart.js panels showing ocean temperature, pH, sea level, and coral bleaching trends from 1880-2025 with correlation overlay",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,15 +11,26 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Ocean Impacts Dashboard",
+    "subjectArea": "Environmental Science",
+    "topic": "Ocean Climate Impacts",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Compare trends in ocean temperature, pH, sea level, and coral bleaching events over time",
+      "Identify correlations between multiple ocean impact indicators",
+      "Analyze how increasing atmospheric CO2 drives interconnected changes in ocean systems"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Basic understanding of climate change and the greenhouse effect",
+      "Ability to read and interpret line graphs",
+      "Introduction to ocean chemistry and the pH scale",
+      "Familiarity with coral reef ecosystems"
+    ],
+    "standards": [
+      "NGSS HS-ESS3-5",
+      "AP Environmental Science Topic 9.4",
+      "AP Environmental Science Topic 9.5"
+    ]
   },
   "technical": {
     "framework": "Chart.js",
@@ -29,17 +40,32 @@
       "height": 450
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "Chart.js"
+    ],
     "accessibility": {
       "hasAltText": false,
-      "keyboardNavigable": false
+      "keyboardNavigable": true
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Multi-panel data exploration with synchronized visualization",
+    "keyQuestions": [
+      "How are ocean temperature, pH, sea level, and coral bleaching events related?",
+      "When did the rate of change in ocean indicators appear to accelerate?",
+      "What mechanism connects rising CO2 to declining ocean pH?",
+      "Why do some ocean impacts lag behind others in their response to warming?"
+    ],
+    "commonMisconceptions": [
+      "Ocean acidification means the ocean is becoming acidic -- it is actually becoming less basic, shifting from pH ~8.2 toward ~8.1",
+      "Sea level rise is caused only by melting ice -- thermal expansion of warming water is also a major contributor",
+      "Coral bleaching is caused mainly by local pollution -- global ocean warming is the primary driver of mass bleaching events"
+    ],
+    "assessmentOpportunities": [
+      "Have students write an evidence brief citing specific data points from the dashboard",
+      "Ask students to predict future values of each indicator based on current trends",
+      "Use the normalized overlay to discuss correlation versus causation in climate data"
+    ]
   },
   "chapter": "15-global-climate-change"
 }

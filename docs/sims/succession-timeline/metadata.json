@@ -1,8 +1,8 @@
 {
   "title": "Ecological Succession Timeline",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for ecological succession timeline",
+  "subject": "Ecology",
+  "description": "Animated timeline comparing primary and secondary succession, showing landscape changes, soil development, and biodiversity over time",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,58 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Ecological Succession Timeline",
+    "subjectArea": "Environmental Science",
+    "topic": "Ecological Succession",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Compare primary and secondary succession by manipulating a timeline that shows community changes over time",
+      "Explain why secondary succession proceeds faster than primary succession",
+      "Analyze the relationship between succession stage, soil development, and biodiversity"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "50 minutes",
+    "prerequisites": [
+      "Basic ecosystem concepts (producers, consumers, decomposers)",
+      "Understanding of biodiversity as a measure of ecosystem health"
+    ],
+    "standards": [
+      "NGSS HS-LS2-6",
+      "NGSS HS-LS4-5",
+      "AP Environmental Science Topic 2.8"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 480
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Interactive timeline exploration with togglable comparison",
+    "keyQuestions": [
+      "What is the key difference between how primary and secondary succession begin?",
+      "Why does soil development matter so much for the pace of succession?",
+      "How do pioneer species change the environment to make it suitable for later species?",
+      "What happens to biodiversity during succession, and why?",
+      "How do disturbances reset or alter the succession process?"
+    ],
+    "commonMisconceptions": [
+      "Students often think succession always leads to a single fixed climax community, when in reality disturbances create a mosaic of successional stages",
+      "Students may believe that primary and secondary succession involve completely different species, rather than the same general sequence at different starting points",
+      "Students sometimes think succession is a fast process, not realizing primary succession can take centuries to millennia"
+    ],
+    "assessmentOpportunities": [
+      "Have students create comparative data tables for primary vs. secondary succession at matched stages",
+      "Ask students to predict succession outcomes after different types of disturbance",
+      "Students draw and label their own succession timeline for a local ecosystem"
+    ]
   },
   "chapter": "06-biodiversity-and-services"
 }

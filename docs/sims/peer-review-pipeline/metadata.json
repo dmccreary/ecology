@@ -1,8 +1,8 @@
 {
   "title": "Science's Quality Control Pipeline",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for science's quality control pipeline",
+  "subject": "Ecology",
+  "description": "Interactive vis-network flowchart showing the journey from research question through peer review, publication, replication, and scientific consensus",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,59 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Science's Quality Control Pipeline",
+    "subjectArea": "Environmental Science",
+    "topic": "Scientific Peer Review and Consensus Building",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Describe the steps from initial research through peer review, publication, and replication to scientific consensus",
+      "Explain why peer review and replication are essential for reliable scientific knowledge",
+      "Evaluate the confidence level of scientific claims based on their position in the pipeline"
     ],
-    "bloomsTaxonomy": "Create",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "bloomsTaxonomy": "Understand",
+    "duration": "40 minutes",
+    "prerequisites": [
+      "Basic understanding of the scientific method",
+      "Familiarity with scientific publications and journals",
+      "Introduction to evaluating sources of information"
+    ],
+    "standards": [
+      "NGSS Science and Engineering Practice 8",
+      "AP Environmental Science Science Practices"
+    ]
   },
   "technical": {
     "framework": "vis-network",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 600
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "vis-network"
+    ],
     "accessibility": {
       "hasAltText": false,
-      "keyboardNavigable": false
+      "keyboardNavigable": true
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Interactive pipeline exploration with click-to-reveal descriptions",
+    "keyQuestions": [
+      "Why does scientific confidence increase at each stage of the pipeline?",
+      "What role does replication play in distinguishing reliable findings from false positives?",
+      "How does the peer review process catch errors that the original researchers may have missed?",
+      "Why does building scientific consensus take years or decades?"
+    ],
+    "commonMisconceptions": [
+      "A single published study proves something is true -- publication is one step in a longer process that requires replication and consensus",
+      "Peer review guarantees a study is correct -- it reduces errors but cannot catch all problems, which is why replication matters",
+      "Scientific consensus means all scientists agree -- it means the overwhelming weight of evidence supports a conclusion"
+    ],
+    "assessmentOpportunities": [
+      "Have students evaluate real ecological claims and identify where in the pipeline the supporting evidence sits",
+      "Conduct a peer review role play with simplified abstracts",
+      "Ask students to create a confidence rating scale for different types of scientific sources"
+    ]
   },
   "chapter": "14-scientific-literacy"
 }

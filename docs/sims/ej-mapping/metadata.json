@@ -1,8 +1,8 @@
 {
   "title": "Environmental Justice Mapping Tool",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for environmental justice mapping tool",
+  "subject": "Ecology",
+  "description": "Interactive p5.js MicroSim where students correlate pollution sources, income levels, health outcomes, and green space across a fictional city to identify patterns of environmental injustice.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,35 +11,61 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Environmental Justice Mapping Tool",
+    "subjectArea": "Environmental Science",
+    "topic": "Environmental Justice and Spatial Analysis",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Correlate locations of environmental hazards with demographic data to identify patterns of environmental injustice",
+      "Analyze how income, race, pollution exposure, and health outcomes are spatially related",
+      "Evaluate environmental justice claims using quantitative evidence",
+      "Propose evidence-based policy solutions to address environmental inequities"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "55 minutes",
+    "prerequisites": [
+      "Basic understanding of pollution types and sources",
+      "Introduction to public health concepts",
+      "Familiarity with socioeconomic status",
+      "Basic map reading skills"
+    ],
+    "standards": [
+      "NGSS HS-ESS3-4",
+      "AP Environmental Science: Topic 8.12",
+      "NGSS HS-ETS1-3"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 522
     },
     "responsive": true,
     "dependencies": [],
     "accessibility": {
-      "hasAltText": false,
+      "hasAltText": true,
       "keyboardNavigable": false
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Layered map exploration with stakeholder perspective switching",
+    "keyQuestions": [
+      "What spatial patterns emerge when pollution and income layers are viewed together?",
+      "Why do environmental hazards tend to cluster in low-income neighborhoods?",
+      "How does green space access correlate with income and health outcomes?",
+      "What policies could reduce the environmental justice disparities shown on the map?",
+      "Whose perspective matters most when making decisions about facility placement?"
+    ],
+    "commonMisconceptions": [
+      "Environmental hazards are randomly distributed across communities",
+      "Low-income communities choose to live near pollution sources voluntarily",
+      "Environmental justice is only about race, not about income or other factors"
+    ],
+    "assessmentOpportunities": [
+      "District comparison data analysis with quantitative evidence",
+      "Mock city council policy proposal presentation",
+      "Stakeholder perspective analysis writing exercise"
+    ]
   },
   "chapter": "17-evaluating-environmental-claims"
 }

@@ -1,8 +1,8 @@
 {
   "title": "Resilience Ball-in-Basin Model",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for resilience ball-in-basin model",
+  "subject": "Ecology",
+  "description": "Interactive MicroSim demonstrating ecosystem resilience and regime shifts using the ball-in-basin metaphor with adjustable disturbance and resilience.",
   "date": "2026-03-29",
   "educational": {
     "gradeLevel": [
@@ -11,15 +11,27 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Resilience Ball-in-Basin Model",
+    "subjectArea": "Environmental Science",
+    "topic": "Ecosystem Resilience and Regime Shifts",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Predict when a system will undergo a regime shift based on disturbance magnitude and resilience",
+      "Explain the ball-in-basin metaphor for ecosystem stability and tipping points",
+      "Analyze how gradual environmental degradation can make systems vulnerable to sudden collapse",
+      "Connect the resilience model to real-world examples of ecosystem regime shifts"
     ],
     "bloomsTaxonomy": "Analyze",
-    "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "duration": "45 minutes",
+    "prerequisites": [
+      "Understanding of ecosystem stability and disturbance concepts",
+      "Basic understanding of feedback loops",
+      "Familiarity with examples of ecosystem change"
+    ],
+    "standards": [
+      "NGSS LS2.C",
+      "NGSS ESS3.C",
+      "AP Environmental Science Topic 2.8",
+      "AP Environmental Science Topic 9.10"
+    ]
   },
   "technical": {
     "framework": "p5.js",
@@ -36,10 +48,23 @@
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Physics-based metaphor with interactive disturbance and degradation",
+    "keyQuestions": [
+      "What does the depth of a basin represent in terms of ecosystem resilience?",
+      "Why is gradual degradation sometimes more dangerous than a single large disturbance?",
+      "Why is it harder to restore a degraded ecosystem than to degrade it?",
+      "What real-world factors erode ecosystem resilience over time?"
+    ],
+    "commonMisconceptions": [
+      "Ecosystems always return to their original state after a disturbance",
+      "Regime shifts happen suddenly without warning, when in fact resilience often erodes gradually",
+      "A degraded ecosystem can easily be restored by simply removing the disturbance"
+    ],
+    "assessmentOpportunities": [
+      "Students find the minimum disturbance threshold at different resilience levels",
+      "Students predict the outcome of slow degradation before pressing the button",
+      "Students draw their own ball-in-basin diagrams for real ecosystems"
+    ]
   },
   "chapter": "13-systems-thinking"
 }
