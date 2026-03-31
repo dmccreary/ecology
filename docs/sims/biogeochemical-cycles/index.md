@@ -46,7 +46,7 @@ You can add this MicroSim to any web page by adding this to your HTML:
 
 ```html
 <iframe src="https://dmccreary.github.io/biology/sims/biogeochemical-cycles/main.html"
-        height="450px"
+        height="530px"
         width="100%"
         scrolling="no"></iframe>
 ```
