@@ -23,8 +23,10 @@ let quizMode = false;
 let hoveredItem = null;   // {type, idx}
 let quizAnswered = {};    // per cycle: Set of reservoir indices answered
 let quizTarget = null;    // current quiz question index
-let quizFeedback = '';
-let quizFeedbackTimer = 0;
+let quizCorrect = false;  // true when showing gold star panel
+let quizWrongClick = -1;  // reservoir index of wrong click (-1 = none)
+let quizWrongTimer = 0;   // frames remaining to show wrong highlight
+const QUIZ_AREA_H = 100;  // height reserved for quiz prompt area
 
 // ── controls ──
 let humanImpactBox, quizModeBox;
@@ -281,17 +283,14 @@ function setup() {
 }
 
 function updateCanvasSize() {
-  // Is the min needed?
-  // canvasWidth = min(windowWidth - 20, 900);
   canvasWidth = windowWidth;
   let imgAspect = img.width / img.height;    // 3:2
   imgW = canvasWidth;
   imgH = canvasWidth / imgAspect;
-  // this needs to be enough to have padding below the image for controls + infobox
   imgY = TAB_H + 24;                         // below tab row
   controlHeight = 40;                        // checkbox row below image
   drawHeight = imgY + imgH;
-  canvasHeight = drawHeight + controlHeight + 8;
+  canvasHeight = drawHeight + controlHeight + 8 + (quizMode ? QUIZ_AREA_H : 0);
 }
 
 function windowResized() {
@@ -308,6 +307,7 @@ function draw() {
   drawFluxArrows();
   drawReservoirs();
   drawControls();
+  if (quizMode) drawQuizArea();
   drawInfobox();
   drawTitle();
 }
@@ -339,7 +339,7 @@ function drawTitle() {
 
 function drawTabs() {
   let tabNames = ['water', 'carbon', 'nitrogen', 'phosphorus'];
-  let labels   = ['Carbon', 'Nitrogen', 'Phosphorus', 'Water'];
+  let labels   = ['Water', 'Carbon', 'Nitrogen', 'Phosphorus'];
   let tabW = (canvasWidth - MARGIN * 2 - 12) / 4;
   let tx = MARGIN;
 
@@ -376,17 +376,28 @@ function drawReservoirs() {
     let px = pctX(r.x);
     let py = pctY(r.y);
     let isHovered = (hoveredItem && hoveredItem.type === 'reservoir' && hoveredItem.idx === i);
-    let isQuizTarget = (quizMode && quizTarget === i);
-
-    // In quiz mode, hide unanswered labels
     let answered = quizAnswered[activeCycle] && quizAnswered[activeCycle].has(i);
+    let isWrongFlash = (quizMode && quizWrongClick === i && quizWrongTimer > 0);
 
-    // Glow ring on hover
-    if (isHovered || isQuizTarget) {
+    // Glow ring on hover (explore mode) or green ring on answered (quiz mode)
+    if (isHovered && !quizMode) {
       noFill();
       stroke(255, 215, 0, 180);
       strokeWeight(3);
       ellipse(px, py, 30, 30);
+    } else if (quizMode && answered) {
+      noFill();
+      stroke(0, 180, 0, 160);
+      strokeWeight(3);
+      ellipse(px, py, 30, 30);
+    }
+
+    // Wrong-click red flash
+    if (isWrongFlash) {
+      noFill();
+      stroke(220, 50, 50, 200);
+      strokeWeight(4);
+      ellipse(px, py, 34, 34);
     }
 
     // Marker circle
@@ -404,11 +415,9 @@ function drawReservoirs() {
     textStyle(BOLD);
     text(i + 1, px, py);
 
-    // Label next to marker (hidden in quiz for unanswered)
+    // Label: always show in explore mode; in quiz mode only show answered ones
     if (!quizMode || answered) {
       drawReservoirLabel(r.name, px, py, i, res.length);
-    } else if (isQuizTarget) {
-      drawReservoirLabel('???', px, py, i, res.length);
     }
   }
   textStyle(NORMAL);
@@ -579,13 +588,129 @@ function drawControls() {
     textStyle(BOLD);
     fill(answered === total ? color(0, 150, 0) : color(60));
     text('Score: ' + answered + ' / ' + total, sx, cy + boxSz / 2);
-
-    if (answered === total) {
-      fill(0, 150, 0);
-      text('  ★ Complete!', sx + textWidth('Score: ' + answered + ' / ' + total) + 4, cy + boxSz / 2);
-    }
     textStyle(NORMAL);
   }
+}
+
+// ── Quiz question + multiple-choice area below controls ──
+function drawQuizArea() {
+  let areaY = drawHeight + controlHeight + 8;
+
+  // Decrement wrong-click flash timer
+  if (quizWrongTimer > 0) quizWrongTimer--;
+  if (quizWrongTimer === 0) quizWrongClick = -1;
+
+  // ── Gold star celebration panel ──
+  if (quizCorrect) {
+    drawGoldStarPanel(areaY);
+    return;
+  }
+
+  // ── All complete for this cycle ──
+  let answered = quizAnswered[activeCycle] ? quizAnswered[activeCycle].size : 0;
+  let total = cycles[activeCycle].reservoirs.length;
+  if (answered === total) {
+    drawAllCompletePanel(areaY);
+    return;
+  }
+
+  if (quizTarget === null) return;
+
+  let r = cycles[activeCycle].reservoirs[quizTarget];
+
+  // Prompt: "Click on the [Name] node"
+  fill(40);
+  noStroke();
+  textAlign(CENTER, TOP);
+  textSize(16);
+  textStyle(BOLD);
+  text('Click on the  ' + r.name + '  node', canvasWidth / 2, areaY + 10);
+  textStyle(NORMAL);
+
+  // Subtitle with score
+  textSize(12);
+  fill(100);
+  text(answered + ' of ' + total + ' identified', canvasWidth / 2, areaY + 34);
+}
+
+function drawGoldStarPanel(areaY) {
+  let pw = min(canvasWidth - MARGIN * 2, 420);
+  let ph = 80;
+  let px = (canvasWidth - pw) / 2;
+  let py = areaY - 10;
+
+  // Gold background
+  fill(255, 248, 220);
+  stroke(218, 165, 32);
+  strokeWeight(2);
+  rect(px, py, pw, ph, 12);
+
+  // Stars
+  noStroke();
+  fill(255, 215, 0);
+  textAlign(CENTER, CENTER);
+  textSize(32);
+  text('★', px + 40, py + ph / 2 - 15);
+  text('★', px + pw - 40, py + ph / 2 - 15);
+
+  // Message
+  let rName = cycles[activeCycle].reservoirs[quizTarget].name;
+  fill(40);
+  textSize(16);
+  textStyle(BOLD);
+  text('Correct!', px + pw / 2, py + 14);
+  textStyle(NORMAL);
+  textSize(13);
+  fill(80);
+  text('That is the ' + rName + '.', px + pw / 2, py + 36);
+
+  // OK button
+  let okW = 50, okH = 22;
+  let okX = px + pw / 2 - okW / 2;
+  let okY = py + ph - okH - 9;
+
+  if (isMouseOverRect(okX, okY, okW, okH)) {
+    fill(0, 140, 60);
+  } else {
+    fill(0, 160, 70);
+  }
+  noStroke();
+  rect(okX, okY, okW, okH, 6);
+  fill(255);
+  textSize(14);
+  textStyle(BOLD);
+  text('OK', okX + okW / 2, okY + okH / 2);
+  textStyle(NORMAL);
+}
+
+function drawAllCompletePanel(areaY) {
+  let pw = min(canvasWidth - MARGIN * 2, 420);
+  let ph = 70;
+  let px = (canvasWidth - pw) / 2;
+  let py = areaY + 10;
+
+  fill(230, 255, 230);
+  stroke(0, 150, 0);
+  strokeWeight(2);
+  rect(px, py, pw, ph, 12);
+
+  noStroke();
+  fill(0, 150, 0);
+  textAlign(CENTER, CENTER);
+  textSize(28);
+  text('★', px + 36, py + ph / 2 - 2);
+  text('★', px + pw - 36, py + ph / 2 - 2);
+
+  fill(40);
+  textSize(16);
+  textStyle(BOLD);
+  let total = cycles[activeCycle].reservoirs.length;
+  text('All ' + total + ' reservoirs identified! Well done!', px + pw / 2, py + ph / 2);
+  textStyle(NORMAL);
+}
+
+function isMouseOverRect(rx, ry, rw, rh) {
+  return mouseX >= rx && mouseX <= rx + rw && mouseY >= ry && mouseY <= ry + rh;
 }
 
 // ── Floating Infobox (overlays the image, avoids hovered item) ──
@@ -637,10 +762,8 @@ function drawInfobox() {
   // Clamp within image area
   iy = constrain(iy, imgY + pad, imgY + imgH - ih - pad);
 
-  // Only draw if there is content to show
-  let hasContent = (quizMode && quizFeedback) || hoveredItem ||
-                   (quizMode && quizTarget !== null);
-  if (!hasContent) return;
+  // Only draw if there is hover content to show (quiz uses the area below)
+  if (!hoveredItem || quizMode) return;
 
   // Box background — semi-transparent white
   fill(255, 255, 255, 220);
@@ -657,60 +780,33 @@ function drawInfobox() {
   let ty = iy + 8;
   let maxW = iw - 20;
 
-  if (quizMode && quizFeedback) {
+  let cyc = cycles[activeCycle];
+  if (hoveredItem.type === 'reservoir') {
+    let r = cyc.reservoirs[hoveredItem.idx];
     textStyle(BOLD);
-    fill(quizFeedback.startsWith('✓') ? color(0, 130, 0) : color(200, 50, 50));
-    text(quizFeedback, tx, ty, maxW, ih - 16);
+    textSize(13);
+    fill(40);
+    text((hoveredItem.idx + 1) + '. ' + r.name + '  (' + r.amount + ')', tx, ty, maxW, 20);
     textStyle(NORMAL);
-  } else if (hoveredItem) {
-    let cyc = cycles[activeCycle];
-    if (hoveredItem.type === 'reservoir') {
-      let r = cyc.reservoirs[hoveredItem.idx];
-      textStyle(BOLD);
-      textSize(13);
-      fill(40);
-      text((hoveredItem.idx + 1) + '. ' + r.name + '  (' + r.amount + ')', tx, ty, maxW, 20);
-      textStyle(NORMAL);
-      textSize(11);
-      fill(60);
-      text(r.description, tx, ty + 20, maxW, ih - 36);
-    } else if (hoveredItem.type === 'flux') {
-      let f = cyc.fluxes[hoveredItem.idx];
-      textStyle(BOLD);
-      textSize(13);
-      let prefix = f.human ? '⚠ ' : '';
-      fill(f.human ? color(200, 50, 50) : color(40));
-      text(prefix + f.name + '  (' + f.rate + ')', tx, ty, maxW, 20);
-      textStyle(NORMAL);
-      textSize(11);
-      fill(60);
-      text(f.description, tx, ty + 20, maxW, ih - 36);
-      let fromName = cyc.reservoirs[f.from].name;
-      let toName   = cyc.reservoirs[f.to].name;
-      fill(120);
-      textSize(10);
-      text(fromName + '  →  ' + toName, tx, ty + ih - 30, maxW, 16);
-    }
-  } else if (quizMode && quizTarget !== null) {
-    let r = cycles[activeCycle].reservoirs[quizTarget];
+    textSize(11);
+    fill(60);
+    text(r.description, tx, ty + 20, maxW, ih - 36);
+  } else if (hoveredItem.type === 'flux') {
+    let f = cyc.fluxes[hoveredItem.idx];
     textStyle(BOLD);
-    textSize(14);
-    fill(50, 120, 200);
-    text('Quiz: Click on reservoir #' + (quizTarget + 1), tx, ty, maxW, 20);
+    textSize(13);
+    let prefix = f.human ? '⚠ ' : '';
+    fill(f.human ? color(200, 50, 50) : color(40));
+    text(prefix + f.name + '  (' + f.rate + ')', tx, ty, maxW, 20);
     textStyle(NORMAL);
-    textSize(12);
-    fill(80);
-    text('Hint: ' + r.description.substring(0, 100) + '…', tx, ty + 24, maxW, ih - 40);
-  } else {
+    textSize(11);
+    fill(60);
+    text(f.description, tx, ty + 20, maxW, ih - 36);
+    let fromName = cyc.reservoirs[f.from].name;
+    let toName   = cyc.reservoirs[f.to].name;
     fill(120);
-    textSize(12);
-    textStyle(ITALIC);
-    if (quizMode) {
-      text('Quiz mode: identify each numbered reservoir by clicking on it.', tx, ty, maxW, ih - 16);
-    } else {
-      text('Hover over a numbered reservoir or an arrow to learn about that component of the ' + activeCycle + ' cycle.', tx, ty, maxW, ih - 16);
-    }
-    textStyle(NORMAL);
+    textSize(10);
+    text(fromName + '  →  ' + toName, tx, ty + ih - 30, maxW, 16);
   }
 }
 
@@ -808,17 +904,35 @@ function mousePressed() {
       mouseY >= cy && mouseY <= cy + boxSz) {
     quizMode = !quizMode;
     if (quizMode) {
-      quizFeedback = '';
       pickQuizTarget();
     } else {
       quizTarget = null;
-      quizFeedback = '';
+      quizCorrect = false;
     }
+    updateCanvasSize();
+    resizeCanvas(canvasWidth, canvasHeight);
     return;
   }
 
-  // Quiz answer clicks (on reservoir markers)
-  if (quizMode && quizTarget !== null) {
+  // Quiz: gold star OK button click
+  if (quizMode && quizCorrect) {
+    let areaY = drawHeight + controlHeight + 8;
+    let pw = min(canvasWidth - MARGIN * 2, 420);
+    let ph = 80;
+    let px = (canvasWidth - pw) / 2;
+    let py = areaY - 10;
+    let okW = 50, okH = 22;
+    let okX = px + pw / 2 - okW / 2;
+    let okY = py + ph - okH - 9;
+    if (isMouseOverRect(okX, okY, okW, okH)) {
+      quizCorrect = false;
+      pickQuizTarget();
+      return;
+    }
+  }
+
+  // Quiz: click on reservoir markers
+  if (quizMode && quizTarget !== null && !quizCorrect) {
     let cyc = cycles[activeCycle];
     for (let i = 0; i < cyc.reservoirs.length; i++) {
       let r = cyc.reservoirs[i];
@@ -826,17 +940,14 @@ function mousePressed() {
       let py = pctY(r.y);
       if (dist(mouseX, mouseY, px, py) < 16) {
         if (i === quizTarget) {
-          // Correct
+          // Correct!
           if (!quizAnswered[activeCycle]) quizAnswered[activeCycle] = new Set();
           quizAnswered[activeCycle].add(i);
-          quizFeedback = '✓ Correct! That is the ' + r.name + '.';
-          // Pick next target after short delay
-          setTimeout(() => {
-            quizFeedback = '';
-            pickQuizTarget();
-          }, 1500);
+          quizCorrect = true;
         } else {
-          quizFeedback = '✗ Not quite — try again! Look for reservoir #' + (quizTarget + 1) + '.';
+          // Wrong — flash this node red
+          quizWrongClick = i;
+          quizWrongTimer = 30;
         }
         return;
       }
@@ -865,11 +976,12 @@ function pickQuizTarget() {
   }
   if (unanswered.length === 0) {
     quizTarget = null;
-    quizFeedback = '★ You identified all ' + cyc.reservoirs.length + ' reservoirs in the ' + activeCycle + ' cycle! Well done!';
   } else {
     quizTarget = unanswered[floor(random(unanswered.length))];
-    quizFeedback = '';
   }
+  quizCorrect = false;
+  quizWrongClick = -1;
+  quizWrongTimer = 0;
 }
 
 // ═══════════════════════════════════════════════════════════
