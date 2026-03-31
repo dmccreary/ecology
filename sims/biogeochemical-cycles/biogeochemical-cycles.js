@@ -1,4 +1,5 @@
 // Biogeochemical Cycles Dashboard
+// CANVAS_HEIGHT = 530
 // p5.js MicroSim — landscape.png background with cycle overlays
 // Tabs: Water · Carbon · Nitrogen · Phosphorus
 // Modes: Explore (hover for info) · Quiz (click to identify)
