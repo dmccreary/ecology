@@ -11,7 +11,8 @@ quality_score: 0
 
 # Biogeochemical Cycles Dashboard
 
-<iframe src="main.html" height="466px" width="100%" scrolling="no"></iframe>
+<!-- CANVAS_HEIGHT: base ~466 + 100 for quiz area -->
+<iframe src="main.html" height="530px" width="100%" scrolling="no"></iframe>
 
 [Run the Biogeochemical Cycles Dashboard MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
