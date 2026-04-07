@@ -155,6 +155,26 @@ nav:
     - Water Properties and Ecological Importance: sims/water-properties-ecology/index.md
     - World Biome Map: sims/biome-world-map/index.md
 
+  - Stories:
+    - Overview: stories/index.md
+    - John Snow (1813): stories/john-snow/index.md
+    - Charles Darwin's Earthworms (1809): stories/darwins-earthworms/index.md
+    - Aldo Leopold (1887): stories/aldo-leopold/index.md
+    - Paul Müller (1899): stories/paul-muller/index.md
+    - Clair Patterson (1922): stories/clair-patterson/index.md
+    - F. Sherwood Rowland & Mario Molina (1927/1943): stories/rowland-molina/index.md
+    - Charles David Keeling (1928): stories/charles-keeling/index.md
+    - E.O. Wilson (1929): stories/eo-wilson/index.md
+    - Roger Payne (1935): stories/roger-payne/index.md
+    - Sylvia Earle (1935): stories/sylvia-earle/index.md
+    - Wangari Maathai (1940): stories/wangari-maathai/index.md
+    - Cary Fowler (1949): stories/cary-fowler/index.md
+    - Suzanne Simard (1960): stories/suzanne-simard/index.md
+    - Ruth Gates (1962): stories/ruth-gates/index.md
+    - Cuyahoga River (1868–1969): stories/cuyahoga-river/index.md
+    - Yellowstone Wolves (1926–present): stories/yellowstone-wolves/index.md
+    - Story Ideas: stories/story-ideas.md
+
   - Prompts:
     - Seed Prompt: prompts/01-seed.md
     - Content Style Guide: prompts/02-content-generation-style-guide.md

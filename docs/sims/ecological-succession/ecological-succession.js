@@ -3,7 +3,7 @@
 
 let canvasWidth = 960;
 const drawHeight = 640;
-const controlHeight = 230;
+const controlHeight = 280;
 let canvasHeight = drawHeight + controlHeight;
 
 let stageImages = [];

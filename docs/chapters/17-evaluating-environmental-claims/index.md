@@ -303,7 +303,7 @@ The best defense against confirmation bias is *actively seeking out* the stronge
 
 #### Diagram: Cognitive Bias Detective
 
-<iframe src="../../sims/bias-detective/main.html" width="100%" height="587px" scrolling="no"></iframe>
+<iframe src="../../sims/bias-detective/main.html" width="100%" height="680px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Cognitive Bias Detective</summary>

@@ -11,7 +11,7 @@ quality_score: 82
 
 # Cognitive Bias Detective
 
-<iframe src="main.html" height="587" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="680" width="100%" scrolling="no"></iframe>
 
 [Run the Cognitive Bias Detective MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

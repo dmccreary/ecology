@@ -286,7 +286,7 @@ The classic example is an abandoned farm field:
 
 Explore the five major stages of both primary and secondary succession side by side. Scrub through the timeline to watch the landscape transform, compare soil depth development, and examine the species that characterize each stage.
 
-<iframe src="../../sims/ecological-succession/main.html" width="100%" height="830px" scrolling="no"></iframe>
+<iframe src="../../sims/ecological-succession/main.html" width="100%" height="930px" scrolling="no"></iframe>
 
 #### Diagram: Ecological Succession Timeline
 

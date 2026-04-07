@@ -11,7 +11,7 @@ quality_score: 0
 
 # Ecological Succession Timeline
 
-<iframe src="main.html" height="830px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="930" width="100%" scrolling="no"></iframe>
 
 [Run the Ecological Succession Timeline MicroSim Fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
