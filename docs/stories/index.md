@@ -1,6 +1,8 @@
 ---
 title: Stories of Ecologists and Earth Defenders
 description: Graphic-novel narratives of the scientists, activists, and thinkers who changed how we understand and protect the living world.
+hide:
+    toc
 ---
 
 # Stories of Ecologists and Earth Defenders

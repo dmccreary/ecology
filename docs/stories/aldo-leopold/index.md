@@ -10,7 +10,7 @@ social:
 
 # Thinking Like a Mountain
 
-![](./cover.png)
+![Cover Image](./cover.png)
 <details>
 <summary>Cover Image Prompt</summary>
 Please generate a wide-landscape 16:9 cover image for a graphic novel titled "Thinking Like a Mountain" in an American wilderness painting style — Frederic Remington meets Winslow Homer. Bold Western landscapes with desert orange, pine green, and sky blue. Show Aldo Leopold, a tall, lean man in his late 30s with a weathered face, trim dark mustache, and a wide-brimmed felt hat, standing on a high rimrock overlooking a vast, forested mountain valley in the American Southwest. He wears a worn canvas jacket, leather boots, and carries a field notebook in one hand. Behind him, the landscape tells the story: on the left, a lush pine-covered slope with a wolf pack running along a river below; on the right, a stripped, eroded hillside dotted with starving deer and bare, skeletal aspens. The title text "Thinking Like a Mountain" is rendered in bold serif typeface at the top. Color palette: desert orange, pine green, sky blue, sandstone gold, shadow purple, river silver. Emotional tone: reckoning, transformation, and hard-won wisdom. Include: (1) Leopold's contemplative posture as he gazes across the valley, (2) the contrast between the healthy wolf-side and the degraded deer-side, (3) wolves running along the river on the left, (4) starving deer on the barren right slope, (5) a field notebook and pencil in his hand, (6) the vast Southwest sky with late-afternoon thunderheads building above the rimrock. Generate the image immediately without asking clarifying questions.
