@@ -10,6 +10,8 @@ social:
 
 # The River That Caught Fire
 
+
+
 ![](./cover.png)
 <details>
 <summary>Cover Image Prompt</summary>
@@ -23,7 +25,10 @@ This is a 12-panel graphic novel about the Cuyahoga River fires (1868-1969) and 
 
 ### Prologue – A River That Burns
 
-Here is a sentence that should be impossible: the river is on fire. Not a building beside a river. Not a boat on a river. The river itself — the water — is burning. For over a hundred years, Cleveland's Cuyahoga River was so choked with oil, industrial sludge, and chemical waste that it caught fire at least thirteen times. The flames destroyed bridges, killed fish that were already dead, and barely made the evening news. A burning river had become normal. Then, in 1969, a thirty-minute fire on the Cuyahoga became a photograph, then a magazine story, then a national scandal — and nothing about American environmental law was ever the same again. This is the story of how a river had to burn before a nation would listen.
+Here is a sentence that should be impossible: the river is on fire. Not a building beside a river. Not a boat on a river. The river itself — the water — is burning. For over a hundred years, Cleveland's Cuyahoga River
+<audio id="audio-cuyahoga" src="../../audio/cuyahoga.mp3" preload="none"></audio>
+<button onclick="document.getElementById('audio-cuyahoga').play()" class="pronounce-btn">🔊 Pronounce "Cuyahoga"</button> *ky-uh-HOH-guh*
+was so choked with oil, industrial sludge, and chemical waste that it caught fire at least thirteen times. The flames destroyed bridges, blackened the banks, and barely made the evening news. A burning river had become normal. Then, in 1969, a thirty-minute fire on the Cuyahoga became a photograph, then a magazine story, then a national scandal — and nothing about American environmental law was ever the same again. This is the story of how a river had to burn before a nation would listen.
 
 ## Panel 1: The First Fire — 1868
 
