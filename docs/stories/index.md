@@ -11,30 +11,32 @@ This collection of illustrated short stories introduces the real people behind s
 
 These are not just biographies. They are case studies in systems thinking — in how ecosystems work, how pollution hides in plain sight, and how evidence can defeat even the most powerful industries.
 
-## Reusable Stories from Theory of Knowledge
+## Stories from Theory of Knowledge
 
-The following stories were originally written for the [Theory of Knowledge](https://dmccreary.github.io/theory-of-knowledge/) textbook and are directly relevant to ecology. Each one connects to multiple chapters in this textbook.
+The following stories were originally written for our companion textbook, [Theory of Knowledge](https://dmccreary.github.io/theory-of-knowledge/), and are directly relevant to ecology. Each one connects to multiple chapters in this textbook.
+
+*Clicking a card below will take you to the Theory of Knowledge site, where the full story and all 12 panel images are hosted. Use your browser's back button to return here. We link rather than duplicate because each story includes 13 generated images — copying them across textbooks would add unnecessary bulk without adding value.*
 
 <div class="grid cards" markdown>
 
 - **[Rachel Carson — The Woman Who Listened to Silent Spring](https://dmccreary.github.io/theory-of-knowledge/stories/rachel-carson/)**
 
-    ![Rachel Carson](https://dmccreary.github.io/theory-of-knowledge/stories/rachel-carson/cover.png)
+    ![Rachel Carson](./rachel-carson/cover.png)
     A quiet marine biologist takes on the most powerful chemical companies in America — armed only with meticulously footnoted evidence. Racing a fatal diagnosis, Rachel Carson shows how patient research and clear writing can defeat a well-funded disinformation campaign. Her book *Silent Spring* launched the modern environmental movement.
 
 - **[Charles Darwin — The Finches' Beaks](https://dmccreary.github.io/theory-of-knowledge/stories/charles-darwin/)**
 
-    ![Charles Darwin](https://dmccreary.github.io/theory-of-knowledge/stories/charles-darwin/cover.png)
+    ![Charles Darwin](./charles-darwin/cover.png)
     Darwin sailed home from the Galápagos with notebooks full of observations that troubled him deeply. The finches had different beaks on different islands. He sat on his theory for twenty years — then published the most important book in the history of biology.
 
 - **[Carl Sagan — The Baloney Detection Kit](https://dmccreary.github.io/theory-of-knowledge/stories/carl-sagan/)**
 
-    ![Carl Sagan](https://dmccreary.github.io/theory-of-knowledge/stories/carl-sagan/cover.png)
+    ![Carl Sagan](./carl-sagan/cover.png)
     A five-year-old boy from Brooklyn visited the World's Fair and fell in love with the universe. Decades later, racing a fatal illness, he wrote a book giving ordinary citizens the tools to tell real science from nonsense. Essential reading for evaluating environmental claims.
 
 - **[Mary Anning — The Dragons in the Cliffs](https://dmccreary.github.io/theory-of-knowledge/stories/mary-anning/)**
 
-    ![Mary Anning](https://dmccreary.github.io/theory-of-knowledge/stories/mary-anning/cover.png)
+    ![Mary Anning](./mary-anning/cover.png)
     A poor girl from Lyme Regis who never went to school taught herself anatomy and geology, then pulled monsters from the cliffs that proved extinction was real and the Earth was vastly older than anyone believed.
 
 </div>
