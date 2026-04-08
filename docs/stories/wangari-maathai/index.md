@@ -110,6 +110,8 @@ The Green Belt Movement became something no government could contain. It spread 
 
 ## Panel 10: The Streams Return
 
+![](./panel-10b.png)
+
 ![](./panel-10.png)
 <details><summary>Image Prompt</summary>
 Please generate a 16:9 image in vibrant East African illustration style — warm earth tones, lush greens, bright sky blues, kikoy textile accents — depicting panel 10 of 12. Make the characters and style consistent with the prior panels. The scene shows a restored watershed in the Kenyan central highlands in the early 2000s. A stream that was dry in Panel 3 now flows again — clear water running over mossy stones. Young native trees line both banks, their roots holding the soil. Birds — sunbirds, weavers, and ibis — fill the branches. A woman fills a water container directly from the stream without walking miles. In the background, reforested hillsides show a mosaic of native species. Color palette: rich emerald greens, clear turquoise water, deep brown soil, bright bird plumage, golden dappled sunlight through the canopy. Emotional tone: ecological healing and quiet joy. Specific details: (1) the flowing stream with clear water over stones — echoing Panel 1, (2) native trees lining the restored banks, (3) colorful birds in the canopy, (4) a woman filling a water jug at the stream's edge, (5) healthy dark topsoil visible at the bank where erosion has stopped, (6) a child wading in the stream, playing just as young Wangari once did. Generate the image immediately without asking clarifying questions.
