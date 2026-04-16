@@ -217,7 +217,6 @@ theme:
 plugins:
   - search
   - social
-  - social_override
   - glightbox:
       touchNavigation: true
       loop: false
@@ -229,6 +228,9 @@ plugins:
       draggable: true
       auto_caption: false
       caption_position: bottom
+
+hooks:
+  - plugins/social_override.py
 
 markdown_extensions:
   - md_in_html
