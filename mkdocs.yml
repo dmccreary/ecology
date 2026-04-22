@@ -69,6 +69,7 @@ nav:
     - Graph Quality Analysis: learning-graph/quality-metrics.md
     - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
     - Mascot Style Guide: learning-graph/mascot-test.md
+  
   - MicroSims:
     - List of MicroSims: sims/index.md
     - Acid Rain Formation and Impact Pathway: sims/acid-rain-pathway/index.md
@@ -175,6 +176,12 @@ nav:
     - Yellowstone Wolves (1926–present): stories/yellowstone-wolves/index.md
     - Story Ideas: stories/story-ideas.md
 
+  - Posters:
+    - List of Posters: posters/index.md
+    - Earth Day: posters/earth-day.md
+    - Biophilic Design: posters/biophilic-design.md
+  
+  
   - Prompts:
     - Seed Prompt: prompts/01-seed.md
     - Content Style Guide: prompts/02-content-generation-style-guide.md
