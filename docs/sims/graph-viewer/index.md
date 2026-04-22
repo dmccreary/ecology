@@ -4,8 +4,8 @@ description: Interactive vis-network viewer for exploring the ecology course lea
 image: /sims/graph-viewer/graph-viewer.png
 og:image: /sims/graph-viewer/graph-viewer.png
 twitter:image: /sims/graph-viewer/graph-viewer.png
-social:
-   cards: false
+hide:
+   toc
 quality_score: 75
 ---
 
