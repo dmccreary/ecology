@@ -84,6 +84,11 @@ These stories were developed specifically for the ecology textbook. See [Story I
     ![Charles Keeling](charles-keeling/cover.png)
     In 1958, a young chemist drives to the top of Mauna Loa with a homemade CO₂ analyzer and starts measuring. Funding agencies repeatedly try to cut his "boring" monitoring program. Keeling fights to keep it alive for forty-seven years. The Keeling Curve becomes the single most important graph in climate science.
 
+- **[Al Gore — An Inconvenient Truth](al-gore-inconvenient-truth/)**
+
+    ![Al Gore](al-gore-inconvenient-truth/cover.png)
+    After losing the 2000 presidential election by 537 votes, Al Gore spent five years traveling the country with a climate slideshow — more than a thousand times. A Hollywood producer saw it and said, "This needs to be a movie." The 2006 documentary won two Oscars, helped Gore share the Nobel Peace Prize, and turned climate change into both a global wake-up call and one of the most polarized political issues in America.
+
 - **[E.O. Wilson — The Man Who Loved Ants](eo-wilson/)**
 
     ![E.O. Wilson](eo-wilson/cover.png)
