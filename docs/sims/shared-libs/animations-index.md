@@ -220,10 +220,6 @@ function draw() {
 }
 ```
 
-## Testing
-
-Use the [Celebration Animation Tester](../celebration-animation-tester/index.md) MicroSim to preview all animations and experiment with different speeds.
-
 ## File Sizes
 
 Each animation file is approximately 80-120 lines (~3-4 KB), making them lightweight to include.

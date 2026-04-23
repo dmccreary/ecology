@@ -26,9 +26,10 @@ The following stories were originally written for our companion textbook, [Theor
     ![Rachel Carson](./rachel-carson/cover.png)
     A quiet marine biologist takes on the most powerful chemical companies in America — armed only with meticulously footnoted evidence. Racing a fatal diagnosis, Rachel Carson shows how patient research and clear writing can defeat a well-funded disinformation campaign. Her book *Silent Spring* launched the modern environmental movement.
 
+<!---- --->
 - **[Charles Darwin — The Finches' Beaks](https://dmccreary.github.io/theory-of-knowledge/stories/charles-darwin/)**
 
-    ![Charles Darwin](./charles-darwin/cover.png)
+    ![Charles Darwin](https://dmccreary.github.io/theory-of-knowledge/stories/charles-darwin/charles-darwin.png)
     Darwin sailed home from the Galápagos with notebooks full of observations that troubled him deeply. The finches had different beaks on different islands. He sat on his theory for twenty years — then published the most important book in the history of biology.
 
 - **[Carl Sagan — The Baloney Detection Kit](https://dmccreary.github.io/theory-of-knowledge/stories/carl-sagan/)**
