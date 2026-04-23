@@ -29,7 +29,7 @@ The following stories were originally written for our companion textbook, [Theor
 <!---- --->
 - **[Charles Darwin — The Finches' Beaks](https://dmccreary.github.io/theory-of-knowledge/stories/charles-darwin/)**
 
-    ![Charles Darwin](https://dmccreary.github.io/theory-of-knowledge/stories/charles-darwin/charles-darwin.png)
+    ![Charles Darwin](./charles-darwin/cover.png)
     Darwin sailed home from the Galápagos with notebooks full of observations that troubled him deeply. The finches had different beaks on different islands. He sat on his theory for twenty years — then published the most important book in the history of biology.
 
 - **[Carl Sagan — The Baloney Detection Kit](https://dmccreary.github.io/theory-of-knowledge/stories/carl-sagan/)**
