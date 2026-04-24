@@ -26,6 +26,7 @@ The following stories were originally written for our companion textbook, [Theor
     ![Rachel Carson](./rachel-carson/cover.png)
     A quiet marine biologist takes on the most powerful chemical companies in America — armed only with meticulously footnoted evidence. Racing a fatal diagnosis, Rachel Carson shows how patient research and clear writing can defeat a well-funded disinformation campaign. Her book *Silent Spring* launched the modern environmental movement.
 
+<!---- --->
 - **[Charles Darwin — The Finches' Beaks](https://dmccreary.github.io/theory-of-knowledge/stories/charles-darwin/)**
 
     ![Charles Darwin](./charles-darwin/cover.png)
