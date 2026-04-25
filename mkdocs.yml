@@ -250,7 +250,8 @@ plugins:
         - "**image-prompt*.md"
         - "**/TODO.md"
         - "sims/shared-libs/animations-index.md"
-        
+  
+  # Plugin to have images zoom to full screen when clicked
   - glightbox:
       touchNavigation: true
       loop: false
