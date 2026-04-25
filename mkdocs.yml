@@ -246,6 +246,9 @@ theme:
 plugins:
   - search
   - social
+  - exclude:
+      glob:
+        - "**image-prompt*.md"
   - glightbox:
       touchNavigation: true
       loop: false
