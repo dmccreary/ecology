@@ -1,4 +1,4 @@
-# Ecology Teachers Guide
+# Ecology Teacher's Guide
 
 Welcome to the teacher's guide for *Ecology: An Interactive Course*. This guide explains every feature of the textbook, how to use it in your classroom, and how to customize it for your students. No prior technical knowledge is assumed — every technical term is defined before it is used.
 

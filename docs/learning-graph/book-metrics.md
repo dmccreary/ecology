@@ -15,7 +15,7 @@ This file contains overall metrics for the intelligent textbook.
 | Concepts | 380 | [Concept List](./concept-list.md) | Concepts from learning graph |
 | Glossary Terms | 381 | [Glossary](../glossary.md) | Defined terms |
 | FAQs | 102 | [FAQ](../faq.md) | Frequently asked questions |
-| Quiz Questions | 0 | - | Questions across all chapters |
+| Quiz Questions | 170 | [Quizzes](../chapters/index.md) | Questions across all chapters |
 | MicroSims | 83 | [Simulations](../sims/index.md) | Interactive MicroSims |
 
 ## Student-Facing Content Metrics

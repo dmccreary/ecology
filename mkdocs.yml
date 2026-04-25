@@ -78,6 +78,7 @@ nav:
       - chapters/17-evaluating-environmental-claims/index.md
       - Quiz: chapters/17-evaluating-environmental-claims/quiz.md
       - References: chapters/17-evaluating-environmental-claims/references.md
+  
   - Learning Graph:
     - Introduction: learning-graph/index.md
     - Course Description Assessment: learning-graph/course-description-assessment.md
@@ -90,6 +91,7 @@ nav:
     - Diagram Table: learning-graph/diagram-table.md
     - Diagram Details: learning-graph/diagram-details.md
     - Quiz Generation Report: learning-graph/quiz-generation-report.md
+    - LinkedIn Announcement: learning-graph/linkedin-announcement.md
     - Mascot Style Guide: learning-graph/mascot-test.md
   
   - MicroSims:
@@ -204,19 +206,13 @@ nav:
     - Earth Day Infographic: posters/earth-day-infographic.md
     - Biophilic Design: posters/biophilic-design.md
   
-  - Prompts:
+  - Sample Prompts:
+    - Overview: prompts/index.md
     - Seed Prompt: prompts/01-seed.md
     - Content Style Guide: prompts/02-content-generation-style-guide.md
-  
-  - Sample Session Logs:
-    - Course Description Generation: logs/01-course-description-generation.md
-    - Learning Graph Generation: logs/02-generate-learning-graph.md
-    - Book Chapter Generator: logs/03-book-chapter-generator.md
-    - Mascot Generator: logs/04-mascot-generator.md
-    - Ch 1 Content Generation: logs/ch-01-content-generation.md
-    - Batch Content Generation: logs/chapter-content-generator-2026-03-29.md
-    - CLD Library in p5.js: logs/cld-library-in-p5.md
-  
+    - Generate MicroSims: prompts/05-microsim-generation.md
+    - MicroSim Quality: prompts/07-microsim-quality.md
+
   - Glossary: glossary.md
   - FAQ: faq.md
   - Teacher's Guide: teachers-guide/index.md
@@ -246,9 +242,15 @@ theme:
 plugins:
   - search
   - social
+
+  # Exclude image prompt files and TODOs from the search index and sitemap
+  # and do not show build warnings
   - exclude:
       glob:
         - "**image-prompt*.md"
+        - "**/TODO.md"
+        - "sims/shared-libs/animations-index.md"
+        
   - glightbox:
       touchNavigation: true
       loop: false
@@ -299,7 +301,7 @@ extra:
   analytics:
     provider: google
     property: G-0JKT1R3V25
-    
+
   schema: https://dmccreary.github.io/intelligent-textbooks/ns/textbook/v1
   textbook_name: Ecology
   textbook_version: "1.0"

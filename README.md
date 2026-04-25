@@ -33,6 +33,7 @@ Whether you're a student exploring ecology for the first time, an educator looki
 | Interactive MicroSims | 85 |
 | Graphic Novel Stories | 20 |
 | Glossary Terms | 381 |
+| Quiz Questions | 170 |
 | FAQ Questions | 108 |
 | Images | 160 |
 
