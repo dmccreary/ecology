@@ -23,7 +23,7 @@ Not all digital textbooks are created equal. We categorize intelligent textbooks
 | **Level 4** | AI-Assisted | Includes an AI tutor that can answer student questions | Chatbot integration, automated feedback |
 | **Level 5** | Fully Adaptive AI | Continuously learns from student interactions and optimizes the experience | Real-time content generation, predictive analytics |
 
-**This textbook is a Level 2.99 Intelligent Textbook.** It features over 81 interactive MicroSims, self-check quizzes, a 380-term glossary, annotated references, and an interactive learning graph — but does not yet include adaptive learning paths or AI tutoring.
+**This textbook is a Level 2.99 Intelligent Textbook.** It features over 83 interactive MicroSims, self-check quizzes, a 381-term glossary, annotated references, and an interactive learning graph — but does not yet include adaptive learning paths or AI tutoring.
 
 Note that level 2.99 textbooks do everything they can to maximize the value of the textbook
 without storing any knowledge of student specific progress within the book.  The good news is that you
@@ -38,7 +38,7 @@ for each student.
 - **Interactive MicroSims** let students manipulate ecological models directly in their browser — no software installation required
 - **Critical thinking emphasis** — every chapter helps students detect misinformation about environmental topics in social media and journalism
 - **"Systems thinking superpower" framing** — a positive, empowering tone that makes ecology feel relevant to students' daily lives
-- **Learning graph** — a visual map showing how all 380 concepts connect and build on each other
+- **Learning graph** — a visual map showing how all 381 concepts connect and build on each other
 - **Bailey the Beaver** — a friendly mascot character (called a "pedagogical agent") who guides students through each chapter with tips, encouragement, and key insights
 - **Completely free and open source** — licensed under Creative Commons for non-commercial use
 
@@ -98,7 +98,7 @@ MicroSims appear within chapter text as rectangular interactive areas. They are 
 
 ### Types of MicroSims
 
-The textbook includes over 81 MicroSims built with different visualization technologies:
+The textbook includes over 83 MicroSims built with different visualization technologies:
 
 | Technology | What It's Good For | Example MicroSims |
 |-----------|-------------------|-------------------|
@@ -148,7 +148,7 @@ These specifications are useful for lesson planning and for understanding the pe
 
 ### What is the Glossary?
 
-The **glossary** is an alphabetical list of all 380 key terms used in the textbook, each with a precise, concise definition. It serves as a quick-reference dictionary for students encountering unfamiliar vocabulary.
+The **glossary** is an alphabetical list of all 381 key terms used in the textbook, each with a precise, concise definition. It serves as a quick-reference dictionary for students encountering unfamiliar vocabulary.
 
 ### How to Access the Glossary
 

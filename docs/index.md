@@ -2,6 +2,8 @@
 title: Ecology - An Interactive Course
 description: An interactive intelligent textbook for Ecology using systems thinking to explore ecosystems, biodiversity, populations, pollution, climate change, and scientific literacy for high school students.
 image: img/cover.png
+hide:
+    toc
 ---
 
 # Ecology: Systems Thinking for a Changing Planet

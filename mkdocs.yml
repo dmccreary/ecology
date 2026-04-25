@@ -12,54 +12,71 @@ nav:
     - Overview: chapters/index.md
     - 1-Foundations of Ecology:
       - chapters/01-foundations-of-ecology/index.md
+      - Quiz: chapters/01-foundations-of-ecology/quiz.md
       - References: chapters/01-foundations-of-ecology/references.md
     - 2-Ecosystems and Biomes:
       - chapters/02-ecosystems-and-biomes/index.md
+      - Quiz: chapters/02-ecosystems-and-biomes/quiz.md
       - References: chapters/02-ecosystems-and-biomes/references.md
     - 3-Energy Flow:
       - chapters/03-energy-flow/index.md
+      - Quiz: chapters/03-energy-flow/quiz.md
       - References: chapters/03-energy-flow/references.md
     - 4-Biogeochemical Cycles:
       - chapters/04-biogeochemical-cycles/index.md
+      - Quiz: chapters/04-biogeochemical-cycles/quiz.md
       - References: chapters/04-biogeochemical-cycles/references.md
     - 5-Species Interactions:
       - chapters/05-species-interactions/index.md
+      - Quiz: chapters/05-species-interactions/quiz.md
       - References: chapters/05-species-interactions/references.md
     - 6-Biodiversity and Services:
       - chapters/06-biodiversity-and-services/index.md
+      - Quiz: chapters/06-biodiversity-and-services/quiz.md
       - References: chapters/06-biodiversity-and-services/references.md
     - 7-Population Ecology:
       - chapters/07-population-ecology/index.md
+      - Quiz: chapters/07-population-ecology/quiz.md
       - References: chapters/07-population-ecology/references.md
     - 8-Earth Systems:
       - chapters/08-earth-systems/index.md
+      - Quiz: chapters/08-earth-systems/quiz.md
       - References: chapters/08-earth-systems/references.md
     - 9-Sustainability and Energy:
       - chapters/09-sustainability-and-energy/index.md
+      - Quiz: chapters/09-sustainability-and-energy/quiz.md
       - References: chapters/09-sustainability-and-energy/references.md
     - 10-Land and Water Use:
       - chapters/10-land-and-water-use/index.md
+      - Quiz: chapters/10-land-and-water-use/quiz.md
       - References: chapters/10-land-and-water-use/references.md
     - 11-Atmospheric Pollution:
       - chapters/11-atmospheric-pollution/index.md
+      - Quiz: chapters/11-atmospheric-pollution/quiz.md
       - References: chapters/11-atmospheric-pollution/references.md
     - 12-Water and Land Pollution:
       - chapters/12-water-and-land-pollution/index.md
+      - Quiz: chapters/12-water-and-land-pollution/quiz.md
       - References: chapters/12-water-and-land-pollution/references.md
     - 13-Systems Thinking:
       - chapters/13-systems-thinking/index.md
+      - Quiz: chapters/13-systems-thinking/quiz.md
       - References: chapters/13-systems-thinking/references.md
     - 14-Scientific Literacy:
       - chapters/14-scientific-literacy/index.md
+      - Quiz: chapters/14-scientific-literacy/quiz.md
       - References: chapters/14-scientific-literacy/references.md
     - 15-Global Climate Change:
       - chapters/15-global-climate-change/index.md
+      - Quiz: chapters/15-global-climate-change/quiz.md
       - References: chapters/15-global-climate-change/references.md
     - 16-Biodiversity Loss and Policy:
       - chapters/16-biodiversity-loss-and-policy/index.md
+      - Quiz: chapters/16-biodiversity-loss-and-policy/quiz.md
       - References: chapters/16-biodiversity-loss-and-policy/references.md
     - 17-Evaluating Claims:
       - chapters/17-evaluating-environmental-claims/index.md
+      - Quiz: chapters/17-evaluating-environmental-claims/quiz.md
       - References: chapters/17-evaluating-environmental-claims/references.md
   - Learning Graph:
     - Introduction: learning-graph/index.md
@@ -68,6 +85,11 @@ nav:
     - Concept Taxonomy: learning-graph/concept-taxonomy.md
     - Graph Quality Analysis: learning-graph/quality-metrics.md
     - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
+    - Book Metrics: learning-graph/book-metrics.md
+    - Chapter Metrics: learning-graph/chapter-metrics.md
+    - Diagram Table: learning-graph/diagram-table.md
+    - Diagram Details: learning-graph/diagram-details.md
+    - Quiz Generation Report: learning-graph/quiz-generation-report.md
     - Mascot Style Guide: learning-graph/mascot-test.md
   
   - MicroSims:
@@ -197,7 +219,7 @@ nav:
   
   - Glossary: glossary.md
   - FAQ: faq.md
-  - Teachers Guide: teachers-guide/index.md
+  - Teacher's Guide: teachers-guide/index.md
   - License: license.md
   - Contact: contact.md
 
