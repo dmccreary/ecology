@@ -65,5 +65,8 @@
       "Students connect simulation results to the Yellowstone wolf reintroduction case study"
     ]
   },
-  "chapter": "05-species-interactions"
+  "chapter": "05-species-interactions",
+  "search": {
+    "showcase": true
+  }
 }
